@@ -129,4 +129,4 @@ document.addEventListener('alpine:init', () => {
   )
 })
 
-Alpine.start()
+// Alpine.start()

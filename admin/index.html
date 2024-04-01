@@ -11,12 +11,19 @@
   <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet" />
+  <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+  <script>
+    Parse.initialize('myappID', 'infowin');
+    Parse.serverURL = 'https://parse3.infowin.com.tw/parse';
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <style>
     body {
       font-family: 'Noto Sans JP', sans-serif;
     }
   </style>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="../main.css">
 </head>
 
 <body class="">
@@ -46,7 +53,7 @@
         </div>
         <ul id="collapseMenu"
           class='mx-auto lg:!flex lg:space-x-4 xl:space-x-6 max-lg:space-y-3 max-lg:hidden max-lg:w-full max-lg:my-4'>
-          <li class='max-lg:border-b max-lg:py-2'><a href='index.html'
+          <li class='max-lg:border-b max-lg:py-2'><a href='../index.html'
               class='hover:text-gray-300 text-white block'>最新ニュース</a></li>
           <li class='group max-lg:border-b max-lg:py-2 relative'>
             <a href='javascript:void(0)'
@@ -61,7 +68,7 @@
             <ul
               class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[110px] z-50'>
               <li class='border-b py-3'>
-                <a href='about_business.html'
+                <a href='../about_business.html'
                   class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                     viewBox="0 0 64 64">
@@ -73,7 +80,7 @@
                 </a>
               </li>
               <li class='border-b pt-1 pb-3'>
-                <a href='about_facility.html'
+                <a href='../about_facility.html'
                   class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                     viewBox="0 0 64 64">
@@ -85,7 +92,7 @@
                 </a>
               </li>
               <li class=' pt-1 pb-1'>
-                <a href='about_teacher.html'
+                <a href='../about_teacher.html'
                   class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                     viewBox="0 0 64 64">
@@ -98,7 +105,7 @@
               </li>
             </ul>
           </li>
-          <li class='max-lg:border-b max-lg:py-2'><a href='message.html'
+          <li class='max-lg:border-b max-lg:py-2'><a href='../message.html'
               class='hover:text-gray-300 text-white block'>卒業生メッセージ</a></li>
           <li class='group max-lg:border-b max-lg:py-2 relative'>
             <a href='javascript:void(0)'
@@ -113,7 +120,7 @@
             <ul
               class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[150px] z-50'>
               <li class='border-b py-3'>
-                <a href='course_advance.html'
+                <a href='../course_advance.html'
                   class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                                     viewBox="0 0 64 64">
@@ -125,7 +132,7 @@
                 </a>
               </li>
               <li class='border-b pt-1 pb-3'>
-                <a href='course_junior.html'
+                <a href='../course_junior.html'
                   class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                                     viewBox="0 0 64 64">
@@ -137,7 +144,7 @@
                 </a>
               </li>
               <li class='border-b pt-1 pb-3'>
-                <a href='course_tour.html'
+                <a href='../course_tour.html'
                   class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                                     viewBox="0 0 64 64">
@@ -149,7 +156,7 @@
                 </a>
               </li>
               <li class=' pt-1 pb-1'>
-                <a href='course_lecture.html'
+                <a href='../course_lecture.html'
                   class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                                     viewBox="0 0 64 64">
@@ -175,7 +182,7 @@
             <ul
               class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[110px] z-50'>
               <li class='border-b py-3'>
-                <a href='life_dorm.html'
+                <a href='../life_dorm.html'
                   class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                                 viewBox="0 0 64 64">
@@ -187,7 +194,7 @@
                 </a>
               </li>
               <li class='border-b pt-1 pb-3'>
-                <a href='life_insurance.html'
+                <a href='../life_insurance.html'
                   class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                                 viewBox="0 0 64 64">
@@ -199,7 +206,7 @@
                 </a>
               </li>
               <li class=' pt-1 pb-1'>
-                <a href='life_visa.html'
+                <a href='../life_visa.html'
                   class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                                 viewBox="0 0 64 64">
@@ -212,9 +219,9 @@
               </li>
             </ul>
           </li>
-          <li class='max-lg:border-b max-lg:py-2'><a href='books.html'
+          <li class='max-lg:border-b max-lg:py-2'><a href='../books.html'
               class='hover:text-gray-300 text-white block'>教育関連開発</a></li>
-          <li class='max-lg:border-b max-lg:py-2'><a href='access.html'
+          <li class='max-lg:border-b max-lg:py-2'><a href='../access.html'
               class='hover:text-gray-300 text-white block'>アクセス</a></li>
         </ul>
         <ul id="collapseMenu2" class=' max-lg:mt-1'>
@@ -237,7 +244,7 @@
             <ul
               class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 lg:top-5 max-md:top-5 -left-28 min-w-[130px] z-50'>
               <li class='border-b py-3'>
-                <a href='/' class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                <a href='../' class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                                       viewBox="0 0 64 64">
                                       <path
@@ -250,7 +257,7 @@
                 </a>
               </li>
               <li class='border-b pt-1 pb-3'>
-                <a href='/en' class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                <a href='../en' class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                                       viewBox="0 0 64 64">
                                       <path
@@ -262,7 +269,7 @@
                 </a>
               </li>
               <li class='border-b pt-1 pb-3'>
-                <a href='/cn' class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                <a href='../cn' class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                                       viewBox="0 0 64 64">
                                       <path
@@ -273,7 +280,7 @@
                 </a>
               </li>
               <li class='border-b pt-1 pb-3'>
-                <a href='/tw' class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                <a href='../tw' class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                                       viewBox="0 0 64 64">
                                       <path
@@ -284,7 +291,7 @@
                 </a>
               </li>
               <li class='border-b pt-1 pb-3'>
-                <a href='/ko' class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                <a href='../ko' class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                                       viewBox="0 0 64 64">
                                       <path
@@ -295,7 +302,7 @@
                 </a>
               </li>
               <li class='border-b pt-1 pb-3'>
-                <a href='/vi' class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                <a href='../vi' class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                                       viewBox="0 0 64 64">
                                       <path
@@ -307,7 +314,7 @@
                 </a>
               </li>
               <li class='border-b pt-1 pb-3'>
-                <a href='/th' class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                <a href='../th' class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                                       viewBox="0 0 64 64">
                                       <path
@@ -318,7 +325,7 @@
                 </a>
               </li>
               <li class='pt-1 pb-1'>
-                <a href='/id' class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                <a href='../id' class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                                       viewBox="0 0 64 64">
                                       <path
@@ -462,67 +469,69 @@
         <!--body-->
         <div class="relative p-5">
           <div class="w-full mx-auto bg-[#F0B55E] p-2 mt-1">
-            <div class="grid grid-cols-6 gap-3">
-              <div class="col-span-2">
-                <!-- <img src="../photos/news/news2.png" class="w-full" /> -->
-                <!-- <div class="col-span-full"> -->
-                <!-- <label for="cover-photo" class="block text-sm font-medium leading-6 text-gray-900">Cover photo</label> -->
-                <div class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
-                  <div class="text-center">
-                    <svg class="mx-auto h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor"
-                      aria-hidden="true">
-                      <path fill-rule="evenodd"
-                        d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z"
-                        clip-rule="evenodd" />
-                    </svg>
-                    <div class="mt-4 flex text-sm leading-6 text-gray-600 text-center">
-                      <label for="file-upload"
-                        class="text-center relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
-                        <span>Upload a file</span>
-                        <input id="file-upload" name="file-upload" type="file" class="sr-only">
-                      </label>
-                      <!-- <p class="pl-1">or drag and drop</p> -->
+            <form>
+              <div class="grid grid-cols-6 gap-3">
+                <div class="col-span-2">
+                  <!-- <img src="../photos/news/news2.png" class="w-full" /> -->
+                  <!-- <div class="col-span-full"> -->
+                  <!-- <label for="cover-photo" class="block text-sm font-medium leading-6 text-gray-900">Cover photo</label> -->
+                  <div class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
+                    <div class="text-center">
+                      <svg class="mx-auto h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z"
+                          clip-rule="evenodd" />
+                      </svg>
+                      <div class="mt-4 flex text-sm leading-6 text-gray-600 text-center">
+                        <label for="file-upload"
+                          class="text-center relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
+                          <span>Upload a file</span>
+                          <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                        </label>
+                        <!-- <p class="pl-1">or drag and drop</p> -->
+                      </div>
+                      <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
                     </div>
-                    <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
                   </div>
+                  <!-- </div> -->
                 </div>
-                <!-- </div> -->
-              </div>
-              <div class="col-span-4">
-                <div class="grid grid-flow-col gap-0 mb-2">
-                  <div class="bg-[#7F7F7F] text-white col-span-1 text-center p-1 pt-2">PICK UP</div>
-                  <div class="bg-white col-span-5 p-1 italic">
-                    <div class="sm:col-span-4">
-                      <div
-                        class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-gray-300 sm:max-w-md">
-                        <input type="text" name="username" id="username" autocomplete="username"
-                          class="italic block flex-1 border-0 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-                          placeholder="タイトル...">
+                <div class="col-span-4">
+                  <div class="grid grid-flow-col gap-0 mb-2">
+                    <div class="bg-[#7F7F7F] text-white col-span-1 text-center p-1 pt-2">PICK UP</div>
+                    <div class="bg-white col-span-5 p-1 italic">
+                      <div class="sm:col-span-4">
+                        <div
+                          class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-gray-300 sm:max-w-md">
+                          <input type="text" name="title" id="title" autocomplete="title"
+                            class="italic block flex-1 border-0 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                            placeholder="タイトル...">
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="bg-[#7F7F7F] bg-opacity-50 text-white p-2 text-sm">
-                  <div id="editor" style="height: 200px">
-                    <p>Hello World!</p>
-                    <p>Some initial <strong>bold</strong> tex1t</p>
-                    <p><br /></p>
-                  </div>
-                  <div class="text-black w-36 ml-auto mt-2">
-                    <div
-                      class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-gray-300 sm:max-w-md">
-                      <input type="text" name="username" id="username" autocomplete="username"
-                        class="block flex-1 border-0 bg-transparent py-1.5 pl-3 text-black placeholder:text-gray-500 focus:ring-0 sm:text-sm sm:leading-6"
-                        placeholder="日付...">
+                  <div class="bg-[#7F7F7F] bg-opacity-50 text-white p-2 text-sm">
+                    <div id="editor" name="context" style="height: 200px">
+                      <p>Hello World!</p>
+                      <p>Some initial <strong>bold</strong> tex1t</p>
+                      <p><br /></p>
                     </div>
-                    <!-- <div class="mt-3 text-right">
-                      <button type="submit"
-                        class="ml-auto rounded-md bg-yellow-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">保存</button>
-                    </div> -->
+                    <div class="text-black w-44 ml-auto mt-2">
+                      <div
+                        class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-gray-300 sm:max-w-md">
+                        <input type="text" name="publishDate" id="publishDate" autocomplete="publishDate"
+                          class="block flex-1 border-0 bg-transparent py-1.5 pl-3 text-black placeholder:text-gray-500 sm:text-sm sm:leading-6"
+                          placeholder="日付...">
+                      </div>
+                      <!-- <div class="mt-3 text-right">
+                        <button type="submit"
+                          class="ml-auto rounded-md bg-yellow-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">保存</button>
+                      </div> -->
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
         <!--footer-->
@@ -534,7 +543,7 @@
           </button>
           <button
             class="bg-yellow-500 text-white active:bg-yellow-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-            type="button" onclick="toggleModal('modal-id')">
+            type="button" onclick="createNews()">
             新建
           </button>
         </div>
@@ -544,6 +553,59 @@
   <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-backdrop">
   </div>
   <script type="text/javascript">
+    $.fn.getForm2obj = function () {
+      var _ = {};
+      $.map(this.serializeArray(), function (n) {
+        const keys = n.name.match(/[a-zA-Z0-9_]+|(?=\[\])/g);
+        if (keys.length > 1) {
+          let tmp = _;
+          pop = keys.pop();
+          for (let i = 0; i < keys.length, j = keys[i]; i++) {
+            tmp[j] = (!tmp[j] ? (pop == '') ? [] : {} : tmp[j]), tmp = tmp[j];
+          }
+          if (pop == '') tmp = (!Array.isArray(tmp) ? [] : tmp), tmp.push(n.value);
+          else tmp[pop] = n.value;
+        } else _[keys.pop()] = n.value;
+      });
+      return _;
+    }
+  </script>
+  <script type="text/javascript">
+    const quill = new Quill('#editor', {
+      theme: 'snow',
+      modules: {
+        toolbar: toolbarOptions
+      },
+    });
+    // var obj = {
+    //   title: "123",
+    //   context: "aaa",
+    //   publishDate: "2024/1/1",
+    // }
+    function createNews() {
+      var obj = $('form').getForm2obj()
+      // obj.context = $('#editor').html()
+      obj.context = quill.getSemanticHTML();
+      console.log(obj);
+      if (!obj.title || !obj.context || !obj.publishDate) {
+        alert("資料不全");
+      }
+      // return;
+      var News = Parse.Object.extend("aiasoNews");
+      var data = new News();
+      data.set("title", obj.title);
+      data.set("context", obj.context);
+      data.set("publishDate", obj.publishDate);
+
+      data.save().then(function (data) {
+        //  console.log('Pet created successful with name: ' + pet.get("name") + ' and age: ' + pet.get("agePet"));
+        toggleModal('modal-id')
+        alert("success!")
+      }).catch(function (error) {
+        console.log('Error: ' + error.message);
+      });
+    }
+
     function toggleModal(modalID) {
       document.getElementById(modalID).classList.toggle("hidden");
       document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
@@ -551,12 +613,7 @@
       document.getElementById(modalID + "-backdrop").classList.toggle("flex");
     }
 
-    const quill = new Quill('#editor', {
-      theme: 'snow',
-      modules: {
-        toolbar: toolbarOptions
-      },
-    });
+
     // toggleModal('modal-id');
   </script>
   <!-- <br /> -->
@@ -766,7 +823,7 @@
     </div>
   </div>
   <!-- footer end -->
-  <script src="main.js"></script>
+  <script src="../main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 </body>
 
