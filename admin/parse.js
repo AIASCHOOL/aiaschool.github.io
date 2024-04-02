@@ -30,6 +30,7 @@ const saveImg = async (file, id = '') => {
 Parse.Images = async (file) => {
   const { theFile: theFile1, dim: dim1 } = await saveImg(file, '1');
   // console.log(theFile1, theFile2)
+  const classDb = Parse.Object.extend("aiasoImages");
   const newDoc = new classDb();
   newDoc.set('image', theFile1);
   newDoc.set('image' + 'Dim', dim1);
@@ -39,6 +40,9 @@ Parse.Images = async (file) => {
 };
 
 function createNews() {
+  var id = $("#modal-confirm").data('id');
+  var str = '追加'
+
   var obj = $('form').getForm2obj()
   obj.context = quill.getSemanticHTML();
   // console.log(obj);
@@ -48,6 +52,11 @@ function createNews() {
   }
   var News = Parse.Object.extend("aiasoNews");
   var data = new News();
+
+  if (id !== 'new') {
+    data.set("id", id);
+    str = '保存';
+  }
   data.set("title", obj.title);
   data.set("context", obj.context);
   data.set("images", obj.images);
@@ -55,7 +64,7 @@ function createNews() {
 
   data.save().then(function (data) {
     toggleModal('modal-id')
-    alert("追加成功");
+    alert(str + "成功");
     location.reload();
   }).catch(function (error) {
     console.log('Error: ' + error.message);

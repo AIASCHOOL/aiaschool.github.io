@@ -488,7 +488,7 @@
             type="button" onclick="toggleModal('modal-id')">
             閉じる
           </button>
-          <button id="modal-confirm"
+          <button id="modal-confirm" data-id=''
             class="bg-yellow-500 text-white active:bg-yellow-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
             type="button" onclick="createNews()">
             新規追加
@@ -598,7 +598,6 @@
     }
     start();
 
-
     function toggleModal(modalID, id) {
       var title = '編集';
       var btn = '保存'
@@ -610,11 +609,13 @@
         // console.log('id', id)
         const str = $("#newsedit-" + id).data('id')
         const params = Object.fromEntries(new URLSearchParams(str));
-        console.log(params);
+        // console.log(params);
 
         $("#input-title").val(params.title)
         $("#input-publishDate").val(params.publishDate)
+        quill.root.innerHTML = params.context
       }
+      $("#modal-confirm").data('id', id);
       $("#modal-title").text(title)
       $("#modal-confirm").text(btn)
 
