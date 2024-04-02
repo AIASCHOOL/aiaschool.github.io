@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <title>
-    愛知國際學院 | 教師陣
+    愛知國際學院
   </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet" />
+  <script type="text/javascript" src="https://unpkg.com/parse@1.11.1/dist/parse.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script src="parse.js"></script>
   <style>
     body {
       font-family: 'Noto Sans JP', sans-serif;
@@ -346,52 +350,79 @@
       <li>Element 5</li> -->
     </ul>
   </div>
-  <!-- title bar start -->
-  <div class="relative flex mx-auto">
-    <img class="w-full object-cover" src="images/business_ov.jpg" />
-    <div class="absolute top-8 max-md:top-[10%] right-0 left-0 flex items-center justify-center ">
-      <h3 class="text-white text-4xl max-md:text-3xl font-bold">教師陣</h3>
-    </div>
-    <div class="absolute top-24 max-lg:top-[60%] right-0 left-0 flex items-center justify-center ">
-      <p class="text-white italic text-base max-md:text-xs">事業主体 / 事業項目 / 歴史沿革 / 政策方針 / 教育目標 / 教育業績 / 関連事業</p>
-    </div>
-  </div>
   <div>
-    <img class="w-full" src="images/business_pics.png" />
+    <img class="w-full" src="images/hero.png" />
   </div>
-  <!-- title bar end -->
-  <!-- main start -->
-  <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1">
-    <div class="h-10 relative">
-      <img src="images/business_icon.png" class="h-full" />
-      <div class="absolute top-1 left-7 text-white italic text-lg">事業主体</div>
-    </div>
-    <div class="bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6">
-      商号：平成国際教育開発有限会社<br />
-      住所：愛知県名古屋市中区新栄1-30-3<br />
-      設立：昭和46年5月31日<br />
-      資本金：4800万円<br />
-      代表：莊　大右
-    </div>
-    <div class="h-10 relative">
-      <img src="images/business_icon.png" class="h-full" />
-      <div class="absolute top-1 left-7 text-white italic text-lg">事業項目</div>
-    </div>
-    <div class="bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6">
-      <ol class="list-decimal list-inside">
-        <li>日本語学校の経営</li>
-        <li>語学学習用教材教具の開発、制作、出版、輸出入及び販売事業</li>
-        <li>不動産の賃貸、管理</li>
-        <li>健康医療器具の輸入販売</li>
-        <li>人材派遣事業及び人材研修事業</li>
-        <li>有料職業紹介事業及び労働者派遣事業</li>
-        <li>外国研修生・技能実習生・特定技能外国人等の外国人材受成事業</li>
-        <li>一般廃棄物及び産業廃棄物の収集、運搬、再生加工並びに再生及び販売</li>
-        <li>前各号に付帯関</li>
-      </ol>
+  <div class="relative flex mx-auto">
+    <img class="w-full object-cover" src="images/topics.jpg" />
+    <div class="absolute top-7 right-0 left-0 flex items-center justify-center ">
+      <h3 class="text-white text-3xl font-bold">最新ニュース</h3>
     </div>
   </div>
-  <!-- main end -->
+  <!-- news start -->
+  <script type="text/javascript">
+    const start = async function () {
+      const news = await read();
+      // console.table(news)
+      news.forEach(item => {
+        var images = "";//
+        if (item.images && item.images.length) {
+          if (item.images.length === 1) {
+            // if (1) {
+            item.images.forEach(img => images += '<img src="' + img + '" class="w-full" />')
+          } else {
+            var carouselImg = ''
+            item.images.forEach(img => carouselImg += '<div class="hidden duration-700 ease-in-out" data-carousel-item><img src="' + img + '" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></div>')
+
+            images = '<div id="default-carousel" class="relative w-full " data-carousel="slide">\
+              <div class="relative h-40 overflow-hidden rounded-lg md:h-40">'+ carouselImg + '</div>\
+          <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>\
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">\
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"\
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">\
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />\
+              </svg>\
+              <span class="sr-only">Previous</span>\
+            </span>\
+          </button>\
+          <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>\
+            <span\
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">\
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"\
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">\
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"\
+                  d="m1 9 4-4-4-4" />\
+              </svg>\
+              <span class="sr-only">Next</span>\
+            </span>\
+          </button>\
+        </div>'
+          }
+        }
+        // console.log(images)
+
+        $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1">\
+        <div class= "grid grid-cols-6 gap-3" >\
+          <div class="col-span-2">'+ images + '</div >\
+          <div class="col-span-4">\
+            <div class="grid grid-flow-col gap-0 mb-2">\
+              <div class="bg-[#7F7F7F] text-white col-span-1 text-center p-1">PICK UP</div>\
+              <div class="bg-white col-span-5 p-1 italic">'+ item.title + '</div>\
+            </div>\
+            <div class="bg-[#7F7F7F] bg-opacity-50 text-white p-2 text-sm">'+ item.context + '\
+              <div class="text-black text-right mt-2">'+ item.publishDate + '</div>\
+            </div>\
+          </div>\
+        </div >\
+      </div > ')
+      });
+      $.getScript("https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js");
+    }
+    start();
+  </script>
+  <div id="news"></div>
+
+  <!-- news end -->
   <!-- footer start -->
   <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1 mt-4">
     <div class="w-3/5 mx-auto p-5 text-xs">
@@ -440,7 +471,7 @@
   </div>
   <!-- footer end -->
   <script src="main.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 </body>
 
 </html>
