@@ -77,7 +77,7 @@ async function read() {
 }
 
 async function del(objectId) {
-  if (!confirm("消去確認？")) {
+  if (!confirm("このまま削除しますか")) {
     return;
   }
 

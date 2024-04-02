@@ -394,9 +394,9 @@
   </script>
   <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1">
     <button
-      class="bg-yellow-500 text-white active:bg-yellow-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-      type="button" onclick="toggleModal('modal-id')">
-      新建
+      class="bg-yellow-500 text-white active:bg-yellow-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none hover:bg-yellow-400 focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+      type="button" onclick="toggleModal('modal-id','new')">
+      新規追加
     </button>
   </div>
   <div
@@ -407,9 +407,7 @@
       <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
         <!--header-->
         <div class="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-          <h4 class="text-3xl font-semibold text-zinc-700">
-            新建
-          </h4>
+          <h4 id="modal-title" class="text-3xl font-semibold text-zinc-700">新規追加</h4>
           <button
             class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
             onclick="toggleModal('modal-id')">
@@ -456,7 +454,7 @@
                       <div class="sm:col-span-4">
                         <div
                           class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-gray-300 sm:max-w-md">
-                          <input type="text" name="title" id="title" autocomplete="title"
+                          <input id="input-title" type="text" name="title" id="title" autocomplete="title"
                             class="italic block flex-1 border-0 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                             placeholder="タイトル...">
                         </div>
@@ -464,13 +462,11 @@
                     </div>
                   </div>
                   <div class="bg-[#7F7F7F] bg-opacity-50 text-white p-2 text-sm">
-                    <div id="editor" name="context" style="height: 200px">
-
-                    </div>
+                    <div id="editor" name="context" style="height: 200px"></div>
                     <div class="text-black w-44 ml-auto mt-2">
                       <div
                         class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-gray-300 sm:max-w-md">
-                        <input type="text" name="publishDate" id="publishDate" autocomplete="publishDate"
+                        <input id="input-publishDate" type="text" name="publishDate" autocomplete="publishDate"
                           class="block flex-1 border-0 bg-transparent py-1.5 pl-3 text-black placeholder:text-gray-500 sm:text-sm sm:leading-6"
                           placeholder="日付...">
                       </div>
@@ -490,19 +486,18 @@
           <button
             class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
             type="button" onclick="toggleModal('modal-id')">
-            Close
+            閉じる
           </button>
-          <button
+          <button id="modal-confirm"
             class="bg-yellow-500 text-white active:bg-yellow-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
             type="button" onclick="createNews()">
-            新建
+            新規追加
           </button>
         </div>
       </div>
     </div>
   </div>
-  <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-backdrop">
-  </div>
+  <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-backdrop"></div>
   <script type="text/javascript">
     $.fn.getForm2obj = function () {
       var _ = {};
@@ -577,7 +572,8 @@
         </div>'
           }
         }
-        // console.log(images)
+        // console.log(item)
+        // console.log(jQuery.param(item))
 
         $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1">\
         <div class= "grid grid-cols-6 gap-3" >\
@@ -591,8 +587,8 @@
               <div class="text-black text-right mt-2">'+ item.publishDate + '</div>\
             </div>\
           <div class= "mt-3 text-right">\
-          <button type="submit" class="ml-auto rounded-md bg-yellow-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onclick="toggleModal(\'modal-id\');">編修</button>\
-          <button type="submit" class="ml-auto rounded-md bg-rose-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onclick="del(\''+ item.objectId + '\'); ">消去</button>\
+          <button id="newsedit-' + item.objectId + '" data-id="' + jQuery.param(item) + '" type="submit" class="ml-auto rounded-md bg-yellow-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600" onclick="toggleModal(\'modal-id\', \'' + item.objectId + '\');">編集</button>\
+          <button type="submit" class="ml-auto rounded-md bg-rose-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-rose-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-600" onclick="del(\''+ item.objectId + '\'); ">削除</button>\
         </div>\
           </div>\
         </div >\
@@ -603,8 +599,24 @@
     start();
 
 
-    function toggleModal(modalID) {
-      $("#newsImages").empty();
+    function toggleModal(modalID, id) {
+      var title = '編集';
+      var btn = '保存'
+      if (id === 'new') {
+        title = '新規追加'
+        btn = '新規追加'
+        $("#newsImages").empty();
+      } else {
+        // console.log('id', id)
+        const str = $("#newsedit-" + id).data('id')
+        const params = Object.fromEntries(new URLSearchParams(str));
+        console.log(params);
+
+        $("#input-title").val(params.title)
+        $("#input-publishDate").val(params.publishDate)
+      }
+      $("#modal-title").text(title)
+      $("#modal-confirm").text(btn)
 
       document.getElementById(modalID).classList.toggle("hidden");
       document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
