@@ -41,7 +41,7 @@ Parse.Images = async (file) => {
 function createNews() {
   var obj = $('form').getForm2obj()
   obj.context = quill.getSemanticHTML();
-  console.log(obj);
+  // console.log(obj);
   if (!obj.context) {
     alert("コンテンツなし");
     return;
@@ -74,7 +74,6 @@ async function read() {
   const obj = snap.map(data => data.toJSON());
   // console.table(obj)
   return obj;
-
 }
 
 async function del(objectId) {
