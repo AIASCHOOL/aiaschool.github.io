@@ -102,7 +102,8 @@ function createNews() {
   data.save().then(function (data) {
     //  console.log('Pet created successful with name: ' + pet.get("name") + ' and age: ' + pet.get("agePet"));
     toggleModal('modal-id')
-    alert("追加成功")
+    alert("追加成功");
+    location.reload();
   }).catch(function (error) {
     console.log('Error: ' + error.message);
   });
@@ -127,4 +128,18 @@ async function read() {
   // console.table(obj)
   return obj;
 
+}
+
+async function del(objectId) {
+  if (!confirm("消去確認？")) {
+    return;
+  }
+
+  const classDb = Parse.Object.extend("aiasoNews");
+  const delObj = new classDb();
+  delObj.id = objectId;
+  await delObj.destroy().catch(err => console.error(err));
+
+  // alert('消去成功');
+  $("#newsid-" + objectId).remove();
 }
