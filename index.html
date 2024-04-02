@@ -5,12 +5,16 @@
   <title>
     愛知國際學院
   </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet" />
+  <script type="text/javascript" src="https://unpkg.com/parse@1.11.1/dist/parse.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script src="parse.js"></script>
   <style>
     body {
       font-family: 'Noto Sans JP', sans-serif;
@@ -356,157 +360,72 @@
     </div>
   </div>
   <!-- news start -->
-  <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1">
-    <div class="grid grid-cols-6 gap-3">
-      <div class="col-span-2">
+  <script type="text/javascript">
+    const start = async function () {
+      const news = await read();
+      // console.table(news)
+      news.forEach(item => {
+        var images = "";//
+        if (item.images && item.images.length) {
+          if (item.images.length === 1) {
+            // if (1) {
+            item.images.forEach(img => images += '<img src="' + img + '" class="w-full" />')
+          } else {
+            var carouselImg = ''
+            item.images.forEach(img => carouselImg += '<div class="hidden duration-700 ease-in-out" data-carousel-item><img src="' + img + '" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></div>')
 
-        <div id="default-carousel" class="relative w-full hidden" data-carousel="slide">
-          <!-- Carousel wrapper -->
-          <div class="relative h-40 overflow-hidden rounded-lg md:h-40">
-            <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="https://picsum.photos/300/200"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="https://picsum.photos/300/200"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="https://picsum.photos/300/200"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
-            <!-- Item 4 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="https://picsum.photos/300/200"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
-            <!-- Item 5 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="https://picsum.photos/300/200"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
-          </div>
-          <!-- Slider indicators -->
-          <!-- <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-              data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-              data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-              data-carousel-slide-to="2"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
-              data-carousel-slide-to="3"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
-              data-carousel-slide-to="4"></button>
-          </div> -->
-          <!-- Slider controls -->
-          <button type="button"
-            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-prev>
-            <span
-              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M5 1 1 5l4 4" />
-              </svg>
-              <span class="sr-only">Previous</span>
-            </span>
-          </button>
-          <button type="button"
-            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-next>
-            <span
-              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="m1 9 4-4-4-4" />
-              </svg>
-              <span class="sr-only">Next</span>
-            </span>
-          </button>
-        </div>
-        <img src="photos/news/news1.png" class="w-full" />
+            images = '<div id="default-carousel" class="relative w-full " data-carousel="slide">\
+              <div class="relative h-40 overflow-hidden rounded-lg md:h-40">'+ carouselImg + '</div>\
+          <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>\
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">\
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"\
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">\
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />\
+              </svg>\
+              <span class="sr-only">Previous</span>\
+            </span>\
+          </button>\
+          <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>\
+            <span\
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">\
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"\
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">\
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"\
+                  d="m1 9 4-4-4-4" />\
+              </svg>\
+              <span class="sr-only">Next</span>\
+            </span>\
+          </button>\
+        </div>'
+          }
+        }
+        // console.log(images)
 
-      </div>
-      <div class="col-span-4">
-        <div class="grid grid-flow-col gap-0 mb-2">
-          <div class="bg-[#7F7F7F] text-white col-span-1 text-center p-1">PICK UP</div>
-          <div class="bg-white col-span-5 p-1 italic">本学院は「適正校I」に選定されました</div>
-        </div>
-        <div class="bg-[#7F7F7F] bg-opacity-50 text-white p-2 text-sm">出入国在留管理庁においては、留学生に係る入国・在留審査を適切かつ円滑に行う観点から、
-          毎年、在留資格
-          「留学」により留学生を受け入れている教育機関の中から適正校 (留学生の在籍 管理が適正に行われていると認められる教育機関)
-          を選定しています。<span
-            class="text-[red]">～本学院は日本出入国在留管理庁に「適正校1」と認定されましたので、留学在留資格の申請にあたって、必要な書類は区域問わず旅券（Passport）あるいはIDカードや出生証明書だけです～</span>
-          <div class="text-black text-right mt-2">2023/10/12</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- news end -->
-  <!-- news start -->
-  <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1">
-    <div class="grid grid-cols-6 gap-3">
-      <div class="col-span-2">
-        <img src="photos/news/news2.png" class="w-full" />
-      </div>
-      <div class="col-span-4">
-        <div class="grid grid-flow-col gap-0 mb-2">
-          <div class="bg-[#7F7F7F] text-white col-span-1 text-center p-1">PICK UP</div>
-          <div class="bg-white col-span-5 p-1 italic">本学院の学生が地域防災訓練に参加</div>
-        </div>
-        <div class="bg-[#7F7F7F] bg-opacity-50 text-white p-2 text-sm">地域の事業者や住民の防 災力を高めようと、 中区池田公園で、栄東地域 防災訓練があった。地域
-          で暮らす住民や近隣店舗の
-          関係者、本学院の在籍生350人が参加したことは10月11日の中日新聞に掲載された。　
-          <div class="text-black text-right mt-2">2023/10/12</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- news end -->
-  <!-- news start -->
-  <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1">
-    <div class="grid grid-cols-6 gap-3">
-      <div class="col-span-2">
-        <img src="photos/news/news3.png" class="w-full" />
-      </div>
-      <div class="col-span-4">
-        <div class="grid grid-flow-col gap-0 mb-2">
-          <div class="bg-[#7F7F7F] text-white col-span-1 text-center p-1">PICK UP</div>
-          <div class="bg-white col-span-5 p-1 italic">名古屋市役所は本校で結核ワークショップ</div>
-        </div>
-        <div class="bg-[#7F7F7F] bg-opacity-50 text-white p-2 text-sm">
-          名古屋市役所健康福祉局感染症対策室の方に外国人留学生に結核のワークショップを説明したあと、結核のレントゲン検査をやって頂きました。<br />
-          外国人留学生たちは健康的に勉強できるように、配慮して頂いて、本当に感謝感激。
-          <div class="text-black text-right mt-2">2023/07/21</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- news end -->
-  <!-- news start -->
-  <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1">
-    <div class="grid grid-cols-6 gap-3">
-      <div class="col-span-2">
-        <img src="photos/news/news4.png" class="w-full" />
-      </div>
-      <div class="col-span-4">
-        <div class="grid grid-flow-col gap-0 mb-2">
-          <div class="bg-[#7F7F7F] text-white col-span-1 text-center p-1">PICK UP</div>
-          <div class="bg-white col-span-5 p-1 italic">第36回卒業式が盛大に行われました</div>
-        </div>
-        <div class="bg-[#7F7F7F] bg-opacity-50 text-white p-2 text-sm">
-          第36回卒業式で、256名の卒業生がそれぞれの夢に飛び立つ。　今回の卒業式は、千種区メルパークホテル二階のホールにて盛大に行われました。学院長は卒業生諸君に卒業してからも、２１世紀の国際社会が求められている専門知識技術、創意、多国外国語、論理力、および学習と趣味の均衡性を持つ青年になるよう、頑張ってほしいとのメッセージを送りました。
-          <div class="text-black text-right mt-2">2023/03/25</div>
-        </div>
-      </div>
-    </div>
-  </div>
+        $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1">\
+        <div class= "grid grid-cols-6 gap-3" >\
+          <div class="col-span-2">'+ images + '</div >\
+          <div class="col-span-4">\
+            <div class="grid grid-flow-col gap-0 mb-2">\
+              <div class="bg-[#7F7F7F] text-white col-span-1 text-center p-1">PICK UP</div>\
+              <div class="bg-white col-span-5 p-1 italic">'+ item.title + '</div>\
+            </div>\
+            <div class="bg-[#7F7F7F] bg-opacity-50 text-white p-2 text-sm">'+ item.context + '\
+              <div class="text-black text-right mt-2">'+ item.publishDate + '</div>\
+            </div>\
+          <div class= "mt-3 text-right">\
+          <button type="submit" class="ml-auto rounded-md bg-yellow-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onclick="toggleModal(\'modal-id\');">編修</button>\
+          <button type="submit" class="ml-auto rounded-md bg-rose-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onclick="del(\''+ item.objectId + '\'); ">消去</button>\
+        </div>\
+          </div>\
+        </div >\
+      </div > ')
+      });
+      $.getScript("https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js");
+    }
+    start();
+  </script>
+  <div id="news"></div>
+
   <!-- news end -->
   <!-- footer start -->
   <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1 mt-4">
