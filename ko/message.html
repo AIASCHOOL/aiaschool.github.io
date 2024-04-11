@@ -548,54 +548,55 @@
           あなたの連絡先と近況連絡をお待ちしております
         </div>
         <div>
-          <div class="flex mb-3 mt-2 w-full">
-            <label class="w-20 mt-2 mb-2 block text-sm font-bold uppercase text-gray-700" htmlFor="full-name">
-              名前
-            </label>
-            <input type="text"
-              class="w-full rounded border-0 bg-white p-2 text-sm text-gray-700 shadow placeholder:text-gray-400 focus:outline-none focus:ring"
-              placeholder="名前" style="transition:'all .15s ease'" value="" />
-          </div>
-          <div class="flex mb-3 mt-2 w-full">
-            <label class="w-20 mt-2 mb-2 block text-sm font-bold uppercase text-gray-700" htmlFor="full-name">
-              卒業時期
-            </label>
-            <input type="text"
-              class="w-full rounded border-0 bg-white p-2 text-sm text-gray-700 shadow placeholder:text-gray-400 focus:outline-none focus:ring"
-              placeholder="卒業時期" style="transition:'all .15s ease'" value="" />
-          </div>
-          <div class="flex mb-3 mt-2 w-full">
-            <label class="w-36 mt-2 mb-2 block text-sm font-bold uppercase text-gray-700" htmlFor="full-name">
-              現在所属／職位
-            </label>
-            <input type="text"
-              class="w-full rounded border-0 bg-white p-2 text-sm text-gray-700 shadow placeholder:text-gray-400 focus:outline-none focus:ring"
-              placeholder="現在所属／職位" style="transition:'all .15s ease'" value="" />
-          </div>
-          <div class="flex mb-3 mt-2 w-full">
-            <label class="w-36 mt-2 mb-2 block text-sm font-bold uppercase text-gray-700" htmlFor="full-name">
-              SNS連絡方法
-            </label>
-            <input type="text"
-              class="w-full rounded border-0 bg-white p-2 text-sm text-gray-700 shadow placeholder:text-gray-400 focus:outline-none focus:ring"
-              placeholder="SNS連絡方法" style="transition:'all .15s ease'" value="" />
-          </div>
-          <div class="flex mb-3 mt-2 w-full">
-            <label class="w-20 mt-2 mb-2 block text-sm font-bold uppercase text-gray-700" htmlFor="full-name">
-              コメント
-            </label>
-            <textarea rows="4"
-              class="w-full rounded border-0 bg-white p-2 text-sm text-gray-700 shadow placeholder:text-gray-400 focus:outline-none focus:ring"
-              placeholder="コメント" style="transition:'all .15s ease'" value=""></textarea>
-          </div>
-          <div class="mt-6 text-right">
-            <button
-              class="mb-1 mr-1 rounded bg-gray-600 px-4 py-3 text-sm font-bold uppercase text-white shadow outline-none hover:shadow-lg focus:outline-none active:bg-gray-700"
-              type="button" style="transition:'all .15s ease'">
-              送　信
-            </button>
-
-          </div>
+          <form action="MAILTO:school@aiaso.gr.jp" method="post" enctype="text/plain">
+            <div class="flex mb-3 mt-2 w-full">
+              <label class="w-20 mt-2 mb-2 block text-sm font-bold uppercase text-gray-700" htmlFor="full-name">
+                名前
+              </label>
+              <input type="text"
+                class="w-full rounded border-0 bg-white p-2 text-sm text-gray-700 shadow placeholder:text-gray-400 focus:outline-none focus:ring"
+                placeholder="名前" style="transition:'all .15s ease'" value="" name="name" />
+            </div>
+            <div class="flex mb-3 mt-2 w-full">
+              <label class="w-20 mt-2 mb-2 block text-sm font-bold uppercase text-gray-700" htmlFor="full-name">
+                卒業時期
+              </label>
+              <input type="text"
+                class="w-full rounded border-0 bg-white p-2 text-sm text-gray-700 shadow placeholder:text-gray-400 focus:outline-none focus:ring"
+                placeholder="卒業時期" style="transition:'all .15s ease'" value="" name="period" />
+            </div>
+            <div class="flex mb-3 mt-2 w-full">
+              <label class="w-36 mt-2 mb-2 block text-sm font-bold uppercase text-gray-700" htmlFor="full-name">
+                現在所属／職位
+              </label>
+              <input type="text"
+                class="w-full rounded border-0 bg-white p-2 text-sm text-gray-700 shadow placeholder:text-gray-400 focus:outline-none focus:ring"
+                placeholder="現在所属／職位" style="transition:'all .15s ease'" value="" name="position" />
+            </div>
+            <div class="flex mb-3 mt-2 w-full">
+              <label class="w-36 mt-2 mb-2 block text-sm font-bold uppercase text-gray-700" htmlFor="full-name">
+                SNS連絡方法
+              </label>
+              <input type="text"
+                class="w-full rounded border-0 bg-white p-2 text-sm text-gray-700 shadow placeholder:text-gray-400 focus:outline-none focus:ring"
+                placeholder="SNS連絡方法" style="transition:'all .15s ease'" value="" name="sns" />
+            </div>
+            <div class="flex mb-3 mt-2 w-full">
+              <label class="w-20 mt-2 mb-2 block text-sm font-bold uppercase text-gray-700" htmlFor="full-name">
+                コメント
+              </label>
+              <textarea rows="4"
+                class="w-full rounded border-0 bg-white p-2 text-sm text-gray-700 shadow placeholder:text-gray-400 focus:outline-none focus:ring"
+                placeholder="コメント" style="transition:'all .15s ease'" value="" name="comment"></textarea>
+            </div>
+            <div class="mt-6 text-right">
+              <button
+                class="mb-1 mr-1 rounded bg-gray-600 px-4 py-3 text-sm font-bold uppercase text-white shadow outline-none hover:shadow-lg focus:outline-none active:bg-gray-700"
+                type="button" style="transition:'all .15s ease'">
+                送　信
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
