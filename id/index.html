@@ -31,7 +31,7 @@
 <body class="">
   <!-- banner start -->
   <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1">
-    <div class="flex items-center">
+    <div class="flex items-center flex-row">
       <div class="flex-grow "></div>
       <img class="h-10 ml-0 mr-0 hidden md:block invisible" src="../images/35th.png" />
       <a href="index.html" style="border: none;" class="h-10"><img class="h-10" src="../images/logo.png" /></a>
@@ -279,9 +279,9 @@
         // console.log(images)
 
         $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1">\
-        <div class= "grid grid-cols-6 gap-3" >\
-          <div class="col-span-2">'+ images + '</div>\
-          <div class="col-span-4">\
+        <div class= "grid sm:grid-cols-6 gap-3" >\
+          <div class="sm:col-span-2">'+ images + '</div>\
+          <div class="sm:col-span-4">\
             <div class="grid grid-flow-col gap-0 mb-2">\
               <div class="bg-[#7F7F7F] text-white col-span-1 text-center p-1">PICK UP</div>\
               <div class="bg-white col-span-5 p-1 italic">'+ item.title + '</div>\
