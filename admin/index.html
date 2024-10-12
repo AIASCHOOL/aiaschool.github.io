@@ -601,22 +601,32 @@
     start();
 
     function toggleModal(modalID, id) {
+      $("#newsImages").empty();
       var title = '編集';
       var btn = '保存'
       if (id === 'new') {
         title = '新規追加'
         btn = '新規追加'
-        $("#newsImages").empty();
         quill.root.innerHTML = ""
-      } else {
+      }
+      else {
         // console.log('id', id)
         const str = $("#newsedit-" + id).data('id')
-        const params = Object.fromEntries(new URLSearchParams(str));
+        // const params = Object.fromEntries(new URLSearchParams(str));
+        const params = groupParamsByKey(new URLSearchParams(str));
         // console.log(params);
 
         $("#input-title").val(params.title)
         $("#input-publishDate").val(params.publishDate)
-        quill.root.innerHTML = params.context
+        quill.root.innerHTML = params.context;
+
+        if (typeof params['images[]'] === 'string') {
+          $("#newsImages").append('<img src="' + params['images[]'] + '" class="w-full" /><br />')
+        } else if (typeof params['images[]'] === 'object') {
+          params['images[]'].forEach(item => {
+            $("#newsImages").append('<img src="' + item + '" class="w-full" /><br />')
+          });
+        }
       }
       $("#modal-confirm").data('id', id);
       $("#modal-title").text(title)
