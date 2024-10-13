@@ -309,20 +309,20 @@
       //   // $.getScript("https://aiaso.gr.jp/admin/infinite-carousel-autoplay.js", function () {
       //   console.log('load js')
       // });
-      news.forEach(item => {
-        if (item.images && item.images.length && item.images.length > 1) {
+      // news.forEach(item => {
+      //   if (item.images && item.images.length && item.images.length > 1) {
 
-          const Carousel = window.Carousel;
-          // console.log(Carousel)
-          const carouselElement = document.getElementById('carousel - ' + item.objectId);
-          const items = item.images.map((img, i) => ({
-            position: i,
-            el: document.getElementById('carousel-item-' + item.objectId + i),
-          }))
-          console.log(items)
-          Carousel(carouselElement, items)
-        }
-      })
+      //     const Carousel = window.Carousel;
+      //     // console.log(Carousel)
+      //     const carouselElement = document.getElementById('carousel - ' + item.objectId);
+      //     const items = item.images.map((img, i) => ({
+      //       position: i,
+      //       el: document.getElementById('carousel-item-' + item.objectId + i),
+      //     }))
+      //     console.log(items)
+      //     Carousel(carouselElement, items)
+      //   }
+      // })
 
     }
     start();
