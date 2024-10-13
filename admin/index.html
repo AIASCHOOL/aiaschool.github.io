@@ -395,6 +395,16 @@
       ['clean']                                         // remove formatting button
     ];
   </script>
+  <div id="carousel-example" class="relative w-full hidden">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+      <!-- Item 1 -->
+      <div id="carousel-item-1" class="hidden duration-700 ease-in-out">
+        <img src="https://picsum.photos/seed/picsum/200/300"
+          class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
+      </div>
+    </div>
+  </div>
   <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1">
     <button
       class="bg-yellow-500 text-white active:bg-yellow-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none hover:bg-yellow-400 focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
@@ -540,8 +550,9 @@
     const start = async function () {
       const news = await read();
       // console.table(news)
-      console.log('complete read')
+      // console.log('complete read')
       news.forEach(item => {
+        // console.log('item', item)
         var images = "";//
         if (item.images && item.images.length) {
           if (item.images.length === 1) {
@@ -549,10 +560,10 @@
             item.images.forEach(img => images += '<img src="' + img + '" class="w-full" />')
           } else {
             var carouselImg = ''
-            /*
-             item.images.forEach(img => carouselImg += '<div class="hidden duration-700 ease-in-out" data-carousel-item><img src="' + img + '" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></div>')
- 
-             images = '<div id="default-carousel" class="relative w-full " data-carousel="slide">\
+
+            item.images.forEach((img, i) => carouselImg += '<div id="carousel-item-' + item.objectId + i + '" class="hidden duration-700 ease-in-out" data-carousel-item><img src="' + img + '" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></div>')
+
+            images = '<div id="carousel-' + item.objectId + '" class="relative w-full " data-carousel="slide">\
                <div class="relative h-40 overflow-hidden rounded-lg md:h-40">'+ carouselImg + '</div>\
            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>\
              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">\
@@ -574,33 +585,7 @@
                <span class="sr-only">Next</span>\
              </span>\
            </button>\
-         </div>';*/
-            carouselImg = `
-              <div style="background-color: orange;" class="carousel-item">
-                <img src="https://parse3.infowin.com.tw/parse/files/myappID/3dedee31180c7f8f60fcef794e3b28f5_19-14.jpg"
-                  class=" w-full" alt="...">
-              </div>
-              <div style="background-color: greenyellow;" class="carousel-item">
-                <img src="https://parse3.infowin.com.tw/parse/files/myappID/16b5bf7fa7587b20cc23e3572e53efc6_19-11.jpg"
-                  class="w-full " alt="...">
-              </div>
-              <div style="background-color: orange;" class="carousel-item">
-                <img src="https://parse3.infowin.com.tw/parse/files/myappID/3dedee31180c7f8f60fcef794e3b28f5_19-14.jpg"
-                  class=" w-full" alt="...">
-              </div>
-              <div style="background-color: greenyellow;" class="carousel-item">
-                <img src="https://parse3.infowin.com.tw/parse/files/myappID/16b5bf7fa7587b20cc23e3572e53efc6_19-11.jpg"
-                  class="w-full " alt="...">
-              </div>`;
-
-            images = ` <div class="carousel">
-           `+ carouselImg + `
-            <div class="carousel-controls">
-              <span class="prev"></span>
-              <span class="next"></span>
-            </div>
-            <div class="carousel-indicators"></div>
-          </div>`
+         </div>';
           }
         }
         // console.log(item)
@@ -625,10 +610,25 @@
         </div>\
       </div> ')
       });
-      $.getScript("infinite-carousel-autoplay.js", function () {
-        // $.getScript("https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js", function () {
-        console.log('load js')
-      });
+      // $.getScript("https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js", function () {
+      //   // $.getScript("https://aiaso.gr.jp/admin/infinite-carousel-autoplay.js", function () {
+      //   console.log('load js')
+      // });
+      news.forEach(item => {
+        if (item.images && item.images.length && item.images.length > 1) {
+
+          const Carousel = window.Carousel;
+          // console.log(Carousel)
+          const carouselElement = document.getElementById('carousel - ' + item.objectId);
+          const items = item.images.map((img, i) => ({
+            position: i,
+            el: document.getElementById('carousel-item-' + item.objectId + i),
+          }))
+          console.log(items)
+          Carousel(carouselElement, items)
+        }
+      })
+
     }
     start();
 
@@ -675,54 +675,6 @@
 
   <!-- news start -->
   <div id="news">
-    <!-- <div id="newsid-2YH4lVxYkJ" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1">
-      <div class="grid sm:grid-cols-6 gap-3">
-        <div class="sm:col-span-2">
-          <div class="carousel">
-            <div class="carousel-inner">
-              <div style="background-color: orange;" class="carousel-item">
-                <img src="https://parse3.infowin.com.tw/parse/files/myappID/3dedee31180c7f8f60fcef794e3b28f5_19-14.jpg"
-                  class=" w-full" alt="...">
-              </div>
-              <div style="background-color: greenyellow;" class="carousel-item">
-                <img src="https://parse3.infowin.com.tw/parse/files/myappID/16b5bf7fa7587b20cc23e3572e53efc6_19-11.jpg"
-                  class="w-full " alt="...">
-              </div>
-              <div style="background-color: orange;" class="carousel-item">
-                <img src="https://parse3.infowin.com.tw/parse/files/myappID/3dedee31180c7f8f60fcef794e3b28f5_19-14.jpg"
-                  class=" w-full" alt="...">
-              </div>
-              <div style="background-color: greenyellow;" class="carousel-item">
-                <img src="https://parse3.infowin.com.tw/parse/files/myappID/16b5bf7fa7587b20cc23e3572e53efc6_19-11.jpg"
-                  class="w-full " alt="...">
-              </div>
-            </div>
-            <div class="carousel-controls">
-              <span class="prev"></span>
-              <span class="next"></span>
-            </div>
-            <div class="carousel-indicators"></div>
-          </div>
-        </div>
-        <div class="sm:col-span-4">
-          <div class="grid grid-flow-col gap-0 mb-2">
-            <div class="bg-[#7F7F7F] text-white col-span-1 text-center p-1">PICK UP</div>
-            <div class="bg-white col-span-5 p-1 italic">test</div>
-          </div>
-          <div class="bg-[#7F7F7F] bg-opacity-50 text-white p-2 text-sm">
-            <p>test123</p>
-            <div class="text-black text-right mt-2"></div>
-          </div>
-          <div class="mt-3 text-right"> <button id="newsedit-2YH4lVxYkJ"
-              data-id="images%5B%5D=https%3A%2F%2Fparse3.infowin.com.tw%2Fparse%2Ffiles%2FmyappID%2F3dedee31180c7f8f60fcef794e3b28f5_19-14.jpg&amp;images%5B%5D=https%3A%2F%2Fparse3.infowin.com.tw%2Fparse%2Ffiles%2FmyappID%2F16b5bf7fa7587b20cc23e3572e53efc6_19-11.jpg&amp;title=test&amp;context=%3Cp%3Etest123%3C%2Fp%3E&amp;publishDate=&amp;createdAt=2024-10-11T06%3A25%3A28.730Z&amp;updatedAt=2024-10-11T06%3A25%3A28.730Z&amp;objectId=2YH4lVxYkJ"
-              type="submit"
-              class="ml-auto rounded-md bg-yellow-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-yellow-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
-              onclick="toggleModal('modal-id', '2YH4lVxYkJ');">編集</button> <button type="submit"
-              class="ml-auto rounded-md bg-rose-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-rose-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-600"
-              onclick="del('2YH4lVxYkJ'); ">削除</button> </div>
-        </div>
-      </div>
-    </div> -->
   </div>
   <!-- news end -->
 
@@ -773,7 +725,7 @@
   <!-- footer end -->
   <script src="../main.js"></script>
   <!-- <script src="infinite-carousel-autoplay.js"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 </body>
 
 </html>
