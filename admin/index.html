@@ -18,18 +18,12 @@
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
   <script src="parse.js"></script>
-  <!-- 
-  <script>
-    Parse.initialize('myappID', 'infowin');
-    Parse.serverURL = 'https://parse3.infowin.com.tw/parse';
-  </script> -->
   <style>
     body {
       font-family: 'Noto Sans JP', sans-serif;
     }
   </style>
   <link rel="stylesheet" href="../main.css">
-  <link rel="stylesheet" href="infinite-carousel-autoplay.css">
 </head>
 
 <body class="">
@@ -550,9 +544,7 @@
     const start = async function () {
       const news = await read();
       // console.table(news)
-      // console.log('complete read')
       news.forEach(item => {
-        // console.log('item', item)
         var images = "";//
         if (item.images && item.images.length) {
           if (item.images.length === 1) {
@@ -560,7 +552,6 @@
             item.images.forEach(img => images += '<img src="' + img + '" class="w-full" />')
           } else {
             var carouselImg = ''
-
             item.images.forEach((img, i) => carouselImg += '<div id="carousel-item-' + item.objectId + i + '" class="hidden duration-700 ease-in-out" data-carousel-item><img src="' + img + '" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></div>')
 
             images = '<div id="carousel-' + item.objectId + '" class="relative w-full " data-carousel="slide">\
@@ -588,8 +579,6 @@
          </div>';
           }
         }
-        // console.log(item)
-        // console.log(jQuery.param(item))
 
         $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1">\
         <div class= "grid sm:grid-cols-6 gap-3" >\
@@ -672,10 +661,8 @@
 
     // toggleModal('modal-id');
   </script>
-
   <!-- news start -->
-  <div id="news">
-  </div>
+  <div id="news"></div>
   <!-- news end -->
 
   <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1 mt-4">
@@ -724,7 +711,6 @@
   </div>
   <!-- footer end -->
   <script src="../main.js"></script>
-  <!-- <script src="infinite-carousel-autoplay.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 </body>
 
