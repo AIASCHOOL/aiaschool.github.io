@@ -26,6 +26,7 @@
     }
   </style>
   <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../gt.css" />
 </head>
 
 <body class="">
@@ -241,6 +242,16 @@
     </div>
   </div>
   <!-- news start -->
+  <div id="carousel-example" class="relative w-full hidden">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+      <!-- Item 1 -->
+      <div id="carousel-item-1" class="hidden duration-700 ease-in-out">
+        <img src="https://picsum.photos/seed/picsum/200/300"
+          class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
+      </div>
+    </div>
+  </div>
   <script type="text/javascript">
     const start = async function () {
       const news = await read();
@@ -280,7 +291,6 @@
         </div>'
           }
         }
-        // console.log(images)
 
         $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1">\
         <div class= "grid sm:grid-cols-6 gap-3" >\
@@ -297,12 +307,65 @@
         </div>\
       </div> ')
       });
-      $.getScript("https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js");
-    }
-    start();
-  </script>
-  <div id="news"></div>
+      translateTo('th');
+    };
 
+  </script>
+  <div id="google_translate_element" style="display: none;"></div>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'jp' }, 'google_translate_element');
+    }
+
+    function hideGoogleTranslateBar() {
+      var element = document.querySelector("#\\:1\\.container");
+      if (element) {
+        element.style.visibility = "hidden";
+      }
+    }
+
+    hideGoogleTranslateBar();
+
+    function translateTo(language) {
+      var selectField = document.querySelector("select.goog-te-combo");
+      if (selectField) {
+        selectField.value = language;
+        selectField.dispatchEvent(new Event('change'));
+        setTimeout(hideGoogleTranslateBar, 100);
+      }
+    }
+
+    function waitForElm(selector) {
+      return new Promise(resolve => {
+        if (document.querySelector(selector)) {
+          return resolve(document.querySelector(selector));
+        }
+
+        const observer = new MutationObserver(mutations => {
+          if (document.querySelector(selector)) {
+            observer.disconnect();
+            resolve(document.querySelector(selector));
+          }
+        });
+
+        // If you get "parameter 1 is not of type 'Node'" error, see https://stackoverflow.com/a/77855838/492336
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+      });
+    }
+    waitForElm('.goog-te-combo').then((elm) => {
+      // console.log('Element is ready');
+      start();
+    });
+  </script>
+
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <div id="news"></div>
   <!-- news end -->
   <!-- footer start -->
   <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1 mt-4">
