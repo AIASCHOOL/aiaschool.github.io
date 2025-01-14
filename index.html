@@ -35,8 +35,8 @@
       text-indent: revert;
     }
   </style>
-  <link rel="stylesheet" href="main.css">
-
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="gt.css" />
 </head>
 
 <body class="">
@@ -52,7 +52,7 @@
   </div>
   <!-- banner end -->
   <!-- menu start -->
-  <div class="bg-gradient-to-r from-blue-900 from-30% via-blue-400 via-50% to-blue-900 to-70%">
+  <div class="notranslate bg-gradient-to-r from-blue-900 from-30% via-blue-400 via-50% to-blue-900 to-70%">
     <header class='shadow-md '>
       <div class='flex flex-wrap justify-center px-4 py-3 relative text-sm'>
         <div id="toggle" class='flex ml-auto lg:order-1 lg:hidden mr-2 relative z-50'>
@@ -339,13 +339,45 @@
     }
     start();
   </script>
-  <div id="google_translate_element" class="w-auto lg:w-4/5 xl:w-2/3 mx-auto"></div>
+  <!-- <div id="google_translate_element" class="w-auto lg:w-4/5 xl:w-2/3 mx-auto"></div> -->
+  <div id="custom_translate_buttons">
+    <button class="notranslate" onclick="translateTo('es')">Español</button>
+    <button class="notranslate" onclick="translateTo('en')">English</button>
+    <button class="notranslate" onclick="translateTo('pt')">Português</button>
+  </div>
+  <div id="google_translate_element" style="display: none;"></div>
+
 
   <script type="text/javascript">
     function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'jp' }, 'google_translate_element');
+    }
+
+    function hideGoogleTranslateBar() {
+      var element = document.querySelector("#\\:1\\.container");
+      if (element) {
+        element.style.visibility = "hidden";
+      }
+    }
+
+    hideGoogleTranslateBar();
+
+    function translateTo(language) {
+      var selectField = document.querySelector("select.goog-te-combo");
+      console.log(selectField)
+      if (selectField) {
+        selectField.value = language;
+        selectField.dispatchEvent(new Event('change'));
+        setTimeout(hideGoogleTranslateBar, 100);
+      }
+    }
+
+  </script>
+  <!-- <script type="text/javascript">
+    function googleTranslateElementInit() {
       new google.translate.TranslateElement({ pageLanguage: 'jp', includedLanguages: 'en,ja,zh-CN,zh-TW,ko,vi,th,id' }, 'google_translate_element');
     }
-  </script>
+  </script> -->
 
   <script type="text/javascript"
     src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
