@@ -338,7 +338,6 @@
 
     function translateTo(language) {
       var selectField = document.querySelector("select.goog-te-combo");
-      console.log(selectField)
       if (selectField) {
         selectField.value = language;
         selectField.dispatchEvent(new Event('change'));

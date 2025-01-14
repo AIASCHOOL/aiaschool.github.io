@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="../gt.css" />
 </head>
 
-<body class="" onpageshow="">
+<body class="">
   <!-- banner start -->
   <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1">
     <div class="flex items-center flex-row">
@@ -332,7 +332,6 @@
 
     function translateTo(language) {
       var selectField = document.querySelector("select.goog-te-combo");
-      console.log(selectField)
       if (selectField) {
         selectField.value = language;
         selectField.dispatchEvent(new Event('change'));
