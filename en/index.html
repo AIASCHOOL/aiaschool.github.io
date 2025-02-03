@@ -257,7 +257,7 @@
   </div>
   <script type="text/javascript">
     const start = async function () {
-      console.log('start');
+      // console.log('start');
       const news = await read();
       // console.table(news)
       news.forEach(item => {
@@ -311,18 +311,18 @@
         </div>\
       </div> ')
       });
-      console.log('start translateTo');
+      // console.log('start translateTo');
 
       setTimeout(() => {
-        console.log("Delayed for 1 second.");
+        // console.log("Delayed for 1 second.");
         translateTo('en');
       }, "1000");
-      console.log('start translateTo end');
+      // console.log('start translateTo end');
     };
 
   </script>
-  <!-- <div id="google_translate_element" style="display: none;"></div> -->
-  <div id="google_translate_element" style=""></div>
+  <div id="google_translate_element" style="display: none;"></div>
+  <!-- <div id="google_translate_element" style=""></div> -->
 
   <script type="text/javascript">
     function googleTranslateElementInit() {
@@ -339,18 +339,18 @@
     // hideGoogleTranslateBar();
 
     function translateTo(language) {
-      console.log('translateTo', language);
+      // console.log('translateTo', language);
       var selectField = document.querySelector("select.goog-te-combo");
       if (selectField) {
         selectField.value = language;
         selectField.dispatchEvent(new Event('change'));
         setTimeout(hideGoogleTranslateBar, 100);
       }
-      console.log('translateTo', selectField);
+      // console.log('translateTo', selectField);
     }
 
     function waitForElm(selector) {
-      console.log('waitForElm', selector);
+      // console.log('waitForElm', selector);
       return new Promise(resolve => {
         if (document.querySelector(selector)) {
           return resolve(document.querySelector(selector));
@@ -372,7 +372,7 @@
     }
     waitForElm('.goog-te-combo').then((elm) => {
       // console.log('Element is ready');
-      console.log('Element is ready', elm);
+      // console.log('Element is ready', elm);
       start();
     });
   </script>
