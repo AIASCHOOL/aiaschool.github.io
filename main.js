@@ -37,9 +37,8 @@ toggleBtn.addEventListener('click', handleClick);
  */
 const debounce = (func, wait, immediate = true) => {
   let timeout
-  return () => {
+  return (...args) => {
     const context = this
-    const args = arguments
     const callNow = immediate && !timeout
     clearTimeout(timeout)
     timeout = setTimeout(function () {
