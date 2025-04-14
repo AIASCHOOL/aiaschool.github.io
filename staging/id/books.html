@@ -1,0 +1,633 @@
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    愛知国際学院 | 教材教具開発
+  </title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../gt.css" />
+</head>
+
+<body class="" onpageshow="translateTo('id')">
+  <!-- banner start -->
+  <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1">
+    <div class="flex items-center flex-row">
+      <div class="flex-grow "></div>
+      <img class="h-10 ml-0 mr-0 hidden md:block invisible" src="../images/35th.png" />
+      <a href="index.html" style="border: none;" class="h-10"><img class="h-10" src="../images/logo.png" /></a>
+      <a href="#" style="border: none;cursor: auto;" class="h-10"><img class="h-10" src="../images/35th.png" /></a>
+      <div class="flex-grow"></div>
+    </div>
+  </div>
+  <!-- banner end -->
+  <!-- menu start -->
+  <div class="bg-gradient-to-r from-blue-900 from-30% via-blue-400 via-50% to-blue-900 to-70%">
+    <header class='shadow-md '>
+      <div class='flex flex-wrap justify-center px-4 py-3 relative text-sm'>
+        <div id="toggle" class='flex ml-auto lg:order-1 lg:hidden mr-2 relative z-50'>
+          <button class='ml-7'>
+            <svg class="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <ul id="collapseMenu"
+          class='mx-auto lg:!flex lg:space-x-4 xl:space-x-6 max-lg:space-y-3 max-lg:hidden max-lg:w-full max-lg:my-4'>
+          <li class='max-lg:border-b max-lg:py-2'><a href='index.html'
+              class='hover:text-gray-300 text-white block'>最新ニュース</a></li>
+          <li class='group max-lg:border-b max-lg:py-2 relative'>
+            <a href='javascript:void(0)'
+              class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>学院について<svg
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block  "
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                  data-name="16" data-original="#FFFFFF" />
+              </svg>
+            </a>
+            <ul
+              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[110px] z-50'>
+              <li class='border-b py-3'>
+                <a href='about_business.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  事業概要
+                </a>
+              </li>
+              <li class='border-b pt-1 pb-3'><a href='about_facility.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  施設設備
+                </a>
+              </li>
+              <li class='pt-1 pb-1'><a href='about_publish.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  公開資料
+                </a>
+              </li>
+              <!--<li class=' pt-1 pb-1'>
+                <a href='about_teacher.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  教師陣
+                </a>
+              </li>-->
+            </ul>
+          </li>
+          <li class='max-lg:border-b max-lg:py-2'><a href='message.html'
+              class='hover:text-gray-300 text-white block'>卒業生メッセージ</a></li>
+          <li class='group max-lg:border-b max-lg:py-2 relative'>
+            <a href='javascript:void(0)'
+              class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>教育コース<svg
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block  "
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                  data-name="16" data-original="#FFFFFF" />
+              </svg>
+            </a>
+            <ul
+              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[150px] z-50'>
+              <li class='border-b py-3'>
+                <a href='course_advance.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  進学コース
+                </a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='course_junior.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>短大併修コース
+                </a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='course_tour.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>遊学研修コース
+                </a>
+              </li>
+              <li class=' pt-1 pb-1'>
+                <a href='course_lecture.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>特別講座
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class='group max-lg:border-b max-lg:py-2 relative'>
+            <a href='javascript:void(0)'
+              class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>学生生活<svg
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block  "
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                  data-name="16" data-original="#FFFFFF" />
+              </svg>
+            </a>
+            <ul
+              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[110px] z-50'>
+              <li class='border-b py-3'>
+                <a href='life_dorm.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>学生宿舎
+                </a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='life_insurance.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>学生保険
+                </a>
+              </li>
+              <li class=' pt-1 pb-1'>
+                <a href='life_visa.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>学生在留
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class='max-lg:border-b max-lg:py-2'><a href='books.html'
+              class='hover:text-gray-300 text-white block'>教育関連開発</a></li>
+          <li class='max-lg:border-b max-lg:py-2'><a href='access.html'
+              class='hover:text-gray-300 text-white block'>アクセス</a></li>
+        </ul>
+        <ul id="collapseMenu2" class=' max-lg:mt-1'>
+          <li class='group relative'>
+            <a href='javascript:void(0)' class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>
+              <svg class="w-5 h-5" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"
+                style="enable-background:new 0 0 120 120" xml:space="preserve">
+                <switch>
+                  <g>
+                    <path
+                      d="M60 120C26.9 120 0 93.1 0 60S26.9 0 60 0s60 26.9 60 60-26.9 60-60 60zM60 5C29.7 5 5 29.7 5 60s24.7 55 55 55 55-24.7 55-55S90.3 5 60 5z" />
+                    <path
+                      d="M60 120c-19.3 0-34.4-26.4-34.4-60S40.7 0 60 0s34.4 26.4 34.4 60-15.1 60-34.4 60zM60 5C43.8 5 30.5 29.7 30.5 60s13.2 55 29.5 55 29.5-24.7 29.5-55S76.2 5 60 5z" />
+                    <path d="M12.2 25.6h95.6v5H12.2zM12.2 89.5h95.6v5H12.2zM2.5 57.5h115v5H2.5z" />
+                    <path d="M57.5 2.5h5v115h-5z" />
+                  </g>
+                </switch>
+              </svg>
+            </a>
+            <ul
+              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 lg:top-5 max-md:top-5 -left-28 min-w-[130px] z-50 notranslate'>
+              <li class='border-b py-3'>
+                <a href='../index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>日本語</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../en/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>English</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../cn/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>中国語（簡体）</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../tw/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>中国語（繁体）</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../ko/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>한국어</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../vi/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Tiếng
+                  Việt</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../th/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>แบบไทยbahasa</a>
+              </li>
+              <li class='pt-1 pb-1'>
+                <a href='../id/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Indonesia</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </header>
+  </div>
+  <!-- menu end -->
+  <!-- required classes: overflow-hidden  -->
+  <div class="overflow-hidden text-xs bg-red-400 text-white">
+    <!--  required classes: marquee inline-flex max-w-full  -->
+    <ul class="marquee py-2 inline-flex space-x-4 whitespace-nowrap max-w-full"
+      x-data="Marquee({speed: 0.2, spaceX: 4})">
+      <!-- <li class="underline">Element 1</li> -->
+      <li>～日本への進学、就労・就職、短期日本語研修・日本文化体験などの受入れ可能～</li>
+    </ul>
+  </div>
+  <!-- title bar start -->
+  <div class="relative flex mx-auto min-h-28 max-h-32">
+    <img class="w-full object-cover object-center" src="../images/13-BOOKS_TOOLS.jpg" />
+    <div class="absolute top-8 sm:top-10 right-0 left-0 flex items-center justify-center ">
+      <h3 class="text-white text-3xl font-bold">教材教具開発</h3>
+    </div>
+    <!-- <div class="absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center ">
+      <p class="text-white italic text-xs sm:text-base">事業主体 / 事業項目 / 歴史沿革 / 政策方針 / 教育目標 / 教育業績 / 関連事業</p>
+    </div> -->
+  </div>
+  <!-- <div>
+    <img class="w-full" src="../images/business_pics.png" />
+  </div> -->
+  <!-- title bar end -->
+  <!-- main start -->
+  <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1">
+    <div class="bg-[#FFF2CC] bg-opacity-70 p-5 text-sm leading-8 mb-5 grid sm:grid-cols-3 gap-4">
+      <div class="sm:col-span-2">
+        本学院は学生の学習の効率化を図るために、校内の教員及び外部の提携する大学と共同して、独自の教材教具の開発に努めています。過去日本語教育振興協会の教材開発協力校となった経験があり、日本留学試験模擬問題集EJUシリーズ及びその他多数の参考書の編集、出版をしています。特に先端技術の応用できる教材教具の開発、採用に力を入れています。
+      </div>
+      <img src="../images/13/pics/13-p1.png" class="h-44 mx-5" />
+    </div>
+    <div class="h-10 relative">
+      <img src="../images/13/BUTTON-13-7_subtitle.png" class="h-full" />
+      <div class="absolute top-2 left-7  italic text-lg font-serif font-bold">音声ペンの導入</div>
+    </div>
+    <div class="bg-[#FFF2CC] bg-opacity-70 my-2 p-5 text-sm leading-6">
+      <div class="grid md:grid-cols-2 gap-6 md:gap-4 mb-5">
+        <div class=""><span class="">
+            本学院は台湾の日本語教育関連書籍の大手出版社である「大新書局」と提携して、積極的に音声ペンを活用できる教材教具を導入しています。
+          </span>
+          <!-- <img src="../images/13/pics/13-p3.png" class="w-72 mx-5" /> -->
+          <img src="../images/13/pics/13-p2.png" class="h-44 mx-5" />
+        </div>
+        <div class="">
+          <!-- <img src="../images/13/pics/13-p2.png" class="h-44 mx-5" /> -->
+          <img src="../images/13/pics/13-p4.png" class="h-44 mx-5" />
+        </div>
+      </div>
+      <div class="clear-both"></div>
+    </div>
+    <div class="h-10 relative">
+      <img src="../images/13/BUTTON-13-12_subtitle.png" class="h-full" />
+      <div class="absolute top-2 left-7 italic text-lg font-serif font-bold">日中英イラスト会話辞典</div>
+    </div>
+    <div class="bg-[#FFF2CC] bg-opacity-70 my-2 p-5 text-sm leading-6">
+      <div class="flex">
+        <div class="flex-shrink-0">
+          <img src="../images/13/books/book_d_1.png" class="w-28" />
+        </div>
+        <div class="ml-3">
+          <div class="text-[1.1em] mb-2 extrabold">日中英イラスト会話辞典</div>
+          <span class="bg-slate-400 text-white mr-1">作者</span> 愛知国際学院<br />
+          <span class="bg-slate-400 text-white mr-1">定価</span> ￥2,000<br />
+          <div class="h-3"></div>
+          <span class="">日常最も使用頻度の高い1,000語以上を収録し、初心者向けに編集したものです。見出し語ごとに例文2文とその英語訳と中国語訳を示し、その状況を表したイラストがついています。</span>
+        </div>
+      </div>
+    </div>
+    <div class="h-10 relative">
+      <img src="../images/13/BUTTON-13-12_subtitle.png" class="h-full" />
+      <div class="absolute top-2 left-7  italic text-lg font-serif font-bold">日本語留学試験模擬問題集</div>
+    </div>
+    <div class="bg-[#FFF2CC] bg-opacity-70 my-2 p-5 text-sm leading-6">
+      <div class="grid md:grid-cols-2 gap-6 md:gap-4 mb-5">
+        <div class="">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <img src="../images/13/books/book_a_1.png" class="w-28" />
+            </div>
+            <div class="ml-3">
+              <div class="text-[1.1em] mb-2 extrabold">EJUシリーズ 日本留学試験対応 日本語 聴解トレーニング</div>
+              <span class="bg-slate-400 text-white mr-1">作者</span> 愛知国際学院<br />
+              <span class="bg-slate-400 text-white mr-1">定価</span> ￥2,200<br />
+              <div class="h-3"></div>
+              <span
+                class="">短時間で効果的に力が伸ばせるように一問一問に練習問題をつけ、設問に答えたり書き込んだりする活動を通して、キーワードを覚えたり、考える力を身につけたりすることができるようになっています。</span>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <img src="../images/13/books/book_a_2.png" class="w-28" />
+            </div>
+            <div class="ml-3">
+              <div class="text-[1.1em] mb-2 extrabold">EJUシリーズ 日本留学試験対応 日本語 読解トレーニング</div>
+              <span class="bg-slate-400 text-white mr-1">作者</span> 愛知国際学院<br />
+              <span class="bg-slate-400 text-white mr-1">定価</span> ￥1,900<br />
+              <div class="h-3"></div>
+              <span
+                class="">短時間で効果的に力が伸ばせるように一問一問に練習問題をつけ、設問に答えたり書き込んだりする活動を通して、キーワードを覚えたり、考える力を身につけたりすることができるようになっています。</span>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <img src="../images/13/books/book_a_3.png" class="w-28" />
+            </div>
+            <div class="ml-3">
+              <div class="text-[1.1em] mb-2 extrabold">EJUシリーズ 日本留学試験対応 日本語 聴読解トレーニング</div>
+              <span class="bg-slate-400 text-white mr-1">作者</span> 愛知国際学院<br />
+              <span class="bg-slate-400 text-white mr-1">定価</span> ￥2,100<br />
+              <div class="h-3"></div>
+              <span
+                class="">短時間で効果的に力が伸ばせるように一問一問に練習問題をつけ、設問に答えたり書き込んだりする活動を通して、キーワードを覚えたり、考える力を身につけたりすることができるようになっています。</span>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <img src="../images/13/pics/13-p5.png" class="h-36 mx-12 mt-6" />
+        </div>
+        <div class="">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <img src="../images/13/books/book_a_5.png" class="w-28" />
+            </div>
+            <div class="ml-3">
+              <div class="text-[1.1em] mb-2 extrabold">EJUシリーズ 日本留学試験対応 数学コース2 模擬試験（解答・解説・用語対照表付き）</div>
+              <span class="bg-slate-400 text-white mr-1">作者</span> 愛知国際学院<br />
+              <span class="bg-slate-400 text-white mr-1">定価</span> ￥2,000<br />
+              <div class="h-3"></div>
+              <span
+                class="">日本留学試験の対策としてはもちろん、日本の高校数学の学習内容を把握するのにも役立ちます。そのために新しいシラバスもあわせて掲載してあります。また母国語とは表記が異なる専門用語の確認のためにも巻末には用語の和英中韓対照表もついています。</span>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <img src="../images/13/books/book_a_6.png" class="w-28" />
+            </div>
+            <div class="ml-3">
+              <div class="text-[1.1em] mb-2 extrabold">EJUシリーズ 日本留学試験対応 物理 模擬試験（解答・解説・用語対照表付き）</div>
+              <span class="bg-slate-400 text-white mr-1">作者</span> 愛知国際学院<br />
+              <span class="bg-slate-400 text-white mr-1">定価</span> ￥2,000<br />
+              <div class="h-3"></div>
+              <span
+                class="">日本留学試験の対策としてはもちろん、日本の高校物理の学習内容を把握するのにも役立ちます。そのために新しいシラバスもあわせて掲載してあります。また母国語とは表記が異なる専門用語の確認のためにも巻末には用語の和英中韓対照表もついています。</span>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <img src="../images/13/books/book_a_7.png" class="w-28" />
+            </div>
+            <div class="ml-3">
+              <div class="text-[1.1em] mb-2 extrabold">EJUシリーズ 日本留学試験対応 化学 模擬試験（解答・解説・用語対照表付き）</div>
+              <span class="bg-slate-400 text-white mr-1">作者</span> 愛知国際学院<br />
+              <span class="bg-slate-400 text-white mr-1">定価</span> ￥2,000<br />
+              <div class="h-3"></div>
+              <span
+                class="">日本留学試験の対策としてはもちろん、日本の高校化学の学習内容を把握するのにも役立ちます。そのために新しいシラバスもあわせて掲載してあります。また母国語とは表記が異なる専門用語の確認のためにも巻末には用語の和英中韓対照表もついています。</span>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <img src="../images/13/books/book_a_8.png" class="w-28" />
+            </div>
+            <div class="ml-3">
+              <div class="text-[1.1em] mb-2 extrabold">EJUシリーズ 日本留学試験対応 生物 模擬試験（解答・解説・用語対照表付き）</div>
+              <span class="bg-slate-400 text-white mr-1">作者</span> 愛知国際学院<br />
+              <span class="bg-slate-400 text-white mr-1">定価</span> ￥2,000<br />
+              <div class="h-3"></div>
+              <span
+                class="">日本留学試験の対策としてはもちろん、日本の高校生物の学習内容を把握するのにも役立ちます。そのために新しいシラバスもあわせて掲載してあります。また母国語とは表記が異なる専門用語の確認のためにも巻末には用語の和英中韓対照表もついています。</span>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <img src="../images/13/books/book_a_9.png" class="w-28" />
+            </div>
+            <div class="ml-3">
+              <div class="text-[1.1em] mb-2 extrabold">EJUシリーズ 日本留学試験対応 総合科目 模擬試験（用語対照表付き）</div>
+              <span class="bg-slate-400 text-white mr-1">作者</span> 愛知国際学院<br />
+              <span class="bg-slate-400 text-white mr-1">定価</span> ￥2,000<br />
+              <div class="h-3"></div>
+              <span
+                class="">日本留学試験の対策としてはもちろん、日本の高校総合科目の学習内容を把握するのにも役立ちます。そのために新しいシラバスもあわせて掲載してあります。また母国語とは表記が異なる専門用語の確認のためにも巻末には用語の和英中韓対照表もついています。</span>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <img src="../images/13/books/book_a_4.png" class="w-28" />
+            </div>
+            <div class="ml-3">
+              <div class="text-[1.1em] mb-2 extrabold">EJUシリーズ 日本留学試験対応 数学コース1 模擬試験（解答・解説・用語対照表付き）</div>
+              <span class="bg-slate-400 text-white mr-1">作者</span> 愛知国際学院<br />
+              <span class="bg-slate-400 text-white mr-1">定価</span> ￥2,000<br />
+              <div class="h-3"></div>
+              <span
+                class="">本留学試験の対策としてはもちろん、日本の高校数学の学習内容を把握するのにも役立ちます。そのために新しいシラバスもあわせて掲載してあります。また母国語とは表記が異なる専門用語の確認のためにも巻末には用語の和英中韓対照表もついています。</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="h-10 relative">
+      <img src="../images/13/BUTTON-13-12_subtitle.png" class="h-full" />
+      <div class="absolute top-2 left-7  italic text-lg font-serif font-bold">日本語留学ガイドシリーズ</div>
+    </div>
+    <div class="bg-[#FFF2CC] bg-opacity-70 my-2 p-5 text-sm leading-6">
+      <div class="grid md:grid-cols-2 gap-6 md:gap-4 mb-5">
+        <div class="">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <img src="../images/13/books/book_b_1.png" class="w-28" />
+            </div>
+            <div class="ml-3">
+              <div class="text-[1.1em] mb-2 extrabold">日本留学シリーズ 日本留学ガイド 基礎文法</div>
+              <span class="bg-slate-400 text-white mr-1">作者</span> 愛知国際学院<br />
+              <span class="bg-slate-400 text-white mr-1">定価</span> ￥2,200<br />
+              <div class="h-3"></div>
+              <span
+                class="">日常最も使用頻度の高い1,000語以上を収録し、初心者向けに編集したものです。見出し語ごとに例文2文とその英語訳と中国語訳を示し、その状況を表したイラストがついています。</span>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <img src="../images/13/books/book_b_2.png" class="w-28" />
+            </div>
+            <div class="ml-3">
+              <div class="text-[1.1em] mb-2 extrabold">日本留学シリーズ 日本留学ガイド 実用会話・豆知識編</div>
+              <span class="bg-slate-400 text-white mr-1">作者</span> 愛知国際学院<br />
+              <span class="bg-slate-400 text-white mr-1">定価</span> ￥2,200<br />
+              <div class="h-3"></div>
+              <span
+                class="">N5レベルをマスターして、日本へ留学する学習者を対象とし、日本に留学後、すぐに直面する生活の色々な場面で使われる自然な日本語を学ぶことができ、留学生活において不可欠な知識を豆知識としてもりこんでいます。留学生が安心して留学生活を送るのに役立ちます。</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6 md:gap-4 mb-5">
+        <div class="">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <img src="../images/13/books/book_b_3.png" class="w-28" />
+            </div>
+            <div class="ml-3">
+              <div class="text-[1.1em] mb-2 extrabold">日本留学シリーズ 日本留学ガイド 模擬試験 N5</div>
+              <span class="bg-slate-400 text-white mr-1">作者</span> 愛知国際学院<br />
+              <span class="bg-slate-400 text-white mr-1">定価</span> ￥2,200<br />
+              <div class="h-3"></div>
+              <span class="">N5レベルをマスターして、日本へ留学する学習者を対象とし、試験前の対策ができ、N5レベルが理解できているかどうかをチェックすることができます。</span>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <img src="../images/13/pics/13-p5.png" class="h-36 mx-12 mt-6" />
+        </div>
+      </div>
+    </div>
+    <div class="h-10 relative">
+      <img src="../images/13/BUTTON-13-12_subtitle.png" class="h-full" />
+      <div class="absolute top-2 left-7  italic text-lg font-serif font-bold">日本語能力試験予想問題集</div>
+    </div>
+    <div class="bg-[#FFF2CC] bg-opacity-70 my-2 p-5 text-sm leading-6">
+      <div class="grid md:grid-cols-2 gap-6 md:gap-4 mb-5">
+        <div class="">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <img src="../images/13/books/book_c_1.png" class="w-28" />
+            </div>
+            <div class="ml-3">
+              <div class="text-[1.1em] mb-2 extrabold">新日本語能力試験 日本語予想問題集 N4</div>
+              <span class="bg-slate-400 text-white mr-1">作者</span> 愛知国際学院<br />
+              <span class="bg-slate-400 text-white mr-1">定価</span> ￥1,800<br />
+              <div class="h-3"></div>
+              <span class="">新形式の日本語能力試験対策として、新しく問われる分野と問題形式に対応した模擬試験形式の問題集です。</span>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <img src="../images/13/books/book_c_2.png" class="w-28" />
+            </div>
+            <div class="ml-3">
+              <div class="text-[1.1em] mb-2 extrabold">新日本語能力試験 日本語予想問題集 N5</div>
+              <span class="bg-slate-400 text-white mr-1">作者</span> 愛知国際学院<br />
+              <span class="bg-slate-400 text-white mr-1">定価</span> ￥1,800<br />
+              <div class="h-3"></div>
+              <span class="">新形式の日本語能力試験対策として、新しく問われる分野と問題形式に対応した模擬試験形式の問題集です。</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- main end -->
+  <!-- footer start -->
+  <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1 mt-4">
+    <div class="w-full md:w-4/5 lg:w-3/5 xl:w-1/2 2xl:w-2/5 mx-auto p-5 text-xs">
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-4 text-stone-800">
+        <div class="">お問い合わせ<br />
+          TEL: (052)262-3366<br />
+          FAX: (052)262-3369<br />
+          EMAIL: school@aiaso.gr.jp
+        </div>
+        <div class="">受付時間：9:00 - 17:30<br />
+          休日：土曜日、日曜日、祝日</div>
+        <div class="col-span-2 sm:col-span-1">住所：〒460-0007<br />
+          愛知県名古屋市中区新栄1-30-3<br />
+          愛知県名古屋市中区新栄1-30-29
+        </div>
+      </div>
+      <hr class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700">
+      <div class="block sm:hidden mb-2 text-stone-800">SNS連絡方法：</div>
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-5 text-stone-800">
+        <div class="w-24 hidden sm:block">SNS連絡方法：</div>
+        <div class="flex">
+          <img src="../images/skype.png" class="size-6 m-1" />
+          <div><a href="skype:aiasoso?chat">SKYPE<br />aiasoso</a></div>
+        </div>
+        <div class="flex">
+          <img src="../images/line.png" class="size-6 m-1" />
+          <div>LINE<br />
+            aiajapanese</div>
+        </div>
+        <div class="flex">
+          <img src="../images/wechat.png" class="size-6 m-1" />
+          <div><a href="weixin://dl/chat?aia2623366">WeChat<br />aia2623366</a></div>
+        </div>
+        <div class="flex">
+          <img src="../images/fb.svg.webp" class="size-6 m-1" />
+          <div><a href="https://www.facebook.com/AIANagoya/" target="_blank">Facebook<br />AIANagoya</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center my-2"><a href="index.html">HOME</a> | <a href="sitemap.html">サイトマップ</a> | <a
+          href="policy.html">個人情報保護に関する方針</a> | <a href="privacy.html">プライバシーポリシー</a></div>
+      <div class="text-center my-2">Copyright© Aichi International Academy All Rights Reserved.</div>
+    </div>
+  </div>
+  <!-- footer end -->
+  <script src="../main.js"></script>
+  <div id="google_translate_element" style="display: none;"></div>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'jp' }, 'google_translate_element');
+    }
+
+    function hideGoogleTranslateBar() {
+      var element = document.querySelector("#\\:1\\.container");
+      if (element) {
+        element.style.visibility = "hidden";
+      }
+    }
+
+    hideGoogleTranslateBar();
+
+    function translateTo(language) {
+      var selectField = document.querySelector("select.goog-te-combo");
+      if (selectField) {
+        selectField.value = language;
+        selectField.dispatchEvent(new Event('change'));
+        setTimeout(hideGoogleTranslateBar, 100);
+      }
+    }
+
+    function waitForElm(selector) {
+      return new Promise(resolve => {
+        if (document.querySelector(selector)) {
+          return resolve(document.querySelector(selector));
+        }
+
+        const observer = new MutationObserver(mutations => {
+          if (document.querySelector(selector)) {
+            observer.disconnect();
+            resolve(document.querySelector(selector));
+          }
+        });
+
+        // If you get "parameter 1 is not of type 'Node'" error, see https://stackoverflow.com/a/77855838/492336
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+      });
+    }
+    waitForElm('.goog-te-combo').then((elm) => {
+      translateTo('id');
+    });
+  </script>
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

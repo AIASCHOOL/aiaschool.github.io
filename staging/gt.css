@@ -1,0 +1,35 @@
+/*Translation CSS*/
+/* Copy this at the end of your custom CSS section in your funnel/site */
+/* Hide the outer container of the Google Translate toolbar */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+}
+
+#custom_translate_buttons {
+    position: relative;
+    z-index: 1000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#custom_translate_buttons button {
+    padding: 5px 15px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--montserrat);
+    background-color: #c69009;
+    color: #000;
+    cursor: pointer;
+}
+
+#custom_translate_buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Adjust the body top margin (change 0px to your site's original top margin if it's not 0) */
+body {
+    top: 0px !important;
+}

@@ -1,0 +1,512 @@
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    愛知国際学院 | 学生宿舎
+  </title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="">
+  <!-- banner start -->
+  <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1">
+    <div class="flex items-center flex-row">
+      <div class="flex-grow "></div>
+      <img class="h-10 ml-0 mr-0 hidden md:block invisible" src="images/35th.png" />
+      <a href="index.html" style="border: none;" class="h-10"><img class="h-10" src="../images/logo.png" /></a>
+      <a href="#" style="border: none;cursor: auto;" class="h-10"><img class="h-10" src="../images/35th.png" /></a>
+      <div class="flex-grow"></div>
+    </div>
+  </div>
+  <!-- banner end -->
+  <!-- menu start -->
+  <div class="bg-gradient-to-r from-blue-900 from-30% via-blue-400 via-50% to-blue-900 to-70%">
+    <header class='shadow-md '>
+      <div class='flex flex-wrap justify-center px-4 py-3 relative text-sm'>
+        <div id="toggle" class='flex ml-auto lg:order-1 lg:hidden mr-2 relative z-50'>
+          <button class='ml-7'>
+            <svg class="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <ul id="collapseMenu"
+          class='mx-auto lg:!flex lg:space-x-4 xl:space-x-6 max-lg:space-y-3 max-lg:hidden max-lg:w-full max-lg:my-4'>
+          <li class='max-lg:border-b max-lg:py-2'><a href='index.html'
+              class='hover:text-gray-300 text-white block'>Tin tức mới nhất</a></li>
+          <li class='group max-lg:border-b max-lg:py-2 relative'>
+            <a href='javascript:void(0)'
+              class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>Giới thiệu về học viện<svg
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block  "
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                  data-name="16" data-original="#FFFFFF" />
+              </svg>
+            </a>
+            <ul
+              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[110px] z-50'>
+              <li class='border-b py-3'>
+                <a href='about_business.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  Tổng quan về Doanh nghiệp
+                </a>
+              </li>
+              <li class='border-b pt-1 pb-3'><a href='about_facility.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  Trang thiết bị
+                </a>
+              </li>
+              <li class='pt-1 pb-1'><a href='about_publish.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  tài liệu
+                </a>
+              </li>
+              <!--<li class=' pt-1 pb-1'>
+                <a href='about_teacher.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  教師陣
+                </a>
+              </li>-->
+            </ul>
+          </li>
+          <li class='max-lg:border-b max-lg:py-2'><a href='message.html'
+              class='hover:text-gray-300 text-white block'>Thông điệp từ cựu sinh viên</a></li>
+          <li class='group max-lg:border-b max-lg:py-2 relative'>
+            <a href='javascript:void(0)'
+              class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>Khóa học giáo dục<svg
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block  "
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                  data-name="16" data-original="#FFFFFF" />
+              </svg>
+            </a>
+            <ul
+              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[150px] z-50'>
+              <li class='border-b py-3'>
+                <a href='course_advance.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  Khóa học lên cao
+                </a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='course_junior.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Chương trình học song hành trường tiếng và Cao Đẳng
+                </a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='course_tour.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Khóa học du lịch và học ngắn hạn
+                </a>
+              </li>
+              <li class=' pt-1 pb-1'>
+                <a href='course_lecture.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Buổi giảng đặc biệt
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class='group max-lg:border-b max-lg:py-2 relative'>
+            <a href='javascript:void(0)'
+              class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>Cuộc sống sinh viên<svg
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block  "
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                  data-name="16" data-original="#FFFFFF" />
+              </svg>
+            </a>
+            <ul
+              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[110px] z-50'>
+              <li class='border-b py-3'>
+                <a href='life_dorm.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Ký túc xá sinh viên
+                </a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='life_insurance.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Bảo hiểm Sinh viên
+                </a>
+              </li>
+              <li class=' pt-1 pb-1'>
+                <a href='life_visa.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Lưu trú
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class='max-lg:border-b max-lg:py-2'><a href='books.html'
+              class='hover:text-gray-300 text-white block'>Phát triển giáo trình</a></li>
+          <li class='max-lg:border-b max-lg:py-2'><a href='access.html'
+              class='hover:text-gray-300 text-white block'>Địa chỉ/Truy cập</a></li>
+        </ul>
+        <ul id="collapseMenu2" class=' max-lg:mt-1'>
+          <li class='group relative'>
+            <a href='javascript:void(0)' class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>
+              <svg class="w-5 h-5" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"
+                style="enable-background:new 0 0 120 120" xml:space="preserve">
+                <switch>
+                  <g>
+                    <path
+                      d="M60 120C26.9 120 0 93.1 0 60S26.9 0 60 0s60 26.9 60 60-26.9 60-60 60zM60 5C29.7 5 5 29.7 5 60s24.7 55 55 55 55-24.7 55-55S90.3 5 60 5z" />
+                    <path
+                      d="M60 120c-19.3 0-34.4-26.4-34.4-60S40.7 0 60 0s34.4 26.4 34.4 60-15.1 60-34.4 60zM60 5C43.8 5 30.5 29.7 30.5 60s13.2 55 29.5 55 29.5-24.7 29.5-55S76.2 5 60 5z" />
+                    <path d="M12.2 25.6h95.6v5H12.2zM12.2 89.5h95.6v5H12.2zM2.5 57.5h115v5H2.5z" />
+                    <path d="M57.5 2.5h5v115h-5z" />
+                  </g>
+                </switch>
+              </svg>
+            </a>
+            <ul
+              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 lg:top-5 max-md:top-5 -left-28 min-w-[130px] z-50'>
+              <li class='border-b py-3'>
+                <a href='index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>日本語</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='en/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>English</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='cn/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>中国語（簡体）</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='tw/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>中国語（繁体）</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='ko/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>한국어</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='vi/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Tiếng
+                  Việt</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='th/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>แบบไทยbahasa</a>
+              </li>
+              <li class='pt-1 pb-1'>
+                <a href='id/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Indonesia</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </header>
+  </div>
+  <!-- menu end -->
+  <!-- required classes: overflow-hidden  -->
+  <div class="overflow-hidden text-xs bg-red-400 text-white">
+    <!--  required classes: marquee inline-flex max-w-full  -->
+    <ul class="marquee py-2 inline-flex space-x-4 whitespace-nowrap max-w-full"
+      x-data="Marquee({speed: 0.2, spaceX: 4})">
+      <!-- <li class="underline">Element 1</li> -->
+      <li>～Tiếp nhận học viên muốn học lên cao , tìm việc , đi làm tại Nhật Bản, đào tạo tiếng Nhật ngắn hạn, trải nghiệm văn hóa Nhật Bản tại Học viện Quốc tế Aichi～</li>
+    </ul>
+  </div>
+  <!-- title bar start -->
+  <div class="relative flex mx-auto min-h-28 max-h-32">
+    <img class="w-full object-cover object-center" src="../images/10/10-DORMITORY.jpg" />
+    <div class="absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center ">
+      <h3 class="text-white text-3xl font-bold">Ký túc xá sinh viên</h3>
+    </div>
+    <div class="absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center ">
+      <p class="text-white italic text-xs sm:text-base">BOX2707 / OAK / Yasue / Tòa nhà số 3 / Căn hộ Sanou / ItohPia Shinsakae</p>
+    </div>
+  </div>
+  <div class="bg-orange-200 p-5 mb-5 text-sm leading-8">
+    <!-- <img class="w-full" src="images/business_pics.png" /> -->
+    <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto">
+      Học Viện chúng tôi đã thiết lập các ký túc xá tự quản lý, nhằm đảm bảo tính kinh tế, an toàn, tiện nghi  cho việc lưu trú của sinh viên nước ngoài. Hiện tại có sáu địa điểm cách học viện không quá mười phút đi bộ, tổng cộng khoảng 70 giường. Tất cả các phòng đều được trang bị điều hòa , đèn trang trí, rèm cửa, chăn ga gối, thiết bị nhà bếp cơ bản, bàn học và ghế, cũng như Wi-Fi, sẵn sàng cho học sinh có thể vào ở ngay sau khi nhập cảnh .
+    </div>
+  </div>
+  <!-- title bar end -->
+  <!-- main start -->
+  <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1">
+    <div class="h-10 relative">
+      <img src="../images/10/BUTTON-10-5_subtitle.png" class="h-full" />
+      <div class="absolute top-1 left-7 text-white italic text-lg">BOX 2707</div>
+    </div>
+    <div class="bg-orange-200 my-2 p-2 text-sm leading-6">
+      <div class="grid sm:grid-cols-3 gap-6 sm:gap-4 text-stone-800">
+        <div class="col-span-1">
+          <img src="../images/10/dormitory/BOX.png" class="" alt="...">
+        </div>
+        <div class="col-span-1">
+          <div class="text-xl m-2 text-center text-[red]">Bản đồ phòng</div>
+          <p class="p-3 text-xs">
+            <img src="../images/10/dormitory/BOX_floor.jpg" class="" alt="...">
+
+          </p>
+        </div>
+        <div class="col-span-1">
+          <div class="text-xl m-2 text-center text-[red]">Loại phòng và giá cả</div>
+          <p class="p-3 text-xs bg-[#FFE699]">
+            Loại A (Phòng đôi) - Phí hàng tháng: ¥2.9 vạn x 2 = ¥5.8 vạn (mỗi phòng)<br />
+            Loại B (Phòng ba người) - Phí hàng tháng: ¥2.4 vạn x 3 = ¥7.2 vạn (mỗi phòng)<br />
+            Loại C (Phòng bốn người) - Phí hàng tháng: ¥2.2 vạn x 4 = ¥8.8 vạn (mỗi phòng)<br /><br />
+            ➀ Ngoài chi phí nêu trên, cần nộp tiền vào nhà bằng 2 tháng tiền nhà và phí ra nhà ¥20,000.<br />
+            ➁ Tiền nước cố định 2000 yên / Tháng  , Tiền điện , Gas tự đóng .<br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="h-10 relative">
+      <img src="../images/10/BUTTON-10-5_subtitle.png" class="h-full" />
+      <div class="absolute top-1 left-7 text-white italic text-lg">OAK</div>
+    </div>
+    <div class="bg-orange-200 my-2 p-5 text-sm leading-6">
+      <div class="grid sm:grid-cols-3 gap-6 sm:gap-4 text-stone-800">
+        <div class="col-span-1">
+          <img src="../images/10/dormitory/OAK_P1.png" class="" alt="...">
+        </div>
+        <div class="col-span-1">
+          <div class="text-xl m-2 text-center text-[red]">Bản đồ phòng</div>
+          <!-- <p class="p-3 text-xs"> -->
+          <img src="../images/10/dormitory/OAK_floor.jpg" class="" alt="...">
+          <!-- </p> -->
+          <div class="grid sm:grid-cols-3 gap-6 sm:gap-4 text-stone-800">
+            <div class="col-span-1"><img src="../images/10/dormitory/OAK_P2.png" class="" alt="..."></div>
+            <div class="col-span-1"><img src="../images/10/dormitory/OAK_P3.png" class="" alt="..."></div>
+          </div>
+        </div>
+        <div class="col-span-1">
+          <div class="text-xl m-2 text-center text-[red]">Loại phòng và giá cả</div>
+          <p class="p-3 text-xs bg-[#FFE699]">
+            Loại A (Phòng ba người) - Phí hàng tháng: ¥2.6 vạn x 3 = ¥7.8 vạn (mỗi phòng)<br />
+            Loại B (Phòng bốn người) - Phí hàng tháng: ¥2.2 vạn x 4 = ¥8.8 vạn (mỗi phòng)<br />
+            <br />
+            ➀ Ngoài chi phí nêu trên, cần nộp tiền vào nhà bằng 2 tháng tiền nhà và phí ra nhà ¥20,000.<br />
+            ➁ Tiền nước cố định 2000 yên / Tháng  , Tiền điện , Gas tự đóng .<br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="h-10 relative">
+      <img src="../images/10/BUTTON-10-5_subtitle.png" class="h-full" />
+      <div class="absolute top-1 left-7 text-white italic text-lg">YASUE</div>
+    </div>
+    <div class="bg-orange-200 my-2 p-5 text-sm leading-6">
+      <div class="grid sm:grid-cols-3 gap-6 sm:gap-4 text-stone-800">
+        <div class="col-span-1">
+          <img src="../images/10/dormitory/YASUE_P1.png" class="" alt="...">
+        </div>
+        <div class="col-span-1">
+          <div class="text-xl m-2 text-center text-[red]">Bản đồ phòng</div>
+          <p class="p-3 text-xs">
+            <img src="../images/10/dormitory/YASUE_floor.jpg" class="" alt="...">
+
+          </p>
+        </div>
+        <div class="col-span-1">
+          <div class="text-xl m-2 text-center text-[red]">Loại phòng và giá cả</div>
+          <p class="p-3 text-xs bg-[#FFE699]">
+            Loại A (Phòng đôi) - Phí hàng tháng: ¥2.9 vạn x 2 = ¥5.8 vạn (mỗi phòng)<br />
+            Loại A (Phòng một người) - Phí hàng tháng: ¥4.7 vạn x 1 = ¥4.7 vạn (mỗi phòng)<br />
+            <br />
+            ➀ Ngoài chi phí nêu trên, cần nộp tiền vào nhà bằng 2 tháng tiền nhà và phí ra nhà ¥20,000.<br />
+            ➁ Tiền nước cố định 2000 yên / Tháng  , Tiền điện , Gas tự đóng .<br />
+            <br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="h-10 relative">
+      <img src="../images/10/BUTTON-10-5_subtitle.png" class="h-full" />
+      <div class="absolute top-1 left-7 text-white italic text-lg">Tòa nhà số 3</div>
+    </div>
+    <div class="bg-orange-200 my-2 p-5 text-sm leading-6">
+      <div class="grid sm:grid-cols-3 gap-6 sm:gap-4 text-stone-800">
+        <div class="col-span-1">
+          <img src="../images/10/dormitory/NO3_P1.png" class="" alt="...">
+        </div>
+        <div class="col-span-1">
+          <div class="text-xl m-2 text-center text-[red]">Bản đồ phòng</div>
+          <p class="p-3 text-xs">
+            <img src="../images/10/dormitory/NO3_P2.png" class="" alt="...">
+
+          </p>
+        </div>
+        <div class="col-span-1">
+          <div class="text-xl m-2 text-center text-[red]">Loại phòng và giá cả</div>
+          <p class="p-3 text-xs bg-[#FFE699]">
+            Loại A (Phòng đôi) - Phí hàng tháng: ¥2.2 vạn x 2 = ¥4.4 vạn (mỗi phòng)<br />
+            Loại B (Phòng đôi) - Phí hàng tháng: ¥2.3 vạn x 2 = ¥4.6 vạn (mỗi phòng)<br />
+            Loại C (Phòng ba người) - Phí hàng tháng: ¥2.2 vạn x 3 = ¥6.6 vạn (mỗi phòng)<br />
+            <br /><br />
+            ➀ Ngoài chi phí nêu trên, cần nộp tiền vào nhà bằng 2 tháng tiền nhà và phí ra nhà ¥20,000.<br />
+            ➁ Tiền nước cố định 8000 yên / Tháng  , Tiền điện , Gas tự đóng .<br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="h-10 relative">
+      <img src="../images/10/BUTTON-10-5_subtitle.png" class="h-full" />
+      <div class="absolute top-1 left-4 text-white italic text-lg">&nbsp; Chung cư San ou</div>
+    </div>
+    <div class="bg-orange-200 my-2 p-5 text-sm leading-6">
+      <div class="grid sm:grid-cols-3 gap-6 sm:gap-4 text-stone-800">
+        <div class="col-span-1">
+          <img src="../images/10/dormitory/SAN_P1.png" class="" alt="...">
+        </div>
+        <div class="col-span-1">
+          <div class="text-xl m-2 text-center text-[red]">Bản đồ phòng</div>
+          <p class="p-3 text-xs">
+            <img src="../images/10/dormitory/SAN_P2.png" class="" alt="...">
+
+          </p>
+        </div>
+        <div class="col-span-1">
+          <div class="text-xl m-2 text-center text-[red]">Loại phòng và giá cả</div>
+          <p class="p-3 text-xs bg-[#FFE699]">
+            Loại A (Phòng đơn) Giá thuê hàng tháng: ¥34,000 (1 phòng)<br />
+            Loại B (Phòng đơn) Giá thuê hàng tháng: ¥34,000 (1 phòng)<br />
+            Loại C (Phòng đơn) Giá thuê hàng tháng: ¥32,000 (1 phòng)<br />
+            Loại D (Phòng đơn) Giá thuê hàng tháng: ¥36,000 (1 phòng)<br />
+            Loại E (Phòng đơn) Giá thuê hàng tháng: ¥34,000 (1 phòng)<br /><br />
+            ➀ Ngoài chi phí nêu trên, cần nộp tiền vào nhà bằng 2 tháng tiền nhà và phí ra nhà ¥20,000.<br />
+            ➁ Tiền nước cố định 2000 yên / Tháng  , Tiền điện , Gas tự đóng .<br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="h-10 relative">
+      <img src="../images/10/BUTTON-10-5_subtitle.png" class="h-full" />
+      <div class="absolute top-1 left-4 text-white italic text-lg">&nbsp;&nbsp;ItoPia Shinsakae</div>
+    </div>
+    <div class="bg-orange-200 my-2 p-5 text-sm leading-6">
+      <div class="grid sm:grid-cols-3 gap-6 sm:gap-4 text-stone-800">
+        <div class="col-span-1">
+          <img src="../images/10/dormitory/907_P1.png" class="" alt="...">
+        </div>
+        <div class="col-span-1">
+          <div class="text-xl m-2 text-center text-[red]">Bản đồ phòng</div>
+          <p class="p-3 text-xs">
+            <img src="../images/10/dormitory/907_P2.png" class="" alt="...">
+          </p>
+        </div>
+        <div class="col-span-1">
+          <div class="text-xl m-2 text-center text-[red]">Loại phòng và giá cả</div>
+          <p class="p-3 text-xs bg-[#FFE699]">
+            Loại A (Phòng đôi) Giá thuê hàng tháng: ¥24,000 x 2 = ¥48,000 (1 phòng)<br />
+            Loại B (Phòng đôi) Giá thuê hàng tháng: ¥24,000 x 2 = ¥48,000 (1 phòng)<br />
+            Loại C (Phòng đôi) Giá thuê hàng tháng: ¥22,000 x 2 = ¥44,000 (1 phòng)<br /><br />
+            ➀ Ngoài chi phí nêu trên, cần nộp tiền vào nhà bằng 2 tháng tiền nhà và phí ra nhà ¥20,000.<br />
+            ➁ Tiền nước cố định 2000 yên / Tháng  , Tiền điện , Gas tự đóng .<br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="h-10 relative">
+      <img src="../images/10/BUTTON-10-5_subtitle.png" class="h-full" />
+      <div class="absolute top-1 left-6 text-white italic text-lg">Đăng ký ở Ký túc xá Sinh viên</div>
+    </div>
+    <div class="bg-orange-200 my-2 p-5 text-sm leading-6">
+      <img src="../images/10/pic.png" class="h-64" alt="..."><br />
+      <div class=""></div>
+      <div class="grid md:grid-cols-3">
+        <div class="bg-white col-span-1">
+          <div class="mb-1 ml-3 mt-3 text-[#71b3b9] flex items-center">
+            <img src="../images/10/10_ICON01.png" class=" w-8 mr-2" />
+            <div class="">Thuê nhà ở Nhật Bản</div>
+          </div>
+          <p class="m-3 mt-0 pt-2 text-xs border-t-2 border-[#71b3b9] leading-5 ">
+            　Nhật Bản có mật độ dân số cao, diện tích đất hạn chế, và là khu vực có động đất, do đó, quy định về xây dựng chống động đất rất nghiêm ngặt và chi phí xây dựng cao. Do đó, giá thuê nhà cũng khá cao. Đặc biệt, ở trung tâm thành phố Nagoya, giá thuê còn cao hơn nữa. Tuy nhiên, so với Tokyo và Osaka, giá thuê nhà ở đây cũng khá hợp lý. Nói chung, đối với những người sống một mình ở Nagoya, giá thuê nhà cấp cao thì khoảng từ 8-10 vạn yên/tháng, giá thuê nhà cấp trung thì khoảng từ 5-7 vạn yên/tháng, giá thuê nhà cấp thấp thì khoảng từ 3-5 vạn yên/tháng.</p>
+        </div>
+        <div class="bg-white col-span-1">
+          <div class="mb-1 ml-3 mt-3 text-[#71b3b9] flex items-center">
+            <img src="../images/10/10_ICON02.png" class="float-left w-8 mr-2" />
+            <div>Thủ tục Thuê nhà, Trang thiết bị</div>
+          </div>
+          <p class="m-3 mt-0 pt-2 text-xs border-t-2 border-[#71b3b9] leading-5">
+            Khi tự thuê nhà, bạn cần thông qua công ty môi giới bất động sản và cần thêm một người làm người bảo lãnh. Các khoản phải thanh toán ban đầu bao gồm phí môi giới, tiền đặt cọc, tiền lễ tân, tiền bảo hiểm , bảo hiểm cháy nổ, v.v. Tổng số tiền tương đương với 1-3 tháng tiền thuê nhà. Trong phòng thuê thường không có đồ dùng điện tử và nội thất cơ bản . Nếu tính cả chi phí mua sắm cho những vật này, bạn sẽ phải chi trả khoảng 300,000 yên.Hơn nữa, khi hủy bỏ hợp đồng, bạn phải dọn dẹp toàn bộ những đồ vật bạn mang vào phục hồi lại trạng thái ban đầu . Điều này sẽ là một gánh nặng về mặt tài chính và tinh thần.</p>
+        </div>
+        <div class="bg-white col-span-1">
+          <div class="mb-1 ml-3 mt-3 text-[#71b3b9] flex items-center">
+            <img src="../images/10/10_ICON03.png" class="float-left w-8 mr-2" />
+            <div>Lợi ích khi ở Ký Túc Xá</div>
+          </div>
+          <p class="m-3 mt-0 pt-2 text-xs border-t-2 border-[#71b3b9] leading-5">
+            　Trường chúng tôi cung cấp ký túc xá sinh viên nhằm giảm nhẹ gánh nặng tài chính và tinh thần cho sinh viên. Ký túc xá chỉ cách trường học khoảng 10 phút đi bộ, và mỗi phòng đều được trang bị đầy đủ tiện nghi như đèn, bàn và ghế, rèm cửa, bếp ga, tủ lạnh, máy giặt, lò vi sóng, nồi cơm điện, ấm đun nước, giường đệm, gối, chăn và kết nối mạng. Sinh viên có thể vào ở với ít đồ mang theo khi đến Nhật Bản và nhanh chóng thích nghi với cuộc sống học tập mới. Nếu có bất kỳ vấn đề nào trong thời gian sinh sống , sinh viên có thể liên hệ trực tiếp với trường và được hỗ trợ một cách thuận lợi.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- main end -->
+  <!-- footer start -->
+  <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1 mt-4">
+    <div class="w-full md:w-4/5 lg:w-3/5 xl:w-1/2 2xl:w-2/5 mx-auto p-5 text-xs">
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-4 text-stone-800">
+        <div class="">Liên hệ<br />
+          TEL: (052)262-3366<br />
+          FAX: (052)262-3369<br />
+          EMAIL: school@aiaso.gr.jp
+        </div>
+        <div class="">Giờ làm việc:&nbsp; 9:00 - 17:30<br />
+        Ngày nghỉ: Thứ Bảy, Chủ Nhật, ngày lễ</div>
+        <div class="col-span-2 sm:col-span-1">Địa chỉ:〒460-0007<br />
+          1-30-3, Shinsakae, Nagoya Shi Naka Ku, Aichi Ken, 460-0007, Japan<br />
+          1-30-29, Shinsakae, Nagoya Shi Naka Ku, Aichi Ken, 460-0007, Japan
+        </div>
+      </div>
+      <hr class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700">
+      <div class="block sm:hidden mb-2 text-stone-800">Phương thức liên lạc qua SNS	：</div>
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-5 text-stone-800">
+        <div class="w-24 hidden sm:block">Phương thức liên lạc qua SNS ：</div>
+        <div class="flex">
+          <img src="../images/skype.png" class="size-6 m-1" />
+          <div><a href="skype:aiasoso?chat">SKYPE<br />aiasoso</a></div>
+        </div>
+        <div class="flex">
+          <img src="../images/line.png" class="size-6 m-1" />
+          <div>LINE<br />
+            aiajapanese</div>
+        </div>
+        <div class="flex">
+          <img src="../images/wechat.png" class="size-6 m-1" />
+          <div><a href="weixin://dl/chat?aia2623366">WeChat<br />aia2623366</a></div>
+        </div>
+        <div class="flex">
+          <img src="../images/fb.svg.webp" class="size-6 m-1" />
+          <div><a href="https://www.facebook.com/AIANagoya/" target="_blank">Facebook<br />AIANagoya</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center my-2"><a href="index.html">HOME</a> | <a href="sitemap.html">Sơ đồ trang web</a> | <a
+          href="policy.html">Chính sách bảo mật thông tin cá nhân</a> | <a href="privacy.html">Chính sách quyền riêng tư</a></div>
+      <div class="text-center my-2">Copyright© Aichi International Academy All Rights Reserved.</div>
+    </div>
+  </div>
+  <!-- footer end -->
+  <script src="main.js"></script>
+
+</body>
+
+</html>
