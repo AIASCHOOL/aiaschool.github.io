@@ -386,63 +386,78 @@
         </div>
       </div>
       <div class="w-full bg-[#e6f2f2] p-4 my-4 relative">
-        <!-- 连接线 -->
-        <div class="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-white" style="z-index: -1;"></div>
-        <!-- 小屏幕时的连接线 -->
-        <div class="md:hidden absolute top-1/4 left-0 right-0 h-0.5 bg-white" style="z-index: -1;"></div>
-        <div class="md:hidden absolute top-3/4 left-0 right-0 h-0.5 bg-white" style="z-index: -1;"></div>
+        <style>
+          .circle-container {
+            position: relative;
+          }
+
+          .circle-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: calc(50% + 16px);
+            width: calc(100% - 32px);
+            height: 8px;
+            background-color: white;
+            transform: translateY(-50%);
+            z-index: 0;
+          }
+
+          .circle-container:last-child::before {
+            display: none;
+          }
+        </style>
 
         <div class="flex flex-wrap md:flex-nowrap justify-center gap-1">
-          <!-- 所有圆圈放在同一层级 -->
           <!-- 少人数教育による段階的教育 -->
-          <div class="w-[30%] md:w-1/6">
+          <div class="w-[30%] md:w-1/6 circle-container">
             <div
-              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1">
+              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
               <div class="text-center text-sm font-bold text-blue-900">少人数教育による段階的教育</div>
               <div class="text-center text-[12px] text-gray-600 mt-1">小班制的階段式教育</div>
             </div>
           </div>
 
           <!-- 異文化を理解するカリキュラム -->
-          <div class="w-[30%] md:w-1/6">
+          <div class="w-[30%] md:w-1/6 circle-container">
             <div
-              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1">
+              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
               <div class="text-center text-sm font-bold text-blue-900">異文化を理解するカリキュラム</div>
               <div class="text-center text-[12px] text-gray-600 mt-1">異文化理解課程</div>
             </div>
           </div>
 
           <!-- マルチメディアを活用語学教育 -->
-          <div class="w-[30%] md:w-1/6">
+          <div class="w-[30%] md:w-1/6 circle-container">
             <div
-              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1">
+              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
               <div class="text-center text-sm font-bold text-blue-900">マルチメディアを活用語学教育</div>
               <div class="text-center text-[12px] text-gray-600 mt-1">活用多媒体的教学</div>
             </div>
           </div>
 
           <!-- 語学力レベルによる能力クラス編成 -->
-          <div class="w-[30%] md:w-1/6">
+          <div class="w-[30%] md:w-1/6 circle-container">
             <div
-              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1">
+              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
               <div class="text-center text-sm font-bold text-blue-900">語学力レベルによる能力クラス編成</div>
               <div class="text-center text-[12px] text-gray-600 mt-1">クラスに入る前にレベルテストを実施</div>
             </div>
           </div>
 
           <!-- 母語干渉に配慮漢字圏学習者別 -->
-          <div class="w-[30%] md:w-1/6">
+          <div class="w-[30%] md:w-1/6 circle-container">
             <div
-              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1">
+              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
               <div class="text-center text-sm font-bold text-blue-900">母語干渉に配慮漢字圏学習者別</div>
               <div class="text-center text-[12px] text-gray-600 mt-1">漢字圏学習者特別クラスを設置</div>
             </div>
           </div>
 
           <!-- 有名校進学者に特進EJU特別講座 -->
-          <div class="w-[30%] md:w-1/6">
+          <div class="w-[30%] md:w-1/6 circle-container">
             <div
-              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1">
+              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
               <div class="text-center text-sm font-bold text-blue-900">有名校進学者に特進EJU特別講座</div>
               <div class="text-center text-[12px] text-gray-600 mt-1">進学課程規定外の授業</div>
             </div>
