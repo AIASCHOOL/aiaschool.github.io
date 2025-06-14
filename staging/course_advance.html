@@ -901,49 +901,57 @@
           </div>
           <div class="absolute top-1 left-8 text-white italic text-lg">学費明細</div>
         </div>
-        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">特別な事情がない限り、基本的に在留期間の更新前に一括払い</div>
+        <!-- <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">特別な事情がない限り、基本的に在留期間の更新前に一括払い</div> -->
       </div>
       <div class=" my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
-        <table class="border-collapse border border-slate-500 w-full">
+        <table class="border-collapse border border-slate-500 w-full text-xs md:text-sm">
           <thead>
-            <tr>
-              <th class="border border-slate-600 bg-[#009999] text-white">コース別</th>
-              <th class="border border-slate-600 bg-[#009999] text-white">選考料</th>
-              <th class="border border-slate-600 bg-[#009999] text-white">入学金</th>
-              <th class="border border-slate-600 bg-[#009999] text-white">雑費</th>
-              <th class="border border-slate-600 bg-[#009999] text-white">第１学年学費</th>
-              <th class="border border-slate-600 bg-[#009999] text-white">第２学年学費</th>
-              <th class="border border-slate-600 bg-[#009999] text-white">合計</th>
+            <tr class="bg-[#009999] text-white">
+              <th class="border border-slate-600">項目／区分</th>
+              <th class="border border-slate-600">選考料</th>
+              <th class="border border-slate-600">入学金</th>
+              <th class="border border-slate-600">雑費</th>
+              <th class="border border-slate-600">学費<br>第一学年</th>
+              <th class="border border-slate-600 bg-yellow-500 text-black font-extrabold text-base">一年目合計</th>
+              <th class="border border-slate-600">学費<br>第二学年</th>
+              <th class="border border-slate-600 bg-orange-500 text-black font-extrabold text-base">一年目＆二年目<br>費用合計</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="border border-slate-700 bg-[#009999] text-white text-center">1年6か月進学　コース</td>
-              <td class="border border-slate-700 text-center">￥22,000</td>
-              <td class="border border-slate-700 text-center">￥88,000</td>
-              <td class="border border-slate-700 text-center">￥67,000</td>
-              <td class="border border-slate-700 text-center">￥726,000</td>
-              <td class="border border-slate-700 text-center">￥363,000（半年分）</td>
-              <td class="border border-slate-700 text-center">￥1,266,000</td>
+            <tr class="bg-white">
+              <td class="border border-slate-700 text-center font-bold">1年6か月コース</td>
+              <td class="border border-slate-700 text-center">¥22,000</td>
+              <td class="border border-slate-700 text-center">¥88,000</td>
+              <td class="border border-slate-700 text-center">¥67,000</td>
+              <td class="border border-slate-700 text-center">¥726,000</td>
+              <td class="border border-slate-700 text-center bg-yellow-100 font-extrabold text-lg">¥903,000</td>
+              <td class="border border-slate-700 text-center">¥363,000<br><span class="text-xs text-gray-500">（半年分）</span></td>
+              <td class="border border-slate-700 text-center bg-orange-100 font-extrabold text-lg">¥1,266,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-slate-700 text-center font-bold">2年コース</td>
+              <td class="border border-slate-700 text-center">¥22,000</td>
+              <td class="border border-slate-700 text-center">¥88,000</td>
+              <td class="border border-slate-700 text-center">¥77,000</td>
+              <td class="border border-slate-700 text-center">¥726,000</td>
+              <td class="border border-slate-700 text-center bg-yellow-100 font-extrabold text-lg">¥913,000</td>
+              <td class="border border-slate-700 text-center">¥726,000<br><span class="text-xs text-gray-500">（一年分）</span></td>
+              <td class="border border-slate-700 text-center bg-orange-100 font-extrabold text-lg">¥1,639,000</td>
             </tr>
             <tr>
-              <td class="border border-slate-700 bg-[#009999] text-white text-center">2年進学　コース</td>
-              <td class="border border-slate-700 text-center">￥22,000</td>
-              <td class="border border-slate-700 text-center">￥88,000</td>
-              <td class="border border-slate-700 text-center">￥77,000</td>
-              <td class="border border-slate-700 text-center">￥726,000</td>
-              <td class="border border-slate-700 text-center">￥726,000</td>
-              <td class="border border-slate-700 text-center">￥1,639,000</td>
-            </tr>
-            <tr>
-              <td class="border border-slate-700"></td>
-              <td class="border border-slate-700 text-center text-[red]" colspan="4">入学前全納</td>
-              <td class="border border-slate-700 text-center text-[red]">ビザ更新前に払い</td>
-              <td class="border border-slate-700 text-center text-[red]">&nbsp;</td>
+              <td class="border border-slate-700 text-center font-bold">納付期限</td>
+              <td class="border border-slate-700 text-center">出願時</td>
+              <td class="border border-slate-700 text-center" colspan="2">申請結果通知後２週間以内</td>
+              <td class="border border-slate-700 text-center" colspan="2"></td>
+              <td class="border border-slate-700 text-center" colspan="2">在留期間更新前</td>
             </tr>
           </tbody>
         </table>
-        <div class="text-right text-sm text-slate-700 mt-2">※雑費内訳：教材費、健康管理費、外部試験費、団体保険料</div>
+        <div class="text-xs text-gray-700 mt-2">
+          ※雑費内訳：教材費、健康管理費、外部試験費、団体保険料<br>
+          <span class="font-bold">一カ月の生活費について：</span>
+          食費15,000円～　光熱費8,000円～　携帯電話料金5,000円～　雑費5,000円～
+        </div>
       </div>
       <div class="relative h-10 w-36 flex-shrink-0">
         <div
