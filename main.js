@@ -421,3 +421,52 @@ document.addEventListener('alpine:init', () => {
     })
   )
 })
+
+// 语言菜单延迟关闭功能
+let languageMenuTimeout;
+
+// 显示语言菜单
+function showLanguageMenu() {
+  const languageDropdown = document.getElementById('languageDropdown');
+  if (languageDropdown) {
+    clearTimeout(languageMenuTimeout);
+    languageDropdown.classList.remove('hidden');
+    languageDropdown.classList.add('block');
+  }
+}
+
+// 隐藏语言菜单（带延迟）
+function hideLanguageMenu() {
+  const languageDropdown = document.getElementById('languageDropdown');
+  if (languageDropdown) {
+    languageMenuTimeout = setTimeout(() => {
+      languageDropdown.classList.remove('block');
+      languageDropdown.classList.add('hidden');
+    }, 300); // 300毫秒延迟
+  }
+}
+
+// 初始化语言菜单功能
+function initLanguageMenu() {
+  const languageMenu = document.getElementById('languageMenu');
+  const languageDropdown = document.getElementById('languageDropdown');
+  
+  if (languageMenu && languageDropdown) {
+    // 鼠标进入语言菜单区域
+    languageMenu.addEventListener('mouseenter', showLanguageMenu);
+    
+    // 鼠标离开语言菜单区域
+    languageMenu.addEventListener('mouseleave', hideLanguageMenu);
+    
+    // 鼠标进入下拉菜单
+    languageDropdown.addEventListener('mouseenter', showLanguageMenu);
+    
+    // 鼠标离开下拉菜单
+    languageDropdown.addEventListener('mouseleave', hideLanguageMenu);
+  }
+}
+
+// 将函数暴露到全局作用域
+window.showLanguageMenu = showLanguageMenu;
+window.hideLanguageMenu = hideLanguageMenu;
+window.initLanguageMenu = initLanguageMenu;
