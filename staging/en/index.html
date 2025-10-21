@@ -69,7 +69,7 @@
           </button>
         </div>
         <ul id="collapseMenu"
-          class='mx-auto lg:!flex lg:space-x-4 xl:space-x-6 max-lg:space-y-3 max-lg:hidden max-lg:w-full max-lg:my-4'>
+          class='mx-auto lg:!flex lg:space-x-6 xl:space-x-8 max-lg:space-y-3 max-lg:hidden max-lg:w-full max-lg:my-4'>
           <li class='max-lg:border-b max-lg:py-2'><a href='index.html'
               class='hover:text-gray-300 text-white block'>Latest News</a></li>
           <li class='group max-lg:border-b max-lg:py-2 relative'>
@@ -184,7 +184,7 @@
               class='hover:text-gray-300 text-white block'>Access</a></li>
         </ul>
         <ul id="collapseMenu2" class=' max-lg:mt-1'>
-          <li class='group relative'>
+          <li class='group relative' id="languageMenu">
             <a href='javascript:void(0)' class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>
               <svg class="w-5 h-5" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"
                 style="enable-background:new 0 0 120 120" xml:space="preserve">
@@ -201,7 +201,7 @@
               </svg>
             </a>
             <ul
-              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 lg:top-5 max-md:top-5 -left-28 min-w-[130px] z-50 notranslate'>
+              class='absolute hidden shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 lg:top-5 max-md:top-5 -left-28 min-w-[130px] z-50 notranslate' id="languageDropdown">
               <li class='border-b py-3'>
                 <a href='../index.html'
                   class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>日本語</a>
@@ -549,6 +549,38 @@
   <!-- Lightbox2 JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
   <script>
+    // 语言菜单延迟关闭功能
+    let languageMenuTimeout;
+    const languageMenu = document.getElementById('languageMenu');
+    const languageDropdown = document.getElementById('languageDropdown');
+    
+    // 显示菜单
+    function showLanguageMenu() {
+      clearTimeout(languageMenuTimeout);
+      languageDropdown.classList.remove('hidden');
+      languageDropdown.classList.add('block');
+    }
+    
+    // 隐藏菜单（带延迟）
+    function hideLanguageMenu() {
+      languageMenuTimeout = setTimeout(() => {
+        languageDropdown.classList.remove('block');
+        languageDropdown.classList.add('hidden');
+      }, 300); // 300毫秒延迟
+    }
+    
+    // 鼠标进入语言菜单区域
+    languageMenu.addEventListener('mouseenter', showLanguageMenu);
+    
+    // 鼠标离开语言菜单区域
+    languageMenu.addEventListener('mouseleave', hideLanguageMenu);
+    
+    // 鼠标进入下拉菜单
+    languageDropdown.addEventListener('mouseenter', showLanguageMenu);
+    
+    // 鼠标离开下拉菜单
+    languageDropdown.addEventListener('mouseleave', hideLanguageMenu);
+    
     lightbox.option({
       'resizeDuration': 200,
       'wrapAround': true,
