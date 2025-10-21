@@ -1,7 +1,7 @@
 const groupParamsByKey = (params) => [...params.entries()].reduce((acc, tuple) => {
   // getting the key and value from each tuple
   const [key, val] = tuple;
-  if (acc.hasOwnProperty(key)) {
+  if (Object.prototype.hasOwnProperty.call(acc, key)) {
     // if the current key is already an array, we'll add the value to it
     if (Array.isArray(acc[key])) {
       acc[key] = [...acc[key], val]
@@ -18,8 +18,8 @@ const groupParamsByKey = (params) => [...params.entries()].reduce((acc, tuple) =
   return acc;
 }, {});
 
-var toggleBtn = document.getElementById('toggle');
-var collapseMenu = document.getElementById('collapseMenu');
+const toggleBtn = document.getElementById('toggle');
+const collapseMenu = document.getElementById('collapseMenu');
 
 function handleClick() {
   if (collapseMenu.style.display === 'block') {
@@ -41,7 +41,7 @@ const debounce = (func, wait, immediate = true) => {
     const context = this
     const callNow = immediate && !timeout
     clearTimeout(timeout)
-    timeout = setTimeout(function () {
+    timeout = setTimeout(() => {
       timeout = null
       if (!immediate) {
         func.apply(context, args)
@@ -66,6 +66,64 @@ const appendChildAwaitLayout = (parent, element) => {
     parent.appendChild(element)
   })
 }
+
+// Swiper轮播图相关功能
+const swiperInstances = new Map();
+
+// 图片加载处理函数
+function handleImageLoad(img) {
+  // 图片加载成功，初始化或更新Swiper
+  const swiperContainer = img.closest('.swiper-container');
+  if (swiperContainer) {
+    const swiperId = swiperContainer.className.match(/swiper-(\w+)/);
+    if (swiperId) {
+      const instanceId = swiperId[1];
+      
+      // 如果Swiper还没有初始化，则初始化它
+      if (!swiperInstances.has(instanceId)) {
+        setTimeout(() => {
+          const swiper = new Swiper(swiperContainer, {
+            loop: true,
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: swiperContainer.querySelector('.swiper-pagination'),
+              clickable: true,
+            },
+            navigation: {
+              nextEl: swiperContainer.querySelector('.swiper-button-next'),
+              prevEl: swiperContainer.querySelector('.swiper-button-prev'),
+            },
+            on: {
+              imagesReady: function() {
+                this.update();
+              }
+            }
+          });
+          swiperInstances.set(instanceId, swiper);
+        }, 100);
+      } else {
+        // 如果Swiper已经初始化，更新它
+        const swiper = swiperInstances.get(instanceId);
+        if (swiper) {
+          swiper.update();
+        }
+      }
+    }
+  }
+}
+
+function handleImageError(img) {
+  // 图片加载失败，显示占位符
+  img.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPuWbvueJh+WKoOi9veWksei0pTwvdGV4dD48L3N2Zz4=';
+  img.alt = '图片加载失败';
+}
+
+// 将函数暴露到全局作用域，供HTML中的onload和onerror事件使用
+window.handleImageLoad = handleImageLoad;
+window.handleImageError = handleImageError;
 
 document.addEventListener('alpine:init', () => {
   Alpine.data(
@@ -100,10 +158,10 @@ document.addEventListener('alpine:init', () => {
         const originalWidth = this.$el.scrollWidth + spaceX * 4
         // Required for the marquee scroll animation 
         // to loop smoothly without jumping 
-        this.$el.style.setProperty('--marquee-width', originalWidth + 'px')
+        this.$el.style.setProperty('--marquee-width', `${originalWidth}px`)
         this.$el.style.setProperty(
           '--marquee-time',
-          ((1 / speed) * originalWidth) / 100 + 's'
+          `${((1 / speed) * originalWidth) / 100}s`
         )
         this.resize()
         // Make sure the resize function can only be called once every 100ms

@@ -18,3 +18,45 @@ li  {
 	margin-left: 1.0em;
 	text-indent: -1.0em;
 }
+
+/* Swiper样式优化 */
+.swiper-container {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 40px !important;
+  height: 40px !important;
+  margin-top: -20px !important;
+}
+
+.swiper-button-next {
+  right: 10px !important;
+}
+
+.swiper-button-prev {
+  left: 10px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 16px !important;
+}
+
+.swiper-pagination {
+  bottom: 10px !important;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: white !important;
+}
