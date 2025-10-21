@@ -253,9 +253,46 @@
     </div>
   </div>
   <script type="text/javascript">
+    // Lấy tham số URL
+    function getUrlParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // Cập nhật tham số URL
+    function updateUrlParameter(name, value) {
+      const url = new URL(window.location);
+      url.searchParams.set(name, value);
+      window.history.pushState({}, '', url);
+    }
+
     const start = async function () {
-      const news = await read();
-      // console.table(news)
+      // Lấy số trang hiện tại từ URL, mặc định là 1
+      const currentPage = parseInt(getUrlParameter('page')) || 1;
+      const limit = 10;
+      
+      // Lấy tổng số dữ liệu và dữ liệu trang hiện tại
+      const [totalCount, news] = await Promise.all([
+        getTotalCount(),
+        read(currentPage, limit)
+      ]);
+      
+      // Tính tổng số trang
+      const totalPages = Math.ceil(totalCount / limit);
+      
+      // Sắp xếp theo trạng thái ghim: các mục được ghim ở trước, sau đó sắp xếp theo ngày
+      news.sort((a, b) => {
+        if (a.pinned && !b.pinned) return -1;
+        if (!a.pinned && b.pinned) return 1;
+        return new Date(b.publishDate) - new Date(a.publishDate);
+      });
+      
+      // Xóa nội dung hiện có
+      $("#news").empty();
+      
+      // Xóa các phần tử phân trang trước đó
+      $(".pagination-container").remove();
+      
       news.forEach(item => {
         var images = "";//
         if (item.images && item.images.length) {
@@ -292,7 +329,11 @@
           }
         }
 
-        $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1">\
+        var pinnedClass = item.pinned ? 'ring-2 ring-yellow-400' : '';
+        var pinnedBadge = item.pinned ? '<div class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-bold z-10">📌 </div>' : '';
+
+        $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1 relative ' + pinnedClass + '">\
+        ' + pinnedBadge + '\
         <div class= "grid sm:grid-cols-6 gap-3" >\
           <div class="sm:col-span-2">'+ images + '</div>\
           <div class="sm:col-span-4">\
@@ -307,11 +348,70 @@
         </div>\
       </div> ')
       });
-      // translateTo('vi');
+      
+      // Tạo điều hướng phân trang
+      generatePagination(currentPage, totalPages);
+      
       setTimeout(() => {
         translateTo('vi');
       }, "1000");
     };
+
+    // Tạo điều hướng phân trang
+    function generatePagination(currentPage, totalPages) {
+      if (totalPages <= 1) return;
+      
+      let paginationHtml = '<div class="pagination-container">';
+      paginationHtml += '<div class="flex justify-center items-center space-x-2 mt-6 mb-4">';
+      
+      // Nút trang trước
+      if (currentPage > 1) {
+        paginationHtml += `<button onclick="goToPage(${currentPage - 1})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">Trang trước</button>`;
+      }
+      
+      // Nút số trang
+      const startPage = Math.max(1, currentPage - 2);
+      const endPage = Math.min(totalPages, currentPage + 2);
+      
+      if (startPage > 1) {
+        paginationHtml += `<button onclick="goToPage(1)" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">1</button>`;
+        if (startPage > 2) {
+          paginationHtml += '<span class="px-3 py-2 text-sm text-gray-500">...</span>';
+        }
+      }
+      
+      for (let i = startPage; i <= endPage; i++) {
+        const isActive = i === currentPage;
+        const activeClass = isActive ? 'bg-yellow-500 text-white border-yellow-500' : 'text-gray-500 bg-white border-gray-300 hover:bg-gray-50';
+        paginationHtml += `<button onclick="goToPage(${i})" class="px-3 py-2 text-sm font-medium border rounded-md ${activeClass}">${i}</button>`;
+      }
+      
+      if (endPage < totalPages) {
+        if (endPage < totalPages - 1) {
+          paginationHtml += '<span class="px-3 py-2 text-sm text-gray-500">...</span>';
+        }
+        paginationHtml += `<button onclick="goToPage(${totalPages})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">${totalPages}</button>`;
+      }
+      
+      // Nút trang tiếp theo
+      if (currentPage < totalPages) {
+        paginationHtml += `<button onclick="goToPage(${currentPage + 1})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">Trang tiếp theo</button>`;
+      }
+      
+      paginationHtml += '</div>';
+      
+      // Thêm thông tin trang
+      paginationHtml += `<div class="text-center text-sm text-gray-500 mb-4">Trang ${currentPage} / ${totalPages} trang</div>`;
+      paginationHtml += '</div>';
+      
+      $("#news").after(paginationHtml);
+    }
+
+    // Chuyển đến trang được chỉ định
+    function goToPage(page) {
+      updateUrlParameter('page', page);
+      start(); // Tải lại dữ liệu
+    }
 
   </script>
   <div id="google_translate_element" style="display: none;"></div>

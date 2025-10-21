@@ -253,9 +253,46 @@
     </div>
   </div>
   <script type="text/javascript">
+    // รับพารามิเตอร์ URL
+    function getUrlParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // อัปเดตพารามิเตอร์ URL
+    function updateUrlParameter(name, value) {
+      const url = new URL(window.location);
+      url.searchParams.set(name, value);
+      window.history.pushState({}, '', url);
+    }
+
     const start = async function () {
-      const news = await read();
-      // console.table(news)
+      // รับหมายเลขหน้าปัจจุบันจาก URL ค่าเริ่มต้นคือ 1
+      const currentPage = parseInt(getUrlParameter('page')) || 1;
+      const limit = 10;
+      
+      // รับจำนวนข้อมูลทั้งหมดและข้อมูลหน้าปัจจุบัน
+      const [totalCount, news] = await Promise.all([
+        getTotalCount(),
+        read(currentPage, limit)
+      ]);
+      
+      // คำนวณจำนวนหน้าทั้งหมด
+      const totalPages = Math.ceil(totalCount / limit);
+      
+      // เรียงลำดับตามสถานะปักหมุด: รายการที่ปักหมุดอยู่ข้างหน้า แล้วเรียงตามวันที่
+      news.sort((a, b) => {
+        if (a.pinned && !b.pinned) return -1;
+        if (!a.pinned && b.pinned) return 1;
+        return new Date(b.publishDate) - new Date(a.publishDate);
+      });
+      
+      // ล้างเนื้อหาที่มีอยู่
+      $("#news").empty();
+      
+      // ลบองค์ประกอบการแบ่งหน้าก่อนหน้า
+      $(".pagination-container").remove();
+      
       news.forEach(item => {
         var images = "";//
         if (item.images && item.images.length) {
@@ -292,7 +329,11 @@
           }
         }
 
-        $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1">\
+        var pinnedClass = item.pinned ? 'ring-2 ring-yellow-400' : '';
+        var pinnedBadge = item.pinned ? '<div class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-bold z-10">📌 </div>' : '';
+
+        $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1 relative ' + pinnedClass + '">\
+        ' + pinnedBadge + '\
         <div class= "grid sm:grid-cols-6 gap-3" >\
           <div class="sm:col-span-2">'+ images + '</div>\
           <div class="sm:col-span-4">\
@@ -307,11 +348,70 @@
         </div>\
       </div> ')
       });
-      // translateTo('th');
+      
+      // สร้างการนำทางแบบแบ่งหน้า
+      generatePagination(currentPage, totalPages);
+      
       setTimeout(() => {
         translateTo('th');
       }, "1000");
     };
+
+    // สร้างการนำทางแบบแบ่งหน้า
+    function generatePagination(currentPage, totalPages) {
+      if (totalPages <= 1) return;
+      
+      let paginationHtml = '<div class="pagination-container">';
+      paginationHtml += '<div class="flex justify-center items-center space-x-2 mt-6 mb-4">';
+      
+      // ปุ่มหน้าก่อนหน้า
+      if (currentPage > 1) {
+        paginationHtml += `<button onclick="goToPage(${currentPage - 1})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">หน้าก่อนหน้า</button>`;
+      }
+      
+      // ปุ่มหมายเลขหน้า
+      const startPage = Math.max(1, currentPage - 2);
+      const endPage = Math.min(totalPages, currentPage + 2);
+      
+      if (startPage > 1) {
+        paginationHtml += `<button onclick="goToPage(1)" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">1</button>`;
+        if (startPage > 2) {
+          paginationHtml += '<span class="px-3 py-2 text-sm text-gray-500">...</span>';
+        }
+      }
+      
+      for (let i = startPage; i <= endPage; i++) {
+        const isActive = i === currentPage;
+        const activeClass = isActive ? 'bg-yellow-500 text-white border-yellow-500' : 'text-gray-500 bg-white border-gray-300 hover:bg-gray-50';
+        paginationHtml += `<button onclick="goToPage(${i})" class="px-3 py-2 text-sm font-medium border rounded-md ${activeClass}">${i}</button>`;
+      }
+      
+      if (endPage < totalPages) {
+        if (endPage < totalPages - 1) {
+          paginationHtml += '<span class="px-3 py-2 text-sm text-gray-500">...</span>';
+        }
+        paginationHtml += `<button onclick="goToPage(${totalPages})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">${totalPages}</button>`;
+      }
+      
+      // ปุ่มหน้าถัดไป
+      if (currentPage < totalPages) {
+        paginationHtml += `<button onclick="goToPage(${currentPage + 1})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">หน้าถัดไป</button>`;
+      }
+      
+      paginationHtml += '</div>';
+      
+      // เพิ่มข้อมูลหน้า
+      paginationHtml += `<div class="text-center text-sm text-gray-500 mb-4">หน้า ${currentPage} / ${totalPages} หน้า</div>`;
+      paginationHtml += '</div>';
+      
+      $("#news").after(paginationHtml);
+    }
+
+    // ไปยังหน้าที่ระบุ
+    function goToPage(page) {
+      updateUrlParameter('page', page);
+      start(); // โหลดข้อมูลใหม่
+    }
 
   </script>
   <div id="google_translate_element" style="display: none;"></div>

@@ -250,9 +250,46 @@
     </div>
   </div>
   <script type="text/javascript">
+    // URL 매개변수 가져오기
+    function getUrlParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // URL 매개변수 업데이트
+    function updateUrlParameter(name, value) {
+      const url = new URL(window.location);
+      url.searchParams.set(name, value);
+      window.history.pushState({}, '', url);
+    }
+
     const start = async function () {
-      const news = await read();
-      // console.table(news)
+      // URL에서 현재 페이지 번호 가져오기, 기본값은 1
+      const currentPage = parseInt(getUrlParameter('page')) || 1;
+      const limit = 10;
+      
+      // 총 데이터 수와 현재 페이지 데이터 가져오기
+      const [totalCount, news] = await Promise.all([
+        getTotalCount(),
+        read(currentPage, limit)
+      ]);
+      
+      // 총 페이지 수 계산
+      const totalPages = Math.ceil(totalCount / limit);
+      
+      // 고정 상태별 정렬: 고정된 항목이 앞에, 그 다음 날짜별 정렬
+      news.sort((a, b) => {
+        if (a.pinned && !b.pinned) return -1;
+        if (!a.pinned && b.pinned) return 1;
+        return new Date(b.publishDate) - new Date(a.publishDate);
+      });
+      
+      // 기존 내용 지우기
+      $("#news").empty();
+      
+      // 이전 페이지네이션 요소 제거
+      $(".pagination-container").remove();
+      
       news.forEach(item => {
         var images = "";//
         if (item.images && item.images.length) {
@@ -289,7 +326,11 @@
           }
         }
 
-        $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1">\
+        var pinnedClass = item.pinned ? 'ring-2 ring-yellow-400' : '';
+        var pinnedBadge = item.pinned ? '<div class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-bold z-10">📌 </div>' : '';
+
+        $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1 relative ' + pinnedClass + '">\
+        ' + pinnedBadge + '\
         <div class= "grid sm:grid-cols-6 gap-3" >\
           <div class="sm:col-span-2">'+ images + '</div>\
           <div class="sm:col-span-4">\
@@ -304,11 +345,70 @@
         </div>\
       </div> ')
       });
-      // translateTo('ko');
+      
+      // 페이지네이션 네비게이션 생성
+      generatePagination(currentPage, totalPages);
+      
       setTimeout(() => {
         translateTo('ko');
       }, "1000");
     };
+
+    // 페이지네이션 네비게이션 생성
+    function generatePagination(currentPage, totalPages) {
+      if (totalPages <= 1) return;
+      
+      let paginationHtml = '<div class="pagination-container">';
+      paginationHtml += '<div class="flex justify-center items-center space-x-2 mt-6 mb-4">';
+      
+      // 이전 페이지 버튼
+      if (currentPage > 1) {
+        paginationHtml += `<button onclick="goToPage(${currentPage - 1})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">이전 페이지</button>`;
+      }
+      
+      // 페이지 번호 버튼
+      const startPage = Math.max(1, currentPage - 2);
+      const endPage = Math.min(totalPages, currentPage + 2);
+      
+      if (startPage > 1) {
+        paginationHtml += `<button onclick="goToPage(1)" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">1</button>`;
+        if (startPage > 2) {
+          paginationHtml += '<span class="px-3 py-2 text-sm text-gray-500">...</span>';
+        }
+      }
+      
+      for (let i = startPage; i <= endPage; i++) {
+        const isActive = i === currentPage;
+        const activeClass = isActive ? 'bg-yellow-500 text-white border-yellow-500' : 'text-gray-500 bg-white border-gray-300 hover:bg-gray-50';
+        paginationHtml += `<button onclick="goToPage(${i})" class="px-3 py-2 text-sm font-medium border rounded-md ${activeClass}">${i}</button>`;
+      }
+      
+      if (endPage < totalPages) {
+        if (endPage < totalPages - 1) {
+          paginationHtml += '<span class="px-3 py-2 text-sm text-gray-500">...</span>';
+        }
+        paginationHtml += `<button onclick="goToPage(${totalPages})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">${totalPages}</button>`;
+      }
+      
+      // 다음 페이지 버튼
+      if (currentPage < totalPages) {
+        paginationHtml += `<button onclick="goToPage(${currentPage + 1})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">다음 페이지</button>`;
+      }
+      
+      paginationHtml += '</div>';
+      
+      // 페이지 정보 추가
+      paginationHtml += `<div class="text-center text-sm text-gray-500 mb-4">${currentPage}페이지 / 총 ${totalPages}페이지</div>`;
+      paginationHtml += '</div>';
+      
+      $("#news").after(paginationHtml);
+    }
+
+    // 지정된 페이지로 이동
+    function goToPage(page) {
+      updateUrlParameter('page', page);
+      start(); // 데이터 다시 로드
+    }
 
   </script>
   <div id="google_translate_element" style="display: none;"></div>
