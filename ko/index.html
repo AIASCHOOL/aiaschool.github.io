@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
@@ -24,9 +25,22 @@
     body {
       font-family: 'Noto Sans JP', sans-serif;
     }
+
+    .news-content ul,
+    .news-content ol {
+      list-style: revert;
+      margin: revert;
+      padding: revert;
+    }
+
+    .news-content li {
+      text-indent: revert;
+    }
   </style>
   <link rel="stylesheet" href="../main.css">
   <link rel="stylesheet" href="../gt.css" />
+  <!-- Lightbox2 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
 </head>
 
 <body class="">
@@ -249,9 +263,8 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript">
-    // URL 매개변수 가져오기
-    function getUrlParameter(name) {
+  <div id="google_translate_element" style="display: none;"></div>
+
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({ pageLanguage: 'jp' }, 'google_translate_element');
@@ -261,6 +274,9 @@
       var element = document.querySelector("#\\:1\\.container");
       if (element) {
         element.style.visibility = "hidden";
+        console.log('Element is hidden');
+      }else{
+        console.log('Element is not found');
       }
     }
 
@@ -296,7 +312,7 @@
       });
     }
     waitForElm('.goog-te-combo').then((elm) => {
-      // console.log('Element is ready');
+      console.log('Element is ready');
       start();
     });
   </script>
@@ -359,6 +375,16 @@
   <!-- footer end -->
   <script src="../main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  <!-- Lightbox2 JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'disableScrolling': true,
+      'fitImagesInViewport': true
+    })
+  </script>
 </body>
 
 </html>

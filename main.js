@@ -195,11 +195,22 @@ const start = async function () {
     var images = "";//
     if (item.images && item.images.length) {
       if (item.images.length === 1) {
-        // if (1) {
-        item.images.forEach(img => images += '<img src="' + img + '" class="w-full" />')
+        // 单张图片 - 添加lightbox功能
+        item.images.forEach(img => {
+          images += '<a href="' + img + '" data-lightbox="news-' + item.objectId + '" data-title="' + item.title + '">';
+          images += '<img src="' + img + '" class="w-full cursor-pointer hover:opacity-90 transition-opacity" alt="' + item.title + '" />';
+          images += '</a>';
+        });
       } else {
+        // 多张图片 - 轮播 + lightbox功能
         var carouselImg = ''
-        item.images.forEach((img, i) => carouselImg += '<div id="carousel-item-' + item.objectId + i + '" class="hidden duration-700 ease-in-out" data-carousel-item><img src="' + img + '" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></div>')
+        item.images.forEach((img, i) => {
+          carouselImg += '<div id="carousel-item-' + item.objectId + i + '" class="hidden duration-700 ease-in-out" data-carousel-item>';
+          carouselImg += '<a href="' + img + '" data-lightbox="news-' + item.objectId + '" data-title="' + item.title + '">';
+          carouselImg += '<img src="' + img + '" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 cursor-pointer hover:opacity-90 transition-opacity" alt="' + item.title + '" />';
+          carouselImg += '</a>';
+          carouselImg += '</div>';
+        });
 
         images = '<div id="carousel-' + item.objectId + '" class="relative w-full " data-carousel="slide">\
            <div class="relative h-60 overflow-hidden rounded-lg md:h-60">'+ carouselImg + '</div>\

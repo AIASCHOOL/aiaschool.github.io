@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
@@ -24,9 +25,22 @@
     body {
       font-family: 'Noto Sans JP', sans-serif;
     }
+
+    .news-content ul,
+    .news-content ol {
+      list-style: revert;
+      margin: revert;
+      padding: revert;
+    }
+
+    .news-content li {
+      text-indent: revert;
+    }
   </style>
   <link rel="stylesheet" href="../main.css">
   <link rel="stylesheet" href="../gt.css" />
+  <!-- Lightbox2 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
 </head>
 
 <body class="">
@@ -253,7 +267,6 @@
           class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
       </div>
     }
-
   </script>
   <div id="google_translate_element" style="display: none;"></div>
 
@@ -358,6 +371,16 @@
   <!-- footer end -->
   <script src="../main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  <!-- Lightbox2 JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'disableScrolling': true,
+      'fitImagesInViewport': true
+    })
+  </script>
 </body>
 
 </html>
