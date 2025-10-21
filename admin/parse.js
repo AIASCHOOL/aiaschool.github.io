@@ -45,7 +45,10 @@ function createNews() {
 
   var obj = $('form').getForm2obj()
   obj.context = quill.getSemanticHTML();
-  // console.log(obj);
+  
+  // 获取PIN状态
+  var pinned = $("#input-pinned").is(':checked');
+  
   if (!obj.context) {
     alert("コンテンツなし");
     return;
@@ -61,8 +64,9 @@ function createNews() {
   data.set("context", obj.context);
   data.set("images", obj.images);
   data.set("publishDate", obj.publishDate);
+  data.set("pinned", pinned); // 添加PIN字段
 
-  data.save().then(function (data) {
+  data.save().then(function (savedData) {
     toggleModal('modal-id')
     alert(str + "成功");
     location.reload();
@@ -71,18 +75,31 @@ function createNews() {
   });
 }
 
-async function read() {
+async function read(page = 1, limit = 10) {
   var News = Parse.Object.extend("aiasoNews");
   var query = new Parse.Query(News);
-  // query.equalTo("name", textName);
   query.descending("publishDate");
-  // query.first().then(function (pet) {
+  
+  // 计算跳过的记录数
+  var skip = (page - 1) * limit;
+  query.skip(skip);
+  query.limit(limit);
+  
   var snap = await query.find().catch(function (error) {
     console.log("Error: " + error.code + " " + error.message);
   })
   const obj = snap.map(data => data.toJSON());
-  // console.table(obj)
   return obj;
+}
+
+async function getTotalCount() {
+  var News = Parse.Object.extend("aiasoNews");
+  var query = new Parse.Query(News);
+  var count = await query.count().catch(function (error) {
+    console.log("Error: " + error.code + " " + error.message);
+    return 0;
+  });
+  return count;
 }
 
 async function del(objectId) {
