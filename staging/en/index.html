@@ -258,10 +258,47 @@
     </div>
   </div>
   <script type="text/javascript">
+    // Get URL parameters
+    function getUrlParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // Update URL parameters
+    function updateUrlParameter(name, value) {
+      const url = new URL(window.location);
+      url.searchParams.set(name, value);
+      window.history.pushState({}, '', url);
+    }
+
     const start = async function () {
       // console.log('start');
-      const news = await read();
-      // console.table(news)
+      // Get current page number from URL, default is 1
+      const currentPage = parseInt(getUrlParameter('page')) || 1;
+      const limit = 10;
+      
+      // Get total data count and current page data
+      const [totalCount, news] = await Promise.all([
+        getTotalCount(),
+        read(currentPage, limit)
+      ]);
+      
+      // Calculate total pages
+      const totalPages = Math.ceil(totalCount / limit);
+      
+      // Sort by pin status: pinned items first, then by date
+      news.sort((a, b) => {
+        if (a.pinned && !b.pinned) return -1;
+        if (!a.pinned && b.pinned) return 1;
+        return new Date(b.publishDate) - new Date(a.publishDate);
+      });
+      
+      // Clear existing content
+      $("#news").empty();
+      
+      // Remove previous pagination elements
+      $(".pagination-container").remove();
+      
       news.forEach(item => {
         var images = "";//
         if (item.images && item.images.length) {
@@ -298,7 +335,11 @@
           }
         }
 
-        $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1">\
+        var pinnedClass = item.pinned ? 'ring-2 ring-yellow-400' : '';
+        var pinnedBadge = item.pinned ? '<div class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-bold z-10">📌 </div>' : '';
+
+        $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1 relative ' + pinnedClass + '">\
+        ' + pinnedBadge + '\
         <div class= "grid sm:grid-cols-6 gap-3" >\
           <div class="sm:col-span-2">'+ images + '</div>\
           <div class="sm:col-span-4">\
@@ -313,14 +354,73 @@
         </div>\
       </div> ')
       });
+      
+      // Generate pagination navigation
+      generatePagination(currentPage, totalPages);
+      
       // console.log('start translateTo');
-
       setTimeout(() => {
         // console.log("Delayed for 1 second.");
         translateTo('en');
       }, "1000");
       // console.log('start translateTo end');
     };
+
+    // Generate pagination navigation
+    function generatePagination(currentPage, totalPages) {
+      if (totalPages <= 1) return;
+      
+      let paginationHtml = '<div class="pagination-container">';
+      paginationHtml += '<div class="flex justify-center items-center space-x-2 mt-6 mb-4">';
+      
+      // Previous page button
+      if (currentPage > 1) {
+        paginationHtml += `<button onclick="goToPage(${currentPage - 1})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">Previous</button>`;
+      }
+      
+      // Page number buttons
+      const startPage = Math.max(1, currentPage - 2);
+      const endPage = Math.min(totalPages, currentPage + 2);
+      
+      if (startPage > 1) {
+        paginationHtml += `<button onclick="goToPage(1)" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">1</button>`;
+        if (startPage > 2) {
+          paginationHtml += '<span class="px-3 py-2 text-sm text-gray-500">...</span>';
+        }
+      }
+      
+      for (let i = startPage; i <= endPage; i++) {
+        const isActive = i === currentPage;
+        const activeClass = isActive ? 'bg-yellow-500 text-white border-yellow-500' : 'text-gray-500 bg-white border-gray-300 hover:bg-gray-50';
+        paginationHtml += `<button onclick="goToPage(${i})" class="px-3 py-2 text-sm font-medium border rounded-md ${activeClass}">${i}</button>`;
+      }
+      
+      if (endPage < totalPages) {
+        if (endPage < totalPages - 1) {
+          paginationHtml += '<span class="px-3 py-2 text-sm text-gray-500">...</span>';
+        }
+        paginationHtml += `<button onclick="goToPage(${totalPages})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">${totalPages}</button>`;
+      }
+      
+      // Next page button
+      if (currentPage < totalPages) {
+        paginationHtml += `<button onclick="goToPage(${currentPage + 1})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">Next</button>`;
+      }
+      
+      paginationHtml += '</div>';
+      
+      // Add page information
+      paginationHtml += `<div class="text-center text-sm text-gray-500 mb-4">Page ${currentPage} of ${totalPages}</div>`;
+      paginationHtml += '</div>';
+      
+      $("#news").after(paginationHtml);
+    }
+
+    // Go to specified page
+    function goToPage(page) {
+      updateUrlParameter('page', page);
+      start(); // Reload data
+    }
 
   </script>
   <div id="google_translate_element" style="display: none;"></div>

@@ -419,10 +419,10 @@
   </div>
   <div
     class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center"
-    id="modal-id">
-    <div class="relative w-auto my-6 mx-auto max-w-6xl">
+    id="modal-id" onclick="handleModalBackdropClick(event)">
+    <div class="relative w-auto my-6 mx-auto max-w-6xl" onclick="event.stopPropagation()">
       <!--content-->
-      <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+      <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none max-h-[90vh] overflow-y-auto">
         <!--header-->
         <div class="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
           <h4 id="modal-title" class="text-3xl font-semibold text-zinc-700">新規追加</h4>
@@ -435,7 +435,7 @@
           </button>
         </div>
         <!--body-->
-        <div class="relative p-5">
+        <div class="relative p-5 overflow-y-auto">
           <div class="w-full mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1">
             <form>
               <div class="grid grid-cols-6 gap-3">
@@ -487,6 +487,14 @@
                         <input id="input-publishDate" type="text" name="publishDate" autocomplete="publishDate"
                           class="block flex-1 border-0 bg-transparent py-1.5 pl-3 text-black placeholder:text-gray-500 sm:text-sm sm:leading-6"
                           placeholder="日付...">
+                      </div>
+                      <!-- PIN Toggle -->
+                      <div class="mt-3 flex items-center">
+                        <input id="input-pinned" type="checkbox" name="pinned" 
+                          class="h-4 w-4 text-yellow-600 focus:ring-yellow-500 border-gray-300 rounded">
+                        <label for="input-pinned" class="ml-2 text-sm text-black font-medium">
+                          トップに固定
+                        </label>
                       </div>
                       <!-- <div class="mt-3 text-right">
                         <button type="submit"
@@ -540,9 +548,17 @@
       // console.log(this.files)
       var res = await Parse.Images(this.files[0]);
       // console.log(res)
-      $("#newsImages").append('<img src="' + res.image.url + '" class="w-full" />')
-      $("#newsImages").append('<input type="hidden" name="images[]" value="' + res.image.url + '" />')
+      var imageId = 'img_' + Date.now();
+      $("#newsImages").append('<div id="' + imageId + '" class="relative inline-block">');
+      $("#" + imageId).append('<img src="' + res.image.url + '" class="w-full" />');
+      $("#" + imageId).append('<button type="button" class="absolute top-2 right-2 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold hover:bg-red-600" onclick="removeImage(\'' + imageId + '\')">×</button>');
+      $("#" + imageId).append('<input type="hidden" name="images[]" value="' + res.image.url + '" />');
+      $("#" + imageId).append('</div>');
     });
+
+    function removeImage(imageId) {
+      $("#" + imageId).remove();
+    }
   </script>
   <script type="text/javascript">
     const quill = new Quill('#editor', {
@@ -552,9 +568,63 @@
       },
     });
 
+    // 获取URL参数
+    function getUrlParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // 更新URL参数
+    function updateUrlParameter(name, value) {
+      const url = new URL(window.location);
+      url.searchParams.set(name, value);
+      window.history.pushState({}, '', url);
+    }
+
+    // 处理模态框背景点击
+    function handleModalBackdropClick(event) {
+      if (event.target === event.currentTarget) {
+        toggleModal('modal-id');
+      }
+    }
+
+    // 更新PIN切换按钮的视觉状态
+    function updatePinToggle() {
+      const isChecked = $("#input-pinned").is(':checked');
+      if (isChecked) {
+        $("#input-pinned").addClass('ring-2 ring-yellow-400');
+      } else {
+        $("#input-pinned").removeClass('ring-2 ring-yellow-400');
+      }
+    }
+
     const start = async function () {
-      const news = await read();
-      // console.table(news)
+      // 从URL获取当前页码，默认为1
+      const currentPage = parseInt(getUrlParameter('page')) || 1;
+      const limit = 10;
+      
+      // 获取总数据量和当前页数据
+      const [totalCount, news] = await Promise.all([
+        getTotalCount(),
+        read(currentPage, limit)
+      ]);
+      
+      // 计算总页数
+      const totalPages = Math.ceil(totalCount / limit);
+      
+      // 按钉选状态排序：钉选的在前面，然后按日期排序
+      news.sort((a, b) => {
+        if (a.pinned && !b.pinned) return -1;
+        if (!a.pinned && b.pinned) return 1;
+        return new Date(b.publishDate) - new Date(a.publishDate);
+      });
+      
+      // 清空现有内容
+      $("#news").empty();
+      
+      // 清除之前的分页元素
+      $(".pagination-container").remove();
+      
       news.forEach(item => {
         var images = "";//
         if (item.images && item.images.length) {
@@ -591,7 +661,11 @@
           }
         }
 
-        $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1">\
+        var pinnedClass = item.pinned ? 'ring-2 ring-yellow-400' : '';
+        var pinnedBadge = item.pinned ? '<div class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-bold z-10">📌 </div>' : '';
+
+        $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1 relative ' + pinnedClass + '">\
+        ' + pinnedBadge + '\
         <div class= "grid sm:grid-cols-6 gap-3" >\
           <div class="sm:col-span-2">'+ images + '</div>\
           <div class="sm:col-span-4">\
@@ -610,35 +684,81 @@
         </div>\
       </div> ')
       });
-      // $.getScript("https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js", function () {
-      //   // $.getScript("https://aiaso.gr.jp/admin/infinite-carousel-autoplay.js", function () {
-      //   console.log('load js')
-      // });
-      // news.forEach(item => {
-      //   if (item.images && item.images.length && item.images.length > 1) {
+      
+      // 生成分页导航
+      generatePagination(currentPage, totalPages);
+    }
 
-      //     const Carousel = window.Carousel;
-      //     // console.log(Carousel)
-      //     const carouselElement = document.getElementById('carousel - ' + item.objectId);
-      //     const items = item.images.map((img, i) => ({
-      //       position: i,
-      //       el: document.getElementById('carousel-item-' + item.objectId + i),
-      //     }))
-      //     console.log(items)
-      //     Carousel(carouselElement, items)
-      //   }
-      // })
+    // 生成分页导航
+    function generatePagination(currentPage, totalPages) {
+      if (totalPages <= 1) return;
+      
+      let paginationHtml = '<div class="pagination-container">';
+      paginationHtml += '<div class="flex justify-center items-center space-x-2 mt-6 mb-4">';
+      
+      // 上一页按钮
+      if (currentPage > 1) {
+        paginationHtml += `<button onclick="goToPage(${currentPage - 1})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">前のページ</button>`;
+      }
+      
+      // 页码按钮
+      const startPage = Math.max(1, currentPage - 2);
+      const endPage = Math.min(totalPages, currentPage + 2);
+      
+      if (startPage > 1) {
+        paginationHtml += `<button onclick="goToPage(1)" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">1</button>`;
+        if (startPage > 2) {
+          paginationHtml += '<span class="px-3 py-2 text-sm text-gray-500">...</span>';
+        }
+      }
+      
+      for (let i = startPage; i <= endPage; i++) {
+        const isActive = i === currentPage;
+        const activeClass = isActive ? 'bg-yellow-500 text-white border-yellow-500' : 'text-gray-500 bg-white border-gray-300 hover:bg-gray-50';
+        paginationHtml += `<button onclick="goToPage(${i})" class="px-3 py-2 text-sm font-medium border rounded-md ${activeClass}">${i}</button>`;
+      }
+      
+      if (endPage < totalPages) {
+        if (endPage < totalPages - 1) {
+          paginationHtml += '<span class="px-3 py-2 text-sm text-gray-500">...</span>';
+        }
+        paginationHtml += `<button onclick="goToPage(${totalPages})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">${totalPages}</button>`;
+      }
+      
+      // 下一页按钮
+      if (currentPage < totalPages) {
+        paginationHtml += `<button onclick="goToPage(${currentPage + 1})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">次のページ</button>`;
+      }
+      
+      paginationHtml += '</div>';
+      
+      // 添加页面信息
+      paginationHtml += `<div class="text-center text-sm text-gray-500 mb-4">${currentPage}ページ目 / 全${totalPages}ページ</div>`;
+      paginationHtml += '</div>';
+      
+      $("#news").after(paginationHtml);
+    }
+
+    // 跳转到指定页面
+    function goToPage(page) {
+      updateUrlParameter('page', page);
+      start(); // 重新加载数据
     }
     start();
 
     function toggleModal(modalID, id) {
+      // 清空所有表单字段
+      $("#input-title").val('');
+      $("#input-publishDate").val('');
+      $("#input-pinned").prop('checked', false);
+      quill.root.innerHTML = "";
       $("#newsImages").empty();
+      
       var title = '編集';
       var btn = '保存'
       if (id === 'new') {
         title = '新規追加'
         btn = '新規追加'
-        quill.root.innerHTML = ""
       }
       else {
         // console.log('id', id)
@@ -650,12 +770,27 @@
         $("#input-title").val(params.title)
         $("#input-publishDate").val(params.publishDate)
         quill.root.innerHTML = params.context;
+        
+        // 设置PIN状态
+        const pinned = params.pinned === 'true' || params.pinned === true;
+        $("#input-pinned").prop('checked', pinned);
+        updatePinToggle();
 
         if (typeof params['images[]'] === 'string') {
-          $("#newsImages").append('<img src="' + params['images[]'] + '" class="w-full" /><br />')
+          var imageId = 'img_' + Date.now();
+          $("#newsImages").append('<div id="' + imageId + '" class="relative inline-block">');
+          $("#" + imageId).append('<img src="' + params['images[]'] + '" class="w-full" />');
+          $("#" + imageId).append('<button type="button" class="absolute top-2 right-2 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold hover:bg-red-600" onclick="removeImage(\'' + imageId + '\')">×</button>');
+          $("#" + imageId).append('<input type="hidden" name="images[]" value="' + params['images[]'] + '" />');
+          $("#" + imageId).append('</div>');
         } else if (typeof params['images[]'] === 'object') {
           params['images[]'].forEach(item => {
-            $("#newsImages").append('<img src="' + item + '" class="w-full" /><br />')
+            var imageId = 'img_' + Date.now();
+            $("#newsImages").append('<div id="' + imageId + '" class="relative inline-block">');
+            $("#" + imageId).append('<img src="' + item + '" class="w-full" />');
+            $("#" + imageId).append('<button type="button" class="absolute top-2 right-2 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold hover:bg-red-600" onclick="removeImage(\'' + imageId + '\')">×</button>');
+            $("#" + imageId).append('<input type="hidden" name="images[]" value="' + item + '" />');
+            $("#" + imageId).append('</div>');
           });
         }
       }
@@ -668,6 +803,21 @@
       document.getElementById(modalID).classList.toggle("flex");
       document.getElementById(modalID + "-backdrop").classList.toggle("flex");
     }
+
+    // 添加ESC键关闭模态框
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        const modal = document.getElementById('modal-id');
+        if (modal && !modal.classList.contains('hidden')) {
+          toggleModal('modal-id');
+        }
+      }
+    });
+
+    // 添加PIN切换事件监听
+    $(document).on('change', '#input-pinned', function() {
+      updatePinToggle();
+    });
 
     // toggleModal('modal-id');
   </script>
