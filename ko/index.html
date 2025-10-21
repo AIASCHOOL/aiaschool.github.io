@@ -267,216 +267,14 @@
   </div>
   <div id="google_translate_element" style="display: none;"></div>
 
+  <!-- news start -->
+  <script src="../main.js"></script>
   <script type="text/javascript">
-    // URL 매개변수 가져오기
-    function getUrlParameter(name) {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(name);
-    }
-
-    // URL 매개변수 업데이트
-    function updateUrlParameter(name, value) {
-      const url = new URL(window.location);
-      url.searchParams.set(name, value);
-      window.history.pushState({}, '', url);
-    }
-
-    const start = async function () {
-      // URL에서 현재 페이지 번호 가져오기, 기본값은 1
-      const currentPage = parseInt(getUrlParameter('page')) || 1;
-      const limit = 10;
-      
-      // 총 데이터 수와 현재 페이지 데이터 가져오기
-      const [totalCount, news] = await Promise.all([
-        getTotalCount(),
-        read(currentPage, limit)
-      ]);
-      
-      // 총 페이지 수 계산
-      const totalPages = Math.ceil(totalCount / limit);
-      
-      // 고정 상태별 정렬: 고정된 항목이 앞에, 그 다음 날짜별 정렬
-      news.sort((a, b) => {
-        if (a.pinned && !b.pinned) return -1;
-        if (!a.pinned && b.pinned) return 1;
-        return new Date(b.publishDate) - new Date(a.publishDate);
-      });
-      
-      // 기존 내용 지우기
-      $("#news").empty();
-      
-      // 이전 페이지네이션 요소 제거
-      $(".pagination-container").remove();
-      
-      // 清理旧的Swiper实例
-      if (window.swiperInstances) {
-        window.swiperInstances.forEach((swiper) => {
-          if (swiper && typeof swiper.destroy === 'function') {
-            swiper.destroy(true, true);
-          }
-        });
-        window.swiperInstances.clear();
-      }
-      
-      news.forEach(item => {
-        var images = "";//
-        if (item.images && item.images.length) {
-          if (item.images.length === 1) {
-            // 单张图片 - 添加lightbox功能
-            item.images.forEach(img => {
-              images += '<a href="' + img + '" data-lightbox="news-' + item.objectId + '" data-title="' + item.title + '">';
-              images += '<img src="' + img + '" class="w-full cursor-pointer hover:opacity-90 transition-opacity" alt="' + item.title + '" />';
-              images += '</a>';
-            });
-          } else {
-            // 多张图片 - Swiper轮播 + lightbox功能
-            var carouselImg = ''
-            item.images.forEach((img, i) => {
-              carouselImg += '<div class="swiper-slide">';
-              carouselImg += '<a href="' + img + '" data-lightbox="news-' + item.objectId + '" data-title="' + item.title + '">';
-              carouselImg += '<img src="' + img + '" class="w-full h-60 object-cover cursor-pointer hover:opacity-90 transition-opacity" alt="' + item.title + '" loading="lazy" onload="handleImageLoad(this)" onerror="handleImageError(this)" />';
-              carouselImg += '</a>';
-              carouselImg += '</div>';
-            });
-
-            images = '<div class="swiper-container swiper-' + item.objectId + '" style="height: 240px;">\
-               <div class="swiper-wrapper">'+ carouselImg + '</div>\
-               <div class="swiper-button-next swiper-button-white"></div>\
-               <div class="swiper-button-prev swiper-button-white"></div>\
-               <div class="swiper-pagination"></div>\
-             </div>';
-          }
-        }
-
-        var pinnedClass = item.pinned ? 'ring-2 ring-yellow-400' : '';
-        var pinnedBadge = item.pinned ? '<div class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-bold z-10">📌 </div>' : '';
-
-        $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1 relative ' + pinnedClass + '">\
-        ' + pinnedBadge + '\
-        <div class= "grid sm:grid-cols-6 gap-3" >\
-          <div class="sm:col-span-2">'+ images + '</div>\
-          <div class="sm:col-span-4">\
-            <div class="grid grid-flow-col gap-0 mb-2">\
-              <div class="bg-[#7F7F7F] text-white col-span-1 text-center p-1 notranslate">PICK UP</div>\
-              <div class="bg-white col-span-5 p-1 italic">'+ item.title + '</div>\
-            </div>\
-            <div class="bg-[#7F7F7F] bg-opacity-50 text-white p-2 text-sm news-content">'+ item.context + '\
-              <div class="text-black text-right mt-2">'+ item.publishDate + '</div>\
-            </div>\
-          </div>\
-        </div>\
-      </div> ')
-      });
-      
-      // 페이지네이션 네비게이션 생성
-      generatePagination(currentPage, totalPages);
-      
-      setTimeout(() => {
-        translateTo('ko');
-      }, "1000");
-    };
-
-    // 페이지네이션 네비게이션 생성
-    function generatePagination(currentPage, totalPages) {
-      if (totalPages <= 1) return;
-      
-      let paginationHtml = '<div class="pagination-container">';
-      paginationHtml += '<div class="flex justify-center items-center space-x-2 mt-6 mb-4">';
-      
-      // 이전 페이지 버튼
-      if (currentPage > 1) {
-        paginationHtml += `<button onclick="goToPage(${currentPage - 1})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">이전 페이지</button>`;
-      }
-      
-      // 페이지 번호 버튼
-      const startPage = Math.max(1, currentPage - 2);
-      const endPage = Math.min(totalPages, currentPage + 2);
-      
-      if (startPage > 1) {
-        paginationHtml += `<button onclick="goToPage(1)" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">1</button>`;
-        if (startPage > 2) {
-          paginationHtml += '<span class="px-3 py-2 text-sm text-gray-500">...</span>';
-        }
-      }
-      
-      for (let i = startPage; i <= endPage; i++) {
-        const isActive = i === currentPage;
-        const activeClass = isActive ? 'bg-yellow-500 text-white border-yellow-500' : 'text-gray-500 bg-white border-gray-300 hover:bg-gray-50';
-        paginationHtml += `<button onclick="goToPage(${i})" class="px-3 py-2 text-sm font-medium border rounded-md ${activeClass}">${i}</button>`;
-      }
-      
-      if (endPage < totalPages) {
-        if (endPage < totalPages - 1) {
-          paginationHtml += '<span class="px-3 py-2 text-sm text-gray-500">...</span>';
-        }
-        paginationHtml += `<button onclick="goToPage(${totalPages})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">${totalPages}</button>`;
-      }
-      
-      // 다음 페이지 버튼
-      if (currentPage < totalPages) {
-        paginationHtml += `<button onclick="goToPage(${currentPage + 1})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">다음 페이지</button>`;
-      }
-      
-      paginationHtml += '</div>';
-      
-      // 페이지 정보 추가
-      paginationHtml += `<div class="text-center text-sm text-gray-500 mb-4">${currentPage}페이지 / 총 ${totalPages}페이지</div>`;
-      paginationHtml += '</div>';
-      
-      $("#news").after(paginationHtml);
-    }
-
-    // 지정된 페이지로 이동
-    function goToPage(page) {
-      updateUrlParameter('page', page);
-      start(); // 데이터 다시 로드
-    }
-
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'jp' }, 'google_translate_element');
-    }
-
-    function hideGoogleTranslateBar() {
-      var element = document.querySelector("#\\:1\\.container");
-      if (element) {
-        element.style.visibility = "hidden";
-      }
-    }
-
     hideGoogleTranslateBar();
 
-    function translateTo(language) {
-      var selectField = document.querySelector("select.goog-te-combo");
-      if (selectField) {
-        selectField.value = language;
-        selectField.dispatchEvent(new Event('change'));
-        setTimeout(hideGoogleTranslateBar, 100);
-      }
-    }
-
-    function waitForElm(selector) {
-      return new Promise(resolve => {
-        if (document.querySelector(selector)) {
-          return resolve(document.querySelector(selector));
-        }
-
-        const observer = new MutationObserver(mutations => {
-          if (document.querySelector(selector)) {
-            observer.disconnect();
-            resolve(document.querySelector(selector));
-          }
-        });
-
-        // If you get "parameter 1 is not of type 'Node'" error, see https://stackoverflow.com/a/77855838/492336
-        observer.observe(document.body, {
-          childList: true,
-          subtree: true
-        });
-      });
-    }
     waitForElm('.goog-te-combo').then((elm) => {
-      console.log('Element is ready');
-      start();
+      // console.log('Element is ready');
+      start('ko');
     });
   </script>
 
@@ -494,17 +292,17 @@
           FAX: (052)262-3369<br />
           EMAIL: school@aiaso.gr.jp
         </div>
-        <div class="">접수 시간: 9:00 - 17:30<br />
-          휴무일: 토요일, 일요일, 국경일</div>
-        <div class="col-span-2 sm:col-span-1">주소:〒460-0007<br />
-          1-30-3, Shinsakae, Nagoya Shi Naka Ku, Aichi Ken, 460-0007, Japan<br />
-          1-30-29, Shinsakae, Nagoya Shi Naka Ku, Aichi Ken, 460-0007, Japan
+        <div class="">접수시간：9:00 - 17:30<br />
+          휴일：토요일, 일요일, 공휴일</div>
+        <div class="col-span-2 sm:col-span-1">주소：〒460-0007<br />
+          아이치현 나고야시 나카구 신사카에 1-30-3<br />
+          아이치현 나고야시 나카구 신사카에 1-30-29
         </div>
       </div>
       <hr class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700">
-      <div class="block sm:hidden mb-2 text-stone-800">SNS 연락 방법</div>
+      <div class="block sm:hidden mb-2 text-stone-800">SNS 연락 방법：</div>
       <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-5 text-stone-800">
-        <div class="w-24 hidden sm:block">SNS 연락 방법</div>
+        <div class="w-24 hidden sm:block">SNS 연락 방법：</div>
         <div class="flex">
           <img src="../images/skype.png" class="size-6 m-1" />
           <div><a href="skype:aiasoso?chat">SKYPE<br />aiasoso</a></div>
@@ -525,18 +323,12 @@
         </div>
       </div>
 
-      <div class="text-center my-2"><a href="index.html">HOME</a> | <a href="sitemap.html">웹 사이트 맵
-
-        </a> | <a href="policy.html">개인 정보 보호 정책
-
-        </a> | <a href="privacy.html">개인 정보 보호 정책
-
-        </a></div>
+      <div class="text-center my-2"><a href="index.html">HOME</a> | <a href="sitemap.html">사이트맵</a> | <a
+          href="policy.html">개인정보보호방침</a> | <a href="privacy.html">개인정보처리방침</a></div>
       <div class="text-center my-2">Copyright© Aichi International Academy All Rights Reserved.</div>
     </div>
   </div>
   <!-- footer end -->
-  <script src="../main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
   <!-- Swiper JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
