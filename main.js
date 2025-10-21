@@ -121,9 +121,10 @@ function handleImageError(img) {
   img.alt = '图片加载失败';
 }
 
-// 将函数暴露到全局作用域，供HTML中的onload和onerror事件使用
+// 将函数和变量暴露到全局作用域，供HTML中的onload和onerror事件使用
 window.handleImageLoad = handleImageLoad;
 window.handleImageError = handleImageError;
+window.swiperInstances = swiperInstances;
 
 document.addEventListener('alpine:init', () => {
   Alpine.data(

@@ -311,6 +311,16 @@
       // 前のページネーション要素を削除
       $(".pagination-container").remove();
       
+      // 清理旧的Swiper实例
+      if (window.swiperInstances) {
+        window.swiperInstances.forEach((swiper) => {
+          if (swiper && typeof swiper.destroy === 'function') {
+            swiper.destroy(true, true);
+          }
+        });
+        window.swiperInstances.clear();
+      }
+      
       news.forEach(item => {
         var images = "";//
         if (item.images && item.images.length) {

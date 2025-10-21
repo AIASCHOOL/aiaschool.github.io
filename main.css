@@ -21,7 +21,7 @@ li  {
 
 /* Swiper样式优化 */
 .swiper-container {
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   overflow: hidden;
   position: relative;
 }
