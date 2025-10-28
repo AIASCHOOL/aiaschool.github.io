@@ -231,8 +231,8 @@ function waitForElm(selector) {
   });
 }
 
-// 主要的数据加载和显示函数
-const start = async (language = 'zh-CN') => {
+// 主要的数据加载和显示函数（避免重复定义）
+window.start = window.start || (async (language = 'zh-CN') => {
   // URLから現在のページ番号を取得、デフォルトは1
   const currentPage = Number.parseInt(getUrlParameter('page')) || 1;
   const limit = 10;
@@ -325,7 +325,7 @@ const start = async (language = 'zh-CN') => {
   setTimeout(() => {
     translateTo(language);
   }, "1000");
-};
+});
 
 // 将函数和变量暴露到全局作用域，供HTML中的onload和onerror事件使用
 window.handleImageLoad = handleImageLoad;
@@ -339,7 +339,12 @@ window.googleTranslateElementInit = googleTranslateElementInit;
 window.hideGoogleTranslateBar = hideGoogleTranslateBar;
 window.translateTo = translateTo;
 window.waitForElm = waitForElm;
-window.start = start;
+// Alpine 可能已初始化，直接注册组件以避免 "Marquee is not defined"
+if (window.Alpine && typeof window.Alpine.data === 'function') {
+  // 触发已挂载的回调，使上面的 Alpine.data('Marquee', ...) 生效
+  // 若已注册会覆盖为同实现，不会抛错
+  document.dispatchEvent(new Event('alpine:init'));
+}
 
 document.addEventListener('alpine:init', () => {
   Alpine.data(

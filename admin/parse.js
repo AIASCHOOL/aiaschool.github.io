@@ -1,6 +1,23 @@
 Parse.initialize('myappID', 'infowin');
 Parse.serverURL = 'https://parse3.infowin.com.tw/parse';
 
+// 兼容 admin 使用：将 URLSearchParams 展平成对象（支持同名键变数组）
+function groupParamsByKey(params) {
+  return [...params.entries()].reduce((acc, tuple) => {
+    const [key, val] = tuple;
+    if (Object.prototype.hasOwnProperty.call(acc, key)) {
+      if (Array.isArray(acc[key])) {
+        acc[key] = [...acc[key], val]
+      } else {
+        acc[key] = [acc[key], val];
+      }
+    } else {
+      acc[key] = val;
+    }
+    return acc;
+  }, {});
+}
+
 const getDimensions = (image) => {
   return new Promise((resolve, reject) => {
     var img = new Image();
@@ -114,3 +131,30 @@ async function del(objectId) {
 
   $("#newsid-" + objectId).remove();
 }
+
+// 注册 Alpine.js Marquee 组件
+document.addEventListener('alpine:init', () => {
+  Alpine.data('Marquee', ({ speed = 1, spaceX = 0, dynamicWidthElements = false }) => ({
+    dynamicWidthElements,
+    init() {
+      // 简单的滚动动画实现
+      this.$el.style.setProperty('animation', `marquee ${60 / speed}s linear infinite`);
+      // CSS动画定义
+      if (!document.getElementById('marquee-style')) {
+        const style = document.createElement('style');
+        style.id = 'marquee-style';
+        style.textContent = `
+          @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+          }
+          .marquee li {
+            display: inline-block;
+            padding-right: 1rem;
+          }
+        `;
+        document.head.appendChild(style);
+      }
+    }
+  }));
+});
