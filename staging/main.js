@@ -31,6 +31,55 @@ function handleClick() {
 
 toggleBtn.addEventListener('click', handleClick);
 
+// Swiper 輪播圖相關（供各語系 index 的圖片 onload 使用）
+const swiperInstances = new Map();
+
+function handleImageLoad(img) {
+  const swiperContainer = img.closest('.swiper-container');
+  if (swiperContainer) {
+    const swiperId = swiperContainer.className.match(/swiper-(\w+)/);
+    if (swiperId) {
+      const instanceId = swiperId[1];
+      if (!swiperInstances.has(instanceId)) {
+        setTimeout(() => {
+          if (typeof Swiper === 'undefined') return;
+          const swiper = new Swiper(swiperContainer, {
+            loop: true,
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: swiperContainer.querySelector('.swiper-pagination'),
+              clickable: true,
+            },
+            navigation: {
+              nextEl: swiperContainer.querySelector('.swiper-button-next'),
+              prevEl: swiperContainer.querySelector('.swiper-button-prev'),
+            },
+            on: {
+              imagesReady: function() {
+                this.update();
+              }
+            }
+          });
+          swiperInstances.set(instanceId, swiper);
+        }, 100);
+      } else {
+        const swiper = swiperInstances.get(instanceId);
+        if (swiper) swiper.update();
+      }
+    }
+  }
+}
+
+function handleImageError(img) {
+  img.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPuWbvueJh+WKoOi9veWksei0pTwvdGV4dD48L3N2Zz4=';
+  img.alt = '图片加载失败';
+}
+
+window.handleImageLoad = handleImageLoad;
+window.handleImageError = handleImageError;
 
 /**
  * See https://stackoverflow.com/a/24004942/11784757
@@ -322,3 +371,44 @@ function goToPage(page) {
 document.addEventListener('DOMContentLoaded', function() {
   start();
 });
+
+// 语言菜单延迟关闭功能
+let languageMenuTimeout;
+
+// 显示语言菜单
+function showLanguageMenu() {
+  const languageDropdown = document.getElementById('languageDropdown');
+  if (languageDropdown) {
+    clearTimeout(languageMenuTimeout);
+    languageDropdown.classList.remove('hidden');
+    languageDropdown.classList.add('block');
+  }
+}
+
+// 隐藏语言菜单（带延迟）
+function hideLanguageMenu() {
+  const languageDropdown = document.getElementById('languageDropdown');
+  if (languageDropdown) {
+    languageMenuTimeout = setTimeout(() => {
+      languageDropdown.classList.remove('block');
+      languageDropdown.classList.add('hidden');
+    }, 300); // 300毫秒延迟
+  }
+}
+
+// 初始化语言菜单功能
+function initLanguageMenu() {
+  const languageMenu = document.getElementById('languageMenu');
+  const languageDropdown = document.getElementById('languageDropdown');
+
+  if (languageMenu && languageDropdown) {
+    languageMenu.addEventListener('mouseenter', showLanguageMenu);
+    languageMenu.addEventListener('mouseleave', hideLanguageMenu);
+    languageDropdown.addEventListener('mouseenter', showLanguageMenu);
+    languageDropdown.addEventListener('mouseleave', hideLanguageMenu);
+  }
+}
+
+window.showLanguageMenu = showLanguageMenu;
+window.hideLanguageMenu = hideLanguageMenu;
+window.initLanguageMenu = initLanguageMenu;
