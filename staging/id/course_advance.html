@@ -251,64 +251,231 @@
   <div class="w-full bg-[#FFFAEB]">
     <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-3 mt-1 ">
       <div class="flex flex-col sm:flex-row">
-        <div class="h-10 relative w-36 flex-shrink-0">
-          <img src="../images/btn_advance.png" class="h-full" />
-          <div class="absolute top-1 left-7 text-white italic text-lg">教育目標</div>
+        <div class="relative h-10 w-36 flex-shrink-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
+          </div>
+          <div class="absolute top-1 left-8 text-white italic text-lg">教育目標</div>
         </div>
-        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0">国際人材を育成し、世界の舞台で活躍を</div>
+        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">国際人材を育成し、世界の舞台で活躍を</div>
       </div>
       <div class="bg-gradient-to-br from-[#D2FFFF] to-[#7C9999] my-2 p-5 text-sm leading-6 ">
-        日本の専門学校、大学、大学院への進学をめざす外国人留学生を対象として、その学習、研究の基礎として役立つ総合的な日本語能力を身につけさせる。また、日本の企業に就職・就労をめざす外国人に日本企業の職場で仕事上必要な日本語能力を養成するとともに、日本社会での生活に必要な社会常識や習慣・文化などの教養を育み、日本国内外の社会にも寄与できる国際的視野を有する幅広い人材を育成する。
+        日本の専門学校、大学、大学院への進学をめざす外国人留学生を対象として、その学習、研究の基礎として役立つ総合的な日本語能力を身につけさせる。また、日本社会での生活に必要な社会常識や習慣・文化などの教養を育み、日本国内外の社会にも寄与できる国際的視野を有する幅広い人材を育成する。
       </div>
       <div class="flex flex-col sm:flex-row">
-        <div class="h-10 relative w-36 flex-shrink-0">
-          <img src="../images/btn_advance.png" class="h-full" />
+        <div class="relative h-10 w-36 flex-shrink-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
+          </div>
           <div class="absolute top-1 left-5 text-white italic text-lg">コース設置</div>
         </div>
-        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0">４月入学の春期生は2年、１０月入学の秋期生は1年6か月のコース</div>
+        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">４月入学の春期生は2年、１０月入学の秋期生は1年6か月のコース</div>
       </div>
       <div class=" my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
-        ・ 2年進学コース (4月入学，翌々年3月卒業)<br />
-        ・ 1年6か月進学コース (10月入学，翌々年3月卒業<br /><br />
-        <img src="../images/advance2.png" class="w-full" />
+        ・ 2年進学コース：4月入学，翌々年3月卒業。授業時間：約1,520時間<br />
+        ・ 1年6か月進学コース：10月入学，翌々年3月卒業。授業時間：約1,140時間<br />
+
+        <div class="relative w-full bg-[#e6f2f2] p-4 mt-8">
+          <!-- 2年進学コース 部分 -->
+          <div class="relative">
+            <!-- 月份标记 -->
+            <div class="absolute -top-6 left-32 right-8">
+              <div class="relative w-full">
+                <span class="absolute left-0 -translate-x-1/2 text-sm">4月</span>
+                <span class="absolute left-1/4 -translate-x-1/2 text-sm">10月</span>
+                <span class="absolute left-2/4 -translate-x-1/2 text-sm">3月/4月</span>
+                <span class="absolute left-3/4 -translate-x-1/2 text-sm">9月/10月</span>
+                <span class="absolute right-0 translate-x-1/2 text-sm">3月</span>
+              </div>
+            </div>
+
+            <!-- 学期标记 -->
+            <div class="absolute top-8 left-32 right-8 z-10">
+              <div class="relative w-full">
+                <span class="absolute left-[12.5%] -translate-x-1/2 text-sm">一学期</span>
+                <span class="absolute left-[37.5%] -translate-x-1/2 text-sm">二学期</span>
+                <span class="absolute left-[62.5%] -translate-x-1/2 text-sm">三学期</span>
+                <span class="absolute left-[87.5%] -translate-x-1/2 text-sm">四学期</span>
+              </div>
+            </div>
+
+            <!-- 2年進学コース -->
+            <div class="relative h-20 mt-8">
+              <div class="absolute left-0 top-1/2 -translate-y-1/2">
+                <span class="text-sm">2年進学コース</span>
+              </div>
+
+              <!-- 进度条容器 -->
+              <div class="absolute left-32 right-8 top-1/2 -translate-y-1/2 z-0">
+                <div class="h-8 bg-green-200"></div>
+              </div>
+
+              <!-- 入学和卒業标记 -->
+              <div class="absolute left-32 top-16 text-sm -mb-6">入学</div>
+              <div class="absolute right-8 top-16 text-sm -mb-6">卒業</div>
+
+              <!-- 垂直分隔线 -->
+              <div class="absolute left-32 right-8 top-0 bottom-0">
+                <div class="relative h-full w-full">
+                  <div class="absolute left-0 h-full w-px bg-gray-400"></div>
+                  <div class="absolute left-1/4 h-full w-px bg-gray-400"></div>
+                  <div class="absolute left-2/4 h-full w-px bg-gray-400"></div>
+                  <div class="absolute left-3/4 h-full w-px bg-gray-400"></div>
+                  <div class="absolute right-0 h-full w-px bg-gray-400"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 1年6か月進学コース -->
+            <div class="relative h-20 mb-8">
+
+              <!-- 学期标记 -->
+              <div class="absolute top-8 left-32 right-8 z-10">
+                <div class="relative w-full">
+                  <span class="absolute left-[37.5%] -translate-x-1/2 text-sm">一学期</span>
+                  <span class="absolute left-[62.5%] -translate-x-1/2 text-sm">二学期</span>
+                  <span class="absolute left-[87.5%] -translate-x-1/2 text-sm">三学期</span>
+                </div>
+              </div>
+
+              <div class="absolute left-0 top-1/2 -translate-y-1/2">
+                <span class="text-sm">1年6か月進学コース</span>
+              </div>
+
+              <!-- 进度条容器 -->
+              <div class="absolute left-32 right-8 top-1/2 -translate-y-1/2 z-0">
+                <div class="h-8 bg-pink-200 ml-[25%]"></div>
+              </div>
+
+              <!-- 入学和卒業标记 -->
+              <div class="absolute left-[calc(32px+25%+63px)] top-16 text-sm -mb-6">入学</div>
+              <div class="absolute right-8 top-16 text-sm -mb-6">卒業</div>
+
+              <!-- 垂直分隔线 -->
+              <div class="absolute left-32 right-8 top-0 bottom-0">
+                <div class="relative h-full w-full">
+                  <div class="absolute left-0 h-full w-px bg-gray-400"></div>
+                  <div class="absolute left-1/4 h-full w-px bg-gray-400"></div>
+                  <div class="absolute left-2/4 h-full w-px bg-gray-400"></div>
+                  <div class="absolute left-3/4 h-full w-px bg-gray-400"></div>
+                  <div class="absolute right-0 h-full w-px bg-gray-400"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="flex flex-col sm:flex-row">
-        <div class="h-10 relative w-36 flex-shrink-0">
-          <img src="../images/btn_advance.png" class="h-full" />
+        <div class="relative h-10 w-36 flex-shrink-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
+          </div>
           <div class="absolute top-1 left-5 text-white italic text-lg">コース特徴</div>
         </div>
-        <div class="my-2 p-1 text-[red] font-mono bg-[#a4bcff] text-xs">
-          ■ 優秀な講師陣
-          ■ きめ細かな進学指導
-          ■ 多くの推薦入学先
-          ■ 多彩な学校行事
-          ■ 完備した学生寮
+      </div>
+      <div class="w-full bg-[#e6f2f2] p-4 my-4 relative">
+        <style>
+          .circle-container {
+            position: relative;
+          }
+
+          .circle-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: calc(50% + 16px);
+            width: calc(100% - 32px);
+            height: 8px;
+            background-color: white;
+            transform: translateY(-50%);
+            z-index: 0;
+          }
+
+          .circle-container:last-child::before {
+            display: none;
+          }
+        </style>
+
+        <div class="flex flex-wrap md:flex-nowrap justify-center gap-1">
+          <!-- 少人数教育による段階的教育 -->
+          <div class="w-[30%] md:w-1/6 circle-container">
+            <div
+              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
+              <div class="text-center text-sm font-bold text-blue-900">少人数教育による段階的教育</div>
+              <!-- <div class="text-center text-[12px] text-gray-600 mt-1">小班制的階段式教育</div> -->
+            </div>
+          </div>
+
+          <!-- 異文化を理解するカリキュラム -->
+          <div class="w-[30%] md:w-1/6 circle-container">
+            <div
+              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
+              <div class="text-center text-sm font-bold text-blue-900">異文化を理解するカリキュラム</div>
+              <!-- <div class="text-center text-[12px] text-gray-600 mt-1">異文化理解課程</div> -->
+            </div>
+          </div>
+
+          <!-- マルチメディアを活用語学教育 -->
+          <div class="w-[30%] md:w-1/6 circle-container">
+            <div
+              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
+              <div class="text-center text-sm font-bold text-blue-900">マルチメディアを活用語学教育</div>
+              <!-- <div class="text-center text-[12px] text-gray-600 mt-1">活用多媒体的教学</div> -->
+            </div>
+          </div>
+
+          <!-- 語学力レベルによる能力クラス編成 -->
+          <div class="w-[30%] md:w-1/6 circle-container">
+            <div
+              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
+              <div class="text-center text-sm font-bold text-blue-900">語学力レベルによる能力クラス編成</div>
+              <!-- <div class="text-center text-[12px] text-gray-600 mt-1">クラスに入る前にレベルテストを実施</div> -->
+            </div>
+          </div>
+
+          <!-- 母語干渉に配慮漢字圏学習者別 -->
+          <div class="w-[30%] md:w-1/6 circle-container">
+            <div
+              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
+              <div class="text-center text-sm font-bold text-blue-900">入学から卒業まで徹底した進学サポート</div>
+              <!-- <div class="text-center text-[12px] text-gray-600 mt-1">漢字圏学習者特別クラスを設置</div> -->
+            </div>
+          </div>
+
+          <!-- 有名校進学者に特進EJU特別講座 -->
+          <div class="w-[30%] md:w-1/6 circle-container">
+            <div
+              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
+              <div class="text-center text-sm font-bold text-blue-900">日本文化及び多文化を理解するための多彩な学校行事</div>
+              <!-- <div class="text-center text-[12px] text-gray-600 mt-1">進学課程規定外の授業</div> -->
+            </div>
+          </div>
         </div>
       </div>
-      <img src="../images/advance1.png" class="w-full my-2" />
       <div class="flex flex-col sm:flex-row">
-        <div class="h-10 relative w-36 flex-shrink-0">
-          <img src="../images/btn_advance.png" class="h-full" />
-          <div class="absolute top-1 left-7 text-white italic text-lg">授業概要</div>
+        <div class="relative h-10 w-36 flex-shrink-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
+          </div>
+          <div class="absolute top-1 left-8 text-white italic text-lg">授業概要</div>
         </div>
-        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0">講義と演習を分けた授業、多様な対策講座を用意</div>
+        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">講義と演習を分けた授業</div>
       </div>
       <div class="my-2 p-5 leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999] text-sm">
-        <div class="flex flex-col sm:flex-row">
+        <!-- <div class="flex flex-col sm:flex-row">
           <div class="relative flex-shrink-0">
             <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">必修科目</div>
+            <div class="absolute top-4 left-4 text-xs">授業科目と内容</div>
           </div>
           <div class="mt-3 mb-5">日本語による文法・演習・会話・聴解・読解・作文 (日本語能力試験対策・進学指導等を授業内容に含む)。</div>
-        </div>
+        </div> -->
         <!-- <div class="flex flex-col sm:flex-row">
           <div class="relative flex-shrink-0">
             <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
             <div class="absolute top-3 left-7">選択科目</div>
           </div>
           <div class="mt-3 mb-5">
-            <div>状況に応じて特別講座を開講します (※コースの受講時間外にで別料金で)。</div>
-            <div class="flex flex-col md:flex-row gap-3 mt-2 text-xs">
+            <div class="grid grid-cols-1 gap-4 max-w-[1200px] mx-auto">
               <div class="bg-white w-80 rounded-md p-3 ">
                 日本留学試験対策講座<br />
                 　＊ 文系 : 数学１　/　総合科目<br />
@@ -323,11 +490,13 @@
         </div> -->
         <div class="flex flex-col sm:flex-row">
           <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">授業時間</div>
+            <div class="relative w-28 h-10">
+              <div class="absolute inset-0 bg-amber-200 rounded-[80%] border-4 border-white"></div>
+              <div class="absolute top-2 left-7 text-black">授業時間</div>
+            </div>
           </div>
-          <div class="mt-3 mb-5">
-            ・ 午前クラス　8：50　～　12：20　　　午後クラス　13：00　～　16：30<br />
+          <div class="mt-3 sm:mt-0 sm:ml-4">
+            ・ 午前クラス　8：50　～　12：20　　　午後クラス　13：00　～　16：30　　一コース45分<br />
             ・ 2年進学コース：７８週 （1,520 時間）<br />
             ・ 1年6か月進学コース：５９週 （1,140 時間）<br />
             授業日　月曜日～金曜日　　　※ただし祝祭日は休講
@@ -340,13 +509,362 @@
           </div>
           <div class="mt-3 mb-5">夏休み ： 約30日、　冬休み ： 約14日、　春休み ： 約30日</div>
         </div>
+        <div class="flex flex-col sm:flex-row">
+          <div class="relative flex-shrink-0">
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
+            <div class="absolute top-3 left-7">授業内容</div>
+          </div>
+          <div class="mt-3 mb-5 w-full md:w-[540px]">
+            <div class="mx-auto space-y-8">
+              <!-- 2年進学コース -->
+              <div class="border rounded-lg overflow-hidden">
+                <div class="bg-[#009999] text-white text-center py-2 font-bold">2年進学コース</div>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-xs">
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-7 bg-slate-200" rowspan="6">一<br />学<br />期</th>
+                      <th class="border px-1 py-1 bg-slate-300" colspan="7">初級</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-6"></th>
+                      <th class="border px-1 py-1 w-20">月</th>
+                      <th class="border px-1 py-1 w-20">火</th>
+                      <th class="border px-1 py-1 w-20">水</th>
+                      <th class="border px-1 py-1 w-20">木</th>
+                      <th class="border px-1 py-1 w-20">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">読解</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">作文</td>
+                      <td class="border px-1 py-1">試験対策</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">読解</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">作文</td>
+                      <td class="border px-1 py-1">※発表<br />※文化体験</td>
+                    </tr>
+                  </table>
+                  <table class="w-full text-xs mt-1">
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-7 bg-slate-200" rowspan="6">二<br />学<br />期</th>
+                      <th class="border px-1 py-1 bg-slate-300" colspan="7">中級</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-6"></th>
+                      <th class="border px-1 py-1 w-20">月</th>
+                      <th class="border px-1 py-1 w-20">火</th>
+                      <th class="border px-1 py-1 w-20">水</th>
+                      <th class="border px-1 py-1 w-20">木</th>
+                      <th class="border px-1 py-1 w-20">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1 text-[10px] sm:text-xs">※表現と漢字<br />※進学対策</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">読解</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">作文</td>
+                      <td class="border px-1 py-1">※試験対策<br />※面接対策</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">読解</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">作文</td>
+                      <td class="border px-1 py-1">※発表<br />※文化体験</td>
+                    </tr>
+                  </table>
+                  <table class="w-full text-xs mt-1">
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-7 bg-slate-200" rowspan="6">三<br />学<br />期</th>
+                      <th class="border px-1 py-1 bg-slate-300" colspan="7">上級１</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-6"></th>
+                      <th class="border px-1 py-1 w-20">月</th>
+                      <th class="border px-1 py-1 w-20">火</th>
+                      <th class="border px-1 py-1 w-20">水</th>
+                      <th class="border px-1 py-1 w-20">木</th>
+                      <th class="border px-1 py-1 w-20">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">文法</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">文法</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">文法</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">文法</td>
+                      <td class="border px-1 py-1 text-[10px] sm:text-xs">※表現と漢字<br />※進学対策</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">読解</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">作文</td>
+                      <td class="border px-1 py-1">面接対策</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">読解</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">作文</td>
+                      <td class="border px-1 py-1">※発表<br />※文化体験</td>
+                    </tr>
+                  </table>
+                  <table class="w-full text-xs mt-1">
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-7 bg-slate-200" rowspan="6">四<br />学<br />期</th>
+                      <th class="border px-1 py-1 bg-slate-300" colspan="7">上級２</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-6"></th>
+                      <th class="border px-1 py-1 w-20">月</th>
+                      <th class="border px-1 py-1 w-20">火</th>
+                      <th class="border px-1 py-1 w-20">水</th>
+                      <th class="border px-1 py-1 w-20">木</th>
+                      <th class="border px-1 py-1 w-20">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">文法</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">文法</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">文法</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">文法</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">読解</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">作文</td>
+                      <td class="border px-1 py-1">発表</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">読解</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">作文</td>
+                      <td class="border px-1 py-1">発表</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="text-xs text-right p-1">※週によって、2科目のどちらか。</div>
+              </div>
+
+              <!-- 1年6か月進学コース -->
+              <div class="border rounded-lg overflow-hidden">
+                <div class="bg-[#009999] text-white text-center py-2 font-bold">1年6か月進学コース</div>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-xs">
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-7 bg-slate-200" rowspan="6">一<br />学<br />期</th>
+                      <th class="border px-1 py-1 bg-slate-300" colspan="7">初級</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-6"></th>
+                      <th class="border px-1 py-1 w-20">月</th>
+                      <th class="border px-1 py-1 w-20">火</th>
+                      <th class="border px-1 py-1 w-20">水</th>
+                      <th class="border px-1 py-1 w-20">木</th>
+                      <th class="border px-1 py-1 w-20">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">読解</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">作文</td>
+                      <td class="border px-1 py-1">※1面接対策<br />※1試験対策<br />※1進学対策</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">読解</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">作文</td>
+                      <td class="border px-1 py-1">※発表<br />※文化体験</td>
+                    </tr>
+                  </table>
+                  <table class="w-full text-xs mt-1">
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-7 bg-slate-200" rowspan="6">二<br />学<br />期</th>
+                      <th class="border px-1 py-1 bg-slate-300" colspan="7">中級</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-6"></th>
+                      <th class="border px-1 py-1 w-20">月</th>
+                      <th class="border px-1 py-1 w-20">火</th>
+                      <th class="border px-1 py-1 w-20">水</th>
+                      <th class="border px-1 py-1 w-20">木</th>
+                      <th class="border px-1 py-1 w-20">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">文法</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">文法</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">文法</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">文法</td>
+                      <td class="border px-1 py-1 text-[10px] sm:text-xs">※2表現と漢字<br />※2進学対策</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">読解</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">作文</td>
+                      <td class="border px-1 py-1">※2試験対策<br />※2面接対策</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">読解</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">作文</td>
+                      <td class="border px-1 py-1">※2発表<br />※2文化体験</td>
+                    </tr>
+                  </table>
+                  <table class="w-full text-xs mt-1">
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-7 bg-slate-200" rowspan="6">三<br />学<br />期</th>
+                      <th class="border px-1 py-1 bg-slate-300" colspan="7">上級１</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-6"></th>
+                      <th class="border px-1 py-1 w-20">月</th>
+                      <th class="border px-1 py-1 w-20">火</th>
+                      <th class="border px-1 py-1 w-20">水</th>
+                      <th class="border px-1 py-1 w-20">木</th>
+                      <th class="border px-1 py-1 w-20">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">文法</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">文法</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">文法</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                      <td class="border px-1 py-1">文法</td>
+                      <td class="border px-1 py-1">表現と漢字</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">聴解</td>
+                      <td class="border px-1 py-1">作文</td>
+                      <td class="border px-1 py-1">試験対策</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1">読解</td>
+                      <td class="border px-1 py-1">読解</td>
+                      <td class="border px-1 py-1">読解</td>
+                      <td class="border px-1 py-1">発表</td>
+                      <td class="border px-1 py-1">文化体験</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="text-xs text-right p-1">※ 1週によって、3科目のどれか。<br />※ 2週によって、2科目のどちらか。</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="flex flex-col sm:flex-row">
-        <div class="h-10 relative w-36 flex-shrink-0">
-          <img src="../images/btn_advance.png" class="h-full" />
-          <div class="absolute top-1 left-7 text-white italic text-lg">進路選択</div>
+        <div class="relative h-10 w-36 flex-shrink-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
+          </div>
+          <div class="absolute top-1 left-8 text-white italic text-lg">進路選択</div>
         </div>
-        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0">本学院卒業後、多様な進路の選択肢がある</div>
+        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">本学院卒業後、多様な進路の選択肢がある</div>
       </div>
       <div class=" my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
         <div class="flex flex-col sm:flex-row">
@@ -379,52 +897,69 @@
         </div>
       </div>
       <div class="flex flex-col sm:flex-row">
-        <div class="h-10 relative w-36 flex-shrink-0">
-          <img src="../images/btn_advance.png" class="h-full" />
-          <div class="absolute top-1 left-7 text-white italic text-lg">学費明細</div>
+        <div class="relative h-10 w-36 flex-shrink-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
+          </div>
+          <div class="absolute top-1 left-8 text-white italic text-lg">学費明細</div>
         </div>
-        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0">特別な事情がない限り、基本的に在留期間の更新前に一括払い</div>
+        <!-- <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">特別な事情がない限り、基本的に在留期間の更新前に一括払い</div> -->
       </div>
       <div class=" my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
-        <table class="border-collapse border border-slate-500 w-full">
+        <table class="border-collapse border border-slate-500 w-full text-xs md:text-sm">
           <thead>
-            <tr>
-              <th class="border border-slate-600 bg-[#009999] text-white">コース別</th>
-              <th class="border border-slate-600 bg-[#009999] text-white">選考料</th>
-              <th class="border border-slate-600 bg-[#009999] text-white">入学金</th>
-              <th class="border border-slate-600 bg-[#009999] text-white">雑費</th>
-              <th class="border border-slate-600 bg-[#009999] text-white">第１学年学費</th>
-              <th class="border border-slate-600 bg-[#009999] text-white">第２学年学費</th>
+            <tr class="bg-[#009999] text-white">
+              <th class="border border-slate-600">項目／区分</th>
+              <th class="border border-slate-600">選考料</th>
+              <th class="border border-slate-600">入学金</th>
+              <th class="border border-slate-600">雑費</th>
+              <th class="border border-slate-600">学費<br>第一学年</th>
+              <th class="border border-slate-600">一年目合計</th>
+              <th class="border border-slate-600">学費<br>第二学年</th>
+              <th class="border border-slate-600">一年目＆二年目<br>費用合計</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="border border-slate-700 bg-[#009999] text-white text-center">1年6か月進学　コース</td>
-              <td class="border border-slate-700 text-center">￥22,000</td>
-              <td class="border border-slate-700 text-center">￥88,000</td>
-              <td class="border border-slate-700 text-center">￥66,000</td>
-              <td class="border border-slate-700 text-center">￥726,000</td>
-              <td class="border border-slate-700 text-center">￥363,000（半年分）</td>
+            <tr class="bg-white">
+              <td class="border border-slate-700 text-center font-bold">1年6か月コース</td>
+              <td class="border border-slate-700 text-center">¥22,000</td>
+              <td class="border border-slate-700 text-center">¥88,000</td>
+              <td class="border border-slate-700 text-center">¥67,000</td>
+              <td class="border border-slate-700 text-center">¥726,000</td>
+              <td class="border border-slate-700 text-center">¥903,000</td>
+              <td class="border border-slate-700 text-center">¥363,000<br><span class="text-xs text-gray-500">（半年分）</span></td>
+              <td class="border border-slate-700 text-center">¥1,266,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-slate-700 text-center font-bold">2年コース</td>
+              <td class="border border-slate-700 text-center">¥22,000</td>
+              <td class="border border-slate-700 text-center">¥88,000</td>
+              <td class="border border-slate-700 text-center">¥77,000</td>
+              <td class="border border-slate-700 text-center">¥726,000</td>
+              <td class="border border-slate-700 text-center">¥913,000</td>
+              <td class="border border-slate-700 text-center">¥726,000<br><span class="text-xs text-gray-500">（一年分）</span></td>
+              <td class="border border-slate-700 text-center">¥1,639,000</td>
             </tr>
             <tr>
-              <td class="border border-slate-700 bg-[#009999] text-white text-center">2年進学　コース</td>
-              <td class="border border-slate-700 text-center">￥22,000</td>
-              <td class="border border-slate-700 text-center">￥88,000</td>
-              <td class="border border-slate-700 text-center">￥76,000</td>
-              <td class="border border-slate-700 text-center">￥726,000</td>
-              <td class="border border-slate-700 text-center">￥726,000</td>
-            </tr>
-            <tr>
-              <td class="border border-slate-700"></td>
-              <td class="border border-slate-700 text-center text-[red]" colspan="4">入学前全納</td>
-              <td class="border border-slate-700 text-center text-[red]">ビザ更新前に払い</td>
+              <td class="border border-slate-700 text-center font-bold">納付期限</td>
+              <td class="border border-slate-700 text-center">出願時</td>
+              <td class="border border-slate-700 text-center" colspan="2">申請結果通知後２週間以内</td>
+              <td class="border border-slate-700 text-center" colspan="2"></td>
+              <td class="border border-slate-700 text-center" colspan="2">在留期間更新前</td>
             </tr>
           </tbody>
         </table>
+        <div class="text-xs text-gray-700 mt-2">
+          ※雑費内訳：教材費、健康管理費、外部試験費、団体保険料<br>
+          <span class="font-bold">一カ月の生活費について：</span>
+          食費15,000円～　光熱費8,000円～　携帯電話料金5,000円～　雑費5,000円～
+        </div>
       </div>
-      <div class="h-10 relative">
-        <img src="../images/btn_advance.png" class="h-full" />
-        <div class="absolute top-1 left-7 text-white italic text-lg">入学出願</div>
+      <div class="relative h-10 w-36 flex-shrink-0">
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
+        </div>
+        <div class="absolute top-1 left-8 text-white italic text-lg">入学出願</div>
       </div>
       <div class="mt-2 mb-10 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
         <div class="flex flex-col sm:flex-row">
