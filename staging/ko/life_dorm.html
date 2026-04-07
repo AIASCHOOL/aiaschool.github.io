@@ -218,7 +218,7 @@
   </div>
   <!-- menu end -->
   <!-- required classes: overflow-hidden  -->
-  <div class="overflow-hidden text-xs bg-red-400 text-white">
+  <div class="overflow-hidden text-xs bg-red-400 text-white hidden">
     <!--  required classes: marquee inline-flex max-w-full  -->
     <ul class="marquee py-2 inline-flex space-x-4 whitespace-nowrap max-w-full"
       x-data="Marquee({speed: 0.2, spaceX: 4})">
@@ -452,8 +452,37 @@
           </p>
         </div>
       </div>
+    </div>    <div class="flex items-center gap-3">
+      <div class="h-10 relative shrink-0">
+        <img src="../images/10/BUTTON-10-5_subtitle.png" class="h-full" />
+        <div class="absolute inset-0 flex items-center pl-6">
+          <span class="text-white italic text-lg">CERES 쓰루마</span>
+        </div>
+      </div>
+      <span class="text-stone-900 font-semibold text-sm">〒460-0012 愛知県名古屋市中区千代田5-19-15</span>
     </div>
-    <div class="h-10 relative">
+    <div class="bg-orange-200 my-2 p-5 text-sm leading-6">
+      <div class="grid sm:grid-cols-3 gap-6 sm:gap-4 text-stone-800">
+        <div class="col-span-1">
+          <img src="../images/10/dormitory/CERES_1.png" class="" alt="...">
+        </div>
+        <div class="col-span-1">
+          <div class="text-xl m-2 text-center text-[red]">방 구성도</div>
+          <p class="p-3 text-xs">
+            <img src="../images/10/dormitory/CERES_2.png" class="" alt="...">
+          </p>
+        </div>
+        <div class="col-span-1">
+          <div class="text-xl m-2 text-center text-[red]">방 유형 및 요금</div>
+          <p class="p-3 text-xs bg-[#FFE699]">
+            A 타입 (더블 룸) 월세: ¥37,000 x 2 = ¥74,000 (1 개 방)
+            <br />
+            ➀ 위에 언급된 비용 외에도 두 달치 월세에 상응하는 입주 보증금과 ¥20,000의 퇴실 비용이 필요합니다.<br />
+            ➁ 수도, 전기, 가스 비용은 본인 부담입니다.<br />
+          </p>
+        </div>
+      </div>
+    </div>    <div class="h-10 relative">
       <img src="../images/10/BUTTON-10-5_subtitle.png" class="h-full" />
       <div class="absolute top-1 left-6 text-white italic text-lg">학생 기숙사 신청</div>
     </div>
