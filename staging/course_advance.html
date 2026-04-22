@@ -23,6 +23,35 @@
       font-family: 'Noto Sans JP', sans-serif;
     }
   </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const removeWeekendColumns = (container) => {
+        const removeByIndexes = (nodes, indexes) => {
+          indexes
+            .slice()
+            .sort((a, b) => b - a)
+            .forEach((idx) => {
+              if (nodes[idx]) nodes[idx].remove();
+            });
+        };
+
+        container.querySelectorAll('table').forEach((table) => {
+          const colgroup = table.querySelector('colgroup');
+          if (colgroup) {
+            removeByIndexes(Array.from(colgroup.children), [7, 8]);
+          }
+
+          table.querySelectorAll('tr').forEach((row) => {
+            removeByIndexes(Array.from(row.children), [7, 8]);
+          });
+        });
+      };
+
+      document
+        .querySelectorAll('.remove-weekend-columns')
+        .forEach((section) => removeWeekendColumns(section));
+    });
+  </script>
   <link rel="stylesheet" href="main.css">
 </head>
 
@@ -487,18 +516,16 @@
             <img src="images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
             <div class="absolute top-3 left-7">授業内容</div>
           </div>
-          <div class="mt-3 mb-5 w-full md:w-[720px]">
+          <div class="mt-3 mb-5 w-full md:w-[640px]">
             <div class="mx-auto space-y-8">
               <!-- 2年進学コース -->
-              <div class="border rounded-lg overflow-hidden">
+              <div class="border rounded-lg overflow-hidden remove-weekend-columns">
                 <div class="bg-[#009999] text-white text-center py-2 font-bold">2年進学コース</div>
                 <div class="overflow-x-auto">
-                  <table class="table-fixed w-full min-w-[720px] text-xs">
+                  <table class="table-fixed w-full min-w-[640px] text-xs">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
-                      <col />
-                      <col />
                       <col />
                       <col />
                       <col />
@@ -507,11 +534,11 @@
                     </colgroup>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">課程の名称</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">２年進学コース</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">２年進学コース</th>
                     </tr>
                   </table>
                   <!-- 初級前期 -->
-                  <table class="table-fixed w-full min-w-[720px] text-xs mt-1">
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -520,16 +547,14 @@
                       <col />
                       <col />
                       <col />
-                      <col />
-                      <col />
                     </colgroup>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">初級前期</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">初級前期</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">曜日</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 w-16 text-center">月</th>
@@ -537,8 +562,6 @@
                       <th class="border px-1 py-1 w-16 text-center">水</th>
                       <th class="border px-1 py-1 w-16 text-center">木</th>
                       <th class="border px-1 py-1 w-16 text-center">金</th>
-                      <th class="border px-1 py-1 w-14 text-center">土</th>
-                      <th class="border px-1 py-1 w-14 text-center">日</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
@@ -548,8 +571,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
@@ -559,8 +580,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
@@ -570,8 +589,6 @@
                       <td class="border px-1 py-1 text-center">聴解</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
@@ -581,14 +598,10 @@
                       <td class="border px-1 py-1 text-center">聴解</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">5</td>
                       <td class="border px-1 py-1 text-center">　：　～　：　</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
@@ -597,7 +610,7 @@
                     </tr>
                   </table>
                   <!-- 初級後期 -->
-                  <table class="table-fixed w-full min-w-[720px] text-xs mt-1">
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -606,16 +619,14 @@
                       <col />
                       <col />
                       <col />
-                      <col />
-                      <col />
                     </colgroup>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">初級後期</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">初級後期</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">曜日</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 w-16 text-center">月</th>
@@ -623,8 +634,6 @@
                       <th class="border px-1 py-1 w-16 text-center">水</th>
                       <th class="border px-1 py-1 w-16 text-center">木</th>
                       <th class="border px-1 py-1 w-16 text-center">金</th>
-                      <th class="border px-1 py-1 w-14 text-center">土</th>
-                      <th class="border px-1 py-1 w-14 text-center">日</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
@@ -634,8 +643,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
@@ -645,8 +652,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
@@ -656,8 +661,6 @@
                       <td class="border px-1 py-1 text-center">聴解</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">発表</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
@@ -667,14 +670,10 @@
                       <td class="border px-1 py-1 text-center">聴解</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">発表</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">5</td>
                       <td class="border px-1 py-1 text-center">　：　～　：　</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
@@ -683,7 +682,7 @@
                     </tr>
                   </table>
                   <!-- 中級前期 -->
-                  <table class="table-fixed w-full min-w-[720px] text-xs mt-1">
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -692,16 +691,14 @@
                       <col />
                       <col />
                       <col />
-                      <col />
-                      <col />
                     </colgroup>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">中級前期</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">中級前期</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">曜日</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 w-16 text-center">月</th>
@@ -709,8 +706,6 @@
                       <th class="border px-1 py-1 w-16 text-center">水</th>
                       <th class="border px-1 py-1 w-16 text-center">木</th>
                       <th class="border px-1 py-1 w-16 text-center">金</th>
-                      <th class="border px-1 py-1 w-14 text-center">土</th>
-                      <th class="border px-1 py-1 w-14 text-center">日</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
@@ -720,8 +715,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
@@ -731,8 +724,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
@@ -742,8 +733,6 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
@@ -753,14 +742,10 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">5</td>
                       <td class="border px-1 py-1 text-center">　：　～　：　</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
@@ -769,7 +754,7 @@
                     </tr>
                   </table>
                   <!-- 中級後期 -->
-                  <table class="table-fixed w-full min-w-[720px] text-xs mt-1">
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -778,16 +763,14 @@
                       <col />
                       <col />
                       <col />
-                      <col />
-                      <col />
                     </colgroup>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">中級後期</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">中級後期</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">曜日</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 w-16 text-center">月</th>
@@ -795,8 +778,6 @@
                       <th class="border px-1 py-1 w-16 text-center">水</th>
                       <th class="border px-1 py-1 w-16 text-center">木</th>
                       <th class="border px-1 py-1 w-16 text-center">金</th>
-                      <th class="border px-1 py-1 w-14 text-center">土</th>
-                      <th class="border px-1 py-1 w-14 text-center">日</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
@@ -806,8 +787,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
@@ -817,8 +796,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
@@ -828,8 +805,6 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">発表</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
@@ -839,14 +814,10 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">発表</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">5</td>
                       <td class="border px-1 py-1 text-center">　：　～　：　</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
@@ -855,7 +826,7 @@
                     </tr>
                   </table>
                   <!-- 上級１ -->
-                  <table class="table-fixed w-full min-w-[720px] text-xs mt-1">
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -864,16 +835,14 @@
                       <col />
                       <col />
                       <col />
-                      <col />
-                      <col />
                     </colgroup>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">上級１</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">上級１</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">曜日</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 w-16 text-center">月</th>
@@ -881,8 +850,6 @@
                       <th class="border px-1 py-1 w-16 text-center">水</th>
                       <th class="border px-1 py-1 w-16 text-center">木</th>
                       <th class="border px-1 py-1 w-16 text-center">金</th>
-                      <th class="border px-1 py-1 w-14 text-center">土</th>
-                      <th class="border px-1 py-1 w-14 text-center">日</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
@@ -892,8 +859,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
@@ -903,8 +868,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
@@ -914,8 +877,6 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
@@ -925,14 +886,10 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">5</td>
                       <td class="border px-1 py-1 text-center">　：　～　：　</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
@@ -941,7 +898,7 @@
                     </tr>
                   </table>
                   <!-- 上級２ -->
-                  <table class="table-fixed w-full min-w-[720px] text-xs mt-1">
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -950,16 +907,14 @@
                       <col />
                       <col />
                       <col />
-                      <col />
-                      <col />
                     </colgroup>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">上級２</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">上級２</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">曜日</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 w-16 text-center">月</th>
@@ -967,8 +922,6 @@
                       <th class="border px-1 py-1 w-16 text-center">水</th>
                       <th class="border px-1 py-1 w-16 text-center">木</th>
                       <th class="border px-1 py-1 w-16 text-center">金</th>
-                      <th class="border px-1 py-1 w-14 text-center">土</th>
-                      <th class="border px-1 py-1 w-14 text-center">日</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
@@ -978,8 +931,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
@@ -989,8 +940,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
@@ -1000,8 +949,6 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">発表</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
@@ -1011,14 +958,10 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">発表</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">5</td>
                       <td class="border px-1 py-1 text-center">　：　～　：　</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
@@ -1027,7 +970,7 @@
                     </tr>
                   </table>
                   <!-- 上級３ -->
-                  <table class="table-fixed w-full min-w-[720px] text-xs mt-1">
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -1036,16 +979,14 @@
                       <col />
                       <col />
                       <col />
-                      <col />
-                      <col />
                     </colgroup>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">上級３</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">上級３</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">曜日</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 w-16 text-center">月</th>
@@ -1053,8 +994,6 @@
                       <th class="border px-1 py-1 w-16 text-center">水</th>
                       <th class="border px-1 py-1 w-16 text-center">木</th>
                       <th class="border px-1 py-1 w-16 text-center">金</th>
-                      <th class="border px-1 py-1 w-14 text-center">土</th>
-                      <th class="border px-1 py-1 w-14 text-center">日</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
@@ -1064,8 +1003,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
@@ -1075,8 +1012,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
@@ -1086,8 +1021,6 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
@@ -1097,14 +1030,10 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">5</td>
                       <td class="border px-1 py-1 text-center">　：　～　：　</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
@@ -1113,7 +1042,7 @@
                     </tr>
                   </table>
                   <!-- 上級４ -->
-                  <table class="table-fixed w-full min-w-[720px] text-xs mt-1">
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -1122,16 +1051,14 @@
                       <col />
                       <col />
                       <col />
-                      <col />
-                      <col />
                     </colgroup>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">上級４</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">上級４</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">曜日</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 w-16 text-center">月</th>
@@ -1139,8 +1066,6 @@
                       <th class="border px-1 py-1 w-16 text-center">水</th>
                       <th class="border px-1 py-1 w-16 text-center">木</th>
                       <th class="border px-1 py-1 w-16 text-center">金</th>
-                      <th class="border px-1 py-1 w-14 text-center">土</th>
-                      <th class="border px-1 py-1 w-14 text-center">日</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
@@ -1150,8 +1075,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
@@ -1161,8 +1084,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
@@ -1172,8 +1093,6 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">発表</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
@@ -1183,14 +1102,10 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">発表</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">5</td>
                       <td class="border px-1 py-1 text-center">　：　～　：　</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
@@ -1202,15 +1117,13 @@
               </div>
 
               <!-- 1年6か月進学コース -->
-              <div class="border rounded-lg overflow-hidden">
+              <div class="border rounded-lg overflow-hidden remove-weekend-columns">
                 <div class="bg-[#009999] text-white text-center py-2 font-bold">1年6か月進学コース</div>
                 <div class="overflow-x-auto">
-                  <table class="table-fixed w-full min-w-[720px] text-xs">
+                  <table class="table-fixed w-full min-w-[640px] text-xs">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
-                      <col />
-                      <col />
                       <col />
                       <col />
                       <col />
@@ -1219,11 +1132,11 @@
                     </colgroup>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">課程の名称</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">１年６か月進学コース</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">１年６か月進学コース</th>
                     </tr>
                   </table>
                   <!-- 初級後期 -->
-                  <table class="table-fixed w-full min-w-[720px] text-xs mt-1">
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -1232,16 +1145,14 @@
                       <col />
                       <col />
                       <col />
-                      <col />
-                      <col />
                     </colgroup>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">初級後期</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">初級後期</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">曜日</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 w-16 text-center">月</th>
@@ -1249,8 +1160,6 @@
                       <th class="border px-1 py-1 w-16 text-center">水</th>
                       <th class="border px-1 py-1 w-16 text-center">木</th>
                       <th class="border px-1 py-1 w-16 text-center">金</th>
-                      <th class="border px-1 py-1 w-14 text-center">土</th>
-                      <th class="border px-1 py-1 w-14 text-center">日</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
@@ -1260,8 +1169,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
@@ -1271,8 +1178,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
@@ -1282,8 +1187,6 @@
                       <td class="border px-1 py-1 text-center">聴解</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">発表</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
@@ -1293,14 +1196,10 @@
                       <td class="border px-1 py-1 text-center">聴解</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">発表</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">5</td>
                       <td class="border px-1 py-1 text-center">　：　～　：　</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
@@ -1309,7 +1208,7 @@
                     </tr>
                   </table>
                   <!-- 中級前期 -->
-                  <table class="table-fixed w-full min-w-[720px] text-xs mt-1">
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -1318,16 +1217,14 @@
                       <col />
                       <col />
                       <col />
-                      <col />
-                      <col />
                     </colgroup>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">中級前期</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">中級前期</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">曜日</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 w-16 text-center">月</th>
@@ -1335,8 +1232,6 @@
                       <th class="border px-1 py-1 w-16 text-center">水</th>
                       <th class="border px-1 py-1 w-16 text-center">木</th>
                       <th class="border px-1 py-1 w-16 text-center">金</th>
-                      <th class="border px-1 py-1 w-14 text-center">土</th>
-                      <th class="border px-1 py-1 w-14 text-center">日</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
@@ -1346,8 +1241,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
@@ -1357,8 +1250,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
@@ -1368,8 +1259,6 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
@@ -1379,14 +1268,10 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">5</td>
                       <td class="border px-1 py-1 text-center">　：　～　：　</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
@@ -1395,7 +1280,7 @@
                     </tr>
                   </table>
                   <!-- 中級後期 -->
-                  <table class="table-fixed w-full min-w-[720px] text-xs mt-1">
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -1404,16 +1289,14 @@
                       <col />
                       <col />
                       <col />
-                      <col />
-                      <col />
                     </colgroup>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">中級後期</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">中級後期</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">曜日</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 w-16 text-center">月</th>
@@ -1421,8 +1304,6 @@
                       <th class="border px-1 py-1 w-16 text-center">水</th>
                       <th class="border px-1 py-1 w-16 text-center">木</th>
                       <th class="border px-1 py-1 w-16 text-center">金</th>
-                      <th class="border px-1 py-1 w-14 text-center">土</th>
-                      <th class="border px-1 py-1 w-14 text-center">日</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
@@ -1432,8 +1313,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
@@ -1443,8 +1322,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
@@ -1454,8 +1331,6 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">発表</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
@@ -1465,14 +1340,10 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">発表</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">5</td>
                       <td class="border px-1 py-1 text-center">　：　～　：　</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
@@ -1481,7 +1352,7 @@
                     </tr>
                   </table>
                   <!-- 上級１ -->
-                  <table class="table-fixed w-full min-w-[720px] text-xs mt-1">
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -1490,16 +1361,14 @@
                       <col />
                       <col />
                       <col />
-                      <col />
-                      <col />
                     </colgroup>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">上級１</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">上級１</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">曜日</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 w-16 text-center">月</th>
@@ -1507,8 +1376,6 @@
                       <th class="border px-1 py-1 w-16 text-center">水</th>
                       <th class="border px-1 py-1 w-16 text-center">木</th>
                       <th class="border px-1 py-1 w-16 text-center">金</th>
-                      <th class="border px-1 py-1 w-14 text-center">土</th>
-                      <th class="border px-1 py-1 w-14 text-center">日</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
@@ -1518,8 +1385,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
@@ -1529,8 +1394,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
@@ -1540,8 +1403,6 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
@@ -1551,14 +1412,10 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">5</td>
                       <td class="border px-1 py-1 text-center">　：　～　：　</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
@@ -1567,7 +1424,7 @@
                     </tr>
                   </table>
                   <!-- 上級２ -->
-                  <table class="table-fixed w-full min-w-[720px] text-xs mt-1">
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -1576,16 +1433,14 @@
                       <col />
                       <col />
                       <col />
-                      <col />
-                      <col />
                     </colgroup>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">上級２</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">上級２</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">曜日</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 w-16 text-center">月</th>
@@ -1593,8 +1448,6 @@
                       <th class="border px-1 py-1 w-16 text-center">水</th>
                       <th class="border px-1 py-1 w-16 text-center">木</th>
                       <th class="border px-1 py-1 w-16 text-center">金</th>
-                      <th class="border px-1 py-1 w-14 text-center">土</th>
-                      <th class="border px-1 py-1 w-14 text-center">日</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
@@ -1604,8 +1457,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
@@ -1615,8 +1466,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
@@ -1626,8 +1475,6 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">発表</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
@@ -1637,14 +1484,10 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">発表</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">5</td>
                       <td class="border px-1 py-1 text-center">　：　～　：　</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
@@ -1653,7 +1496,7 @@
                     </tr>
                   </table>
                   <!-- 上級３ -->
-                  <table class="table-fixed w-full min-w-[720px] text-xs mt-1">
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -1662,16 +1505,14 @@
                       <col />
                       <col />
                       <col />
-                      <col />
-                      <col />
                     </colgroup>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">上級３</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">上級３</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="7">曜日</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
                     </tr>
                     <tr class="bg-gray-100">
                       <th class="border px-1 py-1 w-16 text-center">月</th>
@@ -1679,8 +1520,6 @@
                       <th class="border px-1 py-1 w-16 text-center">水</th>
                       <th class="border px-1 py-1 w-16 text-center">木</th>
                       <th class="border px-1 py-1 w-16 text-center">金</th>
-                      <th class="border px-1 py-1 w-14 text-center">土</th>
-                      <th class="border px-1 py-1 w-14 text-center">日</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
@@ -1690,8 +1529,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
@@ -1701,8 +1538,6 @@
                       <td class="border px-1 py-1 text-center">総合日本語</td>
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
@@ -1712,8 +1547,6 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
@@ -1723,14 +1556,10 @@
                       <td class="border px-1 py-1 text-center">表現文法</td>
                       <td class="border px-1 py-1 text-center">作文</td>
                       <td class="border px-1 py-1 text-center">総合日本語</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">5</td>
                       <td class="border px-1 py-1 text-center">　：　～　：　</td>
-                      <td class="border px-1 py-1 text-center"></td>
-                      <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
                       <td class="border px-1 py-1 text-center"></td>
@@ -1841,6 +1670,75 @@
           ※雑費内訳：校外学習費、健康診断料、団体保険料<br>
           <span class="font-bold">一カ月の生活費について：</span>
           食費15,000円～ 光熱費8,000円～ 携帯電話料金5,000円～ 雑費5,000円～
+
+          <div class="mt-5 pt-4 border-t border-slate-300">
+            <p class="font-bold text-sm text-gray-900 mb-2">その他の費用</p>
+            <div class="space-y-1.5 mb-3 text-gray-800">
+              <p class="flex gap-1.5 text-left">
+                <span class="shrink-0 text-gray-900" aria-hidden="true">・</span>
+                <span class="min-w-0">在学中及び卒業後の各種証明書の発行には下記の手数料がかかります。</span>
+              </p>
+              <p class="flex gap-1.5 text-left">
+                <span class="shrink-0 text-gray-900" aria-hidden="true">・</span>
+                <span class="min-w-0">また、証明書の発行は、申請日より1週間ほどかかるので、早めの申請をお勧めします。</span>
+              </p>
+              <p class="flex gap-1.5 text-left">
+                <span class="shrink-0 text-gray-900" aria-hidden="true">・</span>
+                <span class="min-w-0">その際、証明書発行済みの発行手数料は、どんな理由でも返金できません。</span>
+              </p>
+            </div>
+            <table class="border-collapse border border-slate-500 w-full text-xs md:text-sm mb-3 md:w-[640px]">
+              <thead>
+                <tr class="bg-[#009999] text-white">
+                  <th class="border border-slate-600 text-left px-2 py-1.5">項目</th>
+                  <th class="border border-slate-600 text-center whitespace-nowrap px-2 py-1.5 w-[9rem]">手数料</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white">
+                  <td class="border border-slate-700 px-2 py-1">在学証明書</td>
+                  <td class="border border-slate-700 text-center">一通　500円</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="border border-slate-700 px-2 py-1">履修証明書</td>
+                  <td class="border border-slate-700 text-center">一通　500円</td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="border border-slate-700 px-2 py-1">卒業・卒業見込証明書</td>
+                  <td class="border border-slate-700 text-center">一通　500円</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="border border-slate-700 px-2 py-1">出席・成績証明書</td>
+                  <td class="border border-slate-700 text-center">一通　500円</td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="border border-slate-700 px-2 py-1">成績証明書</td>
+                  <td class="border border-slate-700 text-center">一通　500円</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="border border-slate-700 px-2 py-1">出席証明書</td>
+                  <td class="border border-slate-700 text-center">一通　500円</td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="border border-slate-700 px-2 py-1">推薦書・所見</td>
+                  <td class="border border-slate-700 text-center">一通　500円</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="border border-slate-700 px-2 py-1">日本語能力証明書</td>
+                  <td class="border border-slate-700 text-center">一通　500円</td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="border border-slate-700 px-2 py-1">学生証（再発行）</td>
+                  <td class="border border-slate-700 text-center">一通　1,000円</td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="border border-slate-700 px-2 py-1">急ぎ（2開校日以内）で発行希望の場合、別途手数料が必要</td>
+                  <td class="border border-slate-700 text-center">一通　500円</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="text-gray-800">・入国時の空港への出迎えは有料です。詳細は学校事務局へお問合せ下さい。</p>
+          </div>
         </div>
       </div>
       <div class="relative h-10 w-36 flex-shrink-0">
