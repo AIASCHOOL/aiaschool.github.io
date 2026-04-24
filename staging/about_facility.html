@@ -22,6 +22,82 @@
     body {
       font-family: 'Noto Sans JP', sans-serif;
     }
+
+    .facility-badge-building {
+      display: inline-block;
+      margin-bottom: 0.75rem;
+      padding: 0.35rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      background: #facc15;
+      color: #1f2937;
+    }
+
+    .facility-badge-floor {
+      display: inline-block;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 0.35rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      background: #bbf7d0;
+      color: #14532d;
+    }
+
+    .facility-badge-floor-wide {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .facility-photo-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem 1.25rem;
+    }
+
+    @media (min-width: 640px) {
+      .facility-photo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .facility-photo-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .facility-photo-cell {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .facility-photo-cell span.caption {
+      font-size: 0.8125rem;
+      line-height: 1.35;
+      color: #111827;
+    }
+
+    .facility-photo-cell img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 0.25rem;
+      border: 1px solid #e5e7eb;
+      object-fit: cover;
+    }
+
+    .facility-hero {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 0.25rem;
+      border: 1px solid #e5e7eb;
+      margin-bottom: 0.5rem;
+    }
   </style>
   <link rel="stylesheet" href="main.css">
 </head>
@@ -247,96 +323,75 @@
       学院長室1、大会議室教職員控室１、事務教務室１、大教室12、小教室３、進学進路指導室1、保健室１、PC コーナー多目的研修室、日本文化体験室、PC音声読み取りIT pen
       付き図書室1、音楽娯楽室1、宿泊客室2、ルーフガーデン2、、駐輪駐車場３などの施設。全館空調、シャワ―トイレ、空気清浄機、TVなど電化設備完備</div>
     <div class="bg-opacity-15 bg-[#7F1CE2] my-2 px-5 py-2 text-sm leading-6">
-      <div class="h-12 relative">
-        <img src="images/btn_ellipse_2-3.png" class="h-full " />
-        <div class="absolute top-3 left-10">本館</div>
-      </div>
-      <img src="photos/facility/2.png" class="sm:h-48 mb-6" />
-      <div class="my-3">
-        <div class="bg-lime-300 w-8 text-center mt-2">1F</div>
-        <div class="flex flex-col sm:flex-row sm:flex-wrap text-xs">
-          <div class="mr-2 mt-2"><img src="photos/facility/2_1_1.jpg" class="sm:h-48" />玄関口</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_1_2.jpg" class="sm:h-48" />玄関正面</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_1_3.jpg" class="sm:h-48" />玄関左側</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_1_4.jpg" class="sm:h-48" />玄関右側</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_1_5.jpg" class="sm:h-48" />事務掲示板</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_1_6.jpg" class="sm:h-48" />事務室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_1_7.jpg" class="sm:h-48" />歴代優等賞受賞者</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_1_8.jpg" class="sm:h-48" />会議室</div>
+      <!-- 本館 -->
+      <section class="mb-8">
+        <span class="facility-badge-building">本館</span>
+        <img src="photos/facility/2.png" class="facility-hero" alt="本館外観" width="1200" height="675" loading="lazy" />
+        <span class="facility-badge-floor">1F</span>
+        <div class="facility-photo-grid">
+          <div class="facility-photo-cell"><span class="caption">玄関口</span><img src="photos/school/H1F-1.png" alt="玄関口" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">駐車場</span><img src="photos/school/H1F-2.png" alt="駐車場" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">事務所（教職員室）</span><img src="photos/school/H1F-3.png" alt="事務所（教職員室）" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">玄関ホール</span><img src="photos/school/H1F-4.png" alt="玄関ホール" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">会議室</span><img src="photos/school/H1F-5.png" alt="会議室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">歴代優等賞受賞者</span><img src="photos/school/H1F-6.png" alt="歴代優等賞受賞者" loading="lazy" /></div>
         </div>
-      </div>
-      <div class="my-3">
-        <div class="bg-lime-300 w-8 text-center mt-2">2F</div>
-        <div class="flex flex-row flex-wrap text-xs">
-          <div class="mr-2 mt-2"><img src="photos/facility/2_2_1.jpg" class="sm:h-48" />学生コミュニケーションコーナー</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_2_2.jpg" class="sm:h-48" />2A教室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_2_2.jpg" class="sm:h-48" />2B教室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_2_3.jpg" class="sm:h-48" />2C教室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_2_4.jpg" class="sm:h-48" />研修室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_2_5.jpg" class="sm:h-48" />廊下</div>
+        <span class="facility-badge-floor">2F</span>
+        <div class="facility-photo-grid">
+          <div class="facility-photo-cell"><span class="caption">コミュニケーションコーナー</span><img src="photos/school/H2F-1.png" alt="コミュニケーションコーナー" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">廊下</span><img src="photos/school/H2F-2.png" alt="廊下" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">研修室</span><img src="photos/school/H2F-3.png" alt="研修室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">2A 教室</span><img src="photos/school/H2F-4.png" alt="2A 教室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">2B 教室</span><img src="photos/school/H2F-5.png" alt="2B 教室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">2C 教室</span><img src="photos/school/H2F-6.png" alt="2C 教室" loading="lazy" /></div>
         </div>
-      </div>
-      <div class="my-3">
-        <div class="bg-lime-300 w-16 text-center mt-2">3F＆屋上</div>
-        <div class="flex flex-row flex-wrap text-xs">
-          <div class="mr-2 mt-2"><img src="photos/facility/2_3_1.jpg" class="sm:h-48" />舞台正面</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_3_2.jpg" class="sm:h-48" />3A教室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_3_2.jpg" class="sm:h-48" />3B教室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_3_2.jpg" class="sm:h-48" />3C教室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_3_3.jpg" class="sm:h-48" />屋上</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_3_4.png" class="sm:h-48" />屋上</div>
+        <span class="facility-badge-floor">3F &amp; 屋上</span>
+        <div class="facility-photo-grid">
+          <div class="facility-photo-cell"><span class="caption">屋上休憩所</span><img src="photos/school/H3F-1.png" alt="屋上休憩所" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">舞台</span><img src="photos/school/H3F-2.png" alt="舞台" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">和室</span><img src="photos/school/H3F-3.png" alt="和室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">3A 教室</span><img src="photos/school/H3F-4.png" alt="3A 教室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">3B 教室</span><img src="photos/school/H3F-5.png" alt="3B 教室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">3C 教室</span><img src="photos/school/H3F-6.png" alt="3C 教室" loading="lazy" /></div>
         </div>
-      </div>
-      <div class="my-3">
-        <div class="bg-lime-300 w-24 text-center mt-2">B1文化客室</div>
-        <div class="flex flex-row flex-wrap text-xs">
-          <div class="mr-2 mt-2"><img src="photos/facility/2_b1_1.png" class="sm:h-48" />音楽室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_b1_2.png" class="sm:h-48" />音楽室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_b1_3.png" class="sm:h-48" />図書室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_b1_4.png" class="sm:h-48" />図書室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_b1_5.png" class="sm:h-48" />図書室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/2_b1_6.jpg" class="sm:h-48" />客室</div>
+        <span class="facility-badge-floor">B1文化客室</span>
+        <div class="facility-photo-grid">
+          <div class="facility-photo-cell"><span class="caption">図書室</span><img src="photos/school/HB1-1.png" alt="図書室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">音楽室</span><img src="photos/school/HB1-2.png" alt="音楽室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">ゲストルーム</span><img src="photos/school/HB1-3.png" alt="ゲストルーム" loading="lazy" /></div>
         </div>
-      </div>
-      <div class="h-12 relative">
-        <img src="images/btn_ellipse_2-3.png" class="h-full " />
-        <div class="absolute top-3 left-10">別館</div>
-      </div>
-      <img src="photos/facility/1.png" class="sm:h-72 mb-6" />
-      <div class="my-3">
-        <div class="bg-lime-300 w-8 text-center mt-2">1F</div>
-        <div class="flex flex-row flex-wrap text-xs">
-          <div class="mr-2 mt-2"><img src="photos/facility/1_1_1.jpg" class="sm:h-48" />別館入り口</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/1_1_2.jpg" class="sm:h-48" />コミュニケーションコーナー</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/1_1_3.png" class="sm:h-48" />コミュニケーションコーナー</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/1_1_4.jpg" class="sm:h-48" />玄関口</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/1_1_5.jpg" class="sm:h-48" />玄関左側</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/1_1_6.jpg" class="sm:h-48" />学生用PCコーナー</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/1_1_7.jpg" class="sm:h-48" />廊下掲示板</div>
+      </section>
+      <!-- 別館 -->
+      <section>
+        <span class="facility-badge-building">別館</span>
+        <img src="photos/school/B1F-0.png" class="facility-hero mt-4" alt="別館入り口外観" width="1200" height="675" loading="lazy" />
+        <span class="facility-badge-floor">1F</span>
+        <div class="facility-photo-grid">
+          <div class="facility-photo-cell"><span class="caption">別館入り口</span><img src="photos/school/B1F-1.png" alt="別館入り口" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">休憩所</span><img src="photos/school/B1F-2.png" alt="休憩所" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">靴箱着替所</span><img src="photos/school/B1F-3.png" alt="靴箱着替所" loading="lazy" /></div>
         </div>
-      </div>
-      <div class="my-3">
-        <div class="bg-lime-300 w-52 text-center mt-2">2F～7F教室（大教室、小教室）</div>
-        <div class="flex flex-row flex-wrap text-xs">
-          <div class="mr-2 mt-2"><img src="photos/facility/1_2_1.jpg" class="sm:h-48" />7F教室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/1_2_2.jpg" class="sm:h-48" />6F教室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/1_2_3.jpg" class="sm:h-48" />5F教室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/1_2_3.jpg" class="sm:h-48" />4F教室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/1_2_3.jpg" class="sm:h-48" />3F教室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/1_2_3.jpg" class="sm:h-48" />2F教室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/1_2_4.jpg" class="sm:h-48" />男子トイレ</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/1_2_5.png" class="sm:h-48" />女子トイレ</div>
+        <span class="facility-badge-floor facility-badge-floor-wide">2F〜7F教室（大教室、小教室）</span>
+        <div class="facility-photo-grid">
+          <div class="facility-photo-cell"><span class="caption">2階教室</span><img src="photos/school/B2F7F-1.png" alt="2階教室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">3階教室</span><img src="photos/school/B2F7F-2.png" alt="3階教室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">4階教室</span><img src="photos/school/B2F7F-3.png" alt="4階教室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">5階教室</span><img src="photos/school/B2F7F-4.png" alt="5階教室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">6階教室</span><img src="photos/school/B2F7F-5.png" alt="6階教室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">7階教室</span><img src="photos/school/B2F7F-6.png" alt="7階教室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">4F 自習室</span><img src="photos/school/B2F7F-7.png" alt="4F 自習室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">5F 自習室</span><img src="photos/school/B2F7F-8.png" alt="5F 自習室" loading="lazy" /></div>
         </div>
-      </div>
-      <div class="my-3">
-        <div class="bg-lime-300 w-32 text-center mt-2">屋上、ほか施設</div>
-        <div class="flex flex-row flex-wrap text-xs">
-          <div class="mr-2 mt-2"><img src="photos/facility/1_3_1.jpg" class="sm:h-48" />学院長室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/1_3_2.png" class="sm:h-48" />保健室</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/1_3_3.png" class="sm:h-48" />掲示板</div>
-          <div class="mr-2 mt-2"><img src="photos/facility/1_3_4.png" class="sm:h-48" />掲示板はり紙</div>
+        <span class="facility-badge-floor facility-badge-floor-wide">屋上、ほか施設</span>
+        <div class="facility-photo-grid">
+          <div class="facility-photo-cell"><span class="caption">2F 資料室</span><img src="photos/school/BHF-1.png" alt="2F 資料室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">6F 保健室</span><img src="photos/school/BHF-2.png" alt="6F 保健室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">7F 学院長室</span><img src="photos/school/BHF-3.png" alt="7F 学院長室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">3F 進路指導室</span><img src="photos/school/BHF-4.png" alt="3F 進路指導室" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">屋上休憩所</span><img src="photos/school/BHF-5.png" alt="屋上休憩所" loading="lazy" /></div>
+          <div class="facility-photo-cell"><span class="caption">キッチン</span><img src="photos/school/BHF-6.png" alt="キッチン" loading="lazy" /></div>
         </div>
-      </div>
+      </section>
     </div>
     <div class="h-10 relative">
       <img src="images/business_icon.png" class="h-full" />
