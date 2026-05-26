@@ -146,26 +146,37 @@ document.addEventListener('alpine:init', () => {
 
         // Store the original element so we can restore it on screen resize later
         this.originalElement = this.$el.cloneNode(true)
-        const originalWidth = this.$el.scrollWidth + spaceX * 4
-        // Required for the marquee scroll animation 
-        // to loop smoothly without jumping 
-        this.$el.style.setProperty('--marquee-width', originalWidth + 'px')
-        this.$el.style.setProperty(
-          '--marquee-time',
-          ((1 / speed) * originalWidth) / 100 + 's'
-        )
         this.resize()
         // Make sure the resize function can only be called once every 100ms
         // Not strictly necessary but stops lag when resizing window a bit
         window.addEventListener('resize', debounce(this.resize.bind(this), 100))
       },
       async resize() {
+        if (!this.originalElement || this.originalElement.childElementCount === 0) return
+
         // Reset to original number of elements
         this.$el.innerHTML = this.originalElement.innerHTML
 
+        const originalWidth = this.$el.scrollWidth + spaceX * 4
+        const elementWidth = this.$el.clientWidth
+
+        if (originalWidth === 0 || elementWidth === 0) return
+
+        // Required for the marquee scroll animation
+        // to loop smoothly without jumping
+        this.$el.style.setProperty('--marquee-width', originalWidth + 'px')
+        this.$el.style.setProperty(
+          '--marquee-time',
+          ((1 / speed) * originalWidth) / 100 + 's'
+        )
+
         // Keep cloning elements until marquee starts to overflow
         let i = 0
+        let cloneCount = 0
+        const maxCloneCount = this.originalElement.childElementCount * 20
         while (this.$el.scrollWidth <= this.$el.clientWidth) {
+          if (cloneCount >= maxCloneCount) break
+
           if (this.dynamicWidthElements) {
             // If we don't give this.$el time to recalculate its dimensions
             // when adding child nodes, the scrollWidth and clientWidth won't
@@ -180,6 +191,7 @@ document.addEventListener('alpine:init', () => {
             )
           }
           i += 1
+          cloneCount += 1
           i = i % this.originalElement.childElementCount
         }
 
@@ -213,15 +225,25 @@ function updateUrlParameter(name, value) {
   window.history.pushState({}, '', url);
 }
 
-const start = async function () {
+const hasPageNewsStart = typeof start === 'function'
+const startNewsList = async function () {
+  if (
+    !document.getElementById('news') ||
+    typeof window.$ !== 'function' ||
+    typeof window.getTotalCount !== 'function' ||
+    typeof window.read !== 'function'
+  ) {
+    return;
+  }
+
   // 从URL获取当前页码，默认为1
   const currentPage = parseInt(getUrlParameter('page')) || 1;
   const limit = 10;
   
   // 获取总数据量和当前页数据
   const [totalCount, news] = await Promise.all([
-    getTotalCount(),
-    read(currentPage, limit)
+    window.getTotalCount(),
+    window.read(currentPage, limit)
   ]);
   
   // 计算总页数
@@ -362,14 +384,24 @@ function generatePagination(currentPage, totalPages) {
 }
 
 // 跳转到指定页面
-function goToPage(page) {
+const goToSharedNewsPage = function(page) {
   updateUrlParameter('page', page);
-  start(); // 重新加载数据
+  startNewsList(); // 重新加载数据
+}
+
+if (!hasPageNewsStart && typeof window.start !== 'function') {
+  window.start = startNewsList;
+}
+
+if (typeof window.goToPage !== 'function') {
+  window.goToPage = goToSharedNewsPage;
 }
 
 // 页面加载完成后启动
 document.addEventListener('DOMContentLoaded', function() {
-  start();
+  if (!hasPageNewsStart) {
+    startNewsList();
+  }
 });
 
 // 语言菜单延迟关闭功能

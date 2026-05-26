@@ -23,6 +23,35 @@
       font-family: 'Noto Sans JP', sans-serif;
     }
   </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const removeWeekendColumns = (container) => {
+        const removeByIndexes = (nodes, indexes) => {
+          indexes
+            .slice()
+            .sort((a, b) => b - a)
+            .forEach((idx) => {
+              if (nodes[idx]) nodes[idx].remove();
+            });
+        };
+
+        container.querySelectorAll('table').forEach((table) => {
+          const colgroup = table.querySelector('colgroup');
+          if (colgroup) {
+            removeByIndexes(Array.from(colgroup.children), [7, 8]);
+          }
+
+          table.querySelectorAll('tr').forEach((row) => {
+            removeByIndexes(Array.from(row.children), [7, 8]);
+          });
+        });
+      };
+
+      document
+        .querySelectorAll('.remove-weekend-columns')
+        .forEach((section) => removeWeekendColumns(section));
+    });
+  </script>
   <link rel="stylesheet" href="../main.css">
 </head>
 
@@ -52,13 +81,13 @@
           </button>
         </div>
         <ul id="collapseMenu"
-          class='mx-auto lg:!flex lg:space-x-4 xl:space-x-6 max-lg:space-y-3 max-lg:hidden max-lg:w-full max-lg:my-4'>
+          class='mx-auto lg:!flex lg:space-x-7 xl:space-x-10 max-lg:space-y-3 max-lg:hidden max-lg:w-full max-lg:my-4'>
           <li class='max-lg:border-b max-lg:py-2'><a href='index.html'
               class='hover:text-gray-300 text-white block'>最新消息</a></li>
           <li class='group max-lg:border-b max-lg:py-2 relative'>
             <a href='javascript:void(0)'
               class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>关于学校<svg
-                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block  "
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block "
                 viewBox="0 0 24 24">
                 <path
                   d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
@@ -98,7 +127,7 @@
           <!-- <li class='group max-lg:border-b max-lg:py-2 relative'>
             <a href='javascript:void(0)'
               class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>课程介绍<svg
-                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block  "
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block "
                 viewBox="0 0 24 24">
                 <path
                   d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
@@ -133,7 +162,7 @@
           <li class='group max-lg:border-b max-lg:py-2 relative'>
             <a href='javascript:void(0)'
               class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>学生生活<svg
-                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block  "
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block "
                 viewBox="0 0 24 24">
                 <path
                   d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
@@ -154,7 +183,7 @@
               </li>
               <li class=' pt-1 pb-1'>
                 <a href='life_visa.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>学生在留
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>学生签证
                 </a>
               </li>
             </ul>
@@ -271,8 +300,8 @@
         <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">4月入学的春季生为2年制、10月入学的秋季生为1年6个月制</div>
       </div>
       <div class=" my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
-        ・ 2年升学课程：4月入学，翌々年3月毕业。授课时间：约1,520小时<br />
-        ・ 1年6个月升学课程：10月入学，翌々年3月毕业。授课时间：约1,140小时<br />
+        ・ 2年升学课程：4月入学，后年3月毕业。授课时间：约1,520小时<br />
+        ・ 1年6个月升学课程：10月入学，后年3月毕业。授课时间：约1,140小时<br />
 
         <div class="relative w-full bg-[#e6f2f2] p-4 mt-8">
           <!-- 2年進学コース 部分 -->
@@ -464,20 +493,20 @@
         <!-- <div class="flex flex-col sm:flex-row">
           <div class="relative flex-shrink-0">
             <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-4 left-4 text-xs">授業科目と内容</div>
+            <div class="absolute top-4 left-4 text-xs">授課科目與內容</div>
           </div>
-          <div class="mt-3 mb-5">日本語による语法・演習・会話・听力・阅读・写作 (日本語能力考试对策・進学指導等を授業内容に含む)。</div>
+          <div class="mt-3 mb-5">日语语法、演習、会话、听力、阅读、写作（包括日语能力考试对策和升学指导等课程内容）。</div>
         </div> -->
         <!-- <div class="flex flex-col sm:flex-row">
           <div class="relative flex-shrink-0">
             <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">選択科目</div>
+            <div class="absolute top-3 left-7">選修科目</div>
           </div>
           <div class="mt-3 mb-5">
             <div class="grid grid-cols-1 gap-4 max-w-[1200px] mx-auto">
               <div class="bg-white w-80 rounded-md p-3 ">
                 日本留学考试对策講座<br />
-                　＊ 文系 : 数学１　/　総合科目<br />
+                　＊ 文科 : 数学１　/　综合科目<br />
                 　＊ 理系 : 数学2　/　物理　/　化学　/　生物
               </div>
               <div class="bg-white w-80 rounded-md p-3">
@@ -513,344 +542,903 @@
             <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
             <div class="absolute top-3 left-7">授课内容</div>
           </div>
-          <div class="mt-3 mb-5 w-full md:w-[540px]">
+          <div class="mt-3 mb-5 w-full md:w-[640px]">
             <div class="mx-auto space-y-8">
               <!-- 2年進学コース -->
-              <div class="border rounded-lg overflow-hidden">
+              <div class="border rounded-lg overflow-hidden remove-weekend-columns">
                 <div class="bg-[#009999] text-white text-center py-2 font-bold">2年升学课程</div>
                 <div class="overflow-x-auto">
-                  <table class="w-full text-xs">
+                  <!-- 初級前期 -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
                     <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-7 bg-slate-200" rowspan="6">第<br />一<br />学<br />期</th>
-                      <th class="border px-1 py-1 bg-slate-300" colspan="7">初级</th>
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">程度设定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">初级前期</th>
                     </tr>
                     <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-6"></th>
-                      <th class="border px-1 py-1 w-20">周一</th>
-                      <th class="border px-1 py-1 w-20">周二</th>
-                      <th class="border px-1 py-1 w-20">周三</th>
-                      <th class="border px-1 py-1 w-20">周四</th>
-                      <th class="border px-1 py-1 w-20">周五</th>
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">时间</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">星期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">星期一</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期二</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期三</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期四</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期五</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">阅读</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">写作</td>
-                      <td class="border px-1 py-1">考试对策</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">阅读</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">写作</td>
-                      <td class="border px-1 py-1">※发表<br />※文化体验</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                   </table>
-                  <table class="w-full text-xs mt-1">
+                  <!-- 初級後期 -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
                     <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-7 bg-slate-200" rowspan="6">第<br />二<br />学<br />期</th>
-                      <th class="border px-1 py-1 bg-slate-300" colspan="7">中级</th>
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">程度设定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">初级后期</th>
                     </tr>
                     <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-6"></th>
-                      <th class="border px-1 py-1 w-20">周一</th>
-                      <th class="border px-1 py-1 w-20">周二</th>
-                      <th class="border px-1 py-1 w-20">周三</th>
-                      <th class="border px-1 py-1 w-20">周四</th>
-                      <th class="border px-1 py-1 w-20">周五</th>
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">时间</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">星期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">星期一</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期二</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期三</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期四</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期五</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1 text-[10px] sm:text-xs">※表达与汉字<br />※升学对策</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">阅读</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">写作</td>
-                      <td class="border px-1 py-1">※考试对策<br />※面试对策</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">阅读</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">写作</td>
-                      <td class="border px-1 py-1">※发表<br />※文化体验</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
                     </tr>
                   </table>
-                  <table class="w-full text-xs mt-1">
+                  <!-- 中級前期 -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
                     <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-7 bg-slate-200" rowspan="6">第<br />三<br />学<br />期</th>
-                      <th class="border px-1 py-1 bg-slate-300" colspan="7">高级1</th>
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">程度设定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">中级前期</th>
                     </tr>
                     <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-6"></th>
-                      <th class="border px-1 py-1 w-20">周一</th>
-                      <th class="border px-1 py-1 w-20">周二</th>
-                      <th class="border px-1 py-1 w-20">周三</th>
-                      <th class="border px-1 py-1 w-20">周四</th>
-                      <th class="border px-1 py-1 w-20">周五</th>
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">时间</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">星期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">星期一</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期二</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期三</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期四</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期五</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">语法</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">语法</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">语法</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">语法</td>
-                      <td class="border px-1 py-1 text-[10px] sm:text-xs">※表达与汉字<br />※升学对策</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">阅读</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">写作</td>
-                      <td class="border px-1 py-1">面试对策</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">阅读</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">写作</td>
-                      <td class="border px-1 py-1">※发表<br />※文化体验</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                   </table>
-                  <table class="w-full text-xs mt-1">
+                  <!-- 中級後期 -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
                     <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-7 bg-slate-200" rowspan="6">第<br />四<br />学<br />期</th>
-                      <th class="border px-1 py-1 bg-slate-300" colspan="7">高级2</th>
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">程度设定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">中级后期</th>
                     </tr>
                     <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-6"></th>
-                      <th class="border px-1 py-1 w-20">周一</th>
-                      <th class="border px-1 py-1 w-20">周二</th>
-                      <th class="border px-1 py-1 w-20">周三</th>
-                      <th class="border px-1 py-1 w-20">周四</th>
-                      <th class="border px-1 py-1 w-20">周五</th>
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">时间</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">星期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">星期一</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期二</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期三</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期四</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期五</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">语法</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">语法</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">语法</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">语法</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">阅读</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">写作</td>
-                      <td class="border px-1 py-1">发表</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">阅读</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">写作</td>
-                      <td class="border px-1 py-1">发表</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
+                    </tr>
+                  </table>
+                  <!-- 上級１ -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">程度设定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">高级１</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">时间</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">星期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">星期一</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期二</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期三</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期四</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期五</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                  </table>
+                  <!-- 上級２ -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">程度设定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">高级２</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">时间</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">星期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">星期一</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期二</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期三</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期四</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期五</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
+                    </tr>
+                  </table>
+                  <!-- 上級３ -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">程度设定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">高级３</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">时间</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">星期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">星期一</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期二</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期三</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期四</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期五</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                  </table>
+                  <!-- 上級４ -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">程度设定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">高级４</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">时间</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">星期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">星期一</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期二</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期三</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期四</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期五</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
                     </tr>
                   </table>
                 </div>
-                <div class="text-xs text-right p-1">※每周二选一。</div>
               </div>
 
               <!-- 1年6か月進学コース -->
-              <div class="border rounded-lg overflow-hidden">
+              <div class="border rounded-lg overflow-hidden remove-weekend-columns">
                 <div class="bg-[#009999] text-white text-center py-2 font-bold">1年6个月升学课程</div>
                 <div class="overflow-x-auto">
-                  <table class="w-full text-xs">
+                
+                  <!-- 初級後期 -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
                     <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-7 bg-slate-200" rowspan="6">第<br />一<br />学<br />期</th>
-                      <th class="border px-1 py-1 bg-slate-300" colspan="7">初级</th>
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">程度设定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">初级后期</th>
                     </tr>
                     <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-6"></th>
-                      <th class="border px-1 py-1 w-20">周一</th>
-                      <th class="border px-1 py-1 w-20">周二</th>
-                      <th class="border px-1 py-1 w-20">周三</th>
-                      <th class="border px-1 py-1 w-20">周四</th>
-                      <th class="border px-1 py-1 w-20">周五</th>
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">时间</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">星期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">星期一</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期二</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期三</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期四</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期五</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">阅读</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">写作</td>
-                      <td class="border px-1 py-1">※1面试对策<br />※1考试对策<br />※1升学对策</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">阅读</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">写作</td>
-                      <td class="border px-1 py-1">※发表<br />※文化体验</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                   </table>
-                  <table class="w-full text-xs mt-1">
+                  <!-- 中級前期 -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
                     <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-7 bg-slate-200" rowspan="6">第<br />二<br />学<br />期</th>
-                      <th class="border px-1 py-1 bg-slate-300" colspan="7">中级</th>
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">程度设定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">中级前期</th>
                     </tr>
                     <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-6"></th>
-                      <th class="border px-1 py-1 w-20">周一</th>
-                      <th class="border px-1 py-1 w-20">周二</th>
-                      <th class="border px-1 py-1 w-20">周三</th>
-                      <th class="border px-1 py-1 w-20">周四</th>
-                      <th class="border px-1 py-1 w-20">周五</th>
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">时间</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">星期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">星期一</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期二</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期三</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期四</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期五</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">语法</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">语法</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">语法</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">语法</td>
-                      <td class="border px-1 py-1 text-[10px] sm:text-xs">※2表达与汉字<br />※2升学对策</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">阅读</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">写作</td>
-                      <td class="border px-1 py-1">※2考试对策<br />※2面试对策</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">阅读</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">写作</td>
-                      <td class="border px-1 py-1">※2发表<br />※2文化体验</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                   </table>
-                  <table class="w-full text-xs mt-1">
+                  <!-- 中級後期 -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
                     <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-7 bg-slate-200" rowspan="6">第<br />三<br />学<br />期</th>
-                      <th class="border px-1 py-1 bg-slate-300" colspan="7">高级1</th>
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">程度设定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">中级后期</th>
                     </tr>
                     <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-6"></th>
-                      <th class="border px-1 py-1 w-20">周一</th>
-                      <th class="border px-1 py-1 w-20">周二</th>
-                      <th class="border px-1 py-1 w-20">周三</th>
-                      <th class="border px-1 py-1 w-20">周四</th>
-                      <th class="border px-1 py-1 w-20">周五</th>
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">时间</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">星期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">星期一</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期二</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期三</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期四</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期五</th>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">语法</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">语法</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">语法</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
-                      <td class="border px-1 py-1">语法</td>
-                      <td class="border px-1 py-1">表达与汉字</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">听力</td>
-                      <td class="border px-1 py-1">写作</td>
-                      <td class="border px-1 py-1">考试对策</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
                     </tr>
                     <tr>
                       <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1">阅读</td>
-                      <td class="border px-1 py-1">阅读</td>
-                      <td class="border px-1 py-1">阅读</td>
-                      <td class="border px-1 py-1">发表</td>
-                      <td class="border px-1 py-1">文化体验</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                  </table>
+                  <!-- 上級１ -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">程度设定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">高级１</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">时间</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">星期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">星期一</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期二</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期三</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期四</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期五</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
+                    </tr>
+                  </table>
+                  <!-- 上級２ -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">程度设定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">高级２</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">时间</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">星期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">星期一</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期二</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期三</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期四</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期五</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
+                    </tr>
+                  </table>
+                  <!-- 上級３ -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">程度设定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">高级３</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">时间</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">星期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">星期一</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期二</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期三</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期四</th>
+                      <th class="border px-1 py-1 w-16 text-center">星期五</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">综合日语</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">听力</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">阅读</td>
+                      <td class="border px-1 py-1 text-center">表现文法</td>
+                      <td class="border px-1 py-1 text-center">写作</td>
+                      <td class="border px-1 py-1 text-center">发表</td>
                     </tr>
                   </table>
                 </div>
-                <div class="text-xs text-right p-1">※ 1每周三选一。<br />※ 2每周二选一。</div>
               </div>
             </div>
           </div>
@@ -915,7 +1503,7 @@
               <th class="border border-slate-600">学费<br>第一学年</th>
               <th class="border border-slate-600">第一年合计</th>
               <th class="border border-slate-600">学费<br>第二学年</th>
-              <th class="border border-slate-600">第一年＆第二年<br>费用合计</th>
+              <th class="border border-slate-600 bg-blue-800">第一年＆第二年<br>费用合计</th>
             </tr>
           </thead>
           <tbody>
@@ -923,21 +1511,21 @@
               <td class="border border-slate-700 text-center font-bold">1年6个月课程</td>
               <td class="border border-slate-700 text-center">¥22,000</td>
               <td class="border border-slate-700 text-center">¥88,000</td>
-              <td class="border border-slate-700 text-center">¥83,000</td>
+              <td class="border border-slate-700 text-center">¥93,000</td>
               <td class="border border-slate-700 text-center">¥726,000</td>
-              <td class="border border-slate-700 text-center">¥919,000</td>
+              <td class="border border-slate-700 text-center">¥929,000</td>
               <td class="border border-slate-700 text-center">¥363,000<br><span class="text-xs text-gray-500">（半年分）</span></td>
-              <td class="border border-slate-700 text-center">¥1,282,000</td>
+              <td class="border border-slate-700 text-center">¥1,292,000</td>
             </tr>
             <tr class="bg-gray-50">
               <td class="border border-slate-700 text-center font-bold">2年课程</td>
               <td class="border border-slate-700 text-center">¥22,000</td>
               <td class="border border-slate-700 text-center">¥88,000</td>
-              <td class="border border-slate-700 text-center">¥99,000</td>
+              <td class="border border-slate-700 text-center">¥109,000</td>
               <td class="border border-slate-700 text-center">¥726,000</td>
-              <td class="border border-slate-700 text-center">¥935,000</td>
+              <td class="border border-slate-700 text-center">¥945,000</td>
               <td class="border border-slate-700 text-center">¥726,000<br><span class="text-xs text-gray-500">（一年分）</span></td>
-              <td class="border border-slate-700 text-center">¥1,661,000</td>
+              <td class="border border-slate-700 text-center">¥1,671,000</td>
             </tr>
             <tr>
               <td class="border border-slate-700 text-center font-bold">缴纳期限</td>
