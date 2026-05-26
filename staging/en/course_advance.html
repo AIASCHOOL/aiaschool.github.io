@@ -22,6 +22,14 @@
     body {
       font-family: 'Noto Sans JP', sans-serif;
     }
+
+    .course-content-table td:nth-child(n+3) {
+      white-space: normal;
+      overflow-wrap: anywhere;
+      line-height: 1.3;
+      padding-left: 0.4rem;
+      padding-right: 0.4rem;
+    }
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -283,11 +291,11 @@
   <div class="w-full bg-[#FFFAEB]">
     <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-3 mt-1 ">
       <div class="flex flex-col sm:flex-row">
-        <div class="relative h-10 w-36 flex-shrink-0">
+        <div class="relative h-10 w-56 flex-shrink-0">
           <div
             class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
           </div>
-          <div class="absolute top-1 left-8 text-white italic text-lg">Educational Goals</div>
+          <div class="absolute top-1 left-7 whitespace-nowrap text-white italic text-lg">Educational Goals</div>
         </div>
         <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">To cultivate global talent who can thrive on the world stage</div>
       </div>
@@ -295,114 +303,110 @@
         Targeting international students who aim to advance to Japanese vocational schools, universities, and graduate schools, we develop comprehensive Japanese language skills as a foundation for learning and research. Through our curriculum, students acquire the general knowledge, customs, and cultural literacy essential for life in Japanese society, and become well-rounded individuals with a global perspective who can contribute to both Japanese and international communities.
       </div>
       <div class="flex flex-col sm:flex-row">
-        <div class="relative h-10 w-36 flex-shrink-0">
+        <div class="relative h-10 w-56 flex-shrink-0">
           <div
             class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
           </div>
-          <div class="absolute top-1 left-5 text-white italic text-lg">Course Structure</div>
+          <div class="absolute top-1 left-7 whitespace-nowrap text-white italic text-lg">Course Structure</div>
         </div>
         <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">April enrollees: 2-year course; October enrollees: 1.5-year course</div>
       </div>
-      <div class=" my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
+      <div class="my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
         ・ 2-year course: April enrollment, graduation March two years later. Class hours: approx. 1,520<br />
         ・ 1.5-year course: October enrollment, graduation March two years later. Class hours: approx. 1,140<br />
+        <div class="mt-6 overflow-x-auto">
+          <table class="w-full text-xs border-collapse text-center">
+            <thead>
+              <tr class="bg-[#b8d4d4] font-semibold">
+                <th class="border border-gray-500 px-3 py-1 text-left" colspan="2"></th>
+                <th class="border border-gray-500 px-3 py-1">1st Term</th>
+                <th class="border border-gray-500 px-3 py-1">2nd Term</th>
+                <th class="border border-gray-500 px-3 py-1">3rd Term</th>
+                <th class="border border-gray-500 px-3 py-1">4th Term</th>
+                <th class="border border-gray-500 px-3 py-1">5th Term</th>
+                <th class="border border-gray-500 px-3 py-1">6th Term</th>
+                <th class="border border-gray-500 px-3 py-1">7th Term</th>
+                <th class="border border-gray-500 px-3 py-1">8th Term</th>
+                <th class="border border-gray-500 px-2 py-1"></th>
+                <th class="border border-gray-500 px-2 py-1">Class Hours</th>
+              </tr>
+              <tr class="bg-[#dff0f0] text-[11px]">
+                <td class="border border-gray-500" colspan="2"></td>
+                <td class="border border-gray-500 py-0.5">Apr</td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500 py-0.5">Apr</td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500 py-0.5">Mar</td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-[#dff0f0]">
+                <td class="border border-gray-500 px-3 py-3 text-left font-semibold whitespace-nowrap">2-Year Course</td>
+                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">Enrollment</td>
+                <td class="border border-gray-500 py-3 font-bold bg-sky-400 text-white">A1</td>
+                <td class="border border-gray-500 py-3 font-bold bg-green-400 text-white">A2</td>
+                <td class="border border-gray-500 py-3 font-bold bg-yellow-300 text-gray-800">B1</td>
+                <td class="border border-gray-500 py-3 font-bold bg-yellow-300 text-gray-800">B1</td>
+                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">Graduation</td>
+                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">1,520 hrs</td>
+              </tr>
 
-        <div class="relative w-full bg-[#e6f2f2] p-4 mt-8">
-          <!-- 2年進学コース 部分 -->
-          <div class="relative">
-            <!-- 月份标记 -->
-            <div class="absolute -top-6 left-32 right-8">
-              <div class="relative w-full">
-                <span class="absolute left-0 -translate-x-1/2 text-sm">4月</span>
-                <span class="absolute left-1/4 -translate-x-1/2 text-sm">10月</span>
-                <span class="absolute left-2/4 -translate-x-1/2 text-sm">3月/4月</span>
-                <span class="absolute left-3/4 -translate-x-1/2 text-sm">9月/10月</span>
-                <span class="absolute right-0 translate-x-1/2 text-sm">3月</span>
-              </div>
-            </div>
+              <tr><td colspan="12" class="h-3 border-none bg-transparent"></td></tr>
 
-            <!-- 學期标记 -->
-            <div class="absolute top-8 left-32 right-8 z-10">
-              <div class="relative w-full">
-                <span class="absolute left-[12.5%] -translate-x-1/2 text-sm">1st Term</span>
-                <span class="absolute left-[37.5%] -translate-x-1/2 text-sm">2nd Term</span>
-                <span class="absolute left-[62.5%] -translate-x-1/2 text-sm">3rd Term</span>
-                <span class="absolute left-[87.5%] -translate-x-1/2 text-sm">4th Term</span>
-              </div>
-            </div>
+              <tr class="bg-[#b8d4d4] font-semibold text-[11px]">
+                <td colspan="4" class="border-none bg-transparent"></td>
+                <td class="border border-gray-500 px-3 py-1">1st Term</td>
+                <td class="border border-gray-500 px-3 py-1">2nd Term</td>
+                <td class="border border-gray-500 px-3 py-1">3rd Term</td>
+                <td class="border border-gray-500 px-3 py-1">4th Term</td>
+                <td class="border border-gray-500 px-3 py-1">5th Term</td>
+                <td class="border border-gray-500 px-3 py-1">6th Term</td>
+                <td colspan="2" class="border-none bg-transparent"></td>
+              </tr>
+              <tr class="bg-[#dff0f0] text-[11px]">
+                <td colspan="4" class="border-none bg-transparent"></td>
+                <td class="border border-gray-500 py-0.5">Oct</td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500 py-0.5">Apr</td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500 py-0.5">Mar</td>
+                <td colspan="2" class="border-none bg-transparent"></td>
+              </tr>
 
-            <!-- 2年進学コース -->
-            <div class="relative h-20 mt-8">
-              <div class="absolute left-0 top-1/2 -translate-y-1/2">
-                <span class="text-sm">2-Year Course</span>
-              </div>
-
-              <!-- 进度条容器 -->
-              <div class="absolute left-32 right-8 top-1/2 -translate-y-1/2 z-0">
-                <div class="h-8 bg-green-200"></div>
-              </div>
-
-              <!-- 入学和卒業标记 -->
-              <div class="absolute left-32 top-16 text-sm -mb-6">Enrollment</div>
-              <div class="absolute right-8 top-16 text-sm -mb-6">Graduation</div>
-
-              <!-- 垂直分隔线 -->
-              <div class="absolute left-32 right-8 top-0 bottom-0">
-                <div class="relative h-full w-full">
-                  <div class="absolute left-0 h-full w-px bg-gray-400"></div>
-                  <div class="absolute left-1/4 h-full w-px bg-gray-400"></div>
-                  <div class="absolute left-2/4 h-full w-px bg-gray-400"></div>
-                  <div class="absolute left-3/4 h-full w-px bg-gray-400"></div>
-                  <div class="absolute right-0 h-full w-px bg-gray-400"></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 1年6か月進学コース -->
-            <div class="relative h-20 mb-8">
-
-              <!-- 學期标记 -->
-              <div class="absolute top-8 left-32 right-8 z-10">
-                <div class="relative w-full">
-                  <span class="absolute left-[37.5%] -translate-x-1/2 text-sm">1st Term</span>
-                  <span class="absolute left-[62.5%] -translate-x-1/2 text-sm">2nd Term</span>
-                  <span class="absolute left-[87.5%] -translate-x-1/2 text-sm">3rd Term</span>
-                </div>
-              </div>
-
-              <div class="absolute left-0 top-1/2 -translate-y-1/2">
-                <span class="text-sm">1.5-Year Course</span>
-              </div>
-
-              <!-- 进度条容器 -->
-              <div class="absolute left-32 right-8 top-1/2 -translate-y-1/2 z-0">
-                <div class="h-8 bg-pink-200 ml-[25%]"></div>
-              </div>
-
-              <!-- 入学和卒業标记 -->
-              <div class="absolute left-[calc(32px+25%+63px)] top-16 text-sm -mb-6">Enrollment</div>
-              <div class="absolute right-8 top-16 text-sm -mb-6">Graduation</div>
-
-              <!-- 垂直分隔线 -->
-              <div class="absolute left-32 right-8 top-0 bottom-0">
-                <div class="relative h-full w-full">
-                  <div class="absolute left-0 h-full w-px bg-gray-400"></div>
-                  <div class="absolute left-1/4 h-full w-px bg-gray-400"></div>
-                  <div class="absolute left-2/4 h-full w-px bg-gray-400"></div>
-                  <div class="absolute left-3/4 h-full w-px bg-gray-400"></div>
-                  <div class="absolute right-0 h-full w-px bg-gray-400"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+              <tr class="bg-[#dff0f0]">
+                <td class="border border-gray-500 px-3 py-3 text-left font-semibold whitespace-nowrap">1.5-Year Course</td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">Enrollment</td>
+                <td class="border border-gray-500 py-3 font-bold bg-green-400 text-white">A2</td>
+                <td class="border border-gray-500 py-3 font-bold bg-yellow-300 text-gray-800">B1</td>
+                <td class="border border-gray-500 py-3 font-bold bg-yellow-300 text-gray-800">B1</td>
+                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">Graduation</td>
+                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">1,140 hrs</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="flex flex-col sm:flex-row">
-        <div class="relative h-10 w-36 flex-shrink-0">
+        <div class="relative h-10 w-56 flex-shrink-0">
           <div
             class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
           </div>
-          <div class="absolute top-1 left-5 text-white italic text-lg">Course Features</div>
+          <div class="absolute top-1 left-7 whitespace-nowrap text-white italic text-lg">Course Features</div>
         </div>
       </div>
       <div class="w-full bg-[#e6f2f2] p-4 my-4 relative">
@@ -429,67 +433,41 @@
         </style>
 
         <div class="flex flex-wrap md:flex-nowrap justify-center gap-1">
-          <!-- 少人数教育による段階的教育 -->
           <div class="w-[30%] md:w-1/6 circle-container">
             <div
               class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
-              <div class="text-center text-sm font-bold text-blue-900">Small-class progressive education</div>
-              <!-- <div class="text-center text-[12px] text-gray-600 mt-1">小班制的階段式教育</div> -->
+              <div class="text-center text-sm font-bold text-blue-900">Curriculum for Higher Education</div>
             </div>
           </div>
 
-          <!-- 異文化を理解するカリキュラム -->
           <div class="w-[30%] md:w-1/6 circle-container">
             <div
               class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
-              <div class="text-center text-sm font-bold text-blue-900">Cross-cultural understanding curriculum</div>
-              <!-- <div class="text-center text-[12px] text-gray-600 mt-1">異文化理解課程</div> -->
+              <div class="text-center text-sm font-bold text-blue-900">Multimedia-assisted Language Education</div>
             </div>
           </div>
 
-          <!-- マルチメディアを活用語学教育 -->
           <div class="w-[30%] md:w-1/6 circle-container">
             <div
               class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
-              <div class="text-center text-sm font-bold text-blue-900">Multimedia language instruction</div>
-              <!-- <div class="text-center text-[12px] text-gray-600 mt-1">活用多媒體的教學</div> -->
+              <div class="text-center text-sm font-bold text-blue-900">Ability-based Class Placement</div>
             </div>
           </div>
 
-          <!-- 語学力レベルによる能力クラス編成 -->
           <div class="w-[30%] md:w-1/6 circle-container">
             <div
               class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
-              <div class="text-center text-sm font-bold text-blue-900">Ability-based class placement</div>
-              <!-- <div class="text-center text-[12px] text-gray-600 mt-1">クラスに入る前にレベルテストを実施</div> -->
-            </div>
-          </div>
-
-          <!-- 母語干渉に配慮漢字圏学習者別 -->
-          <div class="w-[30%] md:w-1/6 circle-container">
-            <div
-              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
-              <div class="text-center text-sm font-bold text-blue-900">Full support from enrollment to graduation</div>
-              <!-- <div class="text-center text-[12px] text-gray-600 mt-1">漢字圏学習者特別クラスを設置</div> -->
-            </div>
-          </div>
-
-          <!-- 有名校進学者に特進EJU特別講座 -->
-          <div class="w-[30%] md:w-1/6 circle-container">
-            <div
-              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
-              <div class="text-center text-sm font-bold text-blue-900">Diverse Japanese and multicultural activities</div>
-              <!-- <div class="text-center text-[12px] text-gray-600 mt-1">進学課程規定外の授業</div> -->
+              <div class="text-center text-sm font-bold text-blue-900">Comprehensive Support Through Graduation</div>
             </div>
           </div>
         </div>
       </div>
       <div class="flex flex-col sm:flex-row">
-        <div class="relative h-10 w-36 flex-shrink-0">
+        <div class="relative h-10 w-56 flex-shrink-0">
           <div
             class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
           </div>
-          <div class="absolute top-1 left-8 text-white italic text-lg">Course Overview</div>
+          <div class="absolute top-1 left-7 whitespace-nowrap text-white italic text-lg">Course Overview</div>
         </div>
         <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">Separate lecture and practice sessions</div>
       </div>
@@ -522,9 +500,9 @@
         </div> -->
         <div class="flex flex-col sm:flex-row">
           <div class="relative flex-shrink-0">
-            <div class="relative w-28 h-10">
+            <div class="relative w-48 h-10">
               <div class="absolute inset-0 bg-amber-200 rounded-[80%] border-4 border-white"></div>
-              <div class="absolute top-2 left-7 text-black">Class Hours</div>
+              <div class="absolute top-2 left-8 whitespace-nowrap text-black">Class Hours</div>
             </div>
           </div>
           <div class="mt-3 sm:mt-0 sm:ml-4">
@@ -536,24 +514,24 @@
         </div>
         <div class="flex flex-col sm:flex-row">
           <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">Holidays</div>
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-48" />
+            <div class="absolute top-3 left-8 whitespace-nowrap">Holidays</div>
           </div>
           <div class="mt-3 mb-5">Summer: ~30 days　Winter: ~14 days　Spring: ~30 days</div>
         </div>
         <div class="flex flex-col sm:flex-row">
           <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">Class Content</div>
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-48" />
+            <div class="absolute top-3 left-8 whitespace-nowrap">Class Content</div>
           </div>
-          <div class="mt-3 mb-5 w-full md:w-[640px]">
+          <div class="mt-3 mb-5 w-full md:w-[960px]">
             <div class="mx-auto space-y-8">
               <!-- 2年進学コース -->
               <div class="border rounded-lg overflow-hidden remove-weekend-columns">
                 <div class="bg-[#009999] text-white text-center py-2 font-bold">2-Year Course</div>
                 <div class="overflow-x-auto">
                   <!-- 初級前期 -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                  <table class="course-content-table table-fixed w-full min-w-[900px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -616,7 +594,7 @@
                     </tr>
                   </table>
                   <!-- 初級後期 -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                  <table class="course-content-table table-fixed w-full min-w-[900px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -679,7 +657,7 @@
                     </tr>
                   </table>
                   <!-- 中級前期 -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                  <table class="course-content-table table-fixed w-full min-w-[900px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -742,7 +720,7 @@
                     </tr>
                   </table>
                   <!-- 中級後期 -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                  <table class="course-content-table table-fixed w-full min-w-[900px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -805,7 +783,7 @@
                     </tr>
                   </table>
                   <!-- 上級１ -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                  <table class="course-content-table table-fixed w-full min-w-[900px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -868,7 +846,7 @@
                     </tr>
                   </table>
                   <!-- 上級２ -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                  <table class="course-content-table table-fixed w-full min-w-[900px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -931,7 +909,7 @@
                     </tr>
                   </table>
                   <!-- 上級３ -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                  <table class="course-content-table table-fixed w-full min-w-[900px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -994,7 +972,7 @@
                     </tr>
                   </table>
                   <!-- 上級４ -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                  <table class="course-content-table table-fixed w-full min-w-[900px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -1065,7 +1043,7 @@
                 <div class="overflow-x-auto">
                 
                   <!-- 初級後期 -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                  <table class="course-content-table table-fixed w-full min-w-[900px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -1128,7 +1106,7 @@
                     </tr>
                   </table>
                   <!-- 中級前期 -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                  <table class="course-content-table table-fixed w-full min-w-[900px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -1191,7 +1169,7 @@
                     </tr>
                   </table>
                   <!-- 中級後期 -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                  <table class="course-content-table table-fixed w-full min-w-[900px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -1254,7 +1232,7 @@
                     </tr>
                   </table>
                   <!-- 上級１ -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                  <table class="course-content-table table-fixed w-full min-w-[900px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -1317,7 +1295,7 @@
                     </tr>
                   </table>
                   <!-- 上級２ -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                  <table class="course-content-table table-fixed w-full min-w-[900px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -1380,7 +1358,7 @@
                     </tr>
                   </table>
                   <!-- 上級３ -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                  <table class="course-content-table table-fixed w-full min-w-[900px] text-xs mt-1">
                     <colgroup>
                       <col class="w-12" />
                       <col class="w-36" />
@@ -1449,50 +1427,50 @@
         </div>
       </div>
       <div class="flex flex-col sm:flex-row">
-        <div class="relative h-10 w-36 flex-shrink-0">
+        <div class="relative h-10 w-56 flex-shrink-0">
           <div
             class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
           </div>
-          <div class="absolute top-1 left-8 text-white italic text-lg">Career Paths</div>
+          <div class="absolute top-1 left-7 whitespace-nowrap text-white italic text-lg">Career Paths</div>
         </div>
         <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">Various paths available after graduation</div>
       </div>
       <div class=" my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
         <div class="flex flex-col sm:flex-row">
           <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_9.png" class="h-12 w-48" />
-            <div class="absolute top-3 left-8">Vocational school / junior college</div>
+            <img src="../images/btn_ellipse_9.png" class="h-12 w-80" />
+            <div class="absolute top-3 left-8 whitespace-nowrap">Vocational school / junior college</div>
           </div>
           <div class="mt-3 mb-5">JLPT N3 or above</div>
         </div>
         <div class="flex flex-col sm:flex-row">
           <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_9.png" class="h-12 w-48" />
-            <div class="absolute top-3 left-10">University / graduate school</div>
+            <img src="../images/btn_ellipse_9.png" class="h-12 w-80" />
+            <div class="absolute top-3 left-8 whitespace-nowrap">University / graduate school</div>
           </div>
           <div class="mt-3 mb-5">JLPT N2 or above</div>
         </div>
         <div class="flex flex-col sm:flex-row">
           <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_9.png" class="h-12 w-48" />
-            <div class="absolute top-3 left-12">Employment at Japanese companies</div>
+            <img src="../images/btn_ellipse_9.png" class="h-12 w-80" />
+            <div class="absolute top-3 left-8 whitespace-nowrap">Employment at Japanese companies</div>
           </div>
           <div class="mt-3 mb-5">JLPT N1 or above and university graduate from home country</div>
         </div>
         <div class="flex flex-col sm:flex-row">
           <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_9.png" class="h-12 w-48" />
-            <div class="absolute top-3 left-12">Work at Japanese companies</div>
+            <img src="../images/btn_ellipse_9.png" class="h-12 w-80" />
+            <div class="absolute top-3 left-8 whitespace-nowrap">Work at Japanese companies</div>
           </div>
           <div class="mt-3 mb-5">JLPT N4 or above and Specified Skilled Worker exam pass</div>
         </div>
       </div>
       <div class="flex flex-col sm:flex-row">
-        <div class="relative h-10 w-36 flex-shrink-0">
+        <div class="relative h-10 w-56 flex-shrink-0">
           <div
             class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
           </div>
-          <div class="absolute top-1 left-8 text-white italic text-lg">Tuition</div>
+          <div class="absolute top-1 left-7 whitespace-nowrap text-white italic text-lg">Tuition</div>
         </div>
         <!-- <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">特別な事情がない限り、基本的に在留期間の更新前に一括払い</div> -->
       </div>
@@ -1546,45 +1524,45 @@
           Food ¥15,000+　Utilities ¥8,000+　Phone ¥5,000+　Misc. ¥5,000+
         </div>
       </div>
-      <div class="relative h-10 w-36 flex-shrink-0">
+      <div class="relative h-10 w-56 flex-shrink-0">
         <div
           class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
         </div>
-        <div class="absolute top-1 left-8 text-white italic text-lg">Admission</div>
+        <div class="absolute top-1 left-7 whitespace-nowrap text-white italic text-lg">Admission</div>
       </div>
       <div class="mt-2 mb-10 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
         <div class="flex flex-col sm:flex-row">
           <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">Applicants</div>
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-48" />
+            <div class="absolute top-3 left-8 whitespace-nowrap">Applicants</div>
           </div>
           <div class="mt-3 flex-1">International students</div>
         </div>
         <div class="flex flex-col sm:flex-row my-2">
           <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">Eligibility</div>
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-48" />
+            <div class="absolute top-3 left-8 whitespace-nowrap">Eligibility</div>
           </div>
           <div class="mt-1 flex-1">❶ 12+ years of formal education or equivalent.<br />❷ In good health, motivated, and able to cover expenses.</div>
         </div>
         <div class="flex flex-col sm:flex-row my-2">
           <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">Application period</div>
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-48" />
+            <div class="absolute top-3 left-8 whitespace-nowrap">Application period</div>
           </div>
           <div class="mt-1 flex-1">2-year (April): by Nov 20 (immigration deadline ~early Dec)<br />1.5-year (October): by May 20 (immigration deadline ~mid June)</div>
         </div>
         <div class="flex flex-col sm:flex-row my-2">
           <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">Status of residence</div>
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-48" />
+            <div class="absolute top-3 left-8 whitespace-nowrap">Status of residence</div>
           </div>
           <div class="mt-1 flex-1">We apply for student status; first grant is 1 year 3 months, extendable for the remainder.</div>
         </div>
         <div class="flex flex-col sm:flex-row my-2">
           <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">How to apply</div>
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-48" />
+            <div class="absolute top-3 left-8 whitespace-nowrap">How to apply</div>
           </div>
           <div class="mt-1 flex-1">
             Submit application form, contact sheet, and passport/ID/birth certificate copy by email, mail, or in person.</div>
