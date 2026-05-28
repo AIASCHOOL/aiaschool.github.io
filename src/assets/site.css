@@ -34,6 +34,33 @@ body {
   display: block;
 }
 
+.completion-requirements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.completion-requirements__item {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  column-gap: 0.35rem;
+  align-items: start;
+}
+
+.completion-requirements__marker {
+  color: #134e4a;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.completion-requirements__text {
+  line-height: 1.8;
+  min-width: 0;
+}
+
 .circle-container {
   position: relative;
 }

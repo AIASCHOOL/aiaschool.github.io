@@ -9,11 +9,26 @@
       "titleHtml": "事業概要",
       "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
       "subtitleClassName": "text-white italic text-xs sm:text-base",
-      "subtitleHtml": "事業主体 / 事業項目 / 歴史沿革 / 政策方針 / 教育目標 / 教育業績 / 関連事業"
+      "subtitleHtml": "教育理念 / 教育目的 / 教育目標 / 事業主体 / 事業項目 / 歴史沿革 / 教育業績 / 関連事業"
     },
     "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/business_pics.png\">\n  </div>",
     "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
     "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">教育理念</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p class=\"mb-3\">本学院は、日本語教育を通じて学生が日本の文化・社会に触れ、自国文化との比較から新たな発見を得るとともに、「相互理解」を育むことを目指します。</p>\n      <p>学生一人ひとりが言語を介して自己の可能性を広げ、地域社会、さらには国際社会と主体的に繋がる力を身につけられるように支援します。</p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">教育目的</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>日本の高等教育機関への進学、およびその後の学びに資する高い日本語能力を育成し、日本国内のみならず国際舞台で貢献できる、広い視野を持った多様な人材を輩出する。</p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">教育目標</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>大学・大学院・専門学校への進学を見据え、高度な学術・専門分野に対応できる総合的な日本語能力を身に付けさせる。また、日本社会での生活に不可欠な社会常識、習慣、文化への理解を深め、多様な背景を持つ人々と協働し、これからの多文化共生社会を担うためのコミュニケーション能力を身に付ける。</p>\n    </div>"
+      },
       {
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">事業主体</div>\n    </div>",
@@ -28,21 +43,6 @@
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">歴史沿革</div>\n    </div>",
         "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"marker:text-red-600 list-decimal list-inside\">\n        <li>1986、上記事業母体創立者、荘 昌憲は名古屋市に日本東海北陸地域における外国人学生の受け皿づくりの先駆者として日本語学校名古屋外語学院を立ち上げ。</li>\n        <li>1989、名古屋市中区新栄3丁目に日本語学校愛知国際学院を設立、事業を拡大。</li>\n        <li>1992、名古屋外語学院を吸収合併。</li>\n        <li>1996、名古屋市中区新栄一丁目に自己所有校舎へ移転。</li>\n        <li>2004、国立名古屋大学大学院言語文化研究所と提携して、漢字圏学習者のために教科書（基礎、初級、中級、上級）を編集出版。</li>\n        <li>2004、財団法人日本語教育協会の教材開発協力校と指定され、日本留学試験対応の「ことば・表現]という研究成果を収めた。</li>\n        <li>2006、日本留学試験対応の模擬試験問題集9冊（読解、聴解、聴読解、数学１、数学2、物理、化学、生物、総合）を編集出版</li>\n        <li>2010、隣接地、4階建ての本館を購入、校舎を拡大。</li>\n        <li>2011、日本語能力試験予想問題集N4、N5 2冊、CD付きを編集出版。</li>\n        <li>2012、関連不動産会社「合同会社ブラザーズ」は8階建て、２６室のBOXマンションを購入、自校専用学生宿舎として使用。</li>\n        <li>2013、校舎隣接地、2階建て、１２室の民家を購入、自校専用学生宿舎3号館として使用。</li>\n        <li>2013、関連不動産会社「合同会社ブラザーズ」は5階建てOAKアパートメントメントを購入、自校学生宿舎として使用。</li>\n        <li>2014、同上施設の一部を「愛知国際学院セミナーハウス」・短期遊学学生の宿泊施設として新設。外国学生受け入れの充実化を図る。</li>\n        <li>2014、日本留学ガイドベトナム語版（CD,音声読み取りITペン付き、N5基本基礎文法、試験問題集、実用会話計3冊）を編集出版。</li>\n        <li>2015、新試験形式対応の日本語能力試験予想問題集N4,N5 2冊、CD付きを中国語版編集出版。</li>\n        <li>2015　新シラバス対応の日本留学試験問題集9冊（読解、聴解、聴読解、数学１、数学2、物理、化学、生物、総合）を改正、編集出版。</li>\n        <li>2018、ガンバレ・にほんご4冊を出版。</li>\n        <li>2018、日、中、英イラスト会話辞典（CD付き、音声、映像読み取りITペン対応））を出版。</li>\n        <li>2018、新日本留学小百科中国語版（CD,音声読み取りITペン付き、N5基本基礎文法、試験問題集、実用会話計3冊）を編集出版。</li>\n        <li>2021、学生居住環境の充実、強化を図るため、物件２２室の「保恵ビル」を借入、第四学生宿舎を増設。</li>\n        <li>2021、法人代表取締役に莊大右が就任。</li>\n        <li>2022、校舎隣接地を購入、駐輪駐車場として使用</li>\n      </ol>\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative\">\n        <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-7 text-white italic text-lg\">教育方針&nbsp;</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">&nbsp;&nbsp;人と夢と世界を繋ぐ国際教育を目指して</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"marker:text-red-600 list-decimal list-inside\">\n        <li><u>個々の能力、ニーズに合わせた指導</u></li>\n        <div class=\"legacy-indent\"> 学習者の日本語のレベル、また、学習者の母語を考慮したクラス編成で、個々のニーズに合った指導を行います。</div>\n        <li><u>実践的な日本語能力の育成</u></li>\n        <div class=\"legacy-indent\"> 進学先での勉学だけでなく、日常生活や将来の仕事でも使える高度の日本語コミュニケーション能力育成を重視します。</div>\n        <li><u>国際力の育成</u></li>\n        <div class=\"legacy-indent\"> 多様な価値観を尊重し、異文化コミュニケーション能力を養い、 日本国内だけでなく国際社会で活躍できる有能な人材育成を目指します。</div>\n        <li><u>学習環境の整備</u></li>\n        <div class=\"legacy-indent\"> 登録日本語教員の資格を持った日本語教師が指導を行い、最新の教材や設備やICTを活用し、教育効果を最大限に高めます。</div>\n\n      </ol>\n\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">教育政策</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6 \">\n      <div class=\"legacy-text-indent-md\">\n        近年、外国人留学生の増加に伴い、日本の日本語教育は大きな注目を集めています。愛知国際学院では、日本語学習の機会の拡充や質の向上を目指し、様々な教育政策を推進します。</div>\n      <br>\n      <ol class=\"marker:text-red-600 list-decimal list-inside\">\n        <li><u>日本語教育の体系化と教材開発</u></li>\n        <div class=\"legacy-indent\"> 日本語教育の目標や内容を示した「日本語教育の参照枠」に沿ったカリキュラムの体系化を計り、教材の開発を行います。</div>\n        <li><u>日本語教育機関の質の保証</u></li>\n        <div class=\"legacy-indent\">\n          登録日本語教員資格を取った日本語教員に対して、定期的にFD研修を行い、更なる日本語指導力の向上を図り、また、愛知国際学院独自の評価システムにより、教育機関の継続的な評価、改善を行います。</div>\n        <li><u>安心、安全な学習環境の提供</u></li>\n        <div class=\"legacy-indent\"> 外国人留学生が安心して日本語を学習できる環境を整備し、教職員一丸となって、質の高い日本語教育を行い、留学生の夢の実現をお手伝いします。</div>\n      </ol>\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">教育目標</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <div class=\"legacy-text-indent-sm\">\n        愛知国際学院は、様々なニーズを持つ外国人留学生を受け入れ、言語習得理論に基づいた効果的な日本語教育の実践を通して、日本語能力の向上を図ると同時に、異文化理解や日本での進学、就労、生活に必要な知識・技能を身につけます。\n      </div>\n      <br>\n      <ol class=\"marker:text-red-600 list-decimal list-inside\">\n        <li><u>学習者の夢を実現する日本語能力の向上</u></li>\n        <div class=\"legacy-indent\"> 大学や専門学校に進学して、または、一般企業に就職して、十分勉学に対応し、仕事に対処できる日本語力を身に付け、日本で、また、世界で活躍できる人材を育てます。\n        </div>\n        <li><u>日本語教育機関の質の保証</u></li>\n        <div class=\"legacy-indent\">\n          日本文化や日本での生活習慣、マナーを学び、広範囲な知識を獲得し、日本理解を深めるとともに、世界中の人々とスムーズなコミュニケーションが可能な異文化間コミュニケーション能力を養います。</div>\n      </ol>\n    </div>"
       },
       {
         "type": "section",
@@ -66,11 +66,26 @@
       "titleHtml": "Business scenario",
       "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
       "subtitleClassName": "text-white italic text-xs sm:text-base",
-      "subtitleHtml": "Business Entity / Business Projects / Historical Background /\n        Policy Guidelines / Educational Objectives / Educational Achievements / Related Businesses ss"
+      "subtitleHtml": "Educational Philosophy / Educational Purpose / Educational Goals / Business Entity / Business Projects / Historical Background / Educational Achievements / Related Businesses"
     },
     "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/business_pics.png\">\n  </div>",
     "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
     "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-80 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Educational Philosophy</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p class=\"mb-3\">Through Japanese language education, the Academy aims to help students encounter Japanese culture and society, gain new insights by comparing them with the cultures of their home countries, and cultivate mutual understanding.</p>\n      <p>We support each student in expanding their own potential through language and developing the ability to connect actively with the local community and the wider international community.</p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-80 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Educational Purpose</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>To develop advanced Japanese language ability that supports progression to higher education in Japan and subsequent studies, and to foster diverse individuals with broad perspectives who can contribute not only in Japan but also on the international stage.</p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-80 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Educational Goals</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>With progression to universities, graduate schools, and vocational schools in mind, students develop comprehensive Japanese language ability for advanced academic and professional fields. They also deepen their understanding of the social knowledge, customs, and culture essential for life in Japan, and acquire the communication skills needed to collaborate with people from diverse backgrounds and support the multicultural society of the future.</p>\n    </div>"
+      },
       {
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative w-72 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Business Entity</div>\n    </div>",
@@ -85,16 +100,6 @@
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative w-72 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Historical Background</div>\n    </div>",
         "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"marker:text-red-600 list-decimal list-inside\">\n        <li>In 1986, the founder of the business entity, Masanori So, established Nagoya Gaigo Gakuin, a Japanese\n          language school in Nagoya City. Masanori So played a pioneering role in creating a hub for foreign students in\n          the Tokai-Hokuriku region of Japan.</li>\n        <li>In 1989, Aichi International Academy Japanese Language School was established in Shin-Sakae, Naka-ku,\n          Nagoya, expanding the scope of operations.</li>\n        <li>In 1992, Nagoya Gaigo Gakuin was absorbed and merged.</li>\n        <li>In 1996, the school relocated to a self-owned building in Shin-Sakae 1-chome, Naka-ku, Nagoya.</li>\n        <li>In 2004, we formed a partnership with the National Institute for Japanese Language and Linguistics at Nagoya\n          University to edit and publish textbooks (Basic, Beginner, Intermediate, Advanced) for learners from\n          Chinese-speaking regions.</li>\n        <li>In 2004, we were designated as a cooperating school for material development by the Japan Educational\n          Exchanges and Services, contributing to the development of study materials for the EJU, particularly in the\n          area of \"Language and Expression\".</li>\n        <li>In 2006, we edited and published a series of nine mock exam question booklets for the EJU, covering Reading\n          Comprehension, Listening Comprehension, Listening and Reading Comprehension, Mathematics 1, Mathematics 2,\n          Physics, Chemistry, Biology, and Comprehensive Subjects.</li>\n        <li>In 2010, we purchased an adjacent plot of land measuring 297 square meters and a four-story building with a\n          total area of 821 square meters, known as Building 2, to expand our campus.</li>\n        <li>In 2011, we edited and published two booklets with predicted questions for the Japanese Language Proficiency\n          Test (JLPT) N4 and N5, each accompanied by a CD.</li>\n        <li>In 2012, our affiliated real estate company, \"Brothers,\" purchased a property measuring 188 square meters\n          with an eight-story building covering 775 square meters. This building, consisting of 26 rooms, was acquired\n          for use as a dedicated student dormitory for our school.</li>\n        <li>In 2013, we acquired a residential property adjacent to the campus, covering 200 square meters with a\n          two-story building spanning 396 square meters and featuring 12 rooms. This property was designated as Building\n          3, a dedicated student dormitory for our school.</li>\n        <li>In 2013, our affiliated real estate company, \"Brothers,\" purchased a property measuring 501 square meters\n          with a five-story OAK Mansion. This building was acquired for use as a student dormitory for our school.</li>\n        <li>In 2014, a portion of the aforementioned facilities was designated as the \"Aichi International Academy\n          Seminar House,\" serving as accommodation for short-term study-abroad students. This addition aimed to enhance\n          the reception of international students for short-term programs.</li>\n        <li>In 2014, we published the \"Japan Study Guide Vietnamese Edition\" (comprising three books: Basic Grammar for\n          N5, Exam Question Collection, Practical Conversation) with a CD and an audio-reading IT pen.</li>\n        <li>In 2015, we edited and published two books for the new exam format of the JLPT (N4 and N5) with accompanying\n          CDs, available in Chinese.</li>\n        <li>In 2015, we revised and published nine books for the new syllabus of EJU (covering Reading, Listening,\n          Listening-Reading, Mathematics 1, Mathematics 2, Physics, Chemistry, Biology, and General Knowledge).</li>\n        <li>In 2018, we published the \"Ganbare Nihongo\" series consisting of four books.</li>\n        <li>In 2018, we published an Illustrated Conversation Dictionary in Japanese, Chinese, and English (with CD and\n          audio-visual reading IT pen compatibility).</li>\n        <li>In 2018, we edited and published the \"New Japan Study Encyclopedia\" in Chinese (comprising three books:\n          Basic Grammar for N5, Exam Question Collection, Practical Conversation) with a CD and an audio-reading IT pen.\n        </li>\n        <li>In 2021, to enhance the living environment for our students, we borrowed a family property with a land area\n          of 270 square meters and 22 rooms, known as the \"Hokei Building,\" to expand and establish the fourth student\n          dormitory.</li>\n        <li>In 2021, Daisuke So assumed the position of the representative of the business, serving as Vice President of\n          the Academy.</li>\n        <li>In 2022, we purchased adjacent land measuring 122 square meters for the establishment of a bicycle and\n          parking lot.</li>\n      </ol>\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative w-72 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Policy Guidelines</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      We strive to cultivate international talents for the 21st century who possess specialized knowledge and skills,\n      creativity, proficiency in languages, logic, and maintain a balance between learning/work and\n      hobbies/entertainment. We employ tailored teaching methods based on individual aptitude (matching instruction to\n      the student's abilities) and adapt to local conditions (using approaches suitable for the region).\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative w-72 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Educational Goal</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      Our goal is to help students who aspire to excel on the international stage achieve the career paths they desire\n      as popular international talents in the 21st century.\n    </div>"
       },
       {
         "type": "section",
@@ -118,45 +123,50 @@
       "titleHtml": "事业概况",
       "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
       "subtitleClassName": "text-white italic text-xs sm:text-base",
-      "subtitleHtml": "事业主体 / 事业项目 / 历史沿革 / 政策方针 / 教育目标 / 教育业绩 / 关联事业"
+      "subtitleHtml": "教育理念 / 教育目的 / 教育目标 / 事业主体 / 事业项目 / 历史沿革 / 教育业绩 / 关联事业"
     },
     "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/business_pics.png\">\n  </div>",
     "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
     "blocks": [
       {
         "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">事业主体</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      商号：平成国际教育开发有限会社<br>\n      住址：爱知县名古屋市中区新栄1-30-3<br>\n      成立：昭和46年5月31日<br>\n      资本金：4800万日圆<br>\n      代表：庄　大右\n    </div>"
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">教育理念</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p class=\"mb-3\">本学院希望通过日语教育，让学生接触日本文化与社会，并在与本国文化的比较中获得新的发现，同时培养“相互理解”的精神。</p>\n      <p>我们支持每一位学生通过语言拓展自身可能性，培养主动连接地域社会乃至国际社会的能力。</p>\n    </div>"
       },
       {
         "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">事业项目</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"list-decimal list-inside\">\n        <li>经营日语学校</li>\n        <li>语言学习用教材开发丶制作丶出版丶输出入以及贩卖事业</li>\n        <li>不动产租赁丶管理</li>\n        <li>健康医疗器具的进口贩卖</li>\n        <li>人力派遣事业及人才培训事业</li>\n        <li>有偿职业介绍及劳动者派遣事业</li>\n        <li>外国培训生・技能实习生・特定技能外国人等地外国人才受成事业</li>\n        <li>一般废弃物及产业废弃物的收集丶搬运丶再生加工以回收和销售</li>\n        <li>相关附属于前述各项业务的所有工作</li>\n      </ol>\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">历史沿革</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"marker:text-red-600 list-decimal list-inside\">\n        <li>在1986年，创[业者，荘昌宪，作为外国学生在日本东海北陆地区的接待先锋，创办了名古屋外国语学院，以提供外国学生学习日语的机会。</li>\n        <li>在1989年，成立了位于名古屋市中区新栄3丁目的爱知国际学院，并拓展了其业务。</li>\n        <li>在1992年，吸收并合并了名古屋外国语学院。</li>\n        <li>在1996年，迁移到名古屋市中区新栄一丁目的自有校舍。</li>\n        <li>在2004年，与国立名古屋大学大学院语言文化研究所合作，编辑并出版了针对汉字学习者的教科书（基础丶初级丶中级丶上级）。</li>\n        <li>在2004年，被指定为日本语教育协会基金会的教材开发协作学校，收录了应对日本留学考试的「语言和表达」研究成果。</li>\n        <li>在2006年，编辑并出版了应对日本留学考试的9册模拟试题集（阅读丶听力丶听读理解丶数学1丶数学2丶物理丶化学丶生物丶综合）。</li>\n        <li>在2010年，购买了相邻的土地，面积297平方米，建有4层楼，总面积821平方米的本馆，扩建校舍。</li>\n        <li>在2011年，编辑并出版了日本语能力试验预测问题集N4丶N5各2册，并附带CD。</li>\n        <li>2012年，从合资房地产公司“Brothers LLC”购买一块土地，面积188平方米，高8层，面积775平方米，26个BOX综合体，用作公司自有学校的学生住宿。</li>\n        <li>在2013年，购入了邻接校舍的土地，面积200平方米，建有2层楼，总面积396平方米，有12间房间的房屋，作为自校专用的学生宿舍3号馆使用。</li>\n        <li>2013年，从共同房地产公司“Brothers LLC”购买一块土地，面积501平方米，一栋5层的OAK大楼，作为工作的学生宿舍。</li>\n        <li>在2014年，上述设施的一部分被设立为「爱知国际学院研讨会馆」，作为短期游学学生的住宿设施，以加强对外国学生的接待。</li>\n        <li>在2014年，编辑并出版了《日本留学指南越南语版》（附带CD丶音声读取电子笔，N5基本基础语法丶试题集丶实用会话计3册）。</li>\n        <li>2015年，编辑并出版了适应新考试形式的《日本语能力试験预测问题集N4丶N5》两册，附带CD，中文版。</li>\n        <li>2015年，对新的教学大纲标准进行改编，编辑并出版了《新版日本留学试题集9册》（阅读丶听力丶听读理解丶数学1丶数学2丶物理丶化学丶生物丶综合）。</li>\n        <li>2018年，《Ganbare Nihongo》出版4卷。</li>\n        <li>2018年，出版了《日中英图解会话词典》（附带CD丶语音丶影音读取电子笔支援）。</li>\n        <li>2018年，编辑并出版了《新版日本留学小百科中文版》（附带CD丶音频读取电子笔，N5基本基础文法丶试题集丶实用会话计3册）。</li>\n        <li>为了强化学生居住环境的丰富度，于2021年，租用家庭物业，占地270平方米，22间房的「保恵楼」，增设为第四学生宿舍。</li>\n        <li>2021年，庄大右担任事业代表兼副学院长。</li>\n        <li>2022年，购买校舍邻接地122平方米的土地，作为自行车和汽车停车场使用。</li>\n      </ol>\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">政策方针</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      我们致力于培养具备专业知识和技术丶富有创意丶精通语言丶注重逻辑思维的国际人才，以符合21世纪对于学习丶工作丶娱乐平衡的需求。我们采取因材施教的原则，根据个人的适性提供指导，并因地制宜地采用适应当地特点的方法。\n    </div>"
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">教育目的</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>培养有助于升入日本高等教育机构及之后学习的高水平日语能力，培育具备广阔视野、能够在日本国内及国际舞台上作出贡献的多元化人才。</p>\n    </div>"
       },
       {
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">教育目标</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n\n      我们的目标是让学生能够实现他们希望的未来发展，成为符合21世纪所需的国际人才，能够在国际舞台上取得成功。\n    </div>"
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>面向大学、研究生院及专门学校升学，培养能够应对高度学术及专业领域的综合日语能力。同时，加深对日本社会生活所不可或缺的社会常识、习惯与文化的理解，培养与不同背景的人协作、支撑未来多文化共生社会的沟通能力。</p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">事业主体</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      公司名称：平成国际教育开发有限公司<br>\n      地址：爱知县名古屋市中区新荣1-30-3<br>\n      成立：昭和46年5月31日<br>\n      资本金：4800万日元<br>\n      代表：莊　大右<br>\n      <br>\n      认证日语教育机构名称：爱知国际学院<br>\n      认证日语教育机构所在地：名古屋市中区新荣1-30-29（本馆）<br>\n      名古屋市中区新荣1-30-3（别馆）\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">事业项目</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"list-decimal list-inside\">\n        <li>经营日语学校</li>\n        <li>语言学习教材、教具的开发、制作、出版、进出口及销售</li>\n        <li>不动产租赁及管理</li>\n        <li>健康医疗器具的进口销售</li>\n        <li>人才派遣及人才培训业务</li>\n        <li>收费职业介绍及劳务派遣业务</li>\n        <li>外国研修生、技能实习生、特定技能外国人等外国人才的接收及培养业务</li>\n        <li>一般废弃物及产业废弃物的收集、运输、再生加工、再生及销售</li>\n        <li>与上述各项相关的一切附带业务</li>\n      </ol>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">历史沿革</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"marker:text-red-600 list-decimal list-inside\">\n        <li>1986年，事业母体创办人莊昌宪在名古屋市创办名古屋外语学院，作为日本东海、北陆地区接收外国学生的先驱，为外国学生提供学习日语的机会。</li>\n        <li>1989年，在名古屋市中区新荣3丁目设立日语学校爱知国际学院，并扩大事业规模。</li>\n        <li>1992年，合并名古屋外语学院。</li>\n        <li>1996年，迁至名古屋市中区新荣一丁目的自有校舍。</li>\n        <li>2004年，与国立名古屋大学大学院语言文化研究科合作，编辑并出版面向汉字圈学习者的教科书（基础、初级、中级、高级）。</li>\n        <li>2004年，被财团法人日本语教育协会指定为教材开发合作校，并完成面向日本留学考试的「词语・表达」研究成果。</li>\n        <li>2006年，编辑并出版日本留学考试模拟试题集9册（阅读、听力、听读解、数学1、数学2、物理、化学、生物、综合科目）。</li>\n        <li>2010年，购入邻接的4层本馆，扩建校舍。</li>\n        <li>2011年，编辑并出版日本语能力考试预测问题集N4、N5共2册（附CD）。</li>\n        <li>2012年，关联不动产公司「兄弟有限责任公司」购入8层、26室的BOX公寓，作为学院专用学生宿舍使用。</li>\n        <li>2013年，购入校舍邻接地的2层、12室民宅，作为学院专用学生宿舍3号馆使用。</li>\n        <li>2013年，关联不动产公司「兄弟有限责任公司」购入5层OAK公寓，作为学院学生宿舍使用。</li>\n        <li>2014年，将上述设施的一部分设为「爱知国际学院研修会馆」，作为短期游学学生住宿设施，进一步充实外国学生接收体制。</li>\n        <li>2014年，编辑并出版《日本留学指南》越南语版（附CD、语音读取IT笔、N5基本基础语法、试题集、实用会话共3册）。</li>\n        <li>2015年，编辑并出版适应新考试形式的日本语能力考试预测问题集N4、N5共2册（中文版，附CD）。</li>\n        <li>2015年，修订、编辑并出版适应新大纲的日本留学考试试题集9册（阅读、听力、听读解、数学1、数学2、物理、化学、生物、综合科目）。</li>\n        <li>2018年，出版《Ganbare Nihongo》4册。</li>\n        <li>2018年，出版日中英插图会话词典（附CD，对应语音、影像读取IT笔）。</li>\n        <li>2018年，编辑并出版《新日本留学小百科》中文版（附CD、语音读取IT笔、N5基本基础语法、试题集、实用会话共3册）。</li>\n        <li>2021年，为充实并强化学生居住环境，租借22室的保惠大楼，增设第四学生宿舍。</li>\n        <li>2021年，莊大右就任法人代表董事。</li>\n        <li>2022年，购入校舍邻接地，作为自行车及停车场使用。</li>\n      </ol>\n    </div>"
       },
       {
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">教育业绩</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"list-decimal list-inside\">\n        <li>自成立以来，每年均获得日本语教育振兴协会和出入国管理局的「适正校I」的认证。</li>\n        <li>获得众多专业学校和大学的推荐指定认证，成为进修的首选学校。</li>\n        <li>获得中华人民共和国驻日本大使馆教育处颁发的「自费留学及中外合作变学合作对象资格认定书（日使教证字​​第008号）」。</li>\n        <li>至2022年，已举办32次毕业典礼，共计64届，送出超过六千名毕业生，这些毕业生在国内外的高等教育机构和社会各界都表现出色。</li>\n        <li>积极参与日本语教材的开发，已编辑出版约20册日语参考书籍，为日语教育的发展做出了重要贡献。</li>\n      </ol>\n    </div>"
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"list-decimal list-inside\">\n        <li>创立以来，每年均被日本语教育振兴协会及出入国管理局认定为「适正校」。</li>\n        <li>被多所专门学校、大学等升学单位认定为「推荐指定校」。</li>\n        <li>获得中华人民共和国驻日本大使馆教育处颁发的「自费留学及中外合作办学合作对象资格认定书（日使教证字【2011】第008号）」。</li>\n        <li>截至2022年度，已举办32次毕业典礼，共64期，培养六千名以上毕业生，在高等教育机构及国内外社会各界活跃。</li>\n        <li>持续致力于日语教材开发，编辑出版近20册日语参考书，为日语教育的发展作出贡献。</li>\n      </ol>\n    </div>"
       },
       {
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">关联事业</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      公司名称：兄弟有限责任公司<br>\n      住所：名古屋市新栄1-30-29<br>\n      资本金：3600万日圆<br>\n      代表：荘 大右<br>\n      叶 大殷<br>\n      事业内容：不动产租赁及管理<br>\n      拥有房产：<br>\n      1. Oak Apart（占地面积152坪，5层楼，本学院学生宿舍）<br>\n      　　　　　2. THE BOX2707 公寓（57坪，8层楼，本学院学生宿舍）<br>\n      管理物件：<br>\n      1. 安恵楼（占地面积82坪，4层楼，本学院学生宿舍）<br>\n      　　　　　2. Itopia 907号和山王馆803号（我校学生宿舍）<br>\n      　　　　　3. 学院3号馆（占地60坪，2层楼，本学院学生宿舍及餐厅）\n    </div>"
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      公司名称：兄弟有限责任公司<br>\n      地址：名古屋市新荣1-30-29<br>\n      资本金：3600万日元<br>\n      代表：莊　大右<br>\n      　　　葉　大殷<br>\n      事业内容：不动产租赁及管理<br>\n      持有房产：<br>\n      　　　1. OAK公寓（5层楼，本学院学生宿舍）<br>\n      　　　2. THE BOX2707公寓（8层楼，本学院学生宿舍）<br>\n      管理房产：<br>\n      　　　1. 安惠大楼（4层楼，本学院学生宿舍）<br>\n      　　　2. Itopia 907室、三旺公寓803室（本学院学生宿舍）<br>\n      　　　3. 学院3号馆（2层楼，本学院学生宿舍）\n    </div>"
       }
     ]
   },
@@ -167,48 +177,53 @@
       "imageClassName": "w-full object-cover object-center",
       "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
       "titleClassName": "text-white text-3xl font-bold",
-      "titleHtml": "業務概況",
+      "titleHtml": "事業概況",
       "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
       "subtitleClassName": "text-white italic text-xs sm:text-base",
-      "subtitleHtml": "事業實體 / 事業項目 / 沿革 / 政策方向 / 教育目標 / 教育成果 / 相關項目"
+      "subtitleHtml": "教育理念 / 教育目的 / 教育目標 / 事業主體 / 事業項目 / 歷史沿革 / 教育成果 / 相關事業"
     },
     "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/business_pics.png\">\n  </div>",
     "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
     "blocks": [
       {
         "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">商業實體</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      商號：平成國際教育開發有限公司<br>\n      住址：愛知縣名古屋市中區新栄1-30-3 <br>\n      成立：昭和46年5月31日<br>\n      資本金：4800萬日圓<br>\n      代表人：莊大輔\n    </div>"
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">教育理念</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p class=\"mb-3\">本學院希望透過日語教育，讓學生接觸日本文化與社會，並在與自身國家文化的比較中獲得新的發現，同時培養「相互理解」的精神。</p>\n      <p>我們支持每一位學生透過語言拓展自身可能性，培養主動連結地域社會乃至國際社會的能力。</p>\n    </div>"
       },
       {
         "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">事業主體</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"list-decimal list-inside\">\n        <li>經營日語學校。</li>\n        <li>語言學習用教材開發、製作、出版、輸出入以及販賣業務。</li>\n        <li>不動產租賃、管理業務。</li>\n        <li>健康醫療器具的進口販賣業務。</li>\n        <li>外国高度人材之培訓、就職介紹和派遣業務。</li>\n        <li>特定技能外国人労働者之培訓、就労介紹和派遣業務。</li>\n        <li>一般廃棄物或産業廃棄物之収集、運搬、再生加工和販売業務。</li>\n        <li>上述各項相関附帯業務。</li>\n      </ol>\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">歷史 歷史</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"marker:text-red-600 list-decimal list-inside\">\n        <li>在1986年，創[業者，荘昌憲，作為外國學生在日本東海北陸地區的接待先鋒，創辦了名古屋外國語學院，以提供外國學生學習　日語的機會。</li>\n        <li>在1989年，成立了位於名古屋市中區新栄3丁目的愛知國際學院，並拓展了其業務。</li>\n        <li>在1992年，吸收合併了名古屋外國語學院。</li>\n        <li>在1996年，遷移到名古屋市中區新栄一丁目的自有校舍。</li>\n        <li>在2004年，與國立名古屋大學大學院語言文化研究所合作，編輯出版針對漢字學習者的教科書（基礎、初級、中級、上級）。</li>\n        <li>在2004年，被指定為日本語教育協會基金會的教材開發協作學校，收錄了應對日本留學考試的「語言和表達」研究成果。</li>\n        <li>在2006年，編輯出版日本留學考試的9冊模擬試題集（閱讀、聽力、聽讀理解、數學1、數學2、物理、化學、生物、綜合）。</li>\n        <li>在2010年，購買了相鄰的土地，面積297平方米，建有4層樓，總面積821平方米的2號樓，擴建校舍。</li>\n        <li>在2011年，編輯並出版了日本語能力試驗預測問題集N4、N5各2冊，並附帶CD。</li>\n        <li>2012年，我們從相關房地產公司「Godo Co. Brothers」購買了一塊土地，面積188平方米，塔樓8層，總面積775平方米，票房26位，用作我們自己學校的學生宿舍。</li>\n        <li>在2013年，購入了校舍隣接建物，面積200平方米，總面積396平方米，有12間房間的房屋，作為自校專用的學生宿舍使用。</li>\n        <li>2013年，由「神戶會社兄弟」購買，面積501平方米，5層OAK大樓，用作學生宿舍。</li>\n        <li>在2014年，上述部分設施被設立為「愛知國際學院研修所」，提供短期遊學學生廉価住宿之用。</li>\n        <li>在2014年，編輯出版《日本留學指南越南語版》（附帶CD、音聲讀取電子筆，N5基本基礎語法、試題集、實用會話計3冊）。</li>\n        <li>在2015年，編輯出版適應新考試形式的《日本語能力試験預測問題集N4、N5》兩冊，附帶CD，中文版。</li>\n        <li>在2015年，針對新教學大綱標準進行改編，編輯出版《新版日本留學試題集9冊》（閱讀、聽力、聽讀理解、數學1、數學2、物理、化學、生物、綜合等9科目之参考書）。</li>\n        <li>2018年，編輯出版《Ganbare Nihongo》4本。</li>\n        <li>在2018年，編集出版《日中英圖解會話詞典》（附帶CD、語音、影像音声点讀電子筆支援）。</li>\n        <li>在2018年，編輯出版《新版日本留學小百科中文版》（附帶CD、音声点読電子筆，N5基本基礎文法、試題集、實用會話）</li>\n        <li>在2021年，租用家族物件，佔地270平方米，22間房的「保恵公寓」，增設學生宿舍。</li>\n        <li>在2021年，世代継承、莊大右新任事業代表兼副學院長。</li>\n        <li>在2022年，購買校舍鄰接地122平方米的土地，作為停車場使用。 </li>\n        <li>在2023年，開始使用學院自行開發的NEW LEO SYSTEM學校管理軟體，全面更新網站，並引入線上入學申請系統。 </li>\n        <li>在2024年、全校教室 白板廃棄、改装数位白板、増設新型空気清浄器。</li>\n      </ol>\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">政策方針</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      致力於培育具備專業知識和技術、富有創意、精通外語 、注重邏輯而富有論理能力、同時學習或工作和興味娛樂能取得平衡的 新世紀之人才、採取 因才施教、因地制宜之教育方針。\n    </div>"
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">教育目的</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>培養有助於升入日本高等教育機構及之後學習的高水準日語能力，培育具備廣闊視野、能在日本國內及國際舞台上作出貢獻的多元人才。</p>\n    </div>"
       },
       {
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">教育目標</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      目標是讓學生能夠實現他們希望的未來發展，成為符合21世紀所需的國際人才，能夠在國際舞台上取得成功。\n    </div>"
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>面向大學、研究所及專門學校升學，培養能夠應對高度學術及專業領域的綜合日語能力。同時，加深對日本社會生活中不可或缺的社會常識、習慣與文化的理解，培養與不同背景的人協作、支撐未來多文化共生社會的溝通能力。</p>\n    </div>"
       },
       {
         "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">教育成就</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"list-decimal list-inside\">\n        <li>自創校來，每年均獲得出入國管理局認定為「適正校I」（目前為一級適正校、申請留学簽証手続簡易）。</li>\n        <li>獲得多数上級教育機関之的認可，授予「特別推薦指定校」。</li>\n        <li>獲得中華人民共和國駐日本大使館教育處頒發的「自費留學及中外合作變學合作對象資格認定書（日使教証字​​第008號）」。</li>\n        <li>目前為止、巳有８０期、超過６千名的畢業生、升大読研或就職創業。 </li>\n        <li>積極努力開発日本語教材教具，已編輯出版約20冊日語電子点読參考書籍，為日語教育的發展做出了微力貢獻。</li>\n      </ol>\n    </div>"
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">事業主體</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      公司名稱：平成國際教育開發有限公司<br>\n      地址：愛知縣名古屋市中區新榮1-30-3<br>\n      成立：昭和46年5月31日<br>\n      資本金：4800萬日圓<br>\n      代表人：莊　大右<br>\n      <br>\n      認定日語教育機構名稱：愛知國際學院<br>\n      認定日語教育機構所在地：名古屋市中區新榮1-30-29（本館）<br>\n      名古屋市中區新榮1-30-3（別館）\n    </div>"
       },
       {
         "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">關連事業</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      公司名稱：兄弟有限責任公司<br>\n      住址：名古屋市新栄1-30-29<br>\n      資本金：3600萬日圓<br>\n      代表者：荘　大右<br>\n      　　　　葉大印<br>\n      事業内容：不動産租賃・管理<br>\n      擁有房產：<br>\n      　　　　　1. Oak Apart（占地面積152坪，5層樓，本學院學生宿舍）<br>\n      　　　　　2. THE BOX2707 公寓（57坪，8層樓，本學院學生宿舍）<br>\n      託管屬性：　<br>\n      　　　　　1. 安恵大樓（占地面積82坪，4層樓，本學院學生宿舍）<br>\n      　　　　　2. Itopia 907、三王工業803（主校學生宿舍）<br>\n      　　　　　3. 學院3號館（佔地60坪，2層樓，本學院學生宿舍及餐廳）\n    </div>"
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">事業項目</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"list-decimal list-inside\">\n        <li>經營日語學校</li>\n        <li>語言學習教材、教具的開發、製作、出版、進出口及銷售</li>\n        <li>不動產租賃及管理</li>\n        <li>健康醫療器具的進口銷售</li>\n        <li>人才派遣及人才培訓業務</li>\n        <li>收費職業介紹及勞務派遣業務</li>\n        <li>外國研修生、技能實習生、特定技能外國人等外國人才的接收及培育業務</li>\n        <li>一般廢棄物及產業廢棄物的收集、運輸、再生加工、再生及銷售</li>\n        <li>與上述各項相關的一切附帶業務</li>\n      </ol>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">歷史沿革</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"marker:text-red-600 list-decimal list-inside\">\n        <li>1986年，事業母體創辦人莊昌憲在名古屋市創辦名古屋外語學院，作為日本東海、北陸地區接收外國學生的先驅，為外國學生提供學習日語的機會。</li>\n        <li>1989年，在名古屋市中區新榮3丁目設立日語學校愛知國際學院，並擴大事業規模。</li>\n        <li>1992年，合併名古屋外語學院。</li>\n        <li>1996年，遷至名古屋市中區新榮一丁目的自有校舍。</li>\n        <li>2004年，與國立名古屋大學大學院語言文化研究科合作，編輯並出版面向漢字圈學習者的教科書（基礎、初級、中級、高級）。</li>\n        <li>2004年，被財團法人日本語教育協會指定為教材開發合作校，並完成面向日本留學考試的「詞語・表達」研究成果。</li>\n        <li>2006年，編輯並出版日本留學考試模擬試題集9冊（閱讀、聽力、聽讀解、數學1、數學2、物理、化學、生物、綜合科目）。</li>\n        <li>2010年，購入鄰接的4層本館，擴建校舍。</li>\n        <li>2011年，編輯並出版日本語能力考試預測問題集N4、N5共2冊（附CD）。</li>\n        <li>2012年，關聯不動產公司「兄弟有限責任公司」購入8層、26室的BOX公寓，作為學院專用學生宿舍使用。</li>\n        <li>2013年，購入校舍鄰接地的2層、12室民宅，作為學院專用學生宿舍3號館使用。</li>\n        <li>2013年，關聯不動產公司「兄弟有限責任公司」購入5層OAK公寓，作為學院學生宿舍使用。</li>\n        <li>2014年，將上述設施的一部分設為「愛知國際學院研修會館」，作為短期遊學學生住宿設施，進一步充實外國學生接收體制。</li>\n        <li>2014年，編輯並出版《日本留學指南》越南語版（附CD、語音讀取IT筆、N5基本基礎語法、試題集、實用會話共3冊）。</li>\n        <li>2015年，編輯並出版適應新考試形式的日本語能力考試預測問題集N4、N5共2冊（中文版，附CD）。</li>\n        <li>2015年，修訂、編輯並出版適應新大綱的日本留學考試試題集9冊（閱讀、聽力、聽讀解、數學1、數學2、物理、化學、生物、綜合科目）。</li>\n        <li>2018年，出版《Ganbare Nihongo》4冊。</li>\n        <li>2018年，出版日中英插圖會話詞典（附CD，對應語音、影像讀取IT筆）。</li>\n        <li>2018年，編輯並出版《新日本留學小百科》中文版（附CD、語音讀取IT筆、N5基本基礎語法、試題集、實用會話共3冊）。</li>\n        <li>2021年，為充實並強化學生居住環境，租借22室的保惠大樓，增設第四學生宿舍。</li>\n        <li>2021年，莊大右就任法人代表董事。</li>\n        <li>2022年，購入校舍鄰接地，作為自行車及停車場使用。</li>\n      </ol>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">教育成果</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"list-decimal list-inside\">\n        <li>創立以來，每年均被日本語教育振興協會及出入國管理局認定為「適正校」。</li>\n        <li>被多所專門學校、大學等升學單位認定為「推薦指定校」。</li>\n        <li>獲得中華人民共和國駐日本大使館教育處頒發的「自費留學及中外合作辦學合作對象資格認定書（日使教證字【2011】第008號）」。</li>\n        <li>截至2022年度，已舉辦32次畢業典禮，共64期，培育六千名以上畢業生，在高等教育機構及國內外社會各界活躍。</li>\n        <li>持續致力於日語教材開發，編輯出版近20冊日語參考書，為日語教育的發展作出貢獻。</li>\n      </ol>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">相關事業</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      公司名稱：兄弟有限責任公司<br>\n      地址：名古屋市新榮1-30-29<br>\n      資本金：3600萬日圓<br>\n      代表者：莊　大右<br>\n      　　　　葉　大殷<br>\n      事業內容：不動產租賃及管理<br>\n      持有房產：<br>\n      　　　　1. OAK公寓（5層樓，本學院學生宿舍）<br>\n      　　　　2. THE BOX2707公寓（8層樓，本學院學生宿舍）<br>\n      管理房產：<br>\n      　　　　1. 安惠大樓（4層樓，本學院學生宿舍）<br>\n      　　　　2. Itopia 907室、三旺公寓803室（本學院學生宿舍）<br>\n      　　　　3. 學院3號館（2層樓，本學院學生宿舍）\n    </div>"
       }
     ]
   },
@@ -222,11 +237,26 @@
       "titleHtml": "사업 개요",
       "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
       "subtitleClassName": "text-white italic text-xs sm:text-base",
-      "subtitleHtml": "사업 주체 / 사업 항목 / 사업 역사 / 정책 방향 / 교육 목표 / 교육 업적 / 관련 사업"
+      "subtitleHtml": "교육 이념 / 교육 목적 / 교육 목표 / 사업 주체 / 사업 항목 / 역사 / 교육 성과 / 관련 사업"
     },
     "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/business_pics.png\">\n  </div>",
     "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
     "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">교육 이념</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p class=\"mb-3\">본 학원은 일본어 교육을 통해 학생들이 일본의 문화와 사회를 접하고, 자국 문화와의 비교 속에서 새로운 발견을 얻으며, 상호 이해를 키우는 것을 목표로 합니다.</p>\n      <p>학생 한 사람 한 사람이 언어를 통해 자신의 가능성을 넓히고, 지역사회 더 나아가 국제사회와 주체적으로 연결되는 힘을 기를 수 있도록 지원합니다.</p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">교육 목적</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>일본의 고등교육기관 진학과 그 이후의 학업에 도움이 되는 높은 수준의 일본어 능력을 기르고, 일본 국내뿐 아니라 국제 무대에서도 공헌할 수 있는 넓은 시야를 가진 다양한 인재를 배출합니다.</p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">교육 목표</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>대학, 대학원, 전문학교 진학을 염두에 두고 고도의 학술 및 전문 분야에 대응할 수 있는 종합적인 일본어 능력을 기릅니다. 또한 일본 사회생활에 필수적인 사회 상식, 습관, 문화에 대한 이해를 깊게 하고, 다양한 배경을 가진 사람들과 협력하며 앞으로의 다문화 공생 사회를 이끌어 갈 커뮤니케이션 능력을 기릅니다.</p>\n    </div>"
+      },
       {
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">사업 주체</div>\n    </div>",
@@ -241,16 +271,6 @@
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">역사와 전망</div>\n    </div>",
         "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"marker:text-red-600 list-decimal list-inside\">\n        <li>1986년에 창업자 소장창헌은 동해, 북륙 지역에서 일본으로 오는 외국 학생들을 환영하기 위해 나고야 외국어 학원을 설립했으며, 이는 외국 학생들에게 일본어 학습 기회를 제공하기 위한\n          것이었습니다.</li>\n        <li>1989년에는 나고야 시 중구 신에이 3번가에 위치한 아이치 국제 학원이 설립되어 사업을 확장했습니다.</li>\n        <li>1992년에는 나고야 외국어 학원을 흡수하고 통합했습니다.</li>\n        <li>1996년에는 나고야 시 중구 신에이 1번가로 자체 건물에 이전했습니다.</li>\n        <li>2004년에는 나고야 대학 대학원 언어 문화 연구소와 협력하여 한자 학습자를 위한 교재 (기초, 초급, 중급, 고급)를 편집 및 발행했습니다.</li>\n        <li>2004년에는 일본어 교육 협회 재단의 교재 개발 협력 학교로 지정되어 일본 유학 시험 대비 \"언어와 표현\" 연구 성과를 수록했습니다.</li>\n        <li>2006년에는 일본 유학 시험 대비 9권의 모의 시험 문제집 (독해, 청해, 청독해석, 수학1, 수학2, 물리학, 화학, 생물학, 종합)을 편집 및 발행했습니다.</li>\n        <li>2010년에는 인접한 토지를 구입하여 297제곱미터의 면적에 4층 건물로 확장된 2호관을 구축했습니다.</li>\n        <li>2011년에는 JLPT N4 및 N5를 대비한 예상 문제집 각 2권을 편집하고 CD를 첨부하여 발행했습니다.</li>\n        <li>2012년에는 관련 부동산 회사인 \"주식회사 브라더스\"가 토지를 구입하여 면적이 188제곱미터이고 8층 건물로 총면적이 775제곱미터이며 26개의 방이 있는 BOX 아파트를 자체 학생 기숙사로\n          사용했습니다.</li>\n        <li>2013년에는 인접한 건물의 토지를 구입하여 면적이 200㎡이고 2층 건물로 총면적이 396㎡이며 12개의 방이 있는 건물을 구축하여 자체 학생 기숙사 3호관으로 사용했습니다.</li>\n        <li>2013년에는 관련 부동산 회사 \"주식회사 브라더스\"가 토지를 구입하여 면적이 501㎡이고 5층 높이의 OAK 아파트를 자체 학생 기숙사로 사용했습니다.</li>\n        <li>2014년에는 상기 시설의 일부를 \"아이치 국제 학원 세미나 하우스\"로 설립하여 단기 유학 학생의 숙박 시설로 사용하여 외국 학생 수용을 강화했습니다.</li>\n        <li>2014년에는 \"일본 유학 가이드 베트남어판\"을 편집 및 발행하여 (CD, 음성 읽기 전자 펜 함께 제공, N5 기본 기초 문법, 문제집, 실용 대화 총 3권)입니다.</li>\n        <li>2015년에는 새로운 시험 형식에 대응한 \"일본어 능력 시험 예상 문제집 N4, N5\" 2권을 편집 및 발행하고 CD가 포함된 중국어판을 제작했습니다.</li>\n        <li>2015년에는 새로운 교육 과정 표준에 대한 수정을 진행하고, \"새로운 일본 유학 시험 문제집 9권\" (독해, 청해, 청독해석, 수학1, 수학2, 물리학, 화학, 생물학, 종합)을 편집 및\n          발행했습니다.</li>\n        <li>2018년에는 「가바레 니혼고」4권을 출판했습니다.</li>\n        <li>2018년에는 \"일중영 그림으로 배우는 회화 사전\" (CD, 음성, 영상 읽기 전자 펜 지원)을 출판했습니다.</li>\n        <li>2018년에는 \"새로운 일본 유학 소백과사전 중국어판\" (CD, 오디오 읽기 전자 펜 함께 제공, N5 기본 기초 문법, 문제집, 실용 대화 총 3권)을 편집 및 발행했습니다.</li>\n        <li>학생 거주 환경을 강화하기 위해 2021년에는 가족용 부동산을 임대하여 면적이 270㎡이고 22개의 방이 있는 \"호에이 빌\"을 제4 학생 기숙사로 추가로 설치했습니다.</li>\n        <li>2021년에는 소장대우가 사업대표 겸 부학원장으로 취임했습니다.</li>\n        <li>2022년에는 교사 옆 122㎡의 토지를 구입하여 자전거와 자동차 주차장으로 사용했습니다.</li>\n      </ol>\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">정책 방향</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      저희는 전문 지식과 기술을 갖추고 창의적이며 언어에 능통하며 논리적 사고를 갖춘 국제인재를 육성하기 위해 노력하고 있습니다. 21세기의 학습, 직업, 그리고 즐거움의 균형을 충족시키기 위한 것입니다.\n      우리는 각자의 능력에 맞는 개별 지도를 제공하기 위해 적합한 교육 방법을 적용하며, 현지 특성에 맞는 방법을 적용하는 지역적인 방법론을 채택하고 있습니다.\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">교육 목표</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      우리의 목표는 학생들이 원하는 미래 발전을 실현하고, 21세기 요구에 부합하는 국제적인 인재로 성장할 수 있도록 하는 것이며 국제 무대에서 성공을 거두도록 하는 것입니다.\n    </div>"
       },
       {
         "type": "section",
@@ -274,11 +294,26 @@
       "titleHtml": "Tổng quan về doanh nghiệp",
       "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
       "subtitleClassName": "text-white italic text-xs sm:text-base",
-      "subtitleHtml": "Thực thể kinh doanh / Mặt hàng kinh doanh / Lịch sử / Định hướng chính sách / Mục tiêu giáo dục / Thành tựu giáo dục / Các dự án liên quan"
+      "subtitleHtml": "Triết lý giáo dục / Mục đích giáo dục / Mục tiêu giáo dục / Chủ thể kinh doanh / Hạng mục kinh doanh / Lịch sử / Thành tựu giáo dục / Dự án liên quan"
     },
     "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/business_pics.png\">\n  </div>",
     "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
     "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-80 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Triết Lý Giáo Dục</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p class=\"mb-3\">Thông qua giáo dục tiếng Nhật, học viện hướng đến việc giúp học viên tiếp xúc với văn hóa và xã hội Nhật Bản, có những khám phá mới khi so sánh với văn hóa của đất nước mình, đồng thời nuôi dưỡng tinh thần thấu hiểu lẫn nhau.</p>\n      <p>Chúng tôi hỗ trợ từng học viên mở rộng tiềm năng của bản thân thông qua ngôn ngữ và hình thành năng lực chủ động kết nối với cộng đồng địa phương cũng như xã hội quốc tế.</p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-80 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Mục Đích Giáo Dục</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>Bồi dưỡng năng lực tiếng Nhật ở trình độ cao, phục vụ cho việc học lên các cơ sở giáo dục bậc cao tại Nhật Bản và quá trình học tập sau đó; đồng thời đào tạo những nhân lực đa dạng, có tầm nhìn rộng và có thể đóng góp tại Nhật Bản cũng như trên trường quốc tế.</p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-80 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Mục Tiêu Giáo Dục</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>Hướng đến việc học lên đại học, cao học và trường chuyên môn, học viên được trang bị năng lực tiếng Nhật tổng hợp để đáp ứng các lĩnh vực học thuật và chuyên môn ở trình độ cao. Đồng thời, học viên đào sâu hiểu biết về kiến thức xã hội, tập quán và văn hóa cần thiết cho cuộc sống tại Nhật Bản, cũng như phát triển năng lực giao tiếp để hợp tác với những người có nền tảng đa dạng và góp phần xây dựng xã hội cộng sinh đa văn hóa trong tương lai.</p>\n    </div>"
+      },
       {
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">Thực thể kinh doanh</div>\n    </div>",
@@ -293,16 +328,6 @@
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">lịch sử lịch sử</div>\n    </div>",
         "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"marker:text-red-600 list-decimal list-inside\">\n        <li>Năm 1986, Masanori Sho, người sáng lập doanh nghiệp nói trên, đã thành lập trường dạy tiếng Nhật Học viện ngôn ngữ Nagoya tại thành phố Nagoya với tư cách là người tiên phong trong việc tạo cơ hội cho sinh viên nước ngoài tại vùng Tokai-Hokuriku của Nhật Bản.</li>\n        <li>Năm 1989, chúng tôi thành lập trường dạy tiếng Nhật Aichi Kokusai Gakuin ở Shinei 3-chome, Naka-ku, Nagoya và mở rộng hoạt động kinh doanh của mình.</li>\n        <li>1992, sáp nhập với Trường Ngôn ngữ Nagoya.</li>\n        <li>Năm 1996, trường chuyển đến tòa nhà trường học riêng ở Shinei 1-chome, Naka-ku, Nagoya.</li>\n        <li>Năm 2004, hợp tác với Viện Ngôn ngữ và Văn hóa Quốc gia, Đại học Nagoya, biên tập và xuất bản sách giáo khoa (cơ bản, sơ cấp, trung cấp và nâng cao) cho người học chữ Hán.</li>\n        <li>Năm 2004, trường được Hiệp hội Giáo dục Ngôn ngữ Nhật Bản chỉ định là trường hợp tác phát triển tài liệu giảng dạy và đạt được kết quả nghiên cứu về “từ ngữ và cách diễn đạt” tương thích với EJU.</li>\n        <li>2006, Biên tập và xuất bản 9 tuyển tập đề thi thử (đọc, nghe hiểu, nghe và đọc hiểu, toán 1, toán 2, vật lý, hóa học, sinh học, tổng quát) cho EJU Nhật Bản</li>\n        <li>Năm 2010, chúng tôi mua tòa nhà chính 4 tầng liền kề và mở rộng tòa nhà trường học.</li>\n        <li>Năm 2011, biên tập và xuất bản bộ câu hỏi thi năng lực tiếng Nhật dự kiến ​​N4 và N5, 2 tập, có CD.</li>\n        <li>Vào năm 2012, công ty bất động sản trực thuộc Brothers LLC đã mua một chung cư BOX cao 8 tầng, 26 phòng và sử dụng nó làm ký túc xá sinh viên cho trường học của mình.</li>\n        <li>Năm 2013, chúng tôi mua một căn nhà riêng hai tầng, 12 phòng cạnh trường học và dùng làm ký túc xá sinh viên số 3.</li>\n        <li>Vào năm 2013, công ty bất động sản trực thuộc Brothers LLC đã mua một tòa nhà chung cư OAK 5 tầng và sử dụng nó làm ký túc xá sinh viên của họ.</li>\n        <li>Vào năm 2014, một phần của cơ sở này mới được thành lập với tên gọi \"Nhà Hội thảo Học viện Quốc tế Aichi\", một cơ sở lưu trú dành cho sinh viên học ngắn hạn. Chúng tôi sẽ cố gắng tăng cường sự chấp nhận của sinh viên nước ngoài.</li>\n        <li>Năm 2014, biên tập và xuất bản Cẩm nang du học Nhật Bản (CD, audio đọc bút IT, ngữ pháp cơ bản N5, đề thi, đàm thoại thực tế, tổng cộng 3 cuốn).</li>\n        <li>Năm 2015, dự kiến ​​biên tập và xuất bản phiên bản tiếng Trung của Đề thi năng lực Nhật ngữ N4 và N5, tương ứng với format đề thi mới, có kèm theo đĩa CD.</li>\n        <li>2015 Sửa đổi, biên tập và xuất bản 9 bộ câu hỏi dành cho EJU (Đọc, Nghe, Nghe và Đọc, Toán 1, Toán 2, Vật lý, Hóa học, Sinh học, Nghiên cứu tổng quát) phù hợp với giáo trình mới.</li>\n        <li>Năm 2018, xuất bản 4 cuốn sách Ganbare Nihongo.</li>\n        <li>Năm 2018, xuất bản từ điển hội thoại có minh họa bằng tiếng Nhật, tiếng Trung và tiếng Anh (tương thích với bút đọc CD, âm thanh và video).</li>\n        <li>Năm 2018, biên tập và xuất bản Bách khoa toàn thư du học Nhật Bản mới phiên bản Trung Quốc (CD, audio đọc kèm bút IT, ngữ pháp cơ bản N5, tuyển tập đề thi, đàm thoại thực tế tổng cộng 3 tập).</li>\n        <li>Vào năm 2021, để làm phong phú và củng cố môi trường sống của sinh viên, chúng tôi sẽ thuê Tòa nhà Yasue 22 phòng và mở rộng ký túc xá sinh viên thứ tư.</li>\n        <li>Năm 2021, Daisuke Sou được bổ nhiệm làm giám đốc đại diện công ty.</li>\n        <li>2022: Mua đất liền kề với trường học và dùng làm bãi đậu xe đạp.</li>\n      </ol>\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">政策方針</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      Chúng tôi nỗ lực phát triển nguồn nhân lực quốc tế cần thiết trong thế kỷ 21, những người có kiến ​​thức và kỹ năng chuyên môn, sáng tạo, có kỹ năng ngôn ngữ tốt, coi trọng logic và có khả năng cân bằng giữa học tập/làm việc với sở thích/giải trí. Inzai-kyo (hướng dẫn theo sự phù hợp), Inji-seigi (kỹ thuật theo đặc điểm của vùng đất).\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">mục tiêu giáo dục</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      Mục tiêu của chúng tôi là giúp những sinh viên muốn đóng vai trò tích cực trên trường quốc tế với tư cách là nguồn nhân lực quốc tế cần thiết trong thế kỷ 21 theo đuổi con đường sự nghiệp mong muốn của họ.\n    </div>"
       },
       {
         "type": "section",
@@ -326,11 +351,26 @@
       "titleHtml": "ภาพรวมธุรกิจ",
       "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
       "subtitleClassName": "text-white italic text-xs sm:text-base",
-      "subtitleHtml": "องค์กรธุรกิจ / รายการธุรกิจ / ประวัติศาสตร์ / ทิศทางนโยบาย / เป้าหมายทางการศึกษา / ความสำเร็จทางการศึกษา / โครงการที่เกี่ยวข้อง"
+      "subtitleHtml": "ปรัชญาการศึกษา / วัตถุประสงค์ทางการศึกษา / เป้าหมายทางการศึกษา / องค์กรธุรกิจ / รายการธุรกิจ / ประวัติ / ผลงานด้านการศึกษา / ธุรกิจที่เกี่ยวข้อง"
     },
     "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/business_pics.png\">\n  </div>",
     "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
     "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-80 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">ปรัชญาการศึกษา</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p class=\"mb-3\">สถาบันมุ่งให้ผู้เรียนได้สัมผัสวัฒนธรรมและสังคมญี่ปุ่นผ่านการเรียนภาษาญี่ปุ่น เกิดการค้นพบใหม่จากการเปรียบเทียบกับวัฒนธรรมของตนเอง และปลูกฝังความเข้าใจซึ่งกันและกัน</p>\n      <p>เราสนับสนุนให้นักเรียนแต่ละคนขยายศักยภาพของตนเองผ่านภาษา และพัฒนาความสามารถในการเชื่อมโยงกับชุมชนท้องถิ่น ตลอดจนสังคมนานาชาติอย่างเป็นผู้ริเริ่ม</p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-80 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">วัตถุประสงค์ทางการศึกษา</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>พัฒนาความสามารถภาษาญี่ปุ่นระดับสูงที่เป็นประโยชน์ต่อการศึกษาต่อในสถาบันอุดมศึกษาของญี่ปุ่นและการเรียนรู้หลังจากนั้น พร้อมทั้งบ่มเพาะบุคลากรที่หลากหลาย มีวิสัยทัศน์กว้างไกล และสามารถมีส่วนร่วมทั้งในญี่ปุ่นและบนเวทีนานาชาติ</p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-80 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">เป้าหมายทางการศึกษา</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>โดยคำนึงถึงการศึกษาต่อในมหาวิทยาลัย บัณฑิตวิทยาลัย และวิทยาลัยอาชีวศึกษา นักเรียนจะได้รับการพัฒนาความสามารถภาษาญี่ปุ่นแบบองค์รวมที่รองรับสาขาวิชาการและวิชาชีพระดับสูง นอกจากนี้ยังเสริมสร้างความเข้าใจเรื่องสามัญสำนึกทางสังคม ขนบธรรมเนียม และวัฒนธรรมที่จำเป็นต่อการใช้ชีวิตในสังคมญี่ปุ่น พร้อมพัฒนาทักษะการสื่อสารเพื่อร่วมมือกับผู้คนหลากหลายภูมิหลังและเป็นกำลังสำคัญของสังคมพหุวัฒนธรรมในอนาคต</p>\n    </div>"
+      },
       {
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">องค์กรธุรกิจ</div>\n    </div>",
@@ -345,16 +385,6 @@
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">ประวัติศาสตร์ประวัติศาสตร์</div>\n    </div>",
         "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"marker:text-red-600 list-decimal list-inside\">\n        <li>ในปี 1986 มาซาโนริ โช ผู้ก่อตั้งธุรกิจดังกล่าวได้ก่อตั้งโรงเรียนสอนภาษาญี่ปุ่น สถาบันภาษานาโกย่า ในเมืองนาโกย่า โดยเป็นผู้บุกเบิกในการสร้างโอกาสให้กับนักเรียนต่างชาติในภูมิภาคโทไก-โฮคุริกุของญี่ปุ่น</li>\n        <li>ในปี 1989 เราได้ก่อตั้งโรงเรียนสอนภาษาญี่ปุ่น Aichi Kokusai Gakuin ใน Shinei 3-chome, Naka-ku, Nagoya และขยายธุรกิจของเรา</li>\n        <li>พ.ศ. 2535 รวมเข้ากับโรงเรียนสอนภาษานาโกย่า</li>\n        <li>ในปี พ.ศ. 2539 โรงเรียนได้ย้ายไปที่อาคารเรียนของตนเองที่ Shinei 1-chome, Naka-ku, Nagoya</li>\n        <li>ในปี 2004 ด้วยความร่วมมือกับสถาบันภาษาและวัฒนธรรมแห่งชาติ มหาวิทยาลัยนาโกย่า ในการแก้ไขและตีพิมพ์หนังสือเรียน (ขั้นพื้นฐาน ระดับเริ่มต้น ระดับกลาง และขั้นสูง) สำหรับผู้เรียนคันจิ</li>\n        <li>ในปี 2004 โรงเรียนถูกกำหนดให้เป็นโรงเรียนความร่วมมือในการพัฒนาสื่อการสอนโดยสมาคมการศึกษาภาษาญี่ปุ่น และประสบความสำเร็จในผลการวิจัยเกี่ยวกับ ``คำและสำนวน'' ที่เข้ากันได้กับ EJU</li>\n        <li>2006 แก้ไขและตีพิมพ์ชุดคำถามสอบจำลอง 9 ชุด (การอ่าน การฟังเพื่อความเข้าใจ การฟังและการอ่านเพื่อความเข้าใจ คณิตศาสตร์ 1 คณิตศาสตร์ 2 ฟิสิกส์ เคมี ชีววิทยา ทั่วไป) สำหรับ EJU ภาษาญี่ปุ่น</li>\n        <li>ในปี พ.ศ. 2553 เราได้ซื้ออาคารหลัก 4 ชั้นที่อยู่ติดกันและขยายอาคารเรียน</li>\n        <li>ในปี พ.ศ. 2554 ได้มีการแก้ไขและเผยแพร่การทดสอบวัดความรู้ภาษาญี่ปุ่น โดยคาดว่าจะรวบรวมคำถาม N4 และ N5 จำนวน 2 เล่ม พร้อมซีดี</li>\n        <li>ในปี 2012 บริษัทอสังหาริมทรัพย์ในเครือ Brothers LLC ได้ซื้อคอนโดมิเนียม BOX สูง 8 ชั้น 26 ห้อง และใช้เป็นหอพักนักเรียนสำหรับโรงเรียนของตนเอง</li>\n        <li>ในปี 2013 เราซื้อบ้านส่วนตัว 2 ชั้น 12 ห้องติดกับอาคารเรียนและใช้เป็นหอพักนักเรียนหมายเลข 3 ของเราเอง</li>\n        <li>ในปี 2013 บริษัทอสังหาริมทรัพย์ในเครือ Brothers LLC ได้ซื้ออาคารอพาร์ตเมนต์ OAK สูง 5 ชั้นและใช้เป็นหอพักนักศึกษา</li>\n        <li>ในปี 2014 ส่วนหนึ่งของสถานที่เดียวกันนี้ได้รับการจัดตั้งขึ้นใหม่เป็น \"Aichi International Academy Seminar House\" ซึ่งเป็นที่พักสำหรับนักศึกษาระยะสั้น เราจะพยายามเพิ่มการยอมรับของนักเรียนต่างชาติ</li>\n        <li>ในปี 2014 ได้มีการแก้ไขและตีพิมพ์ Vietnam Study Abroad Guide to Japan (ซีดี, ปากกาไอทีสำหรับอ่านเสียง, ไวยากรณ์พื้นฐาน N5, หนังสือคำถามสอบ, บทสนทนาเชิงปฏิบัติ, รวมหนังสือ 3 เล่ม)</li>\n        <li>ในปี 2015 การทดสอบความสามารถทางภาษาญี่ปุ่นฉบับภาษาจีนได้รับการแก้ไขและเผยแพร่ คาดว่าชุดคำถาม N4 และ N5 ซึ่งสอดคล้องกับรูปแบบการทดสอบใหม่ และมีซีดี</li>\n        <li>2015 ปรับปรุง แก้ไข และเผยแพร่ชุดคำถาม 9 ข้อสำหรับ EJU (การอ่าน การฟัง การฟัง และการอ่าน คณิตศาสตร์ 1 คณิตศาสตร์ 2 ฟิสิกส์ เคมี ชีววิทยา การศึกษาทั่วไป) ที่เข้ากันได้กับหลักสูตรใหม่</li>\n        <li>ในปี 2018 ตีพิมพ์หนังสือของ Ganbare Nihongo จำนวน 4 เล่ม</li>\n        <li>ในปี 2018 ตีพิมพ์พจนานุกรมการสนทนาพร้อมภาพประกอบภาษาญี่ปุ่น จีน และอังกฤษ (พร้อมซีดี เสียงและวิดีโอที่อ่านได้ รองรับปากกา IT)</li>\n        <li>ในปี 2018 ได้มีการแก้ไขและตีพิมพ์ New Japan Study Abroad Encyclopedia ฉบับภาษาจีน (ซีดี, ปากกาไอทีสำหรับอ่านเสียง, ไวยากรณ์พื้นฐาน N5, ชุดคำถามสอบ, บทสนทนาเชิงปฏิบัติรวม 3 เล่ม)</li>\n        <li>ในปี 2021 เพื่อเสริมสร้างและเสริมสร้างสภาพแวดล้อมในการอยู่อาศัยของนักเรียน เราจะเช่าอาคาร Yasue จำนวน 22 ห้องและขยายหอพักนักศึกษาแห่งที่สี่</li>\n        <li>ในปี 2021 ไดสุเกะ โซ ได้รับการแต่งตั้งเป็นผู้อำนวยการตัวแทนองค์กร</li>\n        <li>พ.ศ. 2565 ซื้อที่ดินติดกับอาคารเรียนและใช้เป็นที่จอดรถจักรยาน</li>\n      </ol>\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">政策方針</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      เรามุ่งมั่นที่จะพัฒนาทรัพยากรมนุษย์ระหว่างประเทศที่จำเป็นในศตวรรษที่ 21 ซึ่งมีความรู้และทักษะเฉพาะทาง มีความคิดสร้างสรรค์ มีทักษะทางภาษาที่ดี มีตรรกะที่มีคุณค่า และสามารถสร้างสมดุลระหว่างการเรียน/การทำงานกับงานอดิเรก/ความบันเทิง Inzai-kyo (คำแนะนำตามความเหมาะสม), Inji-seigi (เทคนิคตามลักษณะของที่ดิน)\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">เป้าหมายทางการศึกษา</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      เป้าหมายของเราคือการช่วยให้นักเรียนที่ต้องการมีบทบาทอย่างแข็งขันในเวทีระหว่างประเทศในฐานะทรัพยากรมนุษย์ระหว่างประเทศที่จำเป็นในศตวรรษที่ 21 เพื่อติดตามเส้นทางอาชีพที่ต้องการ\n    </div>"
       },
       {
         "type": "section",
@@ -378,11 +408,26 @@
       "titleHtml": "Ikhtisar bisnis",
       "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
       "subtitleClassName": "text-white italic text-xs sm:text-base",
-      "subtitleHtml": "Badan Usaha / Barang Bisnis / Sejarah / Arah Kebijakan / Tujuan Pendidikan / Prestasi Pendidikan / Proyek Terkait"
+      "subtitleHtml": "Filosofi Pendidikan / Tujuan Pendidikan / Target Pendidikan / Badan Usaha / Bidang Usaha / Sejarah / Prestasi Pendidikan / Bisnis Terkait"
     },
     "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/business_pics.png\">\n  </div>",
     "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
     "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-80 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Filosofi Pendidikan</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p class=\"mb-3\">Melalui pendidikan bahasa Jepang, akademi bertujuan membantu siswa mengenal budaya dan masyarakat Jepang, menemukan wawasan baru melalui perbandingan dengan budaya negara asal, serta menumbuhkan sikap saling memahami.</p>\n      <p>Kami mendukung setiap siswa untuk memperluas potensi diri melalui bahasa dan mengembangkan kemampuan untuk terhubung secara aktif dengan masyarakat lokal maupun komunitas internasional.</p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-80 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Tujuan Pendidikan</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>Mengembangkan kemampuan bahasa Jepang tingkat tinggi yang berguna untuk melanjutkan studi ke lembaga pendidikan tinggi di Jepang dan untuk pembelajaran selanjutnya, serta membina sumber daya manusia yang beragam, berwawasan luas, dan mampu berkontribusi di Jepang maupun di panggung internasional.</p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-80 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Target Pendidikan</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>Dengan mempertimbangkan kelanjutan studi ke universitas, program pascasarjana, dan sekolah kejuruan, siswa dibekali kemampuan bahasa Jepang terpadu yang mampu menjawab kebutuhan bidang akademik dan profesional tingkat lanjut. Selain itu, siswa memperdalam pemahaman tentang pengetahuan sosial, kebiasaan, dan budaya yang penting untuk hidup di Jepang, serta memperoleh kemampuan komunikasi untuk bekerja sama dengan orang-orang dari berbagai latar belakang dan mendukung masyarakat multikultural masa depan.</p>\n    </div>"
+      },
       {
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">Badan Usaha</div>\n    </div>",
@@ -397,16 +442,6 @@
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">sejarah sejarah</div>\n    </div>",
         "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"marker:text-red-600 list-decimal list-inside\">\n        <li>Pada tahun 1986, Masanori Sho, pendiri bisnis tersebut, mendirikan sekolah bahasa Jepang Institut Bahasa Nagoya di Kota Nagoya sebagai pionir dalam menciptakan peluang bagi pelajar asing di wilayah Tokai-Hokuriku Jepang.</li>\n        <li>Pada tahun 1989, kami mendirikan sekolah bahasa Jepang Aichi Kokusai Gakuin di Shinei 3-chome, Naka-ku, Nagoya dan memperluas bisnis kami.</li>\n        <li>1992, bergabung dengan Sekolah Bahasa Nagoya.</li>\n        <li>Pada tahun 1996, sekolah tersebut pindah ke gedung sekolahnya sendiri di Shinei 1-chome, Naka-ku, Nagoya.</li>\n        <li>Pada tahun 2004, bekerja sama dengan Institut Nasional Bahasa dan Budaya, Universitas Nagoya, mengedit dan menerbitkan buku teks (dasar, pemula, menengah, dan lanjutan) untuk pelajar kanji.</li>\n        <li>Pada tahun 2004, sekolah ini ditetapkan sebagai sekolah kerjasama pengembangan bahan ajar oleh Asosiasi Pendidikan Bahasa Jepang, dan mencapai hasil penelitian tentang ``kata dan ungkapan'' yang kompatibel dengan EJU.</li>\n        <li>2006, Mengedit dan menerbitkan 9 kumpulan soal ujian tiruan (membaca, pemahaman menyimak, pemahaman menyimak dan membaca, matematika 1, matematika 2, fisika, kimia, biologi, umum) untuk EJU Jepang</li>\n        <li>Pada tahun 2010, kami membeli gedung utama 4 lantai yang berdekatan dan memperluas gedung sekolah.</li>\n        <li>Pada tahun 2011, kumpulan soal Tes Kemahiran Bahasa Jepang yang diharapkan N4 dan N5, 2 jilid, dengan CD telah diedit dan diterbitkan.</li>\n        <li>Pada tahun 2012, perusahaan real estat afiliasi Brothers LLC membeli kondominium BOX 8 lantai dengan 26 kamar dan menggunakannya sebagai asrama siswa untuk sekolahnya sendiri.</li>\n        <li>Pada tahun 2013, kami membeli rumah pribadi dua lantai dengan 12 kamar yang bersebelahan dengan gedung sekolah dan menggunakannya sebagai asrama siswa kami sendiri, No.3.</li>\n        <li>Pada tahun 2013, perusahaan real estate afiliasi Brothers LLC membeli gedung apartemen OAK 5 lantai dan menggunakannya sebagai asrama mahasiswa mereka.</li>\n        <li>Pada tahun 2014, bagian dari fasilitas yang sama baru didirikan sebagai \"Rumah Seminar Akademi Internasional Aichi\", sebuah fasilitas akomodasi untuk siswa studi jangka pendek. Kami akan berusaha untuk meningkatkan penerimaan mahasiswa asing.</li>\n        <li>Pada tahun 2014, mengedit dan menerbitkan Panduan Belajar di Luar Negeri Vietnam ke Jepang (CD, termasuk pena IT untuk membaca audio, tata bahasa dasar N5, buku soal ujian, percakapan praktis, total 3 buku).</li>\n        <li>Pada tahun 2015, Tes Kemahiran Bahasa Jepang versi Mandarin yang diedit dan diterbitkan diharapkan berisi kumpulan soal N4 dan N5, yang sesuai dengan format tes baru, dan menyertakan CD.</li>\n        <li>2015 Merevisi dan mengedit serta menerbitkan 9 kumpulan soal EJU (Membaca, Mendengar, Mendengar dan Membaca, Matematika 1, Matematika 2, Fisika, Kimia, Biologi, Ilmu Umum) sesuai dengan silabus baru.</li>\n        <li>Pada tahun 2018, menerbitkan 4 buku Ganbare Nihongo.</li>\n        <li>Pada tahun 2018, menerbitkan kamus percakapan bergambar bahasa Jepang, Mandarin, dan Inggris (dengan CD, audio dan video yang kompatibel dengan pena IT).</li>\n        <li>Pada tahun 2018, mengedit dan menerbitkan New Japan Study Abroad Encyclopedia versi Mandarin (CD, termasuk pena IT bacaan audio, tata bahasa dasar N5, kumpulan soal ujian, percakapan praktis total 3 volume).</li>\n        <li>Pada tahun 2021, untuk memperkaya dan memperkuat lingkungan hidup mahasiswa, kami akan menyewa Gedung Yasue yang memiliki 22 kamar dan memperluas asrama mahasiswa keempat.</li>\n        <li>Pada tahun 2021, Daisuke Sou ditunjuk sebagai direktur perwakilan perusahaan.</li>\n        <li>2022: Membeli tanah bersebelahan dengan gedung sekolah dan dijadikan tempat parkir sepeda.</li>\n      </ol>\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">政策方針</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      Kami berupaya mengembangkan sumber daya manusia bertaraf internasional yang dibutuhkan pada abad 21, yang mempunyai pengetahuan dan keterampilan khusus, kreatif, mempunyai kemampuan bahasa yang baik, menghargai logika, dan mampu menyeimbangkan antara belajar/bekerja dengan hobi/hiburan. Inzai-kyo (bimbingan sesuai kesesuaian), Inji-seigi (teknik sesuai karakteristik lahan).\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">tujuan pendidikan</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      Tujuan kami adalah membantu mahasiswa yang ingin berperan aktif di kancah internasional sebagai sumber daya manusia internasional yang dibutuhkan di abad 21 untuk mengejar jalur karir yang diinginkan.\n    </div>"
       },
       {
         "type": "section",
@@ -430,11 +465,26 @@
       "titleHtml": "व्यापार अवलोकन",
       "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
       "subtitleClassName": "text-white italic text-xs sm:text-base",
-      "subtitleHtml": "व्यापारिक संस्था / व्यापारिक वस्तुहरू / इतिहास / नीति निर्देशन / शैक्षिक लक्ष्यहरू / शैक्षिक उपलब्धिहरू / सम्बन्धित परियोजनाहरू"
+      "subtitleHtml": "शैक्षिक दर्शन / शैक्षिक उद्देश्य / शैक्षिक लक्ष्य / व्यापार इकाई / व्यापार वस्तुहरू / इतिहास / शैक्षिक उपलब्धिहरू / सम्बन्धित व्यवसाय"
     },
     "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/business_pics.png\">\n  </div>",
     "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
     "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-80 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">शैक्षिक दर्शन</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p class=\"mb-3\">यस संस्थाले जापानी भाषा शिक्षामार्फत विद्यार्थीहरूलाई जापानी संस्कृति र समाजसँग परिचित गराउँदै, आफ्नै देशको संस्कृतिसँग तुलना गरेर नयाँ खोज प्राप्त गर्न र पारस्परिक समझदारी विकास गर्न लक्ष्य राख्छ।</p>\n      <p>हामी प्रत्येक विद्यार्थीले भाषामार्फत आफ्नो सम्भावना विस्तार गरी स्थानीय समाज र अझ व्यापक अन्तर्राष्ट्रिय समाजसँग सक्रिय रूपमा जोडिन सक्ने क्षमता विकास गर्न सहयोग गर्छौं।</p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-80 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">शैक्षिक उद्देश्य</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>जापानका उच्च शिक्षण संस्थामा प्रवेश र त्यसपछिको अध्ययनमा उपयोगी हुने उच्च स्तरको जापानी भाषा क्षमता विकास गर्नु, र जापानभित्र मात्र नभई अन्तर्राष्ट्रिय मञ्चमा पनि योगदान दिन सक्ने फराकिलो दृष्टिकोण भएका विविध प्रतिभा उत्पादन गर्नु।</p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-80 max-w-full\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">शैक्षिक लक्ष्य</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <p>विश्वविद्यालय, स्नातकोत्तर विद्यालय र व्यावसायिक विद्यालयमा प्रवेशलाई ध्यानमा राखी उन्नत शैक्षिक तथा व्यावसायिक क्षेत्रमा対応 गर्न सक्ने समग्र जापानी भाषा क्षमता विकास गराइन्छ। साथै, जापानी समाजमा जीवनयापनका लागि आवश्यक सामाजिक ज्ञान, बानीबेहोरा र संस्कृतिप्रतिको बुझाइ गहिरो बनाउँदै, विविध पृष्ठभूमिका मानिसहरूसँग सहकार्य गर्न र भविष्यको बहुसांस्कृतिक सहअस्तित्व समाजलाई अघि बढाउन आवश्यक सञ्चार क्षमता विकास गरिन्छ।</p>\n    </div>"
+      },
       {
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">व्यापार इकाई</div>\n    </div>",
@@ -449,16 +499,6 @@
         "type": "section",
         "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">इतिहास इतिहास</div>\n    </div>",
         "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      <ol class=\"marker:text-red-600 list-decimal list-inside\">\n        <li>1986 मा, मासानोरी शो, माथि उल्लिखित व्यवसायको संस्थापक, जापानको टोकाइ-होकुरिकु क्षेत्रमा विदेशी विद्यार्थीहरूको लागि अवसरहरू सिर्जना गर्न अग्रगामीको रूपमा नागोया शहरमा जापानी भाषा स्कूल नागोया भाषा संस्थान स्थापना गर्नुभयो।</li>\n        <li>1989 मा, हामीले Shinei 3-chome, Naka-ku, Nagoya मा जापानी भाषा स्कूल Aichi Kokusai Gakuin स्थापना गर्यौं र हाम्रो व्यवसाय विस्तार गर्यौं।</li>\n        <li>1992, नागोया भाषा स्कूल संग विलय।</li>\n        <li>1996 मा, स्कूल Shinei 1-chome, Naka-ku, Nagoya मा रहेको आफ्नै विद्यालय भवनमा सर्यो।</li>\n        <li>2004 मा, भाषा र संस्कृतिको लागि राष्ट्रिय संस्थान, नागोया विश्वविद्यालयसँगको साझेदारीमा, कान्जीका सिक्नेहरूका लागि पाठ्यपुस्तकहरू (आधारभूत, शुरुवात, मध्यवर्ती, र उन्नत) सम्पादन र प्रकाशित गरियो।</li>\n        <li>2004 मा, विद्यालयलाई जापानी भाषा शिक्षा संघद्वारा शिक्षण सामग्री विकास सहयोग विद्यालयको रूपमा तोकिएको थियो, र EJU सँग मिल्दो ``शब्द र अभिव्यक्तिहरू' मा अनुसन्धान परिणामहरू हासिल गर्‍यो।</li>\n        <li>2006, जापानी EJU को लागि 9 नक्कली परीक्षा प्रश्न संग्रहहरू (पढाइ, सुन्ने समझ, सुन्ने र पढ्ने समझ, गणित 1, गणित 2, भौतिक विज्ञान, रसायन विज्ञान, जीवविज्ञान, सामान्य) सम्पादन र प्रकाशित।</li>\n        <li>2010 मा, हामीले नजिकैको 4 तले मुख्य भवन खरिद गर्यौं र विद्यालय भवन विस्तार गर्यौं।</li>\n        <li>2011 मा, जापानी भाषा प्रवीणता परीक्षण अपेक्षित प्रश्न संग्रह N4 र N5, 2 खण्डहरू, CD सहित सम्पादन र प्रकाशित गरियो।</li>\n        <li>2012 मा, सम्बद्ध घर जग्गा कम्पनी ब्रदर्स LLC ले 8-तले, 26-कोठाको BOX कन्डोमिनियम खरिद गर्‍यो र यसलाई आफ्नै विद्यालयको विद्यार्थी छात्रावासको रूपमा प्रयोग गर्‍यो।</li>\n        <li>2013 मा, हामीले विद्यालय भवनको छेउमा दुई तले, 12 कोठाको निजी घर खरिद गर्यौं र यसलाई हाम्रो आफ्नै विद्यार्थी छात्रावास, नम्बर 3 को रूपमा प्रयोग गर्‍यौं।</li>\n        <li>2013 मा, सम्बद्ध घर जग्गा कम्पनी ब्रदर्स LLC ले 5-तले OAK अपार्टमेन्ट भवन खरिद गर्यो र यसलाई उनीहरूको विद्यार्थी छात्रावासको रूपमा प्रयोग गर्‍यो।</li>\n        <li>2014 मा, उही सुविधाको एक भाग \"एची इन्टरनेशनल एकेडेमी सेमिनार हाउस\" को रूपमा नयाँ स्थापना गरिएको थियो, छोटो अवधि अध्ययन गर्ने विद्यार्थीहरूको लागि आवास सुविधा। हामी विदेशी विद्यार्थीहरूको स्वीकृति बढाउन प्रयास गर्नेछौं।</li>\n        <li>2014 मा, जापानमा भियतनाम अध्ययन विदेश गाइड सम्पादन र प्रकाशित गरियो (CD, अडियो पढ्ने IT कलम समावेश, N5 आधारभूत व्याकरण, परीक्षा प्रश्न पुस्तक, व्यावहारिक कुराकानी, कुल 3 पुस्तकहरू)।</li>\n        <li>2015 मा, जापानी भाषा प्रवीणता परीक्षण अपेक्षित प्रश्न संग्रह N4 र N5 को चिनियाँ संस्करण सम्पादन र प्रकाशित गरियो, जुन नयाँ परीक्षण ढाँचासँग मेल खान्छ, र सीडी समावेश गर्दछ।</li>\n        <li>2015 EJU (पढ्ने, सुन्ने, सुन्ने र पढ्ने, गणित 1, गणित 2, भौतिक विज्ञान, रसायन विज्ञान, जीवविज्ञान, सामान्य अध्ययन) को लागि नयाँ पाठ्यक्रमसँग मिल्दो 9 प्रश्न संग्रहहरू परिमार्जन र सम्पादन र प्रकाशित गरियो।</li>\n        <li>2018 मा, गानबरे निहोंगोका 4 पुस्तकहरू प्रकाशित भयो।</li>\n        <li>2018 मा, जापानी, चिनियाँ, र अंग्रेजी चित्रित कुराकानी शब्दकोश (CD, अडियो र भिडियो पढ्ने IT कलम संगत संग) प्रकाशित गरियो।</li>\n        <li>2018 मा, नयाँ जापान अध्ययन विदेश विश्वकोश चिनियाँ संस्करण (CD, अडियो पढ्ने IT कलम समावेश, N5 आधारभूत व्याकरण, परीक्षा प्रश्न सङ्कलन, व्यावहारिक कुराकानी कुल 3 खण्डहरू) सम्पादन र प्रकाशित।</li>\n        <li>2021 मा, विद्यार्थीको बस्ने वातावरणलाई समृद्ध र सुदृढ पार्नको लागि, हामी 22 कोठाको यासु भवन भाडामा दिनेछौं र चौथो विद्यार्थी छात्रावास विस्तार गर्नेछौं।</li>\n        <li>2021 मा, Daisuke Sou कर्पोरेट प्रतिनिधि निर्देशकको रूपमा नियुक्त गरियो।</li>\n        <li>२०२२: विद्यालय भवन नजिकैको जग्गा खरिद गरी साइकल पार्किङ स्थलको रूपमा प्रयोग गरियो।</li>\n      </ol>\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">政策方針</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      हामी 21 औं शताब्दीमा आवश्यक अन्तर्राष्ट्रिय मानव संसाधन विकास गर्न कोसिस गर्छौं, जसमा विशेष ज्ञान र सीपहरू छन्, रचनात्मक छन्, राम्रो भाषा सीप छ, तर्कको मूल्य छ, र शौक / मनोरञ्जन संग अध्ययन / काम सन्तुलन गर्न सक्षम छन्। Inzai-kyo (उपयुक्तता अनुसार मार्गदर्शन), Inji-seigi (जमिन को विशेषताहरु अनुसार प्रविधि)।\n    </div>"
-      },
-      {
-        "type": "section",
-        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/business_icon.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">शैक्षिक लक्ष्यहरू</div>\n    </div>",
-        "bodyHtml": "<div class=\"bg-gradient-to-b from-[#B088FF] via-[#CDB8FF] to-[#E6DCFF] my-2 p-5 text-sm leading-6\">\n      हाम्रो लक्ष्य भनेको 21 औं शताब्दीमा अन्तर्राष्ट्रिय मानव संसाधनको रूपमा अन्तर्राष्ट्रिय मञ्चमा सक्रिय भूमिका खेल्न चाहने विद्यार्थीहरूलाई आफ्नो इच्छित क्यारियर मार्ग पछ्याउन मद्दत गर्नु हो।\n    </div>"
       },
       {
         "type": "section",
