@@ -188,9 +188,8 @@ function goToPage(page, language = 'zh-CN') {
   start(language); // データを再読み込み
 }
 
-// Google翻译相关函数
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({ pageLanguage: 'jp' }, 'google_translate_element');
+  new google.translate.TranslateElement({ pageLanguage: 'ja' }, 'google_translate_element');
 }
 
 function hideGoogleTranslateBar() {
