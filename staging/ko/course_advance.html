@@ -1,78 +1,40 @@
 <!DOCTYPE html>
-<html lang="ja">
-
+<html lang="ko">
 <head>
   <meta charset="utf-8" />
-  <title>
-    愛知国際学院 | "진학 과정"
-  </title>
-
+  <title>진학 코스 | 愛知国際学院</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <meta charset="utf-8" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <link rel="shortcut icon" href="../favicon.ico" />
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
-
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Noto Sans JP', sans-serif;
-    }
-  </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const removeWeekendColumns = (container) => {
-        const removeByIndexes = (nodes, indexes) => {
-          indexes
-            .slice()
-            .sort((a, b) => b - a)
-            .forEach((idx) => {
-              if (nodes[idx]) nodes[idx].remove();
-            });
-        };
-
-        container.querySelectorAll('table').forEach((table) => {
-          const colgroup = table.querySelector('colgroup');
-          if (colgroup) {
-            removeByIndexes(Array.from(colgroup.children), [7, 8]);
-          }
-
-          table.querySelectorAll('tr').forEach((row) => {
-            removeByIndexes(Array.from(row.children), [7, 8]);
-          });
-        });
-      };
-
-      document
-        .querySelectorAll('.remove-weekend-columns')
-        .forEach((section) => removeWeekendColumns(section));
-    });
-  </script>
-  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../main.css" />
+  <link rel="stylesheet" href="../gt.css" />
+  <link rel="stylesheet" href="../site.css?v=20260528-shared" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
-
 <body class="">
   <!-- banner start -->
   <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1">
     <div class="flex items-center flex-row">
-      <div class="flex-grow "></div>
+      <div class="flex-grow"></div>
       <img class="h-10 ml-0 mr-0 hidden md:block invisible" src="../images/35th.png" />
-      <a href="index.html" style="border: none;" class="h-10"><img class="h-10" src="../images/logo.png" /></a>
-      <a href="#" style="border: none;cursor: auto;" class="h-10"><img class="h-10" src="../images/35th.png" /></a>
+      <a href="index.html" class="h-10 border-none"><img class="h-10" src="../images/logo.png" /></a>
+      <a href="#" class="h-10 cursor-auto border-none"><img class="h-10" src="../images/35th.png" /></a>
       <div class="flex-grow"></div>
     </div>
   </div>
   <!-- banner end -->
   <!-- menu start -->
-  <div class="bg-gradient-to-r from-blue-900 from-30% via-blue-400 via-50% to-blue-900 to-70%">
-    <header class='shadow-md '>
-      <div class='flex flex-wrap justify-center px-4 py-3 relative text-sm'>
-        <div id="toggle" class='flex ml-auto lg:order-1 lg:hidden mr-2 relative z-50'>
-          <button class='ml-7'>
+  <div class="bg-gradient-to-r from-blue-900 from-30% via-blue-400 via-50% to-blue-900 to-70% notranslate" translate="no">
+    <header class="shadow-md">
+      <div class="flex flex-wrap justify-center px-4 py-3 relative text-xs lg:text-sm">
+        <div id="toggle" class="flex ml-auto md:order-1 md:hidden mr-2 relative z-50">
+          <button class="ml-7">
             <svg class="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd"
                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
@@ -81,1515 +43,1325 @@
           </button>
         </div>
         <ul id="collapseMenu"
-          class='mx-auto lg:!flex lg:space-x-7 xl:space-x-10 max-lg:space-y-3 max-lg:hidden max-lg:w-full max-lg:my-4'>
-          <li class='max-lg:border-b max-lg:py-2'><a href='index.html' class='hover:text-gray-300 text-white block'>최신
-              뉴스</a></li>
-          <li class='group max-lg:border-b max-lg:py-2 relative'>
-            <a href='javascript:void(0)' class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>학원에
-              대하여<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block "
-                viewBox="0 0 24 24">
-                <path
-                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
-                  data-name="16" data-original="#FFFFFF" />
-              </svg>
+          class="mx-auto md:!flex md:space-x-4 lg:space-x-7 xl:space-x-10 max-md:space-y-3 max-md:hidden max-md:w-full max-md:my-4">
+          <li class="max-md:border-b max-md:py-2"><a href="index.html" class="hover:text-gray-300 text-white block">최신 뉴스</a></li>
+          <li class="group max-md:border-b max-md:py-2 relative">
+            <a href="javascript:void(0)" class="hover:text-gray-300 hover:fill-gray-300 text-white block fill-white">
+              학원 소개<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block" viewBox="0 0 24 24"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z" data-name="16" data-original="#FFFFFF" /></svg>
             </a>
-            <ul
-              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[110px] z-50'>
-              <li class='border-b py-3'>
-                <a href='about_business.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
-                  사업 개요
-                </a>
+            <ul class="absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 md:top-5 max-md:top-8 left-0 min-w-[110px] z-50">
+              <li class="border-b py-3">
+                <a href="about_business.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">사업 개요</a>
               </li>
-              <li class='border-b pt-1 pb-3'><a href='about_facility.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
-                  시설 및 장비
-                </a>
+              <li class="border-b pt-1 pb-3">
+                <a href="about_facility.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">시설 및 설비</a>
               </li>
-              <li class='pt-1 pb-1'><a href='about_publish.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
-                  공개 자료
-                </a>
-              </li>
-              <!--<li class=' pt-1 pb-1'>
-                <a href='about_teacher.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
-                  教師陣
-                </a>
-              </li>-->
-            </ul>
-          </li>
-          <!-- <li class='max-lg:border-b max-lg:py-2'><a href='message.html' class='hover:text-gray-300 text-white block'>교육
-              과정</a></li> -->
-          <li class='group max-lg:border-b max-lg:py-2 relative'>
-            <a href='javascript:void(0)' class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>교육
-              과정<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block "
-                viewBox="0 0 24 24">
-                <path
-                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
-                  data-name="16" data-original="#FFFFFF" />
-              </svg>
-            </a>
-            <ul
-              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[150px] z-50'>
-              <li class='border-b py-3'>
-                <a href='course_advance.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
-                  "진학 과정"
-                </a>
-              </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='course_junior.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>단기 대학 복수 학위 과정
-                </a>
-              </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='course_tour.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>유학 및 연수 과정
-                </a>
-              </li>
-              <li class=' pt-1 pb-1'>
-                <a href='course_lecture.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>특별 강좌
-                </a>
+              <li class="pt-1 pb-3">
+                <a href="about_publish.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">공개 자료</a>
               </li>
             </ul>
           </li>
-          <li class='group max-lg:border-b max-lg:py-2 relative'>
-            <a href='javascript:void(0)' class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>학생
-              생활<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block "
-                viewBox="0 0 24 24">
-                <path
-                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
-                  data-name="16" data-original="#FFFFFF" />
-              </svg>
+          <li class="max-md:border-b max-md:py-2"><a href="course_advance.html" class="hover:text-gray-300 text-white block">진학 코스</a></li>
+          <li class="group max-md:border-b max-md:py-2 relative">
+            <a href="javascript:void(0)" class="hover:text-gray-300 hover:fill-gray-300 text-white block fill-white">
+              학생 생활<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block" viewBox="0 0 24 24"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z" data-name="16" data-original="#FFFFFF" /></svg>
             </a>
-            <ul
-              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[110px] z-50'>
-              <li class='border-b py-3'>
-                <a href='life_dorm.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>학생 기숙사
-                </a>
+            <ul class="absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 md:top-5 max-md:top-8 left-0 min-w-[110px] z-50">
+              <li class="border-b py-3">
+                <a href="life_dorm.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">학생 기숙사</a>
               </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='life_insurance.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>학생 보험
-                </a>
+              <li class="border-b pt-1 pb-3">
+                <a href="life_insurance.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">학생 보험</a>
               </li>
-              <li class=' pt-1 pb-1'>
-                <a href='life_visa.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>학생 거주증
-                </a>
+              <li class="pt-1 pb-3">
+                <a href="life_visa.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">학생 체류</a>
               </li>
             </ul>
           </li>
-          <li class='max-lg:border-b max-lg:py-2'><a href='books.html' class='hover:text-gray-300 text-white block'>교재
-              개발</a></li>
-          <li class='max-lg:border-b max-lg:py-2'><a href='access.html'
-              class='hover:text-gray-300 text-white block'>접근</a></li>
+          <li class="max-md:border-b max-md:py-2"><a href="books.html" class="hover:text-gray-300 text-white block">교육 관련 개발</a></li>
+          <li class="max-md:border-b max-md:py-2"><a href="access.html" class="hover:text-gray-300 text-white block">오시는 길</a></li>
         </ul>
-        <ul id="collapseMenu2" class=' max-lg:mt-1'>
-          <li class='group relative'>
-            <a href='javascript:void(0)' class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>
-              <svg class="w-5 h-5" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"
-                style="enable-background:new 0 0 120 120" xml:space="preserve">
-                <switch>
-                  <g>
-                    <path
-                      d="M60 120C26.9 120 0 93.1 0 60S26.9 0 60 0s60 26.9 60 60-26.9 60-60 60zM60 5C29.7 5 5 29.7 5 60s24.7 55 55 55 55-24.7 55-55S90.3 5 60 5z" />
-                    <path
-                      d="M60 120c-19.3 0-34.4-26.4-34.4-60S40.7 0 60 0s34.4 26.4 34.4 60-15.1 60-34.4 60zM60 5C43.8 5 30.5 29.7 30.5 60s13.2 55 29.5 55 29.5-24.7 29.5-55S76.2 5 60 5z" />
-                    <path d="M12.2 25.6h95.6v5H12.2zM12.2 89.5h95.6v5H12.2zM2.5 57.5h115v5H2.5z" />
-                    <path d="M57.5 2.5h5v115h-5z" />
-                  </g>
-                </switch>
+        <ul id="collapseMenu2" class="max-md:mt-1">
+          <li class="group relative" id="languageMenu">
+            <a href="javascript:void(0)" class="hover:text-gray-300 hover:fill-gray-300 text-white block fill-white">
+              <svg class="w-5 h-5" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" xml:space="preserve">
+                <switch><g><path d="M60 120C26.9 120 0 93.1 0 60S26.9 0 60 0s60 26.9 60 60-26.9 60-60 60zM60 5C29.7 5 5 29.7 5 60s24.7 55 55 55 55-24.7 55-55S90.3 5 60 5z" /><path d="M60 120c-19.3 0-34.4-26.4-34.4-60S40.7 0 60 0s34.4 26.4 34.4 60-15.1 60-34.4 60zM60 5C43.8 5 30.5 29.7 30.5 60s13.2 55 29.5 55 29.5-24.7 29.5-55S76.2 5 60 5z" /><path d="M12.2 25.6h95.6v5H12.2zM12.2 89.5h95.6v5H12.2zM2.5 57.5h115v5H2.5z" /><path d="M57.5 2.5h5v115h-5z" /></g></switch>
               </svg>
             </a>
-            <ul
-              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 lg:top-5 max-md:top-5 -left-28 min-w-[130px] z-50 notranslate'>
-              <li class='border-b py-3'>
-                <a href='../index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>日本語</a>
+            <ul class="absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 md:top-5 max-md:top-5 -left-28 min-w-[130px] z-50 notranslate" id="languageDropdown">
+              <li class="border-b py-3">
+                <a href="../course_advance.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">日本語</a>
               </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='../en/index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>English</a>
+              <li class="border-b pt-1 pb-3">
+                <a href="../en/course_advance.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">English</a>
               </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='../cn/index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>中国語（簡体）</a>
+              <li class="border-b pt-1 pb-3">
+                <a href="../cn/course_advance.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">中国語（簡体）</a>
               </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='../tw/index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>中国語（繁体）</a>
+              <li class="border-b pt-1 pb-3">
+                <a href="../tw/course_advance.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">中国語（繁体）</a>
               </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='../ko/index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>한국어</a>
+              <li class="border-b pt-1 pb-3">
+                <a href="../ko/course_advance.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">한국어</a>
               </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='../vi/index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Tiếng
-                  Việt</a>
+              <li class="border-b pt-1 pb-3">
+                <a href="../vi/course_advance.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">Tiếng Việt</a>
               </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='../th/index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>ภาษาไทย</a>
+              <li class="border-b pt-1 pb-3">
+                <a href="../th/course_advance.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">ภาษาไทย</a>
               </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='../id/index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Indonesia</a>
+              <li class="border-b pt-1 pb-3">
+                <a href="../id/course_advance.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">Indonesia</a>
               </li>
-              <li class='pt-1 pb-1'>
-                <a href='../np/index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>नेपाली</a>
+              <li class="pt-1 pb-3">
+                <a href="../np/course_advance.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">नेपाली</a>
               </li>
             </ul>
           </li>
         </ul>
+      </div>
     </header>
   </div>
   <!-- menu end -->
-  <!-- required classes: overflow-hidden  -->
   <div class="overflow-hidden text-xs bg-red-400 text-white hidden">
-    <!--  required classes: marquee inline-flex max-w-full  -->
     <ul class="marquee py-2 inline-flex space-x-4 whitespace-nowrap max-w-full"
       x-data="Marquee({speed: 0.2, spaceX: 4})">
-      <!-- <li class="underline">Element 1</li> -->
-      <li>"일본으로의 진학, 취업 및 일자리, 단기 일본어 교육 및 일본 문화 체험 등을 수용하는 아이치 국제 학원"</li>
+      <li>&quot;일본으로의 진학, 취업 및 일자리, 단기 일본어 교육 및 일본 문화 체험 등을 수용하는 아이치 국제 학원&quot;</li>
     </ul>
   </div>
-  <!-- title bar start -->
   <div class="relative flex mx-auto min-h-28 max-h-32">
-    <img class="w-full object-cover object-center" src="../images/6-ADVANCE_STUDY.jpg" />
-    <div class="absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center ">
+      <img class="w-full object-cover object-center" src="../images/6-ADVANCE_STUDY.jpg" alt="" />
+    <div class="absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center">
       <h3 class="text-white text-3xl font-bold">"진학 과정"</h3>
     </div>
-    <div class="absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center ">
-      <p class="text-white italic text-xs sm:text-base">대학원 (대학)
-        대학 (대학)
-        전문대학 (전문대학)
-        전문학교 (전문학교)</p>
-    </div>
+      <div class="absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center">
+        <p class="text-white italic text-xs sm:text-base">대학원 (대학)
+          대학 (대학)
+          전문대학 (전문대학)
+          전문학교 (전문학교)</p>
+      </div>
   </div>
-  <div class="">
+  <div>
     <img class="w-full" src="../images/advance_bar.png" />
   </div>
-  <!-- title bar end -->
-  <!-- main start -->
-
   <div class="w-full bg-[#FFFAEB]">
     <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-3 mt-1 ">
-      <div class="flex flex-col sm:flex-row">
-        <div class="relative h-10 w-36 flex-shrink-0">
-          <div
-            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
-          </div>
-          <div class="absolute top-1 left-8 text-white italic text-lg">교육 목표</div>
-        </div>
+    <div class="flex flex-col sm:flex-row">
+      <div class="relative h-10 w-36 flex-shrink-0">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron"></div>
+        <div class="absolute top-1 left-8 text-white italic text-lg">교육 목표</div>
+      </div>
         <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">국제적 시야를 갖추고 세계 무대에서 활약할 인재 양성</div>
+    </div>
+    <div class="bg-gradient-to-br from-[#D2FFFF] to-[#7C9999] my-2 p-5 text-sm leading-6 ">
+      일본 전문학교·대학·대학원 진학을 목표로 하는 외국인 유학생을 대상으로, 학습 및 연구에 필요한 종합적인 일본어 능력을 기초로 습득시키고, 일본 사회 생활에 필요한 일반 상식, 생활 습관, 문화 교양을 함양하며, 일본 및 해외 사회에 기여할 수 있는 국제적 시야를 갖춘 인재를 양성합니다.
+    </div>
+    <div class="flex flex-col sm:flex-row">
+      <div class="relative h-10 w-36 flex-shrink-0">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron"></div>
+        <div class="absolute top-1 left-5 text-white italic text-lg">과정 구성</div>
       </div>
-      <div class="bg-gradient-to-br from-[#D2FFFF] to-[#7C9999] my-2 p-5 text-sm leading-6 ">
-        일본 전문학교·대학·대학원 진학을 목표로 하는 외국인 유학생을 대상으로, 학습 및 연구에 필요한 종합적인 일본어 능력을 기초로 습득시키고, 일본 사회 생활에 필요한 일반 상식, 생활 습관, 문화 교양을 함양하며, 일본 및 해외 사회에 기여할 수 있는 국제적 시야를 갖춘 인재를 양성합니다.
-      </div>
-      <div class="flex flex-col sm:flex-row">
-        <div class="relative h-10 w-36 flex-shrink-0">
-          <div
-            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
-          </div>
-          <div class="absolute top-1 left-5 text-white italic text-lg">과정 구성</div>
-        </div>
         <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">4월 입학 봄학기생 2년제, 10월 입학 가을학기생 1년 6개월제</div>
+    </div>
+    <div class="my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
+      ・ 2년 진학 과정: 4월 입학, 재재년 3월 졸업. 수업 시간: 약 1,520시간<br>
+          ・ 1년 6개월 진학 과정: 10월 입학, 재재년 3월 졸업. 수업 시간: 약 1,140시간
+          <div class="mt-6 overflow-x-auto">
+            <table class="w-full text-xs border-collapse text-center">
+              <thead>
+                <tr class="bg-[#b8d4d4] font-semibold">
+                  <th class="border border-gray-500 px-3 py-1 text-left" colspan="2"></th>
+                  <th class="border border-gray-500 px-3 py-1">1학기</th>
+                  <th class="border border-gray-500 px-3 py-1">2학기</th>
+                  <th class="border border-gray-500 px-3 py-1">3학기</th>
+                  <th class="border border-gray-500 px-3 py-1">4학기</th>
+                  <th class="border border-gray-500 px-3 py-1">5학기</th>
+                  <th class="border border-gray-500 px-3 py-1">6학기</th>
+                  <th class="border border-gray-500 px-3 py-1">7학기</th>
+                  <th class="border border-gray-500 px-3 py-1">8학기</th>
+                  <th class="border border-gray-500 px-2 py-1"></th>
+                  <th class="border border-gray-500 px-2 py-1">수업 시간</th>
+                </tr>
+                <tr class="bg-[#dff0f0] text-[11px]">
+                  <td class="border border-gray-500" colspan="2"></td>
+                  <td class="border border-gray-500 py-0.5">4월</td>
+                  <td class="border border-gray-500"></td>
+                  <td class="border border-gray-500"></td>
+                  <td class="border border-gray-500"></td>
+                  <td class="border border-gray-500 py-0.5">4월</td>
+                  <td class="border border-gray-500"></td>
+                  <td class="border border-gray-500"></td>
+                  <td class="border border-gray-500 py-0.5">3월</td>
+                  <td class="border border-gray-500"></td>
+                  <td class="border border-gray-500"></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-[#dff0f0]">
+                  <td class="border border-gray-500 px-3 py-3 text-left font-semibold whitespace-nowrap">2년 진학 과정</td>
+                  <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">입학</td>
+                  <td class="border border-gray-500 py-3 font-bold bg-sky-400 text-white">A1</td>
+                  <td class="border border-gray-500 py-3 font-bold bg-green-400 text-white">A2</td>
+                  <td class="border border-gray-500 py-3 font-bold bg-yellow-300 text-gray-800">B1</td>
+                  <td class="border border-gray-500 py-3 font-bold bg-yellow-300 text-gray-800">B1</td>
+                  <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                  <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                  <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                  <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                  <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">졸업</td>
+                  <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">1,520시간</td>
+                </tr>
+                <tr><td colspan="12" class="h-3 border-none bg-transparent"></td></tr>
+                <tr class="bg-[#b8d4d4] font-semibold text-[11px]">
+                  <td colspan="4" class="border-none bg-transparent"></td>
+                  <td class="border border-gray-500 px-3 py-1">1학기</td>
+                  <td class="border border-gray-500 px-3 py-1">2학기</td>
+                  <td class="border border-gray-500 px-3 py-1">3학기</td>
+                  <td class="border border-gray-500 px-3 py-1">4학기</td>
+                  <td class="border border-gray-500 px-3 py-1">5학기</td>
+                  <td class="border border-gray-500 px-3 py-1">6학기</td>
+                  <td colspan="2" class="border-none bg-transparent"></td>
+                </tr>
+                <tr class="bg-[#dff0f0] text-[11px]">
+                  <td colspan="4" class="border-none bg-transparent"></td>
+                  <td class="border border-gray-500 py-0.5">10월</td>
+                  <td class="border border-gray-500"></td>
+                  <td class="border border-gray-500 py-0.5">4월</td>
+                  <td class="border border-gray-500"></td>
+                  <td class="border border-gray-500"></td>
+                  <td class="border border-gray-500 py-0.5">3월</td>
+                  <td colspan="2" class="border-none bg-transparent"></td>
+                </tr>
+                <tr class="bg-[#dff0f0]">
+                  <td class="border border-gray-500 px-3 py-3 text-left font-semibold whitespace-nowrap">1년 6개월 진학 과정</td>
+                  <td class="border border-gray-500"></td>
+                  <td class="border border-gray-500"></td>
+                  <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">입학</td>
+                  <td class="border border-gray-500 py-3 font-bold bg-green-400 text-white">A2</td>
+                  <td class="border border-gray-500 py-3 font-bold bg-yellow-300 text-gray-800">B1</td>
+                  <td class="border border-gray-500 py-3 font-bold bg-yellow-300 text-gray-800">B1</td>
+                  <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                  <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                  <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                  <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">졸업</td>
+                  <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">1,140시간</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </div>
+    <div class="flex flex-col sm:flex-row">
+      <div class="relative h-10 w-36 flex-shrink-0">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron"></div>
+        <div class="absolute top-1 left-5 text-white italic text-lg">과정 특징</div>
       </div>
-      <div class="my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
-        ・ 2년 진학 과정: 4월 입학, 재재년 3월 졸업. 수업 시간: 약 1,520시간<br />
-        ・ 1년 6개월 진학 과정: 10월 입학, 재재년 3월 졸업. 수업 시간: 약 1,140시간
-
-        <div class="mt-6 overflow-x-auto">
-          <table class="w-full text-xs border-collapse text-center">
+    </div>
+    <div class="w-full bg-[#e6f2f2] p-4 my-4 relative">
+      <div class="flex flex-wrap md:flex-nowrap justify-center gap-1">
+            <div class="w-[30%] md:w-1/6 circle-container">
+              <div class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
+                <div class="text-center text-sm font-bold text-blue-900">진학을 위한 커리큘럼</div>
+              </div>
+            </div>
+            <div class="w-[30%] md:w-1/6 circle-container">
+              <div class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
+                <div class="text-center text-sm font-bold text-blue-900">멀티미디어를 활용한 어학교육</div>
+              </div>
+            </div>
+            <div class="w-[30%] md:w-1/6 circle-container">
+              <div class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
+                <div class="text-center text-sm font-bold text-blue-900">어학 능력에 따른 반 편성</div>
+              </div>
+            </div>
+            <div class="w-[30%] md:w-1/6 circle-container">
+              <div class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
+                <div class="text-center text-sm font-bold text-blue-900">입학부터 졸업까지 철저한 진학 지원</div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="flex flex-col sm:flex-row">
+      <div class="relative h-10 w-36 flex-shrink-0">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron"></div>
+        <div class="absolute top-1 left-8 text-white italic text-lg">수업 개요</div>
+      </div>
+        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">강의와 연습을 분리한 수업</div>
+    </div>
+    <div class="my-2 p-5 leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999] text-sm">
+          <div class="flex flex-col sm:flex-row">
+            <div class="relative flex-shrink-0">
+              <div class="relative w-28 h-10">
+                <div class="absolute inset-0 bg-amber-200 rounded-[80%] border-4 border-white"></div>
+                <div class="absolute top-2 left-7 text-black">수업 시간</div>
+              </div>
+            </div>
+            <div class="mt-3 sm:mt-0 sm:ml-4">
+              ・ 오전반 8:50~12:20　오후반 13:00~16:30　1교시 45분<br>
+              ・ 2년 진학 과정: 78주 (1,520시간)<br>
+              ・ 1년 6개월 진학 과정: 59주 (1,140시간)<br>
+              수업일 월~금　※공휴일 휴강
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row">
+            <div class="relative flex-shrink-0">
+              <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28">
+              <div class="absolute top-3 left-7">휴업</div>
+            </div>
+            <div class="mt-3 mb-5">여름방학: 약 30일　겨울방학: 약 14일　봄방학: 약 30일</div>
+          </div>
+          <div class="flex flex-col sm:flex-row">
+            <div class="relative flex-shrink-0">
+              <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28">
+              <div class="absolute top-3 left-7">수업 내용</div>
+            </div>
+            <div class="mt-3 mb-5 w-full md:w-[640px]">
+              <div class="mx-auto space-y-8">
+                <div class="border rounded-lg overflow-hidden remove-weekend-columns">
+                  <div class="bg-[#009999] text-white text-center py-2 font-bold">2년 진학 코스</div>
+                  <div class="overflow-x-auto">
+                    <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                      <colgroup>
+                        <col class="w-12">
+                        <col class="w-36">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <tbody><tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">초급 전기</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 w-16 text-center">월</th>
+                        <th class="border px-1 py-1 w-16 text-center">화</th>
+                        <th class="border px-1 py-1 w-16 text-center">수</th>
+                        <th class="border px-1 py-1 w-16 text-center">목</th>
+                        <th class="border px-1 py-1 w-16 text-center">금</th>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">1</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">13:00~13:45</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">2</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">13:55~14:40</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">3</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">14:50~15:35</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">4</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">15:45~16:30</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                    </tbody></table>
+                    <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                      <colgroup>
+                        <col class="w-12">
+                        <col class="w-36">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <tbody><tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">초급 후기</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 w-16 text-center">월</th>
+                        <th class="border px-1 py-1 w-16 text-center">화</th>
+                        <th class="border px-1 py-1 w-16 text-center">수</th>
+                        <th class="border px-1 py-1 w-16 text-center">목</th>
+                        <th class="border px-1 py-1 w-16 text-center">금</th>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">1</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">13:00~13:45</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">2</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">13:55~14:40</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">3</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">14:50~15:35</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">4</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">15:45~16:30</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                      </tr>
+                    </tbody></table>
+                    <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                      <colgroup>
+                        <col class="w-12">
+                        <col class="w-36">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <tbody><tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">중급 전기</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 w-16 text-center">월</th>
+                        <th class="border px-1 py-1 w-16 text-center">화</th>
+                        <th class="border px-1 py-1 w-16 text-center">수</th>
+                        <th class="border px-1 py-1 w-16 text-center">목</th>
+                        <th class="border px-1 py-1 w-16 text-center">금</th>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">1</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">13:00~13:45</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">2</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">13:55~14:40</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">3</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">14:50~15:35</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">4</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">15:45~16:30</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                    </tbody></table>
+                    <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                      <colgroup>
+                        <col class="w-12">
+                        <col class="w-36">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <tbody><tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">중급 후기</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 w-16 text-center">월</th>
+                        <th class="border px-1 py-1 w-16 text-center">화</th>
+                        <th class="border px-1 py-1 w-16 text-center">수</th>
+                        <th class="border px-1 py-1 w-16 text-center">목</th>
+                        <th class="border px-1 py-1 w-16 text-center">금</th>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">1</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">13:00~13:45</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">2</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">13:55~14:40</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">3</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">14:50~15:35</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">4</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">15:45~16:30</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                      </tr>
+                    </tbody></table>
+                    <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                      <colgroup>
+                        <col class="w-12">
+                        <col class="w-36">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <tbody><tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">고급 1</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 w-16 text-center">월</th>
+                        <th class="border px-1 py-1 w-16 text-center">화</th>
+                        <th class="border px-1 py-1 w-16 text-center">수</th>
+                        <th class="border px-1 py-1 w-16 text-center">목</th>
+                        <th class="border px-1 py-1 w-16 text-center">금</th>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">1</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">8:50~9:35</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">2</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">9:45~10:30</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">3</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">10:40~11:25</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">4</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">11:35~12:20</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                    </tbody></table>
+                    <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                      <colgroup>
+                        <col class="w-12">
+                        <col class="w-36">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <tbody><tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">고급 2</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 w-16 text-center">월</th>
+                        <th class="border px-1 py-1 w-16 text-center">화</th>
+                        <th class="border px-1 py-1 w-16 text-center">수</th>
+                        <th class="border px-1 py-1 w-16 text-center">목</th>
+                        <th class="border px-1 py-1 w-16 text-center">금</th>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">1</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">8:50~9:35</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">2</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">9:45~10:30</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">3</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">10:40~11:25</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">4</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">11:35~12:20</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                      </tr>
+                    </tbody></table>
+                    <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                      <colgroup>
+                        <col class="w-12">
+                        <col class="w-36">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <tbody><tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">고급 3</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 w-16 text-center">월</th>
+                        <th class="border px-1 py-1 w-16 text-center">화</th>
+                        <th class="border px-1 py-1 w-16 text-center">수</th>
+                        <th class="border px-1 py-1 w-16 text-center">목</th>
+                        <th class="border px-1 py-1 w-16 text-center">금</th>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">1</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">8:50~9:35</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">2</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">9:45~10:30</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">3</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">10:40~11:25</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">4</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">11:35~12:20</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                    </tbody></table>
+                    <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                      <colgroup>
+                        <col class="w-12">
+                        <col class="w-36">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <tbody><tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">고급 4</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 w-16 text-center">월</th>
+                        <th class="border px-1 py-1 w-16 text-center">화</th>
+                        <th class="border px-1 py-1 w-16 text-center">수</th>
+                        <th class="border px-1 py-1 w-16 text-center">목</th>
+                        <th class="border px-1 py-1 w-16 text-center">금</th>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">1</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">8:50~9:35</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">2</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">9:45~10:30</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">3</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">10:40~11:25</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">4</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">11:35~12:20</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                      </tr>
+                    </tbody></table>
+                  </div>
+                </div>
+                <div class="border rounded-lg overflow-hidden remove-weekend-columns">
+                  <div class="bg-[#009999] text-white text-center py-2 font-bold">1년 6개월 진학 코스</div>
+                  <div class="overflow-x-auto">
+                    <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                      <colgroup>
+                        <col class="w-12">
+                        <col class="w-36">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <tbody><tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">초급 후기</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 w-16 text-center">월</th>
+                        <th class="border px-1 py-1 w-16 text-center">화</th>
+                        <th class="border px-1 py-1 w-16 text-center">수</th>
+                        <th class="border px-1 py-1 w-16 text-center">목</th>
+                        <th class="border px-1 py-1 w-16 text-center">금</th>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">1</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">13:00~13:45</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">2</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">13:55~14:40</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">3</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">14:50~15:35</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">4</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">15:45~16:30</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                    </tbody></table>
+                    <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                      <colgroup>
+                        <col class="w-12">
+                        <col class="w-36">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <tbody><tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">중급 전기</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 w-16 text-center">월</th>
+                        <th class="border px-1 py-1 w-16 text-center">화</th>
+                        <th class="border px-1 py-1 w-16 text-center">수</th>
+                        <th class="border px-1 py-1 w-16 text-center">목</th>
+                        <th class="border px-1 py-1 w-16 text-center">금</th>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">1</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">13:00~13:45</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">2</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">13:55~14:40</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">3</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">14:50~15:35</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">4</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">15:45~16:30</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                    </tbody></table>
+                    <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                      <colgroup>
+                        <col class="w-12">
+                        <col class="w-36">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <tbody><tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">중급 후기</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 w-16 text-center">월</th>
+                        <th class="border px-1 py-1 w-16 text-center">화</th>
+                        <th class="border px-1 py-1 w-16 text-center">수</th>
+                        <th class="border px-1 py-1 w-16 text-center">목</th>
+                        <th class="border px-1 py-1 w-16 text-center">금</th>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">1</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">13:00~13:45</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">2</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">13:55~14:40</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">3</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">14:50~15:35</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">4</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">15:45~16:30</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                    </tbody></table>
+                    <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                      <colgroup>
+                        <col class="w-12">
+                        <col class="w-36">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <tbody><tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">고급 1</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 w-16 text-center">월</th>
+                        <th class="border px-1 py-1 w-16 text-center">화</th>
+                        <th class="border px-1 py-1 w-16 text-center">수</th>
+                        <th class="border px-1 py-1 w-16 text-center">목</th>
+                        <th class="border px-1 py-1 w-16 text-center">금</th>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">1</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">13:00~13:45</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">2</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">13:55~14:40</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">3</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">14:50~15:35</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">4</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">15:45~16:30</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                      </tr>
+                    </tbody></table>
+                    <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                      <colgroup>
+                        <col class="w-12">
+                        <col class="w-36">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <tbody><tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">고급 2</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 w-16 text-center">월</th>
+                        <th class="border px-1 py-1 w-16 text-center">화</th>
+                        <th class="border px-1 py-1 w-16 text-center">수</th>
+                        <th class="border px-1 py-1 w-16 text-center">목</th>
+                        <th class="border px-1 py-1 w-16 text-center">금</th>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">1</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">8:50~9:35</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">2</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">9:45~10:30</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">3</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">10:40~11:25</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">4</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">11:35~12:20</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                      </tr>
+                    </tbody></table>
+                    <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                      <colgroup>
+                        <col class="w-12">
+                        <col class="w-36">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <tbody><tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">고급 3</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
+                        <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
+                      </tr>
+                      <tr class="bg-gray-100">
+                        <th class="border px-1 py-1 w-16 text-center">월</th>
+                        <th class="border px-1 py-1 w-16 text-center">화</th>
+                        <th class="border px-1 py-1 w-16 text-center">수</th>
+                        <th class="border px-1 py-1 w-16 text-center">목</th>
+                        <th class="border px-1 py-1 w-16 text-center">금</th>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">1</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">8:50~9:35</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">2</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">9:45~10:30</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">종합 일본어</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">3</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">10:40~11:25</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">청해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                      </tr>
+                      <tr>
+                        <td class="border px-1 py-1 text-center">4</td>
+                        <td class="border px-1 py-1 text-center whitespace-nowrap">11:35~12:20</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">독해</td>
+                        <td class="border px-1 py-1 text-center">표현 문법</td>
+                        <td class="border px-1 py-1 text-center">작문</td>
+                        <td class="border px-1 py-1 text-center">발표</td>
+                      </tr>
+                    </tbody></table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="flex flex-col sm:flex-row">
+      <div class="relative h-10 w-36 flex-shrink-0">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron"></div>
+        <div class="absolute top-1 left-8 text-white italic text-lg">진로 선택</div>
+      </div>
+        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">본원 졸업 후 다양한 진로 선택 가능</div>
+    </div>
+    <div class=" my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
+      <div class="flex flex-col sm:flex-row">
+            <div class="relative flex-shrink-0">
+              <img src="../images/btn_ellipse_9.png" class="h-12 w-48">
+              <div class="absolute top-3 left-8">전문학교·단기대학 진학</div>
+            </div>
+            <div class="mt-3 mb-5">일본어능력시험(JLPT) N3 이상 합격자</div>
+          </div>
+          <div class="flex flex-col sm:flex-row">
+            <div class="relative flex-shrink-0">
+              <img src="../images/btn_ellipse_9.png" class="h-12 w-48">
+              <div class="absolute top-3 left-10">대학·대학원 진학</div>
+            </div>
+            <div class="mt-3 mb-5">일본어능력시험(JLPT) N2 이상 합격자</div>
+          </div>
+          <div class="flex flex-col sm:flex-row">
+            <div class="relative flex-shrink-0">
+              <img src="../images/btn_ellipse_9.png" class="h-12 w-48">
+              <div class="absolute top-3 left-12">일본 기업 취업</div>
+            </div>
+            <div class="mt-3 mb-5">일본어능력시험(JLPT) N1 이상 합격 및 모국 대학 졸업자</div>
+          </div>
+          <div class="flex flex-col sm:flex-row">
+            <div class="relative flex-shrink-0">
+              <img src="../images/btn_ellipse_9.png" class="h-12 w-48">
+              <div class="absolute top-3 left-12">일본 기업 근무</div>
+            </div>
+            <div class="mt-3 mb-5">일본어능력시험(JLPT) N4 이상 합격 및 특정기능측정시험 합격자</div>
+          </div>
+    </div>
+    <div class="flex flex-col sm:flex-row">
+      <div class="relative h-10 w-36 flex-shrink-0">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron"></div>
+        <div class="absolute top-1 left-8 text-white italic text-lg">학비 내역</div>
+      </div>
+    </div>
+    <div class=" my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
+      <table class="border-collapse border border-slate-500 w-full text-xs md:text-sm">
             <thead>
-              <tr class="bg-[#b8d4d4] font-semibold">
-                <th class="border border-gray-500 px-3 py-1 text-left" colspan="2"></th>
-                <th class="border border-gray-500 px-3 py-1">1학기</th>
-                <th class="border border-gray-500 px-3 py-1">2학기</th>
-                <th class="border border-gray-500 px-3 py-1">3학기</th>
-                <th class="border border-gray-500 px-3 py-1">4학기</th>
-                <th class="border border-gray-500 px-3 py-1">5학기</th>
-                <th class="border border-gray-500 px-3 py-1">6학기</th>
-                <th class="border border-gray-500 px-3 py-1">7학기</th>
-                <th class="border border-gray-500 px-3 py-1">8학기</th>
-                <th class="border border-gray-500 px-2 py-1"></th>
-                <th class="border border-gray-500 px-2 py-1">수업 시간</th>
-              </tr>
-              <tr class="bg-[#dff0f0] text-[11px]">
-                <td class="border border-gray-500" colspan="2"></td>
-                <td class="border border-gray-500 py-0.5">4월</td>
-                <td class="border border-gray-500"></td>
-                <td class="border border-gray-500"></td>
-                <td class="border border-gray-500"></td>
-                <td class="border border-gray-500 py-0.5">4월</td>
-                <td class="border border-gray-500"></td>
-                <td class="border border-gray-500"></td>
-                <td class="border border-gray-500 py-0.5">3월</td>
-                <td class="border border-gray-500"></td>
-                <td class="border border-gray-500"></td>
+              <tr class="bg-[#009999] text-white">
+                <th class="border border-slate-600">항목/구분</th>
+                <th class="border border-slate-600">선고료</th>
+                <th class="border border-slate-600">입학금</th>
+                <th class="border border-slate-600">잡비</th>
+                <th class="border border-slate-600">학비<br>1학년</th>
+                <th class="border border-slate-600">1년차 합계</th>
+                <th class="border border-slate-600">학비<br>2학년</th>
+                <th class="border border-slate-600 bg-blue-800">1·2년차<br>합계</th>
               </tr>
             </thead>
             <tbody>
-              <tr class="bg-[#dff0f0]">
-                <td class="border border-gray-500 px-3 py-3 text-left font-semibold whitespace-nowrap">2년 진학 과정</td>
-                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">입학</td>
-                <td class="border border-gray-500 py-3 font-bold bg-sky-400 text-white">A1</td>
-                <td class="border border-gray-500 py-3 font-bold bg-green-400 text-white">A2</td>
-                <td class="border border-gray-500 py-3 font-bold bg-yellow-300 text-gray-800">B1</td>
-                <td class="border border-gray-500 py-3 font-bold bg-yellow-300 text-gray-800">B1</td>
-                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
-                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
-                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
-                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
-                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">졸업</td>
-                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">1,520시간</td>
+              <tr class="bg-white">
+                <td class="border border-slate-700 text-center font-bold">1년 6개월 과정</td>
+                <td class="border border-slate-700 text-center">¥22,000</td>
+                <td class="border border-slate-700 text-center">¥88,000</td>
+                <td class="border border-slate-700 text-center">¥93,000</td>
+                <td class="border border-slate-700 text-center">¥726,000</td>
+                <td class="border border-slate-700 text-center">¥929,000</td>
+                <td class="border border-slate-700 text-center">¥363,000<br><span class="text-xs text-gray-500">（반년분）</span></td>
+                <td class="border border-slate-700 text-center">¥1,292,000</td>
               </tr>
-
-              <tr><td colspan="12" class="h-3 border-none bg-transparent"></td></tr>
-
-              <tr class="bg-[#b8d4d4] font-semibold text-[11px]">
-                <td colspan="4" class="border-none bg-transparent"></td>
-                <td class="border border-gray-500 px-3 py-1">1학기</td>
-                <td class="border border-gray-500 px-3 py-1">2학기</td>
-                <td class="border border-gray-500 px-3 py-1">3학기</td>
-                <td class="border border-gray-500 px-3 py-1">4학기</td>
-                <td class="border border-gray-500 px-3 py-1">5학기</td>
-                <td class="border border-gray-500 px-3 py-1">6학기</td>
-                <td colspan="2" class="border-none bg-transparent"></td>
+              <tr class="bg-gray-50">
+                <td class="border border-slate-700 text-center font-bold">2년 과정</td>
+                <td class="border border-slate-700 text-center">¥22,000</td>
+                <td class="border border-slate-700 text-center">¥88,000</td>
+                <td class="border border-slate-700 text-center">¥109,000</td>
+                <td class="border border-slate-700 text-center">¥726,000</td>
+                <td class="border border-slate-700 text-center">¥945,000</td>
+                <td class="border border-slate-700 text-center">¥726,000<br><span class="text-xs text-gray-500">（일년분）</span></td>
+                <td class="border border-slate-700 text-center">¥1,671,000</td>
               </tr>
-              <tr class="bg-[#dff0f0] text-[11px]">
-                <td colspan="4" class="border-none bg-transparent"></td>
-                <td class="border border-gray-500 py-0.5">10월</td>
-                <td class="border border-gray-500"></td>
-                <td class="border border-gray-500 py-0.5">4월</td>
-                <td class="border border-gray-500"></td>
-                <td class="border border-gray-500"></td>
-                <td class="border border-gray-500 py-0.5">3월</td>
-                <td colspan="2" class="border-none bg-transparent"></td>
-              </tr>
-
-              <tr class="bg-[#dff0f0]">
-                <td class="border border-gray-500 px-3 py-3 text-left font-semibold whitespace-nowrap">1년 6개월 진학 과정</td>
-                <td class="border border-gray-500"></td>
-                <td class="border border-gray-500"></td>
-                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">입학</td>
-                <td class="border border-gray-500 py-3 font-bold bg-green-400 text-white">A2</td>
-                <td class="border border-gray-500 py-3 font-bold bg-yellow-300 text-gray-800">B1</td>
-                <td class="border border-gray-500 py-3 font-bold bg-yellow-300 text-gray-800">B1</td>
-                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
-                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
-                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
-                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">졸업</td>
-                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">1,140시간</td>
+              <tr>
+                <td class="border border-slate-700 text-center font-bold">납부 기한</td>
+                <td class="border border-slate-700 text-center">출원 시</td>
+                <td class="border border-slate-700 text-center" colspan="2">합격 통지 후 2주 이내</td>
+                <td class="border border-slate-700 text-center" colspan="2"></td>
+                <td class="border border-slate-700 text-center" colspan="2">재류 기간 갱신 전</td>
               </tr>
             </tbody>
           </table>
-        </div>
-      </div>
+          <div class="text-xs text-gray-700 mt-2">
+            ※잡비: 교재비, 건강관리비, 외부시험비, 단체보험료<br>
+            <span class="font-bold">월 생활비 참고:</span>
+            식비 15,000엔~　광열비 8,000엔~　휴대폰 5,000엔~　잡비 5,000엔~
+          </div>
+    </div>
+    <div class="relative h-10 w-36 flex-shrink-0">
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron"></div>
+      <div class="absolute top-1 left-8 text-white italic text-lg">입학 지원</div>
+    </div>
+    <div class="mt-2 mb-10 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
       <div class="flex flex-col sm:flex-row">
-        <div class="relative h-10 w-36 flex-shrink-0">
-          <div
-            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
-          </div>
-          <div class="absolute top-1 left-5 text-white italic text-lg">과정 특징</div>
-        </div>
-      </div>
-      <div class="w-full bg-[#e6f2f2] p-4 my-4 relative">
-        <style>
-          .circle-container {
-            position: relative;
-          }
-
-          .circle-container::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: calc(50% + 16px);
-            width: calc(100% - 32px);
-            height: 8px;
-            background-color: white;
-            transform: translateY(-50%);
-            z-index: 0;
-          }
-
-          .circle-container:last-child::before {
-            display: none;
-          }
-        </style>
-
-        <div class="flex flex-wrap md:flex-nowrap justify-center gap-1">
-          <div class="w-[30%] md:w-1/6 circle-container">
-            <div
-              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
-              <div class="text-center text-sm font-bold text-blue-900">진학을 위한 커리큘럼</div>
+            <div class="relative flex-shrink-0">
+              <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28">
+              <div class="absolute top-3 left-7">모집 대상</div>
             </div>
+            <div class="mt-3 flex-1">외국인 유학생</div>
           </div>
-
-          <div class="w-[30%] md:w-1/6 circle-container">
-            <div
-              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
-              <div class="text-center text-sm font-bold text-blue-900">멀티미디어를 활용한 어학교육</div>
+          <div class="flex flex-col sm:flex-row my-2">
+            <div class="relative flex-shrink-0">
+              <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28">
+              <div class="absolute top-3 left-7">출원 자격</div>
             </div>
+            <div class="mt-1 flex-1">❶ 본국에서 12년 이상 정규 학교 교육 이수자 또는 동등 학력 인정자.<br>❷ 심신 건강, 학습 의지 확실, 유학 비용 부담 능력자.</div>
           </div>
-
-          <div class="w-[30%] md:w-1/6 circle-container">
-            <div
-              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
-              <div class="text-center text-sm font-bold text-blue-900">어학 능력에 따른 반 편성</div>
+          <div class="flex flex-col sm:flex-row my-2">
+            <div class="relative flex-shrink-0">
+              <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28">
+              <div class="absolute top-3 left-7">출원 기간</div>
             </div>
+            <div class="mt-1 flex-1">2년 과정(4월): 매년 11/20까지 (입관국 제출 ~12월 상순)<br>1년6개월 과정(10월): 매년 5/20까지 (입관국 제출 ~6월 중순)</div>
           </div>
-
-          <div class="w-[30%] md:w-1/6 circle-container">
-            <div
-              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
-              <div class="text-center text-sm font-bold text-blue-900">입학부터 졸업까지 철저한 진학 지원</div>
+          <div class="flex flex-col sm:flex-row my-2">
+            <div class="relative flex-shrink-0">
+              <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28">
+              <div class="absolute top-3 left-7">재류 자격</div>
             </div>
+            <div class="mt-1 flex-1">출원 후 본원이 입국재류관리청에 유학 자격 신청. 1차 1년 3개월, 2차 재신청으로 연장 가능.</div>
           </div>
-        </div>
-      </div>
-      <div class="flex flex-col sm:flex-row">
-        <div class="relative h-10 w-36 flex-shrink-0">
-          <div
-            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
-          </div>
-          <div class="absolute top-1 left-8 text-white italic text-lg">수업 개요</div>
-        </div>
-        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">강의와 연습을 분리한 수업</div>
-      </div>
-      <div class="my-2 p-5 leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999] text-sm">
-        <!-- <div class="flex flex-col sm:flex-row">
-          <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-4 left-4 text-xs">授業科目と内容</div>
-          </div>
-          <div class="mt-3 mb-5">日本語による문법・演習・会話・청해・독해・작문 (日本語能力시험 대책・進学指導等を授業内容に含む)。</div>
-        </div> -->
-        <!-- <div class="flex flex-col sm:flex-row">
-          <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">選択科目</div>
-          </div>
-          <div class="mt-3 mb-5">
-            <div class="grid grid-cols-1 gap-4 max-w-[1200px] mx-auto">
-              <div class="bg-white w-80 rounded-md p-3 ">
-                日本留学시험 대책講座<br />
-                　＊ 文系 : 数学１　/　総合科目<br />
-                　＊ 理系 : 数学2　/　物理　/　化学　/　生物
-              </div>
-              <div class="bg-white w-80 rounded-md p-3">
-                特定技能測定対策講座<br />
-                外食　*宿泊　*介護　*自動車整備　*ビルクリーニング　飲食品製造　*電気電子　*建設　*造船　*農業　*機械　航空　*素材　*漁業等のような職種。
-              </div>
+          <div class="flex flex-col sm:flex-row my-2">
+            <div class="relative flex-shrink-0">
+              <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28">
+              <div class="absolute top-3 left-7">출원 방법</div>
             </div>
+            <div class="mt-1 flex-1">
+              본인 또는 대리인이 입학원서, 연락처, 여권/신분증/출생증명서 사본 등 첨부하여 이메일·우편·방문으로 접수.</div>
           </div>
-        </div> -->
-        <div class="flex flex-col sm:flex-row">
-          <div class="relative flex-shrink-0">
-            <div class="relative w-28 h-10">
-              <div class="absolute inset-0 bg-amber-200 rounded-[80%] border-4 border-white"></div>
-              <div class="absolute top-2 left-7 text-black">수업 시간</div>
-            </div>
-          </div>
-          <div class="mt-3 sm:mt-0 sm:ml-4">
-            ・ 오전반 8:50~12:20　오후반 13:00~16:30　1교시 45분<br />
-            ・ 2년 진학 과정: 78주 (1,520시간)<br />
-            ・ 1년 6개월 진학 과정: 59주 (1,140시간)<br />
-            수업일 월~금　※공휴일 휴강
-          </div>
-        </div>
-        <div class="flex flex-col sm:flex-row">
-          <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">휴업</div>
-          </div>
-          <div class="mt-3 mb-5">여름방학: 약 30일　겨울방학: 약 14일　봄방학: 약 30일</div>
-        </div>
-        <div class="flex flex-col sm:flex-row">
-          <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">수업 내용</div>
-          </div>
-          <div class="mt-3 mb-5 w-full md:w-[640px]">
-            <div class="mx-auto space-y-8">
-              <!-- 2年進学コース -->
-              <div class="border rounded-lg overflow-hidden remove-weekend-columns">
-                <div class="bg-[#009999] text-white text-center py-2 font-bold">2년 진학 코스</div>
-                <div class="overflow-x-auto">
-                  <!-- 初級前期 -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
-                    <colgroup>
-                      <col class="w-12" />
-                      <col class="w-36" />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                    </colgroup>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">초급 전기</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-16 text-center">월</th>
-                      <th class="border px-1 py-1 w-16 text-center">화</th>
-                      <th class="border px-1 py-1 w-16 text-center">수</th>
-                      <th class="border px-1 py-1 w-16 text-center">목</th>
-                      <th class="border px-1 py-1 w-16 text-center">금</th>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                  </table>
-                  <!-- 初級後期 -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
-                    <colgroup>
-                      <col class="w-12" />
-                      <col class="w-36" />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                    </colgroup>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">초급 후기</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-16 text-center">월</th>
-                      <th class="border px-1 py-1 w-16 text-center">화</th>
-                      <th class="border px-1 py-1 w-16 text-center">수</th>
-                      <th class="border px-1 py-1 w-16 text-center">목</th>
-                      <th class="border px-1 py-1 w-16 text-center">금</th>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                    </tr>
-                  </table>
-                  <!-- 中級前期 -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
-                    <colgroup>
-                      <col class="w-12" />
-                      <col class="w-36" />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                    </colgroup>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">중급 전기</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-16 text-center">월</th>
-                      <th class="border px-1 py-1 w-16 text-center">화</th>
-                      <th class="border px-1 py-1 w-16 text-center">수</th>
-                      <th class="border px-1 py-1 w-16 text-center">목</th>
-                      <th class="border px-1 py-1 w-16 text-center">금</th>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                  </table>
-                  <!-- 中級後期 -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
-                    <colgroup>
-                      <col class="w-12" />
-                      <col class="w-36" />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                    </colgroup>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">중급 후기</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-16 text-center">월</th>
-                      <th class="border px-1 py-1 w-16 text-center">화</th>
-                      <th class="border px-1 py-1 w-16 text-center">수</th>
-                      <th class="border px-1 py-1 w-16 text-center">목</th>
-                      <th class="border px-1 py-1 w-16 text-center">금</th>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                    </tr>
-                  </table>
-                  <!-- 上級１ -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
-                    <colgroup>
-                      <col class="w-12" />
-                      <col class="w-36" />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                    </colgroup>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">고급 1</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-16 text-center">월</th>
-                      <th class="border px-1 py-1 w-16 text-center">화</th>
-                      <th class="border px-1 py-1 w-16 text-center">수</th>
-                      <th class="border px-1 py-1 w-16 text-center">목</th>
-                      <th class="border px-1 py-1 w-16 text-center">금</th>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                  </table>
-                  <!-- 上級２ -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
-                    <colgroup>
-                      <col class="w-12" />
-                      <col class="w-36" />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                    </colgroup>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">고급 2</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-16 text-center">월</th>
-                      <th class="border px-1 py-1 w-16 text-center">화</th>
-                      <th class="border px-1 py-1 w-16 text-center">수</th>
-                      <th class="border px-1 py-1 w-16 text-center">목</th>
-                      <th class="border px-1 py-1 w-16 text-center">금</th>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                    </tr>
-                  </table>
-                  <!-- 上級３ -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
-                    <colgroup>
-                      <col class="w-12" />
-                      <col class="w-36" />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                    </colgroup>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">고급 3</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-16 text-center">월</th>
-                      <th class="border px-1 py-1 w-16 text-center">화</th>
-                      <th class="border px-1 py-1 w-16 text-center">수</th>
-                      <th class="border px-1 py-1 w-16 text-center">목</th>
-                      <th class="border px-1 py-1 w-16 text-center">금</th>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                  </table>
-                  <!-- 上級４ -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
-                    <colgroup>
-                      <col class="w-12" />
-                      <col class="w-36" />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                    </colgroup>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">고급 4</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-16 text-center">월</th>
-                      <th class="border px-1 py-1 w-16 text-center">화</th>
-                      <th class="border px-1 py-1 w-16 text-center">수</th>
-                      <th class="border px-1 py-1 w-16 text-center">목</th>
-                      <th class="border px-1 py-1 w-16 text-center">금</th>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-
-              <!-- 1年6か月進学コース -->
-              <div class="border rounded-lg overflow-hidden remove-weekend-columns">
-                <div class="bg-[#009999] text-white text-center py-2 font-bold">1년 6개월 진학 코스</div>
-                <div class="overflow-x-auto">
-                
-                  <!-- 初級後期 -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
-                    <colgroup>
-                      <col class="w-12" />
-                      <col class="w-36" />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                    </colgroup>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">초급 후기</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-16 text-center">월</th>
-                      <th class="border px-1 py-1 w-16 text-center">화</th>
-                      <th class="border px-1 py-1 w-16 text-center">수</th>
-                      <th class="border px-1 py-1 w-16 text-center">목</th>
-                      <th class="border px-1 py-1 w-16 text-center">금</th>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                  </table>
-                  <!-- 中級前期 -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
-                    <colgroup>
-                      <col class="w-12" />
-                      <col class="w-36" />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                    </colgroup>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">중급 전기</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-16 text-center">월</th>
-                      <th class="border px-1 py-1 w-16 text-center">화</th>
-                      <th class="border px-1 py-1 w-16 text-center">수</th>
-                      <th class="border px-1 py-1 w-16 text-center">목</th>
-                      <th class="border px-1 py-1 w-16 text-center">금</th>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                  </table>
-                  <!-- 中級後期 -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
-                    <colgroup>
-                      <col class="w-12" />
-                      <col class="w-36" />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                    </colgroup>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">중급 후기</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-16 text-center">월</th>
-                      <th class="border px-1 py-1 w-16 text-center">화</th>
-                      <th class="border px-1 py-1 w-16 text-center">수</th>
-                      <th class="border px-1 py-1 w-16 text-center">목</th>
-                      <th class="border px-1 py-1 w-16 text-center">금</th>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                  </table>
-                  <!-- 上級１ -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
-                    <colgroup>
-                      <col class="w-12" />
-                      <col class="w-36" />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                    </colgroup>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">고급 1</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-16 text-center">월</th>
-                      <th class="border px-1 py-1 w-16 text-center">화</th>
-                      <th class="border px-1 py-1 w-16 text-center">수</th>
-                      <th class="border px-1 py-1 w-16 text-center">목</th>
-                      <th class="border px-1 py-1 w-16 text-center">금</th>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                    </tr>
-                  </table>
-                  <!-- 上級２ -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
-                    <colgroup>
-                      <col class="w-12" />
-                      <col class="w-36" />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                    </colgroup>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">고급 2</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-16 text-center">월</th>
-                      <th class="border px-1 py-1 w-16 text-center">화</th>
-                      <th class="border px-1 py-1 w-16 text-center">수</th>
-                      <th class="border px-1 py-1 w-16 text-center">목</th>
-                      <th class="border px-1 py-1 w-16 text-center">금</th>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                    </tr>
-                  </table>
-                  <!-- 上級３ -->
-                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
-                    <colgroup>
-                      <col class="w-12" />
-                      <col class="w-36" />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                    </colgroup>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">레벨 설정</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">고급 3</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">시간</th>
-                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">요일</th>
-                    </tr>
-                    <tr class="bg-gray-100">
-                      <th class="border px-1 py-1 w-16 text-center">월</th>
-                      <th class="border px-1 py-1 w-16 text-center">화</th>
-                      <th class="border px-1 py-1 w-16 text-center">수</th>
-                      <th class="border px-1 py-1 w-16 text-center">목</th>
-                      <th class="border px-1 py-1 w-16 text-center">금</th>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">1</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">2</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">종합 일본어</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">3</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">청해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                    </tr>
-                    <tr>
-                      <td class="border px-1 py-1 text-center">4</td>
-                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">독해</td>
-                      <td class="border px-1 py-1 text-center">표현 문법</td>
-                      <td class="border px-1 py-1 text-center">작문</td>
-                      <td class="border px-1 py-1 text-center">발표</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col sm:flex-row">
-        <div class="relative h-10 w-36 flex-shrink-0">
-          <div
-            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
-          </div>
-          <div class="absolute top-1 left-8 text-white italic text-lg">진로 선택</div>
-        </div>
-        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">본원 졸업 후 다양한 진로 선택 가능</div>
-      </div>
-      <div class=" my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
-        <div class="flex flex-col sm:flex-row">
-          <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_9.png" class="h-12 w-48" />
-            <div class="absolute top-3 left-8">전문학교·단기대학 진학</div>
-          </div>
-          <div class="mt-3 mb-5">일본어능력시험(JLPT) N3 이상 합격자</div>
-        </div>
-        <div class="flex flex-col sm:flex-row">
-          <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_9.png" class="h-12 w-48" />
-            <div class="absolute top-3 left-10">대학·대학원 진학</div>
-          </div>
-          <div class="mt-3 mb-5">일본어능력시험(JLPT) N2 이상 합격자</div>
-        </div>
-        <div class="flex flex-col sm:flex-row">
-          <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_9.png" class="h-12 w-48" />
-            <div class="absolute top-3 left-12">일본 기업 취업</div>
-          </div>
-          <div class="mt-3 mb-5">일본어능력시험(JLPT) N1 이상 합격 및 모국 대학 졸업자</div>
-        </div>
-        <div class="flex flex-col sm:flex-row">
-          <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_9.png" class="h-12 w-48" />
-            <div class="absolute top-3 left-12">일본 기업 근무</div>
-          </div>
-          <div class="mt-3 mb-5">일본어능력시험(JLPT) N4 이상 합격 및 특정기능측정시험 합격자</div>
-        </div>
-      </div>
-      <div class="flex flex-col sm:flex-row">
-        <div class="relative h-10 w-36 flex-shrink-0">
-          <div
-            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
-          </div>
-          <div class="absolute top-1 left-8 text-white italic text-lg">학비 내역</div>
-        </div>
-        <!-- <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">特別な事情がない限り、基本的に在留期間の更新前に一括払い</div> -->
-      </div>
-      <div class=" my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
-        <table class="border-collapse border border-slate-500 w-full text-xs md:text-sm">
-          <thead>
-            <tr class="bg-[#009999] text-white">
-              <th class="border border-slate-600">항목/구분</th>
-              <th class="border border-slate-600">선고료</th>
-              <th class="border border-slate-600">입학금</th>
-              <th class="border border-slate-600">잡비</th>
-              <th class="border border-slate-600">학비<br>1학년</th>
-              <th class="border border-slate-600">1년차 합계</th>
-              <th class="border border-slate-600">학비<br>2학년</th>
-              <th class="border border-slate-600 bg-blue-800">1·2년차<br>합계</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="bg-white">
-              <td class="border border-slate-700 text-center font-bold">1년 6개월 과정</td>
-              <td class="border border-slate-700 text-center">¥22,000</td>
-              <td class="border border-slate-700 text-center">¥88,000</td>
-              <td class="border border-slate-700 text-center">¥93,000</td>
-              <td class="border border-slate-700 text-center">¥726,000</td>
-              <td class="border border-slate-700 text-center">¥929,000</td>
-              <td class="border border-slate-700 text-center">¥363,000<br><span class="text-xs text-gray-500">（반년분）</span></td>
-              <td class="border border-slate-700 text-center">¥1,292,000</td>
-            </tr>
-            <tr class="bg-gray-50">
-              <td class="border border-slate-700 text-center font-bold">2년 과정</td>
-              <td class="border border-slate-700 text-center">¥22,000</td>
-              <td class="border border-slate-700 text-center">¥88,000</td>
-              <td class="border border-slate-700 text-center">¥109,000</td>
-              <td class="border border-slate-700 text-center">¥726,000</td>
-              <td class="border border-slate-700 text-center">¥945,000</td>
-              <td class="border border-slate-700 text-center">¥726,000<br><span class="text-xs text-gray-500">（일년분）</span></td>
-              <td class="border border-slate-700 text-center">¥1,671,000</td>
-            </tr>
-            <tr>
-              <td class="border border-slate-700 text-center font-bold">납부 기한</td>
-              <td class="border border-slate-700 text-center">출원 시</td>
-              <td class="border border-slate-700 text-center" colspan="2">합격 통지 후 2주 이내</td>
-              <td class="border border-slate-700 text-center" colspan="2"></td>
-              <td class="border border-slate-700 text-center" colspan="2">재류 기간 갱신 전</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="text-xs text-gray-700 mt-2">
-          ※잡비: 교재비, 건강관리비, 외부시험비, 단체보험료<br>
-          <span class="font-bold">월 생활비 참고:</span>
-          식비 15,000엔~　광열비 8,000엔~　휴대폰 5,000엔~　잡비 5,000엔~
-        </div>
-      </div>
-      <div class="relative h-10 w-36 flex-shrink-0">
-        <div
-          class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
-        </div>
-        <div class="absolute top-1 left-8 text-white italic text-lg">입학 지원</div>
-      </div>
-      <div class="mt-2 mb-10 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
-        <div class="flex flex-col sm:flex-row">
-          <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">모집 대상</div>
-          </div>
-          <div class="mt-3 flex-1">외국인 유학생</div>
-        </div>
-        <div class="flex flex-col sm:flex-row my-2">
-          <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">출원 자격</div>
-          </div>
-          <div class="mt-1 flex-1">❶ 본국에서 12년 이상 정규 학교 교육 이수자 또는 동등 학력 인정자.<br />❷ 심신 건강, 학습 의지 확실, 유학 비용 부담 능력자.</div>
-        </div>
-        <div class="flex flex-col sm:flex-row my-2">
-          <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">출원 기간</div>
-          </div>
-          <div class="mt-1 flex-1">2년 과정(4월): 매년 11/20까지 (입관국 제출 ~12월 상순)<br />1년6개월 과정(10월): 매년 5/20까지 (입관국 제출 ~6월 중순)</div>
-        </div>
-        <div class="flex flex-col sm:flex-row my-2">
-          <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">재류 자격</div>
-          </div>
-          <div class="mt-1 flex-1">출원 후 본원이 입국재류관리청에 유학 자격 신청. 1차 1년 3개월, 2차 재신청으로 연장 가능.</div>
-        </div>
-        <div class="flex flex-col sm:flex-row my-2">
-          <div class="relative flex-shrink-0">
-            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
-            <div class="absolute top-3 left-7">출원 방법</div>
-          </div>
-          <div class="mt-1 flex-1">
-            본인 또는 대리인이 입학원서, 연락처, 여권/신분증/출생증명서 사본 등 첨부하여 이메일·우편·방문으로 접수.</div>
-        </div>
-      </div>
+    </div>
     </div>
   </div>
-  <!-- main end -->
   <!-- footer start -->
-  <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1 mt-0">
+  <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1 mt-4">
     <div class="w-full md:w-4/5 lg:w-3/5 xl:w-1/2 2xl:w-2/5 mx-auto p-5 text-xs">
       <div class="grid grid-cols-2 sm:grid-cols-[auto_auto_1fr] gap-6 sm:gap-4 text-stone-800">
-        <div class="">문의<br />
+        <div>문의<br />
           TEL: (052)262-3366<br />
           FAX: (052)262-3369<br />
           EMAIL: school@aiaso.gr.jp
         </div>
-        <div class="">접수 시간: 9:00 - 17:30<br />
-          휴무일: 토요일, 일요일, 국경일</div>
-        <div class="col-span-2 sm:col-span-1">주소:〒460-0007<br />
-          1-30-3, Shinsakae, Nagoya Shi Naka Ku, Aichi Ken, 460-0007, Japan<br />
-          1-30-29, Shinsakae, Nagoya Shi Naka Ku, Aichi Ken, 460-0007, Japan
+        <div>접수 시간: 9:00 - 17:30<br />
+          휴무일: 토요일, 일요일, 공휴일</div>
+        <div class="col-span-2 sm:col-span-1">주소: 〒460-0007<br />
+          본관: 아이치현 나고야시 나카구 신사카에 1-30-29<br />
+          별관: 아이치현 나고야시 나카구 신사카에 1-30-3
         </div>
       </div>
       <hr class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700">
-      <div class="block sm:hidden mb-2 text-stone-800">SNS 연락 방법</div>
+      <div class="block sm:hidden mb-2 text-stone-800">SNS 연락 방법:</div>
       <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-5 text-stone-800">
-        <div class="w-24 hidden sm:block">SNS 연락 방법</div>
+        <div class="w-24 hidden sm:block">SNS 연락 방법:</div>
         <div class="flex">
           <img src="../images/teams.png" class="size-6 m-1" />
           <div><a href="https://teams.microsoft.com/l/chat/0/0?users=aiasoso" target="_blank" rel="noopener noreferrer">TEAMS<br />aiasoso</a></div>
         </div>
         <div class="flex">
           <img src="../images/line.png" class="size-6 m-1" />
-          <div><a href="line://ti/p/aiajapanese">LINE<br />
-            aiajapanese</a></div>
+          <div><a href="line://ti/p/aiajapanese">LINE<br />aiajapanese</a></div>
         </div>
         <div class="flex">
           <img src="../images/wechat.png" class="size-6 m-1" />
@@ -1597,24 +1369,25 @@
         </div>
         <div class="flex">
           <img src="../images/fb.svg.webp" class="size-6 m-1" />
-          <div><a href="https://www.facebook.com/AIANagoya/" target="_blank">Facebook<br />AIANagoya</a>
-          </div>
+          <div><a href="https://www.facebook.com/AIANagoya/" target="_blank">Facebook<br />AIANagoya</a></div>
         </div>
       </div>
-
-      <div class="text-center my-2"><a href="index.html">HOME</a> | <a href="sitemap.html">웹 사이트 맵
-
-        </a> | <a href="policy.html">개인 정보 보호 정책
-
-        </a> | <a href="privacy.html">개인 정보 보호 정책
-
-        </a></div>
+      <div class="text-center my-2"><a href="index.html">HOME</a> | <a href="sitemap.html">사이트맵</a> | <a href="policy.html">개인정보 보호 방침</a> | <a href="privacy.html">개인정보 처리방침</a></div>
       <div class="text-center my-2">Copyright© Aichi International Academy All Rights Reserved.</div>
     </div>
   </div>
   <!-- footer end -->
-  <script src="../main.js"></script>
-
+  <button
+    id="backToTopButton"
+    type="button"
+    class="fixed bottom-5 right-5 z-[9999] flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white shadow-lg transition duration-200 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-300"
+    aria-label="맨 위로"
+    title="맨 위로">
+    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 5l-7 7m7-7 7 7M12 5v14" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+  <script src="../site.js?v=20260528-back-to-top"></script>
+  <script src="../menu.js?v=20260528-links"></script>
 </body>
-
 </html>

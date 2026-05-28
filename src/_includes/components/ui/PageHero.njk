@@ -1,0 +1,13 @@
+<div class="{{ heroClassName }}">
+  {% if heroImage %}
+    <img class="{{ heroImageClassName }}" src="{{ route.assetPrefix }}{{ heroImage }}" alt="" />
+  {% endif %}
+  <div class="{{ heroTitleWrapperClassName }}">
+    <h3 class="{{ heroTitleClassName }}">{{ heroTitle | safe }}</h3>
+  </div>
+  {% if heroSubtitle %}
+    <div class="{{ heroSubtitleWrapperClassName }}">
+      <p class="{{ heroSubtitleClassName }}">{{ heroSubtitle | safe }}</p>
+    </div>
+  {% endif %}
+</div>

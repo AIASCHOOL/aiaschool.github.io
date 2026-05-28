@@ -1,0 +1,25 @@
+{% set scopePages = staging if route.scope == "staging" else root %}
+{% set legalContent = scopePages[route.pageKey][route.locale.code] or scopePages[route.pageKey].ja %}
+<!-- title bar start -->
+<div class="relative flex mx-auto min-h-28 max-h-32"></div>
+<!-- title bar end -->
+
+<!-- main start -->
+<div class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1">
+  <br />
+  <div class="flex flex-col {% if route.pageKey == 'privacy' %}space-y-6{% else %}space-y-8{% endif %} text-gray-700 text-lg font-serif">
+    {% for item in legalContent %}
+      {% if item.tag == "h1" %}
+        <h1 class="{{ item.className }}">{{ item.html | safe }}</h1>
+      {% else %}
+        <p{% if item.className %} class="{{ item.className }}"{% endif %}>{{ item.html | safe }}</p>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <br />
+  {% if route.pageKey == "privacy" %}
+    <br />
+    <br />
+  {% endif %}
+</div>
+<!-- main end -->

@@ -1,0 +1,67 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.news-content ul,
+.news-content ol {
+  list-style: revert;
+  margin: revert;
+  padding: revert;
+}
+
+.news-content li {
+  text-indent: revert;
+}
+
+.form-transition {
+  transition: all .15s ease;
+}
+
+.legacy-indent {
+  padding-left: 1.2em;
+}
+
+.legacy-text-indent-md {
+  text-indent: 1.2em;
+}
+
+.legacy-text-indent-sm {
+  text-indent: 1em;
+}
+
+#languageMenu:hover #languageDropdown,
+#languageDropdown:hover {
+  display: block;
+}
+
+.circle-container {
+  position: relative;
+}
+
+.circle-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 16px);
+  width: calc(100% - 32px);
+  height: 8px;
+  background-color: white;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.circle-container:last-child::before {
+  display: none;
+}
+
+#backToTopButton {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.75rem);
+}
+
+#backToTopButton.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}

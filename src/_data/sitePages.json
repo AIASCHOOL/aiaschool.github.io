@@ -1,0 +1,146 @@
+[
+  {
+    "key": "index",
+    "file": "index.html",
+    "templateByScope": {
+      "root": "templates/pages/home.njk",
+      "staging": "templates/pages/home.njk"
+    }
+  },
+  {
+    "key": "about_business",
+    "file": "about_business.html",
+    "templateByScope": {
+      "root": "templates/pages/block_page.njk",
+      "staging": "templates/pages/block_page.njk"
+    }
+  },
+  {
+    "key": "about_facility",
+    "file": "about_facility.html",
+    "templateByScope": {
+      "root": "templates/pages/block_page.njk",
+      "staging": "templates/pages/block_page.njk"
+    }
+  },
+  {
+    "key": "about_publish",
+    "file": "about_publish.html",
+    "templateByScope": {
+      "root": "templates/pages/about_publish.njk",
+      "staging": "templates/pages/about_publish.njk"
+    }
+  },
+  {
+    "key": "about_teacher",
+    "file": "about_teacher.html",
+    "templateByScope": {
+      "root": "templates/pages/block_page.njk",
+      "staging": "templates/pages/block_page.njk"
+    }
+  },
+  {
+    "key": "message",
+    "file": "message.html",
+    "templateByScope": {
+      "root": "templates/pages/block_page.njk",
+      "staging": "templates/pages/block_page.njk"
+    }
+  },
+  {
+    "key": "course_advance",
+    "file": "course_advance.html",
+    "templateByScope": {
+      "root": "templates/pages/block_page.njk",
+      "staging": "templates/staging/course_advance.njk"
+    }
+  },
+  {
+    "key": "course_junior",
+    "file": "course_junior.html",
+    "templateByScope": {
+      "root": "templates/pages/block_page.njk",
+      "staging": "templates/pages/block_page.njk"
+    }
+  },
+  {
+    "key": "course_tour",
+    "file": "course_tour.html",
+    "templateByScope": {
+      "root": "templates/pages/block_page.njk",
+      "staging": "templates/pages/block_page.njk"
+    }
+  },
+  {
+    "key": "course_lecture",
+    "file": "course_lecture.html",
+    "templateByScope": {
+      "root": "templates/pages/block_page.njk",
+      "staging": "templates/pages/block_page.njk"
+    }
+  },
+  {
+    "key": "life_dorm",
+    "file": "life_dorm.html",
+    "templateByScope": {
+      "root": "templates/pages/block_page.njk",
+      "staging": "templates/pages/block_page.njk"
+    }
+  },
+  {
+    "key": "life_insurance",
+    "file": "life_insurance.html",
+    "templateByScope": {
+      "root": "templates/pages/block_page.njk",
+      "staging": "templates/pages/block_page.njk"
+    }
+  },
+  {
+    "key": "life_visa",
+    "file": "life_visa.html",
+    "templateByScope": {
+      "root": "templates/pages/block_page.njk",
+      "staging": "templates/pages/block_page.njk"
+    }
+  },
+  {
+    "key": "books",
+    "file": "books.html",
+    "templateByScope": {
+      "root": "templates/pages/block_page.njk",
+      "staging": "templates/pages/block_page.njk"
+    }
+  },
+  {
+    "key": "access",
+    "file": "access.html",
+    "templateByScope": {
+      "root": "templates/pages/block_page.njk",
+      "staging": "templates/pages/block_page.njk"
+    }
+  },
+  {
+    "key": "sitemap",
+    "file": "sitemap.html",
+    "templateByScope": {
+      "root": "templates/pages/sitemap.njk",
+      "staging": "templates/pages/sitemap.njk"
+    }
+  },
+  {
+    "key": "policy",
+    "file": "policy.html",
+    "templateByScope": {
+      "root": "templates/pages/legal.njk",
+      "staging": "templates/pages/legal.njk"
+    }
+  },
+  {
+    "key": "privacy",
+    "file": "privacy.html",
+    "templateByScope": {
+      "root": "templates/pages/legal.njk",
+      "staging": "templates/pages/legal.njk"
+    }
+  }
+]

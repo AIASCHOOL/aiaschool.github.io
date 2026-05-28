@@ -78,8 +78,45 @@ function handleImageError(img) {
   img.alt = '图片加载失败';
 }
 
+function initializeNewsCarousels(root = document) {
+  root.querySelectorAll('[data-news-carousel]').forEach((carousel) => {
+    if (carousel.dataset.newsCarouselReady === 'true') return;
+
+    const items = Array.from(carousel.querySelectorAll('[data-news-carousel-item]'));
+    if (items.length === 0) return;
+
+    let activeIndex = Math.max(0, items.findIndex((item) => item.dataset.newsCarouselItem === 'active'));
+
+    const render = () => {
+      items.forEach((item, index) => {
+        item.classList.toggle('hidden', index !== activeIndex);
+        item.classList.toggle('block', index === activeIndex);
+        item.dataset.newsCarouselItem = index === activeIndex ? 'active' : '';
+      });
+    };
+
+    carousel.querySelectorAll('[data-news-carousel-prev]').forEach((button) => {
+      button.addEventListener('click', () => {
+        activeIndex = (activeIndex - 1 + items.length) % items.length;
+        render();
+      });
+    });
+
+    carousel.querySelectorAll('[data-news-carousel-next]').forEach((button) => {
+      button.addEventListener('click', () => {
+        activeIndex = (activeIndex + 1) % items.length;
+        render();
+      });
+    });
+
+    carousel.dataset.newsCarouselReady = 'true';
+    render();
+  });
+}
+
 window.handleImageLoad = handleImageLoad;
 window.handleImageError = handleImageError;
+window.initializeNewsCarousels = initializeNewsCarousels;
 
 /**
  * See https://stackoverflow.com/a/24004942/11784757
@@ -225,8 +262,74 @@ function updateUrlParameter(name, value) {
   window.history.pushState({}, '', url);
 }
 
+function getNewsLocale(language) {
+  return language || window.AIASCHOOL_LOCALE || document.documentElement.lang || 'ja';
+}
+
+function getNewsText(key) {
+  const labels = window.AIASCHOOL_NEWS_I18N || {};
+  const fallback = {
+    pickUp: 'PICK UP',
+    previous: '前のページ',
+    next: '次のページ',
+    pageInfo: '{current}ページ / 総{total}ページ'
+  };
+  return labels[key] || fallback[key] || '';
+}
+
+function formatNewsPageInfo(currentPage, totalPages) {
+  return getNewsText('pageInfo')
+    .replace('{current}', currentPage)
+    .replace('{total}', totalPages);
+}
+
+function localizedNewsField(item, field, locale) {
+  const normalized = locale === 'ja' ? 'ja' : locale;
+  const candidates = [
+    `${field}_${normalized}`,
+    `${field}${normalized.charAt(0).toUpperCase()}${normalized.slice(1)}`,
+    `${field}_${normalized.replace('-', '_')}`,
+    `${field}_${normalized.toLowerCase()}`
+  ];
+
+  for (const key of candidates) {
+    if (item[key]) return item[key];
+  }
+
+  return item[field] || '';
+}
+
+function hideGoogleTranslateBar() {
+  const element = document.querySelector("#\\:1\\.container");
+  if (element) {
+    element.style.visibility = "hidden";
+  }
+}
+
+function translateTo(language, attempts = 20) {
+  if (!language || language === 'ja') return;
+
+  const selectField = document.querySelector("select.goog-te-combo");
+  const hasTargetOption = selectField && Array.from(selectField.options).some((option) => option.value === language);
+  if (selectField && hasTargetOption) {
+    selectField.value = language;
+    selectField.dispatchEvent(new Event('change'));
+    setTimeout(hideGoogleTranslateBar, 100);
+    return;
+  }
+
+  if (attempts > 0) {
+    setTimeout(() => {
+      translateTo(language, attempts - 1);
+    }, 500);
+  }
+}
+
+window.translateTo = translateTo;
+
 const hasPageNewsStart = typeof start === 'function'
-const startNewsList = async function () {
+const startNewsList = async function (language) {
+  const locale = getNewsLocale(language);
   if (
     !document.getElementById('news') ||
     typeof window.$ !== 'function' ||
@@ -264,28 +367,31 @@ const startNewsList = async function () {
   
   news.forEach(item => {
     var images = "";//
+    const itemTitle = localizedNewsField(item, 'title', locale);
+    const itemContext = localizedNewsField(item, 'context', locale);
+
     if (item.images && item.images.length) {
       if (item.images.length === 1) {
         // 单张图片 - 添加lightbox功能
         item.images.forEach(img => {
-          images += '<a href="' + img + '" data-lightbox="news-' + item.objectId + '" data-title="' + item.title + '">';
-          images += '<img src="' + img + '" class="w-full cursor-pointer hover:opacity-90 transition-opacity" alt="' + item.title + '" />';
+          images += '<a href="' + img + '" data-lightbox="news-' + item.objectId + '" data-title="' + itemTitle + '">';
+          images += '<img src="' + img + '" class="w-full cursor-pointer hover:opacity-90 transition-opacity" alt="' + itemTitle + '" />';
           images += '</a>';
         });
       } else {
         // 多张图片 - 轮播 + lightbox功能
         var carouselImg = ''
         item.images.forEach((img, i) => {
-          carouselImg += '<div id="carousel-item-' + item.objectId + i + '" class="hidden duration-700 ease-in-out" data-carousel-item>';
-          carouselImg += '<a href="' + img + '" data-lightbox="news-' + item.objectId + '" data-title="' + item.title + '">';
-          carouselImg += '<img src="' + img + '" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 cursor-pointer hover:opacity-90 transition-opacity" alt="' + item.title + '" />';
+          carouselImg += '<div id="carousel-item-' + item.objectId + i + '" class="hidden duration-700 ease-in-out" data-news-carousel-item="' + (i === 0 ? 'active' : '') + '">';
+          carouselImg += '<a href="' + img + '" data-lightbox="news-' + item.objectId + '" data-title="' + itemTitle + '">';
+          carouselImg += '<img src="' + img + '" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 cursor-pointer hover:opacity-90 transition-opacity" alt="' + itemTitle + '" />';
           carouselImg += '</a>';
           carouselImg += '</div>';
         });
 
-        images = '<div id="carousel-' + item.objectId + '" class="relative w-full " data-carousel="slide">\
+        images = '<div id="carousel-' + item.objectId + '" class="relative w-full " data-news-carousel>\
            <div class="relative h-60 overflow-hidden rounded-lg md:h-60">'+ carouselImg + '</div>\
-      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>\
+      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-news-carousel-prev>\
         <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">\
           <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"\
             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">\
@@ -294,7 +400,7 @@ const startNewsList = async function () {
           <span class="sr-only">Previous</span>\
         </span>\
       </button>\
-      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>\
+      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-news-carousel-next>\
         <span\
           class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">\
           <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"\
@@ -311,30 +417,38 @@ const startNewsList = async function () {
 
     var pinnedClass = item.pinned ? 'ring-2 ring-yellow-400' : '';
     var pinnedBadge = item.pinned ? '<div class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-bold z-10">📌 </div>' : '';
+    var imageColumn = images ? '<div class="sm:col-span-2">' + images + '</div>' : '';
+    var textColumnClass = images ? 'sm:col-span-4' : 'sm:col-span-6';
 
     $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1 relative ' + pinnedClass + '">\
     ' + pinnedBadge + '\
     <div class= "grid sm:grid-cols-6 gap-3" >\
-      <div class="sm:col-span-2">'+ images + '</div>\
-      <div class="sm:col-span-4">\
+      ' + imageColumn + '\
+      <div class="' + textColumnClass + '">\
         <div class="grid grid-flow-col gap-0 mb-2">\
-          <div class="bg-[#7F7F7F] text-white col-span-1 text-center p-1 notranslate">PICK UP</div>\
-          <div class="bg-white col-span-5 p-1 italic">'+ item.title + '</div>\
+          <div class="bg-[#7F7F7F] text-white col-span-1 text-center p-1">'+ getNewsText('pickUp') + '</div>\
+          <div class="bg-white col-span-5 p-1 italic">'+ itemTitle + '</div>\
         </div>\
-        <div class="bg-[#7F7F7F] bg-opacity-50 text-white p-2 text-sm news-content">'+ item.context + '\
+        <div class="bg-[#7F7F7F] bg-opacity-50 text-white p-2 text-sm news-content">'+ itemContext + '\
           <div class="text-black text-right mt-2">'+ item.publishDate + '</div>\
         </div>\
       </div>\
     </div>\
   </div> ')
   });
+
+  initializeNewsCarousels(document.getElementById('news'));
   
   // 生成分页导航
-  generatePagination(currentPage, totalPages);
+  generatePagination(currentPage, totalPages, locale);
+
+  setTimeout(() => {
+    translateTo(locale);
+  }, 1000);
 }
 
 // 生成分页导航
-function generatePagination(currentPage, totalPages) {
+function generatePagination(currentPage, totalPages, locale) {
   if (totalPages <= 1) return;
   
   let paginationHtml = '<div class="pagination-container">';
@@ -342,7 +456,7 @@ function generatePagination(currentPage, totalPages) {
   
   // 上一页按钮
   if (currentPage > 1) {
-    paginationHtml += `<button onclick="goToPage(${currentPage - 1})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">前のページ</button>`;
+    paginationHtml += `<button onclick="goToPage(${currentPage - 1}, '${locale}')" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">${getNewsText('previous')}</button>`;
   }
   
   // 页码按钮
@@ -371,22 +485,22 @@ function generatePagination(currentPage, totalPages) {
   
   // 下一页按钮
   if (currentPage < totalPages) {
-    paginationHtml += `<button onclick="goToPage(${currentPage + 1})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">次のページ</button>`;
+    paginationHtml += `<button onclick="goToPage(${currentPage + 1}, '${locale}')" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">${getNewsText('next')}</button>`;
   }
   
   paginationHtml += '</div>';
   
   // 添加页面信息
-  paginationHtml += `<div class="text-center text-sm text-gray-500 mb-4">${currentPage}ページ目 / 全${totalPages}ページ</div>`;
+  paginationHtml += `<div class="text-center text-sm text-gray-500 mb-4">${formatNewsPageInfo(currentPage, totalPages)}</div>`;
   paginationHtml += '</div>';
   
   $("#news").after(paginationHtml);
 }
 
 // 跳转到指定页面
-const goToSharedNewsPage = function(page) {
+const goToSharedNewsPage = function(page, language) {
   updateUrlParameter('page', page);
-  startNewsList(); // 重新加载数据
+  startNewsList(language); // 重新加载数据
 }
 
 if (!hasPageNewsStart && typeof window.start !== 'function') {

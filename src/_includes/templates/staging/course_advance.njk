@@ -1,0 +1,31 @@
+{% set page = staging.course_advance[route.locale.code] or staging.course_advance.ja %}
+{% set currentAssetPrefix = route.assetPrefix %}
+
+<div class="overflow-hidden text-xs bg-red-400 text-white hidden">
+  <ul class="marquee py-2 inline-flex space-x-4 whitespace-nowrap max-w-full"
+    x-data="Marquee({speed: 0.2, spaceX: 4})">
+    <li>{{ page.marquee }}</li>
+  </ul>
+</div>
+
+{% set heroClassName = "relative flex mx-auto min-h-28 max-h-32" %}
+{% set heroImage = "images/6-ADVANCE_STUDY.jpg" %}
+{% set heroImageClassName = "w-full object-cover object-center" %}
+{% set heroTitleWrapperClassName = "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center" %}
+{% set heroTitleClassName = "text-white text-3xl font-bold" %}
+{% set heroTitle = page.heroTitle %}
+{% set heroSubtitleWrapperClassName = "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center" %}
+{% set heroSubtitleClassName = "text-white italic text-xs sm:text-base" %}
+{% set heroSubtitle = page.heroSubtitle %}
+{% include "components/ui/PageHero.njk" %}
+<div>
+  <img class="w-full" src="{{ currentAssetPrefix }}images/advance_bar.png" />
+</div>
+
+<div class="w-full bg-[#FFFAEB]">
+  <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-3 mt-1 ">
+    {% for section in page.sections %}
+      {% include "components/course/AdvanceSection.njk" %}
+    {% endfor %}
+  </div>
+</div>

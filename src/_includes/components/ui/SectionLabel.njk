@@ -1,0 +1,4 @@
+<div class="{{ sectionLabelClassName or 'h-10 relative w-72 max-w-full' }}">
+  <img src="{{ route.assetPrefix }}{{ sectionLabelIcon or 'images/business_icon.png' }}" class="{{ sectionLabelImageClassName or 'h-full w-full' }}" alt="" />
+  <div class="{{ sectionLabelTextClassName or 'absolute top-1 left-7 pr-4 whitespace-nowrap text-white italic text-lg' }}">{{ sectionLabelTitle | safe }}</div>
+</div>

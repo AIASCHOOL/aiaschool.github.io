@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    愛知国際学院
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet" />
+  <script type="text/javascript" src="https://unpkg.com/parse@1.11.1/dist/parse.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script src="../parse.js"></script>
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    .news-content ul,
+    .news-content ol {
+      list-style: revert;
+      margin: revert;
+      padding: revert;
+    }
+
+    .news-content li {
+      text-indent: revert;
+    }
+  </style>
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../gt.css" />
+  <!-- Lightbox2 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="">
+  <!-- banner start -->
+  <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1">
+    <div class="flex items-center flex-row">
+      <div class="flex-grow "></div>
+      <img class="h-10 ml-0 mr-0 hidden md:block invisible" src="../images/35th.png" />
+      <a href="index.html" style="border: none;" class="h-10"><img class="h-10" src="../images/logo.png" /></a>
+      <a href="#" style="border: none;cursor: auto;" class="h-10"><img class="h-10" src="../images/35th.png" /></a>
+      <div class="flex-grow"></div>
+    </div>
+  </div>
+  <!-- banner end -->
+  <!-- menu start -->
+  <div class="bg-gradient-to-r from-blue-900 from-30% via-blue-400 via-50% to-blue-900 to-70%">
+    <header class='shadow-md '>
+      <div class='flex flex-wrap justify-center px-4 py-3 relative text-sm'>
+        <div id="toggle" class='flex ml-auto lg:order-1 lg:hidden mr-2 relative z-50'>
+          <button class='ml-7'>
+            <svg class="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <ul id="collapseMenu"
+          class='mx-auto lg:!flex lg:space-x-7 xl:space-x-10 max-lg:space-y-3 max-lg:hidden max-lg:w-full max-lg:my-4'>
+          <li class='max-lg:border-b max-lg:py-2'><a href='index.html'
+              class='hover:text-gray-300 text-white block'>最新ニュース</a></li>
+          <li class='group max-lg:border-b max-lg:py-2 relative'>
+            <a href='javascript:void(0)'
+              class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>学院について<svg
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block"
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                  data-name="16" data-original="#FFFFFF" />
+              </svg>
+            </a>
+            <ul
+              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[110px] z-50'>
+              <li class='border-b py-3'>
+                <a href='about_business.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  Ikhtisar Usaha
+                </a>
+              </li>
+              <li class='border-b pt-1 pb-3'><a href='about_facility.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  Fasilitas
+                </a>
+              </li>
+              <li class='pt-1 pb-1'><a href='about_publish.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  Informasi Publik
+                </a>
+              </li>
+              <!--<li class=' pt-1 pb-1'>
+                <a href='about_teacher.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  教師陣
+                </a>
+              </li>-->
+            </ul>
+          </li>
+          <!-- <li class='max-lg:border-b max-lg:py-2'><a href='message.html'
+              class='hover:text-gray-300 text-white block'>卒業生メッセージ</a></li> -->
+          <li class='max-lg:border-b max-lg:py-2'><a href='course_advance.html'
+              class='hover:text-gray-300 text-white block'>Program Lanjutan</a></li>
+          <!-- <li class='group max-lg:border-b max-lg:py-2 relative'>
+            <a href='javascript:void(0)'
+              class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>教育コース<svg
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block"
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                  data-name="16" data-original="#FFFFFF" />
+              </svg>
+            </a>
+            <ul
+              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[150px] z-50'>
+              <li class='border-b py-3'>
+                <a href='course_advance.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  Program Lanjutan
+                </a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='course_junior.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Program Bersama Junior College
+                </a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='course_tour.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Program Studi Tur
+                </a>
+              </li>
+              <li class=' pt-1 pb-1'>
+                <a href='course_lecture.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Kursus Khusus
+                </a>
+              </li>
+            </ul>
+          </li> -->
+          <li class='group max-lg:border-b max-lg:py-2 relative'>
+            <a href='javascript:void(0)'
+              class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>学生生活<svg
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block"
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                  data-name="16" data-original="#FFFFFF" />
+              </svg>
+            </a>
+            <ul
+              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[110px] z-50'>
+              <li class='border-b py-3'>
+                <a href='life_dorm.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Asrama Siswa
+                </a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='life_insurance.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Asuransi Siswa
+                </a>
+              </li>
+              <li class=' pt-1 pb-1'>
+                <a href='life_visa.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Status Tinggal Siswa
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class='max-lg:border-b max-lg:py-2'><a href='books.html'
+              class='hover:text-gray-300 text-white block'>教育関連開発</a></li>
+          <li class='max-lg:border-b max-lg:py-2'><a href='access.html'
+              class='hover:text-gray-300 text-white block'>アクセス</a></li>
+        </ul>
+        <ul id="collapseMenu2" class=' max-lg:mt-1'>
+          <li class='group relative' id="languageMenu">
+            <a href='javascript:void(0)' class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>
+              <svg class="w-5 h-5" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"
+                style="enable-background:new 0 0 120 120" xml:space="preserve">
+                <switch>
+                  <g>
+                    <path
+                      d="M60 120C26.9 120 0 93.1 0 60S26.9 0 60 0s60 26.9 60 60-26.9 60-60 60zM60 5C29.7 5 5 29.7 5 60s24.7 55 55 55 55-24.7 55-55S90.3 5 60 5z" />
+                    <path
+                      d="M60 120c-19.3 0-34.4-26.4-34.4-60S40.7 0 60 0s34.4 26.4 34.4 60-15.1 60-34.4 60zM60 5C43.8 5 30.5 29.7 30.5 60s13.2 55 29.5 55 29.5-24.7 29.5-55S76.2 5 60 5z" />
+                    <path d="M12.2 25.6h95.6v5H12.2zM12.2 89.5h95.6v5H12.2zM2.5 57.5h115v5H2.5z" />
+                    <path d="M57.5 2.5h5v115h-5z" />
+                  </g>
+                </switch>
+              </svg>
+            </a>
+            <ul
+              class='absolute hidden shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 lg:top-5 max-md:top-5 -left-28 min-w-[130px] z-50 notranslate' id="languageDropdown">
+              <li class='border-b py-3'>
+                <a href='../index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>日本語</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../en/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>English</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../cn/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>中国語（簡体）</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../tw/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>中国語（繁体）</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../ko/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>한국어</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../vi/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Tiếng
+                  Việt</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../th/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>ภาษาไทย</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../id/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Indonesia</a>
+              </li>
+              <li class='pt-1 pb-1'>
+                <a href='../np/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>नेपाली</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </header>
+  </div>
+  <!-- menu end -->
+
+  <div>
+    <img class="w-full" src="../images/hero.png" />
+  </div>
+  <div class="relative flex mx-auto">
+    <img class="w-full object-cover object-center" src="../images/topics.jpg" />
+    <div class="absolute top-7 right-0 left-0 flex items-center justify-center ">
+      <h3 class="text-white text-3xl lg:text-4xl font-bold">最新ニュース</h3>
+    </div>
+  </div>
+  <!-- news start -->
+  <div id="carousel-example" class="relative w-full hidden">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+      <!-- Item 1 -->
+      <div id="carousel-item-1" class="hidden duration-700 ease-in-out">
+        <img src="https://picsum.photos/seed/picsum/200/300"
+          class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
+      </div>
+    </div>
+  </div>
+  <div id="google_translate_element" style="display: none;"></div>
+
+  <script type="text/javascript">
+    // URLパラメータを取得
+    function getUrlParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // URLパラメータを更新
+    function updateUrlParameter(name, value) {
+      const url = new URL(window.location);
+      url.searchParams.set(name, value);
+      window.history.pushState({}, '', url);
+    }
+
+    const start = async function () {
+      // URLから現在のページ番号を取得、デフォルトは1
+      const currentPage = parseInt(getUrlParameter('page')) || 1;
+      const limit = 10;
+      
+      // 総データ数と現在のページデータを取得
+      const [totalCount, news] = await Promise.all([
+        getTotalCount(),
+        read(currentPage, limit)
+      ]);
+      
+      // 総ページ数を計算
+      const totalPages = Math.ceil(totalCount / limit);
+      
+      // 固定状態別ソート：固定された項目が前に、その次に日付別ソート
+      news.sort((a, b) => {
+        if (a.pinned && !b.pinned) return -1;
+        if (!a.pinned && b.pinned) return 1;
+        return new Date(b.publishDate) - new Date(a.publishDate);
+      });
+      
+      // 既存の内容を削除
+      $("#news").empty();
+      
+      // 前のページネーション要素を削除
+      $(".pagination-container").remove();
+      
+      // 清理旧的Swiper实例
+      if (window.swiperInstances) {
+        window.swiperInstances.forEach((swiper) => {
+          if (swiper && typeof swiper.destroy === 'function') {
+            swiper.destroy(true, true);
+          }
+        });
+        window.swiperInstances.clear();
+      }
+      
+      news.forEach(item => {
+        var images = "";//
+        if (item.images && item.images.length) {
+          if (item.images.length === 1) {
+            // 单张图片 - 添加lightbox功能
+            item.images.forEach(img => {
+              images += '<a href="' + img + '" data-lightbox="news-' + item.objectId + '" data-title="' + item.title + '">';
+              images += '<img src="' + img + '" class="w-full cursor-pointer hover:opacity-90 transition-opacity" alt="' + item.title + '" />';
+              images += '</a>';
+            });
+          } else {
+            // 多张图片 - 轮播 + lightbox功能
+            var carouselImg = ''
+            item.images.forEach((img, i) => {
+              carouselImg += '<div class="swiper-slide">';
+              carouselImg += '<a href="' + img + '" data-lightbox="news-' + item.objectId + '" data-title="' + item.title + '">';
+              carouselImg += '<img src="' + img + '" class="w-full h-60 object-cover cursor-pointer hover:opacity-90 transition-opacity" alt="' + item.title + '" loading="lazy" onload="handleImageLoad(this)" onerror="handleImageError(this)" />';
+              carouselImg += '</a>';
+              carouselImg += '</div>';
+            });
+
+            images = '<div class="swiper-container swiper-' + item.objectId + '" style="height: 240px;">\
+          <div class="swiper-wrapper">'+ carouselImg + '</div>\
+          <div class="swiper-button-next swiper-button-white"></div>\
+          <div class="swiper-button-prev swiper-button-white"></div>\
+          <div class="swiper-pagination"></div>\
+        </div>';
+          }
+        }
+
+        var pinnedClass = item.pinned ? 'ring-2 ring-yellow-400' : '';
+        var pinnedBadge = item.pinned ? '<div class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-bold z-10">📌 </div>' : '';
+
+        $("#news").append('<div id="newsid-' + item.objectId + '" class="w-full lg:w-4/5 xl:w-2/3 mx-auto bg-[#F0B55E] p-2 mt-1 mb-2 sm:mb-1 relative ' + pinnedClass + '">\
+        ' + pinnedBadge + '\
+        <div class= "grid sm:grid-cols-6 gap-3" >\
+          <div class="sm:col-span-2">'+ images + '</div>\
+          <div class="sm:col-span-4">\
+            <div class="grid grid-flow-col gap-0 mb-2">\
+              <div class="bg-[#7F7F7F] text-white col-span-1 text-center p-1 notranslate">PICK UP</div>\
+              <div class="bg-white col-span-5 p-1 italic">'+ item.title + '</div>\
+            </div>\
+            <div class="bg-[#7F7F7F] bg-opacity-50 text-white p-2 text-sm news-content">'+ item.context + '\
+              <div class="text-black text-right mt-2">'+ item.publishDate + '</div>\
+            </div>\
+          </div>\
+        </div>\
+      </div> ')
+      });
+      
+      // ページネーションナビゲーションを生成
+      generatePagination(currentPage, totalPages);
+      
+      setTimeout(() => {
+        translateTo('id');
+      }, "1000");
+    };
+
+    // ページネーションナビゲーションを生成
+    function generatePagination(currentPage, totalPages) {
+      if (totalPages <= 1) return;
+      
+      let paginationHtml = '<div class="pagination-container">';
+      paginationHtml += '<div class="flex justify-center items-center space-x-2 mt-6 mb-4">';
+      
+      // 前のページボタン
+      if (currentPage > 1) {
+        paginationHtml += `<button onclick="goToPage(${currentPage - 1})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">前のページ</button>`;
+      }
+      
+      // ページ番号ボタン
+      const startPage = Math.max(1, currentPage - 2);
+      const endPage = Math.min(totalPages, currentPage + 2);
+      
+      if (startPage > 1) {
+        paginationHtml += `<button onclick="goToPage(1)" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">1</button>`;
+        if (startPage > 2) {
+          paginationHtml += '<span class="px-3 py-2 text-sm text-gray-500">...</span>';
+        }
+      }
+      
+      for (let i = startPage; i <= endPage; i++) {
+        const isActive = i === currentPage;
+        const activeClass = isActive ? 'bg-yellow-500 text-white border-yellow-500' : 'text-gray-500 bg-white border-gray-300 hover:bg-gray-50';
+        paginationHtml += `<button onclick="goToPage(${i})" class="px-3 py-2 text-sm font-medium border rounded-md ${activeClass}">${i}</button>`;
+      }
+      
+      if (endPage < totalPages) {
+        if (endPage < totalPages - 1) {
+          paginationHtml += '<span class="px-3 py-2 text-sm text-gray-500">...</span>';
+        }
+        paginationHtml += `<button onclick="goToPage(${totalPages})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">${totalPages}</button>`;
+      }
+      
+      // 次のページボタン
+      if (currentPage < totalPages) {
+        paginationHtml += `<button onclick="goToPage(${currentPage + 1})" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">次のページ</button>`;
+      }
+      
+      paginationHtml += '</div>';
+      
+      // ページ情報を追加
+      paginationHtml += `<div class="text-center text-sm text-gray-500 mb-4">${currentPage}ページ / 総${totalPages}ページ</div>`;
+      paginationHtml += '</div>';
+      
+      $("#news").after(paginationHtml);
+    }
+
+    // 指定されたページに移動
+    function goToPage(page) {
+      updateUrlParameter('page', page);
+      start(); // データを再読み込み
+    }
+
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'jp' }, 'google_translate_element');
+    }
+
+    function hideGoogleTranslateBar() {
+      var element = document.querySelector("#\\:1\\.container");
+      if (element) {
+        element.style.visibility = "hidden";
+      }
+    }
+
+    hideGoogleTranslateBar();
+
+    function translateTo(language) {
+      var selectField = document.querySelector("select.goog-te-combo");
+      if (selectField) {
+        selectField.value = language;
+        selectField.dispatchEvent(new Event('change'));
+        setTimeout(hideGoogleTranslateBar, 100);
+      }
+    }
+
+    function waitForElm(selector) {
+      return new Promise(resolve => {
+        if (document.querySelector(selector)) {
+          return resolve(document.querySelector(selector));
+        }
+
+        const observer = new MutationObserver(mutations => {
+          if (document.querySelector(selector)) {
+            observer.disconnect();
+            resolve(document.querySelector(selector));
+          }
+        });
+
+        // If you get "parameter 1 is not of type 'Node'" error, see https://stackoverflow.com/a/77855838/492336
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+      });
+    }
+    waitForElm('.goog-te-combo').then((elm) => {
+      // console.log('Element is ready');
+      start();
+    });
+  </script>
+
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <div id="news"></div>
+  <!-- news end -->
+  <!-- footer start -->
+  <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1 mt-4">
+    <div class="w-full md:w-4/5 lg:w-3/5 xl:w-1/2 2xl:w-2/5 mx-auto p-5 text-xs">
+      <div class="grid grid-cols-2 sm:grid-cols-[auto_auto_1fr] gap-6 sm:gap-4 text-stone-800">
+        <div class="">お問い合わせ<br />
+          TEL: (052)262-3366<br />
+          FAX: (052)262-3369<br />
+          EMAIL: school@aiaso.gr.jp
+        </div>
+        <div class="">受付時間：9:00 - 17:30<br />
+          休日：土曜日、日曜日、祝日</div>
+        <div class="col-span-2 sm:col-span-1">住所：〒460-0007<br />
+          本館：愛知県名古屋市中区新栄1-30-29<br />
+          別館：愛知県名古屋市中区新栄1-30-3
+        </div>
+      </div>
+      <hr class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700">
+      <div class="block sm:hidden mb-2 text-stone-800">SNS連絡方法：</div>
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-5 text-stone-800">
+        <div class="w-24 hidden sm:block">SNS連絡方法：</div>
+        <div class="flex">
+          <img src="../images/teams.png" class="size-6 m-1" />
+          <div><a href="https://teams.microsoft.com/l/chat/0/0?users=aiasoso" target="_blank" rel="noopener noreferrer">TEAMS<br />aiasoso</a></div>
+        </div>
+        <div class="flex">
+          <img src="../images/line.png" class="size-6 m-1" />
+          <div><a href="line://ti/p/aiajapanese">LINE<br />
+            aiajapanese</a></div>
+        </div>
+        <div class="flex">
+          <img src="../images/wechat.png" class="size-6 m-1" />
+          <div><a href="weixin://dl/chat?aia2623366">WeChat<br />aia2623366</a></div>
+        </div>
+        <div class="flex">
+          <img src="../images/fb.svg.webp" class="size-6 m-1" />
+          <div><a href="https://www.facebook.com/AIANagoya/" target="_blank">Facebook<br />AIANagoya</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center my-2"><a href="index.html">HOME</a> | <a href="sitemap.html">サイトマップ</a> | <a
+          href="policy.html">個人情報保護に関する方針</a> | <a href="privacy.html">プライバシーポリシー</a></div>
+      <div class="text-center my-2">Copyright© Aichi International Academy All Rights Reserved.</div>
+    </div>
+  </div>
+  <!-- footer end -->
+  <script src="../main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  <!-- Swiper JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Lightbox2 JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script>
+    // 初始化语言菜单功能
+    initLanguageMenu();
+    
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'disableScrolling': true,
+      'fitImagesInViewport': true
+    })
+  </script>
+</body>
+
+</html>

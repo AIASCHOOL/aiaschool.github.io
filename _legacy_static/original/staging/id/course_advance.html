@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    愛知国際学院 | 進学コース
+  </title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const removeWeekendColumns = (container) => {
+        const removeByIndexes = (nodes, indexes) => {
+          indexes
+            .slice()
+            .sort((a, b) => b - a)
+            .forEach((idx) => {
+              if (nodes[idx]) nodes[idx].remove();
+            });
+        };
+
+        container.querySelectorAll('table').forEach((table) => {
+          const colgroup = table.querySelector('colgroup');
+          if (colgroup) {
+            removeByIndexes(Array.from(colgroup.children), [7, 8]);
+          }
+
+          table.querySelectorAll('tr').forEach((row) => {
+            removeByIndexes(Array.from(row.children), [7, 8]);
+          });
+        });
+      };
+
+      document
+        .querySelectorAll('.remove-weekend-columns')
+        .forEach((section) => removeWeekendColumns(section));
+    });
+  </script>
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../gt.css" />
+</head>
+
+<body class="" onpageshow="translateTo('id')">
+  <!-- banner start -->
+  <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1">
+    <div class="flex items-center flex-row">
+      <div class="flex-grow "></div>
+      <img class="h-10 ml-0 mr-0 hidden md:block invisible" src="../images/35th.png" />
+      <a href="index.html" style="border: none;" class="h-10"><img class="h-10" src="../images/logo.png" /></a>
+      <a href="#" style="border: none;cursor: auto;" class="h-10"><img class="h-10" src="../images/35th.png" /></a>
+      <div class="flex-grow"></div>
+    </div>
+  </div>
+  <!-- banner end -->
+  <!-- menu start -->
+  <div class="bg-gradient-to-r from-blue-900 from-30% via-blue-400 via-50% to-blue-900 to-70%">
+    <header class='shadow-md '>
+      <div class='flex flex-wrap justify-center px-4 py-3 relative text-sm'>
+        <div id="toggle" class='flex ml-auto lg:order-1 lg:hidden mr-2 relative z-50'>
+          <button class='ml-7'>
+            <svg class="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <ul id="collapseMenu"
+          class='mx-auto lg:!flex lg:space-x-7 xl:space-x-10 max-lg:space-y-3 max-lg:hidden max-lg:w-full max-lg:my-4'>
+          <li class='max-lg:border-b max-lg:py-2'><a href='index.html'
+              class='hover:text-gray-300 text-white block'>最新ニュース</a></li>
+          <li class='group max-lg:border-b max-lg:py-2 relative'>
+            <a href='javascript:void(0)'
+              class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>学院について<svg
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block "
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                  data-name="16" data-original="#FFFFFF" />
+              </svg>
+            </a>
+            <ul
+              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[110px] z-50'>
+              <li class='border-b py-3'>
+                <a href='about_business.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  Ikhtisar Usaha
+                </a>
+              </li>
+              <li class='border-b pt-1 pb-3'><a href='about_facility.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  Fasilitas
+                </a>
+              </li>
+              <li class='pt-1 pb-1'><a href='about_publish.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  Informasi Publik
+                </a>
+              </li>
+              <!--<li class=' pt-1 pb-1'>
+                <a href='about_teacher.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  教師陣
+                </a>
+              </li>-->
+            </ul>
+          </li>
+          <!-- <li class='max-lg:border-b max-lg:py-2'><a href='message.html'
+              class='hover:text-gray-300 text-white block'>卒業生メッセージ</a></li> -->
+          <li class='max-lg:border-b max-lg:py-2'><a href='course_advance.html'
+              class='hover:text-gray-300 text-white block'>Program Lanjutan</a></li>
+          <!-- <li class='group max-lg:border-b max-lg:py-2 relative'>
+            <a href='javascript:void(0)'
+              class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>教育コース<svg
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block "
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                  data-name="16" data-original="#FFFFFF" />
+              </svg>
+            </a>
+            <ul
+              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[150px] z-50'>
+              <li class='border-b py-3'>
+                <a href='course_advance.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
+                  Program Lanjutan
+                </a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='course_junior.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Program Bersama Junior College
+                </a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='course_tour.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Program Studi Tur
+                </a>
+              </li>
+              <li class=' pt-1 pb-1'>
+                <a href='course_lecture.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Kursus Khusus
+                </a>
+              </li>
+            </ul>
+          </li> -->
+          <li class='group max-lg:border-b max-lg:py-2 relative'>
+            <a href='javascript:void(0)'
+              class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>学生生活<svg
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block "
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                  data-name="16" data-original="#FFFFFF" />
+              </svg>
+            </a>
+            <ul
+              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[110px] z-50'>
+              <li class='border-b py-3'>
+                <a href='life_dorm.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Asrama Siswa
+                </a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='life_insurance.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Asuransi Siswa
+                </a>
+              </li>
+              <li class=' pt-1 pb-1'>
+                <a href='life_visa.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Status Tinggal Siswa
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class='max-lg:border-b max-lg:py-2'><a href='books.html'
+              class='hover:text-gray-300 text-white block'>教育関連開発</a></li>
+          <li class='max-lg:border-b max-lg:py-2'><a href='access.html'
+              class='hover:text-gray-300 text-white block'>アクセス</a></li>
+        </ul>
+        <ul id="collapseMenu2" class=' max-lg:mt-1'>
+          <li class='group relative'>
+            <a href='javascript:void(0)' class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>
+              <svg class="w-5 h-5" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"
+                style="enable-background:new 0 0 120 120" xml:space="preserve">
+                <switch>
+                  <g>
+                    <path
+                      d="M60 120C26.9 120 0 93.1 0 60S26.9 0 60 0s60 26.9 60 60-26.9 60-60 60zM60 5C29.7 5 5 29.7 5 60s24.7 55 55 55 55-24.7 55-55S90.3 5 60 5z" />
+                    <path
+                      d="M60 120c-19.3 0-34.4-26.4-34.4-60S40.7 0 60 0s34.4 26.4 34.4 60-15.1 60-34.4 60zM60 5C43.8 5 30.5 29.7 30.5 60s13.2 55 29.5 55 29.5-24.7 29.5-55S76.2 5 60 5z" />
+                    <path d="M12.2 25.6h95.6v5H12.2zM12.2 89.5h95.6v5H12.2zM2.5 57.5h115v5H2.5z" />
+                    <path d="M57.5 2.5h5v115h-5z" />
+                  </g>
+                </switch>
+              </svg>
+            </a>
+            <ul
+              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 lg:top-5 max-md:top-5 -left-28 min-w-[130px] z-50 notranslate'>
+              <li class='border-b py-3'>
+                <a href='../index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>日本語</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../en/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>English</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../cn/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>中国語（簡体）</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../tw/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>中国語（繁体）</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../ko/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>한국어</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../vi/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Tiếng
+                  Việt</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../th/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>ภาษาไทย</a>
+              </li>
+              <li class='border-b pt-1 pb-3'>
+                <a href='../id/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Indonesia</a>
+              </li>
+              <li class='pt-1 pb-1'>
+                <a href='../np/index.html'
+                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>नेपाली</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </header>
+  </div>
+  <!-- menu end -->
+  <!-- title bar start -->
+  <div class="relative flex mx-auto min-h-28 max-h-32">
+    <img class="w-full object-cover object-center" src="../images/6-ADVANCE_STUDY.jpg" />
+    <div class="absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center ">
+      <h3 class="text-white text-3xl font-bold">進学コース</h3>
+    </div>
+    <div class="absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center ">
+      <p class="text-white italic text-xs sm:text-base">大学院 ・ 大学 ・ 短期大学 ・ 専門学校</p>
+    </div>
+  </div>
+  <div class="">
+    <img class="w-full" src="../images/advance_bar.png" />
+  </div>
+  <!-- title bar end -->
+  <!-- main start -->
+
+  <div class="w-full bg-[#FFFAEB]">
+    <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-3 mt-1 ">
+      <div class="flex flex-col sm:flex-row">
+        <div class="relative h-10 w-36 flex-shrink-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
+          </div>
+          <div class="absolute top-1 left-8 text-white italic text-lg">教育目標</div>
+        </div>
+        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">国際人材を育成し、世界の舞台で活躍を</div>
+      </div>
+      <div class="bg-gradient-to-br from-[#D2FFFF] to-[#7C9999] my-2 p-5 text-sm leading-6 ">
+        日本の専門学校、大学、大学院への進学をめざす外国人留学生を対象として、その学習、研究の基礎として役立つ総合的な日本語能力を身につけさせる。また、日本社会での生活に必要な社会常識や習慣・文化などの教養を育み、日本国内外の社会にも寄与できる国際的視野を有する幅広い人材を育成する。
+      </div>
+      <div class="flex flex-col sm:flex-row">
+        <div class="relative h-10 w-36 flex-shrink-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
+          </div>
+          <div class="absolute top-1 left-5 text-white italic text-lg">コース設置</div>
+        </div>
+        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">４月入学の春期生は2年、１０月入学の秋期生は1年6か月のコース</div>
+      </div>
+      <div class="my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
+        ・ 2年進学コース：4月入学，翌々年3月卒業。授業時間：約1,520時間<br />
+        ・ 1年6か月進学コース：10月入学，翌々年3月卒業。授業時間：約1,140時間
+
+        <div class="mt-6 overflow-x-auto">
+          <table class="w-full text-xs border-collapse text-center">
+            <thead>
+              <tr class="bg-[#b8d4d4] font-semibold">
+                <th class="border border-gray-500 px-3 py-1 text-left" colspan="2"></th>
+                <th class="border border-gray-500 px-3 py-1">1学期</th>
+                <th class="border border-gray-500 px-3 py-1">2学期</th>
+                <th class="border border-gray-500 px-3 py-1">3学期</th>
+                <th class="border border-gray-500 px-3 py-1">4学期</th>
+                <th class="border border-gray-500 px-3 py-1">5学期</th>
+                <th class="border border-gray-500 px-3 py-1">6学期</th>
+                <th class="border border-gray-500 px-3 py-1">7学期</th>
+                <th class="border border-gray-500 px-3 py-1">8学期</th>
+                <th class="border border-gray-500 px-2 py-1"></th>
+                <th class="border border-gray-500 px-2 py-1">授業時間</th>
+              </tr>
+              <tr class="bg-[#dff0f0] text-[11px]">
+                <td class="border border-gray-500" colspan="2"></td>
+                <td class="border border-gray-500 py-0.5">4月</td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500 py-0.5">4月</td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500 py-0.5">3月</td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-[#dff0f0]">
+                <td class="border border-gray-500 px-3 py-3 text-left font-semibold whitespace-nowrap">2年進学コース</td>
+                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">入学</td>
+                <td class="border border-gray-500 py-3 font-bold bg-sky-400 text-white">A1</td>
+                <td class="border border-gray-500 py-3 font-bold bg-green-400 text-white">A2</td>
+                <td class="border border-gray-500 py-3 font-bold bg-yellow-300 text-gray-800">B1</td>
+                <td class="border border-gray-500 py-3 font-bold bg-yellow-300 text-gray-800">B1</td>
+                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">卒業</td>
+                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">1,520時間</td>
+              </tr>
+
+              <tr><td colspan="12" class="h-3 border-none bg-transparent"></td></tr>
+
+              <tr class="bg-[#b8d4d4] font-semibold text-[11px]">
+                <td colspan="4" class="border-none bg-transparent"></td>
+                <td class="border border-gray-500 px-3 py-1">1学期</td>
+                <td class="border border-gray-500 px-3 py-1">2学期</td>
+                <td class="border border-gray-500 px-3 py-1">3学期</td>
+                <td class="border border-gray-500 px-3 py-1">4学期</td>
+                <td class="border border-gray-500 px-3 py-1">5学期</td>
+                <td class="border border-gray-500 px-3 py-1">6学期</td>
+                <td colspan="2" class="border-none bg-transparent"></td>
+              </tr>
+              <tr class="bg-[#dff0f0] text-[11px]">
+                <td colspan="4" class="border-none bg-transparent"></td>
+                <td class="border border-gray-500 py-0.5">10月</td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500 py-0.5">4月</td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500 py-0.5">3月</td>
+                <td colspan="2" class="border-none bg-transparent"></td>
+              </tr>
+
+              <tr class="bg-[#dff0f0]">
+                <td class="border border-gray-500 px-3 py-3 text-left font-semibold whitespace-nowrap">1年6か月進学コース</td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500"></td>
+                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">入学</td>
+                <td class="border border-gray-500 py-3 font-bold bg-green-400 text-white">A2</td>
+                <td class="border border-gray-500 py-3 font-bold bg-yellow-300 text-gray-800">B1</td>
+                <td class="border border-gray-500 py-3 font-bold bg-yellow-300 text-gray-800">B1</td>
+                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                <td class="border border-gray-500 py-3 font-bold bg-orange-400 text-white">B2</td>
+                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">卒業</td>
+                <td class="border border-gray-500 px-2 py-3 whitespace-nowrap">1,140時間</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row">
+        <div class="relative h-10 w-36 flex-shrink-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
+          </div>
+          <div class="absolute top-1 left-5 text-white italic text-lg">コース特徴</div>
+        </div>
+      </div>
+      <div class="w-full bg-[#e6f2f2] p-4 my-4 relative">
+        <style>
+          .circle-container {
+            position: relative;
+          }
+
+          .circle-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: calc(50% + 16px);
+            width: calc(100% - 32px);
+            height: 8px;
+            background-color: white;
+            transform: translateY(-50%);
+            z-index: 0;
+          }
+
+          .circle-container:last-child::before {
+            display: none;
+          }
+        </style>
+
+        <div class="flex flex-wrap md:flex-nowrap justify-center gap-1">
+          <div class="w-[30%] md:w-1/6 circle-container">
+            <div
+              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
+              <div class="text-center text-sm font-bold text-blue-900">進学のためのカリキュラム</div>
+            </div>
+          </div>
+
+          <div class="w-[30%] md:w-1/6 circle-container">
+            <div
+              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
+              <div class="text-center text-sm font-bold text-blue-900">マルチメディアを活用した語学教育</div>
+            </div>
+          </div>
+
+          <div class="w-[30%] md:w-1/6 circle-container">
+            <div
+              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
+              <div class="text-center text-sm font-bold text-blue-900">語学力レベルによる能力クラス編成</div>
+            </div>
+          </div>
+
+          <div class="w-[30%] md:w-1/6 circle-container">
+            <div
+              class="w-32 h-32 rounded-full bg-white border-4 border-white shadow-lg mx-auto flex flex-col justify-center items-center p-1 relative z-10">
+              <div class="text-center text-sm font-bold text-blue-900">入学から卒業まで徹底した進学サポート</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row">
+        <div class="relative h-10 w-36 flex-shrink-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
+          </div>
+          <div class="absolute top-1 left-8 text-white italic text-lg">授業概要</div>
+        </div>
+        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">講義と演習を分けた授業</div>
+      </div>
+      <div class="my-2 p-5 leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999] text-sm">
+        <!-- <div class="flex flex-col sm:flex-row">
+          <div class="relative flex-shrink-0">
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
+            <div class="absolute top-4 left-4 text-xs">授業科目と内容</div>
+          </div>
+          <div class="mt-3 mb-5">日本語による文法・演習・会話・聴解・読解・作文 (日本語能力試験対策・進学指導等を授業内容に含む)。</div>
+        </div> -->
+        <!-- <div class="flex flex-col sm:flex-row">
+          <div class="relative flex-shrink-0">
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
+            <div class="absolute top-3 left-7">選択科目</div>
+          </div>
+          <div class="mt-3 mb-5">
+            <div class="grid grid-cols-1 gap-4 max-w-[1200px] mx-auto">
+              <div class="bg-white w-80 rounded-md p-3 ">
+                日本留学試験対策講座<br />
+                　＊ 文系 : 数学１　/　総合科目<br />
+                　＊ 理系 : 数学2　/　物理　/　化学　/　生物
+              </div>
+              <div class="bg-white w-80 rounded-md p-3">
+                特定技能測定対策講座<br />
+                外食　*宿泊　*介護　*自動車整備　*ビルクリーニング　飲食品製造　*電気電子　*建設　*造船　*農業　*機械　航空　*素材　*漁業等のような職種。
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="flex flex-col sm:flex-row">
+          <div class="relative flex-shrink-0">
+            <div class="relative w-28 h-10">
+              <div class="absolute inset-0 bg-amber-200 rounded-[80%] border-4 border-white"></div>
+              <div class="absolute top-2 left-7 text-black">授業時間</div>
+            </div>
+          </div>
+          <div class="mt-3 sm:mt-0 sm:ml-4">
+            ・ 午前クラス　8：50　～　12：20　　　午後クラス　13：00　～　16：30　　一コース45分<br />
+            ・ 2年進学コース：７８週 （1,520 時間）<br />
+            ・ 1年6か月進学コース：５９週 （1,140 時間）<br />
+            授業日　月曜日～金曜日　　　※ただし祝祭日は休講
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row">
+          <div class="relative flex-shrink-0">
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
+            <div class="absolute top-3 left-7">休　　業</div>
+          </div>
+          <div class="mt-3 mb-5">夏休み ： 約30日、　冬休み ： 約14日、　春休み ： 約30日</div>
+        </div>
+        <div class="flex flex-col sm:flex-row">
+          <div class="relative flex-shrink-0">
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
+            <div class="absolute top-3 left-7">授業内容</div>
+          </div>
+          <div class="mt-3 mb-5 w-full md:w-[640px]">
+            <div class="mx-auto space-y-8">
+              <!-- 2年進学コース -->
+              <div class="border rounded-lg overflow-hidden remove-weekend-columns">
+                <div class="bg-[#009999] text-white text-center py-2 font-bold">2年進学コース</div>
+                <div class="overflow-x-auto">
+                  <!-- 初級前期 -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">初級前期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">月</th>
+                      <th class="border px-1 py-1 w-16 text-center">火</th>
+                      <th class="border px-1 py-1 w-16 text-center">水</th>
+                      <th class="border px-1 py-1 w-16 text-center">木</th>
+                      <th class="border px-1 py-1 w-16 text-center">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                  </table>
+                  <!-- 初級後期 -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">初級後期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">月</th>
+                      <th class="border px-1 py-1 w-16 text-center">火</th>
+                      <th class="border px-1 py-1 w-16 text-center">水</th>
+                      <th class="border px-1 py-1 w-16 text-center">木</th>
+                      <th class="border px-1 py-1 w-16 text-center">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                    </tr>
+                  </table>
+                  <!-- 中級前期 -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">中級前期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">月</th>
+                      <th class="border px-1 py-1 w-16 text-center">火</th>
+                      <th class="border px-1 py-1 w-16 text-center">水</th>
+                      <th class="border px-1 py-1 w-16 text-center">木</th>
+                      <th class="border px-1 py-1 w-16 text-center">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                  </table>
+                  <!-- 中級後期 -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">中級後期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">月</th>
+                      <th class="border px-1 py-1 w-16 text-center">火</th>
+                      <th class="border px-1 py-1 w-16 text-center">水</th>
+                      <th class="border px-1 py-1 w-16 text-center">木</th>
+                      <th class="border px-1 py-1 w-16 text-center">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                    </tr>
+                  </table>
+                  <!-- 上級１ -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">上級１</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">月</th>
+                      <th class="border px-1 py-1 w-16 text-center">火</th>
+                      <th class="border px-1 py-1 w-16 text-center">水</th>
+                      <th class="border px-1 py-1 w-16 text-center">木</th>
+                      <th class="border px-1 py-1 w-16 text-center">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                  </table>
+                  <!-- 上級２ -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">上級２</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">月</th>
+                      <th class="border px-1 py-1 w-16 text-center">火</th>
+                      <th class="border px-1 py-1 w-16 text-center">水</th>
+                      <th class="border px-1 py-1 w-16 text-center">木</th>
+                      <th class="border px-1 py-1 w-16 text-center">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                    </tr>
+                  </table>
+                  <!-- 上級３ -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">上級３</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">月</th>
+                      <th class="border px-1 py-1 w-16 text-center">火</th>
+                      <th class="border px-1 py-1 w-16 text-center">水</th>
+                      <th class="border px-1 py-1 w-16 text-center">木</th>
+                      <th class="border px-1 py-1 w-16 text-center">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                  </table>
+                  <!-- 上級４ -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">上級４</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">月</th>
+                      <th class="border px-1 py-1 w-16 text-center">火</th>
+                      <th class="border px-1 py-1 w-16 text-center">水</th>
+                      <th class="border px-1 py-1 w-16 text-center">木</th>
+                      <th class="border px-1 py-1 w-16 text-center">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+
+              <!-- 1年6か月進学コース -->
+              <div class="border rounded-lg overflow-hidden remove-weekend-columns">
+                <div class="bg-[#009999] text-white text-center py-2 font-bold">1年6か月進学コース</div>
+                <div class="overflow-x-auto">
+                
+                  <!-- 初級後期 -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">初級後期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">月</th>
+                      <th class="border px-1 py-1 w-16 text-center">火</th>
+                      <th class="border px-1 py-1 w-16 text-center">水</th>
+                      <th class="border px-1 py-1 w-16 text-center">木</th>
+                      <th class="border px-1 py-1 w-16 text-center">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                  </table>
+                  <!-- 中級前期 -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">中級前期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">月</th>
+                      <th class="border px-1 py-1 w-16 text-center">火</th>
+                      <th class="border px-1 py-1 w-16 text-center">水</th>
+                      <th class="border px-1 py-1 w-16 text-center">木</th>
+                      <th class="border px-1 py-1 w-16 text-center">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                  </table>
+                  <!-- 中級後期 -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">中級後期</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">月</th>
+                      <th class="border px-1 py-1 w-16 text-center">火</th>
+                      <th class="border px-1 py-1 w-16 text-center">水</th>
+                      <th class="border px-1 py-1 w-16 text-center">木</th>
+                      <th class="border px-1 py-1 w-16 text-center">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                  </table>
+                  <!-- 上級１ -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">上級１</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">月</th>
+                      <th class="border px-1 py-1 w-16 text-center">火</th>
+                      <th class="border px-1 py-1 w-16 text-center">水</th>
+                      <th class="border px-1 py-1 w-16 text-center">木</th>
+                      <th class="border px-1 py-1 w-16 text-center">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：00～13：45</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">13：55～14：40</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">14：50～15：35</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">15：45～16：30</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                    </tr>
+                  </table>
+                  <!-- 上級２ -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">上級２</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">月</th>
+                      <th class="border px-1 py-1 w-16 text-center">火</th>
+                      <th class="border px-1 py-1 w-16 text-center">水</th>
+                      <th class="border px-1 py-1 w-16 text-center">木</th>
+                      <th class="border px-1 py-1 w-16 text-center">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                    </tr>
+                  </table>
+                  <!-- 上級３ -->
+                  <table class="table-fixed w-full min-w-[640px] text-xs mt-1">
+                    <colgroup>
+                      <col class="w-12" />
+                      <col class="w-36" />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">レベル設定</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">上級３</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">時間</th>
+                      <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">曜日</th>
+                    </tr>
+                    <tr class="bg-gray-100">
+                      <th class="border px-1 py-1 w-16 text-center">月</th>
+                      <th class="border px-1 py-1 w-16 text-center">火</th>
+                      <th class="border px-1 py-1 w-16 text-center">水</th>
+                      <th class="border px-1 py-1 w-16 text-center">木</th>
+                      <th class="border px-1 py-1 w-16 text-center">金</th>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">1</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">8：50～9：35</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">2</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">9：45～10：30</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">総合日本語</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">3</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">10：40～11：25</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">聴解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                    </tr>
+                    <tr>
+                      <td class="border px-1 py-1 text-center">4</td>
+                      <td class="border px-1 py-1 text-center whitespace-nowrap">11：35～12：20</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">読解</td>
+                      <td class="border px-1 py-1 text-center">表現文法</td>
+                      <td class="border px-1 py-1 text-center">作文</td>
+                      <td class="border px-1 py-1 text-center">発表</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row">
+        <div class="relative h-10 w-36 flex-shrink-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
+          </div>
+          <div class="absolute top-1 left-8 text-white italic text-lg">進路選択</div>
+        </div>
+        <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">本学院卒業後、多様な進路の選択肢がある</div>
+      </div>
+      <div class=" my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
+        <div class="flex flex-col sm:flex-row">
+          <div class="relative flex-shrink-0">
+            <img src="../images/btn_ellipse_9.png" class="h-12 w-48" />
+            <div class="absolute top-3 left-8">専門学校、短大進学</div>
+          </div>
+          <div class="mt-3 mb-5">日本語能力試験（JLPT）Ｎ３以上の合格者</div>
+        </div>
+        <div class="flex flex-col sm:flex-row">
+          <div class="relative flex-shrink-0">
+            <img src="../images/btn_ellipse_9.png" class="h-12 w-48" />
+            <div class="absolute top-3 left-10">大学、大学院進学</div>
+          </div>
+          <div class="mt-3 mb-5">外国人日本語試験（JLPT）Ｎ２以上の合格者</div>
+        </div>
+        <div class="flex flex-col sm:flex-row">
+          <div class="relative flex-shrink-0">
+            <img src="../images/btn_ellipse_9.png" class="h-12 w-48" />
+            <div class="absolute top-3 left-12">日本企業に就職</div>
+          </div>
+          <div class="mt-3 mb-5">外国人日本語試験（JLPT）Ｎ１以上合格、且つ母国での大学卒業者</div>
+        </div>
+        <div class="flex flex-col sm:flex-row">
+          <div class="relative flex-shrink-0">
+            <img src="../images/btn_ellipse_9.png" class="h-12 w-48" />
+            <div class="absolute top-3 left-12">日本企業に就労</div>
+          </div>
+          <div class="mt-3 mb-5">外国人日本語試験（JLPT）Ｎ４以上合格及び、就労技能測定試験合格者</div>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row">
+        <div class="relative h-10 w-36 flex-shrink-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
+          </div>
+          <div class="absolute top-1 left-8 text-white italic text-lg">学費明細</div>
+        </div>
+        <!-- <div class="pt-2 text-[red] italic font-serif mt-2 sm:mt-0 ml-2">特別な事情がない限り、基本的に在留期間の更新前に一括払い</div> -->
+      </div>
+      <div class=" my-2 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
+        <table class="border-collapse border border-slate-500 w-full text-xs md:text-sm">
+          <thead>
+            <tr class="bg-[#009999] text-white">
+              <th class="border border-slate-600">項目／区分</th>
+              <th class="border border-slate-600">選考料</th>
+              <th class="border border-slate-600">入学金</th>
+              <th class="border border-slate-600">雑費</th>
+              <th class="border border-slate-600">学費<br>第一学年</th>
+              <th class="border border-slate-600">一年目合計</th>
+              <th class="border border-slate-600">学費<br>第二学年</th>
+              <th class="border border-slate-600 bg-blue-800">一年目＆二年目<br>費用合計</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white">
+              <td class="border border-slate-700 text-center font-bold">1年6か月コース</td>
+              <td class="border border-slate-700 text-center">¥22,000</td>
+              <td class="border border-slate-700 text-center">¥88,000</td>
+              <td class="border border-slate-700 text-center">¥93,000</td>
+              <td class="border border-slate-700 text-center">¥726,000</td>
+              <td class="border border-slate-700 text-center">¥929,000</td>
+              <td class="border border-slate-700 text-center">¥363,000<br><span class="text-xs text-gray-500">（半年分）</span></td>
+              <td class="border border-slate-700 text-center">¥1,292,000</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="border border-slate-700 text-center font-bold">2年コース</td>
+              <td class="border border-slate-700 text-center">¥22,000</td>
+              <td class="border border-slate-700 text-center">¥88,000</td>
+              <td class="border border-slate-700 text-center">¥109,000</td>
+              <td class="border border-slate-700 text-center">¥726,000</td>
+              <td class="border border-slate-700 text-center">¥945,000</td>
+              <td class="border border-slate-700 text-center">¥726,000<br><span class="text-xs text-gray-500">（一年分）</span></td>
+              <td class="border border-slate-700 text-center">¥1,671,000</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-700 text-center font-bold">納付期限</td>
+              <td class="border border-slate-700 text-center">出願時</td>
+              <td class="border border-slate-700 text-center" colspan="2">申請結果通知後２週間以内</td>
+              <td class="border border-slate-700 text-center" colspan="2"></td>
+              <td class="border border-slate-700 text-center" colspan="2">在留期間更新前</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="text-xs text-gray-700 mt-2">
+          ※雑費内訳：教材費、健康管理費、校外学習費、団体保険料<br>
+          <span class="font-bold">一カ月の生活費について：</span>
+          食費15,000円～　光熱費8,000円～　携帯電話料金5,000円～　雑費5,000円～
+        </div>
+      </div>
+      <div class="relative h-10 w-36 flex-shrink-0">
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron">
+        </div>
+        <div class="absolute top-1 left-8 text-white italic text-lg">入学出願</div>
+      </div>
+      <div class="mt-2 mb-10 p-5 text-sm leading-6 bg-gradient-to-br from-[#D2FFFF] to-[#7C9999]">
+        <div class="flex flex-col sm:flex-row">
+          <div class="relative flex-shrink-0">
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
+            <div class="absolute top-3 left-7">募集対象</div>
+          </div>
+          <div class="mt-3 flex-1">外国人留学生</div>
+        </div>
+        <div class="flex flex-col sm:flex-row my-2">
+          <div class="relative flex-shrink-0">
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
+            <div class="absolute top-3 left-7">出願資格</div>
+          </div>
+          <div class="mt-1 flex-1">❶ 本国において、通常の教育課程による12年以上の学校教育を修了した者、またはそれと同等の学力があると認められる者。<br />
+            ❷ 心身健康、勉学意思が確かで、かつ留学費用負担能力がある者。</div>
+        </div>
+        <div class="flex flex-col sm:flex-row my-2">
+          <div class="relative flex-shrink-0">
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
+            <div class="absolute top-3 left-7">出願期間</div>
+          </div>
+          <div class="mt-1 flex-1">2年進学コース　　（4月入学）　毎年11月20日まで（出入国在留管理局提出期限12月上旬頃）<br />
+            1年6か月進学コース （10月入学）　毎年 5月20日まで（出入国在留管理局提出期限 6月中旬頃）</div>
+        </div>
+        <div class="flex flex-col sm:flex-row my-2">
+          <div class="relative flex-shrink-0">
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
+            <div class="absolute top-3 left-7">在留資格</div>
+          </div>
+          <div class="mt-1 flex-1">出願後、本学院が日本出入国在留管理庁に留学資格の交付を申請し、一回目は一年3カ月の在留期間を有し、さらに二回目に残りの学習期間の延長が可能。</div>
+        </div>
+        <div class="flex flex-col sm:flex-row my-2">
+          <div class="relative flex-shrink-0">
+            <img src="../images/btn_ellipse_2-3_2.png" class="h-12 w-28" />
+            <div class="absolute top-3 left-7">出願方法</div>
+          </div>
+          <div class="mt-1 flex-1">
+            本人又は代理人が入学願書、連絡表及びパスポート写し、IDカード写し或いは出生証明書等の該当するもののいずれか一つを添えて、メール送信、郵送、または本校事務局に申し込んでください。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- main end -->
+  <!-- footer start -->
+  <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1 mt-0">
+    <div class="w-full md:w-4/5 lg:w-3/5 xl:w-1/2 2xl:w-2/5 mx-auto p-5 text-xs">
+      <div class="grid grid-cols-2 sm:grid-cols-[auto_auto_1fr] gap-6 sm:gap-4 text-stone-800">
+        <div class="">お問い合わせ<br />
+          TEL: (052)262-3366<br />
+          FAX: (052)262-3369<br />
+          EMAIL: school@aiaso.gr.jp
+        </div>
+        <div class="">受付時間：9:00 - 17:30<br />
+          休日：土曜日、日曜日、祝日</div>
+        <div class="col-span-2 sm:col-span-1">住所：〒460-0007<br />
+          本館：愛知県名古屋市中区新栄1-30-29<br />
+          別館：愛知県名古屋市中区新栄1-30-3
+        </div>
+      </div>
+      <hr class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700">
+      <div class="block sm:hidden mb-2 text-stone-800">SNS連絡方法：</div>
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-5 text-stone-800">
+        <div class="w-24 hidden sm:block">SNS連絡方法：</div>
+        <div class="flex">
+          <img src="../images/teams.png" class="size-6 m-1" />
+          <div><a href="https://teams.microsoft.com/l/chat/0/0?users=aiasoso" target="_blank" rel="noopener noreferrer">TEAMS<br />aiasoso</a></div>
+        </div>
+        <div class="flex">
+          <img src="../images/line.png" class="size-6 m-1" />
+          <div><a href="line://ti/p/aiajapanese">LINE<br />
+            aiajapanese</a></div>
+        </div>
+        <div class="flex">
+          <img src="../images/wechat.png" class="size-6 m-1" />
+          <div><a href="weixin://dl/chat?aia2623366">WeChat<br />aia2623366</a></div>
+        </div>
+        <div class="flex">
+          <img src="../images/fb.svg.webp" class="size-6 m-1" />
+          <div><a href="https://www.facebook.com/AIANagoya/" target="_blank">Facebook<br />AIANagoya</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center my-2"><a href="index.html">HOME</a> | <a href="sitemap.html">サイトマップ</a> | <a
+          href="policy.html">個人情報保護に関する方針</a> | <a href="privacy.html">プライバシーポリシー</a></div>
+      <div class="text-center my-2">Copyright© Aichi International Academy All Rights Reserved.</div>
+    </div>
+  </div>
+  <!-- footer end -->
+  <script src="../main.js"></script>
+  <div id="google_translate_element" style="display: none;"></div>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'jp' }, 'google_translate_element');
+    }
+
+    function hideGoogleTranslateBar() {
+      var element = document.querySelector("#\\:1\\.container");
+      if (element) {
+        element.style.visibility = "hidden";
+      }
+    }
+
+    hideGoogleTranslateBar();
+
+    function translateTo(language) {
+      var selectField = document.querySelector("select.goog-te-combo");
+      if (selectField) {
+        selectField.value = language;
+        selectField.dispatchEvent(new Event('change'));
+        setTimeout(hideGoogleTranslateBar, 100);
+      }
+    }
+
+    function waitForElm(selector) {
+      return new Promise(resolve => {
+        if (document.querySelector(selector)) {
+          return resolve(document.querySelector(selector));
+        }
+
+        const observer = new MutationObserver(mutations => {
+          if (document.querySelector(selector)) {
+            observer.disconnect();
+            resolve(document.querySelector(selector));
+          }
+        });
+
+        // If you get "parameter 1 is not of type 'Node'" error, see https://stackoverflow.com/a/77855838/492336
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+      });
+    }
+    waitForElm('.goog-te-combo').then((elm) => {
+      translateTo('id');
+    });
+  </script>
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

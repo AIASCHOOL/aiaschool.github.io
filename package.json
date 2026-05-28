@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "migrate": "node scripts/migrate-to-11ty.mjs",
+    "sync:i18n": "node scripts/extract-home-pages.mjs && node scripts/extract-block-pages.mjs && node scripts/extract-staging-course-advance.mjs && node scripts/translate-json-content.mjs",
+    "import:legacy": "node scripts/migrate-to-11ty.mjs --from-legacy && npm run sync:i18n",
+    "build": "eleventy",
+    "rebuild": "npm run sync:i18n && npm run build"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5",
+    "jsdom": "^29.1.1"
+  }
+}

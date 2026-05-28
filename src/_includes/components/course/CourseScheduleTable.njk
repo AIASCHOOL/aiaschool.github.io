@@ -1,0 +1,29 @@
+<table class="{{ table.className }}">
+  <colgroup>
+    {% for colClass in table.colClasses %}
+      <col{% if colClass %} class="{{ colClass }}"{% endif %} />
+    {% endfor %}
+  </colgroup>
+  <tr class="bg-gray-100">
+    <th class="border px-1 py-1 bg-slate-200 text-center font-bold" colspan="2">{{ table.levelLabel }}</th>
+    <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">{{ table.level }}</th>
+  </tr>
+  <tr class="bg-gray-100">
+    <th class="border px-1 py-1 bg-slate-200 text-center font-bold" rowspan="2" colspan="2">{{ table.timeLabel }}</th>
+    <th class="border px-1 py-1 bg-slate-300 text-center font-bold" colspan="5">{{ table.dayLabel }}</th>
+  </tr>
+  <tr class="bg-gray-100">
+    {% for day in table.days %}
+      <th class="border px-1 py-1 w-16 text-center">{{ day }}</th>
+    {% endfor %}
+  </tr>
+  {% for row in table.rows %}
+    <tr>
+      <td class="border px-1 py-1 text-center">{{ row.period }}</td>
+      <td class="border px-1 py-1 text-center whitespace-nowrap">{{ row.time }}</td>
+      {% for subject in row.subjects %}
+        <td class="border px-1 py-1 text-center">{{ subject }}</td>
+      {% endfor %}
+    </tr>
+  {% endfor %}
+</table>

@@ -1,0 +1,109 @@
+{% set currentPageKey = pageKey or route.pageKey %}
+{% set currentLocaleData = localeData or route.locale %}
+{% set currentAssetPrefix = assetPrefix or route.assetPrefix %}
+{% set currentNewsTranslate = route.newsTranslate %}
+<!DOCTYPE html>
+<html lang="{{ langAttr or route.locale.langAttr }}">
+
+<head>
+  <meta charset="utf-8" />
+  <title>{{ currentPageKey | pageTitle(currentLocaleData, site.title) }}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="{{ currentAssetPrefix }}favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="{{ currentAssetPrefix }}favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet" />
+  {% if currentPageKey == "index" %}
+  <script type="text/javascript" src="https://unpkg.com/parse@1.11.1/dist/parse.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="{{ currentAssetPrefix }}parse.js"></script>
+  {% endif %}
+  <link rel="stylesheet" href="{{ currentAssetPrefix }}main.css" />
+  <link rel="stylesheet" href="{{ currentAssetPrefix }}gt.css" />
+  <link rel="stylesheet" href="{{ currentAssetPrefix }}site.css?v=20260528-shared" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="">
+{% include route.appLayout %}
+<button
+  id="backToTopButton"
+  type="button"
+  class="fixed bottom-5 right-5 z-[9999] flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white shadow-lg transition duration-200 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-300"
+  aria-label="{{ currentLocaleData.footer.backToTop }}"
+  title="{{ currentLocaleData.footer.backToTop }}">
+  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 5l-7 7m7-7 7 7M12 5v14" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+</button>
+<script src="{{ currentAssetPrefix }}site.js?v=20260528-back-to-top"></script>
+{% if currentPageKey == "index" %}
+<script>
+  window.AIASCHOOL_LOCALE = "{{ currentLocaleData.code }}";
+  window.AIASCHOOL_NEWS_I18N = {{ currentLocaleData.news | json | safe }};
+</script>
+<script src="{{ currentAssetPrefix }}main.js?v=20260528-carousel"></script>
+<script src="{{ currentAssetPrefix }}menu.js?v=20260528-links"></script>
+{% else %}
+<script src="{{ currentAssetPrefix }}menu.js?v=20260528-links"></script>
+{% endif %}
+{% if currentPageKey == "index" %}
+{% if currentNewsTranslate %}
+<script>
+  window.__AIASCHOOL_GOOGLE_TRANSLATE_TARGET = "{{ currentLocaleData.google }}";
+
+  function applyGoogleNewsTranslate(attempts) {
+    var target = window.__AIASCHOOL_GOOGLE_TRANSLATE_TARGET;
+    if (!target || target === "ja") return;
+
+    var selectField = document.querySelector("select.goog-te-combo");
+    var hasTargetOption = selectField && Array.from(selectField.options).some(function(option) {
+      return option.value === target;
+    });
+
+    if (selectField && hasTargetOption) {
+      selectField.value = target;
+      selectField.dispatchEvent(new Event("change", { bubbles: true }));
+      return;
+    }
+
+    if (attempts > 0) {
+      setTimeout(function() {
+        applyGoogleNewsTranslate(attempts - 1);
+      }, 500);
+    }
+  }
+
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'ja' }, 'google_translate_element');
+    applyGoogleNewsTranslate(30);
+  }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+{% endif %}
+<script>
+  start({% if currentNewsTranslate %}'{{ currentLocaleData.google }}'{% else %}'ja'{% endif %});
+{% if currentNewsTranslate %}
+  applyGoogleNewsTranslate(30);
+{% endif %}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script>
+  lightbox.option({
+    resizeDuration: 200,
+    wrapAround: true,
+    disableScrolling: true,
+    fitImagesInViewport: true
+  });
+</script>
+{% endif %}
+</body>
+
+</html>

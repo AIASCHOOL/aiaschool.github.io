@@ -1,0 +1,30 @@
+{% set scopePages = staging if route.scope == "staging" else root %}
+{% set pageContent = scopePages[route.pageKey][route.locale.code] or scopePages[route.pageKey].ja %}
+<!-- title bar start -->
+{% set heroClassName = pageContent.hero.className %}
+{% set heroImage = pageContent.hero.image %}
+{% set heroImageClassName = pageContent.hero.imageClassName %}
+{% set heroTitleWrapperClassName = pageContent.hero.titleWrapperClassName %}
+{% set heroTitleClassName = pageContent.hero.titleClassName %}
+{% set heroTitle = pageContent.hero.titleHtml %}
+{% set heroSubtitleWrapperClassName = pageContent.hero.subtitleWrapperClassName %}
+{% set heroSubtitleClassName = pageContent.hero.subtitleClassName %}
+{% set heroSubtitle = pageContent.hero.subtitleHtml %}
+{% include "components/ui/PageHero.njk" %}
+{% if pageContent.afterHeroHtml %}
+  {{ pageContent.afterHeroHtml | replace("__ASSET__", route.assetPrefix) | safe }}
+{% endif %}
+<!-- title bar end -->
+
+<!-- main start -->
+<div class="{{ pageContent.mainClassName }}">
+  {% for block in pageContent.blocks %}
+    {% if block.type == "section" %}
+      {{ block.labelHtml | replace("__ASSET__", route.assetPrefix) | safe }}
+      {{ block.bodyHtml | replace("__ASSET__", route.assetPrefix) | safe }}
+    {% else %}
+      {{ block.html | replace("__ASSET__", route.assetPrefix) | safe }}
+    {% endif %}
+  {% endfor %}
+</div>
+<!-- main end -->

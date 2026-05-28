@@ -1,0 +1,18 @@
+<div class="bg-opacity-15 bg-[#7F1CE2] my-2 px-5 py-2 text-sm leading-6">
+  <div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left text-gray-500 my-5">
+      <tbody>
+        {% for item in documentItems %}
+          <tr class="bg-white{% if not loop.last %} border-b{% endif %}">
+            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-normal md:whitespace-nowrap w-2/3">
+              {{ item.label }}
+            </th>
+            <td class="px-6 py-4">
+              <a href="{{ route.assetPrefix }}files/{{ item.file }}" target="_blank" rel="noopener">pdf</a>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

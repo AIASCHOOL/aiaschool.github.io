@@ -1,0 +1,245 @@
+{
+  "ja": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/11-STUDENT_INSURANCE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "学生保険",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "国民健康保険 / 外国人向け総合保険"
+    },
+    "afterHeroHtml": "<div class=\"bg-orange-200 p-5 mb-5 text-xs\">\n    学生が安心して勉強できる環境作り事故、死亡、障害、病気などの高額費用負担を保障軽減するため、学生全員、国民健康保険及び保険に加入します\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/11/BUTTON-11_subtitle.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-4 text-white italic text-lg\">国民健康保険</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">安心して勉強できる環境づくり</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-2\">\n      <p class=\"mx-5 mb-5\">\n        　国民健康保険は日本国民健康保険法に基づいて、日本在住国民および外国人定住者を対象とした、全民医療保険制度です。<br>\n        　保険料の支払いについては、収入によって違いますが、外国人留学生の初年度は約月2000円の保険料を払います。その後収入によって増減することがあります。<br>\n        　一般的には医療費個人負担は３割で、低所得者が高額の医療費が必要となる場合、月35400円を上限として、不足分の全額を国が負担します。</p>\n      <div class=\"flex justify-center\"><img src=\"__ASSET__images/11/Untitled.png\" class=\"mx-1 flex-shrink-0\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative\">\n        <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-7 text-white italic text-lg\">外国人向け総合保険</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">事故でも安心</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-3\">\n        <div>\n          <span class=\"m-5\">　当校に入学された学生は、日本語学校協同組合の「留学生保険（留学生あんしん共済）」に加入します。<br>\nこの保険は、在学中に病気やけがで医療機関を受診した際、医療費の自己負担分（3割）を補償する制度です。これにより、万が一の病気やけがの際にも、安心して治療を受けることができます。<br>\nただし、治療内容によっては補償の対象外となる場合もございます。</span>\n          \n        </div>\n        <img src=\"__ASSET__images/11/Studentinsurance.jpg\" class=\"\">\n      </div>\n      <div class=\"mt-4 text-right text-[blue]\">詳しい情報はこちら →　<a href=\"https://www.zennichikyou.org/\" target=\"_blank\">https://www.zennichikyou.org/</a></div>\n    </div>"
+      }
+    ]
+  },
+  "en": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/11-STUDENT_INSURANCE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "Student Insurance",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "National Health Insurance / Comprehensive Insurance for Foreigners"
+    },
+    "afterHeroHtml": "<div class=\"bg-orange-200 p-5 mb-5 text-xs\">\n    To create a secure environment for students to study, all students are required to enroll in both National Health Insurance and comprehensive insurance for foreigners. This coverage aims to alleviate the financial burden associated with high costs resulting from accidents, death, disability, illness, and other unforeseen circumstances, ensuring that students can focus on their studies with peace of mind.\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-80 flex-shrink-0\">\n        <img src=\"__ASSET__images/11/BUTTON-11_subtitle.png\" class=\"h-full w-full\">\n        <div class=\"absolute top-1 left-4 whitespace-nowrap text-white italic text-lg\">National Health Insurance</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">Creating a Relieved Study Environment</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-2\">\n      <p class=\"mx-5 mb-5\">\n        　National Health Insurance is a universal healthcare system based on the Japanese National Health Insurance Act. It is designed to cover residents of Japan, including both Japanese nationals and foreign residents with permanent residency status.<br>\n        　As for insurance premium payments, the amount varies depending on income, but in the first year for foreign students, the insurance premium is approximately 2,000 yen per month. Subsequently, it may increase or decrease depending on income.<br>\n        　Generally, the personal burden for medical expenses is 30%, and individuals with low income facing high medical costs may have the remaining amount covered by the government, with a monthly cap set at 35,400 yen.</p>\n      <div class=\"flex justify-center\"><img src=\"__ASSET__images/11/Untitled.png\" class=\"mx-1 flex-shrink-0\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-[460px] max-w-full flex-shrink-0\">\n        <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full w-full\">\n        <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Comprehensive Insurance for Foreigners</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">Relieved Even in the Event of Accidents or Disasters</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-3\">\n        <div>\n          <span class=\"m-5\">Students admitted to our school enroll in the \"Student Insurance (Ryugakusei Anshin Kyosai)\" offered by the Japan Language Schools Cooperative. This insurance covers the self-pay portion (30%) of medical expenses when students visit a medical institution due to illness or injury during their enrollment. However, please note that some treatments may not be covered.</span>\n          \n        </div>\n        <img src=\"__ASSET__images/11/Studentinsurance.jpg\" class=\"\">\n      </div>\n      <div class=\"mt-4 text-right text-[blue]\">For more detailed information, please refer to →　<a href=\"https://www.zennichikyou.org/\" target=\"_blank\">https://www.zennichikyou.org/</a></div>\n    </div>"
+      }
+    ]
+  },
+  "cn": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/11-STUDENT_INSURANCE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "学生保险",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "国民健康保险/外国人综合保险"
+    },
+    "afterHeroHtml": "<div class=\"bg-orange-200 p-5 mb-5 text-xs\">\n    为了减轻学生在学习过程中可能发生的事故丶死亡丶伤害丶疾病等高昂费用的负担，所有学生将参与国民健康保险及相关保险，以建立一个让学生能够安心学习的环境。\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/11/BUTTON-11_subtitle.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-4 text-white italic text-lg\">国民健康保险</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">创造一个让学生能够安心学习的环境</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-2\">\n      <p class=\"mx-5 mb-5\">\n        　国民健康保险是基於日本国民健康保险法制定的全民医疗保险制度，适用於居住在日本的国民和外国定居者。<br>\n        　保险费的支付因收入而异，外国学生的首年度约需支付约2,000日元的保险费。之后根据收入可能会有增减。<br>\n        　一般而言，医疗费用的个人负担为30%，低收入者可能需要支付高额的医疗费用。在这种情况下，月度支付上限为35,400日元，超过部分的全部由国家负担。</p>\n      <div class=\"flex justify-center\"><img src=\"__ASSET__images/11/Untitled.png\" class=\"mx-1 flex-shrink-0\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative\">\n        <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-7 text-white italic text-lg\">外国人综合保险</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">安心应对意外灾害</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-3\">\n        <div>\n          <span class=\"m-5\">　就读本校的学生将加入日本语学校合作协会的留学生保险（留学生安心互助）。<br>\n该保险是对学生在校期间因病或受伤到医疗机构就诊时自行支付的医疗费（30%）进行补偿的制度。这可以让您在万一生病或受伤时安心接受治疗。<br>\n但是，根据治疗内容，有些情况可能无法获得赔偿。</span>\n          \n        </div>\n        <img src=\"__ASSET__images/11/Studentinsurance.jpg\" class=\"\">\n      </div>\n      <div class=\"mt-4 text-right text-[blue]\">详细资讯请参阅→　<a href=\"https://www.zennichikyou.org/\" target=\"_blank\">https://www.zennichikyou.org/</a></div>\n    </div>"
+      }
+    ]
+  },
+  "tw": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/11-STUDENT_INSURANCE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "學生保險",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "國民健康保險 / 外籍人士綜合保險"
+    },
+    "afterHeroHtml": "<div class=\"bg-orange-200 p-5 mb-5 text-xs\">\n    為了讓學生能在安心的環境中學習，並減輕事故、死亡、傷害、疾病等可能造成的高額費用負擔，所有學生皆須加入國民健康保險及相關保險。\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/11/BUTTON-11_subtitle.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-4 text-white italic text-lg\">國民健康保險</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">打造能安心學習的環境</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-2\">\n      <p class=\"mx-5 mb-5\">\n        　國民健康保險是依據日本國民健康保險法設立，提供給居住在日本的國民及外國居民加入的全民醫療保險制度。<br>\n        　保險費會依收入而有所不同，外國留學生第一年度大約每月需繳納 2,000 日圓，之後可能會依收入狀況調整。<br>\n        　一般情況下，醫療費個人負擔為三成。低收入者如需支付高額醫療費，每月個人負擔上限為 35,400 日圓，超出部分由國家負擔。</p>\n      <div class=\"flex justify-center\"><img src=\"__ASSET__images/11/Untitled.png\" class=\"mx-1 flex-shrink-0\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative\">\n        <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-7 text-white italic text-lg\">外籍人士綜合保險</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">遇到意外時也能安心</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-3\">\n        <div>\n          <span class=\"m-5\">這是一項針對留學生的保險服務，一旦發生意外，可以立即得到照顧。所有在該校就讀的學生都有資格加入。</span>\n          <br><br>\n          <img src=\"__ASSET__images/11/11-P2.png\" class=\"\">\n        </div>\n        <img src=\"__ASSET__images/11/11-P3.png\" class=\"\">\n      </div>\n\n      <div class=\"mt-4 text-right text-[blue]\">詳細資訊請看這裡 →　<a href=\"https://vivavida.net/student/jp/st-life/\" target=\"_blank\">https://vivavida.net/student/jp/st-life/</a></div>\n    </div>"
+      }
+    ]
+  },
+  "ko": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/11-STUDENT_INSURANCE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "학생 보험",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "국민 건강 보험 / 외국인 종합 보험"
+    },
+    "afterHeroHtml": "<div class=\"bg-orange-200 p-5 mb-5 text-xs\">\n    학생이 학습 과정에서 사고, 사망, 상해, 질병 등으로 발생할 수 있는 고비용 부담을 경감하기 위해 모든 학생은 국민 건강 보험 및 관련 보험에 가입하여 안심하고 공부할 수 있는 환경을 조성합니다.\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/11/BUTTON-11_subtitle.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-4 text-white italic text-lg\">국민 건강 보험 </div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">학생이 안심하고 공부할 수 있는 환경을 조성</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-2\">\n      <p class=\"mx-5 mb-5\">\n        　국민 건강 보험은 일본 국민 건강 보험법에 기반한 전국 의료 보험 제도로, 일본에 거주하는 국민과 외국 정주민을 대상으로 합니다.<br>\n        　보험료 지불은 소득에 따라 다르며, 외국 학생의 최초 년도에는 약 2,000엔의 보험료가 발생합니다. 이후 소득에 따라 변동이 있을 수 있습니다.<br>\n        　일반적으로 의료비 개인 부담은 30%이며, 저소득층은 높은 의료비를 부담해야 할 수 있습니다. 이 경우 월 최대 지불 한도는 35,400엔이며 부족한 부분은 모두 국가가 부담합니다.</p>\n      <div class=\"flex justify-center\"><img src=\"__ASSET__images/11/Untitled.png\" class=\"mx-1 flex-shrink-0\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative\">\n        <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-7 text-white italic text-lg\">외국인 종합 보험</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">안심하고 응급 상황에 대처하기</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-3\">\n        <div>\n          <span class=\"m-5\">재학 중인 학생은 일본어학교협동조합의 「유학생보험（유학생 안심 공제）」에 가입합니다. 이 보험은 재학 중 질병이나 부상으로 의료기관을 방문했을 때 의료비 자기부담분（30%）을 보상하는 제도입니다. 단, 치료 내용에 따라 보상 대상이 되지 않는 경우도 있습니다.</span>\n          \n        </div>\n        <img src=\"__ASSET__images/11/Studentinsurance.jpg\" class=\"\">\n      </div>\n      <div class=\"mt-4 text-right text-[blue]\">자세한 정보는 →　<a href=\"https://www.zennichikyou.org/\" target=\"_blank\">https://www.zennichikyou.org/</a></div>\n    </div>"
+      }
+    ]
+  },
+  "vi": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/11-STUDENT_INSURANCE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "bảo hiểm sinh viên",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "Bảo hiểm y tế quốc dân / Bảo hiểm toàn diện cho người nước ngoài"
+    },
+    "afterHeroHtml": "<div class=\"bg-orange-200 p-5 mb-5 text-xs\">\n    Tạo môi trường để sinh viên có thể yên tâm học tập Tất cả sinh viên đều được tham gia Bảo hiểm y tế quốc dân và bảo hiểm để giảm bớt gánh nặng chi phí cao như tai nạn, tử vong, khuyết tật và bệnh tật.\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/11/BUTTON-11_subtitle.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-4 text-white italic text-lg\">bảo hiểm y tế quốc gia</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">Tạo môi trường để bạn có thể yên tâm học tập</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-2\">\n      <p class=\"mx-5 mb-5\">\n        　Bảo hiểm y tế quốc dân là hệ thống bảo hiểm y tế dành cho mọi công dân, dựa trên Luật Bảo hiểm y tế quốc gia Nhật Bản, dành cho cư dân Nhật Bản và cư dân nước ngoài.<br>\n        　Khoản thanh toán phí bảo hiểm khác nhau tùy thuộc vào thu nhập của bạn, nhưng trong năm đầu tiên, sinh viên quốc tế phải trả khoảng 2.000 yên mỗi tháng. Sau đó có thể tăng hoặc giảm tùy theo thu nhập của bạn.<br>\n        　Thông thường, các cá nhân phải trả 30% chi phí y tế, nhưng nếu một người có thu nhập thấp yêu cầu chi phí y tế cao, chính phủ sẽ chi trả toàn bộ phần thiếu hụt, tối đa là 35.400 yên mỗi tháng.</p>\n      <div class=\"flex justify-center\"><img src=\"__ASSET__images/11/Untitled.png\" class=\"mx-1 flex-shrink-0\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative\">\n        <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-7 text-white italic text-lg\">Bảo hiểm toàn diện cho người nước ngoài</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">An toàn ngay cả khi xảy ra tai nạn</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-3\">\n        <div>\n          <span class=\"m-5\">　Học sinh đăng ký học tại trường chúng tôi sẽ được đăng ký Bảo hiểm sinh viên quốc tế của Hiệp hội hợp tác trường dạy tiếng Nhật (Sinh viên quốc tế Anshin Mutual Aid).<br>\nBảo hiểm này là một hệ thống bồi thường cho sinh viên các chi phí y tế của chính họ (30%) khi họ đến cơ sở y tế do bị bệnh hoặc bị thương khi theo học tại trường. Điều này cho phép bạn yên tâm điều trị trong trường hợp không may bị bệnh hoặc bị thương.<br>\nTuy nhiên, tùy thuộc vào chi tiết điều trị, một số trường hợp có thể không được bồi thường.</span>\n          \n        </div>\n        <img src=\"__ASSET__images/11/Studentinsurance.jpg\" class=\"\">\n      </div>\n      <div class=\"mt-4 text-right text-[blue]\">Bấm vào đây để biết thêm thông tin →　<a href=\"https://www.zennichikyou.org/\" target=\"_blank\">https://www.zennichikyou.org/</a></div>\n    </div>"
+      }
+    ]
+  },
+  "th": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/11-STUDENT_INSURANCE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "ประกันนักเรียน",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "ประกันสุขภาพแห่งชาติ / ประกันสุขภาพถ้วนหน้าสำหรับชาวต่างชาติ"
+    },
+    "afterHeroHtml": "<div class=\"bg-orange-200 p-5 mb-5 text-xs\">\n    การสร้างสภาพแวดล้อมที่นักเรียนสามารถเรียนได้อย่างสบายใจ นักเรียนทุกคนลงทะเบียนในระบบประกันสุขภาพแห่งชาติและประกัน เพื่อลดภาระค่าใช้จ่ายสูง เช่น อุบัติเหตุ การเสียชีวิต ความทุพพลภาพ และการเจ็บป่วย\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/11/BUTTON-11_subtitle.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-4 text-white italic text-lg\">ประกันสุขภาพแห่งชาติ</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">สร้างสภาพแวดล้อมที่คุณสามารถเรียนได้อย่างสบายใจ</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-2\">\n      <p class=\"mx-5 mb-5\">\n        　การประกันสุขภาพแห่งชาติคือระบบประกันสุขภาพสำหรับพลเมืองทุกคนตามกฎหมายประกันสุขภาพแห่งชาติของญี่ปุ่น ซึ่งครอบคลุมถึงชาวญี่ปุ่นและชาวต่างชาติ<br>\n        　การชำระเบี้ยประกันจะแตกต่างกันไปขึ้นอยู่กับรายได้ของคุณ แต่สำหรับปีแรก นักเรียนต่างชาติจะจ่ายประมาณ 2,000 เยนต่อเดือน หลังจากนั้นอาจเพิ่มหรือลดลงขึ้นอยู่กับรายได้ของคุณ<br>\n        　โดยทั่วไปบุคคลทั่วไปจะจ่ายค่ารักษาพยาบาล 30% แต่หากผู้มีรายได้น้อยต้องใช้ค่ารักษาพยาบาลสูง รัฐบาลจะชดเชยส่วนที่ขาดแคลนให้เต็มจำนวนสูงสุด 35,400 เยนต่อเดือน</p>\n      <div class=\"flex justify-center\"><img src=\"__ASSET__images/11/Untitled.png\" class=\"mx-1 flex-shrink-0\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative\">\n        <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-7 text-white italic text-lg\">ประกันภัยที่ครอบคลุมสำหรับชาวต่างชาติ</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">ปลอดภัยแม้เกิดอุบัติเหตุ</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-3\">\n        <div>\n          <span class=\"m-5\">　นักเรียนที่ลงทะเบียนในโรงเรียนของเราจะได้รับการลงทะเบียนในการประกันภัยนักเรียนนานาชาติของสมาคมสหกรณ์โรงเรียนภาษาญี่ปุ่น (International Student Anshin Mutual Aid)<br>\nการประกันภัยนี้เป็นระบบที่ชดเชยค่ารักษาพยาบาลของนักเรียนเอง (30%) เมื่อไปเยี่ยมสถาบันการแพทย์เนื่องจากการเจ็บป่วยหรือการบาดเจ็บขณะลงทะเบียนเรียนในโรงเรียน ซึ่งจะช่วยให้คุณได้รับการรักษาด้วยความอุ่นใจในกรณีที่เกิดการเจ็บป่วยหรือการบาดเจ็บที่ไม่น่าจะเกิดขึ้นได้<br>\nอย่างไรก็ตาม ขึ้นอยู่กับรายละเอียดการรักษา บางกรณีอาจไม่ครอบคลุมค่าชดเชย</span>\n          \n        </div>\n        <img src=\"__ASSET__images/11/Studentinsurance.jpg\" class=\"\">\n      </div>\n      <div class=\"mt-4 text-right text-[blue]\">คลิกที่นี่เพื่อดูข้อมูลเพิ่มเติม →　<a href=\"https://www.zennichikyou.org/\" target=\"_blank\">https://www.zennichikyou.org/</a></div>\n    </div>"
+      }
+    ]
+  },
+  "id": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/11-STUDENT_INSURANCE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "asuransi pelajar",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "Asuransi Kesehatan Nasional / Asuransi komprehensif untuk orang asing"
+    },
+    "afterHeroHtml": "<div class=\"bg-orange-200 p-5 mb-5 text-xs\">\n    Menciptakan lingkungan di mana siswa dapat belajar dengan tenang Semua siswa terdaftar dalam Asuransi Kesehatan Nasional dan asuransi untuk mengurangi beban biaya tinggi seperti kecelakaan, kematian, cacat, dan penyakit.\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/11/BUTTON-11_subtitle.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-4 text-white italic text-lg\">asuransi kesehatan nasional</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">Menciptakan lingkungan di mana Anda dapat belajar dengan pikiran tenang</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-2\">\n      <p class=\"mx-5 mb-5\">\n        　Asuransi Kesehatan Nasional adalah sistem asuransi kesehatan untuk semua warga negara, berdasarkan Undang-Undang Asuransi Kesehatan Nasional Jepang, yang mencakup penduduk Jepang dan penduduk asing.<br>\n        　Pembayaran premi asuransi bervariasi tergantung pada pendapatan Anda, namun untuk tahun pertama, pelajar internasional membayar sekitar 2.000 yen per bulan. Setelah itu, bisa bertambah atau berkurang tergantung penghasilan Anda.<br>\n        　Umumnya, individu membayar 30% dari biaya pengobatan, tetapi jika masyarakat berpenghasilan rendah membutuhkan biaya pengobatan yang tinggi, pemerintah akan menanggung kekurangan tersebut secara penuh, dengan jumlah maksimum 35.400 yen per bulan.</p>\n      <div class=\"flex justify-center\"><img src=\"__ASSET__images/11/Untitled.png\" class=\"mx-1 flex-shrink-0\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative\">\n        <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-7 text-white italic text-lg\">Asuransi komprehensif untuk orang asing</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">Aman meskipun terjadi kecelakaan</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-3\">\n        <div>\n          <span class=\"m-5\">　Siswa yang mendaftar di sekolah kami akan terdaftar di Asuransi Siswa Internasional Asosiasi Koperasi Sekolah Bahasa Jepang (International Student Anshin Mutual Aid).<br>\nAsuransi ini adalah sistem yang memberikan kompensasi kepada siswa atas biaya pengobatan mereka sendiri (30%) ketika mereka mengunjungi institusi medis karena sakit atau cedera saat mendaftar di sekolah. Hal ini memungkinkan Anda menerima perawatan dengan tenang jika terjadi penyakit atau cedera.<br>\nNamun, tergantung pada rincian perawatannya, beberapa kasus mungkin tidak tercakup dalam kompensasi.</span>\n          \n        </div>\n        <img src=\"__ASSET__images/11/Studentinsurance.jpg\" class=\"\">\n      </div>\n      <div class=\"mt-4 text-right text-[blue]\">Klik di sini untuk informasi lebih lanjut →　<a href=\"https://www.zennichikyou.org/\" target=\"_blank\">https://www.zennichikyou.org/</a></div>\n    </div>"
+      }
+    ]
+  },
+  "np": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/11-STUDENT_INSURANCE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "विद्यार्थी बीमा",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "राष्ट्रिय स्वास्थ्य बीमा / विदेशीहरूको लागि व्यापक बीमा"
+    },
+    "afterHeroHtml": "<div class=\"bg-orange-200 p-5 mb-5 text-xs\">\n    विद्यार्थीहरूले मानसिक शान्तिका साथ अध्ययन गर्न सक्ने वातावरण सिर्जना गर्दै दुर्घटना, मृत्यु, अशक्तता र रोग जस्ता उच्च लागतहरूको बोझ कम गर्न सबै विद्यार्थीहरू राष्ट्रिय स्वास्थ्य बीमा र बीमामा भर्ना भएका छन्।\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/11/BUTTON-11_subtitle.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-4 text-white italic text-lg\">राष्ट्रिय स्वास्थ्य बीमा</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">मनको शान्तिका साथ अध्ययन गर्न सक्ने वातावरण सिर्जना गर्ने</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-2\">\n      <p class=\"mx-5 mb-5\">\n        　राष्ट्रिय स्वास्थ्य बीमा सबै नागरिकहरूको लागि एक चिकित्सा बीमा प्रणाली हो, जापानी राष्ट्रिय स्वास्थ्य बीमा कानूनमा आधारित, जसले जापानी निवासीहरू र विदेशी बासिन्दाहरूलाई समेट्छ।<br>\n        　बीमा प्रिमियम भुक्तानीहरू तपाइँको आम्दानीमा निर्भर गर्दछ, तर पहिलो वर्षको लागि, अन्तर्राष्ट्रिय विद्यार्थीहरूले प्रति महिना लगभग 2,000 येन तिर्छन्। त्यस पछि, यो तपाईंको आयको आधारमा बढ्न वा घट्न सक्छ।<br>\n        　सामान्यतया, व्यक्तिहरूले चिकित्सा खर्चको 30% तिर्छन्, तर यदि कम आय भएका व्यक्तिलाई उच्च चिकित्सा खर्च चाहिन्छ भने, सरकारले प्रति महिना अधिकतम 35,400 येनको साथ पूर्ण रूपमा कमी पूरा गर्नेछ।</p>\n      <div class=\"flex justify-center\"><img src=\"__ASSET__images/11/Untitled.png\" class=\"mx-1 flex-shrink-0\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative\">\n        <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-7 text-white italic text-lg\">विदेशीहरूको लागि व्यापक बीमा</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">दुर्घटना हुँदा पनि सुरक्षित</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-3\">\n        <div>\n          <span class=\"m-5\">　हाम्रो विद्यालयमा भर्ना हुने विद्यार्थीहरूलाई जापानी भाषा विद्यालय सहकारी संघको अन्तर्राष्ट्रिय विद्यार्थी बीमा (अन्तर्राष्ट्रिय विद्यार्थी अन्सिन म्युचुअल एड) मा भर्ना गरिनेछ।<br>\nयो बीमा एउटा प्रणाली हो जसले विद्यार्थीहरूलाई विद्यालयमा भर्ना हुँदा बिरामी वा चोटपटकका कारण मेडिकल संस्थामा जाँदा उनीहरूको आफ्नै चिकित्सा खर्च (30%) क्षतिपूर्ति दिन्छ। यसले तपाईंलाई बिरामी वा चोटपटकको सम्भावित घटनामा मानसिक शान्तिका साथ उपचार प्राप्त गर्न अनुमति दिन्छ।<br>\nयद्यपि, उपचार विवरणहरूमा निर्भर गर्दै, केही केसहरू क्षतिपूर्तिमा समावेश नहुन सक्छ।</span>\n          \n        </div>\n        <img src=\"__ASSET__images/11/Studentinsurance.jpg\" class=\"\">\n      </div>\n      <div class=\"mt-4 text-right text-[blue]\">थप जानकारीको लागि यहाँ क्लिक गर्नुहोस् →　<a href=\"https://www.zennichikyou.org/\" target=\"_blank\">https://www.zennichikyou.org/</a></div>\n    </div>"
+      }
+    ]
+  }
+}

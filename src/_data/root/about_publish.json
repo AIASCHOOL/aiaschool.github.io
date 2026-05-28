@@ -1,0 +1,542 @@
+{
+  "ja": {
+    "title": "公開資料",
+    "subtitle": "自己点検自己評価 ・ 課程修了者の日本語能力取得状況等",
+    "sections": [
+      {
+        "title": "自己点検",
+        "items": [
+          {
+            "label": "2025自己点検自己評価",
+            "file": "2025自己点検自己評価.pdf"
+          },
+          {
+            "label": "2024自己点検自己評価",
+            "file": "2024自己点検自己評価.pdf"
+          },
+          {
+            "label": "2023自己点検自己評価",
+            "file": "2023自己点検自己評価.pdf"
+          },
+          {
+            "label": "2022自己点検自己評価",
+            "file": "2022自己点検自己評価.pdf"
+          },
+          {
+            "label": "2021自己点検自己評価",
+            "file": "2021自己点検自己評価.pdf"
+          }
+        ]
+      },
+      {
+        "title": "習得状況",
+        "items": [
+          {
+            "label": "2026課程修了者の日本語能力習得状況等",
+            "file": "2026課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2025課程修了者の日本語能力習得状況等",
+            "file": "2025課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2024課程修了者の日本語能力習得状況等",
+            "file": "2024課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2023課程修了者の日本語能力習得状況等",
+            "file": "2023課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2022課程修了者の日本語能力習得状況等",
+            "file": "2022課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2021課程修了者の日本語能力習得状況等",
+            "file": "2021課程修了者の日本語能力取得状況等.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  "en": {
+    "title": "Public Information",
+    "subtitle": "Self-inspection and evaluation ・ Japanese language proficiency outcomes of course completers",
+    "sections": [
+      {
+        "title": "Self-inspection",
+        "items": [
+          {
+            "label": "2025 Self-inspection and Self-evaluation",
+            "file": "2025自己点検自己評価.pdf"
+          },
+          {
+            "label": "2024 Self-inspection and Self-evaluation",
+            "file": "2024自己点検自己評価.pdf"
+          },
+          {
+            "label": "2023 Self-inspection and Self-evaluation",
+            "file": "2023自己点検自己評価.pdf"
+          },
+          {
+            "label": "2022 Self-inspection and Self-evaluation",
+            "file": "2022自己点検自己評価.pdf"
+          },
+          {
+            "label": "2021 Self-inspection and Self-evaluation",
+            "file": "2021自己点検自己評価.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Learning Outcomes",
+        "items": [
+          {
+            "label": "2026 Japanese Language Proficiency Outcomes of Course Completers",
+            "file": "2026課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2025 Japanese Language Proficiency Outcomes of Course Completers",
+            "file": "2025課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2024 Japanese Language Proficiency Outcomes of Course Completers",
+            "file": "2024課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2023 Japanese Language Proficiency Outcomes of Course Completers",
+            "file": "2023課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2022 Japanese Language Proficiency Outcomes of Course Completers",
+            "file": "2022課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2021 Japanese Language Proficiency Outcomes of Course Completers",
+            "file": "2021課程修了者の日本語能力取得状況等.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  "cn": {
+    "title": "公开资料",
+    "subtitle": "自我检查与自我评价・课程修了者的日语能力习得情况等",
+    "sections": [
+      {
+        "title": "自我检查",
+        "items": [
+          {
+            "label": "2025年自我检查与自我评价",
+            "file": "2025自己点検自己評価.pdf"
+          },
+          {
+            "label": "2024年自我检查与自我评价",
+            "file": "2024自己点検自己評価.pdf"
+          },
+          {
+            "label": "2023年自我检查与自我评价",
+            "file": "2023自己点検自己評価.pdf"
+          },
+          {
+            "label": "2022年自我检查与自我评价",
+            "file": "2022自己点検自己評価.pdf"
+          },
+          {
+            "label": "2021年自我检查与自我评价",
+            "file": "2021自己点検自己評価.pdf"
+          }
+        ]
+      },
+      {
+        "title": "习得情况",
+        "items": [
+          {
+            "label": "2026年课程修了者日语能力习得情况等",
+            "file": "2026課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2025年课程修了者日语能力习得情况等",
+            "file": "2025課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2024年课程修了者日语能力习得情况等",
+            "file": "2024課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2023年课程修了者日语能力习得情况等",
+            "file": "2023課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2022年课程修了者日语能力习得情况等",
+            "file": "2022課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2021年课程修了者日语能力习得情况等",
+            "file": "2021課程修了者の日本語能力取得状況等.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  "tw": {
+    "title": "公共資料",
+    "subtitle": "自我檢查與自我評估・課程修了者的日語能力習得情況等",
+    "sections": [
+      {
+        "title": "自我檢查",
+        "items": [
+          {
+            "label": "2025年自我檢查與自我評估",
+            "file": "2025自己点検自己評価.pdf"
+          },
+          {
+            "label": "2024年自我檢查與自我評估",
+            "file": "2024自己点検自己評価.pdf"
+          },
+          {
+            "label": "2023年自我檢查與自我評估",
+            "file": "2023自己点検自己評価.pdf"
+          },
+          {
+            "label": "2022年自我檢查與自我評估",
+            "file": "2022自己点検自己評価.pdf"
+          },
+          {
+            "label": "2021年自我檢查與自我評估",
+            "file": "2021自己点検自己評価.pdf"
+          }
+        ]
+      },
+      {
+        "title": "習得情況",
+        "items": [
+          {
+            "label": "2026年課程修了者日語能力習得情況等",
+            "file": "2026課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2025年課程修了者日語能力習得情況等",
+            "file": "2025課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2024年課程修了者日語能力習得情況等",
+            "file": "2024課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2023年課程修了者日語能力習得情況等",
+            "file": "2023課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2022年課程修了者日語能力習得情況等",
+            "file": "2022課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2021年課程修了者日語能力習得情況等",
+            "file": "2021課程修了者の日本語能力取得状況等.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  "ko": {
+    "title": "공개 자료",
+    "subtitle": "자기점검 및 자기평가・과정 수료자의 일본어 능력 습득 현황 등",
+    "sections": [
+      {
+        "title": "자기점검",
+        "items": [
+          {
+            "label": "2025년 자기점검 및 자기평가",
+            "file": "2025自己点検自己評価.pdf"
+          },
+          {
+            "label": "2024년 자기점검 및 자기평가",
+            "file": "2024自己点検自己評価.pdf"
+          },
+          {
+            "label": "2023년 자기점검 및 자기평가",
+            "file": "2023自己点検自己評価.pdf"
+          },
+          {
+            "label": "2022년 자기점검 및 자기평가",
+            "file": "2022自己点検自己評価.pdf"
+          },
+          {
+            "label": "2021년 자기점검 및 자기평가",
+            "file": "2021自己点検自己評価.pdf"
+          }
+        ]
+      },
+      {
+        "title": "습득 현황",
+        "items": [
+          {
+            "label": "2026년 과정 수료자의 일본어 능력 습득 현황 등",
+            "file": "2026課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2025년 과정 수료자의 일본어 능력 습득 현황 등",
+            "file": "2025課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2024년 과정 수료자의 일본어 능력 습득 현황 등",
+            "file": "2024課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2023년 과정 수료자의 일본어 능력 습득 현황 등",
+            "file": "2023課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2022년 과정 수료자의 일본어 능력 습득 현황 등",
+            "file": "2022課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2021년 과정 수료자의 일본어 능력 습득 현황 등",
+            "file": "2021課程修了者の日本語能力取得状況等.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  "vi": {
+    "title": "Tài liệu công khai",
+    "subtitle": "Tự kiểm tra, tự đánh giá ・ Tình hình đạt năng lực tiếng Nhật của học viên hoàn thành khóa học",
+    "sections": [
+      {
+        "title": "Tự kiểm tra",
+        "items": [
+          {
+            "label": "Tự kiểm tra, tự đánh giá năm 2025",
+            "file": "2025自己点検自己評価.pdf"
+          },
+          {
+            "label": "Tự kiểm tra, tự đánh giá năm 2024",
+            "file": "2024自己点検自己評価.pdf"
+          },
+          {
+            "label": "Tự kiểm tra, tự đánh giá năm 2023",
+            "file": "2023自己点検自己評価.pdf"
+          },
+          {
+            "label": "Tự kiểm tra, tự đánh giá năm 2022",
+            "file": "2022自己点検自己評価.pdf"
+          },
+          {
+            "label": "Tự kiểm tra, tự đánh giá năm 2021",
+            "file": "2021自己点検自己評価.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Tình hình đạt được",
+        "items": [
+          {
+            "label": "Tình hình đạt năng lực tiếng Nhật của học viên hoàn thành khóa học năm 2026",
+            "file": "2026課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "Tình hình đạt năng lực tiếng Nhật của học viên hoàn thành khóa học năm 2025",
+            "file": "2025課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "Tình hình đạt năng lực tiếng Nhật của học viên hoàn thành khóa học năm 2024",
+            "file": "2024課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "Tình hình đạt năng lực tiếng Nhật của học viên hoàn thành khóa học năm 2023",
+            "file": "2023課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "Tình hình đạt năng lực tiếng Nhật của học viên hoàn thành khóa học năm 2022",
+            "file": "2022課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "Tình hình đạt năng lực tiếng Nhật của học viên hoàn thành khóa học năm 2021",
+            "file": "2021課程修了者の日本語能力取得状況等.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  "th": {
+    "title": "เอกสารเผยแพร่",
+    "subtitle": "การตรวจสอบและประเมินตนเอง ・ สถานะการได้รับทักษะภาษาญี่ปุ่นของผู้สำเร็จหลักสูตร",
+    "sections": [
+      {
+        "title": "การตรวจสอบตนเอง",
+        "items": [
+          {
+            "label": "การตรวจสอบและประเมินตนเอง ปี 2025",
+            "file": "2025自己点検自己評価.pdf"
+          },
+          {
+            "label": "การตรวจสอบและประเมินตนเอง ปี 2024",
+            "file": "2024自己点検自己評価.pdf"
+          },
+          {
+            "label": "การตรวจสอบและประเมินตนเอง ปี 2023",
+            "file": "2023自己点検自己評価.pdf"
+          },
+          {
+            "label": "การตรวจสอบและประเมินตนเอง ปี 2022",
+            "file": "2022自己点検自己評価.pdf"
+          },
+          {
+            "label": "การตรวจสอบและประเมินตนเอง ปี 2021",
+            "file": "2021自己点検自己評価.pdf"
+          }
+        ]
+      },
+      {
+        "title": "สถานะการเรียนรู้",
+        "items": [
+          {
+            "label": "สถานะการได้รับทักษะภาษาญี่ปุ่นของผู้สำเร็จหลักสูตร ปี 2026",
+            "file": "2026課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "สถานะการได้รับทักษะภาษาญี่ปุ่นของผู้สำเร็จหลักสูตร ปี 2025",
+            "file": "2025課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "สถานะการได้รับทักษะภาษาญี่ปุ่นของผู้สำเร็จหลักสูตร ปี 2024",
+            "file": "2024課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "สถานะการได้รับทักษะภาษาญี่ปุ่นของผู้สำเร็จหลักสูตร ปี 2023",
+            "file": "2023課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "สถานะการได้รับทักษะภาษาญี่ปุ่นของผู้สำเร็จหลักสูตร ปี 2022",
+            "file": "2022課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "สถานะการได้รับทักษะภาษาญี่ปุ่นของผู้สำเร็จหลักสูตร ปี 2021",
+            "file": "2021課程修了者の日本語能力取得状況等.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  "id": {
+    "title": "Informasi Publik",
+    "subtitle": "Pemeriksaan dan evaluasi mandiri ・ Status pencapaian kemampuan bahasa Jepang lulusan program",
+    "sections": [
+      {
+        "title": "Pemeriksaan Mandiri",
+        "items": [
+          {
+            "label": "Pemeriksaan dan evaluasi mandiri 2025",
+            "file": "2025自己点検自己評価.pdf"
+          },
+          {
+            "label": "Pemeriksaan dan evaluasi mandiri 2024",
+            "file": "2024自己点検自己評価.pdf"
+          },
+          {
+            "label": "Pemeriksaan dan evaluasi mandiri 2023",
+            "file": "2023自己点検自己評価.pdf"
+          },
+          {
+            "label": "Pemeriksaan dan evaluasi mandiri 2022",
+            "file": "2022自己点検自己評価.pdf"
+          },
+          {
+            "label": "Pemeriksaan dan evaluasi mandiri 2021",
+            "file": "2021自己点検自己評価.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Status Pencapaian",
+        "items": [
+          {
+            "label": "Status pencapaian kemampuan bahasa Jepang lulusan program 2026",
+            "file": "2026課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "Status pencapaian kemampuan bahasa Jepang lulusan program 2025",
+            "file": "2025課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "Status pencapaian kemampuan bahasa Jepang lulusan program 2024",
+            "file": "2024課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "Status pencapaian kemampuan bahasa Jepang lulusan program 2023",
+            "file": "2023課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "Status pencapaian kemampuan bahasa Jepang lulusan program 2022",
+            "file": "2022課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "Status pencapaian kemampuan bahasa Jepang lulusan program 2021",
+            "file": "2021課程修了者の日本語能力取得状況等.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  "np": {
+    "title": "सार्वजनिक जानकारी",
+    "subtitle": "स्व-निरीक्षण तथा स्व-मूल्याङ्कन ・ पाठ्यक्रम पूरा गरेका विद्यार्थीहरूको जापानी भाषा क्षमता प्राप्ति अवस्था",
+    "sections": [
+      {
+        "title": "स्व-निरीक्षण",
+        "items": [
+          {
+            "label": "2025 स्व-निरीक्षण तथा स्व-मूल्याङ्कन",
+            "file": "2025自己点検自己評価.pdf"
+          },
+          {
+            "label": "2024 स्व-निरीक्षण तथा स्व-मूल्याङ्कन",
+            "file": "2024自己点検自己評価.pdf"
+          },
+          {
+            "label": "2023 स्व-निरीक्षण तथा स्व-मूल्याङ्कन",
+            "file": "2023自己点検自己評価.pdf"
+          },
+          {
+            "label": "2022 स्व-निरीक्षण तथा स्व-मूल्याङ्कन",
+            "file": "2022自己点検自己評価.pdf"
+          },
+          {
+            "label": "2021 स्व-निरीक्षण तथा स्व-मूल्याङ्कन",
+            "file": "2021自己点検自己評価.pdf"
+          }
+        ]
+      },
+      {
+        "title": "प्राप्ति अवस्था",
+        "items": [
+          {
+            "label": "2026 पाठ्यक्रम पूरा गरेका विद्यार्थीहरूको जापानी भाषा क्षमता प्राप्ति अवस्था",
+            "file": "2026課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2025 पाठ्यक्रम पूरा गरेका विद्यार्थीहरूको जापानी भाषा क्षमता प्राप्ति अवस्था",
+            "file": "2025課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2024 पाठ्यक्रम पूरा गरेका विद्यार्थीहरूको जापानी भाषा क्षमता प्राप्ति अवस्था",
+            "file": "2024課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2023 पाठ्यक्रम पूरा गरेका विद्यार्थीहरूको जापानी भाषा क्षमता प्राप्ति अवस्था",
+            "file": "2023課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2022 पाठ्यक्रम पूरा गरेका विद्यार्थीहरूको जापानी भाषा क्षमता प्राप्ति अवस्था",
+            "file": "2022課程修了者の日本語能力習得状況等.pdf"
+          },
+          {
+            "label": "2021 पाठ्यक्रम पूरा गरेका विद्यार्थीहरूको जापानी भाषा क्षमता प्राप्ति अवस्था",
+            "file": "2021課程修了者の日本語能力取得状況等.pdf"
+          }
+        ]
+      }
+    ]
+  }
+}

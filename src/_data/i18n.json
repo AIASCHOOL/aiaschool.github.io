@@ -1,0 +1,19 @@
+{
+  "common": {},
+  "root": {},
+  "staging": {
+    "course_advance": {
+      "example": {
+        "ja": "進学コース",
+        "en": "Advanced Education Course",
+        "cn": "升学课程",
+        "tw": "升學課程",
+        "ko": "진학 과정",
+        "vi": "Khóa học lên cao",
+        "th": "หลักสูตรศึกษาต่อ",
+        "id": "Kursus Lanjutan",
+        "np": "उच्च अध्ययन कोर्स"
+      }
+    }
+  }
+}

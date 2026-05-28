@@ -1,0 +1,16 @@
+{% if section.headingStyle == "plain" %}
+  <div class="relative h-10 {{ section.labelWidth }} flex-shrink-0">
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron"></div>
+    <div class="{{ section.labelClass }}">{{ section.label }}</div>
+  </div>
+{% else %}
+  <div class="flex flex-col sm:flex-row">
+    <div class="relative h-10 {{ section.labelWidth }} flex-shrink-0">
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-900 from-5% via-teal-600 via-15% to-teal-500 clip-path-chevron"></div>
+      <div class="{{ section.labelClass }}">{{ section.label }}</div>
+    </div>
+    {% if section.lead %}
+      <div class="{{ section.leadClass }}">{{ section.lead | safe }}</div>
+    {% endif %}
+  </div>
+{% endif %}

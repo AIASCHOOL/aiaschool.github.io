@@ -1,0 +1,11 @@
+{% include "components/course/AdvanceSectionHeading.njk" %}
+
+{% if section.contentHtml %}
+  <div class="{{ section.contentClass }}">
+    {{ section.contentHtml | assetUrls(currentAssetPrefix) | safe }}
+  </div>
+{% elseif section.contentType == "courseOverview" %}
+  <div class="{{ section.contentClass }}">
+    {% include "components/course/CourseOverview.njk" %}
+  </div>
+{% endif %}

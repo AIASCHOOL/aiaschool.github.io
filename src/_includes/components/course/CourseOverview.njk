@@ -1,0 +1,28 @@
+{% set overview = section.courseOverview %}
+
+{% for item in overview.summaryRows %}
+  <div class="{{ item.rowClass }}">
+    <div class="{{ item.labelWrapClass }}">
+      {{ item.labelHtml | assetUrls(currentAssetPrefix) | safe }}
+    </div>
+    <div class="{{ item.bodyClass }}">
+      {{ item.bodyHtml | assetUrls(currentAssetPrefix) | safe }}
+    </div>
+  </div>
+{% endfor %}
+
+{% if overview.classContent %}
+  {% set classContent = overview.classContent %}
+  <div class="{{ classContent.rowClass }}">
+    <div class="{{ classContent.labelWrapClass }}">
+      {{ classContent.labelHtml | assetUrls(currentAssetPrefix) | safe }}
+    </div>
+    <div class="{{ classContent.bodyClass }}">
+      <div class="mx-auto space-y-8">
+        {% for course in classContent.courses %}
+          {% include "components/course/CourseScheduleCard.njk" %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}

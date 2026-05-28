@@ -1,0 +1,875 @@
+{
+  "ja": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "プライバシーポリシー"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "1. 宣言"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "愛知国際学院（以下「AIA」）は、情報の適切な管理は重要な経営課題のひとつであると考え、全ての情報資産に対する機密性、完全性、可用性の確保・向上に努め、お客様を含む社会全体の信頼に応えるため、情報セキュリティ基本方針（以下、本方針）を策定し、これを実施し推進することを宣言します。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "2. 適用範囲及び適用者"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIAでは、管理下にあるすべての業務活動に関わる情報（含個人情報）を適用範囲とし、役員・従業員（正社員、契約社員、嘱託社員、派遣社員、パート、アルバイト）・業務委託契約者を含めた、情報資産を利用する全ての者に適用します。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "3. 法令順守"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIAは、情報セキュリティに関する各種法令、国が定める指針およびその他規範を遵守します。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "4. 情報セキュリティ規程の制定"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIAは、情報セキュリティ対策を講じるにあたり、遵守すべき行為および判断などの基準を統一的に定めるため、必要となる基本的な要件を明記した情報セキュリティ規程を制定します。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "5. 情報セキュリティ管理体制の確立"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIAは、情報セキュリティ管理体制を整備し、組織として意思統一された情報セキュリティ管理を実施します。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "6. セキュリティ事件・事故の対応"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIAは、万が一情報セキュリティの問題が発生した場合迅速に対応し、その被害を最小限に留めます。また再発防止策を含む適切な対策を講じます。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "7. 情報セキュリティ教育・訓練の実施"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIAは、役員および全従業員・業務委託契約者に対して情報セキュリティの重要性を認識させ、情報資産が適正に利用されるよう、教育・訓練を実施します。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "8. 情報セキュリティ対策実施状況の評価及び継続的改善"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIAは、本方針および情報セキュリティ規程が遵守されていることを確認するため、定期的に情報セキュリティ対策実施状況を評価し、継続的な改善を図ります。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "9. 文書の改廃"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "本方針の改廃は、情報セキュリティ委員会が起案し取締役会及び理事会の承認を必要とします。"
+    }
+  ],
+  "en": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "Privacy policy"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "1. Declaration"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "Aichi International Academy (hereinafter referred to as \"AIA\") believes that the appropriate management of information is one of the important management issues, strives to ensure and improve the confidentiality, integrity, and availability of all information assets, and in order to live up to the trust of society as a whole, including our customers, we declare that we will formulate, implement and promote the Information Security Basic Policy (hereinafter referred to as this policy)."
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "2. Scope and Applicants"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA applies to all information related to business activities under management (including personal information), and applies to all persons using information assets, including executives, employees (full-time employees, contract employees, contract employees, temporary employees, part-time employees, part-time workers), and outsourcing contractors."
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "3. Legal compliance"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA complies with various laws and regulations, national guidelines, and other norms related to information security."
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "4. Establishment of information security regulations"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "When taking information security measures, AIA will establish information security regulations that specify the basic requirements necessary to uniformly define the standards of conduct and judgment that must be complied with."
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "5. Establishment of information security management system"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA has established an information security management system and implements information security management with a unified organization."
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "6. Response to security incidents/accidents"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "In the unlikely event that an information security issue occurs, AIA will respond promptly and minimize the damage. We will also take appropriate measures, including measures to prevent recurrence."
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "7. Implementation of information security education and training"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA provides education and training to executives, all employees, and contractors to make them aware of the importance of information security and to ensure that information assets are used appropriately."
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "8. Evaluation of the implementation status of information security measures and continuous improvement"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA will regularly evaluate the implementation status of information security measures and strive for continuous improvement in order to confirm that this policy and information security regulations are being complied with."
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "9. Amendment and abolishment of documents"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "Any revision or abolition of this policy shall be drafted by the Information Security Committee and must be approved by the Board of Directors and the Board of Directors."
+    }
+  ],
+  "cn": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "隐私政策"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "1. 声明"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "爱知国际学院（以下简称“AIA”）认为信息的适当管理是重要的管理问题之一，努力确保和提高所有信息资产的机密性、完整性和可用性，并且为了不辜负包括我们的客户在内的整个社会的信任，我们声明将制定、实施和推广信息安全基本政策（以下简称本政策）。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "二、范围及申请人"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA适用于与所管理的业务活动相关的所有信息（包括个人信息），并适用于所有使用信息资产的人员，包括管理人员、员工（全职员工、合同员工、合同员工、临时员工、兼职员工、兼职员工）和外包承包商。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "3. 法律合规性"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA遵守与信息安全相关的各种法律法规、国家指南和其他规范。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "4.信息安全法规的建立"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "在采取信息安全措施时，AIA将制定信息安全法规，明确必要的基本要求，统一规定必须遵守的行为和判断标准。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "5、信息安全管理体系建立"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA建立了信息安全管理体系，并以统一的组织实施信息安全管理。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "6. 安全事件/事故的响应"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "万一发生信息安全问题，友邦保险将及时响应并最大程度地减少损失。我们还将采取适当措施，包括防止再次发生的措施。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "7、实施信息安全教育培训"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA 向管理人员、所有员工和承包商提供教育和培训，使他们意识到信息安全的重要性并确保信息资产得到适当使用。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "8、信息安全措施实施状况评价及持续改进"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA将定期评估信息安全措施的实施状况，并努力持续改进，以确认本政策和信息安全法规得到遵守。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "九、文件的修改、废止"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "本政策的任何修改或废止均应由信息安全委员会起草，并须经董事会和董事会批准。"
+    }
+  ],
+  "tw": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "隱私權政策"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "1. 聲明"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "愛知國際學院（以下簡稱「AIA」）認為資訊的適當管理是重要的管理問題之一，努力確保和提高所有資訊資產的機密性、完整性和可用性，並且為了不辜負包括我們的客戶在內的整個社會的信任，我們聲明將製定、實施和推廣資訊安全基本政策（以下簡稱本政策）。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "二、範圍及申請人"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA適用於與所管理的業務活動相關的所有資訊（包括個人資訊），並適用於所有使用資訊資產的人員，包括管理人員、員工（全職員工、合約員工、合約員工、臨時員工、兼職員工、兼職員工）和外包承包商。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "3. 法律合規性"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA遵守與資訊安全相關的各種法律法規、國家指南和其他規範。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "4.資訊安全法規的建立"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "在採取資訊安全措施時，AIA將制定資訊安全法規，明確必要的基本要求，統一規定必須遵守的行為和判斷標準。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "5.資訊安全管理系統建立"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA建立了資訊安全管理體系，並以統一的組織實施資訊安全管理。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "6. 安全事件/事故的回應"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "萬一發生資安問題，友邦保險將及時回應並最大程度地減少損失。我們也將採取適當措施，包括防止再次發生的措施。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "7.實施資訊安全教育培訓"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA 向管理人員、所有員工和承包商提供教育和培訓，使他們意識到資訊安全的重要性並確保資訊資產得到適當使用。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "8、資訊安全措施實施狀況評估及持續改進"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA將定期評估資訊安全措施的實施狀況，並努力持續改進，以確認本政策和資訊安全法規已遵守。"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "九、文件的修改、廢止"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "本政策的任何修改或廢止均應由資訊安全委員會起草，並須經董事會和董事會批准。"
+    }
+  ],
+  "ko": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "개인 정보 보호 정책"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "1. 선언"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "아이치 국제학원(이하 “AIA”)은 정보의 적절한 관리는 중요한 경영과제 중 하나라고 생각하며, 모든 정보자산에 대한 기밀성, 완전성, 가용성 확보·향상에 노력하고 고객을 포함한 사회 전체의 신뢰에 응하기 위해 정보보안 기본방침(이하 본방침)을 책정하고 이를 실시하고 추진할 것을 선언합니다."
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "2. 적용 범위 및 적용자"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA에서는 관리하에 있는 모든 업무활동에 관련된 정보(함개개인정보)를 적용범위로 하여 임원·종업원(정사원, 계약사원, 촉탁사원, 파견사원, 파트, 아르바이트)·업무위탁계약자를 포함한 정보자산을 이용하는 모든 사람에게 적용합니다."
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "3. 법령 준수"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA는 정보보안에 관한 각종 법령, 국가가 정하는 지침 및 기타 규범을 준수합니다."
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "4. 정보 보안 규정의 제정"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA는 정보보안 대책을 마련함에 있어 준수해야 할 행위 및 판단 등의 기준을 통일적으로 정하기 위해 필요한 기본적인 요건을 명시한 정보 보안 규정을 제정합니다."
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "5. 정보 보안 관리 시스템 구축"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA는 정보보안관리체제를 정비하고 조직으로서 의사통일된 정보보안관리를 실시합니다."
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "6. 보안 사건·사고 대응"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA는 정보 보안 문제가 발생할 경우 신속하게 대응하고 피해를 최소화합니다. 또한 재발 방지책을 포함한 적절한 대책을 강구합니다."
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "7. 정보 보안 교육 및 훈련 실시"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA는 임원 및 모든 직원 및 업무 위탁 계약자에게 정보 보안의 중요성을 인식하고 정보 자산이 적절하게 이용되도록 교육 및 훈련을 실시합니다."
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "8. 정보 보안 대책 실시 상황의 평가 및 지속적인 개선"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA는 본 정책 및 정보 보안 규정이 준수되었는지 확인하기 위해 정기적으로 정보 보안 대책 구현 상황을 평가하고 지속적인 개선을 도모합니다."
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "9. 문서 개폐"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "본 방침의 개폐는 정보보안위원회가 기안하여 이사회 및 이사회의 승인을 필요로 합니다."
+    }
+  ],
+  "vi": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "Chính sách bảo mật"
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "1. Tuyên bố"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "Học viện Quốc tế Aichi (sau đây gọi là \"AIA\") tin rằng việc quản lý thông tin phù hợp là một trong những vấn đề quản lý quan trọng, nỗ lực đảm bảo và cải thiện tính bảo mật, tính toàn vẹn và tính sẵn có của tất cả các tài sản thông tin, đồng thời để xứng đáng với sự tin tưởng của toàn xã hội, bao gồm cả khách hàng của mình, chúng tôi tuyên bố rằng chúng tôi sẽ xây dựng, thực hiện và quảng bá Chính sách cơ bản về bảo mật thông tin (sau đây gọi là chính sách này)."
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "2. Phạm vi và người nộp đơn"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "AIA áp dụng cho tất cả thông tin liên quan đến hoạt động kinh doanh được quản lý (bao gồm thông tin cá nhân) và áp dụng cho tất cả những người sử dụng tài sản thông tin, bao gồm giám đốc điều hành, nhân viên (nhân viên toàn thời gian, nhân viên hợp đồng, nhân viên hợp đồng, nhân viên tạm thời, nhân viên bán thời gian, nhân viên bán thời gian) và nhà thầu gia công."
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "3. Tuân thủ pháp luật"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "AIA tuân thủ nhiều luật và quy định, hướng dẫn quốc gia và các quy định khác liên quan đến bảo mật thông tin."
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "4. Xây dựng quy chế bảo mật thông tin"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "Khi thực hiện các biện pháp bảo mật thông tin, AIA sẽ thiết lập các quy định bảo mật thông tin nêu rõ các yêu cầu cơ bản cần thiết để xác định thống nhất các tiêu chuẩn ứng xử và phán đoán phải tuân thủ."
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "5. Thiết lập hệ thống quản lý an toàn thông tin"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "AIA đã thiết lập hệ thống quản lý an toàn thông tin và thực hiện quản lý an toàn thông tin với một tổ chức thống nhất."
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "6. Ứng phó sự cố/sự cố an ninh"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "Trong trường hợp hiếm hoi xảy ra sự cố bảo mật thông tin, AIA sẽ phản hồi kịp thời và giảm thiểu thiệt hại. Chúng tôi cũng sẽ thực hiện các biện pháp thích hợp, bao gồm các biện pháp ngăn ngừa tái diễn."
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "7. Triển khai giáo dục, đào tạo về an toàn thông tin"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "AIA cung cấp giáo dục và đào tạo cho các giám đốc điều hành, tất cả nhân viên và nhà thầu để giúp họ nhận thức được tầm quan trọng của bảo mật thông tin và đảm bảo rằng tài sản thông tin được sử dụng một cách thích hợp."
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "8. Đánh giá tình trạng thực hiện các biện pháp an toàn thông tin và cải tiến liên tục"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "AIA sẽ thường xuyên đánh giá tình trạng thực hiện các biện pháp bảo mật thông tin và nỗ lực cải tiến liên tục để xác nhận rằng chính sách này và các quy định bảo mật thông tin đang được tuân thủ."
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "9. Sửa đổi, bãi bỏ văn bản"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "Mọi sửa đổi hoặc bãi bỏ chính sách này sẽ do Ủy ban An toàn Thông tin soạn thảo và phải được Hội đồng quản trị và Hội đồng quản trị chấp thuận."
+    }
+  ],
+  "th": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "นโยบายความเป็นส่วนตัว"
+    },
+    {
+      "tag": "พี",
+      "className": "text-xl",
+      "html": "1. คำประกาศ"
+    },
+    {
+      "tag": "พี",
+      "className": "pl-6",
+      "html": "Aichi International Academy (ต่อไปนี้จะเรียกว่า \"AIA\") เชื่อว่าการจัดการข้อมูลที่เหมาะสมเป็นหนึ่งในประเด็นการจัดการที่สำคัญ มุ่งมั่นที่จะรับรองและปรับปรุงการรักษาความลับ ความสมบูรณ์ และความพร้อมของสินทรัพย์ข้อมูลทั้งหมด และเพื่อรักษาความไว้วางใจของสังคมโดยรวม รวมถึงลูกค้าของเรา เราขอประกาศว่าเราจะกำหนด ดำเนินการ และส่งเสริมนโยบายพื้นฐานด้านความปลอดภัยของข้อมูล (ต่อไปนี้จะเรียกว่านโยบายนี้)"
+    },
+    {
+      "tag": "พี",
+      "className": "text-xl",
+      "html": "2. ขอบเขตและผู้สมัคร"
+    },
+    {
+      "tag": "พี",
+      "className": "pl-6",
+      "html": "เอไอเอใช้กับข้อมูลทั้งหมดที่เกี่ยวข้องกับกิจกรรมทางธุรกิจภายใต้การบริหาร (รวมถึงข้อมูลส่วนบุคคล) และนำไปใช้กับทุกคนที่ใช้สินทรัพย์ข้อมูล รวมถึงผู้บริหาร พนักงาน (พนักงานประจำ พนักงานสัญญาจ้าง พนักงานสัญญาจ้าง พนักงานชั่วคราว พนักงานนอกเวลา พนักงานนอกเวลา) และผู้รับเหมาเอาท์ซอร์ส"
+    },
+    {
+      "tag": "พี",
+      "className": "text-xl",
+      "html": "3. การปฏิบัติตามกฎหมาย"
+    },
+    {
+      "tag": "พี",
+      "className": "pl-6",
+      "html": "เอไอเอปฏิบัติตามกฎหมายและข้อบังคับต่างๆ แนวปฏิบัติระดับชาติ และบรรทัดฐานอื่นๆ ที่เกี่ยวข้องกับการรักษาความปลอดภัยของข้อมูล"
+    },
+    {
+      "tag": "พี",
+      "className": "text-xl",
+      "html": "4. การจัดตั้งกฎระเบียบด้านความปลอดภัยข้อมูล"
+    },
+    {
+      "tag": "พี",
+      "className": "pl-6",
+      "html": "เมื่อใช้มาตรการรักษาความปลอดภัยของข้อมูล เอไอเอจะกำหนดกฎระเบียบด้านความปลอดภัยของข้อมูลที่ระบุข้อกำหนดพื้นฐานที่จำเป็นในการกำหนดมาตรฐานการดำเนินการและวิจารณญาณที่ต้องปฏิบัติตามอย่างเท่าเทียมกัน"
+    },
+    {
+      "tag": "พี",
+      "className": "text-xl",
+      "html": "5. การจัดตั้งระบบการจัดการความมั่นคงปลอดภัยสารสนเทศ"
+    },
+    {
+      "tag": "พี",
+      "className": "pl-6",
+      "html": "เอไอเอได้จัดตั้งระบบการจัดการความปลอดภัยของข้อมูลและดำเนินการจัดการความปลอดภัยของข้อมูลกับองค์กรแบบครบวงจร"
+    },
+    {
+      "tag": "พี",
+      "className": "text-xl",
+      "html": "6. การตอบสนองต่อเหตุการณ์ด้านความปลอดภัย/อุบัติเหตุ"
+    },
+    {
+      "tag": "พี",
+      "className": "pl-6",
+      "html": "ในกรณีที่ไม่น่าจะเกิดปัญหาด้านความปลอดภัยของข้อมูล เอไอเอจะตอบสนองทันทีและลดความเสียหายให้เหลือน้อยที่สุด นอกจากนี้เรายังจะใช้มาตรการที่เหมาะสม รวมถึงมาตรการเพื่อป้องกันการเกิดซ้ำ"
+    },
+    {
+      "tag": "พี",
+      "className": "text-xl",
+      "html": "7. การดำเนินการด้านการศึกษาและการฝึกอบรมด้านความปลอดภัยของข้อมูล"
+    },
+    {
+      "tag": "พี",
+      "className": "pl-6",
+      "html": "เอไอเอจัดให้มีการศึกษาและการฝึกอบรมแก่ผู้บริหาร พนักงานทุกคน และผู้รับเหมา เพื่อให้พวกเขาตระหนักถึงความสำคัญของการรักษาความปลอดภัยของข้อมูล และเพื่อให้แน่ใจว่าสินทรัพย์ข้อมูลถูกใช้อย่างเหมาะสม"
+    },
+    {
+      "tag": "พี",
+      "className": "text-xl",
+      "html": "8. การประเมินสถานะการดำเนินการตามมาตรการรักษาความปลอดภัยข้อมูลและการปรับปรุงอย่างต่อเนื่อง"
+    },
+    {
+      "tag": "พี",
+      "className": "pl-6",
+      "html": "เอไอเอจะประเมินสถานะการดำเนินการของมาตรการรักษาความปลอดภัยข้อมูลอย่างสม่ำเสมอ และมุ่งมั่นที่จะปรับปรุงอย่างต่อเนื่องเพื่อยืนยันว่านโยบายนี้และกฎระเบียบด้านความปลอดภัยข้อมูลได้รับการปฏิบัติตาม"
+    },
+    {
+      "tag": "พี",
+      "className": "text-xl",
+      "html": "9. การแก้ไขและยกเลิกเอกสาร"
+    },
+    {
+      "tag": "พี",
+      "className": "pl-6",
+      "html": "การแก้ไขหรือการยกเลิกนโยบายนี้จะต้องร่างโดยคณะกรรมการรักษาความปลอดภัยข้อมูล และต้องได้รับอนุมัติจากคณะกรรมการบริษัทและคณะกรรมการบริษัท"
+    }
+  ],
+  "id": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "Kebijakan privasi"
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "1. Deklarasi"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "Aichi International Academy (selanjutnya disebut \"AIA\") percaya bahwa pengelolaan informasi yang tepat adalah salah satu masalah manajemen yang penting, berupaya untuk memastikan dan meningkatkan kerahasiaan, integritas, dan ketersediaan semua aset informasi, dan untuk memenuhi kepercayaan masyarakat secara keseluruhan, termasuk pelanggan kami, kami menyatakan bahwa kami akan merumuskan, menerapkan dan mempromosikan Kebijakan Dasar Keamanan Informasi (selanjutnya disebut kebijakan ini)."
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "2. Ruang Lingkup dan Pelamar"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "AIA berlaku untuk semua informasi terkait aktivitas bisnis yang dikelola (termasuk informasi pribadi), dan berlaku untuk semua orang yang menggunakan aset informasi, termasuk eksekutif, karyawan (karyawan penuh waktu, karyawan kontrak, karyawan kontrak, karyawan sementara, karyawan paruh waktu, pekerja paruh waktu), dan kontraktor outsourcing."
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "3. Kepatuhan hukum"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "AIA mematuhi berbagai undang-undang dan peraturan, pedoman nasional, dan norma lain terkait keamanan informasi."
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "4. Penetapan peraturan keamanan informasi"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "Saat mengambil tindakan keamanan informasi, AIA akan menetapkan peraturan keamanan informasi yang menetapkan persyaratan dasar yang diperlukan untuk secara seragam menentukan standar perilaku dan penilaian yang harus dipatuhi."
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "5. Terbentuknya sistem manajemen keamanan informasi"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "AIA telah membentuk sistem manajemen keamanan informasi dan menerapkan manajemen keamanan informasi dengan kesatuan organisasi."
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "6. Respon terhadap insiden/kecelakaan keamanan"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "Jika terjadi masalah keamanan informasi, AIA akan segera merespons dan meminimalkan kerusakan. Kami juga akan mengambil tindakan yang tepat, termasuk tindakan untuk mencegah terulangnya kembali."
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "7. Penyelenggaraan pendidikan dan pelatihan keamanan informasi"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "AIA memberikan pendidikan dan pelatihan kepada para eksekutif, seluruh karyawan, dan kontraktor untuk menyadarkan mereka akan pentingnya keamanan informasi dan untuk memastikan bahwa aset informasi digunakan dengan tepat."
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "8. Evaluasi status penerapan langkah-langkah keamanan informasi dan perbaikan berkelanjutan"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "AIA akan secara berkala mengevaluasi status penerapan langkah-langkah keamanan informasi dan mengupayakan perbaikan berkelanjutan untuk memastikan bahwa kebijakan dan peraturan keamanan informasi ini dipatuhi."
+    },
+    {
+      "tag": "P",
+      "className": "text-xl",
+      "html": "9. Perubahan dan penghapusan dokumen"
+    },
+    {
+      "tag": "P",
+      "className": "pl-6",
+      "html": "Setiap revisi atau penghapusan kebijakan ini harus dirancang oleh Komite Keamanan Informasi dan harus disetujui oleh Dewan Direksi dan Dewan Direksi."
+    }
+  ],
+  "np": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "गोपनीयता नीति"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "1. घोषणा"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "आइची इन्टरनेशनल एकेडेमी (यसपछि \"एआईए\" भनेर चिनिन्छ) विश्वास गर्दछ कि सूचनाको उपयुक्त व्यवस्थापन महत्त्वपूर्ण व्यवस्थापन मुद्दाहरू मध्ये एक हो, सबै जानकारी सम्पत्तिहरूको गोपनीयता, अखण्डता, र उपलब्धता सुनिश्चित गर्न र सुधार गर्न प्रयास गर्दछ, र हाम्रा ग्राहकहरू लगायत सम्पूर्ण समाजको विश्वासमा बाँच्नको लागि, हामी घोषणा गर्दछौं कि हामी सूचना, सुरक्षाको प्रवर्द्धन र प्रवर्द्धन गर्नेछौं। यो नीति भनिन्छ)।"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "2. दायरा र आवेदकहरू"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA व्यवस्थापन अन्तर्गतका व्यापार गतिविधिहरू (व्यक्तिगत जानकारी सहित) सम्बन्धित सबै जानकारीहरूमा लागू हुन्छ, र कार्यकारीहरू, कर्मचारीहरू (पूर्ण-समय कर्मचारीहरू, अनुबंध कर्मचारीहरू, अनुबंध कर्मचारीहरू, अस्थायी कर्मचारीहरू, अंशकालिक कर्मचारीहरू, अंशकालिक कामदारहरू), र आउटसोर्सिङ ठेकेदारहरू सहित जानकारी सम्पत्तिहरू प्रयोग गर्ने सबै व्यक्तिहरूमा लागू हुन्छ।"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "3. कानूनी अनुपालन"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA ले विभिन्न कानून र नियमहरू, राष्ट्रिय दिशानिर्देशहरू, र सूचना सुरक्षासँग सम्बन्धित अन्य मापदण्डहरूको पालना गर्दछ।"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "4. सूचना सुरक्षा नियमहरूको स्थापना"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "सूचना सुरक्षा उपायहरू लिँदा, AIA ले सूचना सुरक्षा नियमहरू स्थापना गर्नेछ जसले पालना गर्नुपर्ने आचरण र न्यायका मापदण्डहरूलाई समान रूपमा परिभाषित गर्न आवश्यक आधारभूत आवश्यकताहरू निर्दिष्ट गर्दछ।"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "५. सूचना सुरक्षा व्यवस्थापन प्रणालीको स्थापना"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA ले सूचना सुरक्षा व्यवस्थापन प्रणाली स्थापना गरेको छ र एकीकृत संगठनसँग सूचना सुरक्षा व्यवस्थापन लागू गर्दछ।"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "6. सुरक्षा घटनाहरू/दुर्घटनाहरूमा प्रतिक्रिया"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "कुनै सूचना सुरक्षा समस्या उत्पन्न हुने सम्भावित घटनामा, AIA ले तुरुन्तै प्रतिक्रिया दिनेछ र क्षतिलाई कम गर्नेछ। हामी पुनरावृत्ति रोक्न उपायहरू सहित उपयुक्त उपायहरू पनि गर्नेछौं।"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "७. सूचना सुरक्षा शिक्षा र तालिमको कार्यान्वयन"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA ले अधिकारीहरू, सबै कर्मचारीहरू, र ठेकेदारहरूलाई सूचना सुरक्षाको महत्त्व बारे सचेत गराउन र सूचना सम्पत्तिहरू उचित रूपमा प्रयोग भएको सुनिश्चित गर्न शिक्षा र प्रशिक्षण प्रदान गर्दछ।"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "8. सूचना सुरक्षा उपायहरूको कार्यान्वयन स्थिति र निरन्तर सुधारको मूल्याङ्कन"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "AIA ले नियमित रूपमा सूचना सुरक्षा उपायहरूको कार्यान्वयन स्थितिको मूल्याङ्कन गर्नेछ र यो नीति र सूचना सुरक्षा नियमहरूको पालना भइरहेको छ भनी पुष्टि गर्न निरन्तर सुधारको लागि प्रयास गर्नेछ।"
+    },
+    {
+      "tag": "p",
+      "className": "text-xl",
+      "html": "9. कागजातहरूको संशोधन र उन्मूलन"
+    },
+    {
+      "tag": "p",
+      "className": "pl-6",
+      "html": "यस नीतिको कुनै पनि संशोधन वा उन्मूलन सूचना सुरक्षा समितिद्वारा मस्यौदा तयार गरिनेछ र सञ्चालक समिति र सञ्चालक समितिले अनुमोदन गर्नुपर्नेछ।"
+    }
+  ]
+}

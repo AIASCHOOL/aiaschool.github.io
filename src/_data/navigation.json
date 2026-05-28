@@ -1,0 +1,145 @@
+{
+  "root": [
+    {
+      "type": "link",
+      "labelKey": "news",
+      "href": "index.html"
+    },
+    {
+      "type": "group",
+      "labelKey": "about",
+      "dropdownWidth": "min-w-[110px]",
+      "children": [
+        {
+          "labelKey": "business",
+          "href": "about_business.html"
+        },
+        {
+          "labelKey": "facility",
+          "href": "about_facility.html"
+        },
+        {
+          "labelKey": "publish",
+          "href": "about_publish.html"
+        }
+      ]
+    },
+    {
+      "type": "link",
+      "labelKey": "message",
+      "href": "message.html"
+    },
+    {
+      "type": "group",
+      "labelKey": "courses",
+      "dropdownWidth": "min-w-[150px]",
+      "children": [
+        {
+          "labelKey": "advance",
+          "href": "course_advance.html"
+        },
+        {
+          "labelKey": "junior",
+          "href": "course_junior.html"
+        },
+        {
+          "labelKey": "tour",
+          "href": "course_tour.html"
+        },
+        {
+          "labelKey": "lecture",
+          "href": "course_lecture.html"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "labelKey": "life",
+      "dropdownWidth": "min-w-[110px]",
+      "children": [
+        {
+          "labelKey": "dorm",
+          "href": "life_dorm.html"
+        },
+        {
+          "labelKey": "insurance",
+          "href": "life_insurance.html"
+        },
+        {
+          "labelKey": "visa",
+          "href": "life_visa.html"
+        }
+      ]
+    },
+    {
+      "type": "link",
+      "labelKey": "books",
+      "href": "books.html"
+    },
+    {
+      "type": "link",
+      "labelKey": "access",
+      "href": "access.html"
+    }
+  ],
+  "staging": [
+    {
+      "type": "link",
+      "labelKey": "news",
+      "href": "index.html"
+    },
+    {
+      "type": "group",
+      "labelKey": "about",
+      "dropdownWidth": "min-w-[110px]",
+      "children": [
+        {
+          "labelKey": "business",
+          "href": "about_business.html"
+        },
+        {
+          "labelKey": "facility",
+          "href": "about_facility.html"
+        },
+        {
+          "labelKey": "publish",
+          "href": "about_publish.html"
+        }
+      ]
+    },
+    {
+      "type": "link",
+      "labelKey": "advance",
+      "href": "course_advance.html"
+    },
+    {
+      "type": "group",
+      "labelKey": "life",
+      "dropdownWidth": "min-w-[110px]",
+      "children": [
+        {
+          "labelKey": "dorm",
+          "href": "life_dorm.html"
+        },
+        {
+          "labelKey": "insurance",
+          "href": "life_insurance.html"
+        },
+        {
+          "labelKey": "visa",
+          "href": "life_visa.html"
+        }
+      ]
+    },
+    {
+      "type": "link",
+      "labelKey": "books",
+      "href": "books.html"
+    },
+    {
+      "type": "link",
+      "labelKey": "access",
+      "href": "access.html"
+    }
+  ]
+}

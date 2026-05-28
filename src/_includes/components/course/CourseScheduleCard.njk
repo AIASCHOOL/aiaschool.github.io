@@ -1,0 +1,8 @@
+<div class="{{ course.cardClass }}">
+  <div class="{{ course.titleClass }}">{{ course.title }}</div>
+  <div class="overflow-x-auto">
+    {% for table in course.tables %}
+      {% include "components/course/CourseScheduleTable.njk" %}
+    {% endfor %}
+  </div>
+</div>

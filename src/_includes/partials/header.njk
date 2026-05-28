@@ -1,0 +1,70 @@
+{% set t = localeData or route.locale %}
+{% set currentAssetPrefix = assetPrefix or route.assetPrefix %}
+{% set currentNavVariant = navVariant or route.navVariant %}
+{% set currentLanguageLinks = languageLinks or route.languageLinks %}
+{% set menuItems = navigation[currentNavVariant] or navigation.root %}
+<!-- banner start -->
+<div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1">
+  <div class="flex items-center flex-row">
+    <div class="flex-grow"></div>
+    <img class="h-10 ml-0 mr-0 hidden md:block invisible" src="{{ currentAssetPrefix }}images/35th.png" />
+    <a href="index.html" class="h-10 border-none"><img class="h-10" src="{{ currentAssetPrefix }}images/logo.png" /></a>
+    <a href="#" class="h-10 cursor-auto border-none"><img class="h-10" src="{{ currentAssetPrefix }}images/35th.png" /></a>
+    <div class="flex-grow"></div>
+  </div>
+</div>
+<!-- banner end -->
+<!-- menu start -->
+<div class="bg-gradient-to-r from-blue-900 from-30% via-blue-400 via-50% to-blue-900 to-70% notranslate" translate="no">
+  <header class="shadow-md">
+    <div class="flex flex-wrap justify-center px-4 py-3 relative text-xs lg:text-sm">
+      <div id="toggle" class="flex ml-auto md:order-1 md:hidden mr-2 relative z-50">
+        <button class="ml-7">
+          <svg class="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <ul id="collapseMenu"
+        class="mx-auto md:!flex md:space-x-4 lg:space-x-7 xl:space-x-10 max-md:space-y-3 max-md:hidden max-md:w-full max-md:my-4">
+{% for item in menuItems %}
+{% if item.type == "group" %}
+        <li class="group max-md:border-b max-md:py-2 relative">
+          <a href="javascript:void(0)" class="hover:text-gray-300 hover:fill-gray-300 text-white block fill-white">
+            {{ t.nav[item.labelKey] }}{% include "partials/chevron.njk" %}
+          </a>
+          <ul class="absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 md:top-5 max-md:top-8 left-0 {{ item.dropdownWidth }} z-50">
+{% for child in item.children %}
+            <li class="{% if not loop.last %}border-b {% endif %}{% if loop.first %}py-3{% else %}pt-1 pb-3{% endif %}">
+              <a href="{{ child.href }}" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">{{ t.nav[child.labelKey] }}</a>
+            </li>
+{% endfor %}
+          </ul>
+        </li>
+{% else %}
+        <li class="max-md:border-b max-md:py-2"><a href="{{ item.href }}" class="hover:text-gray-300 text-white block">{{ t.nav[item.labelKey] }}</a></li>
+{% endif %}
+{% endfor %}
+      </ul>
+      <ul id="collapseMenu2" class="max-md:mt-1">
+        <li class="group relative" id="languageMenu">
+          <a href="javascript:void(0)" class="hover:text-gray-300 hover:fill-gray-300 text-white block fill-white">
+            <svg class="w-5 h-5" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" xml:space="preserve">
+              <switch><g><path d="M60 120C26.9 120 0 93.1 0 60S26.9 0 60 0s60 26.9 60 60-26.9 60-60 60zM60 5C29.7 5 5 29.7 5 60s24.7 55 55 55 55-24.7 55-55S90.3 5 60 5z" /><path d="M60 120c-19.3 0-34.4-26.4-34.4-60S40.7 0 60 0s34.4 26.4 34.4 60-15.1 60-34.4 60zM60 5C43.8 5 30.5 29.7 30.5 60s13.2 55 29.5 55 29.5-24.7 29.5-55S76.2 5 60 5z" /><path d="M12.2 25.6h95.6v5H12.2zM12.2 89.5h95.6v5H12.2zM2.5 57.5h115v5H2.5z" /><path d="M57.5 2.5h5v115h-5z" /></g></switch>
+            </svg>
+          </a>
+          <ul class="absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 md:top-5 max-md:top-5 -left-28 min-w-[130px] z-50 notranslate" id="languageDropdown">
+{% for language in currentLanguageLinks %}
+            <li class="{% if not loop.last %}border-b {% endif %}{% if loop.first %}py-3{% else %}pt-1 pb-3{% endif %}">
+              <a href="{{ language.href }}" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">{{ language.label }}</a>
+            </li>
+{% endfor %}
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+</div>
+<!-- menu end -->

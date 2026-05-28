@@ -1,0 +1,461 @@
+{
+  "ja": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/7-JUNIOR_COLLEGE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "短期大学併修コース",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base text-center",
+      "subtitleHtml": "<span class=\"underline\">AIA 愛知国際学院　＆　ASU 愛知産業大学</span><br>\n        同時入学、ダブルスクール"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/7-1/p7top.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-4 text-white italic text-lg\">手数を省ける</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">短期大学への入学手続きは本学院が代行</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 \">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-1.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-2.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      愛知国際学院日本語学科進学コース（2 年制）と<br>\n      愛知産業短期大学通信教育国際コミュニケーション学科（2 年制）と同時入学、同時卒業。<br>\n      試験なしで両校同時に入学でき、日本語能力試験N2レベルがなくても大学の課程を勉強可能。<br>\n      愛知国際学院での二年課程日本語コースでは、８単位を修得できるほか、大学に行かずに、レポート提出と３科目のスクリーンで54単位を取得可能。合わせて60単位で短大卒業証書と学位を授与される。\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">時間を短縮</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">2年の所要学習生活時間を短縮できる</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6\">\n      一般的には日本語学校と短大卒業まで所用期間は4年かかるが、このコースでは2年で済みます。<br>\n      　このコースを卒業したら、日本の大学3年次へ推薦あるいは受験合格で編入が可能。したがって、日本語学校から４年制大学卒業まで普通は６年かかる所が、このコースでは４年で卒業可能。</div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">学費の節約</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">日本円約５００万の費用を節約することが可能</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/7-2_pictrue01.jpg\" class=\"h-64 mx-1  \"></div>\n      右記の学費、生活費及び所要学習期間の比較を見れば、わかるように、一般的な学習過程では日本語学校から大学卒業まで６年、費用合計約1500万円前後になる反面、本学院の短大併修コースでは四年間で1000万円前後で済む。つまり、約2年間の時間と労力及び日本円で500万円前後の節約が可能。\n      <div class=\"clear-both\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">人材になる</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">多数な進路の選択肢がある</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"md:float-right\"><img src=\"__ASSET__images/7-1/7-3_pictrue02.png\" class=\"h-64 mx-1\"><br></div>\n      <div class=\"flex flex-col md:flex-row\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-6\">日本語学校卒業後</div>\n        </div>\n        <div class=\"\">日本語能力は大学の卒業者と比べて劣らず、日本企業への就職資格も可能。</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-11\">短大卒業後</div>\n        </div>\n        <div class=\"\">短期大学の学位と専門知識を取得することができ、日本企業に就職可能。</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-8\">四年大学卒業後</div>\n        </div>\n        <div class=\"\">4年大学卒業後、大学院への進学、日本企業への就職或いは創業など、数々の進路の選択肢がある。</div>\n      </div>\n\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"my-5 flow-root\">\n      <div class=\"float-left\"><img src=\"__ASSET__images/7-1/7-3_pictrue03.png\" class=\"h-48 mx-3\"></div>\n      <div class=\"\">\n        <p class=\"text-xl text-[green] my-2\">学びていとわず 、志ある者は事ついに成る</p>\n        <div class=\"text-xs\">\n          　2015年、私は英語教師の紹介により、日本へ渡り、愛知国際学院で日本語の勉強を始めました。その際に、短期併修コースを知り、学院の指導で大学の見学をした後、申し込みをすることにしました。最初は、勉強についていけるか不安でしたが、学校の丁寧なサポートのもと、二つの卒業証書学院と短期大学を得ることが出来ました。そして、名古屋で会社を立ち上げ、不動産投資事業を始め、異国環境で人生の夢を叶えることが出来ました。<br><br>\n          　短期併修コースを申し込んだ感想は、「天下に難事無し、只だ人に心有るを怕るるのみ」です。そして、本学院の責任ある対応と大学教授の熱心且つ丁寧な教育態度にとても感心しました。\n\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-8 text-white italic text-lg\">単位取得</div>\n      </div>\n      <div class=\"pt-0 text-[red] italic font-serif mt-2 sm:mt-0\">2年間本学院での日本語授業で８単位，<br>\n        21科目レポート提出で４２単位、6科目スクーリングで12単位取得,計６２単位、短大学位取得</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6\">\n      <div class=\"flex justify-center items-center flex-col md:flex-row\">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue04.png\" class=\"mx-1 \">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue05.png\" class=\"mx-1 \">\n      </div>\n      <div class=\"text-center text-[red] text-xl mt-3\">合計62単位短期大学学士学位取得</div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex pt-2 flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-8 text-white italic text-lg\">編入実績</div>\n      </div>\n      <div class=\"text-[red] italic font-serif mt-2 sm:mt-0\">短期大学卒業後、愛知産業大学への３年編入以外<br>その他大学への編入や日本企業への就職が可能、</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6 justify-center items-center grid md:grid-cols-2 gap-0 md:gap-2\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue06.jpg\" class=\"mx-1\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue07.jpg\" class=\"mx-1\">\n      \n    </div>"
+      }
+    ]
+  },
+  "en": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/7-JUNIOR_COLLEGE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "Junior College Concurrent Course",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base text-center",
+      "subtitleHtml": "<span class=\"underline\">AIA Aichi International Academy &amp; ASU Aichi Sangyō University</span><br>\n        Simultaneous Enrollment, Dual Registration"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/7-1/p7top.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-64 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full w-full\">\n        <div class=\"absolute top-1 left-4 whitespace-nowrap text-white italic text-lg\">Reduce hassle</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">The enrollment procedures for the junior college are\n        handled by this institute.</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 \">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-1.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-2.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      <p>&nbsp; The Aichi International Academy Japanese Language Department Enrollment Course (2 years) and the Aichi\n        Sangyo University Correspondence Education International Communication Department (2 years) allow simultaneous\n        enrollment and graduation.\n        Students can enroll in both schools without an entrance exam, and it is possible to study university courses\n        even without passing the Japanese Language Proficiency Test N2 level.&nbsp;</p>\n      <p>&nbsp; In the two-year Japanese language course at Aichi International Academy, students can acquire 8 credits.\n        Additionally, without attending a university, they can earn 54 credits through reading reports and three subject\n        screenings alone, totaling 60 credits to receive a junior college graduation certificate and degree. </p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-64 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full w-full\">\n        <div class=\"absolute top-1 left-6 whitespace-nowrap text-white italic text-lg\">reduce the time.</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">It is possible to shorten the required study duration\n        of two years.</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6\">\n      Typically, it takes 4 years to complete both Japanese language school and junior college graduation. However, in\n      this course, it can be completed in 2 years.<br>\n      　Upon graduation from this course, students can either be recommended for or pass the entrance exam to transfer to\n      the third year of a Japanese university. Therefore, while it usually takes 6 years to graduate from a Japanese\n      language school and a 4-year university, this course allows students to graduate in 4 years.</div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-64 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full w-full\">\n        <div class=\"absolute top-1 left-6 whitespace-nowrap text-white italic text-lg\">Saving on tuition fees</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">It is possible to save approximately 5 million yen in\n        expenses.</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/7-2_pictrue01.jpg\" class=\"h-64 mx-1  \"></div>\n      As seen in the comparison of tuition fees, living expenses, and required study periods on the right, the typical\n      learning process takes 6 years from Japanese language school to university graduation, with a total cost of\n      approximately 15 million yen. In contrast, the college dual enrollment course at this school allows completion in\n      4 years with a total cost of around 10 million yen. In other words, it is possible to save about 2 years of time\n      and effort, as well as approximately 5 million yen in expenses.\n      <div class=\"clear-both\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-64 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full w-full\">\n        <div class=\"absolute top-1 left-6 whitespace-nowrap text-white italic text-lg\">Be a professional</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">Numerous career paths are available</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"md:float-right\"><img src=\"__ASSET__images/7-1/7-3_pictrue02.png\" class=\"h-64 mx-1\"><br></div>\n      <div class=\"flex flex-col md:flex-row\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-96\">\n          <div class=\"absolute top-3 left-8 whitespace-nowrap\">After graduating from Japanese language school</div>\n        </div>\n        <div class=\"\">Japanese language proficiency is comparable to university graduates, and qualification for\n          employment in Japanese companies is also possible.</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-96\">\n          <div class=\"absolute top-3 left-8 whitespace-nowrap\">After completing junior college</div>\n        </div>\n        <div class=\"\">Able to obtain a junior college degree and specialized knowledge, making it possible to work in\n          Japanese companies.</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-96\">\n          <div class=\"absolute top-3 left-8 whitespace-nowrap\">After graduating from a four-year university</div>\n        </div>\n        <div class=\"\">After graduating from a four-year university, there are numerous career options such as pursuing\n          graduate studies, entering the workforce in Japanese companies, or starting one's own business.</div>\n      </div>\n\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"my-5 flow-root\">\n      <div class=\"float-left\"><img src=\"__ASSET__images/7-1/7-3_pictrue03.png\" class=\"h-48 mx-3\"></div>\n      <div class=\"\">\n        <p class=\"text-xl text-[green] my-2\">Those who are determined and unwavering in their pursuit of knowledge will\n          eventually succeed.</p>\n        <div class=\"text-xs\">\n\n          <p> 　In 2015, through the introduction of an English teacher, I came to Japan and began studying Japanese at\n            Aichi International Academy. During that time, I learned about the short-term concurrent course and, with\n            the guidance of the school, visited a university before deciding to apply. Initially, I was unsure if I\n            could keep up with the studies, but with the careful support of the school, I was able to obtain two\n            graduation certificates from the college and junior college. Subsequently, I established a company in\n            Nagoya, started a real estate investment business, and fulfilled my life's dreams in a foreign environment.\n          </p>\n          　My impression upon applying for the short-term concurrent course is, 'Under heaven, all is clear; I fear only\n          the hearts of men.' I was greatly impressed by the responsible handling of the institute and the enthusiastic\n          and meticulous teaching attitude of the university professors.\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-64 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full w-full\">\n        <div class=\"absolute top-1 left-8 whitespace-nowrap text-white italic text-lg\">Earning Credits</div>\n      </div>\n      <div class=\"pt-0 text-[red] italic font-serif mt-2 sm:mt-0\"><strong>Over two years at this institute, I obtained 8\n          Japanese language credits, 42 credits through reading reports for 21 subjects, and 12 credits for each of the\n          6 subjects through lectures, totaling 62 credits and earning a junior college degree.</strong></div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6\">\n      <div class=\"flex justify-center items-center flex-col md:flex-row\">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue04.png\" class=\"mx-1 \">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue05.png\" class=\"mx-1 \">\n      </div>\n      <div class=\"text-center text-[red] text-xl mt-3\">Total of 62 credits earned, obtaining an associate degree from\n        the junior college.</div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex pt-2 flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-64 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full w-full\">\n        <div class=\"absolute top-1 left-8 whitespace-nowrap text-white italic text-lg\">Transfer Achievements</div>\n      </div>\n      <div class=\"text-[red] italic font-serif mt-2 sm:mt-0\">After graduating from junior college, besides transferring\n        to Aichi Sangyo University for a 3-year program, it is also possible to transfer to other universities or to\n        enter employment with Japanese companies.&nbsp;</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6 justify-center items-center grid md:grid-cols-2 gap-0 md:gap-2\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue06.jpg\" class=\"mx-1\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue07.jpg\" class=\"mx-1\">\n      \n    </div>"
+      }
+    ]
+  },
+  "cn": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/7-JUNIOR_COLLEGE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "短期大学并修课程",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base text-center",
+      "subtitleHtml": "<span class=\"underline\">AIA 爱知国际学院　＆　ASU 爱知产业大学</span><br>\n        同时入学丶双重学籍"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/7-1/p7top.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-4 text-white italic text-lg\">简化手续</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">本学院代办短期大学入学手续</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 \">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-1.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-2.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      爱知国际学院的日本语学科进学课程（2年制）<br>\n      和爱知产业短期大学通信教育国际交流学科（2年制）允许同时入学和同时毕业。<br>\n      无需考试即可同时入读两校，即使没有通过日本语能力试验N2级别，也能修习大学科目。<br>\n      在爱知国际学院的两年制日本语课程中，学生可以获得8个学分。此外，无需上大学，只需通过阅读报告和三个科目的筛选，就能获得54学分，总共60学分，并授予短期大学毕业证书和学位。\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">节省时间</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">您可以将所需的学习时间缩短2年。</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6\">\n      一般来说，日语学校和短期大学毕业需要四年，但本课程只需要两年。<br>\n      　本课程毕业后，可通过推荐或通过入学考试转入日本大学三年级。因此，从日语学校到四年制大学通常需要六年才能毕业，而通过本课程，您可以在四年内毕业。</div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">节省学费</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">可以节省约500万日元。</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/7-2_pictrue01.jpg\" class=\"h-64 mx-1  \"></div>\n      如果你看右图的学费、生活费和所需学习时间的比较，就会发现，从日语学校到大学毕业，一般的学习过程需要6年时间，总费用约为1500万日元，而我们学校的短期大学培训课程的费用约为4年1000万日元。也就是说，两年内可以节省约500万日元的时间和精力。\n      <div class=\"clear-both\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">成为人才</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">多样的进路选择</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"md:float-right\"><img src=\"__ASSET__images/7-1/7-3_pictrue02.png\" class=\"h-64 mx-1\"><br></div>\n      <div class=\"flex flex-col md:flex-row\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-6\">日语学校毕业后</div>\n        </div>\n        <div class=\"\">日本语能力与大学毕业生相比并不较差，也有资格就业於日本企业。</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-11\">短期大学毕业后</div>\n        </div>\n        <div class=\"\">可以获得短期大学的学位和专业知识，并有机会就职于日本企业。</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-8\">四年大学毕业后</div>\n        </div>\n        <div class=\"\">大学四年毕业后，有许多选择的进路，包括进入研究所攻读硕士或博士学位，就业于日本企业，或者创业。</div>\n      </div>\n\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"my-5 flow-root\">\n      <div class=\"float-left\"><img src=\"__ASSET__images/7-1/7-3_pictrue03.png\" class=\"h-48 mx-3\"></div>\n      <div class=\"\">\n        <p class=\"text-xl text-[green] my-2\">那些肯学习、有抱负的人最终会取得成功。</p>\n        <div class=\"text-xs\">\n          　2015年，我通过英语老师的介绍来到了日本，开始在爱知国际学院学习日语。当时我了解了短期课外课程，并在学校的指导下参观了大学后，我决定申请。起初我还担心自己能否跟上学业，但在学校的精心支持下，我顺利拿到了两张文凭和一个大专。然后，我在名古屋创办了一家公司，开始了房地产投资业务，并能够在异国环境中实现我的人生梦想。<br><br>\n          　报考短期兼修班后的感想是：“世上本无艰辛，只是佩服平凡人的心。”我校负责任的应对和大学教授们热情周到的教学态度给我留下了深刻的印象。\n\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-8 text-white italic text-lg\">学分取得</div>\n      </div>\n      <div class=\"pt-0 text-[red] italic font-serif mt-2 sm:mt-0\">在本学院的两年间，可以获得了8个日语学分，<br>\n        通过21个科目的阅读报告获得了42学分，以及通过6个科目的讲座每个12学分，总计获得了62学分，并取得了短期大学学位。</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6\">\n      <div class=\"flex justify-center items-center flex-col md:flex-row\">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue04.png\" class=\"mx-1 \">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue05.png\" class=\"mx-1 \">\n      </div>\n      <div class=\"text-center text-[red] text-xl mt-3\">共获得62学分，取得短期大学学士学位。</div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex pt-2 flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-8 text-white italic text-lg\">编入实绩</div>\n      </div>\n      <div class=\"text-[red] italic font-serif mt-2 sm:mt-0\">\n        短期大学毕业后，除了可以进行3年制的爱知产业大学转学编入之外，<br>还有其他大学的转学编入或是就业于日本企业的可能性。、</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6 justify-center items-center grid md:grid-cols-2 gap-0 md:gap-2\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue06.jpg\" class=\"mx-1\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue07.jpg\" class=\"mx-1\">\n      \n    </div>"
+      }
+    ]
+  },
+  "tw": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/7-JUNIOR_COLLEGE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "短期大學兼修課程",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base text-center",
+      "subtitleHtml": "<span class=\"underline\">AIA 愛知國際學院 &amp; ASU 愛知產業大學</span><br>\n        同步招生、雙校"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/7-1/p7top.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-4 text-white italic text-lg\">節省時間</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">本校代為辦理專科學校入學手續。</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 \">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-1.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-2.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      愛知國際學院日語科預備課程（2年）<br>\n      與愛知產業短期大學函授教育系國際交流專業（2年制）同時入學畢業。<br>\n      無需參加任何考試即可同時入讀兩所學校，無需通過日語能力考試N2即可學習大學課程。<br>\n      在愛知國際學院的兩年日語課程中，可以獲得8個學分，並且無需上大學，提交報告和完成3個篩選科目也可以獲得54個學分。授予專科文憑和學位共60學分。\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">節省時間</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">您可以將所需的學習時間縮短2年。</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6\">\n      一般來說，日語學校和短期大學畢業需要四年，但本課程只需要兩年。<br>\n      　本課程畢業後，可透過推薦或透過入學考試轉入日本大學三年級。因此，從日語學校到四年制大學通常需要六年才能畢業，而透過本課程，您可以在四年內畢業。</div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">節省學費</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">可以節省約500萬日元。</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/7-2_pictrue01.jpg\" class=\"h-64 mx-1  \"></div>\n      如果你看右圖的學費、生活費和所需學習時間的比較，你會發現，從日語學校到大學畢業，典型的學習過程需要6年時間，總費用約為1500萬日元，而我們的短期大學課程的費用約為4年1000萬日元。也就是說，兩年內可以節省約500萬日圓的時間和精力。\n      <div class=\"clear-both\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">成為人力資源</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">有很多職業選擇</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"md:float-right\"><img src=\"__ASSET__images/7-1/7-3_pictrue02.png\" class=\"h-64 mx-1\"><br></div>\n      <div class=\"flex flex-col md:flex-row\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-6\">日語學校畢業後</div>\n        </div>\n        <div class=\"\">他們的日文程度與大學畢業生相當，有資格在日本企業就業。</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-11\">大專畢業後</div>\n        </div>\n        <div class=\"\">可以獲得短期大學學歷和專業知識，並可以在日本企業就職。</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-8\">四年制大學畢業後</div>\n        </div>\n        <div class=\"\">四年後大學畢業後，學生有很多職業選擇，包括繼續攻讀研究生、在日本公司就業或創業。</div>\n      </div>\n\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"my-5 flow-root\">\n      <div class=\"float-left\"><img src=\"__ASSET__images/7-1/7-3_pictrue03.png\" class=\"h-48 mx-3\"></div>\n      <div class=\"\">\n        <p class=\"text-xl text-[green] my-2\">那些肯學習、有抱負的人最終會成功。</p>\n        <div class=\"text-xs\">\n          　2015年，我透過英語老師的介紹來到了日本，開始在愛知國際學院學習日語。當時我了解了短期課外課程，並在學校的指導下參觀了大學後，我決定申請。起初我還擔心自己能否跟上學業，但在學校的精心支持下，我順利拿到了兩張文憑和一個大專。然後，我在名古屋創辦了一家公司，開始了房地產投資業務，並能夠在異國環境中實現我的人生夢想。<br><br>\n          　報考短期兼修班後的感想是：「世上本無艱辛，只是佩服平凡人的心。」我校負責任的應對和大學教授們熱情周到的教學態度給我留下了深刻的印象。\n\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-8 text-white italic text-lg\">獲得學分</div>\n      </div>\n      <div class=\"pt-0 text-[red] italic font-serif mt-2 sm:mt-0\">我校日語課程2年8學分，<br>\n        提交21個科目的報告獲得42學分，學習6個科目獲得12學分，總共62學分，獲得大專學位。</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6\">\n      <div class=\"flex justify-center items-center flex-col md:flex-row\">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue04.png\" class=\"mx-1 \">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue05.png\" class=\"mx-1 \">\n      </div>\n      <div class=\"text-center text-[red] text-xl mt-3\">總共62個學分獲得大專學士學位。</div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex pt-2 flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-8 text-white italic text-lg\">轉移結果</div>\n      </div>\n      <div class=\"text-[red] italic font-serif mt-2 sm:mt-0\">短期大學畢業後轉入愛知產業大學就讀3年除外<br>您可以轉學到其他大學或在日本公司就職。</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6 justify-center items-center grid md:grid-cols-2 gap-0 md:gap-2\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue06.jpg\" class=\"mx-1\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue07.jpg\" class=\"mx-1\">\n      \n    </div>"
+      }
+    ]
+  },
+  "ko": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/7-JUNIOR_COLLEGE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "단기 대학 병행 과정",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base text-center",
+      "subtitleHtml": "<span class=\"underline\">AIA Aichi International Academy &amp; ASU Aichi Sangyō University</span><br>\n        동시 입학, 이중 등록"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/7-1/p7top.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-4 text-white italic text-lg\">수속 절감</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">본 학원에서는 단기 대학 입학 수속을 담당합니다.</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 \">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-1.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-2.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      Aichi International Academy의 일본어 과정 진학 과정 (2년 제도) 및<br>\n      Aichi Sangyo University의 통신 교육 국제 교류 학과 (2년 제도)은 동시 입학과 동시 졸업을 허용합니다.<br>\n      양국 모두를 동시에 수강할 수 있으며, 일본어 능력 시험 N2 레벨을 통과하지 못해도 대학 과목을 수강할 수 있습니다.<br>\n      Aichi International Academy의 2년 일본어 과정에서 학생들은 8 학점을 얻을 수 있습니다. 또한 대학에 가지 않아도 독서 보고서와 세 과목의 스크린만 통과하면 54 학점을 얻을 수\n      있으며, 이를 통해 총 60 학점을 받아 단기 대학 졸업증과 학위를 수여받을 수 있습니다.\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">소요 시간 단축</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">2년의 소요 학습·생활 시간을 단축할 수 있습니다</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6\">\n      일반적으로 일본어 학교와 단기 대학 졸업까지 소요 기간은 4년이 걸리지만, 이 과정에서는 2년이면 됩니다.<br>\n      이 과정을 졸업하면 일본 대학 3학년으로 추천 또는 입시 합격으로 편입이 가능합니다. 따라서 일본어 학교에서 4년제 대학 졸업까지 보통 6년이 걸리는 것을 이 과정에서는 4년에 졸업할 수 있습니다.</div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">학비 절약</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">약 500만 엔의 비용을 절약할 수 있습니다</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/7-2_pictrue01.jpg\" class=\"h-64 mx-1  \"></div>\n      아래 학비, 생활비 및 소요 학습 기간 비교를 보시면 아시겠듯이, 일반적인 학습 과정에서는 일본어 학교에서 대학 졸업까지 6년, 비용 합계 약 1,500만 엔 전후가 드는 반면, 본 학원 단기 대학 복수 학위\n      과정에서는 4년 동안 약 1,000만 엔 전후로 졸업할 수 있습니다. 즉, 약 2년의 시간과 노력 및 약 500만 엔 전후의 절약이 가능합니다.\n      <div class=\"clear-both\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">인재가 되다</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">다양한 진로 선택지가 있습니다</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"md:float-right\"><img src=\"__ASSET__images/7-1/7-3_pictrue02.png\" class=\"h-64 mx-1\"><br></div>\n      <div class=\"flex flex-col md:flex-row\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-6\">일본어 학교 졸업 후</div>\n        </div>\n        <div class=\"\">일본어 능력은 대학 졸업자와 비교해도 뒤지지 않으며, 일본 기업 취업 자격 또한 가능합니다.</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-11\">단기 대학 졸업 후</div>\n        </div>\n        <div class=\"\">단기 대학의 학위와 전문 지식을 얻고, 일본 기업에서 취업할 기회가 있습니다</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-8\">대학 네 년 졸업 후</div>\n        </div>\n        <div class=\"\">대학 네 년 졸업 후, 석사 또는 박사 학위를 취득하고, 일본 기업에서 일하거나 창업하는 등 다양한 선택지가 있습니다</div>\n      </div>\n\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"my-5 flow-root\">\n      <div class=\"float-left\"><img src=\"__ASSET__images/7-1/7-3_pictrue03.png\" class=\"h-48 mx-3\"></div>\n      <div class=\"\">\n        <p class=\"text-xl text-[green] my-2\">공부를 두려워하지 않고 의지가 있는 사람은 결국 성공한다</p>\n        <div class=\"text-xs\">\n          　2015년, 영어 선생님의 소개로 일본에 와서 애치 국제 학원에서 일본어를 공부하기 시작했습니다. 그 당시에는 단기 병행 과정에 대해 알게 되었고, 학원의 안내를 받아 대학을 방문한 후에 해당\n          프로그램에 지원하기로 결정했습니다. 처음에는 수업에 따라갈 수 있을지 걱정이었지만, 학교의 세심한 지도 덕분에 저는 학원과 단기 대학에서 각각 졸업 증명서를 얻게 되었습니다. 그 후 나는 나고야에\n          회사를 창업하고 부동산 투자 사업을 시작하여 외국에서의 인생 꿈을 이루게 되었습니다<br><br>\n          　단기 병행 과정에 참여하는 데 대한 나의 감상은 \"천하에 어려운 일이 없다, 오직 마음 있는 사람을 두려워하라\"입니다. 또한, 나는 학원의 책임감 있는 태도와 대학 교수님의 열정적이고 세심한 교육\n          태도를 매우 감사하게 생각합니다\n\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-8 text-white italic text-lg\">학점 획득</div>\n      </div>\n      <div class=\"pt-0 text-[red] italic font-serif mt-2 sm:mt-0\">본 학원에서 2년간 8개의 일본어 학점을 얻을 수 있었으며, <br>\n        21개 과목의 독서 보고서로부터 42 학점을 획득했으며, 6개 강의 과목 각각에서 12 학점을 얻어 총 62 학점을 얻었고, 이로써 단기 대학 학위를 취득했습니다.</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6\">\n      <div class=\"flex justify-center items-center flex-col md:flex-row\">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue04.png\" class=\"mx-1 \">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue05.png\" class=\"mx-1 \">\n      </div>\n      <div class=\"text-center text-[red] text-xl mt-3\">총 62 학점 획득, 단기 대학 학사 학위 취득</div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex pt-2 flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-8 text-white italic text-lg\">편입 실적</div>\n      </div>\n      <div class=\"text-[red] italic font-serif mt-2 sm:mt-0\">단기 대학 졸업 후<br>애치 산업 대학 3년 편입뿐만 아니라 다른 대학의 편입 또는 일본 기업 취업\n        가능성이 있습니다.、</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6 justify-center items-center grid md:grid-cols-2 gap-0 md:gap-2\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue06.jpg\" class=\"mx-1\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue07.jpg\" class=\"mx-1\">\n      \n    </div>"
+      }
+    ]
+  },
+  "vi": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/7-JUNIOR_COLLEGE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "Khóa học đồng thời đại học cơ sở",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base text-center",
+      "subtitleHtml": "<span class=\"underline\">Học viện Quốc tế AIA Aichi và Đại học ASU Aichi Sangyo</span><br>\n        Tuyển sinh song song, trường đôi"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/7-1/p7top.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-4 text-white italic text-lg\">Tiết kiệm thời gian</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">Trường chúng tôi thay mặt bạn xử lý các thủ tục nhập học vào các trường cao đẳng cơ sở.</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 \">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-1.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-2.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      Khóa học dự bị tiếng Nhật của Học viện quốc tế Aichi (2 năm)<br>\n      Đăng ký và tốt nghiệp cùng lúc với Khoa Truyền thông Quốc tế Trường Cao đẳng Aichi Sangyo (khóa học 2 năm).<br>\n      Bạn có thể đăng ký vào cả hai trường cùng lúc mà không cần thi bất kỳ bài kiểm tra nào và có thể học các khóa đại học mà không cần phải đạt trình độ N2 của Kỳ thi năng lực tiếng Nhật.<br>\n      Trong khóa học tiếng Nhật kéo dài hai năm tại Học viện Quốc tế Aichi, bạn có thể kiếm được 8 tín chỉ và bạn cũng có thể kiếm được 54 tín chỉ bằng cách nộp báo cáo và hoàn thành 3 môn học mà không cần vào đại học. Bằng tốt nghiệp đại học và bằng cấp sẽ được cấp với tổng số 60 tín chỉ.\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">tiết kiệm thời gian</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">Bạn có thể rút ngắn thời gian học cần thiết xuống 2 năm.</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6\">\n      Thông thường, phải mất bốn năm để tốt nghiệp trường dạy tiếng Nhật và cao đẳng, nhưng với khóa học này chỉ mất hai năm.<br>\n      　Sau khi tốt nghiệp khóa học này, bạn có thể chuyển sang năm thứ ba của một trường đại học Nhật Bản bằng cách giới thiệu hoặc vượt qua kỳ thi tuyển sinh. Do đó, trong khi thông thường phải mất sáu năm để tốt nghiệp từ một trường dạy tiếng Nhật lên một trường đại học bốn năm, thì với khóa học này bạn có thể tốt nghiệp trong bốn năm.</div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">Tiết kiệm học phí</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">Có thể tiết kiệm được khoảng 5 triệu yên Nhật.</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/7-2_pictrue01.jpg\" class=\"h-64 mx-1  \"></div>\n      Nếu bạn nhìn vào bảng so sánh học phí, chi phí sinh hoạt và thời gian học bắt buộc được trình bày ở bên phải, bạn sẽ thấy rằng quá trình học tập thông thường mất 6 năm từ trường dạy tiếng Nhật đến khi tốt nghiệp đại học và tổng chi phí là khoảng 15 triệu yên, trong khi khóa học cao đẳng của chúng tôi tốn khoảng 10 triệu yên trong 4 năm. Nói cách khác, có thể tiết kiệm được khoảng 5 triệu yên về thời gian và công sức trong hai năm.\n      <div class=\"clear-both\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">Trở thành nguồn nhân lực</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">Có nhiều lựa chọn nghề nghiệp</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"md:float-right\"><img src=\"__ASSET__images/7-1/7-3_pictrue02.png\" class=\"h-64 mx-1\"><br></div>\n      <div class=\"flex flex-col md:flex-row\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-6\">Sau khi tốt nghiệp trường Nhật ngữ</div>\n        </div>\n        <div class=\"\">Trình độ tiếng Nhật của họ tương đương với sinh viên tốt nghiệp đại học và có đủ điều kiện để làm việc tại các công ty Nhật Bản.</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-11\">Sau khi tốt nghiệp đại học cơ sở</div>\n        </div>\n        <div class=\"\">Bạn có thể có được bằng đại học cơ sở và kiến ​​thức chuyên ngành, đồng thời có thể xin được việc làm tại một công ty Nhật Bản.</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-8\">Sau khi tốt nghiệp đại học bốn năm</div>\n        </div>\n        <div class=\"\">Sau khi tốt nghiệp đại học trong bốn năm, sinh viên có nhiều lựa chọn nghề nghiệp, bao gồm học tiếp lên cao học, tìm việc làm ở một công ty Nhật Bản hoặc khởi nghiệp.</div>\n      </div>\n\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"my-5 flow-root\">\n      <div class=\"float-left\"><img src=\"__ASSET__images/7-1/7-3_pictrue03.png\" class=\"h-48 mx-3\"></div>\n      <div class=\"\">\n        <p class=\"text-xl text-[green] my-2\">Những người sẵn sàng học hỏi và có tham vọng cuối cùng sẽ thành công.</p>\n        <div class=\"text-xs\">\n          　Năm 2015, tôi đến Nhật Bản qua sự giới thiệu của giáo viên tiếng Anh và bắt đầu học tiếng Nhật tại Học viện Quốc tế Aichi. Lúc đó, tôi tìm hiểu về khóa học ngoại khóa ngắn hạn, sau khi tham quan trường đại học dưới sự hướng dẫn của nhà trường, tôi quyết định nộp hồ sơ. Lúc đầu, tôi lo lắng liệu mình có theo kịp việc học hay không nhưng với sự hỗ trợ chu đáo của nhà trường, tôi đã có được hai bằng cấp và một bằng cao đẳng. Sau đó, tôi thành lập công ty ở Nagoya, bắt đầu kinh doanh đầu tư bất động sản và có thể thực hiện được ước mơ của mình ở môi trường nước ngoài.<br><br>\n          　Ấn tượng của tôi sau khi đăng ký học song song ngắn hạn là “Trên đời không có khó khăn, tôi chỉ ngưỡng mộ tấm lòng của những người bình thường”. Tôi rất ấn tượng với phản ứng có trách nhiệm của trường chúng tôi cũng như thái độ giảng dạy nhiệt tình và kỹ lưỡng của các giáo sư đại học.\n\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-8 text-white italic text-lg\">Có được tín dụng</div>\n      </div>\n      <div class=\"pt-0 text-[red] italic font-serif mt-2 sm:mt-0\">8 tín chỉ trong lớp học tiếng Nhật tại trường của chúng tôi trong 2 năm,<br>\n        Đạt 42 tín chỉ nhờ nộp báo cáo 21 môn học, 12 tín chỉ nhờ học 6 môn học, tổng cộng 62 tín chỉ, có bằng cao đẳng.</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6\">\n      <div class=\"flex justify-center items-center flex-col md:flex-row\">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue04.png\" class=\"mx-1 \">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue05.png\" class=\"mx-1 \">\n      </div>\n      <div class=\"text-center text-[red] text-xl mt-3\">Tổng cộng 62 tín chỉ đạt được bằng cử nhân đại học cơ sở.</div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex pt-2 flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-8 text-white italic text-lg\">Kết quả chuyển nhượng</div>\n      </div>\n      <div class=\"text-[red] italic font-serif mt-2 sm:mt-0\">Ngoài việc chuyển đến Đại học Aichi Sangyo trong 3 năm sau khi tốt nghiệp trung học cơ sở<br>Bạn có thể chuyển tiếp sang các trường đại học khác hoặc xin việc tại một công ty Nhật Bản.</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6 justify-center items-center grid md:grid-cols-2 gap-0 md:gap-2\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue06.jpg\" class=\"mx-1\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue07.jpg\" class=\"mx-1\">\n      \n    </div>"
+      }
+    ]
+  },
+  "th": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/7-JUNIOR_COLLEGE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "หลักสูตรควบคู่วิทยาลัยจูเนียร์",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base text-center",
+      "subtitleHtml": "<span class=\"underline\">สถาบันนานาชาติ AIA Aichi และมหาวิทยาลัย ASU Aichi Sangyo</span><br>\n        การลงทะเบียนพร้อมกันสองโรงเรียน"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/7-1/p7top.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-4 text-white italic text-lg\">ประหยัดเวลา</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">โรงเรียนของเราจัดการขั้นตอนการรับเข้าเรียนในวิทยาลัยระดับจูเนียร์ในนามของคุณ</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 \">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-1.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-2.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      หลักสูตรเตรียมความพร้อมภาควิชาภาษาญี่ปุ่นของ Aichi International Academy (2 ปี)<br>\n      ลงทะเบียนและสำเร็จการศึกษาพร้อมกับ Aichi Sangyo Junior College Correspondence Education Department of International Communication (หลักสูตร 2 ปี)<br>\n      คุณสามารถลงทะเบียนเรียนในทั้งสองโรงเรียนพร้อมกันโดยไม่ต้องสอบใดๆ และคุณสามารถเรียนหลักสูตรมหาวิทยาลัยได้โดยไม่ต้องผ่านระดับ N2 ของการทดสอบความสามารถทางภาษาญี่ปุ่น<br>\n      ในหลักสูตรภาษาญี่ปุ่นสองปีที่ Aichi International Academy คุณสามารถได้รับ 8 หน่วยกิต และคุณยังสามารถได้รับ 54 หน่วยกิตโดยการส่งรายงานและกรอก 3 วิชาบนหน้าจอโดยไม่ต้องไปมหาวิทยาลัย ประกาศนียบัตรและปริญญาระดับวิทยาลัยระดับจูเนียร์จะมอบให้รวม 60 หน่วยกิต\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">ประหยัดเวลา</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">คุณสามารถลดระยะเวลาการศึกษาที่ต้องการลงได้ 2 ปี</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6\">\n      โดยทั่วไปจะใช้เวลาสี่ปีในการสำเร็จการศึกษาจากโรงเรียนสอนภาษาญี่ปุ่นและวิทยาลัยระดับต้น แต่หลักสูตรนี้ใช้เวลาเพียงสองปีเท่านั้น<br>\n      　หลังจากสำเร็จการศึกษาหลักสูตรนี้ คุณสามารถย้ายไปเรียนมหาวิทยาลัยในญี่ปุ่นในปีที่สามได้โดยการแนะนำหรือผ่านการสอบเข้า ดังนั้น แม้ว่าโดยปกติจะใช้เวลาหกปีในการสำเร็จการศึกษาจากโรงเรียนสอนภาษาญี่ปุ่นไปเป็นมหาวิทยาลัยสี่ปี แต่หลักสูตรนี้คุณสามารถสำเร็จการศึกษาได้ภายในสี่ปี</div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">ประหยัดค่าเล่าเรียน</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">สามารถประหยัดเงินได้ประมาณ 5 ล้านเยนญี่ปุ่น</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/7-2_pictrue01.jpg\" class=\"h-64 mx-1  \"></div>\n      หากคุณดูการเปรียบเทียบค่าเล่าเรียน ค่าครองชีพ และระยะเวลาการศึกษาที่จำเป็นที่แสดงทางด้านขวา คุณจะเห็นว่ากระบวนการเรียนรู้โดยทั่วไปใช้เวลา 6 ปีตั้งแต่โรงเรียนสอนภาษาญี่ปุ่นไปจนถึงสำเร็จการศึกษาจากมหาวิทยาลัย และค่าใช้จ่ายทั้งหมดอยู่ที่ประมาณ 15 ล้านเยน ในขณะที่หลักสูตรระดับวิทยาลัยระดับจูเนียร์ของเรามีค่าใช้จ่ายประมาณ 10 ล้านเยนในช่วงสี่ปี กล่าวอีกนัยหนึ่ง คุณสามารถประหยัดเวลาและความพยายามได้ประมาณ 5 ล้านเยนในระยะเวลาสองปี\n      <div class=\"clear-both\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">มาเป็นทรัพยากรมนุษย์</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">มีตัวเลือกอาชีพมากมาย</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"md:float-right\"><img src=\"__ASSET__images/7-1/7-3_pictrue02.png\" class=\"h-64 mx-1\"><br></div>\n      <div class=\"flex flex-col md:flex-row\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-6\">หลังจากสำเร็จการศึกษาจากโรงเรียนสอนภาษาญี่ปุ่น</div>\n        </div>\n        <div class=\"\">ความสามารถทางภาษาญี่ปุ่นของพวกเขาเทียบได้กับผู้สำเร็จการศึกษาจากมหาวิทยาลัย และพวกเขาสามารถทำงานในบริษัทญี่ปุ่นได้</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-11\">หลังจากสำเร็จการศึกษาจากวิทยาลัยรุ่นน้อง</div>\n        </div>\n        <div class=\"\">คุณสามารถสำเร็จการศึกษาระดับปริญญาตรีและมีความรู้เฉพาะทาง และสามารถทำงานในบริษัทญี่ปุ่นได้</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-8\">หลังจากสำเร็จการศึกษาจากมหาวิทยาลัยสี่ปี</div>\n        </div>\n        <div class=\"\">หลังจากสำเร็จการศึกษาจากมหาวิทยาลัยในเวลาสี่ปี นักศึกษามีทางเลือกทางอาชีพมากมาย รวมถึงการเข้าเรียนต่อระดับบัณฑิตศึกษา การหางานในบริษัทญี่ปุ่น หรือการเริ่มต้นธุรกิจ</div>\n      </div>\n\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"my-5 flow-root\">\n      <div class=\"float-left\"><img src=\"__ASSET__images/7-1/7-3_pictrue03.png\" class=\"h-48 mx-3\"></div>\n      <div class=\"\">\n        <p class=\"text-xl text-[green] my-2\">ผู้ที่เต็มใจเรียนรู้และมีความทะเยอทะยานจะประสบความสำเร็จในที่สุด</p>\n        <div class=\"text-xs\">\n          　ในปี 2015 ฉันเดินทางไปญี่ปุ่นโดยมีครูสอนภาษาอังกฤษแนะนำ และเริ่มเรียนภาษาญี่ปุ่นที่ Aichi International Academy ตอนนั้นฉันได้เรียนรู้เกี่ยวกับหลักสูตรร่วมระยะสั้น และหลังจากเที่ยวชมมหาวิทยาลัยภายใต้การแนะนำของโรงเรียน ฉันจึงตัดสินใจสมัคร ตอนแรก ฉันกังวลว่าฉันจะเรียนต่อได้หรือไม่ แต่ด้วยการสนับสนุนอย่างระมัดระวังของโรงเรียน ฉันจึงสามารถได้รับประกาศนียบัตรสองใบและวิทยาลัยระดับอนุปริญญาหนึ่งแห่ง จากนั้น ฉันก่อตั้งบริษัทในนาโกย่า เริ่มธุรกิจการลงทุนด้านอสังหาริมทรัพย์ และสามารถเติมเต็มความฝันในชีวิตในสภาพแวดล้อมที่ต่างประเทศได้<br><br>\n          　ความประทับใจของฉันหลังจากสมัครเรียนหลักสูตรควบคู่ระยะสั้นคือ ``ในโลกนี้ไม่มีความยากลำบาก ฉันแค่ชื่นชมหัวใจของคนธรรมดา'' ฉันประทับใจมากกับการตอบสนองอย่างมีความรับผิดชอบของโรงเรียนของเรา และทัศนคติในการสอนที่กระตือรือร้นและละเอียดถี่ถ้วนของอาจารย์มหาวิทยาลัย\n\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-8 text-white italic text-lg\">รับเครดิต</div>\n      </div>\n      <div class=\"pt-0 text-[red] italic font-serif mt-2 sm:mt-0\">8 หน่วยกิตในชั้นเรียนภาษาญี่ปุ่นที่โรงเรียนของเราเป็นเวลา 2 ปี<br>\n        ได้รับ 42 หน่วยกิต โดยส่งรายงาน จำนวน 21 วิชา, 12 หน่วยกิต โดยเรียน 6 วิชา, รวม 62 หน่วยกิต, สำเร็จการศึกษาระดับมัธยมศึกษาตอนต้น.</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6\">\n      <div class=\"flex justify-center items-center flex-col md:flex-row\">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue04.png\" class=\"mx-1 \">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue05.png\" class=\"mx-1 \">\n      </div>\n      <div class=\"text-center text-[red] text-xl mt-3\">หน่วยกิตทั้งหมด 62 หน่วยกิตได้รับปริญญาตรีวิทยาลัยระดับต้น</div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex pt-2 flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-8 text-white italic text-lg\">ผลการโอน</div>\n      </div>\n      <div class=\"text-[red] italic font-serif mt-2 sm:mt-0\">นอกเหนือจากการโอนย้ายไปยังมหาวิทยาลัย Aichi Sangyo เป็นเวลา 3 ปีหลังจากสำเร็จการศึกษาจากวิทยาลัยรุ่นน้อง<br>คุณสามารถย้ายไปมหาวิทยาลัยอื่นหรือหางานในบริษัทญี่ปุ่นได้</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6 justify-center items-center grid md:grid-cols-2 gap-0 md:gap-2\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue06.jpg\" class=\"mx-1\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue07.jpg\" class=\"mx-1\">\n      \n    </div>"
+      }
+    ]
+  },
+  "id": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/7-JUNIOR_COLLEGE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "Kursus serentak perguruan tinggi junior",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base text-center",
+      "subtitleHtml": "<span class=\"underline\">Akademi Internasional AIA Aichi &amp; Universitas ASU Aichi Sangyo</span><br>\n        Pendaftaran serentak, sekolah ganda"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/7-1/p7top.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-4 text-white italic text-lg\">Menghemat waktu</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">Sekolah kami menangani prosedur penerimaan ke perguruan tinggi junior atas nama Anda.</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 \">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-1.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-2.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      Kursus Persiapan Departemen Jepang Akademi Internasional Aichi (2 tahun)<br>\n      Mendaftar dan lulus bersamaan dengan Aichi Sangyo Junior College Pendidikan Korespondensi Departemen Komunikasi Internasional (kursus 2 tahun).<br>\n      Anda dapat mendaftar di kedua sekolah secara bersamaan tanpa mengikuti ujian apa pun, dan Anda dapat belajar program universitas tanpa harus lulus Tes Kemahiran Bahasa Jepang tingkat N2.<br>\n      Dalam kursus bahasa Jepang dua tahun di Aichi International Academy, Anda bisa mendapatkan 8 SKS, dan Anda juga bisa mendapatkan 54 SKS dengan menyerahkan laporan dan menyelesaikan 3 mata pelajaran layar tanpa harus masuk universitas. Ijazah dan gelar perguruan tinggi junior akan diberikan dengan total 60 kredit.\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">menghemat waktu</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">Anda dapat mempersingkat waktu belajar yang dibutuhkan sebanyak 2 tahun.</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6\">\n      Umumnya dibutuhkan waktu empat tahun untuk lulus dari sekolah bahasa Jepang dan junior college, namun dengan kursus ini hanya membutuhkan waktu dua tahun.<br>\n      　Setelah lulus dari kursus ini, Anda dapat melanjutkan ke tahun ketiga universitas Jepang berdasarkan rekomendasi atau dengan lulus ujian masuk. Oleh karena itu, biasanya diperlukan waktu enam tahun untuk lulus dari sekolah bahasa Jepang ke universitas empat tahun, dengan kursus ini Anda dapat lulus dalam empat tahun.</div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">Penghematan biaya sekolah</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">Dimungkinkan untuk menghemat sekitar 5 juta yen Jepang.</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/7-2_pictrue01.jpg\" class=\"h-64 mx-1  \"></div>\n      Jika Anda melihat perbandingan biaya sekolah, biaya hidup, dan masa studi yang diperlukan di sebelah kanan, Anda akan melihat bahwa proses pembelajaran pada umumnya memakan waktu 6 tahun dari sekolah bahasa Jepang hingga kelulusan dari universitas, dan total biayanya sekitar 15 juta yen, sedangkan biaya kursus junior college kami sekitar 10 juta yen selama empat tahun. Dengan kata lain, dimungkinkan untuk menghemat sekitar 5 juta yen dalam waktu dan tenaga selama dua tahun.\n      <div class=\"clear-both\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">Menjadi sumber daya manusia</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">Ada banyak pilihan karir</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"md:float-right\"><img src=\"__ASSET__images/7-1/7-3_pictrue02.png\" class=\"h-64 mx-1\"><br></div>\n      <div class=\"flex flex-col md:flex-row\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-6\">Setelah lulus dari sekolah bahasa Jepang</div>\n        </div>\n        <div class=\"\">Kemahiran bahasa Jepang mereka sebanding dengan lulusan universitas, dan mereka memenuhi syarat untuk bekerja di perusahaan Jepang.</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-11\">Setelah lulus dari perguruan tinggi junior</div>\n        </div>\n        <div class=\"\">Anda bisa memperoleh gelar sarjana junior dan pengetahuan khusus, dan Anda bisa mendapatkan pekerjaan di perusahaan Jepang.</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-8\">Setelah lulus dari universitas empat tahun</div>\n        </div>\n        <div class=\"\">Setelah lulus dari universitas dalam waktu empat tahun, siswa memiliki banyak pilihan karir, termasuk melanjutkan ke sekolah pascasarjana, mencari pekerjaan di perusahaan Jepang, atau memulai bisnis.</div>\n      </div>\n\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"my-5 flow-root\">\n      <div class=\"float-left\"><img src=\"__ASSET__images/7-1/7-3_pictrue03.png\" class=\"h-48 mx-3\"></div>\n      <div class=\"\">\n        <p class=\"text-xl text-[green] my-2\">Mereka yang mau belajar dan punya ambisi pada akhirnya akan sukses.</p>\n        <div class=\"text-xs\">\n          　Pada tahun 2015, saya melakukan perjalanan ke Jepang melalui perkenalan seorang guru bahasa Inggris dan mulai belajar bahasa Jepang di Aichi International Academy. Saat itu, saya belajar tentang kursus ko-kurikuler jangka pendek, dan setelah berkeliling universitas di bawah bimbingan sekolah, saya memutuskan untuk mendaftar. Pada awalnya, saya khawatir apakah saya akan mampu melanjutkan studi saya, namun dengan dukungan hati-hati dari sekolah, saya bisa memperoleh dua ijazah dan sebuah perguruan tinggi junior. Kemudian, saya memulai sebuah perusahaan di Nagoya, memulai bisnis investasi real estat, dan mampu mewujudkan impian hidup saya di lingkungan asing.<br><br>\n          　Kesan saya setelah mendaftar untuk kursus jangka pendek bersamaan adalah, ``Tidak ada kesulitan di dunia, saya hanya mengagumi hati orang-orang biasa.'' Saya sangat terkesan dengan respons bertanggung jawab sekolah kami dan sikap mengajar yang antusias dan menyeluruh dari para profesor universitas.\n\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-8 text-white italic text-lg\">Dapatkan kredit</div>\n      </div>\n      <div class=\"pt-0 text-[red] italic font-serif mt-2 sm:mt-0\">8 SKS di kelas bahasa Jepang di sekolah kami selama 2 tahun,<br>\n        Memperoleh 42 SKS dengan menyampaikan laporan 21 mata kuliah, 12 SKS dengan mempelajari 6 mata kuliah, total 62 SKS, memperoleh gelar sarjana muda.</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6\">\n      <div class=\"flex justify-center items-center flex-col md:flex-row\">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue04.png\" class=\"mx-1 \">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue05.png\" class=\"mx-1 \">\n      </div>\n      <div class=\"text-center text-[red] text-xl mt-3\">Sebanyak 62 SKS diperoleh gelar sarjana junior college.</div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex pt-2 flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-8 text-white italic text-lg\">Hasil pemindahan</div>\n      </div>\n      <div class=\"text-[red] italic font-serif mt-2 sm:mt-0\">Selain pindah ke Universitas Aichi Sangyo selama 3 tahun setelah lulus dari junior college<br>Anda bisa pindah ke universitas lain atau mendapatkan pekerjaan di perusahaan Jepang.</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6 justify-center items-center grid md:grid-cols-2 gap-0 md:gap-2\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue06.jpg\" class=\"mx-1\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue07.jpg\" class=\"mx-1\">\n      \n    </div>"
+      }
+    ]
+  },
+  "np": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/7-JUNIOR_COLLEGE.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "जुनियर कलेज समवर्ती पाठ्यक्रम",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base text-center",
+      "subtitleHtml": "<span class=\"underline\">AIA Aichi International Academy र ASU Aichi Sangyo University</span><br>\n        एक साथ भर्ना, डबल स्कूल"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/7-1/p7top.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-4 text-white italic text-lg\">समय बचत गर्नुहोस्</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">हाम्रो विद्यालयले तपाईंको तर्फबाट जुनियर कलेजहरूमा भर्ना प्रक्रियाहरू ह्यान्डल गर्छ।</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 \">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-1.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/cooperation7-2.jpg\" class=\"h-36 max-h-fit mx-1 \"></div>\n      आइची इन्टरनेशनल एकेडेमी जापानी विभाग तयारी पाठ्यक्रम (२ वर्ष)<br>\n      आइची सांग्यो जुनियर कलेज पत्राचार शिक्षा विभागको अन्तर्राष्ट्रिय सञ्चार विभाग (२-वर्षे पाठ्यक्रम) को रूपमा एकै समयमा भर्ना र स्नातक।<br>\n      तपाइँ कुनै पनि परीक्षा बिना एकै समयमा दुबै विद्यालयहरूमा भर्ना हुन सक्नुहुन्छ, र तपाइँ जापानी भाषा प्रवीणता परीक्षाको N2 स्तर पास नगरी विश्वविद्यालय पाठ्यक्रमहरू अध्ययन गर्न सक्नुहुन्छ।<br>\n      आइची इन्टरनेशनल एकेडेमीमा दुई वर्षे जापानी भाषा पाठ्यक्रममा, तपाईंले 8 क्रेडिटहरू कमाउन सक्नुहुन्छ, र तपाईंले प्रतिवेदन पेश गरेर र विश्वविद्यालयमा नजाइकन 3 स्क्रिन विषयहरू पूरा गरेर 54 क्रेडिटहरू पनि कमाउन सक्नुहुन्छ। एक जुनियर कलेज डिप्लोमा र डिग्री कुल 60 क्रेडिट को लागी सम्मानित गरिनेछ।\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">समय बचत गर्नुहोस्</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">तपाईले आवश्यक अध्ययनको समयलाई २ वर्षले घटाउन सक्नुहुन्छ।</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6\">\n      सामान्यतया, जापानी भाषा स्कूल र जुनियर कलेजबाट स्नातक गर्न चार वर्ष लाग्छ, तर यो पाठ्यक्रमको साथ यसले दुई वर्ष मात्र लिन्छ।<br>\n      　यस पाठ्यक्रमबाट स्नातक गरेपछि, तपाइँ सिफारिसद्वारा वा प्रवेश परीक्षा पास गरेर जापानी विश्वविद्यालयको तेस्रो वर्षमा स्थानान्तरण गर्न सक्नुहुन्छ। तसर्थ, जहाँ सामान्यतया जापानी भाषा स्कूलबाट चार वर्षको विश्वविद्यालयमा स्नातक हुन छ वर्ष लाग्छ, यस पाठ्यक्रमको साथ तपाईले चार वर्षमा स्नातक गर्न सक्नुहुन्छ।</div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">ट्यूशन शुल्कमा बचत</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">लगभग 5 मिलियन जापानी येन बचत गर्न सम्भव छ।</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/7-1/7-2_pictrue01.jpg\" class=\"h-64 mx-1  \"></div>\n      यदि तपाईंले दायाँपट्टि देखाइएको ट्युसन शुल्क, जीवनयापन खर्च, र आवश्यक अध्ययन अवधिको तुलना हेर्नुभयो भने, तपाईंले देख्नुहुनेछ कि सामान्य सिकाइ प्रक्रियामा जापानी भाषा स्कूलबाट विश्वविद्यालयबाट स्नातकसम्म 6 वर्ष लाग्छ, र कुल लागत लगभग 15 मिलियन येन छ, जबकि हाम्रो जुनियर कलेजको पाठ्यक्रम चार वर्षमा लगभग 10 मिलियन येन खर्च हुन्छ। अर्को शब्दमा, यो दुई वर्षमा समय र प्रयासमा लगभग 5 मिलियन येन बचत गर्न सम्भव छ।\n      <div class=\"clear-both\"></div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-6 text-white italic text-lg\">मानव संसाधन बन्नुहोस्</div>\n      </div>\n      <div class=\"pt-2 text-[red] italic font-serif mt-2 sm:mt-0\">त्यहाँ धेरै क्यारियर विकल्पहरू छन्</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-sm leading-6 flow-root flex-col md:flex-row flex-col md:flex-row\">\n      <div class=\"md:float-right\"><img src=\"__ASSET__images/7-1/7-3_pictrue02.png\" class=\"h-64 mx-1\"><br></div>\n      <div class=\"flex flex-col md:flex-row\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-6\">जापानी भाषा स्कूलबाट स्नातक गरेपछि</div>\n        </div>\n        <div class=\"\">तिनीहरूको जापानी भाषा प्रवीणता विश्वविद्यालय स्नातकहरूसँग तुलना गर्न सकिन्छ, र तिनीहरू जापानी कम्पनीहरूमा रोजगारीका लागि योग्य छन्।</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-11\">जुनियर कलेजबाट स्नातक गरेपछि</div>\n        </div>\n        <div class=\"\">तपाईले जुनियर कलेज डिग्री र विशेष ज्ञान प्राप्त गर्न सक्नुहुन्छ, र तपाईले जापानी कम्पनीमा जागिर पाउन सक्नुहुन्छ।</div>\n      </div>\n      <div class=\"flex flex-col md:flex-row mt-3\">\n        <div class=\"relative flex-shrink-0\">\n          <img src=\"__ASSET__images/btn_ellipse_9.png\" class=\"h-12 w-40\">\n          <div class=\"absolute top-3 left-8\">चार वर्षको विश्वविद्यालयबाट स्नातक गरेपछि</div>\n        </div>\n        <div class=\"\">चार वर्षमा विश्वविद्यालयबाट स्नातक गरेपछि, विद्यार्थीहरूसँग स्नातक विद्यालयमा जाने, जापानी कम्पनीमा रोजगारी खोज्ने वा व्यवसाय सुरु गर्नेलगायत धेरै क्यारियर विकल्पहरू छन्।</div>\n      </div>\n\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"my-5 flow-root\">\n      <div class=\"float-left\"><img src=\"__ASSET__images/7-1/7-3_pictrue03.png\" class=\"h-48 mx-3\"></div>\n      <div class=\"\">\n        <p class=\"text-xl text-[green] my-2\">सिक्न इच्छुक र महत्वाकांक्षा भएकाहरू अन्ततः सफल हुनेछन्।</p>\n        <div class=\"text-xs\">\n          　2015 मा, मैले अंग्रेजी शिक्षकको परिचय मार्फत जापानको यात्रा गरें र आइची इन्टरनेशनल एकेडेमीमा जापानी भाषा पढ्न थालें। त्यतिबेला, मैले छोटो अवधिको सह-पाठ्यक्रमको बारेमा सिके, र स्कूलको निर्देशनमा विश्वविद्यालयको भ्रमण गरेपछि, मैले आवेदन दिने निर्णय गरें। सुरुमा, म मेरो पढाइलाई निरन्तरता दिन सक्षम हुनेछु कि भनेर चिन्तित थिएँ, तर स्कूलको होसियार सहयोगले मैले दुईवटा डिप्लोमा र एउटा जुनियर कलेज प्राप्त गर्न सकें। त्यसपछि, मैले नागोयामा एक कम्पनी सुरु गरें, रियल स्टेट इन्भेष्टमेन्ट व्यवसाय सुरु गरें, र विदेशी वातावरणमा मेरो जीवनको सपना पूरा गर्न सक्षम भएँ।<br><br>\n          　छोटो अवधिको समवर्ती पाठ्यक्रमको लागि आवेदन दिएपछि मेरो धारणा थियो, ''संसारमा कुनै कठिनाइहरू छैनन्, म साधारण मानिसहरूको हृदयको प्रशंसा गर्छु।'' हाम्रो विद्यालयको जिम्मेवार प्रतिक्रिया र विश्वविद्यालयका प्राध्यापकहरूको उत्साहपूर्ण र पूर्ण शिक्षण मनोवृत्तिबाट म धेरै प्रभावित भएँ।\n\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-8 text-white italic text-lg\">क्रेडिटहरू प्राप्त गर्नुहोस्</div>\n      </div>\n      <div class=\"pt-0 text-[red] italic font-serif mt-2 sm:mt-0\">हाम्रो स्कूलमा 2 वर्षको लागि जापानी भाषा कक्षाहरूमा 8 क्रेडिटहरू,<br>\n        २१ वटा विषयमा प्रतिवेदन बुझाएर ४२ क्रेडिट, ६ विषयमा अध्ययन गरेर १२ क्रेडिट, कूल ६२ क्रेडिट, जुनियर कलेज डिग्री हासिल गरेको छ।</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6\">\n      <div class=\"flex justify-center items-center flex-col md:flex-row\">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue04.png\" class=\"mx-1 \">\n        <img src=\"__ASSET__images/7-1/7-4_pictrue05.png\" class=\"mx-1 \">\n      </div>\n      <div class=\"text-center text-[red] text-xl mt-3\">कुल 62 क्रेडिटहरूले जुनियर कलेज स्नातक डिग्री कमाए।</div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"flex pt-2 flex-col sm:flex-row\">\n      <div class=\"h-10 relative w-36 flex-shrink-0\">\n        <img src=\"__ASSET__images/7-1/btn7-6.png\" class=\"h-full\">\n        <div class=\"absolute top-1 left-8 text-white italic text-lg\">स्थानान्तरण परिणामहरू</div>\n      </div>\n      <div class=\"text-[red] italic font-serif mt-2 sm:mt-0\">जुनियर कलेजबाट स्नातक गरेपछि ३ वर्षको लागि आइची सांग्यो विश्वविद्यालयमा स्थानान्तरण गर्नु बाहेक<br>तपाईं अन्य विश्वविद्यालयहरूमा स्थानान्तरण गर्न सक्नुहुन्छ वा जापानी कम्पनीमा जागिर पाउन सक्नुहुन्छ।</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#FFD9D9] bg-opacity-70 my-2 p-5 text-xs leading-6 justify-center items-center grid md:grid-cols-2 gap-0 md:gap-2\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue06.jpg\" class=\"mx-1\">\n      <img src=\"__ASSET__images/7-1/7-4_pictrue07.jpg\" class=\"mx-1\">\n      \n    </div>"
+      }
+    ]
+  }
+}

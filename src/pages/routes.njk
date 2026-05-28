@@ -1,0 +1,9 @@
+---
+pagination:
+  data: pageVariants
+  size: 1
+  alias: route
+permalink: "{{ route.outputPath }}"
+layout: layouts/base.njk
+---
+{% include route.template %}

@@ -1,0 +1,36 @@
+{% set scopePages = staging if route.scope == "staging" else root %}
+{% set pageContent = scopePages.index[route.locale.code] or scopePages.index.ja %}
+
+{% if pageContent.marquee %}
+  <div class="overflow-hidden text-xs bg-red-400 text-white hidden">
+    <ul class="marquee py-2 inline-flex space-x-4 whitespace-nowrap max-w-full"
+      x-data="Marquee({speed: 0.2, spaceX: 4})">
+      <li>{{ pageContent.marquee }}</li>
+    </ul>
+  </div>
+{% endif %}
+
+<div>
+  <img class="w-full" src="{{ route.assetPrefix }}{{ pageContent.heroImage }}" alt="" />
+</div>
+<div class="relative flex mx-auto">
+  <img class="w-full object-cover object-center" src="{{ route.assetPrefix }}{{ pageContent.topicImage }}" alt="" />
+  <div class="absolute top-7 right-0 left-0 flex items-center justify-center">
+    <h3 class="text-white text-3xl lg:text-4xl font-bold">{{ pageContent.title }}</h3>
+  </div>
+</div>
+
+<!-- news start -->
+<div id="{{ pageContent.carouselId }}" class="relative w-full hidden">
+  <div class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+    <div id="carousel-item-1" class="hidden duration-700 ease-in-out">
+      <img src="https://picsum.photos/seed/picsum/200/300"
+        class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2" alt="" />
+    </div>
+  </div>
+</div>
+{% if route.newsTranslate %}
+  <div id="google_translate_element" class="hidden"></div>
+{% endif %}
+<div id="{{ pageContent.newsContainerId }}"></div>
+<!-- news end -->

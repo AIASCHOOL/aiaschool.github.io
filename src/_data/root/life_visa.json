@@ -1,0 +1,290 @@
+{
+  "ja": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/12-VISA_STATUS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "学生在留",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "在留資格 / 再入国&nbsp; / 期間更新"
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">在留資格取得と交付</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-3\">\n      <div class=\"sm:col-span-2\">\n        <div class=\"text-stone-800\">\n          <div class=\"\">\n            ➀ 学生は初回目の来日1年3か月の留学在留資格の申請は本学院が代行して行い、認可され次第「在留資格認定証明書」を日本上陸ビザ申請のため、本人へ郵送します。<br><br>\n            ➁ 入国時、入国審査官より在留カードを発給されます。その時資格外活動が必要な学生は必ず入国審査官に報告して、在留カードに「資格外活動許可」の<span class=\"text-[red]\">スタンプ</span>を押してもらいます。<br><br>\n            ➂ 入学受付後、かならず在留カードを持って、区役所へ行って、住所登録と国民健康保険の申請を行います。<br><br>\n          </div>\n          <div class=\"grid sm:grid-cols-2 gap-2 sm:gap-4 text-stone-800\">\n            <img src=\"__ASSET__images/12/12-P3.png\" class=\"\">\n            <img src=\"__ASSET__images/12/12-P2.png\" class=\"\">\n          </div>\n          <img src=\"__ASSET__images/12/12-P4.png\" class=\"mt-3\">\n        </div>\n      </div>\n      <img src=\"__ASSET__images/12/12-P1.png\" class=\"m-2\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">再入国</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-2\">\n        <img src=\"__ASSET__images/12/12-P6.png\" class=\"m-2\">\n        <div class=\"m-2\">日本に在留する外国人が出国する際に、出国の日から「有効期間３か月以内の在留資格を所持している」または「1年以上日本に戻らない」時に必要な手続きです。<br>\n          出国する際にあらかじめ、「再入国許可」の手続きを行うことで、日本に再入国ができるようになります。<br>\n          　再入国許可には、１回限り有効な「シングル」と有効期限内に何度でも再入国できる「マルチ」があります。<br><br>\n          <div class=\"flex justify-center\"><img src=\"__ASSET__images/12/12-P7.png\" class=\"h-32 mt-3 \"></div>\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">在留期間の更新</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      ◎学校は在留更新期限の3ヶ月前、手続方法の説明会を行い、成績、出席、品行及び学費の完納などを確認して、問題のない学生に対し下記書類をまとめて出入国管理庁に申請して、卒業日から２か月までの在留有効期間が発給されます。<br><br>\n      　① 『在留期間更新許可申請書』と『資格外活動許可申請書』<br>\n      　② 『学業成績及び出席状況表』-学校が作成したもの<br>\n      　➂申告書（生活費用及びアルバイト収入の申告）<br>\n      　④預金通帳もしくはアルバイト先の給与明細報告書<br>\n      　➄パスポートと在留カード　<br>\n      　その他の、学生留学生活の詳細について、入学後再び細かく指導します。<br><br>\n      <p class=\"text-lg underline text-green-800\">学生諸君は入学後には必ず日本の法律、学校の規則を遵守して、</p>\n      <p class=\"text-lg underline text-green-800\">より充実した留学生活を送ってください。</p>\n    </div>"
+      }
+    ]
+  },
+  "en": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/12-VISA_STATUS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "Student Residence",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "Visa Status / Re-entry&nbsp; / Period Extension"
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-[480px] max-w-full\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Residence Status Acquisition and Issuance</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-3\">\n      <div class=\"sm:col-span-2\">\n        <div class=\"text-stone-800\">\n          <div class=\"\">\n            ➀ The school will apply for the initial 1-year-3-month student residence status on behalf of the student upon their first arrival in Japan. Once approved, the 'Certificate of Eligibility' will be sent to the student for their visa application to enter Japan.<br><br>\n            ➁ Upon entry, the immigration officer will issue a residence card. Students who require permission for activities outside their visa status must inform the immigration officer at that time and have the 'Permission for Engaging in Activity Other Than That Permitted Under the Status of Residence' <span class=\"text-[red]\">stamp</span> Ask them to press placed on their residence card.<br><br>\n            ➂ After enrollment, students must bring their residence card to the ward office to complete their address registration and apply for National Health Insurance.<br><br>\n          </div>\n          <div class=\"grid sm:grid-cols-2 gap-2 sm:gap-4 text-stone-800\">\n            <img src=\"__ASSET__images/12/12-P3.png\" class=\"\">\n            <img src=\"__ASSET__images/12/12-P2.png\" class=\"\">\n          </div>\n          <img src=\"__ASSET__images/12/12-P4.png\" class=\"mt-3\">\n        </div>\n      </div>\n      <img src=\"__ASSET__images/12/12-P1.png\" class=\"m-2\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-[480px] max-w-full\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Re-entry</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-2\">\n        <img src=\"__ASSET__images/12/12-P6.png\" class=\"m-2\">\n        <div class=\"m-2\">When a foreign resident in Japan departs the country, they must complete certain procedures if their residence status is valid for three months or less from the departure date or if they do not plan to return to Japan for more than a year.\n\nBy obtaining a 'Re-entry Permit' in advance, they can re-enter Japan smoothly.<br>\n\nThere are two types of re-entry permits:<br>\n\nSingle: Valid for one-time re-entry.<br>\nMultiple: Allows multiple re-entries within the validity period.<br><br>\n          <div class=\"flex justify-center\"><img src=\"__ASSET__images/12/12-P7.png\" class=\"h-32 mt-3 \"></div>\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative w-[480px] max-w-full\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full w-full\">\n      <div class=\"absolute top-1 left-7 whitespace-nowrap text-white italic text-lg\">Period Extension</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      ◎The school will hold an explanation session on the renewal procedure three months before the residence status expiration date. It will review students' academic performance, attendance, conduct, and full payment of tuition fees. For students with no issues, the school will compile the necessary documents and submit the application to the Immigration Services Agency. A residence validity period of up to two months from the graduation date will be granted.<br><br>\n➀ \"Application for Extension of Period of Stay\" and \"Application for Permission to Engage in Activity Other Than That Permitted Under the Status of Residence\"<br>\n➁ \"Academic Performance and Attendance Report\" – Prepared by the school<br>\n③ Declaration Form (Statement of living expenses and part-time job income)<br>\n④ Bankbook or Part-time Job Payslips<br>\n➄ Passport and Residence Card<br>\n      　Further detailed guidance on student life and studying abroad will be provided after enrollment.<br><br>\n      <p class=\"text-lg underline text-green-800\">Students are required to strictly adhere to Japanese laws and the school's regulations after enrollment, and to lead a fulfilling student life.</p>\n    </div>"
+      }
+    ]
+  },
+  "cn": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/12-VISA_STATUS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "学生宿舍",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "在留资格/再入境/期间更新"
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">在留资格的取得和发放</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-3\">\n      <div class=\"sm:col-span-2\">\n        <div class=\"text-stone-800\">\n          <div class=\"\">\n            ➀ 第一次来日本时，我校将申请为期一年零三个月的学生在留资格，一旦获得批准，我们将邮寄《在留资格认定证明书》给您，以便您申请登陆日本的签证。<br><br>\n            ➁ 进入日本后，入国管理局官员会向您发放在留卡。届时，需要从事在留资格以外的活动的学生，必须向入国管理局申报，并在在留卡上注明“从事在留资格以外的活动许可”。<span class=\"text-[red]\">邮票</span>让他们按 .<br><br>\n            ➂ 加入后，请务必携带在留卡到区役所登记住所并申请国民健康保险。<br><br>\n          </div>\n          <div class=\"grid sm:grid-cols-2 gap-2 sm:gap-4 text-stone-800\">\n            <img src=\"__ASSET__images/12/12-P3.png\" class=\"\">\n            <img src=\"__ASSET__images/12/12-P2.png\" class=\"\">\n          </div>\n          <img src=\"__ASSET__images/12/12-P4.png\" class=\"mt-3\">\n        </div>\n      </div>\n      <img src=\"__ASSET__images/12/12-P1.png\" class=\"m-2\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">再入</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-2\">\n        <img src=\"__ASSET__images/12/12-P6.png\" class=\"m-2\">\n        <div class=\"m-2\">这是居住在日本的外国人“持有有效期为三个月以下的在留资格”或“自出境之日起一年以上不会返回日本”的人出境时必须办理的手续。<br>\n          出境前办理再入境许可手续即可再次入境日本。<br>\n          　再入境许可证有两种类型：“单次”，仅有效一次；“多次”，允许您在有效期内多次入境。<br><br>\n          <div class=\"flex justify-center\"><img src=\"__ASSET__images/12/12-P7.png\" class=\"h-32 mt-3 \"></div>\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">延长在留期限</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      ◎学校将在居留更新截止日期前3个月召开程序说明会，在确认成绩、出勤、品行良好、全额缴纳学费等情况后，持以下材料向入国管理局提出申请，向入国管理局发放自毕业之日起最长2个月的居留期限。<br><br>\n      　① “在留期间更新申请”、“资格外活动许可申请”<br>\n      　②《学习成绩及出勤记录》-由学校制作<br>\n      　➂ 申报表（生活费及打工收入申报）<br>\n      　④银行存折或打工工资单报告<br>\n      　➄护照及在留卡　<br>\n      　我们将在入学后对海外学生生活的其他细节提供详细指导。<br><br>\n      <p class=\"text-lg underline text-green-800\">请同学们入学后务必遵守日本法律和校规，充分利用留学时间。</p>\n    </div>"
+      }
+    ]
+  },
+  "tw": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/12-VISA_STATUS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "學生宿舍",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "在留資格/再入境/期間更新"
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">在留資格的取得與發放</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-3\">\n      <div class=\"sm:col-span-2\">\n        <div class=\"text-stone-800\">\n          <div class=\"\">\n            ➀ 第一次來日本時，我校將申請為期一年零三個月的學生在留資格，一旦獲得批准，我們將郵寄《在留資格認定證明書》給您，以便您申請登陸日本的簽證。<br><br>\n            ➁ 進入日本後，入國管理局官員會發給您留卡。屆時，需要從事在留資格以外的活動的學生，必須向入國管理局申報，並在在留卡上註明「從事在留資格以外的活動許可」。<span class=\"text-[red]\">郵票</span>讓他們按 .<br><br>\n            ➂ 加入後，請務必攜帶在留卡到區役所登記住所併申請國民健康保險。<br><br>\n          </div>\n          <div class=\"grid sm:grid-cols-2 gap-2 sm:gap-4 text-stone-800\">\n            <img src=\"__ASSET__images/12/12-P3.png\" class=\"\">\n            <img src=\"__ASSET__images/12/12-P2.png\" class=\"\">\n          </div>\n          <img src=\"__ASSET__images/12/12-P4.png\" class=\"mt-3\">\n        </div>\n      </div>\n      <img src=\"__ASSET__images/12/12-P1.png\" class=\"m-2\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">再入</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-2\">\n        <img src=\"__ASSET__images/12/12-P6.png\" class=\"m-2\">\n        <div class=\"m-2\">這是居住在日本的外國人「持有有效期為三個月以下的在留資格」或「自出境之日起一年以上不會返回日本」的人出境時必須辦理的手續。<br>\n          出境前辦理再入境許可手續即可再次入境日本。<br>\n          　再入境許可證有兩種類型：“單次”，僅有效一次；“多次”，允許您在有效期內多次入境。<br><br>\n          <div class=\"flex justify-center\"><img src=\"__ASSET__images/12/12-P7.png\" class=\"h-32 mt-3 \"></div>\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">延長在留期限</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      ◎學校將在居留更新截止日期前3個月召開程序說明會，在確認成績、出勤、品行良好、全額繳納學費等情況後，持以下材料向入國管理局提出申請，向入國管理局發放自畢業之日起最長2個月的居留期限。<br><br>\n      　① “在留期更新申請”、“資格外活動許可申請”<br>\n      　②《學業成績及出勤紀錄》-由學校製作<br>\n      　➂ 申報表（生活費及打工所得申報）<br>\n      　④銀行存摺或打工薪資報告<br>\n      　➄護照及在留卡　<br>\n      　我們將在入學後對海外學生生活的其他細節提供詳細指導。<br><br>\n      <p class=\"text-lg underline text-green-800\">請同學們入學後務必遵守日本法律和校規，充分利用留學時間。</p>\n    </div>"
+      }
+    ]
+  },
+  "ko": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/12-VISA_STATUS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "학생 거주증",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "재류자격 / 재입국  / 기간갱신"
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">재류자격 취득과 교부</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-3\">\n      <div class=\"sm:col-span-2\">\n        <div class=\"text-stone-800\">\n          <div class=\"\">\n            ➀ 학생은 첫번째 방일 1년 3개월의 유학재류자격의 신청은 본 학원이 대행하여 실시하여 인가된 대로 「재류자격인정증명서」를 일본상륙비자신청을 위해 본인에게 우송한다.<br><br>\n            ➁ 입국시 입국심사관으로부터 재류카드가 발급됩니다. 그 때 자격 외 활동이 필요한 학생은 반드시 입국 심사관에게보고하고 재류 카드에 \"자격 외 활동 허가\"<span class=\"text-[red]\">스탬프</span>를 누르십시오.<br><br>\n            ➂ 입학 접수 후, 반드시 재류 카드를 가지고, 구청에 가서, 주소 등록과 국민 건강 보험의 신청을 실시합니다.<br><br>\n          </div>\n          <div class=\"grid sm:grid-cols-2 gap-2 sm:gap-4 text-stone-800\">\n            <img src=\"__ASSET__images/12/12-P3.png\" class=\"\">\n            <img src=\"__ASSET__images/12/12-P2.png\" class=\"\">\n          </div>\n          <img src=\"__ASSET__images/12/12-P4.png\" class=\"mt-3\">\n        </div>\n      </div>\n      <img src=\"__ASSET__images/12/12-P1.png\" class=\"m-2\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">재입국</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-2\">\n        <img src=\"__ASSET__images/12/12-P6.png\" class=\"m-2\">\n        <div class=\"m-2\">일본에 재류하는 외국인이 출국할 때, 출국일로부터 「유효기간 3개월 이내의 재류자격을 소지하고 있다」 또는 「1년 이상 일본으로 돌아오지 않는다」시에 필요한 수속입니다.<br>\n          출국할 때 미리 「재입국허가」의 수속을 실시하는 것으로, 일본에 재입국을 할 수 있게 됩니다.<br>\n          　재입국 허가에는, 1회 한정 유효한 「싱글」과 유효 기한내에 몇번이라도 재입국할 수 있는 「멀티」가 있습니다.<br><br>\n          <div class=\"flex justify-center\"><img src=\"__ASSET__images/12/12-P7.png\" class=\"h-32 mt-3 \"></div>\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">체류기간 갱신</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      ◎학교는 재류 갱신 기한의 3개월 전, 수속 방법의 설명회를 실시해, 성적, 출석, 품행 및 학비의 완납 등을 확인해, 문제가 없는 학생에 대해 하기 서류를 정리해 출입국 관리청에 신청해, 졸업일부터 2개월까지의 재류 유효 기간이 발급됩니다.<br><br>\n      　① '재류기간 갱신허가신청서'와 '자격외활동허가신청서'<br>\n      　② 『학업성적 및 출석정황표』 - 학교가 작성한 것<br>\n      　➂신고서(생활비용 및 아르바이트 수입 신고)<br>\n      　④예금통장 또는 아르바이트처의 급여명세보고서<br>\n      　➄ 여권과 체류카드　<br>\n      　그 외 학생 유학 생활의 상세에 대해서, 입학 후 다시 세세하게 지도한다.<br><br>\n      <p class=\"text-lg underline text-green-800\">학생 여러분은 입학 후에는 반드시 일본의 법률, 학교의 규칙을 준수하고, 보다 충실한 유학 생활을 보내 주십시오.</p>\n    </div>"
+      }
+    ]
+  },
+  "vi": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/12-VISA_STATUS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "Nơi ở sinh viên",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "Tư cách lưu trú / Tái nhập cảnh / Gia hạn thời hạn"
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">Nhận và cấp thẻ cư trú</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-3\">\n      <div class=\"sm:col-span-2\">\n        <div class=\"text-stone-800\">\n          <div class=\"\">\n            ➀ Trường chúng tôi sẽ đăng ký tư cách lưu trú sinh viên trong 1 năm 3 tháng trong lần đầu tiên bạn đến Nhật Bản và sau khi được chấp thuận, chúng tôi sẽ gửi ``Giấy chứng nhận đủ điều kiện'' cho bạn để xin thị thực hạ cánh tại Nhật Bản.<br><br>\n            ➁ Khi nhập cảnh vào Nhật Bản, bạn sẽ được nhân viên xuất nhập cảnh cấp thẻ cư trú. Vào thời điểm đó, những sinh viên cần tham gia vào các hoạt động khác ngoài những hoạt động được phép theo tư cách cư trú phải báo cáo với nhân viên nhập cư và có \"giấy phép tham gia vào các hoạt động khác ngoài những hoạt động được phép theo tư cách cư trú\" ghi trên thẻ cư trú của họ.<span class=\"text-[red]\">con tem</span>Yêu cầu họ nhấn .<br><br>\n            ➂ Sau khi đăng ký, hãy nhớ mang theo thẻ cư trú đến văn phòng phường để đăng ký địa chỉ và đăng ký Bảo hiểm y tế quốc gia.<br><br>\n          </div>\n          <div class=\"grid sm:grid-cols-2 gap-2 sm:gap-4 text-stone-800\">\n            <img src=\"__ASSET__images/12/12-P3.png\" class=\"\">\n            <img src=\"__ASSET__images/12/12-P2.png\" class=\"\">\n          </div>\n          <img src=\"__ASSET__images/12/12-P4.png\" class=\"mt-3\">\n        </div>\n      </div>\n      <img src=\"__ASSET__images/12/12-P1.png\" class=\"m-2\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">nhập lại</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-2\">\n        <img src=\"__ASSET__images/12/12-P6.png\" class=\"m-2\">\n        <div class=\"m-2\">Đây là thủ tục cần thiết đối với người nước ngoài cư trú tại Nhật Bản khi xuất cảnh nếu họ “có tư cách lưu trú có hiệu lực từ ba tháng trở xuống” hoặc “sẽ không quay lại Nhật Bản trong hơn một năm” kể từ ngày khởi hành.<br>\n          Bạn sẽ có thể quay lại Nhật Bản bằng cách hoàn thành thủ tục cấp phép tái nhập cảnh trước khi rời khỏi đất nước.<br>\n          　Có hai loại giấy phép tái nhập cảnh: \"đơn\", chỉ có giá trị một lần và \"nhiều\", cho phép bạn nhập lại bao nhiêu lần tùy thích trong ngày hết hạn.<br><br>\n          <div class=\"flex justify-center\"><img src=\"__ASSET__images/12/12-P7.png\" class=\"h-32 mt-3 \"></div>\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">Gia hạn thời gian lưu trú</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      ◎Nhà trường sẽ tổ chức buổi họp giao ban về thủ tục 3 tháng trước thời hạn gia hạn cư trú, và sau khi xác nhận điểm số, chuyên cần, hạnh kiểm tốt và thanh toán đầy đủ học phí, những sinh viên không gặp vấn đề gì sẽ được cấp thời gian lưu trú hợp lệ lên đến 2 tháng kể từ ngày tốt nghiệp bằng cách nộp đơn cho Cục quản lý xuất nhập cảnh kèm theo các giấy tờ sau.<br><br>\n      　① “Đơn xin gia hạn thời gian lưu trú” và “Đơn xin phép tham gia vào các hoạt động khác ngoài hoạt động được phép theo tư cách lưu trú đã được cấp trước đó”<br>\n      　② “Thành tích học tập và điểm danh” - Do nhà trường chuẩn bị<br>\n      　➂ Tờ khai (Kê khai chi phí sinh hoạt và thu nhập từ công việc bán thời gian)<br>\n      　④Sổ tiết kiệm ngân hàng hoặc phiếu lương từ công việc bán thời gian<br>\n      　➄Hộ chiếu và thẻ cư trú　<br>\n      　Chúng tôi sẽ cung cấp hướng dẫn chi tiết về các chi tiết khác của cuộc sống sinh viên ở nước ngoài sau khi đăng ký.<br><br>\n      <p class=\"text-lg underline text-green-800\">Các bạn sinh viên hãy đảm bảo tuân thủ luật pháp Nhật Bản và nội quy của trường sau khi đăng ký và tận dụng tối đa thời gian du học của mình.</p>\n    </div>"
+      }
+    ]
+  },
+  "th": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/12-VISA_STATUS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "หอพักนักศึกษา",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "สถานภาพการพำนัก / การกลับเข้ามาใหม่ / การต่ออายุงวด"
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">การได้รับและการออกสถานภาพการพำนัก</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-3\">\n      <div class=\"sm:col-span-2\">\n        <div class=\"text-stone-800\">\n          <div class=\"\">\n            ➀ โรงเรียนของเราจะสมัครสถานะการอยู่อาศัยของนักเรียนเป็นเวลา 1 ปี 3 เดือนเมื่อคุณมาญี่ปุ่นครั้งแรก และเมื่อได้รับการอนุมัติแล้ว เราจะส่ง ``ใบรับรองคุณสมบัติ'' ให้คุณทางไปรษณีย์เพื่อยื่นขอวีซ่าสำหรับการลงจอดในญี่ปุ่น<br><br>\n            ➁ เมื่อคุณเข้าประเทศญี่ปุ่น คุณจะได้รับบัตรประจำตัวผู้พำนักโดยเจ้าหน้าที่ตรวจคนเข้าเมือง ในเวลานั้น นักเรียนที่ต้องการมีส่วนร่วมในกิจกรรมนอกเหนือจากที่ได้รับอนุญาตภายใต้สถานภาพการพำนักจะต้องรายงานต่อเจ้าหน้าที่ตรวจคนเข้าเมืองและมี \"การอนุญาตให้ทำกิจกรรมอื่นนอกเหนือจากที่ได้รับอนุญาตภายใต้สถานภาพการพำนัก\" เขียนไว้ในบัตรประจำตัวผู้พำนัก<span class=\"text-[red]\">แสตมป์</span>ให้พวกเขากด.<br><br>\n            ➂ หลังจากลงทะเบียนแล้ว อย่าลืมนำบัตรประจำตัวผู้พำนักของคุณไปที่สำนักงานเขตเพื่อลงทะเบียนที่อยู่ของคุณและสมัครประกันสุขภาพแห่งชาติ<br><br>\n          </div>\n          <div class=\"grid sm:grid-cols-2 gap-2 sm:gap-4 text-stone-800\">\n            <img src=\"__ASSET__images/12/12-P3.png\" class=\"\">\n            <img src=\"__ASSET__images/12/12-P2.png\" class=\"\">\n          </div>\n          <img src=\"__ASSET__images/12/12-P4.png\" class=\"mt-3\">\n        </div>\n      </div>\n      <img src=\"__ASSET__images/12/12-P1.png\" class=\"m-2\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">กลับเข้ามาใหม่</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-2\">\n        <img src=\"__ASSET__images/12/12-P6.png\" class=\"m-2\">\n        <div class=\"m-2\">นี่เป็นขั้นตอนที่จำเป็นสำหรับชาวต่างชาติที่อาศัยอยู่ในญี่ปุ่นเมื่อเดินทางออกนอกประเทศ หากพวกเขา \"มีสถานภาพการพำนักซึ่งมีอายุการใช้งานสามเดือนหรือน้อยกว่า\" หรือ \"จะไม่เดินทางกลับญี่ปุ่นนานกว่าหนึ่งปี\" นับจากวันที่ออกเดินทาง<br>\n          คุณจะสามารถกลับเข้าประเทศญี่ปุ่นได้โดยทำตามขั้นตอนการอนุญาตให้เข้าประเทศอีกครั้งก่อนเดินทางออกนอกประเทศ<br>\n          　ใบอนุญาตกลับเข้าใหม่มีสองประเภท: \"เดี่ยว\" ซึ่งใช้ได้เพียงครั้งเดียว และ \"หลายรายการ\" ซึ่งอนุญาตให้คุณกลับเข้ามาใหม่ได้บ่อยเท่าที่คุณต้องการภายในวันหมดอายุ<br><br>\n          <div class=\"flex justify-center\"><img src=\"__ASSET__images/12/12-P7.png\" class=\"h-32 mt-3 \"></div>\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">การขยายระยะเวลาการเข้าพัก</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      ◎โรงเรียนจะจัดให้มีการบรรยายสรุปเกี่ยวกับขั้นตอน 3 เดือนก่อนถึงเส้นตายการต่ออายุที่อยู่อาศัย และหลังจากยืนยันเกรด การเข้าเรียน ความประพฤติที่ดีและชำระค่าเล่าเรียนเต็มจำนวน นักเรียนที่ไม่มีปัญหาจะได้รับระยะเวลาพำนักที่ถูกต้องสูงสุด 2 เดือนนับจากวันที่สำเร็จการศึกษา โดยสมัครกับสำนักงานตรวจคนเข้าเมืองพร้อมเอกสารดังต่อไปนี้<br><br>\n      　1 “คำร้องเพื่อขยายระยะเวลาการพำนัก” และ “คำร้องเพื่อขออนุญาตทำกิจกรรมอื่นนอกเหนือจากที่ได้รับอนุญาตภายใต้สถานภาพการพำนักที่ได้รับก่อนหน้านี้”<br>\n      　2 “ผลการเรียนและบันทึกการเข้างาน” - จัดทำโดยโรงเรียน<br>\n      　➂ แบบฟอร์มใบแจ้ง (ใบแจ้งค่าครองชีพและรายได้จากงานพาร์ทไทม์)<br>\n      　④สมุดบัญชีธนาคารหรือรายงานสลิปเงินเดือนจากงานพาร์ทไทม์<br>\n      　➄หนังสือเดินทางและบัตรประจำตัวผู้พำนัก　<br>\n      　เราจะให้คำแนะนำโดยละเอียดเกี่ยวกับรายละเอียดอื่นๆ เกี่ยวกับชีวิตนักศึกษาในต่างประเทศหลังจากการลงทะเบียน<br><br>\n      <p class=\"text-lg underline text-green-800\">นักเรียนโปรดปฏิบัติตามกฎหมายญี่ปุ่นและกฎของโรงเรียนหลังจากลงทะเบียนแล้ว และใช้เวลาศึกษาในต่างประเทศให้คุ้มค่าที่สุด</p>\n    </div>"
+      }
+    ]
+  },
+  "id": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/12-VISA_STATUS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "Tempat tinggal siswa",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "Status tempat tinggal / Masuk kembali / Perpanjangan periode"
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">Memperoleh dan mengeluarkan status kependudukan</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-3\">\n      <div class=\"sm:col-span-2\">\n        <div class=\"text-stone-800\">\n          <div class=\"\">\n            ➀ Sekolah kami akan mengajukan status izin tinggal siswa selama 1 tahun 3 bulan pada kunjungan pertama Anda ke Jepang, dan setelah disetujui, kami akan mengirimkan ``Sertifikat Kelayakan'' kepada Anda untuk mengajukan visa untuk mendarat di Jepang.<br><br>\n            ➁ Saat Anda memasuki Jepang, Anda akan diberikan kartu penduduk oleh petugas imigrasi. Pada saat itu, pelajar yang perlu melakukan kegiatan selain yang diperbolehkan berdasarkan status kependudukan harus melapor kepada petugas imigrasi dan mempunyai “izin untuk melakukan kegiatan selain yang diperbolehkan berdasarkan status kependudukan” yang tertulis di kartu kependudukannya.<span class=\"text-[red]\">perangko</span>Minta mereka menekan .<br><br>\n            ➂ Setelah mendaftar, pastikan untuk membawa kartu penduduk Anda ke kantor lingkungan untuk mendaftarkan alamat Anda dan mengajukan permohonan Asuransi Kesehatan Nasional.<br><br>\n          </div>\n          <div class=\"grid sm:grid-cols-2 gap-2 sm:gap-4 text-stone-800\">\n            <img src=\"__ASSET__images/12/12-P3.png\" class=\"\">\n            <img src=\"__ASSET__images/12/12-P2.png\" class=\"\">\n          </div>\n          <img src=\"__ASSET__images/12/12-P4.png\" class=\"mt-3\">\n        </div>\n      </div>\n      <img src=\"__ASSET__images/12/12-P1.png\" class=\"m-2\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">masuk kembali</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-2\">\n        <img src=\"__ASSET__images/12/12-P6.png\" class=\"m-2\">\n        <div class=\"m-2\">Ini adalah prosedur yang diperlukan bagi warga negara asing yang tinggal di Jepang ketika meninggalkan negara tersebut, jika mereka “memiliki status kependudukan dengan masa berlaku tiga bulan atau kurang” atau “tidak akan kembali ke Jepang selama lebih dari satu tahun” sejak tanggal keberangkatan.<br>\n          Anda akan dapat masuk kembali ke Jepang dengan menyelesaikan prosedur izin masuk kembali sebelum meninggalkan negara tersebut.<br>\n          　Ada dua jenis izin masuk kembali: \"tunggal\", yang hanya berlaku satu kali, dan \"berganda\", yang memungkinkan Anda masuk kembali sebanyak yang Anda suka dalam tanggal habis masa berlaku.<br><br>\n          <div class=\"flex justify-center\"><img src=\"__ASSET__images/12/12-P7.png\" class=\"h-32 mt-3 \"></div>\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">Perpanjangan masa tinggal</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      ◎Sekolah akan mengadakan sesi pengarahan tentang prosedur 3 bulan sebelum batas waktu perpanjangan tempat tinggal, dan setelah memastikan nilai, kehadiran, perilaku baik, dan pembayaran penuh biaya sekolah, siswa tanpa masalah akan diberikan masa tinggal yang sah hingga 2 bulan sejak tanggal kelulusan dengan mengajukan permohonan ke Biro Imigrasi dengan dokumen-dokumen berikut.<br><br>\n      　① “Permohonan perpanjangan masa tinggal” dan “Permohonan izin untuk melakukan aktivitas selain yang diizinkan berdasarkan status kependudukan yang telah diberikan sebelumnya”<br>\n      　② “Prestasi akademik dan catatan kehadiran” - Disiapkan oleh sekolah<br>\n      　➂ Formulir deklarasi (pernyataan biaya hidup dan pendapatan pekerjaan paruh waktu)<br>\n      　④Buku tabungan bank atau laporan slip gaji dari pekerjaan paruh waktu<br>\n      　➄Paspor dan kartu penduduk　<br>\n      　Kami akan memberikan panduan rinci tentang rincian kehidupan siswa di luar negeri setelah pendaftaran.<br><br>\n      <p class=\"text-lg underline text-green-800\">Siswa, harap pastikan untuk mematuhi hukum dan peraturan sekolah Jepang setelah mendaftar, dan manfaatkan waktu Anda belajar di luar negeri.</p>\n    </div>"
+      }
+    ]
+  },
+  "np": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/12-VISA_STATUS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "विद्यार्थी निवास",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "निवासको स्थिति / पुन: प्रविष्टि / अवधिको नवीकरण"
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">निवासको स्थिति प्राप्त गर्ने र जारी गर्ने</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6 grid sm:grid-cols-3\">\n      <div class=\"sm:col-span-2\">\n        <div class=\"text-stone-800\">\n          <div class=\"\">\n            ➀ हाम्रो विद्यालयले तपाइँको जापानको पहिलो भ्रमणमा १ वर्ष ३ महिनाको लागि विद्यार्थी बसोबास स्थितिको लागि आवेदन दिनेछ, र यो स्वीकृत भएपछि, जापानमा अवतरणको लागि भिसाको लागि आवेदन दिनको लागि हामी तपाइँलाई ``योग्यताको प्रमाणपत्र'' मेल गर्नेछौं।<br><br>\n            ➁ जब तपाइँ जापान प्रवेश गर्नुहुन्छ, तपाइँलाई एक अध्यागमन अधिकारी द्वारा एक निवास कार्ड जारी गरिनेछ। त्यस समयमा, आवासको स्थिति अन्तर्गत अनुमति दिइएको बाहेक अन्य गतिविधिहरूमा संलग्न हुन आवश्यक पर्ने विद्यार्थीहरूले अध्यागमन अधिकारीलाई रिपोर्ट गर्नुपर्छ र उनीहरूको निवास कार्डमा लेखिएको \"निवासको स्थिति अन्तर्गत अनुमति दिइएको बाहेक अन्य गतिविधिहरूमा संलग्न हुन अनुमति\" हुनुपर्छ।<span class=\"text-[red]\">टिकट</span>तिनीहरूलाई थिच्नुहोस्।<br><br>\n            ➂ भर्ना गरिसकेपछि, आफ्नो ठेगाना दर्ता गर्न र राष्ट्रिय स्वास्थ्य बीमाको लागि आवेदन दिनको लागि वार्ड अफिसमा आफ्नो निवास कार्ड ल्याउन निश्चित हुनुहोस्।<br><br>\n          </div>\n          <div class=\"grid sm:grid-cols-2 gap-2 sm:gap-4 text-stone-800\">\n            <img src=\"__ASSET__images/12/12-P3.png\" class=\"\">\n            <img src=\"__ASSET__images/12/12-P2.png\" class=\"\">\n          </div>\n          <img src=\"__ASSET__images/12/12-P4.png\" class=\"mt-3\">\n        </div>\n      </div>\n      <img src=\"__ASSET__images/12/12-P1.png\" class=\"m-2\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">पुन: प्रविष्टि</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      <div class=\"grid sm:grid-cols-2 gap-2\">\n        <img src=\"__ASSET__images/12/12-P6.png\" class=\"m-2\">\n        <div class=\"m-2\">यो देश छोड्दा जापानमा बसोबास गर्ने विदेशी नागरिकहरूको लागि आवश्यक प्रक्रिया हो, यदि तिनीहरूसँग \"तीन महिना वा कम अवधिको वैधता अवधिको साथ निवासको स्थिति छ\" वा प्रस्थानको मितिबाट \"एक वर्ष भन्दा बढी जापान फर्किने छैन\"।<br>\n          तपाईं देश छोड्नु अघि पुन: प्रवेश अनुमति प्रक्रिया पूरा गरेर जापान पुन: प्रवेश गर्न सक्षम हुनुहुनेछ।<br>\n          　त्यहाँ दुई प्रकारका पुन: प्रवेश अनुमतिहरू छन्: \"एकल\", जुन एक पटक मात्र मान्य हुन्छ, र \"बहु\", जसले तपाइँलाई म्याद सकिने मिति भित्र जति पटक चाहानुहुन्छ पुन: प्रवेश गर्न अनुमति दिन्छ।<br><br>\n          <div class=\"flex justify-center\"><img src=\"__ASSET__images/12/12-P7.png\" class=\"h-32 mt-3 \"></div>\n        </div>\n      </div>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/12/BUTTON-11_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">बसाइ अवधि विस्तार</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-orange-200 my-2 p-5 text-sm leading-6\">\n      ◎ विद्यालयले आवास नवीकरणको अन्तिम मितिभन्दा ३ महिना अगाडि प्रक्रियाबारे ब्रीफिङ सत्र राख्नेछ र ग्रेड, हाजिरी, राम्रो व्यवहार र ट्युसन शुल्कको पूर्ण भुक्तानी पुष्टि गरेपछि, कुनै समस्या नभएका विद्यार्थीहरूलाई निम्न कागजातहरूसहित अध्यागमन ब्यूरोमा आवेदन दिएर स्नातक भएको मितिदेखि २ महिनासम्म बस्ने वैध अवधि जारी गरिनेछ।<br><br>\n      　① \"बसाइको अवधि विस्तारको लागि आवेदन\" र \"पहिले दिइएको आवासको स्थिति अन्तर्गत अनुमति दिइएको बाहेक अन्य गतिविधिमा संलग्न हुनको लागि अनुमतिको लागि आवेदन\"<br>\n      　② \"शैक्षिक प्रदर्शन र उपस्थिति रेकर्ड\" - विद्यालय द्वारा तयार<br>\n      　➂ घोषणा फारम (जीवन व्यय र अंशकालिक काम आयको घोषणा)<br>\n      　④बैंक पासबुक वा अंशकालिक कामबाट भुक्तानी पर्ची रिपोर्ट<br>\n      　➄ राहदानी र निवास कार्ड　<br>\n      　हामी भर्ना पछि विदेशमा विद्यार्थी जीवनको अन्य विवरणहरूमा विस्तृत मार्गदर्शन प्रदान गर्नेछौं।<br><br>\n      <p class=\"text-lg underline text-green-800\">विद्यार्थीहरू, कृपया भर्ना गरिसकेपछि जापानी कानुन र विद्यालयका नियमहरूको पालना गर्न निश्चित हुनुहोस्, र विदेशमा अध्ययन गर्दा आफ्नो समयको सदुपयोग गर्नुहोस्।</p>\n    </div>"
+      }
+    ]
+  }
+}

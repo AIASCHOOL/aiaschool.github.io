@@ -1,0 +1,470 @@
+{
+  "ja": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "個人情報保護に関する方針"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "愛知国際学院（以下AIA）は、「日本語教育事業」「留学事業」を基幹事業として、教育関連サービスの提供に努めております。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "これらの事業活動を推進する上で、お客様をはじめ、当グループに関係する方々の個人情報を適切に取り扱い、保護することが極めて重要であると深く認識しております。AIAは、以下のとおり個人情報保護方針を定め、当社役員、社員等に周知徹底することにより、これを実施し、かつ維持することを宣言いたします。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "1. すべての事業で取扱う個人情報及び社員等の個人情報に関し、個人情報の取扱いに関する法令、国が定める指針その他の規範を遵守いたします。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "2. 個人情報の収集、利用、提供等の取扱いは、業務上必要な範囲において、適法・公正な手段によって収集し、目的の範囲内で利用、提供等を行います。なお、特定した利用目的の範囲を超えた取扱いの必要性が生じた場合は、改めてご本人様に利用目的などを通知し、同意を得るようにし、目的外利用はいたしません。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "3. AIA内で取扱う全ての個人情報について、不正なアクセス、紛失、破壊、改竄、漏洩等のリスクに対して合理的な安全対策および是正措置を講じます。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "4. AIAは、本人からの当該個人情報の開示、訂正、削除、利用停止等の要請及び苦情や相談に対して、誠実かつ速やかに対応いたします。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "5. 個人情報保護のための体制を適切に維持するとともに、状況の変化や個人情報保護に関する社会的動向、お客様の要望等を踏まえ、継続的に改善します。"
+    },
+    {
+      "tag": "p",
+      "className": "text-right",
+      "html": "平成国際教育開発有限 <br> 代表取締役　荘昌憲"
+    },
+    {
+      "tag": "p",
+      "className": "text-right",
+      "html": "愛知国際学院 <br> 学院長　荘昌憲"
+    }
+  ],
+  "en": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "Policy regarding personal information protection"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "Aichi International Academy (AIA) strives to provide education-related services with the core businesses of \"Japanese language education business\" and \"study abroad business.\""
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "In promoting these business activities, we are deeply aware that it is extremely important to appropriately handle and protect the personal information of our customers and other people related to our group. AIA has established the following personal information protection policy, and declares that it will be implemented and maintained by thoroughly disseminating the policy to our officers, employees, etc."
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "1. Regarding personal information handled in all businesses and the personal information of employees, etc., we will comply with laws and regulations regarding the handling of personal information, guidelines established by the government, and other norms."
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "2. Personal information will be collected, used, provided, etc. by lawful and fair means to the extent necessary for business purposes, and used and provided within the scope of the purpose. If it becomes necessary to handle personal information beyond the scope of the specified purpose of use, we will notify the person of the purpose of use and obtain their consent, and we will not use the information for any other purpose."
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "3. For all personal information handled within AIA, we will take reasonable safety measures and corrective measures against risks such as unauthorized access, loss, destruction, falsification, leakage, etc."
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "4. AIA will sincerely and promptly respond to requests for disclosure, correction, deletion, suspension of use, etc. of personal information, as well as complaints and consultations, from individuals."
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "5. We will appropriately maintain a system for protecting personal information and continually improve it in light of changes in the situation, social trends regarding personal information protection, customer requests, etc."
+    },
+    {
+      "tag": "p",
+      "className": "text-right",
+      "html": "Heisei International Educational Development Co., Ltd. <br> Representative Director Masanori Sho"
+    },
+    {
+      "tag": "p",
+      "className": "text-right",
+      "html": "Aichi International Academy <br> Principal Masanori Sho"
+    }
+  ],
+  "cn": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "个人资料保护方针"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "爱知国际学院（AIA）以“日语教育事业”和“留学事业”为核心业务，致力于提供教育相关服务。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "在促进这些业务活动的过程中，我们深刻认识到妥善处理和保护客户以及与我们集团相关的其他人员的个人信息极其重要。 AIA制定了以下个人信息保护政策，并声明将通过向我们的管理人员、员工等充分传播该政策来实施和维护该政策。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "1. 对于所有业务中处理的个人信息以及员工等的个人信息，我们将遵守有关个人信息处理的法律法规、政府制定的准则以及其他规范。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "2. 个人信息将在商业目的必要的范围内通过合法、公正的方式收集、使用、提供等，并在该目的范围内使用和提供。如果需要超出规定的使用目的范围处理个人信息，我们会将使用目的告知本人并征得其同意，并且我们不会将该信息用于任何其他目的。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "3. 对于友邦保险内部处理的所有个人信息，我们将采取合理的安全措施和纠正措施，以应对位置信息未经授权、丢失、毁坏、篡改、泄露等风险。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "4. AIA将真诚、及时地回应个人提出的披露、更正、删除、停止使用等个人信息的要求以及投诉和咨询。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "5. 我们将根据个人信息保护的形势、社会趋势、客户要求等的变化，妥善维护个人信息保护体系，并持续改进。"
+    },
+    {
+      "tag": "p",
+      "className": "text-right",
+      "html": "平成国际教育发展有限公司 <br> 代表董事 庄正德"
+    },
+    {
+      "tag": "p",
+      "className": "text-right",
+      "html": "爱知国际学院 <br> 校长 庄正德"
+    }
+  ],
+  "tw": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "關於個人資訊保護的政策"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "愛知國際學院（AIA）以「日語教育事業」及「留學事業」為核心業務，致力於提供教育相關服務。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "在促進這些業務活動的過程中，我們深刻認識到妥善處理和保護客戶以及與我們集團相關的其他人員的個人資訊極為重要。 AIA制定了以下個人資訊保護政策，並聲明將透過向我們的管理人員、員工等充分傳播該政策來實施和維護該政策。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "1. 對於所有業務中處理的個人資訊以及員工等的個人資訊，我們將遵守有關個人資訊處理的法律法規、政府制定的準則以及其他規範。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "2. 個人資訊將在商業目的必要的範圍內透過合法、公正的方式收集、使用、提供等，並在該目的範圍內使用和提供。如果需要超出規定的使用目的範圍處理個人訊息，我們會將使用目的告知本人並徵得其同意，並且我們不會將該資訊用於任何其他目的。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "3. 對於友邦保險內部處理的所有個人信息，我們將採取合理的安全措施和糾正措施，以應對未經授權的訪問、丟失、毀壞、篡改、洩露等風險。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "4. AIA將真誠、及時地回應個人提出的揭露、更正、刪除、停止使用等個人資訊的要求以及投訴和諮詢。"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "5. 我們將根據個人資訊保護的情況、社會趨勢、客戶要求等的變化，妥善維護個人資訊保護體系，並持續改進。"
+    },
+    {
+      "tag": "p",
+      "className": "text-right",
+      "html": "平成國際教育發展有限公司 <br> 代表董事 莊正德"
+    },
+    {
+      "tag": "p",
+      "className": "text-right",
+      "html": "愛知國際學院 <br> 校長 莊正德"
+    }
+  ],
+  "ko": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "개인 정보 보호 정책"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "아이치 국제 학원(이하 AIA)은, 「일본어 교육 사업」 「유학 사업」을 기간 사업으로서, 교육 관련 서비스의 제공에 노력하고 있습니다."
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "이러한 사업 활동을 추진하는데 있어서, 고객을 비롯하여, 당 그룹에 관계하는 분들의 개인정보를 적절히 취급, 보호하는 것이 매우 중요하다고 깊이 인식하고 있습니다. AIA는 다음과 같이 개인정보 보호방침을 정하여 당사 임원, 사원 등에 주지 철저히 함으로써 이를 실시하고 유지할 것을 선언합니다."
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "1. 모든 사업에서 취급하는 개인정보 및 사원 등의 개인정보에 관하여 개인정보 취급에 관한 법령, 국가가 정하는 지침 및 기타 규범을 준수합니다."
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "2. 개인정보의 수집, 이용, 제공 등의 취급은, 업무상 필요한 범위에 있어서, 적법·공정한 수단에 의해 수집해, 목적의 범위내에서 이용, 제공등을 실시합니다. 덧붙여 특정한 이용 목적의 범위를 넘은 취급의 필요성이 생겼을 경우는, 다시 본인에게 이용 목적 등을 통지해, 동의를 얻도록 하고, 목적외 이용은 하지 않습니다."
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "3. AIA 내에서 취급하는 모든 개인정보에 대해 부정한 접근, 분실, 파괴, 개편, 누출 등의 위험에 대해 합리적인 안전대책 및 시정조치를 강구합니다."
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "4. AIA는 본인으로부터의 해당 개인정보의 공개, 정정, 삭제, 이용정지 등의 요청 및 불만이나 상담에 대해 성실하고 신속하게 대응합니다."
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "5. 개인정보보호를 위한 체제를 적절히 유지함과 동시에 상황의 변화나 개인정보보호에 관한 사회적 동향, 고객의 요망 등을 바탕으로 지속적으로 개선합니다."
+    },
+    {
+      "tag": "p",
+      "className": "text-right",
+      "html": "헤세이 국제 교육 개발 유한 <br> 대표이사 장창헌"
+    },
+    {
+      "tag": "p",
+      "className": "text-right",
+      "html": "아이치 국제학원 <br> 학원장 장창헌"
+    }
+  ],
+  "vi": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "Chính sách liên quan đến bảo vệ thông tin cá nhân"
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "html": "Học viện Quốc tế Aichi (AIA) nỗ lực cung cấp các dịch vụ liên quan đến giáo dục với hoạt động kinh doanh cốt lõi là \"kinh doanh giáo dục tiếng Nhật\" và \"kinh doanh du học\"."
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "html": "Khi thúc đẩy các hoạt động kinh doanh này, chúng tôi nhận thức sâu sắc rằng việc xử lý và bảo vệ phù hợp thông tin cá nhân của khách hàng và những người khác có liên quan đến tập đoàn của chúng tôi là vô cùng quan trọng. AIA đã thiết lập chính sách bảo vệ thông tin cá nhân sau đây và tuyên bố rằng chính sách này sẽ được thực hiện và duy trì bằng cách phổ biến kỹ lưỡng chính sách này đến các cán bộ, nhân viên của chúng tôi, v.v."
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "html": "1. Đối với thông tin cá nhân được xử lý trong tất cả các doanh nghiệp và thông tin cá nhân của nhân viên, v.v., chúng tôi sẽ tuân thủ luật pháp và các quy định liên quan đến việc xử lý thông tin cá nhân, các hướng dẫn do chính phủ ban hành và các quy định khác."
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "html": "2. Thông tin cá nhân sẽ được thu thập, sử dụng, cung cấp, v.v. bằng các phương tiện hợp pháp và công bằng trong phạm vi cần thiết cho mục đích kinh doanh và được sử dụng, cung cấp trong phạm vi mục đích. Nếu cần xử lý thông tin cá nhân ngoài phạm vi mục đích sử dụng đã chỉ định, chúng tôi sẽ thông báo cho người đó về mục đích sử dụng và nhận được sự đồng ý của họ và chúng tôi sẽ không sử dụng thông tin đó cho bất kỳ mục đích nào khác."
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "html": "3. Đối với tất cả thông tin cá nhân được xử lý trong AIA, chúng tôi sẽ thực hiện các biện pháp an toàn hợp lý và biện pháp khắc phục trước các rủi ro như truy cập trái phép, mất mát, phá hủy, giả mạo, rò rỉ, v.v."
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "html": "4. AIA sẽ phản hồi một cách chân thành và kịp thời các yêu cầu tiết lộ, chỉnh sửa, xóa, đình chỉ sử dụng, v.v. thông tin cá nhân cũng như các khiếu nại và tư vấn từ các cá nhân."
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "html": "5. Chúng tôi sẽ duy trì một cách thích hợp hệ thống bảo vệ thông tin cá nhân và liên tục cải tiến hệ thống này theo những thay đổi về tình hình, xu hướng xã hội về bảo vệ thông tin cá nhân, yêu cầu của khách hàng, v.v."
+    },
+    {
+      "tag": "P",
+      "className": "text-right",
+      "html": "Công ty TNHH Phát triển Giáo dục Quốc tế Heisei <br> Giám đốc đại diện Masanori Sho"
+    },
+    {
+      "tag": "P",
+      "className": "text-right",
+      "html": "Học viện quốc tế Aichi <br> Hiệu trưởng Masanori Sho"
+    }
+  ],
+  "th": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "นโยบายเกี่ยวกับการคุ้มครองข้อมูลส่วนบุคคล"
+    },
+    {
+      "tag": "พี",
+      "className": "",
+      "html": "Aichi International Academy (AIA) มุ่งมั่นที่จะให้บริการที่เกี่ยวข้องกับการศึกษาด้วยธุรกิจหลักของ \"ธุรกิจการศึกษาภาษาญี่ปุ่น\" และ \"ธุรกิจการศึกษาต่อต่างประเทศ\""
+    },
+    {
+      "tag": "พี",
+      "className": "",
+      "html": "ในการส่งเสริมกิจกรรมทางธุรกิจเหล่านี้ เราตระหนักดีว่าการจัดการและปกป้องข้อมูลส่วนบุคคลของลูกค้าและบุคคลอื่นที่เกี่ยวข้องกับกลุ่มของเราอย่างเหมาะสมเป็นสิ่งสำคัญอย่างยิ่ง เอไอเอได้กำหนดนโยบายการคุ้มครองข้อมูลส่วนบุคคลดังต่อไปนี้ และประกาศว่าจะมีการนำไปใช้และดูแลรักษาโดยการเผยแพร่นโยบายดังกล่าวไปยังเจ้าหน้าที่ ลูกจ้าง ฯลฯ ของเราอย่างละเอียดถี่ถ้วน"
+    },
+    {
+      "tag": "พี",
+      "className": "",
+      "html": "1. เกี่ยวกับข้อมูลส่วนบุคคลที่จัดการในทุกธุรกิจและข้อมูลส่วนบุคคลของพนักงาน ฯลฯ เราจะปฏิบัติตามกฎหมายและข้อบังคับเกี่ยวกับการจัดการข้อมูลส่วนบุคคล แนวทางที่กำหนดโดยรัฐบาล และบรรทัดฐานอื่น ๆ"
+    },
+    {
+      "tag": "พี",
+      "className": "",
+      "html": "2. ข้อมูลส่วนบุคคลจะถูกรวบรวม ใช้ จัดหา ฯลฯ โดยวิธีการที่ถูกต้องตามกฎหมายและยุติธรรมในขอบเขตที่จำเป็นสำหรับวัตถุประสงค์ทางธุรกิจ และใช้และจัดให้มีภายในขอบเขตของวัตถุประสงค์ หากจำเป็นต้องจัดการข้อมูลส่วนบุคคลนอกเหนือขอบเขตของวัตถุประสงค์การใช้งานที่ระบุ เราจะแจ้งให้บุคคลทราบถึงวัตถุประสงค์ในการใช้งานและรับความยินยอมจากพวกเขา และเราจะไม่ใช้ข้อมูลเพื่อวัตถุประสงค์อื่นใด"
+    },
+    {
+      "tag": "พี",
+      "className": "",
+      "html": "3. สำหรับข้อมูลส่วนบุคคลทั้งหมดที่จัดการภายในเอไอเอ เราจะใช้มาตรการความปลอดภัยที่เหมาะสมและมาตรการแก้ไขต่อความเสี่ยง เช่น การเข้าถึงโดยไม่ได้รับอนุญาต การสูญหาย การทำลาย การปลอมแปลง การรั่วไหล ฯลฯ"
+    },
+    {
+      "tag": "พี",
+      "className": "",
+      "html": "4. เอไอเอจะตอบสนองต่อคำร้องขอให้เปิดเผย แก้ไข ลบ ระงับการใช้ ฯลฯ ข้อมูลส่วนบุคคล ตลอดจนข้อร้องเรียนและคำปรึกษาจากบุคคลด้วยความจริงใจและทันที"
+    },
+    {
+      "tag": "พี",
+      "className": "",
+      "html": "5. เราจะรักษาระบบในการปกป้องข้อมูลส่วนบุคคลอย่างเหมาะสมและปรับปรุงอย่างต่อเนื่องตามการเปลี่ยนแปลงของสถานการณ์ แนวโน้มทางสังคมเกี่ยวกับการปกป้องข้อมูลส่วนบุคคล คำขอของลูกค้า ฯลฯ"
+    },
+    {
+      "tag": "พี",
+      "className": "text-right",
+      "html": "บริษัท เฮเซ อินเตอร์เนชันแนล เอ็ดดูเคชั่น ดีเวลลอปเมนท์ จำกัด <br> กรรมการผู้แทน มาซาโนริ โช"
+    },
+    {
+      "tag": "พี",
+      "className": "text-right",
+      "html": "สถาบันนานาชาติไอจิ <br> อาจารย์ใหญ่มาซาโนริ โช"
+    }
+  ],
+  "id": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "Kebijakan mengenai perlindungan informasi pribadi"
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "html": "Aichi International Academy (AIA) berupaya menyediakan layanan terkait pendidikan dengan bisnis inti \"bisnis pendidikan bahasa Jepang\" dan \"bisnis belajar di luar negeri\"."
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "html": "Dalam mempromosikan aktivitas bisnis ini, kami sangat menyadari bahwa sangatlah penting untuk menangani dan melindungi informasi pribadi pelanggan kami dan orang lain yang terkait dengan grup kami dengan tepat. AIA telah menetapkan kebijakan perlindungan informasi pribadi berikut ini, dan menyatakan bahwa kebijakan tersebut akan diterapkan dan dipelihara dengan mensosialisasikan kebijakan tersebut secara menyeluruh kepada petugas, karyawan, dll."
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "html": "1. Mengenai informasi pribadi yang ditangani di semua bisnis dan informasi pribadi karyawan, dll., kami akan mematuhi undang-undang dan peraturan mengenai penanganan informasi pribadi, pedoman yang ditetapkan oleh pemerintah, dan norma lainnya."
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "html": "2. Informasi pribadi akan dikumpulkan, digunakan, disediakan, dll. dengan cara yang sah dan adil sejauh diperlukan untuk tujuan bisnis, dan digunakan serta disediakan dalam lingkup tujuan tersebut. Jika diperlukan untuk menangani informasi pribadi di luar cakupan tujuan penggunaan yang ditentukan, kami akan memberi tahu orang tersebut tentang tujuan penggunaan dan mendapatkan persetujuan mereka, dan kami tidak akan menggunakan informasi tersebut untuk tujuan lain apa pun."
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "html": "3. Untuk semua informasi pribadi yang ditangani dalam AIA, kami akan mengambil tindakan keamanan yang wajar dan tindakan perbaikan terhadap risiko seperti akses tidak sah, kehilangan, kehancuran, pemalsuan, kebocoran, dll."
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "html": "4. AIA akan dengan tulus dan segera menanggapi permintaan pengungkapan, koreksi, penghapusan, penangguhan penggunaan, dll. informasi pribadi, serta keluhan dan konsultasi, dari individu."
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "html": "5. Kami akan memelihara sistem untuk melindungi informasi pribadi dengan tepat dan terus memperbaikinya mengingat perubahan situasi, tren sosial mengenai perlindungan informasi pribadi, permintaan pelanggan, dll."
+    },
+    {
+      "tag": "P",
+      "className": "text-right",
+      "html": "Heisei Pengembangan Pendidikan Internasional Co., Ltd. <br> Direktur Perwakilan Masanori Sho"
+    },
+    {
+      "tag": "P",
+      "className": "text-right",
+      "html": "Akademi Internasional Aichi <br> Kepala Sekolah Masanori Sho"
+    }
+  ],
+  "np": [
+    {
+      "tag": "h1",
+      "className": "text-3xl my-2",
+      "html": "व्यक्तिगत जानकारी सुरक्षा सम्बन्धी नीति"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "आइची इन्टरनेशनल एकेडेमी (एआईए) ले \"जापानी भाषा शिक्षा व्यवसाय\" र \"विदेशमा अध्ययन गर्ने व्यवसाय\" को मुख्य व्यवसायहरूसँग शिक्षा-सम्बन्धित सेवाहरू प्रदान गर्न प्रयास गर्दछ।"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "यी व्यवसायिक गतिविधिहरू प्रवर्द्धन गर्दा, हामी हाम्रा ग्राहकहरू र हाम्रो समूहसँग सम्बन्धित अन्य व्यक्तिहरूको व्यक्तिगत जानकारीलाई उचित रूपमा ह्यान्डल गर्न र सुरक्षित गर्न अत्यन्त महत्त्वपूर्ण छ भनेर हामी गहिरो रूपमा सचेत छौं। AIA ले निम्न व्यक्तिगत जानकारी सुरक्षा नीति स्थापना गरेको छ, र यो नीतिलाई हाम्रा अधिकारीहरू, कर्मचारीहरू, इत्यादिलाई राम्ररी फैलाएर कार्यान्वयन र मर्मत गरिने घोषणा गर्दछ।"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "1. सबै व्यवसायहरूमा ह्यान्डल गरिएको व्यक्तिगत जानकारी र कर्मचारीहरूको व्यक्तिगत जानकारी, इत्यादिको सम्बन्धमा, हामी व्यक्तिगत जानकारीको ह्यान्डलिङ सम्बन्धी कानून र नियमहरू, सरकारद्वारा स्थापित दिशानिर्देशहरू, र अन्य मापदण्डहरूको पालना गर्नेछौं।"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "2. व्यक्तिगत जानकारीहरू व्यवसायिक उद्देश्यका लागि आवश्यक हदसम्म कानूनी र उचित माध्यमद्वारा सङ्कलन, प्रयोग, उपलब्ध गराइने, र उद्देश्यको दायरा भित्र प्रयोग र उपलब्ध गराइनेछ। यदि व्यक्तिगत जानकारी प्रयोगको निर्दिष्ट उद्देश्यको दायरा भन्दा बाहिर ह्यान्डल गर्न आवश्यक हुन्छ भने, हामी प्रयोगको उद्देश्यको व्यक्तिलाई सूचित गर्नेछौं र उनीहरूको सहमति प्राप्त गर्नेछौं, र हामी अन्य कुनै उद्देश्यको लागि जानकारी प्रयोग गर्दैनौं।"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "3. AIA भित्र ह्यान्डल गरिएका सबै व्यक्तिगत जानकारीका लागि, हामी अनाधिकृत पहुँच, हानि, विनाश, मिथ्याकरण, चुहावट, आदि जस्ता जोखिमहरू विरुद्ध उचित सुरक्षा उपायहरू र सुधारात्मक उपायहरू गर्नेछौं।"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "4. AIA ले व्यक्तिगत जानकारीको खुलासा, सुधार, मेटाउने, प्रयोग निलम्बन, आदिका साथै व्यक्तिहरूबाट गुनासो र परामर्शका लागि अनुरोधहरूको इमानदारी र तुरुन्तै जवाफ दिनेछ।"
+    },
+    {
+      "tag": "p",
+      "className": "",
+      "html": "5. हामी व्यक्तिगत जानकारीको सुरक्षाको लागि एक प्रणालीलाई उचित रूपमा कायम राख्नेछौं र परिस्थितिमा भएका परिवर्तनहरू, व्यक्तिगत जानकारी सुरक्षा सम्बन्धी सामाजिक प्रवृत्तिहरू, ग्राहक अनुरोधहरू, इत्यादिको प्रकाशमा यसलाई निरन्तर सुधार गर्नेछौं।"
+    },
+    {
+      "tag": "p",
+      "className": "text-right",
+      "html": "Heisei अन्तर्राष्ट्रिय शैक्षिक विकास कं, लिमिटेड <br> प्रतिनिधि निर्देशक मसानोरी सो"
+    },
+    {
+      "tag": "p",
+      "className": "text-right",
+      "html": "आइची इन्टरनेशनल एकेडेमी <br> प्रिन्सिपल मसनोरी सो"
+    }
+  ]
+}

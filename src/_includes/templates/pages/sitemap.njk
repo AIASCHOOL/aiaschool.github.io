@@ -1,0 +1,32 @@
+{% set scopePages = staging if route.scope == "staging" else root %}
+{% set pageContent = scopePages.sitemap %}
+<!-- title bar start -->
+<div class="relative flex mx-auto min-h-28 max-h-32"></div>
+<!-- title bar end -->
+
+<!-- main start -->
+<div class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1">
+  <br />
+  <div class="flex flex-col space-y-8 text-gray-700 text-lg font-serif">
+    <h1 class="text-3xl">{{ route.locale.footer.sitemap }}</h1>
+    <ol class="ml-6 space-y-4 list-disc list-inside">
+      {% for item in pageContent.items %}
+        {% if item.type == "group" %}
+          <li>
+            {{ route.locale.nav[item.labelKey] }}
+            <ul class="ps-5 mt-2 space-y-1 list-disc list-inside">
+              {% for child in item.children %}
+                <li><a href="{{ child.href }}">{{ route.locale.nav[child.labelKey] }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% else %}
+          <li><a href="{{ item.href }}">{{ route.locale.nav[item.labelKey] }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+    <br />
+  </div>
+  <br />
+</div>
+<!-- main end -->

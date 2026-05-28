@@ -1,50 +1,40 @@
 <!DOCTYPE html>
-<html lang="ja">
-
+<html lang="ne">
 <head>
   <meta charset="utf-8" />
-  <title>
-    愛知国際学院 | 施設設備
-  </title>
-
+  <title>सुविधा र उपकरण | 愛知国際学院</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <meta charset="utf-8" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <link rel="shortcut icon" href="../favicon.ico" />
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
-
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Noto Sans JP', sans-serif;
-    }
-  </style>
-  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../main.css" />
   <link rel="stylesheet" href="../gt.css" />
+  <link rel="stylesheet" href="../site.css?v=20260528-shared" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
-
-<body class="" onpageshow="translateTo('ne')">
+<body class="">
   <!-- banner start -->
   <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1">
     <div class="flex items-center flex-row">
-      <div class="flex-grow "></div>
+      <div class="flex-grow"></div>
       <img class="h-10 ml-0 mr-0 hidden md:block invisible" src="../images/35th.png" />
-      <a href="index.html" style="border: none;" class="h-10"><img class="h-10" src="../images/logo.png" /></a>
-      <a href="#" style="border: none;cursor: auto;" class="h-10"><img class="h-10" src="../images/35th.png" /></a>
+      <a href="index.html" class="h-10 border-none"><img class="h-10" src="../images/logo.png" /></a>
+      <a href="#" class="h-10 cursor-auto border-none"><img class="h-10" src="../images/35th.png" /></a>
       <div class="flex-grow"></div>
     </div>
   </div>
   <!-- banner end -->
   <!-- menu start -->
-  <div class="bg-gradient-to-r from-blue-900 from-30% via-blue-400 via-50% to-blue-900 to-70%">
-    <header class='shadow-md '>
-      <div class='flex flex-wrap justify-center px-4 py-3 relative text-sm'>
-        <div id="toggle" class='flex ml-auto lg:order-1 lg:hidden mr-2 relative z-50'>
-          <button class='ml-7'>
+  <div class="bg-gradient-to-r from-blue-900 from-30% via-blue-400 via-50% to-blue-900 to-70% notranslate" translate="no">
+    <header class="shadow-md">
+      <div class="flex flex-wrap justify-center px-4 py-3 relative text-xs lg:text-sm">
+        <div id="toggle" class="flex ml-auto md:order-1 md:hidden mr-2 relative z-50">
+          <button class="ml-7">
             <svg class="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd"
                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
@@ -53,389 +43,292 @@
           </button>
         </div>
         <ul id="collapseMenu"
-          class='mx-auto lg:!flex lg:space-x-7 xl:space-x-10 max-lg:space-y-3 max-lg:hidden max-lg:w-full max-lg:my-4'>
-          <li class='max-lg:border-b max-lg:py-2'><a href='index.html'
-              class='hover:text-gray-300 text-white block'>最新ニュース</a></li>
-          <li class='group max-lg:border-b max-lg:py-2 relative'>
-            <a href='javascript:void(0)'
-              class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>学院について<svg
-                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block "
-                viewBox="0 0 24 24">
-                <path
-                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
-                  data-name="16" data-original="#FFFFFF" />
-              </svg>
+          class="mx-auto md:!flex md:space-x-4 lg:space-x-7 xl:space-x-10 max-md:space-y-3 max-md:hidden max-md:w-full max-md:my-4">
+          <li class="max-md:border-b max-md:py-2"><a href="index.html" class="hover:text-gray-300 text-white block">नवीनतम समाचार</a></li>
+          <li class="group max-md:border-b max-md:py-2 relative">
+            <a href="javascript:void(0)" class="hover:text-gray-300 hover:fill-gray-300 text-white block fill-white">
+              विद्यालयबारे<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block" viewBox="0 0 24 24"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z" data-name="16" data-original="#FFFFFF" /></svg>
             </a>
-            <ul
-              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[110px] z-50'>
-              <li class='border-b py-3'>
-                <a href='about_business.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
-                  व्यवसायको अवलोकन
-                </a>
+            <ul class="absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 md:top-5 max-md:top-8 left-0 min-w-[110px] z-50">
+              <li class="border-b py-3">
+                <a href="about_business.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">व्यवसायको अवलोकन</a>
               </li>
-              <li class='border-b pt-1 pb-3'><a href='about_facility.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
-                  सुविधा र उपकरण
-                </a>
+              <li class="border-b pt-1 pb-3">
+                <a href="about_facility.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">सुविधा र उपकरण</a>
               </li>
-              <li class='pt-1 pb-1'><a href='about_publish.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
-                  सार्वजनिक सामग्री
-                </a>
-              </li>
-              <!--<li class=' pt-1 pb-1'>
-                <a href='about_teacher.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
-                  教師陣
-                </a>
-              </li>-->
-            </ul>
-          </li>
-          <!-- <li class='max-lg:border-b max-lg:py-2'><a href='message.html'
-              class='hover:text-gray-300 text-white block'>卒業生メッセージ</a></li> -->
-          <li class='max-lg:border-b max-lg:py-2'><a href='course_advance.html'
-              class='hover:text-gray-300 text-white block'>उच्च शिक्षा तयारी कोर्स</a></li>
-          <!-- <li class='group max-lg:border-b max-lg:py-2 relative'>
-            <a href='javascript:void(0)'
-              class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>教育コース<svg
-                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block "
-                viewBox="0 0 24 24">
-                <path
-                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
-                  data-name="16" data-original="#FFFFFF" />
-              </svg>
-            </a>
-            <ul
-              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[150px] z-50'>
-              <li class='border-b py-3'>
-                <a href='course_advance.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>
-                  उच्च शिक्षा तयारी कोर्स
-                </a>
-              </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='course_junior.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>जुनियर कलेज संयुक्त कोर्स
-                </a>
-              </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='course_tour.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>अध्ययन भ्रमण कोर्स
-                </a>
-              </li>
-              <li class=' pt-1 pb-1'>
-                <a href='course_lecture.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>विशेष कक्षा
-                </a>
-              </li>
-            </ul>
-          </li> -->
-          <li class='group max-lg:border-b max-lg:py-2 relative'>
-            <a href='javascript:void(0)'
-              class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>学生生活<svg
-                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block "
-                viewBox="0 0 24 24">
-                <path
-                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
-                  data-name="16" data-original="#FFFFFF" />
-              </svg>
-            </a>
-            <ul
-              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 xl:top-5 max-lg:top-8 left-0 min-w-[110px] z-50'>
-              <li class='border-b py-3'>
-                <a href='life_dorm.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>विद्यार्थी आवास
-                </a>
-              </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='life_insurance.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>विद्यार्थी बीमा
-                </a>
-              </li>
-              <li class=' pt-1 pb-1'>
-                <a href='life_visa.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>विद्यार्थी बसोबास स्थिति
-                </a>
+              <li class="pt-1 pb-3">
+                <a href="about_publish.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">सार्वजनिक सामग्री</a>
               </li>
             </ul>
           </li>
-          <li class='max-lg:border-b max-lg:py-2'><a href='books.html'
-              class='hover:text-gray-300 text-white block'>教育関連開発</a></li>
-          <li class='max-lg:border-b max-lg:py-2'><a href='access.html'
-              class='hover:text-gray-300 text-white block'>アクセス</a></li>
+          <li class="max-md:border-b max-md:py-2"><a href="course_advance.html" class="hover:text-gray-300 text-white block">उच्च शिक्षा तयारी कोर्स</a></li>
+          <li class="group max-md:border-b max-md:py-2 relative">
+            <a href="javascript:void(0)" class="hover:text-gray-300 hover:fill-gray-300 text-white block fill-white">
+              विद्यार्थी जीवन<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-0.5 inline-block" viewBox="0 0 24 24"><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z" data-name="16" data-original="#FFFFFF" /></svg>
+            </a>
+            <ul class="absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 md:top-5 max-md:top-8 left-0 min-w-[110px] z-50">
+              <li class="border-b py-3">
+                <a href="life_dorm.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">विद्यार्थी आवास</a>
+              </li>
+              <li class="border-b pt-1 pb-3">
+                <a href="life_insurance.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">विद्यार्थी बीमा</a>
+              </li>
+              <li class="pt-1 pb-3">
+                <a href="life_visa.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">विद्यार्थी बसोबास स्थिति</a>
+              </li>
+            </ul>
+          </li>
+          <li class="max-md:border-b max-md:py-2"><a href="books.html" class="hover:text-gray-300 text-white block">शैक्षिक सामग्री विकास</a></li>
+          <li class="max-md:border-b max-md:py-2"><a href="access.html" class="hover:text-gray-300 text-white block">पहुँच</a></li>
         </ul>
-        <ul id="collapseMenu2" class=' max-lg:mt-1'>
-          <li class='group relative'>
-            <a href='javascript:void(0)' class='hover:text-gray-300 hover:fill-gray-300 text-white block fill-white'>
-              <svg class="w-5 h-5" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"
-                style="enable-background:new 0 0 120 120" xml:space="preserve">
-                <switch>
-                  <g>
-                    <path
-                      d="M60 120C26.9 120 0 93.1 0 60S26.9 0 60 0s60 26.9 60 60-26.9 60-60 60zM60 5C29.7 5 5 29.7 5 60s24.7 55 55 55 55-24.7 55-55S90.3 5 60 5z" />
-                    <path
-                      d="M60 120c-19.3 0-34.4-26.4-34.4-60S40.7 0 60 0s34.4 26.4 34.4 60-15.1 60-34.4 60zM60 5C43.8 5 30.5 29.7 30.5 60s13.2 55 29.5 55 29.5-24.7 29.5-55S76.2 5 60 5z" />
-                    <path d="M12.2 25.6h95.6v5H12.2zM12.2 89.5h95.6v5H12.2zM2.5 57.5h115v5H2.5z" />
-                    <path d="M57.5 2.5h5v115h-5z" />
-                  </g>
-                </switch>
+        <ul id="collapseMenu2" class="max-md:mt-1">
+          <li class="group relative" id="languageMenu">
+            <a href="javascript:void(0)" class="hover:text-gray-300 hover:fill-gray-300 text-white block fill-white">
+              <svg class="w-5 h-5" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" xml:space="preserve">
+                <switch><g><path d="M60 120C26.9 120 0 93.1 0 60S26.9 0 60 0s60 26.9 60 60-26.9 60-60 60zM60 5C29.7 5 5 29.7 5 60s24.7 55 55 55 55-24.7 55-55S90.3 5 60 5z" /><path d="M60 120c-19.3 0-34.4-26.4-34.4-60S40.7 0 60 0s34.4 26.4 34.4 60-15.1 60-34.4 60zM60 5C43.8 5 30.5 29.7 30.5 60s13.2 55 29.5 55 29.5-24.7 29.5-55S76.2 5 60 5z" /><path d="M12.2 25.6h95.6v5H12.2zM12.2 89.5h95.6v5H12.2zM2.5 57.5h115v5H2.5z" /><path d="M57.5 2.5h5v115h-5z" /></g></switch>
               </svg>
             </a>
-            <ul
-              class='absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 lg:top-5 max-md:top-5 -left-28 min-w-[130px] z-50 notranslate'>
-              <li class='border-b py-3'>
-                <a href='../index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>日本語</a>
+            <ul class="absolute hidden group-hover:block shadow-lg bg-white space-y-2 pl-4 pr-2 pb-4 pt-2 md:top-5 max-md:top-5 -left-28 min-w-[130px] z-50 notranslate" id="languageDropdown">
+              <li class="border-b py-3">
+                <a href="../about_facility.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">日本語</a>
               </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='../en/index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>English</a>
+              <li class="border-b pt-1 pb-3">
+                <a href="../en/about_facility.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">English</a>
               </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='../cn/index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>中国語（簡体）</a>
+              <li class="border-b pt-1 pb-3">
+                <a href="../cn/about_facility.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">中国語（簡体）</a>
               </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='../tw/index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>中国語（繁体）</a>
+              <li class="border-b pt-1 pb-3">
+                <a href="../tw/about_facility.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">中国語（繁体）</a>
               </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='../ko/index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>한국어</a>
+              <li class="border-b pt-1 pb-3">
+                <a href="../ko/about_facility.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">한국어</a>
               </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='../vi/index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Tiếng
-                  Việt</a>
+              <li class="border-b pt-1 pb-3">
+                <a href="../vi/about_facility.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">Tiếng Việt</a>
               </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='../th/index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>ภาษาไทย</a>
+              <li class="border-b pt-1 pb-3">
+                <a href="../th/about_facility.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">ภาษาไทย</a>
               </li>
-              <li class='border-b pt-1 pb-3'>
-                <a href='../id/index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>Indonesia</a>
+              <li class="border-b pt-1 pb-3">
+                <a href="../id/about_facility.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">Indonesia</a>
               </li>
-              <li class='pt-1 pb-1'>
-                <a href='../np/index.html'
-                  class='hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block'>नेपाली</a>
+              <li class="pt-1 pb-3">
+                <a href="../np/about_facility.html" class="hover:text-gray-900 hover:fill-gray-900 text-gray-500 fill-gray-500 block">नेपाली</a>
               </li>
             </ul>
           </li>
         </ul>
+      </div>
     </header>
   </div>
   <!-- menu end -->
   <!-- title bar start -->
   <div class="relative flex mx-auto min-h-28 max-h-32">
-    <img class="w-full object-cover object-center" src="../images/facility_ov.jpg" />
-    <div class="absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center ">
-      <h3 class="text-white text-3xl font-bold">施設設備</h3>
+      <img class="w-full object-cover object-center" src="../images/facility_ov.jpg" alt="" />
+    <div class="absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center">
+      <h3 class="text-white text-3xl font-bold">सुविधा उपकरण</h3>
     </div>
-    <div class="absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center ">
-      <p class="text-white italic text-xs sm:text-base">校舎 ・ 学生寮 ・ セミナーハウス</p>
+      <div class="absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center">
+        <p class="text-white italic text-xs sm:text-base">विद्यालय भवन, विद्यार्थी छात्रावास, सेमिनार घर</p>
+      </div>
+  </div>
+    <div>
+      <img class="w-full" src="../images/facility_pics.png">
     </div>
-  </div>
-  <div>
-    <img class="w-full" src="../images/facility_pics.png" />
-  </div>
   <!-- title bar end -->
   <!-- main start -->
   <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1">
-    <div class="h-10 relative">
-      <img src="../images/business_icon.png" class="h-full" />
-      <div class="absolute top-1 left-10 text-white italic text-lg">校舎</div>
-    </div>
-    <div class="border border-black my-2 p-5 bg-[#ffc000] bg-opacity-15 text-sm leading-6">
-      校舎は自己所有別館７階と本館４階合わせて、用地７３９㎡，建築面積1,506㎡の鉄筋コンクリート建物。<br />
-      学院長室1、大会議室教職員控室１、事務教務室１、大教室12、小教室３、進学進路指導室1、保健室１、PC コーナー多目的研修室、日本文化体験室、PC音声読み取りIT pen
-      付き図書室1、音楽娯楽室1、宿泊客室2、ルーフガーデン2、、駐輪駐車場３などの施設。全館空調、シャワ―トイレ、空気清浄機、TVなど電化設備完備
-    </div>
-    <div class="bg-opacity-15 bg-[#7F1CE2] my-2 px-5 py-2 text-sm leading-6">
-      <div class="h-12 relative">
-        <img src="../images/btn_ellipse_2-3.png" class="h-full " />
-        <div class="absolute top-3 left-8">本館</div>
+        <div class="h-10 relative">
+        <img src="../images/business_icon.png" class="h-full">
+        <div class="absolute top-1 left-10 text-white italic text-lg">विद्यालय भवन</div>
       </div>
-      <img src="../photos/facility/2.png" class="sm:h-48mb-6" />
-      <div class="my-3">
-        <div class="bg-lime-300 w-8 text-center mt-2">1F</div>
-        <div class="flex flex-col sm:flex-row sm:flex-wrap text-xs">
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_1_1.jpg" class="sm:h-48" />玄関口</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_1_2.jpg" class="sm:h-48" />玄関正面</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_1_3.jpg" class="sm:h-48" />玄関左側</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_1_4.jpg" class="sm:h-48" />玄関右側</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_1_5.jpg" class="sm:h-48" />事務掲示板</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_1_6.jpg" class="sm:h-48" />事務室</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_1_7.jpg" class="sm:h-48" />歴代優等賞受賞者</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_1_8.jpg" class="sm:h-48" />会議室</div>
-        </div>
+        <div class="border border-black my-2 p-5 bg-[#ffc000] bg-opacity-15 text-sm leading-6">
+        विद्यालय भवन 739 m2 को साइट र 1,506 m2 को निर्माण क्षेत्र सहितको प्रबलित कंक्रीट भवन हो, जसमा स्व-स्वामित्वको एनेक्सको 7 औं तला र मुख्य भवनको 4 औं तला समावेश छ।<br>
+        सुविधामा १ प्रधानाध्यापकको कार्यालय, १ ठुलो सम्मेलन कक्ष, १ संकाय तथा कर्मचारी प्रतिक्षा कक्ष, १ प्रशासनिक कार्यालय, १२ ठूला कक्षाकोठा, ३ साना कक्षाकोठा, १ शैक्षिक करियर मार्गदर्शन कक्ष, १ स्वास्थ्य कक्ष, पीसी कर्नरसहितको बहुउद्देश्यीय तालिम कक्ष, जापानी संस्कृति अनुभव कक्ष, १ पुस्तकालय, पीसी भ्वाइस रिडिङ कोठा, आईटी पेन इन्टर, २ वटा म्युजिक रिडिङ रुम, आईटी इन्टरटेन्सन रुम रहेको छ । छत बगैंचा, र 3 साइकल पार्किङ स्थल। वातानुकूलित, नुहाउने/शौचालय, एयर प्युरिफायर, टिभी, आदि जस्ता विद्युतीय उपकरणहरूले पूर्ण रूपमा सुसज्जित।
       </div>
-      <div class="my-3">
-        <div class="bg-lime-300 w-8 text-center mt-2">2F</div>
-        <div class="flex flex-row flex-wrap text-xs">
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_2_1.jpg" class="sm:h-48" />学生コミュニケーションコーナー</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_2_2.jpg" class="sm:h-48" />2A教室</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_2_3.jpg" class="sm:h-48" />2C教室</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_2_4.jpg" class="sm:h-48" />研修室</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_2_5.jpg" class="sm:h-48" />廊下</div>
-        </div>
-      </div>
-      <div class="my-3">
-        <div class="bg-lime-300 w-16 text-center mt-2">3F＆屋上</div>
-        <div class="flex flex-row flex-wrap text-xs">
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_3_1.jpg" class="sm:h-48" />舞台正面</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_3_2.jpg" class="sm:h-48" />3C教室</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_3_3.jpg" class="sm:h-48" />屋上</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_3_4.png" class="sm:h-48" />屋上</div>
-        </div>
-      </div>
-      <div class="my-3">
-        <div class="bg-lime-300 w-24 text-center mt-2">B1文化客室</div>
-        <div class="flex flex-row flex-wrap text-xs">
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_b1_1.png" class="sm:h-48" />音楽室</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_b1_2.png" class="sm:h-48" />音楽室</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_b1_3.png" class="sm:h-48" />図書室</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_b1_4.png" class="sm:h-48" />図書室</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_b1_5.png" class="sm:h-48" />図書室</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/2_b1_6.jpg" class="sm:h-48" />客室</div>
-        </div>
-      </div>
-      <div class="h-12 relative">
-        <img src="../images/btn_ellipse_2-3.png" class="h-full " />
-        <div class="absolute top-3 left-8">別館</div>
-      </div>
-      <img src="../photos/facility/1.png" class="sm:h-72 mb-6" />
-      <div class="my-3">
-        <div class="bg-lime-300 w-8 text-center mt-2">1F</div>
-        <div class="flex flex-row flex-wrap text-xs">
-          <div class="mr-2 mt-2"><img src="../photos/facility/1_1_1.jpg" class="sm:h-48" />別館入り口</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/1_1_2.jpg" class="sm:h-48" />コミュニケーションコーナー</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/1_1_3.png" class="sm:h-48" />コミュニケーションコーナー</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/1_1_4.jpg" class="sm:h-48" />玄関口</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/1_1_5.jpg" class="sm:h-48" />玄関左側</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/1_1_6.jpg" class="sm:h-48" />学生用PCコーナー</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/1_1_7.jpg" class="sm:h-48" />廊下掲示板</div>
-        </div>
-      </div>
-      <div class="my-3">
-        <div class="bg-lime-300 w-52 text-center mt-2">2F～7F教室（大教室、小教室）</div>
-        <div class="flex flex-row flex-wrap text-xs">
-          <div class="mr-2 mt-2"><img src="../photos/facility/1_2_1.jpg" class="sm:h-48" />7F教室</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/1_2_2.jpg" class="sm:h-48" />6F教室</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/1_2_3.jpg" class="sm:h-48" />5F教室</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/1_2_4.jpg" class="sm:h-48" />男子トイレ</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/1_2_5.png" class="sm:h-48" />女子トイレ</div>
-        </div>
-      </div>
-      <div class="my-3">
-        <div class="bg-lime-300 w-32 text-center mt-2">屋上、ほか施設</div>
-        <div class="flex flex-row flex-wrap text-xs">
-          <div class="mr-2 mt-2"><img src="../photos/facility/1_3_1.jpg" class="sm:h-48" />学院長室</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/1_3_2.png" class="sm:h-48" />保健室</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/1_3_3.png" class="sm:h-48" />掲示板</div>
-          <div class="mr-2 mt-2"><img src="../photos/facility/1_3_4.png" class="sm:h-48" />掲示板はり紙</div>
-        </div>
-      </div>
-    </div>
-    <div class="h-10 relative">
-      <img src="../images/business_icon.png" class="h-full" />
-      <div class="absolute top-1 left-7 text-white italic text-lg">宿泊施設</div>
-    </div>
-    <div class="bg-[#7F1CE2] bg-opacity-50 my-2 p-5 text-sm leading-6">
-      <div class="h-12 relative">
-        <img src="../images/btn_ellipse_2-3.png" class="h-full" />
-        <div class="absolute top-3 left-7">学生宿舎</div>
-      </div>
-      <div class="bg-[#E4CFF9]  my-2 p-3 text-sm leading-6">
-        <div class="grid md:grid-cols-2 gap-3 my-3">
-          <div class="col-span-1">
-            <span class="text-blue-800">❶ BOX2707</span>
-            <div class="grid sm:grid-cols-2 gap-3">
-              <div class=""><img src="../photos/facility/building1.jpg" class="w-52"></div>
-              <div class="">8階鉄筋コンクリート。 26部屋、最大66名受入れ。 一階イタリアンレストラン。 学校から徒歩約10分以内。</div>
-            </div>
-          </div>
-          <div class=" col-span-1">
-            <span class="text-blue-800">❷ OAKアパートメント</span>
-            <div class="grid sm:grid-cols-2 gap-3">
-              <div class=""><img src="../photos/facility/building2.png" class="w-52"></div>
-              <div class="">5階鉄筋コンクリート。 14部屋、最大46名受入れ。 1階２階の一角はセミナーハウスと特別講座教室。 学校から徒歩約5分以内。</div>
-            </div>
-          </div>
-          <div class="col-span-1">
-            <span class="text-blue-800">❸ 三旺マンション</span>
-            <div class="grid sm:grid-cols-2 gap-3">
-              <div class=""><img src="../photos/facility/building3.png" class="w-52"></div>
-              <div class="">13階鉄筋コンクリートの803室。 5部屋、最大5名受入れ。 学校から徒歩約3分以内。</div>
-            </div>
-          </div>
-          <div class=" col-span-1">
-            <span class="text-blue-800">❹ イトーピア新栄</span>
-            <div class="grid sm:grid-cols-2 gap-3">
-              <div class=""><img src="../photos/facility/building4.png" class="w-52"></div>
-              <div class="">17階鉄筋コンクリートの907室。 3部屋、最大6名受入れ。 学校から徒歩約１０分以内。</div>
-            </div>
-          </div>
-          <div class="col-span-1">
-            <span class="text-blue-800">❺ 三号館</span>
-            <div class="grid sm:grid-cols-2 gap-3">
-              <div class=""><img src="../photos/facility/building5.jpg" class="w-52"></div>
-              <div class="">2階木造。 12部屋、最大受け入れ24名。学校から徒歩約1分以内。</div>
-            </div>
-          </div>
-          <div class=" col-span-1">
-            <span class="text-blue-800">❻ 保恵ビル</span>
-            <div class="grid sm:grid-cols-2 gap-3">
-              <div class=""><img src="../photos/facility/building6.png" class="w-52"></div>
-              <div class="">4階鉄筋コンクリート。 23部屋、最大受け入れ46名。 学校から徒歩約２分以以内。</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="">
+        <div class="bg-opacity-15 bg-[#7F1CE2] my-2 px-5 py-2 text-sm leading-6">
         <div class="h-12 relative">
-          <img src="../images/btn_ellipse_7.png" class="h-full" />
-          <div class="absolute top-3 left-7">セミナーハウス</div>
+          <img src="../images/btn_ellipse_2-3.png" class="h-full ">
+          <div class="absolute top-3 left-8">मुख्य भवन</div>
         </div>
-        <div class="text-sm my-4">
-          上記の長期留学生用宿舎以外、OAKアパートメントの一角に90日以内の短期留学生が20名ほど宿泊できるセミナーハウスを設置。和室６部屋、コミュニケーション室、男女浴室、トイレ、洗濯機、エアコン、中庭つき。</div>
-        <div>
-          <img src="../photos/facility/semi.png" class="w-full" />
+        <img src="../photos/facility/2.png" class="sm:h-48mb-6">
+        <div class="my-3">
+          <div class="bg-lime-300 w-8 text-center mt-2">1F</div>
+          <div class="flex flex-col sm:flex-row sm:flex-wrap text-xs">
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_1_1.jpg" class="sm:h-48">प्रवेश द्वार</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_1_2.jpg" class="sm:h-48">玄関正面</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_1_3.jpg" class="sm:h-48">玄関左側</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_1_4.jpg" class="sm:h-48">玄関右側</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_1_5.jpg" class="sm:h-48">事務掲示板</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_1_6.jpg" class="sm:h-48">事務室</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_1_7.jpg" class="sm:h-48">विगतका सम्मान पुरस्कार विजेताहरू</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_1_8.jpg" class="sm:h-48">सम्मेलन कोठा</div>
+          </div>
+        </div>
+        <div class="my-3">
+          <div class="bg-lime-300 w-8 text-center mt-2">2F</div>
+          <div class="flex flex-row flex-wrap text-xs">
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_2_1.jpg" class="sm:h-48">विद्यार्थी संचार कुना</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_2_2.jpg" class="sm:h-48">2A教室</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_2_3.jpg" class="sm:h-48">2C教室</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_2_4.jpg" class="sm:h-48">प्रशिक्षण कोठा</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_2_5.jpg" class="sm:h-48">कोरिडोर</div>
+          </div>
+        </div>
+        <div class="my-3">
+          <div class="bg-lime-300 w-16 text-center mt-2">3F＆屋上</div>
+          <div class="flex flex-row flex-wrap text-xs">
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_3_1.jpg" class="sm:h-48">舞台正面</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_3_2.jpg" class="sm:h-48">3C教室</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_3_3.jpg" class="sm:h-48">屋上</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_3_4.png" class="sm:h-48">屋上</div>
+          </div>
+        </div>
+        <div class="my-3">
+          <div class="bg-lime-300 w-24 text-center mt-2">B1 संस्कृति कोठा</div>
+          <div class="flex flex-row flex-wrap text-xs">
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_b1_1.png" class="sm:h-48">संगीत कोठा</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_b1_2.png" class="sm:h-48">संगीत कोठा</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_b1_3.png" class="sm:h-48">पुस्तकालय</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_b1_4.png" class="sm:h-48">पुस्तकालय</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_b1_5.png" class="sm:h-48">पुस्तकालय</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/2_b1_6.jpg" class="sm:h-48">客室</div>
+          </div>
+        </div>
+        <div class="h-12 relative">
+          <img src="../images/btn_ellipse_2-3.png" class="h-full ">
+          <div class="absolute top-3 left-8">एनेक्स</div>
+        </div>
+        <img src="../photos/facility/1.png" class="sm:h-72 mb-6">
+        <div class="my-3">
+          <div class="bg-lime-300 w-8 text-center mt-2">1F</div>
+          <div class="flex flex-row flex-wrap text-xs">
+            <div class="mr-2 mt-2"><img src="../photos/facility/1_1_1.jpg" class="sm:h-48">एनेक्स प्रवेश द्वार</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/1_1_2.jpg" class="sm:h-48">सञ्चार कुना</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/1_1_3.png" class="sm:h-48">सञ्चार कुना</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/1_1_4.jpg" class="sm:h-48">प्रवेश द्वार</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/1_1_5.jpg" class="sm:h-48">玄関左側</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/1_1_6.jpg" class="sm:h-48">विद्यार्थी पीसी कुना</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/1_1_7.jpg" class="sm:h-48">廊下掲示板</div>
+          </div>
+        </div>
+        <div class="my-3">
+          <div class="bg-lime-300 w-52 text-center mt-2">2F～7F教室（大教室、小教室）</div>
+          <div class="flex flex-row flex-wrap text-xs">
+            <div class="mr-2 mt-2"><img src="../photos/facility/1_2_1.jpg" class="sm:h-48">7F教室</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/1_2_2.jpg" class="sm:h-48">6F教室</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/1_2_3.jpg" class="sm:h-48">5F教室</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/1_2_4.jpg" class="sm:h-48">पुरुष शौचालय</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/1_2_5.png" class="sm:h-48">महिला शौचालय</div>
+          </div>
+        </div>
+        <div class="my-3">
+          <div class="bg-lime-300 w-32 text-center mt-2">छत र अन्य सुविधाहरू</div>
+          <div class="flex flex-row flex-wrap text-xs">
+            <div class="mr-2 mt-2"><img src="../photos/facility/1_3_1.jpg" class="sm:h-48">学院長室</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/1_3_2.png" class="sm:h-48">保健室</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/1_3_3.png" class="sm:h-48">掲示板</div>
+            <div class="mr-2 mt-2"><img src="../photos/facility/1_3_4.png" class="sm:h-48">बुलेटिन बोर्ड कागज</div>
+          </div>
         </div>
       </div>
-    </div>
+        <div class="h-10 relative">
+        <img src="../images/business_icon.png" class="h-full">
+        <div class="absolute top-1 left-7 text-white italic text-lg">आवास</div>
+      </div>
+        <div class="bg-[#7F1CE2] bg-opacity-50 my-2 p-5 text-sm leading-6">
+        <div class="h-12 relative">
+          <img src="../images/btn_ellipse_2-3.png" class="h-full">
+          <div class="absolute top-3 left-7">विद्यार्थी छात्रावास</div>
+        </div>
+        <div class="bg-[#E4CFF9]  my-2 p-3 text-sm leading-6">
+          <div class="grid md:grid-cols-2 gap-3 my-3">
+            <div class="col-span-1">
+              <span class="text-blue-800">❶ BOX2707</span>
+              <div class="grid sm:grid-cols-2 gap-3">
+                <div class=""><img src="../photos/facility/building1.jpg" class="w-52"></div>
+                <div class="">8 औं तल्ला प्रबलित कंक्रीट। 26 कोठा, 66 मान्छे सम्म समायोजन। पहिलो तलामा इटालियन रेस्टुरेन्ट। विद्यालयबाट करिब १० मिनेटको पैदल दूरीमा।</div>
+              </div>
+            </div>
+            <div class=" col-span-1">
+              <span class="text-blue-800">❷ OAK अपार्टमेन्ट</span>
+              <div class="grid sm:grid-cols-2 gap-3">
+                <div class=""><img src="../photos/facility/building2.png" class="w-52"></div>
+                <div class="">5 औं तल्ला प्रबलित कंक्रीट। 14 कोठा, 46 मान्छे सम्म समायोजन। पहिलो र दोस्रो तल्लाको एउटा कुनामा सेमिनार हाउस र विशेष व्याख्यान कक्षा छ। विद्यालयबाट करिब ५ मिनेटको पैदल यात्रामा ।</div>
+              </div>
+            </div>
+            <div class="col-span-1">
+              <span class="text-blue-800">❸ सानवाङ हवेली</span>
+              <div class="grid sm:grid-cols-2 gap-3">
+                <div class=""><img src="../photos/facility/building3.png" class="w-52"></div>
+                <div class="">कोठा 803 13 औं तलामा, प्रबलित कंक्रीटबाट बनेको। 5 कोठा, 5 मान्छे सम्म समायोजन। विद्यालयबाट करिब ३ मिनेटको पैदल यात्रामा ।</div>
+              </div>
+            </div>
+            <div class=" col-span-1">
+              <span class="text-blue-800">❹ Itopia Shinei</span>
+              <div class="grid sm:grid-cols-2 gap-3">
+                <div class=""><img src="../photos/facility/building4.png" class="w-52"></div>
+                <div class="">१७ औं तलामा रहेको कोठा ९०७ प्रबलित कंक्रीटले बनेको छ। 3 कोठा, 6 मान्छे सम्म समायोजन। स्कूलबाट करिब 10 मिनेट पैदल दूरी भित्र।</div>
+              </div>
+            </div>
+            <div class="col-span-1">
+              <span class="text-blue-800">❺ भवन नम्बर ३</span>
+              <div class="grid sm:grid-cols-2 gap-3">
+                <div class=""><img src="../photos/facility/building5.jpg" class="w-52"></div>
+                <div class="">दोस्रो तल्ला काठको संरचना। 12 कोठा, 24 मान्छे सम्म समायोजन। विद्यालयबाट करिब १ मिनेट पैदल दूरीमा।</div>
+              </div>
+            </div>
+            <div class=" col-span-1">
+              <span class="text-blue-800">❻ Yasue भवन</span>
+              <div class="grid sm:grid-cols-2 gap-3">
+                <div class=""><img src="../photos/facility/building6.png" class="w-52"></div>
+                <div class="">चौथो तल्ला प्रबलित कंक्रीट। 23 कोठा, 46 मान्छे सम्म समायोजन। विद्यालयबाट करिब २ मिनेटको पैदल यात्रामा।</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="h-12 relative">
+            <img src="../images/btn_ellipse_7.png" class="h-full">
+            <div class="absolute top-3 left-7">सेमिनार घर</div>
+          </div>
+          <div class="text-sm my-4">
+            दीर्घकालीन अन्तर्राष्ट्रिय विद्यार्थीहरूको लागि माथि उल्लेखित आवासको अतिरिक्त, हामीले OAK अपार्टमेन्टको कुनामा एउटा सेमिनार हाउस स्थापना गरेका छौं जसमा 90 दिनसम्म बस्ने लगभग 20 अल्पकालीन अन्तर्राष्ट्रिय विद्यार्थीहरूलाई समायोजन गर्न सकिन्छ। ६ जापानी शैलीका कोठा, सञ्चार कक्ष, पुरुष तथा महिलाको बाथरूम, शौचालय, धुने मेसिन, एयर कन्डिसनर र आँगन।</div>
+          <div>
+            <img src="../photos/facility/semi.png" class="w-full">
+          </div>
+        </div>
+      </div>
   </div>
   <!-- main end -->
   <!-- footer start -->
   <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1 mt-4">
     <div class="w-full md:w-4/5 lg:w-3/5 xl:w-1/2 2xl:w-2/5 mx-auto p-5 text-xs">
       <div class="grid grid-cols-2 sm:grid-cols-[auto_auto_1fr] gap-6 sm:gap-4 text-stone-800">
-        <div class="">お問い合わせ<br />
+        <div>सम्पर्क<br />
           TEL: (052)262-3366<br />
           FAX: (052)262-3369<br />
           EMAIL: school@aiaso.gr.jp
         </div>
-        <div class="">受付時間：9:00 - 17:30<br />
-          休日：土曜日、日曜日、祝日</div>
-        <div class="col-span-2 sm:col-span-1">住所：〒460-0007<br />
-          本館：愛知県名古屋市中区新栄1-30-29<br />
-          別館：愛知県名古屋市中区新栄1-30-3
+        <div>स्वागत समय: 9:00 - 17:30<br />
+          बिदा: शनिबार, आइतबार र सार्वजनिक बिदा</div>
+        <div class="col-span-2 sm:col-span-1">ठेगाना: 〒460-0007<br />
+          मुख्य भवन: 1-30-29 Shinsakae, Naka-ku, Nagoya, Aichi<br />
+          सहायक भवन: 1-30-3 Shinsakae, Naka-ku, Nagoya, Aichi
         </div>
       </div>
       <hr class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700">
-      <div class="block sm:hidden mb-2 text-stone-800">SNS連絡方法：</div>
+      <div class="block sm:hidden mb-2 text-stone-800">SNS सम्पर्क:</div>
       <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-5 text-stone-800">
-        <div class="w-24 hidden sm:block">SNS連絡方法：</div>
+        <div class="w-24 hidden sm:block">SNS सम्पर्क:</div>
         <div class="flex">
           <img src="../images/teams.png" class="size-6 m-1" />
           <div><a href="https://teams.microsoft.com/l/chat/0/0?users=aiasoso" target="_blank" rel="noopener noreferrer">TEAMS<br />aiasoso</a></div>
         </div>
         <div class="flex">
           <img src="../images/line.png" class="size-6 m-1" />
-          <div><a href="line://ti/p/aiajapanese">LINE<br />
-            aiajapanese</a></div>
+          <div><a href="line://ti/p/aiajapanese">LINE<br />aiajapanese</a></div>
         </div>
         <div class="flex">
           <img src="../images/wechat.png" class="size-6 m-1" />
@@ -443,69 +336,25 @@
         </div>
         <div class="flex">
           <img src="../images/fb.svg.webp" class="size-6 m-1" />
-          <div><a href="https://www.facebook.com/AIANagoya/" target="_blank">Facebook<br />AIANagoya</a>
-          </div>
+          <div><a href="https://www.facebook.com/AIANagoya/" target="_blank">Facebook<br />AIANagoya</a></div>
         </div>
       </div>
-
-      <div class="text-center my-2"><a href="index.html">HOME</a> | <a href="sitemap.html">サイトマップ</a> | <a
-          href="policy.html">個人情報保護に関する方針</a> | <a href="privacy.html">プライバシーポリシー</a></div>
+      <div class="text-center my-2"><a href="index.html">HOME</a> | <a href="sitemap.html">साइटम्याप</a> | <a href="policy.html">व्यक्तिगत जानकारी संरक्षण नीति</a> | <a href="privacy.html">गोपनीयता नीति</a></div>
       <div class="text-center my-2">Copyright© Aichi International Academy All Rights Reserved.</div>
     </div>
   </div>
   <!-- footer end -->
-  <script src="../main.js"></script>
-  <div id="google_translate_element" style="display: none;"></div>
-
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'ja' }, 'google_translate_element');
-    }
-
-    function hideGoogleTranslateBar() {
-      var element = document.querySelector("#\\:1\\.container");
-      if (element) {
-        element.style.visibility = "hidden";
-      }
-    }
-
-    hideGoogleTranslateBar();
-
-    function translateTo(language) {
-      var selectField = document.querySelector("select.goog-te-combo");
-      if (selectField) {
-        selectField.value = language;
-        selectField.dispatchEvent(new Event('change'));
-        setTimeout(hideGoogleTranslateBar, 100);
-      }
-    }
-
-    function waitForElm(selector) {
-      return new Promise(resolve => {
-        if (document.querySelector(selector)) {
-          return resolve(document.querySelector(selector));
-        }
-
-        const observer = new MutationObserver(mutations => {
-          if (document.querySelector(selector)) {
-            observer.disconnect();
-            resolve(document.querySelector(selector));
-          }
-        });
-
-        // If you get "parameter 1 is not of type 'Node'" error, see https://stackoverflow.com/a/77855838/492336
-        observer.observe(document.body, {
-          childList: true,
-          subtree: true
-        });
-      });
-    }
-    waitForElm('.goog-te-combo').then((elm) => {
-      translateTo('ne');
-    });
-  </script>
-  <script type="text/javascript"
-    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <button
+    id="backToTopButton"
+    type="button"
+    class="fixed bottom-5 right-5 z-[9999] flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white shadow-lg transition duration-200 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-300"
+    aria-label="माथि फर्कनुहोस्"
+    title="माथि फर्कनुहोस्">
+    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 5l-7 7m7-7 7 7M12 5v14" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+  <script src="../site.js?v=20260528-back-to-top"></script>
+  <script src="../menu.js?v=20260528-links"></script>
 </body>
-
 </html>

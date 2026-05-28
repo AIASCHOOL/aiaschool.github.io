@@ -1,0 +1,34 @@
+{% set scopePages = staging if route.scope == "staging" else root %}
+{% set pageContent = scopePages.about_publish[route.locale.code] or scopePages.about_publish.ja %}
+<!-- title bar start -->
+{% set heroClassName = "relative flex mx-auto min-h-28 max-h-32" %}
+{% set heroImage = "images/facility_ov.jpg" %}
+{% set heroImageClassName = "w-full object-cover object-center" %}
+{% set heroTitleWrapperClassName = "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center" %}
+{% set heroTitleClassName = "text-white text-3xl font-bold" %}
+{% set heroTitle = pageContent.title %}
+{% set heroSubtitleWrapperClassName = "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center px-4" %}
+{% set heroSubtitleClassName = "text-white italic text-xs sm:text-base text-center" %}
+{% set heroSubtitle = pageContent.subtitle %}
+{% include "components/ui/PageHero.njk" %}
+<div>
+  <img class="w-full" src="{{ route.assetPrefix }}images/facility_pics.png" alt="" />
+</div>
+<!-- title bar end -->
+
+<!-- main start -->
+<div class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1">
+  {% for section in pageContent.sections %}
+    {% if section.title %}
+      {% set sectionLabelClassName = "h-10 relative" + (" mt-10" if not loop.first else "") + " w-72 max-w-full" %}
+      {% set sectionLabelIcon = "images/business_icon.png" %}
+      {% set sectionLabelImageClassName = "h-full w-full" %}
+      {% set sectionLabelTextClassName = "absolute top-1 left-6 pr-4 whitespace-nowrap text-white italic text-lg" %}
+      {% set sectionLabelTitle = section.title %}
+      {% include "components/ui/SectionLabel.njk" %}
+    {% endif %}
+    {% set documentItems = section.items %}
+    {% include "components/ui/DocumentTable.njk" %}
+  {% endfor %}
+</div>
+<!-- main end -->

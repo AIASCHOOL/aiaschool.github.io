@@ -1,0 +1,74 @@
+{
+  "ja": {
+    "marquee": "",
+    "heroImage": "images/hero.png",
+    "topicImage": "images/topics.jpg",
+    "title": "最新ニュース",
+    "carouselId": "carousel-example",
+    "newsContainerId": "news"
+  },
+  "en": {
+    "marquee": "～Aichi International Academy, welcoming applications for studying in Japan, working/employment, short-term\n        Japanese language training, and Japanese cultural experiences.～",
+    "heroImage": "images/hero.png",
+    "topicImage": "images/topics.jpg",
+    "title": "最新ニュース",
+    "carouselId": "carousel-example",
+    "newsContainerId": "news"
+  },
+  "cn": {
+    "marquee": "～日本升学，就职，工作，短期日语课程・日本文化体验，爱知国际学院欢迎您～",
+    "heroImage": "images/hero.png",
+    "topicImage": "images/topics.jpg",
+    "title": "最新消息",
+    "carouselId": "carousel-example",
+    "newsContainerId": "news"
+  },
+  "tw": {
+    "marquee": "～日本升學，就職，工作，短期日語課程・日本文化體驗，愛知國際學院歡迎您～",
+    "heroImage": "images/hero.png",
+    "topicImage": "images/topics.jpg",
+    "title": "最新ニュース",
+    "carouselId": "carousel-example",
+    "newsContainerId": "news"
+  },
+  "ko": {
+    "marquee": "\"일본으로의 진학, 취업 및 일자리, 단기 일본어 교육 및 일본 문화 체험 등을 수용하는 아이치 국제 학원\"",
+    "heroImage": "images/hero.png",
+    "topicImage": "images/topics.jpg",
+    "title": "최신 뉴스",
+    "carouselId": "carousel-example",
+    "newsContainerId": "news"
+  },
+  "vi": {
+    "marquee": "",
+    "heroImage": "images/hero.png",
+    "topicImage": "images/topics.jpg",
+    "title": "最新ニュース",
+    "carouselId": "carousel-example",
+    "newsContainerId": "news"
+  },
+  "th": {
+    "marquee": "",
+    "heroImage": "images/hero.png",
+    "topicImage": "images/topics.jpg",
+    "title": "最新ニュース",
+    "carouselId": "carousel-example",
+    "newsContainerId": "news"
+  },
+  "id": {
+    "marquee": "",
+    "heroImage": "images/hero.png",
+    "topicImage": "images/topics.jpg",
+    "title": "最新ニュース",
+    "carouselId": "carousel-example",
+    "newsContainerId": "news"
+  },
+  "np": {
+    "marquee": "",
+    "heroImage": "images/hero.png",
+    "topicImage": "images/topics.jpg",
+    "title": "最新ニュース",
+    "carouselId": "carousel-example",
+    "newsContainerId": "news"
+  }
+}

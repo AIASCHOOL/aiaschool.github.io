@@ -1,0 +1,335 @@
+{
+  "ja": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/9-SPECIAL_LECTURES.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "特別講座",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "EJU ・ 日本語教員養成 ・ 華人子弟塾 ・ 特定技能"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/9/p-9.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">EJU特別講座</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      &nbsp;&nbsp;この講座は、国公立大学あるいは有名私立大学への進学を目指す学生のためのものです。進学コースの授業時間外にEJU（日本留学試験）受験科目の読解、聴解、聴読解、論述、数学、物理、化学、生物、および総合科目\n      を強化する特進クラスです。<br>\n      <br>\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/Untitled.png\" class=\"h-44 mx-1  \"></div>\n      <p> 　➀ 講座は日本の高等学校の特進クラスと同様の内容を持つ。<br>\n        ➁ 講座の学習課程は予備、基礎，強化，特進及び個別対策などのクラスを５段階に分けて、それぞれ学習者のレベル、ニーズなどによって選択することが可能である。<br>\n        ➂ 全課程の履修を選択する場合には無料で重複受講、出願書類作成及び面接練習などの特典制度を設けている。<br>\n        ④ 小人数クラス編成で授業を行う。<br>\n        ➄ 本学院の開発した教材の一つである「日本留学試験模擬問題集」のシリーズ参考書を活用して</p>\n      <p>学習効果を高めることができる。<br>\n        <img class=\"w-full mt-5\" src=\"__ASSET__images/special2.png\">\n      </p>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-5 text-white italic text-lg\">日本語教員養成講座</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/teacher.jpg\" class=\"h-20 mx-1  \"></div>\n      この講座は日本語教師の資格を取るために、一般財団法人 国際生涯学習研究財団が運営している講座である。\n      <span class=\"clear-both\"></span>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">華人子弟塾</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      この講座は主に東海地区に在住していらっしゃる華人子弟を対象として、日本語、中国語、英語、数学などの学習をサポートするために開講したものである。\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-4_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">特定技能</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <p>日本語の修得が一定の程度に達して、且つ14業種の特定技能測定試験合格者は2019年４月に導入された新しい在留資格を申請交付できる。本学院を卒業してから進路を変更し、就労したい学生を対象として開校する講座である。</p>\n      <p>　本学院は登録支援機関として、企業との連携及び在留資格の申請のサポートをすることが可能です。\n      </p>\n      <div class=\"flex flex-row flex-wrap text-xs\">\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-1.jpg\" class=\"h-16\">飲食業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-2.jpg\" class=\"h-16\">飲食料品製造</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-3.jpg\" class=\"h-16\">漁業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-4.jpg\" class=\"h-16\">宿泊業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-5.jpg\" class=\"h-16\">電気・電子情報関連産業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-6.jpg\" class=\"h-16\">介護</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-7.jpg\" class=\"h-16\">航空業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-8.jpg\" class=\"h-16\">自動車整備業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-9.jpg\" class=\"h-16\">造船・舶用業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-10.jpg\" class=\"h-16\">建設業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-11.jpg\" class=\"h-16\">農業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-12.jpg\" class=\"h-16\">産業機械製造業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-13.jpg\" class=\"h-16\">ビルクリーニング</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-14.jpg\" class=\"h-16\">素形材産業</div>\n      </div>\n    </div>"
+      }
+    ]
+  },
+  "en": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/9-SPECIAL_LECTURES.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "Special Lecture",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "EJU, Japanese Language Teacher Training, Chinese Descendants\n        School, Specific Skills"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/9/p-9.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">EJU Special Lecture</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      &nbsp;&nbsp;This course is an advanced class designed to strengthen subjects beyond the regular curriculum hours\n      for university entrance exams, such as EJU. It focuses on subjects including mathematics, physics, chemistry,\n      biology, and comprehensive subjects, in addition to comprehension, listening, listening and reading comprehension,\n      and essay writing, which are part of the EJU exam subjects. The goal is to prepare students for admission to\n      national or prestigious private universities.<br>\n      <br>\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/Untitled.png\" class=\"h-44 mx-1  \"></div>\n      　➀ The course shares a similar purpose with the advanced classes in Japanese senior high schools.<br>\n      　➁ For those who choose to enroll in the entire course, we offer a bonus system that includes free repeated\n      attendance, support for application document preparation, and interview practice.<br>\n      　➂ For those opting to take the entire course, we provide a bonus system, including free repeated attendance,\n      assistance with application document preparation, and interview practice.<br>\n      　④ Classes are conducted in small groups to facilitate personalized instruction.<br>\n      　➄ Utilize the series of reference books, including the 'Simulation Questions for the Examination for Japanese\n      University Admission for International Students,' developed by our academy to enhance the learning effectiveness\n      even further.<br>\n      <img class=\"w-full mt-5\" src=\"__ASSET__images/special2.png\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-5 text-white italic text-lg\">Japanese Language Teacher Training Course</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/teacher.jpg\" class=\"h-20 mx-1  \"></div>\n      This course is offered in collaboration with the General Incorporated Foundation International Lifelong Learning\n      Research Foundation for the purpose of obtaining qualifications as a Japanese language teacher.\n      <span class=\"clear-both\"></span>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">Chinese Descendants School</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      This course is primarily designed to support Chinese descendants residing in the Tokai region, providing\n      assistance in learning Japanese, Chinese, English, mathematics, and other subjects.\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-4_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">Specific Skills</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <p>Upon reaching a certain level of proficiency in Japanese and passing the specific skills examination in one of\n        the 14 designated industries, individuals can apply for the new residency status introduced in April 2019. This\n        course is designed for students who have graduated from our academy and wish to change their career path to\n        employment.</p>\n      <p>As a registered support organization, our academy can collaborate with companies and provide support for the\n        application of residency status changes. </p>\n      <div class=\"flex flex-row flex-wrap text-xs\">\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-1.jpg\" class=\"h-16\">Food and Beverage Industry</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-2.jpg\" class=\"h-16\">Food and Beverage Manufacturing Industry\n        </div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-3.jpg\" class=\"h-16\">Fishery Industry</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-4.jpg\" class=\"h-16\">Accommodation Industry</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-5.jpg\" class=\"h-16\">Electric and Electronic Information-Related\n          Industries</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-6.jpg\" class=\"h-16\">Caregiving</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-7.jpg\" class=\"h-16\">Aviation Industry</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-8.jpg\" class=\"h-16\">Automobile Maintenance Industry</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-9.jpg\" class=\"h-16\">Shipbuilding and Maritime Industry</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-10.jpg\" class=\"h-16\">Construction Industry</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-11.jpg\" class=\"h-16\">Agriculture</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-12.jpg\" class=\"h-16\">Industrial Machinery Manufacturing\n          Industry</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-13.jpg\" class=\"h-16\">Building Cleaning</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-14.jpg\" class=\"h-16\">Raw Material Industry</div>\n      </div>\n    </div>"
+      }
+    ]
+  },
+  "cn": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/9-SPECIAL_LECTURES.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "特别讲座",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "EJU ・ 日本语教员养成 ・ 华人子弟塾 ・ 特定技能"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/9/p-9.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">EJU特别讲座</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      &nbsp;&nbsp;这门课程是一个进阶班级，目标在加强国公立大学或知名私立大学的升学，除了正规进修课程外，特别加强EJU（日本留学试验）考试科目之外的阅读丶听力丶听读理解丶论述，以及数学丶物理学丶化学丶生物和综合科目。<br>\n      <br>\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/Untitled.png\" class=\"h-44 mx-1  \"></div>\n      　➀ 这门课程与日本高等中学的特进班有相似的目的。<br>\n      　② 课程的学习进度分为预备丶基础丶强化丶特进和个别对策等五个阶段，学习者可以根据自己的水平丶需求和时间安排自主选择。<br>\n      　➂ 选择修读整个课程的学生可以享有免费的重复上课丶申请文件制作以及面试练习等特典制度。<br>\n      　④ 以小班授课方式进行。<br>\n      　➄ 可利用本学院开发的「日本留学试题模拟集」系列参考书，以提升学习效果。<br>\n      <img class=\"w-full mt-5\" src=\"__ASSET__images/special2.png\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-5 text-white italic text-lg\">日本语教员培训课程</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/teacher.jpg\" class=\"h-20 mx-1  \"></div>\n      这门课程是为了取得日本语教师资格而开设的，由一般财团法人国际生涯学习研究财团主办并合作提供。\n      <span class=\"clear-both\"></span>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">华人子弟塾</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      这门课程主要针对居住在东海地区的华人子弟，开设以支援他们的日语丶中文丶英语丶数学等学习。\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-4_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">具体技能</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <p>达到一定程度的日语水平，并通过14种特定技能评估考试的合格者，可以申请获得自2019年4月起实施的新居留资格。这门课程是为那些想要在从我们学院毕业後改变跑道并就业的学生开设的。</p>\n      <p>　我们学院作为一个注册的支援机构，能够协助与企业合作，并提供在居留资格申请方面的支援。\n      </p>\n      <div class=\"flex flex-row flex-wrap text-xs\">\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-1.jpg\" class=\"h-16\">餐饮业</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-2.jpg\" class=\"h-16\">食品制造业</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-3.jpg\" class=\"h-16\">渔业</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-4.jpg\" class=\"h-16\">住宿业</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-5.jpg\" class=\"h-16\">电气・电子资讯相关产业</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-6.jpg\" class=\"h-16\">护理</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-7.jpg\" class=\"h-16\">航空业</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-8.jpg\" class=\"h-16\">汽车维修业</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-9.jpg\" class=\"h-16\">造船・船用业</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-10.jpg\" class=\"h-16\">建筑业</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-11.jpg\" class=\"h-16\">农业</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-12.jpg\" class=\"h-16\">工业机械制造业</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-13.jpg\" class=\"h-16\">建筑清洁业</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-14.jpg\" class=\"h-16\">原材料制造业</div>\n      </div>\n    </div>"
+      }
+    ]
+  },
+  "tw": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/9-SPECIAL_LECTURES.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "特別講座",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "EJU ・日語師資訓練 ・中國兒童學校 ・特定技能"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/9/p-9.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">EJU特別講座</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      &nbsp;&nbsp;本課程適合希望進入國立或公立大學或著名私立大學的學生。這是在入學考試課程的課外時間，強化閱讀、聽力理解、聽力閱讀理解、論文寫作、數學、物理、化學、生物、EJU（留學生評價）考試科目普通科目的特別課程。<br>\n      <br>\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/Untitled.png\" class=\"h-44 mx-1  \"></div>\n      　➀ 課程的目的與日本高中的特殊高級班類似。<br>\n      　➁ 課程的學習課程分為預備、基礎、高級、進階、個人措施五個級別，每個級別都可以根據學習者的水平和需求進行選擇。<br>\n      　➂ 若您選擇修習所有課程，我們有免費多門課程、準備申請文件、面試練習等福利體系。<br>\n      　④ 小班授課。<br>\n      　➄ 使用本校開發的教材之一《日本語考試模擬題》系列參考書，可以進一步提升學習效果。<br>\n      <img class=\"w-full mt-5\" src=\"__ASSET__images/special2.png\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-5 text-white italic text-lg\">日文教師研修課程</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/teacher.jpg\" class=\"h-20 mx-1  \"></div>\n      該課程由國際終身學習研究基金會開設，旨在幫助學生獲得日語教師資格。\n      <span class=\"clear-both\"></span>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">華人兒童學校</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      該課程主要針對居住在東海地區的中國孩子，為支持日語、中文、英語、數學等的學習而舉辦。\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-4_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">具體技能</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <p>日語能力達到一定水準並通過14個行業的特定技能測定考試的人，可以申請並獲得2019年4月推出的新在留資格。本課程是為希望在我校畢業後改變職業道路和工作的學生。</p>\n      <p>　作為註冊支持機構，我校可以與企業合作，支持在留資格的申請。\n      </p>\n      <div class=\"flex flex-row flex-wrap text-xs\">\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-1.jpg\" class=\"h-16\">餐飲業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-2.jpg\" class=\"h-16\">食品和飲料製造</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-3.jpg\" class=\"h-16\">釣魚</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-4.jpg\" class=\"h-16\">住宿業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-5.jpg\" class=\"h-16\">電氣/電子資訊相關產業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-6.jpg\" class=\"h-16\">護理</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-7.jpg\" class=\"h-16\">航空業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-8.jpg\" class=\"h-16\">汽車維修業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-9.jpg\" class=\"h-16\">造船/船舶工業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-10.jpg\" class=\"h-16\">建築業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-11.jpg\" class=\"h-16\">農業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-12.jpg\" class=\"h-16\">工業機械製造業</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-13.jpg\" class=\"h-16\">建築物清潔</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-14.jpg\" class=\"h-16\">材料業</div>\n      </div>\n    </div>"
+      }
+    ]
+  },
+  "ko": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/9-SPECIAL_LECTURES.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "특강",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "EJU ・ 일본어 교원 양성 ・ 화인 자녀 학원 ・ 특정 기술"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/9/p-9.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">EJU 특강</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      &nbsp;&nbsp;이 강좌는 국립 또는 유명한 사립 대학 진학을 목표로 하여 진학 과정 수업 외에 EJU (일본 유학 시험) 시험 과목 중 읽기, 듣기, 듣기-읽기 이해, 논술 이외에도 수학, 물리학,\n      화학, 생물 및 종합 과목을 강화하는 특별 고급 클래스입니다.<br>\n      <br>\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/Untitled.png\" class=\"h-44 mx-1  \"></div>\n      　➀ 이 강좌는 일본 고등학교의 특급반과 유사한 목적을 가지고 있습니다.\n      <br>\n      　② 강좌의 학습과정은 예비, 기초, 강화, 특급, 그리고 개별 대책 등 다섯 단계로 나뉘어 있으며, 각 학습자는 자신의 레벨, 요구사항 및 시간적 제약 등에 따라 자율 선택할 수 있습니다<br>\n      　➂ 전체 강좌를 수강하는 경우 무료로 중복 수강, 지원서 작성 및 면접 연습 등의 혜택 제도가 마련되어 있습니다.<br>\n      　④ 소규모 반 구성으로 강의가 이루어집니다.<br>\n      　➄ 본 학원에서 개발한 \"일본 유학 시험 모의 문제집\" 시리즈 참고서를 활용하여 학습 효과를 더욱 향상시킬 수 있습니다.<br>\n      <img class=\"w-full mt-5\" src=\"__ASSET__images/special2.png\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-5 text-white italic text-lg\">일본어 교원 양성 과정</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/teacher.jpg\" class=\"h-20 mx-1  \"></div>\n      이 강좌는 일본어 교사 자격을 취득하기 위해 개설된 과정으로, 국제생애교육연구재단이 주최하고 협력하여 제공되었습니다.\n      <span class=\"clear-both\"></span>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">화인 자녀 학원</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      이 강좌는 동해 지역 거주 중인 화인 자녀를 대상으로 일본어, 중국어, 영어, 수학 등의 학습을 지원하기 위해 개설되었습니다.\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-4_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">특정 기술</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <p>일정 수준의 일본어 능력을 보유하고 14개 산업 분야의 특정 기술 평가 시험을 통과한 학생들은 2019년 4월부터 시행된 새로운 체류 자격을 신청할 수 있습니다. 이 강좌는 저희 학원을 졸업한 후\n        진로를 변경하고 취업하고자 하는 학생들을 대상으로 개설되었습니다.</p>\n      <p>　우리 학원은 등록 지원 기관으로 기업과 협력하여 체류 자격 신청을 지원할 수 있습니다.\n      </p>\n      <div class=\"flex flex-row flex-wrap text-xs\">\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-1.jpg\" class=\"h-16\">음식 서비스 업종</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-2.jpg\" class=\"h-16\">식품 제조 업종</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-3.jpg\" class=\"h-16\">어업</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-4.jpg\" class=\"h-16\">숙박 업종</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-5.jpg\" class=\"h-16\">전기·전자 및 정보 관련 산업</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-6.jpg\" class=\"h-16\">간호</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-7.jpg\" class=\"h-16\">항공 업종</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-8.jpg\" class=\"h-16\">자동차 정비 업종\n        </div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-9.jpg\" class=\"h-16\">조선 및 선박용 업종</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-10.jpg\" class=\"h-16\">건설 업종</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-11.jpg\" class=\"h-16\">농업</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-12.jpg\" class=\"h-16\">산업 기계 제조 업종</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-13.jpg\" class=\"h-16\">건물 청소 업종</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-14.jpg\" class=\"h-16\">원자재 제조 업종\n\n\n\n        </div>\n      </div>\n    </div>"
+      }
+    ]
+  },
+  "vi": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/9-SPECIAL_LECTURES.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "Bài giảng đặc biệt",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "EJU ・Đào tạo giáo viên tiếng Nhật ・Trường thiếu nhi Trung Quốc ・Kỹ năng cụ thể"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/9/p-9.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">Bài giảng đặc biệt của EJU</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      &nbsp;&nbsp;Khóa học này dành cho những học viên có mục tiêu vào một trường đại học quốc gia, công lập hoặc một trường đại học tư thục nổi tiếng. Đây là lớp học đặc biệt tăng cường kỹ năng đọc, nghe hiểu, nghe và đọc hiểu, viết luận, toán, vật lý, hóa học, sinh học và các môn tổng quát cho các môn thi EJU (Evaluation for International Students for International Students) ngoài giờ học của khóa thi tuyển sinh.<br>\n      <br>\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/Untitled.png\" class=\"h-44 mx-1  \"></div>\n      　➀ Mục đích của khóa học tương tự như các lớp nâng cao đặc biệt ở các trường trung học Nhật Bản.<br>\n      　➁ Chương trình học của khóa học được chia thành 5 cấp độ gồm các biện pháp dự bị, cơ bản, nâng cao, nâng cao và cá nhân và có thể lựa chọn từng cấp độ tùy theo trình độ và nhu cầu của người học.<br>\n      　➂ Nếu bạn chọn tham gia tất cả các khóa học, chúng tôi có hệ thống lợi ích như miễn phí nhiều khóa học, chuẩn bị hồ sơ đăng ký và luyện phỏng vấn.<br>\n      　④ Các lớp học sẽ được tổ chức với quy mô lớp học nhỏ.<br>\n      　➄ Bạn có thể nâng cao hơn nữa hiệu quả học tập của mình bằng cách sử dụng bộ sách tham khảo ''Bài thi thử tiếng Nhật dành cho du học sinh'', một trong những tài liệu giảng dạy do trường chúng tôi phát triển.<br>\n      <img class=\"w-full mt-5\" src=\"__ASSET__images/special2.png\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-5 text-white italic text-lg\">Khóa đào tạo giáo viên tiếng Nhật</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/teacher.jpg\" class=\"h-20 mx-1  \"></div>\n      Khóa học này được tổ chức bởi Quỹ nghiên cứu học tập suốt đời quốc tế nhằm giúp sinh viên đạt được chứng chỉ giáo viên dạy tiếng Nhật.\n      <span class=\"clear-both\"></span>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">trường trẻ em trung quốc</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      Khóa học này chủ yếu nhắm đến trẻ em Trung Quốc sống ở khu vực Tokai và được tổ chức để hỗ trợ việc học tiếng Nhật, tiếng Trung, tiếng Anh, toán học, v.v.\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-4_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">kỹ năng cụ thể</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <p>Những người đã đạt được trình độ tiếng Nhật nhất định và đã vượt qua các bài kiểm tra đánh giá kỹ năng cụ thể trong 14 ngành có thể đăng ký và nhận tư cách lưu trú mới được giới thiệu vào tháng 4 năm 2019. Khóa học này dành cho những sinh viên muốn thay đổi con đường sự nghiệp và công việc sau khi tốt nghiệp trường chúng tôi.</p>\n      <p>　Với tư cách là một tổ chức hỗ trợ đăng ký, trường chúng tôi có thể cộng tác với các công ty và hỗ trợ các đơn đăng ký tình trạng cư trú.\n      </p>\n      <div class=\"flex flex-row flex-wrap text-xs\">\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-1.jpg\" class=\"h-16\">Ngành nhà hàng</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-2.jpg\" class=\"h-16\">Sản xuất thực phẩm và đồ uống</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-3.jpg\" class=\"h-16\">câu cá</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-4.jpg\" class=\"h-16\">Ngành lưu trú</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-5.jpg\" class=\"h-16\">Ngành liên quan đến thông tin điện/điện tử</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-6.jpg\" class=\"h-16\">chăm sóc điều dưỡng</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-7.jpg\" class=\"h-16\">ngành hàng không</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-8.jpg\" class=\"h-16\">Ngành bảo dưỡng ô tô</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-9.jpg\" class=\"h-16\">Công nghiệp đóng tàu/đóng tàu</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-10.jpg\" class=\"h-16\">ngành xây dựng</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-11.jpg\" class=\"h-16\">nông nghiệp</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-12.jpg\" class=\"h-16\">ngành sản xuất máy móc công nghiệp</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-13.jpg\" class=\"h-16\">vệ sinh tòa nhà</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-14.jpg\" class=\"h-16\">Công nghiệp vật liệu</div>\n      </div>\n    </div>"
+      }
+    ]
+  },
+  "th": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/9-SPECIAL_LECTURES.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "บรรยายพิเศษ",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "EJU ・การฝึกอบรมครูสอนภาษาญี่ปุ่น ・โรงเรียนเด็กภาษาจีน ・ทักษะเฉพาะ"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/9/p-9.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">การบรรยายพิเศษของ EJU</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      &nbsp;&nbsp;หลักสูตรนี้เหมาะสำหรับนักเรียนที่ต้องการเข้ามหาวิทยาลัยระดับชาติหรือของรัฐ หรือมหาวิทยาลัยเอกชนที่มีชื่อเสียง เป็นชั้นเรียนพิเศษที่เสริมสร้างการอ่าน ความเข้าใจในการฟัง การฟังและการอ่านเพื่อความเข้าใจ การเขียนเรียงความ คณิตศาสตร์ ฟิสิกส์ เคมี ชีววิทยา และวิชาทั่วไปสำหรับวิชาสอบ EJU (การประเมินนักเรียนต่างชาติสำหรับนักเรียนต่างชาติ) นอกเวลาเรียนสำหรับหลักสูตรการสอบเข้า<br>\n      <br>\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/Untitled.png\" class=\"h-44 mx-1  \"></div>\n      　➀ จุดประสงค์ของหลักสูตรนี้คล้ายคลึงกับชั้นเรียนขั้นสูงพิเศษในโรงเรียนมัธยมปลายของญี่ปุ่น<br>\n      　➁ หลักสูตรการเรียนรู้ของหลักสูตรแบ่งออกเป็น 5 ระดับ ได้แก่ ระดับเตรียมความพร้อม พื้นฐาน ขั้นสูง ขั้นสูง และรายบุคคล โดยสามารถเลือกแต่ละระดับได้ขึ้นอยู่กับระดับและความต้องการของผู้เรียน<br>\n      　➂ หากคุณเลือกเรียนทุกหลักสูตร เรามีระบบสิทธิประโยชน์ เช่น หลักสูตรหลายหลักสูตรฟรี การเตรียมเอกสารการสมัคร และการฝึกสัมภาษณ์<br>\n      　④ ชั้นเรียนจะจัดเป็นชั้นเรียนขนาดเล็ก<br>\n      　➄ คุณสามารถปรับปรุงผลการเรียนรู้ของคุณเพิ่มเติมได้โดยใช้หนังสืออ้างอิงชุดของ ``คำถามจำลองการสอบภาษาญี่ปุ่นสำหรับนักเรียนต่างชาติ'' ซึ่งเป็นหนึ่งในสื่อการสอนที่พัฒนาโดยโรงเรียนของเรา<br>\n      <img class=\"w-full mt-5\" src=\"__ASSET__images/special2.png\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-5 text-white italic text-lg\">หลักสูตรฝึกอบรมครูสอนภาษาญี่ปุ่น</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/teacher.jpg\" class=\"h-20 mx-1  \"></div>\n      หลักสูตรนี้ดำเนินการโดยมูลนิธิวิจัยการเรียนรู้ตลอดชีวิตนานาชาติเพื่อช่วยให้นักเรียนได้รับคุณวุฒิในฐานะครูสอนภาษาญี่ปุ่น\n      <span class=\"clear-both\"></span>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">โรงเรียนเด็กจีน</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      หลักสูตรนี้มุ่งเป้าไปที่เด็กชาวจีนที่อาศัยอยู่ในพื้นที่โทไกเป็นหลัก และจัดขึ้นเพื่อสนับสนุนการศึกษาภาษาญี่ปุ่น จีน อังกฤษ คณิตศาสตร์ ฯลฯ\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-4_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">ทักษะเฉพาะ</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <p>ผู้ที่มีความชำนาญภาษาญี่ปุ่นในระดับหนึ่งและผ่านการทดสอบวัดทักษะเฉพาะใน 14 อุตสาหกรรมสามารถสมัครและรับสถานะการพำนักใหม่ที่เปิดตัวในเดือนเมษายน 2019 หลักสูตรนี้มุ่งเป้าไปที่นักเรียนที่ต้องการเปลี่ยนเส้นทางอาชีพและทำงานหลังจากสำเร็จการศึกษาจากโรงเรียนของเรา</p>\n      <p>　ในฐานะองค์กรสนับสนุนการลงทะเบียน โรงเรียนของเราสามารถทำงานร่วมกับบริษัทต่างๆ และสนับสนุนการสมัครขอสถานะการพำนักได้\n      </p>\n      <div class=\"flex flex-row flex-wrap text-xs\">\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-1.jpg\" class=\"h-16\">อุตสาหกรรมร้านอาหาร</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-2.jpg\" class=\"h-16\">การผลิตอาหารและเครื่องดื่ม</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-3.jpg\" class=\"h-16\">ตกปลา</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-4.jpg\" class=\"h-16\">อุตสาหกรรมที่พัก</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-5.jpg\" class=\"h-16\">อุตสาหกรรมที่เกี่ยวข้องกับข้อมูลไฟฟ้า/อิเล็กทรอนิกส์</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-6.jpg\" class=\"h-16\">การพยาบาล</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-7.jpg\" class=\"h-16\">อุตสาหกรรมการบิน</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-8.jpg\" class=\"h-16\">อุตสาหกรรมการบำรุงรักษารถยนต์</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-9.jpg\" class=\"h-16\">อุตสาหกรรมการต่อเรือ/การต่อเรือ</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-10.jpg\" class=\"h-16\">อุตสาหกรรมการก่อสร้าง</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-11.jpg\" class=\"h-16\">เกษตรกรรม</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-12.jpg\" class=\"h-16\">อุตสาหกรรมการผลิตเครื่องจักรอุตสาหกรรม</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-13.jpg\" class=\"h-16\">ทำความสะอาดอาคาร</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-14.jpg\" class=\"h-16\">อุตสาหกรรมวัสดุ</div>\n      </div>\n    </div>"
+      }
+    ]
+  },
+  "id": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/9-SPECIAL_LECTURES.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "Kuliah khusus",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "EJU ・Pelatihan guru bahasa Jepang ・Sekolah anak-anak Cina ・Keterampilan khusus"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/9/p-9.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">Kuliah khusus EJU</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      &nbsp;&nbsp;Kursus ini diperuntukkan bagi siswa yang ingin memasuki universitas nasional atau negeri atau universitas swasta terkenal. Merupakan kelas khusus yang memantapkan kemampuan membaca, mendengarkan pemahaman, mendengarkan dan memahami membaca, penulisan esai, matematika, fisika, kimia, biologi, dan mata pelajaran umum untuk mata pelajaran ujian EJU (Evaluasi Siswa Internasional untuk Siswa Internasional) di luar jam pelajaran untuk mata kuliah ujian masuk.<br>\n      <br>\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/Untitled.png\" class=\"h-44 mx-1  \"></div>\n      　➀ Tujuan kursus ini serupa dengan tujuan kelas lanjutan khusus di sekolah menengah Jepang.<br>\n      　➁ Kurikulum pembelajaran kursus dibagi menjadi lima tingkatan, termasuk langkah-langkah persiapan, dasar, lanjutan, lanjutan, dan individual, dan masing-masing dapat dipilih tergantung pada tingkat dan kebutuhan pelajar.<br>\n      　➂ Jika Anda memilih untuk mengambil semua kursus, kami memiliki sistem manfaat seperti beberapa kursus gratis, persiapan dokumen lamaran, dan latihan wawancara.<br>\n      　④ Kelas akan diadakan dalam ukuran kelas kecil.<br>\n      　➄ Anda dapat lebih meningkatkan efek pembelajaran Anda dengan menggunakan seri buku referensi ``Pertanyaan Mock Ujian Jepang untuk Siswa Internasional,'' yang merupakan salah satu bahan ajar yang dikembangkan oleh sekolah kami.<br>\n      <img class=\"w-full mt-5\" src=\"__ASSET__images/special2.png\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-5 text-white italic text-lg\">Kursus pelatihan guru bahasa Jepang</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/teacher.jpg\" class=\"h-20 mx-1  \"></div>\n      Kursus ini dijalankan oleh International Lifelong Learning Research Foundation untuk membantu siswa memperoleh kualifikasi sebagai guru bahasa Jepang.\n      <span class=\"clear-both\"></span>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">sekolah anak-anak Cina</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      Kursus ini terutama ditujukan untuk anak-anak Tionghoa yang tinggal di daerah Tokai, dan diadakan untuk mendukung pembelajaran bahasa Jepang, Tionghoa, Inggris, matematika, dll.\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-4_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">keterampilan khusus</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <p>Mereka yang telah mencapai tingkat kemahiran bahasa Jepang tertentu dan telah lulus tes pengukuran keterampilan khusus di 14 industri dapat mengajukan permohonan dan menerima status kependudukan baru yang diperkenalkan pada bulan April 2019. Kursus ini ditujukan bagi siswa yang ingin mengubah jalur karier dan pekerjaan setelah lulus dari sekolah kami.</p>\n      <p>　Sebagai organisasi pendukung pendaftaran, sekolah kami dapat berkolaborasi dengan perusahaan dan mendukung aplikasi status kependudukan.\n      </p>\n      <div class=\"flex flex-row flex-wrap text-xs\">\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-1.jpg\" class=\"h-16\">Industri restoran</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-2.jpg\" class=\"h-16\">Manufaktur makanan dan minuman</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-3.jpg\" class=\"h-16\">penangkapan ikan</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-4.jpg\" class=\"h-16\">Industri akomodasi</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-5.jpg\" class=\"h-16\">Industri terkait informasi kelistrikan/elektronik</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-6.jpg\" class=\"h-16\">asuhan keperawatan</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-7.jpg\" class=\"h-16\">industri penerbangan</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-8.jpg\" class=\"h-16\">Industri perawatan mobil</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-9.jpg\" class=\"h-16\">Industri perkapalan/kapal</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-10.jpg\" class=\"h-16\">industri konstruksi</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-11.jpg\" class=\"h-16\">pertanian</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-12.jpg\" class=\"h-16\">industri manufaktur mesin industri</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-13.jpg\" class=\"h-16\">pembersihan gedung</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-14.jpg\" class=\"h-16\">Industri material</div>\n      </div>\n    </div>"
+      }
+    ]
+  },
+  "np": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/9-SPECIAL_LECTURES.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-6 sm:top-8 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "विशेष व्याख्यान",
+      "subtitleWrapperClassName": "absolute top-16 sm:top-20 right-0 left-0 flex items-center justify-center",
+      "subtitleClassName": "text-white italic text-xs sm:text-base",
+      "subtitleHtml": "EJU ・जापानी भाषा शिक्षक प्रशिक्षण ・चिनियाँ बालबालिकाको विद्यालय ・विशिष्ट सीपहरू"
+    },
+    "afterHeroHtml": "<div>\n    <img class=\"w-full\" src=\"__ASSET__images/9/p-9.png\">\n  </div>",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">EJU विशेष व्याख्यान</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      &nbsp;&nbsp;यो पाठ्यक्रम राष्ट्रिय वा सार्वजनिक विश्वविद्यालय वा प्रसिद्ध निजी विश्वविद्यालयमा प्रवेश गर्ने लक्ष्य राख्ने विद्यार्थीहरूको लागि हो। यो एक विशेष कक्षा हो जसले पढ्ने, सुन्ने समझ, सुन्ने र पढ्ने समझ, निबन्ध लेखन, गणित, भौतिकशास्त्र, रसायन विज्ञान, जीवविज्ञान, र EJU (अन्तर्राष्ट्रिय विद्यार्थीहरूको लागि अन्तर्राष्ट्रिय विद्यार्थीहरूको लागि मूल्याङ्कन) परीक्षा विषयहरूको प्रवेश परीक्षा पाठ्यक्रमको लागि कक्षा समय बाहिरका सामान्य विषयहरूलाई बलियो बनाउँछ।<br>\n      <br>\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/Untitled.png\" class=\"h-44 mx-1  \"></div>\n      　➀ पाठ्यक्रमको उद्देश्य जापानी उच्च विद्यालयहरूमा विशेष उन्नत कक्षाहरू जस्तै छ।<br>\n      　➁ पाठ्यक्रमको सिकाइ पाठ्यक्रमलाई तयारी, आधारभूत, उन्नत, उन्नत र व्यक्तिगत उपायहरू सहित पाँच तहमा विभाजन गरिएको छ, र प्रत्येक विद्यार्थीको स्तर र आवश्यकताहरूको आधारमा चयन गर्न सकिन्छ।<br>\n      　➂ यदि तपाइँ सबै पाठ्यक्रमहरू लिन छनौट गर्नुहुन्छ भने, हामीसँग निःशुल्क बहु पाठ्यक्रमहरू, आवेदन कागजातहरूको तयारी, र अन्तर्वार्ता अभ्यास जस्ता फाइदाहरूको प्रणाली छ।<br>\n      　④ कक्षाहरू सानो कक्षाको आकारमा आयोजित हुनेछन्।<br>\n      　➄ हाम्रो विद्यालयले विकास गरेको शिक्षण सामग्रीहरू मध्येको ``अन्तर्राष्ट्रिय विद्यार्थीहरूको नक्कली प्रश्नहरूका लागि जापानीज परीक्षा,'' को श्रृंखला सन्दर्भ पुस्तकहरू प्रयोग गरेर तपाईंले आफ्नो सिकाइ प्रभावलाई थप वृद्धि गर्न सक्नुहुन्छ।<br>\n      <img class=\"w-full mt-5\" src=\"__ASSET__images/special2.png\">\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-5 text-white italic text-lg\">जापानी भाषा शिक्षक प्रशिक्षण पाठ्यक्रम</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <div class=\"float-right\"><img src=\"__ASSET__images/9/teacher.jpg\" class=\"h-20 mx-1  \"></div>\n      यो पाठ्यक्रम विद्यार्थीहरूलाई जापानी भाषा शिक्षकको रूपमा योग्यताहरू प्राप्त गर्न मद्दत गर्न अन्तर्राष्ट्रिय लाइफलाङ ​​लर्निङ रिसर्च फाउन्डेसनद्वारा सञ्चालित छ।\n      <span class=\"clear-both\"></span>\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-5_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">चिनियाँ बालबालिकाको विद्यालय</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      यो पाठ्यक्रम मुख्यतया टोकाई क्षेत्रमा बसोबास गर्ने चिनियाँ बालबालिकालाई लक्षित गरी जापानी, चिनियाँ, अंग्रेजी, गणित, इत्यादिको अध्ययनलाई समर्थन गर्न आयोजना गरिएको थियो।\n    </div>"
+      },
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/9/BUTTON-9-4_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">विशिष्ट कौशल</div>\n    </div>",
+        "bodyHtml": "<div class=\"bg-[#009999] bg-opacity-20 my-2 p-5 text-sm leading-6\">\n      <p>जापानी प्रवीणताको एक निश्चित स्तर हासिल गरेका र 14 उद्योगहरूमा विशिष्ट सीप मापन परीक्षणहरू पास गरेकाहरूले अप्रिल 2019 मा पेश गरिएको आवासको नयाँ स्थितिको लागि आवेदन दिन र प्राप्त गर्न सक्छन्। यो पाठ्यक्रम हाम्रो विद्यालयबाट स्नातक गरेपछि आफ्नो करियर मार्ग र काम परिवर्तन गर्न चाहने विद्यार्थीहरूलाई लक्षित गरिएको हो।</p>\n      <p>　दर्ता समर्थन संस्थाको रूपमा, हाम्रो विद्यालयले कम्पनीहरूसँग सहकार्य गर्न सक्छ र निवास स्थितिको लागि आवेदनहरूलाई समर्थन गर्न सक्छ।\n      </p>\n      <div class=\"flex flex-row flex-wrap text-xs\">\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-1.jpg\" class=\"h-16\">रेस्टुरेन्ट उद्योग</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-2.jpg\" class=\"h-16\">खाद्य र पेय पदार्थ निर्माण</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-3.jpg\" class=\"h-16\">माछा मार्ने</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-4.jpg\" class=\"h-16\">आवास उद्योग</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-5.jpg\" class=\"h-16\">इलेक्ट्रिकल/इलेक्ट्रोनिक जानकारी सम्बन्धित उद्योग</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-6.jpg\" class=\"h-16\">नर्सिङ हेरचाह</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-7.jpg\" class=\"h-16\">उड्डयन उद्योग</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-8.jpg\" class=\"h-16\">अटोमोबाइल मर्मत उद्योग</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-9.jpg\" class=\"h-16\">जहाज निर्माण / जहाज उद्योग</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-10.jpg\" class=\"h-16\">निर्माण उद्योग</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-11.jpg\" class=\"h-16\">कृषि</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-12.jpg\" class=\"h-16\">औद्योगिक मेसिनरी निर्माण उद्योग</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-13.jpg\" class=\"h-16\">भवन सफाई</div>\n        <div class=\"mr-2 mt-2\"><img src=\"__ASSET__images/9/9-14.jpg\" class=\"h-16\">सामग्री उद्योग</div>\n      </div>\n    </div>"
+      }
+    ]
+  }
+}

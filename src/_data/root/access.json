@@ -1,0 +1,344 @@
+{
+  "ja": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/14-ACCESS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-8 sm:top-10 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "アクセス",
+      "subtitleWrapperClassName": "",
+      "subtitleClassName": "",
+      "subtitleHtml": ""
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/14/BUTTON-14-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">LOCATION</div>\n    </div>",
+        "bodyHtml": "<img src=\"__ASSET__images/14/14-ACCESSmap.png\">"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"flex justify-center items-center\">\n      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.6899156287577!2d136.9137920765492!3d35.16435335819312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370c6a3d8680d%3A0x3c7ee5222be2d9f7!2z5oSb55-l5Zu96Zqb5a2m6Zmi!5e0!3m2!1szh-TW!2stw!4v1709005968278!5m2!1szh-TW!2stw\" width=\"600\" height=\"450\" class=\"border-0\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      }
+    ]
+  },
+  "en": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/14-ACCESS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-8 sm:top-10 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "Access",
+      "subtitleWrapperClassName": "",
+      "subtitleClassName": "",
+      "subtitleHtml": ""
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/14/BUTTON-14-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">LOCATION</div>\n    </div>",
+        "bodyHtml": "<img src=\"__ASSET__images/14/14-ACCESSmap.png\">"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"flex justify-center items-center\">\n      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.6899156287577!2d136.9137920765492!3d35.16435335819312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370c6a3d8680d%3A0x3c7ee5222be2d9f7!2z5oSb55-l5Zu96Zqb5a2m6Zmi!5e0!3m2!1szh-TW!2stw!4v1709005968278!5m2!1szh-TW!2stw\" width=\"600\" height=\"450\" class=\"border-0\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      }
+    ]
+  },
+  "cn": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/14-ACCESS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-8 sm:top-10 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "位置情报",
+      "subtitleWrapperClassName": "",
+      "subtitleClassName": "",
+      "subtitleHtml": ""
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/14/BUTTON-14-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">地点</div>\n    </div>",
+        "bodyHtml": "<img src=\"__ASSET__images/14/14-ACCESSmap.png\">"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"flex justify-center items-center\">\n      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.6899156287577!2d136.9137920765492!3d35.16435335819312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370c6a3d8680d%3A0x3c7ee5222be2d9f7!2z5oSb55-l5Zu96Zqb5a2m6Zmi!5e0!3m2!1szh-TW!2stw!4v1709005968278!5m2!1szh-TW!2stw\" width=\"600\" height=\"450\" class=\"border-0\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      }
+    ]
+  },
+  "tw": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/14-ACCESS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-8 sm:top-10 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "位置資訊",
+      "subtitleWrapperClassName": "",
+      "subtitleClassName": "",
+      "subtitleHtml": ""
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/14/BUTTON-14-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">地點</div>\n    </div>",
+        "bodyHtml": "<img src=\"__ASSET__images/14/14-ACCESSmap.png\">"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"flex justify-center items-center\">\n      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.6899156287577!2d136.9137920765492!3d35.16435335819312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370c6a3d8680d%3A0x3c7ee5222be2d9f7!2z5oSb55-l5Zu96Zqb5a2m6Zmi!5e0!3m2!1szh-TW!2stw!4v1709005968278!5m2!1szh-TW!2stw\" width=\"600\" height=\"450\" class=\"border-0\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      }
+    ]
+  },
+  "ko": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/14-ACCESS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-8 sm:top-10 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "접근",
+      "subtitleWrapperClassName": "",
+      "subtitleClassName": "",
+      "subtitleHtml": ""
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/14/BUTTON-14-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">위치</div>\n    </div>",
+        "bodyHtml": "<img src=\"__ASSET__images/14/14-ACCESSmap.png\">"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"flex justify-center items-center\">\n      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.6899156287577!2d136.9137920765492!3d35.16435335819312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370c6a3d8680d%3A0x3c7ee5222be2d9f7!2z5oSb55-l5Zu96Zqb5a2m6Zmi!5e0!3m2!1szh-TW!2stw!4v1709005968278!5m2!1szh-TW!2stw\" width=\"600\" height=\"450\" class=\"border-0\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      }
+    ]
+  },
+  "vi": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/14-ACCESS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-8 sm:top-10 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "truy cập",
+      "subtitleWrapperClassName": "",
+      "subtitleClassName": "",
+      "subtitleHtml": ""
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/14/BUTTON-14-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">VỊ TRÍ</div>\n    </div>",
+        "bodyHtml": "<img src=\"__ASSET__images/14/14-ACCESSmap.png\">"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"flex justify-center items-center\">\n      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.6899156287577!2d136.9137920765492!3d35.16435335819312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370c6a3d8680d%3A0x3c7ee5222be2d9f7!2z5oSb55-l5Zu96Zqb5a2m6Zmi!5e0!3m2!1szh-TW!2stw!4v1709005968278!5m2!1szh-TW!2stw\" width=\"600\" height=\"450\" class=\"border-0\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      }
+    ]
+  },
+  "th": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/14-ACCESS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-8 sm:top-10 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "เข้าถึง",
+      "subtitleWrapperClassName": "",
+      "subtitleClassName": "",
+      "subtitleHtml": ""
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/14/BUTTON-14-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">ที่ตั้ง</div>\n    </div>",
+        "bodyHtml": "<img src=\"__ASSET__images/14/14-ACCESSmap.png\">"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"flex justify-center items-center\">\n      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.6899156287577!2d136.9137920765492!3d35.16435335819312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370c6a3d8680d%3A0x3c7ee5222be2d9f7!2z5oSb55-l5Zu96Zqb5a2m6Zmi!5e0!3m2!1szh-TW!2stw!4v1709005968278!5m2!1szh-TW!2stw\" width=\"600\" height=\"450\" class=\"border-0\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      }
+    ]
+  },
+  "id": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/14-ACCESS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-8 sm:top-10 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "mengakses",
+      "subtitleWrapperClassName": "",
+      "subtitleClassName": "",
+      "subtitleHtml": ""
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/14/BUTTON-14-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">LOKASI</div>\n    </div>",
+        "bodyHtml": "<img src=\"__ASSET__images/14/14-ACCESSmap.png\">"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"flex justify-center items-center\">\n      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.6899156287577!2d136.9137920765492!3d35.16435335819312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370c6a3d8680d%3A0x3c7ee5222be2d9f7!2z5oSb55-l5Zu96Zqb5a2m6Zmi!5e0!3m2!1szh-TW!2stw!4v1709005968278!5m2!1szh-TW!2stw\" width=\"600\" height=\"450\" class=\"border-0\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      }
+    ]
+  },
+  "np": {
+    "hero": {
+      "className": "relative flex mx-auto min-h-28 max-h-32",
+      "image": "images/14-ACCESS.jpg",
+      "imageClassName": "w-full object-cover object-center",
+      "titleWrapperClassName": "absolute top-8 sm:top-10 right-0 left-0 flex items-center justify-center",
+      "titleClassName": "text-white text-3xl font-bold",
+      "titleHtml": "पहुँच",
+      "subtitleWrapperClassName": "",
+      "subtitleClassName": "",
+      "subtitleHtml": ""
+    },
+    "afterHeroHtml": "",
+    "mainClassName": "w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1",
+    "blocks": [
+      {
+        "type": "section",
+        "labelHtml": "<div class=\"h-10 relative\">\n      <img src=\"__ASSET__images/14/BUTTON-14-7_subtitle.png\" class=\"h-full\">\n      <div class=\"absolute top-1 left-7 text-white italic text-lg\">LOCATION</div>\n    </div>",
+        "bodyHtml": "<img src=\"__ASSET__images/14/14-ACCESSmap.png\">"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<div class=\"flex justify-center items-center\">\n      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.6899156287577!2d136.9137920765492!3d35.16435335819312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370c6a3d8680d%3A0x3c7ee5222be2d9f7!2z5oSb55-l5Zu96Zqb5a2m6Zmi!5e0!3m2!1szh-TW!2stw!4v1709005968278!5m2!1szh-TW!2stw\" width=\"600\" height=\"450\" class=\"border-0\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>\n    </div>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      },
+      {
+        "type": "raw",
+        "html": "<br>"
+      }
+    ]
+  }
+}
