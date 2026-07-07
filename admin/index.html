@@ -15,6 +15,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet" />
   <script type="text/javascript" src="https://unpkg.com/parse@1.11.1/dist/parse.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/heic2any@0.0.4/dist/heic2any.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
@@ -351,11 +352,12 @@
                         <label for="file-upload"
                           class="text-center relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
                           <span>Upload a file</span>
-                          <input id="file-upload" name="file-upload" type="file" class="sr-only" accept="image/*">
+                          <input id="file-upload" name="file-upload" type="file" class="sr-only" accept="image/jpeg,image/png,image/gif,image/webp,image/heic,image/heif,.heic,.heif">
                         </label>
                         <!-- <p class="pl-1">or drag and drop</p> -->
                       </div>
-                      <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
+                      <p class="text-xs leading-5 text-gray-600">JPG, PNG, GIF, WebP, HEIC（最大8MB）</p>
+                      <p id="upload-status" class="text-xs leading-5 text-indigo-600 hidden"></p>
                     </div>
                   </div>
                   <!-- </div> -->
@@ -446,16 +448,37 @@
     var images = [];
 
     $("input[type=file]").on('change', async function () {
-      // alert(this.files[0].name);
-      // console.log(this.files)
-      var res = await Parse.Images(this.files[0]);
-      // console.log(res)
-      var imageId = 'img_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-      $("#newsImages").append('<div class="relative inline-block" id="' + imageId + '">' +
-        '<img src="' + res.image.url + '" class="w-full rounded" />' +
-        '<button type="button" class="absolute top-1 right-1 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs hover:bg-red-600" onclick="removeImage(\'' + imageId + '\')">×</button>' +
-        '<input type="hidden" name="images[]" value="' + res.image.url + '" />' +
-        '</div>');
+      const input = this;
+      const file = input.files[0];
+      if (!file) return;
+
+      const $status = $('#upload-status');
+      const $label = $('label[for="file-upload"] span');
+      const originalLabel = $label.text();
+
+      try {
+        $label.text('アップロード中...');
+        $status.removeClass('hidden').text('画像を処理・アップロードしています...');
+        input.disabled = true;
+
+        const res = await Parse.Images(file);
+        const imageId = 'img_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+        $("#newsImages").append('<div class="relative inline-block" id="' + imageId + '">' +
+          '<img src="' + res.image.url + '" class="w-full rounded" />' +
+          '<button type="button" class="absolute top-1 right-1 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs hover:bg-red-600" onclick="removeImage(\'' + imageId + '\')">×</button>' +
+          '<input type="hidden" name="images[]" value="' + res.image.url + '" />' +
+          '</div>');
+        $status.text('アップロード完了');
+        setTimeout(() => $status.addClass('hidden').text(''), 2000);
+      } catch (err) {
+        const msg = err.message || '画像のアップロードに失敗しました';
+        alert(msg);
+        $status.removeClass('hidden').text(msg).addClass('text-red-600').removeClass('text-indigo-600');
+      } finally {
+        input.disabled = false;
+        input.value = '';
+        $label.text(originalLabel);
+      }
     });
   </script>
   <script type="text/javascript">
