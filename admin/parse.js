@@ -122,9 +122,15 @@ async function prepareImageFile(file) {
   return convertToJpegViaCanvas(file);
 }
 
+function generateUploadFilename() {
+  const stamp = Date.now();
+  const rand = Math.random().toString(36).slice(2, 10);
+  return 'img_' + stamp + '_' + rand + '.jpg';
+}
+
 const saveImg = async (file) => {
-  const { file: uploadFile, dim, base64 } = await prepareImageFile(file);
-  const parseFile = new Parse.File('1' + uploadFile.name, { base64 }, 'image/jpeg');
+  const { dim, base64 } = await prepareImageFile(file);
+  const parseFile = new Parse.File(generateUploadFilename(), { base64 }, 'image/jpeg');
   const theFile = await parseFile.save();
   if (!theFile) throw new Error('画像のアップロードに失敗しました');
   return { theFile, dim };
