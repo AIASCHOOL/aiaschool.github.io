@@ -18,19 +18,6 @@ const groupParamsByKey = (params) => [...params.entries()].reduce((acc, tuple) =
   return acc;
 }, {});
 
-var toggleBtn = document.getElementById('toggle');
-var collapseMenu = document.getElementById('collapseMenu');
-
-function handleClick() {
-  if (collapseMenu.style.display === 'block') {
-    collapseMenu.style.display = 'none';
-  } else {
-    collapseMenu.style.display = 'block';
-  }
-}
-
-toggleBtn.addEventListener('click', handleClick);
-
 // Swiper 輪播圖相關（供各語系 index 的圖片 onload 使用）
 const swiperInstances = new Map();
 
