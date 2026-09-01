@@ -44,6 +44,7 @@ src/_data/blockPages.json
 src/_data/aboutPublish.json
 src/_data/legalPages.json
 src/_data/stagingCourseAdvance.json
+src/_data/recruitment.json
 src/_data/i18n.json
 src/_data/navigation.json
 src/_data/sitePages.json
@@ -71,6 +72,7 @@ about_business.html           -> templates/pages/block_page.njk
 about_facility.html           -> templates/pages/block_page.njk
 about_teacher.html            -> templates/pages/block_page.njk
 access.html                   -> templates/pages/block_page.njk
+recruitment.html              -> templates/pages/recruitment.njk
 message.html                  -> templates/pages/block_page.njk
 course_advance.html           -> root: templates/pages/block_page.njk
 staging/course_advance.html   -> templates/staging/course_advance.njk

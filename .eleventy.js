@@ -21,6 +21,7 @@ const pageTitleSources = {
   life_visa: ["nav", "visa"],
   books: ["nav", "books"],
   access: ["nav", "access"],
+  recruitment: ["nav", "recruitment"],
   sitemap: ["footer", "sitemap"],
   policy: ["footer", "policy"],
   privacy: ["footer", "privacy"]

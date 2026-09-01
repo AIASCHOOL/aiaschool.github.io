@@ -120,6 +120,14 @@
     }
   },
   {
+    "key": "recruitment",
+    "file": "recruitment.html",
+    "templateByScope": {
+      "root": "templates/pages/recruitment.njk",
+      "staging": "templates/pages/recruitment.njk"
+    }
+  },
+  {
     "key": "sitemap",
     "file": "sitemap.html",
     "templateByScope": {

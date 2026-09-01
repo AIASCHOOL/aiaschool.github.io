@@ -22,7 +22,8 @@
       "insurance": "学生保険",
       "visa": "学生在留",
       "books": "教育関連開発",
-      "access": "アクセス"
+      "access": "アクセス",
+      "recruitment": "採用情報"
     },
     "footer": {
       "contact": "お問い合わせ",
@@ -70,7 +71,8 @@
       "insurance": "Student Insurance",
       "visa": "Student Visa Status",
       "books": "Educational Materials Development",
-      "access": "Access"
+      "access": "Access",
+      "recruitment": "Careers"
     },
     "footer": {
       "contact": "Contact",
@@ -118,7 +120,8 @@
       "insurance": "学生保险",
       "visa": "学生在留",
       "books": "教育相关开发",
-      "access": "交通指南"
+      "access": "交通指南",
+      "recruitment": "招聘信息"
     },
     "footer": {
       "contact": "咨询",
@@ -166,7 +169,8 @@
       "insurance": "學生保險",
       "visa": "學生在留",
       "books": "教育相關開發",
-      "access": "交通資訊"
+      "access": "交通資訊",
+      "recruitment": "徵才資訊"
     },
     "footer": {
       "contact": "聯絡我們",
@@ -214,7 +218,8 @@
       "insurance": "학생 보험",
       "visa": "학생 체류",
       "books": "교육 관련 개발",
-      "access": "오시는 길"
+      "access": "오시는 길",
+      "recruitment": "채용 정보"
     },
     "footer": {
       "contact": "문의",
@@ -262,7 +267,8 @@
       "insurance": "Bảo hiểm học sinh",
       "visa": "Tư cách lưu trú học sinh",
       "books": "Phát triển tài liệu giáo dục",
-      "access": "Đường đi"
+      "access": "Đường đi",
+      "recruitment": "Thông tin tuyển dụng"
     },
     "footer": {
       "contact": "Liên hệ",
@@ -310,7 +316,8 @@
       "insurance": "ประกันนักเรียน",
       "visa": "สถานภาพการพำนักของนักเรียน",
       "books": "การพัฒนาสื่อการศึกษา",
-      "access": "การเดินทาง"
+      "access": "การเดินทาง",
+      "recruitment": "ข้อมูลการรับสมัครงาน"
     },
     "footer": {
       "contact": "ติดต่อเรา",
@@ -358,7 +365,8 @@
       "insurance": "Asuransi Siswa",
       "visa": "Status Tinggal Siswa",
       "books": "Pengembangan Materi Pendidikan",
-      "access": "Akses"
+      "access": "Akses",
+      "recruitment": "Informasi Lowongan Kerja"
     },
     "footer": {
       "contact": "Kontak",
@@ -406,7 +414,8 @@
       "insurance": "विद्यार्थी बीमा",
       "visa": "विद्यार्थी बसोबास स्थिति",
       "books": "शैक्षिक सामग्री विकास",
-      "access": "पहुँच"
+      "access": "पहुँच",
+      "recruitment": "रोजगारी जानकारी"
     },
     "footer": {
       "contact": "सम्पर्क",

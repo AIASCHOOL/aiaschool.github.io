@@ -1,0 +1,112 @@
+{% set pageContent = recruitment[route.locale.code] or recruitment.ja %}
+{% set sectionLabelIcon = "images/btn_advance.png" %}
+{% set sectionLabelClassName = "h-10 relative w-[28rem] max-w-full mt-6" %}
+{% set sectionLabelImageClassName = "h-full w-full" %}
+{% set sectionLabelTextClassName = "absolute top-1.5 left-7 pr-10 whitespace-nowrap text-white italic text-base sm:text-lg" %}
+
+<!-- recruitment hero start -->
+<section class="recruitment-site-hero relative flex mx-auto min-h-28 max-h-32 overflow-hidden">
+  <div class="absolute inset-0 flex items-center justify-center" aria-hidden="true">
+    <span class="recruitment-site-hero__word">RECRUITMENT</span>
+  </div>
+  <div class="absolute top-8 right-0 left-0 flex items-center justify-center">
+    <h1 class="text-3xl font-bold text-white">{{ pageContent.hero.title }}</h1>
+  </div>
+</section>
+<!-- recruitment hero end -->
+
+<!-- recruitment main start -->
+<main class="recruitment-page w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1 pb-12 text-gray-800">
+  <section class="my-5 bg-gradient-to-br from-[#D2FFFF] to-[#A8CACA] p-5 text-sm leading-7">
+    <h2 class="text-xl font-bold text-gray-900">{{ pageContent.intro.title }}</h2>
+    <p class="mt-2">{{ pageContent.intro.body }}</p>
+  </section>
+
+  <section id="eligibility">
+    {% set sectionLabelTitle = pageContent.eligibility.title %}
+    {% include "components/ui/SectionLabel.njk" %}
+
+    <div class="my-2 bg-gradient-to-br from-[#D2FFFF] to-[#A8CACA] p-5 text-sm leading-7">
+      <p class="font-bold text-gray-900">{{ pageContent.eligibility.computer }}</p>
+      <p class="mt-3">{{ pageContent.eligibility.oneOf }}</p>
+      <ol class="recruitment-qualification-list mt-4 space-y-2">
+        {% for qualification in pageContent.eligibility.qualifications %}
+          <li class="flex gap-2">
+            <span class="shrink-0 font-bold text-teal-800">{{ loop.index }}.</span>
+            <span>{{ qualification }}</span>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <section id="positions">
+    {% set sectionLabelTitle = pageContent.positions.title %}
+    {% include "components/ui/SectionLabel.njk" %}
+
+    <div class="my-2 grid gap-3 md:grid-cols-2">
+      {% for position in pageContent.positions.items %}
+        <article class="flex flex-col border border-slate-400 bg-white">
+          <div class="bg-[#009999] px-4 py-2 text-white">
+            <p class="text-[11px] font-bold tracking-wider">{{ position.type }}</p>
+            <h3 class="text-lg font-bold">{{ position.title }}</h3>
+          </div>
+          <div class="flex-1 bg-gradient-to-br from-[#D2FFFF] to-[#A8CACA] p-4 text-sm leading-7">
+            <p class="text-xl font-bold text-gray-900">{{ position.pay }}</p>
+            <p class="mt-3 font-bold">{{ position.benefitsTitle }}</p>
+            <ul class="recruitment-benefit-list mt-1">
+              {% for benefit in position.benefits %}
+                <li>{{ benefit }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="application">
+    {% set sectionLabelTitle = pageContent.application.title %}
+    {% include "components/ui/SectionLabel.njk" %}
+
+    <div class="my-2 bg-gradient-to-br from-[#D2FFFF] to-[#A8CACA] p-5 text-sm leading-7">
+      <ol class="recruitment-application-steps border-y border-slate-400">
+        <li class="grid gap-1 border-b border-slate-400 py-4 sm:grid-cols-[2.5rem_10rem_1fr] sm:gap-3">
+          <span class="font-bold text-teal-800">01</span>
+          <h3 class="font-bold text-gray-900">{{ pageContent.application.prepareTitle }}</h3>
+          <ul>
+            {% for document in pageContent.application.documents %}
+              <li>{{ document }}</li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li class="grid gap-1 border-b border-slate-400 py-4 sm:grid-cols-[2.5rem_10rem_1fr] sm:gap-3">
+          <span class="font-bold text-teal-800">02</span>
+          <h3 class="font-bold text-gray-900">{{ pageContent.application.sendTitle }}</h3>
+          <div>
+            <p>{{ pageContent.application.sendBody }}</p>
+            <p class="mt-1 font-bold">so☆aiaso.gr.jp</p>
+            <p class="text-xs">{{ pageContent.application.emailNote }}</p>
+          </div>
+        </li>
+        <li class="grid gap-1 py-4 sm:grid-cols-[2.5rem_10rem_1fr] sm:gap-3">
+          <span class="font-bold text-teal-800">03</span>
+          <h3 class="font-bold text-gray-900">{{ pageContent.application.selectionTitle }}</h3>
+          <p>{{ pageContent.application.selectionBody }}</p>
+        </li>
+      </ol>
+
+      <ul class="recruitment-notice-list mt-4 space-y-1 text-xs">
+        {% for notice in pageContent.application.notices %}
+          <li>{{ notice }}</li>
+        {% endfor %}
+      </ul>
+
+      <div class="mt-5 border-t border-slate-400 pt-4">
+        <p class="font-bold text-gray-900">{{ pageContent.contact.school }}　{{ pageContent.contact.person }}</p>
+        <p class="mt-1">{{ pageContent.contact.body }}</p>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- recruitment main end -->

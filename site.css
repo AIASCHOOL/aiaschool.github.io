@@ -92,3 +92,38 @@ body {
   pointer-events: auto;
   transform: translateY(0);
 }
+
+.recruitment-site-hero {
+  background: linear-gradient(90deg, #38a3a3 0%, #0f6f70 52%, #2f8f8f 100%);
+}
+
+.recruitment-site-hero__word {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.recruitment-page ol,
+.recruitment-page ul,
+.recruitment-page li {
+  margin-left: 0;
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.recruitment-qualification-list,
+.recruitment-application-steps,
+.recruitment-notice-list {
+  list-style: none;
+}
+
+.recruitment-benefit-list {
+  list-style: disc;
+  padding-left: 1.25rem !important;
+}
+
+.recruitment-benefit-list li::marker {
+  color: #006f6f;
+}

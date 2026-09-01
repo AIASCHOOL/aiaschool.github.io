@@ -55,6 +55,11 @@
       "type": "link",
       "labelKey": "access",
       "href": "access.html"
+    },
+    {
+      "type": "link",
+      "labelKey": "recruitment",
+      "href": "recruitment.html"
     }
   ]
 }
