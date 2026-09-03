@@ -44,7 +44,8 @@
         {
           "type": "PART-TIME",
           "title": "非常勤講師",
-          "pay": "1コマ45分 2,000円～",
+          "pay": "1コマ50分 2,000円～",
+          "payStaging": "1コマ45分 2,000円～",
           "benefitsTitle": "待遇",
           "benefits": [
             "交通費支給"
@@ -118,7 +119,8 @@
         {
           "type": "PART-TIME",
           "title": "Part-time Instructor",
-          "pay": "From ¥2,000 per 45-minute class",
+          "pay": "From ¥2,000 per 50-minute class",
+          "payStaging": "From ¥2,000 per 45-minute class",
           "benefitsTitle": "Benefits",
           "benefits": [
             "Transportation expenses provided"
@@ -192,7 +194,8 @@
         {
           "type": "PART-TIME",
           "title": "兼职讲师",
-          "pay": "每课时45分钟 2,000日元起",
+          "pay": "每课时50分钟 2,000日元起",
+          "payStaging": "每课时45分钟 2,000日元起",
           "benefitsTitle": "待遇",
           "benefits": [
             "提供交通费"
@@ -266,7 +269,8 @@
         {
           "type": "PART-TIME",
           "title": "兼職講師",
-          "pay": "每堂45分鐘 2,000日圓起",
+          "pay": "每堂50分鐘 2,000日圓起",
+          "payStaging": "每堂45分鐘 2,000日圓起",
           "benefitsTitle": "待遇",
           "benefits": [
             "提供交通費"
@@ -340,7 +344,8 @@
         {
           "type": "PART-TIME",
           "title": "시간 강사",
-          "pay": "45분 1교시 2,000엔부터",
+          "pay": "50분 1교시 2,000엔부터",
+          "payStaging": "45분 1교시 2,000엔부터",
           "benefitsTitle": "처우",
           "benefits": [
             "교통비 지급"
@@ -414,7 +419,8 @@
         {
           "type": "PART-TIME",
           "title": "Giảng viên bán thời gian",
-          "pay": "Từ 2.000 yên/tiết 45 phút",
+          "pay": "Từ 2.000 yên/tiết 50 phút",
+          "payStaging": "Từ 2.000 yên/tiết 45 phút",
           "benefitsTitle": "Chế độ",
           "benefits": [
             "Hỗ trợ chi phí đi lại"
@@ -488,7 +494,8 @@
         {
           "type": "PART-TIME",
           "title": "อาจารย์พิเศษ",
-          "pay": "เริ่มต้น 2,000 เยนต่อคาบ 45 นาที",
+          "pay": "เริ่มต้น 2,000 เยนต่อคาบ 50 นาที",
+          "payStaging": "เริ่มต้น 2,000 เยนต่อคาบ 45 นาที",
           "benefitsTitle": "สวัสดิการ",
           "benefits": [
             "จ่ายค่าเดินทาง"
@@ -562,7 +569,8 @@
         {
           "type": "PART-TIME",
           "title": "Pengajar Paruh Waktu",
-          "pay": "Mulai ¥2.000 per kelas 45 menit",
+          "pay": "Mulai ¥2.000 per kelas 50 menit",
+          "payStaging": "Mulai ¥2.000 per kelas 45 menit",
           "benefitsTitle": "Tunjangan",
           "benefits": [
             "Biaya transportasi diberikan"
@@ -636,7 +644,8 @@
         {
           "type": "PART-TIME",
           "title": "अंशकालीन शिक्षक",
-          "pay": "प्रति 45 मिनेट कक्षा ¥2,000 बाट",
+          "pay": "प्रति 50 मिनेट कक्षा ¥2,000 बाट",
+          "payStaging": "प्रति 45 मिनेट कक्षा ¥2,000 बाट",
           "benefitsTitle": "सुविधा",
           "benefits": [
             "यातायात खर्च उपलब्ध"

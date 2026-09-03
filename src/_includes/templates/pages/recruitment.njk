@@ -52,7 +52,7 @@
             <h3 class="text-lg font-bold">{{ position.title }}</h3>
           </div>
           <div class="flex-1 bg-gradient-to-br from-[#D2FFFF] to-[#A8CACA] p-4 text-sm leading-7">
-            <p class="text-xl font-bold text-gray-900">{{ position.pay }}</p>
+            <p class="text-xl font-bold text-gray-900">{{ position.payStaging if route.scope == "staging" and position.payStaging else position.pay }}</p>
             <p class="mt-3 font-bold">{{ position.benefitsTitle }}</p>
             <ul class="recruitment-benefit-list mt-1">
               {% for benefit in position.benefits %}
