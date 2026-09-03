@@ -44,7 +44,7 @@
         {
           "type": "PART-TIME",
           "title": "非常勤講師",
-          "pay": "1コマ50分 2,000円～",
+          "pay": "1コマ45分 2,000円～",
           "benefitsTitle": "待遇",
           "benefits": [
             "交通費支給"
@@ -55,27 +55,20 @@
     "application": {
       "eyebrow": "APPLICATION",
       "title": "応募方法",
-      "prepareTitle": "応募書類を準備",
-      "documents": [
-        "履歴書（写真貼付）",
-        "職務経歴書"
-      ],
-      "sendTitle": "Eメールで送付",
-      "sendBody": "採用担当宛に応募書類をお送りください。",
-      "emailNote": "☆を@に置き換えて送信してください。",
-      "selectionTitle": "書類選考後",
-      "selectionBody": "面接と、必要に応じて20分程度の模擬授業を行います。",
-      "notices": [
+      "body": [
+        "Eメールで履歴書（写真貼付）と職務経歴書をお送りください。",
+        "so☆aiaso.gr.jp（☆を@に置き換えて送信してください。）",
         "応募書類は返却しませんのでご了承ください。",
-        "履歴書には携帯電話番号とメールアドレスを明記してください。"
-      ],
-      "button": "Eメールで応募"
+        "履歴書には携帯電話番号とメールアドレスを明記してください。",
+        "書類選考後面接と必要に応じ20分程度の模擬授業を行います。"
+      ]
     },
     "contact": {
       "eyebrow": "CONTACT",
+      "role": "採用担当",
       "school": "愛知国際学院",
       "person": "莊",
-      "body": "採用に関するお問い合わせは、電話またはEメールでご連絡ください。",
+      "body": "電話またはEメールよりお問い合わせください。",
       "phone": "電話で問い合わせ",
       "email": "Eメールで問い合わせ"
     }
@@ -125,7 +118,7 @@
         {
           "type": "PART-TIME",
           "title": "Part-time Instructor",
-          "pay": "From ¥2,000 per 50-minute class",
+          "pay": "From ¥2,000 per 45-minute class",
           "benefitsTitle": "Benefits",
           "benefits": [
             "Transportation expenses provided"
@@ -136,27 +129,20 @@
     "application": {
       "eyebrow": "APPLICATION",
       "title": "How to apply",
-      "prepareTitle": "Prepare your documents",
-      "documents": [
-        "Resume with a photograph",
-        "Employment history"
-      ],
-      "sendTitle": "Apply by email",
-      "sendBody": "Send both documents to the recruitment contact.",
-      "emailNote": "Replace ☆ with @ before sending.",
-      "selectionTitle": "After document screening",
-      "selectionBody": "Selected applicants will be interviewed and may be asked to give a mock lesson of about 20 minutes.",
-      "notices": [
+      "body": [
+        "Please email your resume (with a photograph) and employment history.",
+        "so☆aiaso.gr.jp (Replace ☆ with @ before sending.)",
         "Application documents will not be returned.",
-        "Please include your mobile phone number and email address on your resume."
-      ],
-      "button": "Apply by email"
+        "Please include your mobile phone number and email address on your resume.",
+        "After document screening, we will conduct an interview and, if necessary, a mock lesson of about 20 minutes."
+      ]
     },
     "contact": {
       "eyebrow": "RECRUITMENT CONTACT",
+      "role": "Recruitment contact",
       "school": "Aichi International Academy",
       "person": "莊",
-      "body": "For recruitment inquiries, please contact us by phone or email.",
+      "body": "Please contact us by phone or email.",
       "phone": "Call us",
       "email": "Email us"
     }
@@ -206,7 +192,7 @@
         {
           "type": "PART-TIME",
           "title": "兼职讲师",
-          "pay": "每课时50分钟 2,000日元起",
+          "pay": "每课时45分钟 2,000日元起",
           "benefitsTitle": "待遇",
           "benefits": [
             "提供交通费"
@@ -217,27 +203,20 @@
     "application": {
       "eyebrow": "APPLICATION",
       "title": "应聘方法",
-      "prepareTitle": "准备应聘材料",
-      "documents": [
-        "履历书（附照片）",
-        "工作经历书"
-      ],
-      "sendTitle": "通过电子邮件发送",
-      "sendBody": "请将两份材料发送给招聘负责人。",
-      "emailNote": "发送时请将☆替换为@。",
-      "selectionTitle": "材料审核后",
-      "selectionBody": "将安排面试，并根据需要进行约20分钟的模拟授课。",
-      "notices": [
+      "body": [
+        "请通过电子邮件发送履历书（附照片）和工作经历书。",
+        "so☆aiaso.gr.jp（发送时请将☆替换为@。）",
         "应聘材料恕不退还，敬请谅解。",
-        "请在履历书中注明手机号码和电子邮箱地址。"
-      ],
-      "button": "通过电子邮件应聘"
+        "请在履历书中注明手机号码和电子邮箱地址。",
+        "材料审核后将安排面试，并根据需要进行约20分钟的模拟授课。"
+      ]
     },
     "contact": {
       "eyebrow": "招聘负责人",
+      "role": "招聘负责人",
       "school": "爱知国际学院",
       "person": "莊",
-      "body": "如有招聘相关咨询，请通过电话或电子邮件联系我们。",
+      "body": "请通过电话或电子邮件联系我们。",
       "phone": "电话咨询",
       "email": "邮件咨询"
     }
@@ -287,7 +266,7 @@
         {
           "type": "PART-TIME",
           "title": "兼職講師",
-          "pay": "每堂50分鐘 2,000日圓起",
+          "pay": "每堂45分鐘 2,000日圓起",
           "benefitsTitle": "待遇",
           "benefits": [
             "提供交通費"
@@ -298,27 +277,20 @@
     "application": {
       "eyebrow": "APPLICATION",
       "title": "應徵方式",
-      "prepareTitle": "準備應徵資料",
-      "documents": [
-        "履歷表（附照片）",
-        "工作經歷書"
-      ],
-      "sendTitle": "以電子郵件寄送",
-      "sendBody": "請將兩份資料寄給徵才負責人。",
-      "emailNote": "寄送時請將☆替換為@。",
-      "selectionTitle": "書面審查後",
-      "selectionBody": "將安排面試，並視需要進行約20分鐘的模擬授課。",
-      "notices": [
+      "body": [
+        "請以電子郵件寄送履歷表（附照片）與工作經歷書。",
+        "so☆aiaso.gr.jp（寄送時請將☆替換為@。）",
         "應徵資料恕不退還，敬請見諒。",
-        "請在履歷表中註明手機號碼與電子郵件地址。"
-      ],
-      "button": "以電子郵件應徵"
+        "請在履歷表中註明手機號碼與電子郵件地址。",
+        "書面審查後將安排面試，並視需要進行約20分鐘的模擬授課。"
+      ]
     },
     "contact": {
       "eyebrow": "徵才負責人",
+      "role": "徵才負責人",
       "school": "愛知國際學院",
       "person": "莊",
-      "body": "如有徵才相關問題，請透過電話或電子郵件與我們聯絡。",
+      "body": "請透過電話或電子郵件與我們聯絡。",
       "phone": "電話洽詢",
       "email": "電子郵件洽詢"
     }
@@ -368,7 +340,7 @@
         {
           "type": "PART-TIME",
           "title": "시간 강사",
-          "pay": "50분 1교시 2,000엔부터",
+          "pay": "45분 1교시 2,000엔부터",
           "benefitsTitle": "처우",
           "benefits": [
             "교통비 지급"
@@ -379,27 +351,20 @@
     "application": {
       "eyebrow": "APPLICATION",
       "title": "지원 방법",
-      "prepareTitle": "지원 서류 준비",
-      "documents": [
-        "이력서(사진 첨부)",
-        "경력기술서"
-      ],
-      "sendTitle": "이메일로 제출",
-      "sendBody": "채용 담당자에게 두 서류를 보내 주세요.",
-      "emailNote": "☆를 @로 바꾸어 보내 주세요.",
-      "selectionTitle": "서류 심사 후",
-      "selectionBody": "면접을 실시하며, 필요에 따라 약 20분간 모의 수업을 진행합니다.",
-      "notices": [
+      "body": [
+        "이메일로 이력서(사진 첨부)와 경력기술서를 보내 주세요.",
+        "so☆aiaso.gr.jp（☆를 @로 바꾸어 보내 주세요.）",
         "지원 서류는 반환하지 않으니 양해 바랍니다.",
-        "이력서에 휴대전화 번호와 이메일 주소를 기재해 주세요."
-      ],
-      "button": "이메일로 지원"
+        "이력서에 휴대전화 번호와 이메일 주소를 기재해 주세요.",
+        "서류 심사 후 면접을 실시하며, 필요에 따라 약 20분간 모의 수업을 진행합니다."
+      ]
     },
     "contact": {
       "eyebrow": "채용 담당",
+      "role": "채용 담당",
       "school": "아이치 국제학원",
       "person": "莊",
-      "body": "채용 관련 문의는 전화 또는 이메일로 연락해 주세요.",
+      "body": "전화 또는 이메일로 문의해 주세요.",
       "phone": "전화 문의",
       "email": "이메일 문의"
     }
@@ -449,7 +414,7 @@
         {
           "type": "PART-TIME",
           "title": "Giảng viên bán thời gian",
-          "pay": "Từ 2.000 yên/tiết 50 phút",
+          "pay": "Từ 2.000 yên/tiết 45 phút",
           "benefitsTitle": "Chế độ",
           "benefits": [
             "Hỗ trợ chi phí đi lại"
@@ -460,27 +425,20 @@
     "application": {
       "eyebrow": "APPLICATION",
       "title": "Cách ứng tuyển",
-      "prepareTitle": "Chuẩn bị hồ sơ",
-      "documents": [
-        "Sơ yếu lý lịch có ảnh",
-        "Bản quá trình công tác"
-      ],
-      "sendTitle": "Gửi qua email",
-      "sendBody": "Vui lòng gửi cả hai tài liệu cho người phụ trách tuyển dụng.",
-      "emailNote": "Thay ☆ bằng @ trước khi gửi.",
-      "selectionTitle": "Sau vòng xét hồ sơ",
-      "selectionBody": "Ứng viên sẽ được phỏng vấn và có thể được yêu cầu dạy thử khoảng 20 phút.",
-      "notices": [
+      "body": [
+        "Vui lòng gửi sơ yếu lý lịch (có ảnh) và bản quá trình công tác qua email.",
+        "so☆aiaso.gr.jp (Thay ☆ bằng @ trước khi gửi.)",
         "Hồ sơ ứng tuyển sẽ không được hoàn trả.",
-        "Vui lòng ghi số điện thoại di động và địa chỉ email trong sơ yếu lý lịch."
-      ],
-      "button": "Ứng tuyển qua email"
+        "Vui lòng ghi số điện thoại di động và địa chỉ email trong sơ yếu lý lịch.",
+        "Sau vòng xét hồ sơ sẽ phỏng vấn và, nếu cần, yêu cầu dạy thử khoảng 20 phút."
+      ]
     },
     "contact": {
       "eyebrow": "PHỤ TRÁCH TUYỂN DỤNG",
+      "role": "Phụ trách tuyển dụng",
       "school": "Học viện Quốc tế Aichi",
       "person": "莊",
-      "body": "Nếu có câu hỏi về tuyển dụng, vui lòng liên hệ qua điện thoại hoặc email.",
+      "body": "Vui lòng liên hệ qua điện thoại hoặc email.",
       "phone": "Gọi điện",
       "email": "Gửi email"
     }
@@ -530,7 +488,7 @@
         {
           "type": "PART-TIME",
           "title": "อาจารย์พิเศษ",
-          "pay": "เริ่มต้น 2,000 เยนต่อคาบ 50 นาที",
+          "pay": "เริ่มต้น 2,000 เยนต่อคาบ 45 นาที",
           "benefitsTitle": "สวัสดิการ",
           "benefits": [
             "จ่ายค่าเดินทาง"
@@ -541,27 +499,20 @@
     "application": {
       "eyebrow": "APPLICATION",
       "title": "วิธีสมัคร",
-      "prepareTitle": "เตรียมเอกสารสมัคร",
-      "documents": [
-        "ประวัติย่อพร้อมรูปถ่าย",
-        "ประวัติการทำงาน"
-      ],
-      "sendTitle": "ส่งทางอีเมล",
-      "sendBody": "โปรดส่งเอกสารทั้งสองฉบับถึงผู้รับผิดชอบการสรรหา",
-      "emailNote": "เปลี่ยน ☆ เป็น @ ก่อนส่ง",
-      "selectionTitle": "หลังการคัดเลือกเอกสาร",
-      "selectionBody": "จะมีการสัมภาษณ์ และอาจให้สอนสาธิตประมาณ 20 นาทีตามความจำเป็น",
-      "notices": [
+      "body": [
+        "โปรดส่งประวัติย่อพร้อมรูปถ่ายและประวัติการทำงานทางอีเมล",
+        "so☆aiaso.gr.jp (เปลี่ยน ☆ เป็น @ ก่อนส่ง)",
         "เอกสารสมัครจะไม่มีการส่งคืน",
-        "โปรดระบุหมายเลขโทรศัพท์มือถือและอีเมลในประวัติย่อ"
-      ],
-      "button": "สมัครทางอีเมล"
+        "โปรดระบุหมายเลขโทรศัพท์มือถือและอีเมลในประวัติย่อ",
+        "หลังการคัดเลือกเอกสาร จะมีการสัมภาษณ์ และอาจให้สอนสาธิตประมาณ 20 นาทีตามความจำเป็น"
+      ]
     },
     "contact": {
       "eyebrow": "ผู้รับผิดชอบการสรรหา",
+      "role": "ผู้รับผิดชอบการสรรหา",
       "school": "สถาบันนานาชาติไอจิ",
       "person": "莊",
-      "body": "หากมีข้อสงสัยเกี่ยวกับการรับสมัคร โปรดติดต่อทางโทรศัพท์หรืออีเมล",
+      "body": "โปรดติดต่อทางโทรศัพท์หรืออีเมล",
       "phone": "โทรสอบถาม",
       "email": "สอบถามทางอีเมล"
     }
@@ -611,7 +562,7 @@
         {
           "type": "PART-TIME",
           "title": "Pengajar Paruh Waktu",
-          "pay": "Mulai ¥2.000 per kelas 50 menit",
+          "pay": "Mulai ¥2.000 per kelas 45 menit",
           "benefitsTitle": "Tunjangan",
           "benefits": [
             "Biaya transportasi diberikan"
@@ -622,27 +573,20 @@
     "application": {
       "eyebrow": "APPLICATION",
       "title": "Cara melamar",
-      "prepareTitle": "Siapkan dokumen",
-      "documents": [
-        "Daftar riwayat hidup dengan foto",
-        "Riwayat pekerjaan"
-      ],
-      "sendTitle": "Kirim melalui email",
-      "sendBody": "Kirim kedua dokumen kepada penanggung jawab rekrutmen.",
-      "emailNote": "Ganti ☆ dengan @ sebelum mengirim.",
-      "selectionTitle": "Setelah seleksi dokumen",
-      "selectionBody": "Pelamar akan diwawancarai dan, bila diperlukan, diminta melakukan simulasi mengajar sekitar 20 menit.",
-      "notices": [
+      "body": [
+        "Kirim daftar riwayat hidup (dengan foto) dan riwayat pekerjaan melalui email.",
+        "so☆aiaso.gr.jp (Ganti ☆ dengan @ sebelum mengirim.)",
         "Dokumen lamaran tidak akan dikembalikan.",
-        "Cantumkan nomor ponsel dan alamat email pada daftar riwayat hidup."
-      ],
-      "button": "Lamar melalui email"
+        "Cantumkan nomor ponsel dan alamat email pada daftar riwayat hidup.",
+        "Setelah seleksi dokumen, kami akan mewawancarai dan, bila diperlukan, meminta simulasi mengajar sekitar 20 menit."
+      ]
     },
     "contact": {
       "eyebrow": "KONTAK REKRUTMEN",
+      "role": "Kontak rekrutmen",
       "school": "Aichi International Academy",
       "person": "莊",
-      "body": "Untuk pertanyaan terkait rekrutmen, silakan hubungi kami melalui telepon atau email.",
+      "body": "Silakan hubungi kami melalui telepon atau email.",
       "phone": "Hubungi via telepon",
       "email": "Hubungi via email"
     }
@@ -692,7 +636,7 @@
         {
           "type": "PART-TIME",
           "title": "अंशकालीन शिक्षक",
-          "pay": "प्रति 50 मिनेट कक्षा ¥2,000 बाट",
+          "pay": "प्रति 45 मिनेट कक्षा ¥2,000 बाट",
           "benefitsTitle": "सुविधा",
           "benefits": [
             "यातायात खर्च उपलब्ध"
@@ -703,27 +647,20 @@
     "application": {
       "eyebrow": "APPLICATION",
       "title": "आवेदन विधि",
-      "prepareTitle": "कागजात तयार गर्नुहोस्",
-      "documents": [
-        "फोटोसहितको बायोडाटा",
-        "कार्य अनुभव विवरण"
-      ],
-      "sendTitle": "इमेलबाट पठाउनुहोस्",
-      "sendBody": "दुवै कागजात भर्ती सम्पर्क व्यक्तिलाई पठाउनुहोस्।",
-      "emailNote": "पठाउनुअघि ☆ लाई @ ले बदल्नुहोस्।",
-      "selectionTitle": "कागजात छनोटपछि",
-      "selectionBody": "अन्तर्वार्ता हुनेछ र आवश्यक परे करिब 20 मिनेटको नमुना कक्षा दिन भनिन सक्छ।",
-      "notices": [
+      "body": [
+        "इमेलबाट फोटोसहितको बायोडाटा र कार्य अनुभव विवरण पठाउनुहोस्।",
+        "so☆aiaso.gr.jp (पठाउनुअघि ☆ लाई @ ले बदल्नुहोस्।)",
         "आवेदन कागजात फिर्ता गरिने छैन।",
-        "बायोडाटामा मोबाइल नम्बर र इमेल ठेगाना उल्लेख गर्नुहोस्।"
-      ],
-      "button": "इमेलबाट आवेदन दिनुहोस्"
+        "बायोडाटामा मोबाइल नम्बर र इमेल ठेगाना उल्लेख गर्नुहोस्।",
+        "कागजात छनोटपछि अन्तर्वार्ता हुनेछ र आवश्यक परे करिब 20 मिनेटको नमुना कक्षा दिन भनिन सक्छ।"
+      ]
     },
     "contact": {
       "eyebrow": "भर्ती सम्पर्क",
+      "role": "भर्ती सम्पर्क",
       "school": "आइची इन्टरनेशनल एकेडेमी",
       "person": "莊",
-      "body": "भर्तीसम्बन्धी प्रश्नका लागि फोन वा इमेलबाट सम्पर्क गर्नुहोस्।",
+      "body": "फोन वा इमेलबाट सम्पर्क गर्नुहोस्।",
       "phone": "फोन गर्नुहोस्",
       "email": "इमेल गर्नुहोस्"
     }
