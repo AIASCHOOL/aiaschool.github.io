@@ -119,6 +119,39 @@ async function getTotalCount() {
   return count;
 }
 
+async function readAlumni(page = 1, limit = 20) {
+  var Alumni = Parse.Object.extend("aiasoAlumni");
+  var query = new Parse.Query(Alumni);
+  query.descending("createdAt");
+  query.skip((page - 1) * limit);
+  query.limit(limit);
+  var snap = await query.find();
+  return snap.map(function (data) { return data.toJSON(); });
+}
+
+async function getAlumniCount() {
+  var Alumni = Parse.Object.extend("aiasoAlumni");
+  var query = new Parse.Query(Alumni);
+  return query.count();
+}
+
+async function delAlumni(objectId) {
+  if (!confirm("このまま削除しますか")) {
+    return;
+  }
+
+  const classDb = Parse.Object.extend("aiasoAlumni");
+  const delObj = new classDb();
+  delObj.id = objectId;
+  try {
+    await delObj.destroy();
+    if (typeof loadAlumni === "function") await loadAlumni();
+  } catch (error) {
+    console.error(error);
+    alert("削除に失敗しました。もう一度お試しください。");
+  }
+}
+
 async function del(objectId) {
   if (!confirm("このまま削除しますか")) {
     return;
@@ -158,3 +191,45 @@ document.addEventListener('alpine:init', () => {
     }
   }));
 });
+
+const ADMIN_USERNAME = "aiaso-admin";
+function isAdminUser(user) {
+  return user && user.get("username") === ADMIN_USERNAME;
+}
+function showAdminWorkspace() {
+  document.getElementById("admin-login").hidden = true;
+  document.getElementById("admin-workspace").hidden = false;
+  applyAdminTab(getUrlParameter("tab") === "alumni" ? "alumni" : "news");
+}
+async function initializeAdminLogin() {
+  document.getElementById("admin-login-form").addEventListener("submit", async function (event) {
+    event.preventDefault();
+    var button = document.getElementById("admin-login-button");
+    if (button.disabled) return;
+    button.disabled = true;
+    var status = document.getElementById("admin-login-status");
+    status.textContent = "";
+    try {
+      var user = await Parse.User.logIn(ADMIN_USERNAME, document.getElementById("admin-password").value);
+      if (!isAdminUser(user)) throw new Error("Invalid administrator");
+      document.getElementById("admin-password").value = "";
+      showAdminWorkspace();
+    } catch (error) {
+      status.textContent = error.code === 101 ? "パスワードが正しくありません。" : "ログインできませんでした。もう一度お試しください。";
+    } finally {
+      button.disabled = false;
+    }
+  });
+  var currentUser = Parse.User.current();
+  if (!isAdminUser(currentUser)) return;
+  try {
+    await currentUser.fetch();
+    if (isAdminUser(currentUser)) showAdminWorkspace();
+  } catch (error) {
+    await Parse.User.logOut();
+  }
+}
+async function logoutAdmin() {
+  await Parse.User.logOut();
+  window.location.reload();
+}

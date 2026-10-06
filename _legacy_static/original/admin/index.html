@@ -18,7 +18,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-  <script src="parse.js"></script>
+  <script src="parse.js?v=20261006-admin-login"></script>
   <style>
     body {
       font-family: 'Noto Sans JP', sans-serif;
@@ -45,6 +45,18 @@
 </head>
 
 <body class="">
+  <section id="admin-login" class="mx-auto max-w-sm p-6 mt-12">
+    <h1 class="text-2xl font-bold mb-6">管理画面ログイン</h1>
+    <form id="admin-login-form">
+      <label for="admin-password" class="block mb-2">パスワード</label>
+      <input id="admin-password" type="password" autocomplete="current-password" required class="w-full rounded border p-3">
+      <button id="admin-login-button" type="submit" class="mt-4 rounded bg-blue-900 px-6 py-3 text-white">ログイン</button>
+      <p id="admin-login-status" role="alert" class="mt-3 text-red-700"></p>
+    </form>
+  </section>
+  <div id="admin-workspace" hidden>
+    <div class="p-3 text-right"><button type="button" onclick="logoutAdmin()" class="rounded border px-4 py-2">ログアウト</button></div>
+
   <!-- banner start -->
   <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1">
     <div class="flex items-center flex-row">
@@ -262,7 +274,7 @@
   <div class="relative flex mx-auto">
     <img class="w-full object-cover object-center" src="../images/topics.jpg" />
     <div class="absolute top-7 right-0 left-0 flex items-center justify-center ">
-      <h3 class="text-white text-3xl lg:text-4xl font-bold">最新ニュース</h3>
+      <h3 id="admin-hero-title" class="text-white text-3xl lg:text-4xl font-bold">最新ニュース</h3>
     </div>
   </div>
 
@@ -305,7 +317,17 @@
       </div>
     </div>
   </div>
-  <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1">
+  <div class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-3 flex gap-2">
+    <button id="tab-news" type="button" onclick="switchAdminTab('news')"
+      class="rounded bg-blue-900 px-5 py-2 text-sm font-bold text-white shadow">
+      最新ニュース
+    </button>
+    <button id="tab-alumni" type="button" onclick="switchAdminTab('alumni')"
+      class="rounded bg-white px-5 py-2 text-sm font-bold text-blue-900 shadow">
+      近況連絡
+    </button>
+  </div>
+  <div id="admin-news-toolbar" class="w-full lg:w-4/5 xl:w-2/3 mx-auto p-2 mt-1">
     <button
       class="bg-yellow-500 text-white active:bg-yellow-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none hover:bg-yellow-400 focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
       type="button" onclick="toggleModal('modal-id','new')">
@@ -584,7 +606,7 @@
     function generatePagination(currentPage, totalPages) {
       if (totalPages <= 1) return;
       
-      let paginationHtml = '<div class="pagination-container">';
+      let paginationHtml = '<div class="pagination-container news-pagination">';
       paginationHtml += '<div class="flex justify-center items-center space-x-2 mt-6 mb-4">';
       
       // 上一页按钮
@@ -628,6 +650,7 @@
       paginationHtml += '</div>';
       
       $("#news").after(paginationHtml);
+      $(".news-pagination").toggleClass("hidden", getUrlParameter("tab") === "alumni");
     }
 
     // 跳转到指定页面
@@ -635,7 +658,143 @@
       updateUrlParameter('page', page);
       start(); // 重新加载数据
     }
-    start();
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function formatTokyo(iso) {
+      if (!iso) return "";
+      return new Date(iso).toLocaleString("ja-JP", { timeZone: "Asia/Tokyo" });
+    }
+
+    const alumniLocaleLabels = {
+      ja: "日本語",
+      en: "English",
+      cn: "中国語（簡体）",
+      tw: "中国語（繁体）",
+      ko: "한국어",
+      vi: "Tiếng Việt",
+      th: "ไทย",
+      id: "Indonesia",
+      np: "नेपाली"
+    };
+
+    function setAdminTabStyle(tab) {
+      var newsTab = document.getElementById("tab-news");
+      var alumniTab = document.getElementById("tab-alumni");
+      var newsActive = tab !== "alumni";
+      newsTab.className = "rounded px-5 py-2 text-sm font-bold shadow " + (newsActive ? "bg-blue-900 text-white" : "bg-white text-blue-900");
+      alumniTab.className = "rounded px-5 py-2 text-sm font-bold shadow " + (newsActive ? "bg-white text-blue-900" : "bg-blue-900 text-white");
+    }
+
+    function switchAdminTab(tab) {
+      updateUrlParameter("tab", tab === "alumni" ? "alumni" : "news");
+      applyAdminTab(tab === "alumni" ? "alumni" : "news");
+    }
+
+    function applyAdminTab(tab) {
+      if (!isAdminUser(Parse.User.current())) return;
+      var isAlumni = tab === "alumni";
+      setAdminTabStyle(tab);
+      var toolbar = document.getElementById("admin-news-toolbar");
+      var news = document.getElementById("news");
+      var alumni = document.getElementById("alumni");
+      var title = document.getElementById("admin-hero-title");
+      if (toolbar) toolbar.classList.toggle("hidden", isAlumni);
+      if (news) news.classList.toggle("hidden", isAlumni);
+      document.querySelectorAll(".news-pagination").forEach(function (el) {
+        el.classList.toggle("hidden", isAlumni);
+      });
+      if (alumni) alumni.classList.toggle("hidden", !isAlumni);
+      if (title) title.textContent = isAlumni ? "近況連絡" : "最新ニュース";
+      document.title = isAlumni ? "愛知国際学院 | 近況連絡管理" : "愛知国際学院 | 最新ニュース管理";
+      if (isAlumni) loadAlumni();
+      else start();
+    }
+
+    function alumniField(label, value) {
+      return '<div><div class="text-xs font-bold text-gray-500">' + label + '</div><div class="mt-0.5 break-words">' + escapeHtml(value || "—") + '</div></div>';
+    }
+
+    function renderAlumniCard(item) {
+      var objectId = String(item.objectId || "");
+      if (!/^[A-Za-z0-9]+$/.test(objectId)) return "";
+      var localeLabel = alumniLocaleLabels[item.locale] || item.locale || "—";
+      var scopeBadge = item.scope === "staging" ? '<span class="ml-2 rounded bg-gray-200 px-2 py-0.5 text-xs text-gray-700">staging</span>' : "";
+      return '<article class="mb-3 rounded border border-slate-200 bg-white p-4 shadow-sm text-sm text-gray-800">' +
+        '<div class="mb-3 flex items-center justify-between gap-3 text-xs text-gray-500">' +
+          '<span>' + escapeHtml(formatTokyo(item.createdAt)) + '</span>' +
+          '<span>' + escapeHtml(localeLabel) + scopeBadge + '</span>' +
+        '</div>' +
+        '<div class="grid gap-3 sm:grid-cols-2">' +
+          alumniField("名前", item.name) +
+          alumniField("卒業時期", item.period) +
+          alumniField("現在所属／職位", item.position) +
+          alumniField("SNS連絡方法", item.sns) +
+        '</div>' +
+        '<div class="mt-3"><div class="text-xs font-bold text-gray-500">コメント</div><div class="mt-0.5 whitespace-pre-wrap break-words">' + escapeHtml(item.comment || "—") + '</div></div>' +
+        '<div class="mt-3 text-right"><button type="button" class="rounded-md bg-rose-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-rose-400" onclick="delAlumni(\'' + objectId + '\')">削除</button></div>' +
+      '</article>';
+    }
+
+    function renderAlumniPagination(currentPage, totalPages) {
+      if (totalPages <= 1) return "";
+      var html = '<div class="mb-4 mt-6 flex flex-wrap items-center justify-center gap-2">';
+      if (currentPage > 1) {
+        html += '<button type="button" onclick="goToAlumniPage(' + (currentPage - 1) + ')" class="rounded-md border border-gray-300 bg-white px-3 py-2 text-sm text-gray-500 hover:bg-gray-50">前のページ</button>';
+      }
+      for (var i = 1; i <= totalPages; i += 1) {
+        var active = i === currentPage ? "border-yellow-500 bg-yellow-500 text-white" : "border-gray-300 bg-white text-gray-500 hover:bg-gray-50";
+        html += '<button type="button" onclick="goToAlumniPage(' + i + ')" class="rounded-md border px-3 py-2 text-sm ' + active + '">' + i + '</button>';
+      }
+      if (currentPage < totalPages) {
+        html += '<button type="button" onclick="goToAlumniPage(' + (currentPage + 1) + ')" class="rounded-md border border-gray-300 bg-white px-3 py-2 text-sm text-gray-500 hover:bg-gray-50">次のページ</button>';
+      }
+      html += '</div>';
+      return html;
+    }
+
+    var alumniLoadVersion = 0;
+    async function loadAlumni() {
+      var version = ++alumniLoadVersion;
+      var root = document.getElementById("alumni");
+      if (!root) return;
+      root.innerHTML = '<p role="status" class="py-8 text-center text-sm text-gray-600">読み込み中…</p>';
+      try {
+        var currentPage = Math.max(1, parseInt(getUrlParameter("mpage"), 10) || 1);
+        var limit = 20;
+        var totalCount = await getAlumniCount();
+        var totalPages = Math.max(1, Math.ceil(totalCount / limit));
+        currentPage = Math.min(currentPage, totalPages);
+        var rows = await readAlumni(currentPage, limit);
+        if (version !== alumniLoadVersion) return;
+        if (!rows.length) {
+          root.innerHTML = '<p class="py-8 text-center text-sm text-gray-600">まだ連絡はありません。</p>';
+          return;
+        }
+        root.innerHTML = rows.map(renderAlumniCard).join("") + renderAlumniPagination(currentPage, totalPages);
+      } catch (error) {
+        if (version !== alumniLoadVersion) return;
+        console.error(error);
+        root.innerHTML = '<p role="alert" class="py-8 text-center text-sm text-red-700">読み込みに失敗しました。</p><button type="button" onclick="loadAlumni()" class="rounded bg-blue-900 px-4 py-2 text-white">再試行</button>';
+      }
+    }
+
+    function goToAlumniPage(page) {
+      updateUrlParameter("mpage", page);
+      loadAlumni();
+    }
+
+    window.addEventListener("popstate", function () {
+      applyAdminTab(getUrlParameter("tab") === "alumni" ? "alumni" : "news");
+    });
+
+    document.addEventListener("DOMContentLoaded", initializeAdminLogin);
 
     function toggleModal(modalID, id) {
       // 清空所有表单字段
@@ -750,6 +909,7 @@
   <!-- news start -->
   <div id="news"></div>
   <!-- news end -->
+  <div id="alumni" class="mx-auto hidden w-full p-2 lg:w-4/5 xl:w-2/3"></div>
 
   <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1 mt-4">
     <div class="w-full md:w-4/5 lg:w-3/5 xl:w-1/2 2xl:w-2/5 mx-auto p-5 text-xs">
@@ -802,6 +962,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- Lightbox2 JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  </div>
 </body>
 
 </html>
