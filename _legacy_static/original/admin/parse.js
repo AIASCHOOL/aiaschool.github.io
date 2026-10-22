@@ -233,3 +233,67 @@ async function logoutAdmin() {
   await Parse.User.logOut();
   window.location.reload();
 }
+
+function togglePasswordModal(show) {
+  var modal = document.getElementById("password-modal");
+  if (!modal) return;
+  modal.classList.toggle("hidden", !show);
+  modal.classList.toggle("flex", !!show);
+  if (show) {
+    document.getElementById("admin-password-form").reset();
+    document.getElementById("admin-password-status").textContent = "";
+    document.getElementById("admin-password-status").className = "text-sm text-red-700";
+    document.getElementById("admin-old-password").focus();
+  }
+}
+
+async function changeAdminPassword(oldPassword, newPassword) {
+  await Parse.User.logIn(ADMIN_USERNAME, oldPassword);
+  var user = Parse.User.current();
+  if (!isAdminUser(user)) throw new Error("Invalid administrator");
+  user.set("password", newPassword);
+  await user.save();
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.getElementById("admin-password-form");
+  if (!form) return;
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+    var button = document.getElementById("admin-password-button");
+    var status = document.getElementById("admin-password-status");
+    var oldPassword = document.getElementById("admin-old-password").value;
+    var newPassword = document.getElementById("admin-new-password").value;
+    var confirmPassword = document.getElementById("admin-confirm-password").value;
+    status.className = "text-sm text-red-700";
+    status.textContent = "";
+
+    if (newPassword.length < 4) {
+      status.textContent = "新しいパスワードは4文字以上にしてください。";
+      return;
+    }
+    if (newPassword !== confirmPassword) {
+      status.textContent = "新しいパスワード（確認）が一致しません。";
+      return;
+    }
+    if (newPassword === oldPassword) {
+      status.textContent = "新しいパスワードは現在のパスワードと別にしてください。";
+      return;
+    }
+    if (button.disabled) return;
+    button.disabled = true;
+    try {
+      await changeAdminPassword(oldPassword, newPassword);
+      status.className = "text-sm text-blue-900 font-bold";
+      status.textContent = "パスワードを変更しました。新しいパスワードでログインしてください。";
+      await Parse.User.logOut();
+      setTimeout(function () { window.location.reload(); }, 900);
+    } catch (error) {
+      status.textContent = error.code === 101
+        ? "現在のパスワードが正しくありません。"
+        : "パスワードを変更できませんでした。もう一度お試しください。";
+    } finally {
+      button.disabled = false;
+    }
+  });
+});

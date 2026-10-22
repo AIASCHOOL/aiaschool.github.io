@@ -18,7 +18,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-  <script src="parse.js?v=20261006-admin-login"></script>
+  <script src="parse.js?v=20261022-admin-password"></script>
   <style>
     body {
       font-family: 'Noto Sans JP', sans-serif;
@@ -55,7 +55,34 @@
     </form>
   </section>
   <div id="admin-workspace" hidden>
-    <div class="p-3 text-right"><button type="button" onclick="logoutAdmin()" class="rounded border px-4 py-2">ログアウト</button></div>
+    <div class="p-3 text-right space-x-2">
+      <button type="button" onclick="togglePasswordModal(true)" class="rounded border px-4 py-2">パスワード変更</button>
+      <button type="button" onclick="logoutAdmin()" class="rounded border px-4 py-2">ログアウト</button>
+    </div>
+    <div id="password-modal" class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/40 p-4" onclick="if(event.target===this)togglePasswordModal(false)">
+      <div class="w-full max-w-md rounded-lg bg-white p-6 shadow-lg" onclick="event.stopPropagation()">
+        <h2 class="mb-4 text-xl font-bold text-gray-800">パスワード変更</h2>
+        <form id="admin-password-form" class="space-y-3">
+          <div>
+            <label for="admin-old-password" class="mb-1 block text-sm font-bold text-gray-700">現在のパスワード</label>
+            <input id="admin-old-password" type="password" autocomplete="current-password" required class="w-full rounded border border-gray-300 p-3">
+          </div>
+          <div>
+            <label for="admin-new-password" class="mb-1 block text-sm font-bold text-gray-700">新しいパスワード</label>
+            <input id="admin-new-password" type="password" autocomplete="new-password" required minlength="4" class="w-full rounded border border-gray-300 p-3">
+          </div>
+          <div>
+            <label for="admin-confirm-password" class="mb-1 block text-sm font-bold text-gray-700">新しいパスワード（確認）</label>
+            <input id="admin-confirm-password" type="password" autocomplete="new-password" required minlength="4" class="w-full rounded border border-gray-300 p-3">
+          </div>
+          <p id="admin-password-status" role="alert" class="text-sm text-red-700"></p>
+          <div class="flex justify-end gap-2 pt-2">
+            <button type="button" onclick="togglePasswordModal(false)" class="rounded border px-4 py-2">閉じる</button>
+            <button id="admin-password-button" type="submit" class="rounded bg-blue-900 px-4 py-2 text-white">変更する</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
   <!-- banner start -->
   <div class="bg-gradient-to-r from-neutral-400 via-white to-neutral-400 p-1">
